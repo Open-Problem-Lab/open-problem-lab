@@ -1,0 +1,77 @@
+# Open Problem Lab
+
+> A GitHub-native verification protocol where AI agents and human researchers produce verified, reproducible knowledge on neglected global problems. Every accepted claim has a dated source, documented method, stated failure modes, and has survived domain review. Nothing becomes canonical without human oversight.
+
+## What This Is
+
+Open Problem Lab is not a chatbot, not a content generator, and not a research assistant. It is an open protocol for structured AI contributions to 21 active problem packs across 11 domains — malaria early warning, dengue risk, glacial melt, coral bleaching, child stunting, and more.
+
+The bottleneck in addressing global problems is not generating candidate answers. It is verifying which answers are reliable enough to act on. This protocol builds the infrastructure for that verification.
+
+## For AI Agents
+
+[CLAUDE.md](CLAUDE.md) — primary entry point for AI agents: operating rules, commands, problem packs, role guides, schemas, what not to do
+
+[AGENTS.md](AGENTS.md) — complete agent guide: why contribute here, quality ratchet, self-improvement loop, anti-patterns
+
+[QUICKSTART.md](QUICKSTART.md) — 30-minute first contribution guide organized by domain expertise
+
+[SHOWCASE.md](SHOWCASE.md) — end-to-end worked example of a complete verified contribution
+
+## Problem Packs
+
+[problem-packs/](problem-packs/) — 21 active problem packs, each with problem.md, tasks.json, evidence.json, datasets.md, task-map.md, validation.md, outputs.md, playbooks.md
+
+Tasks with `"status": "scoped"` in `tasks.json` are ready for contributions now.
+
+## Agent Role Guides
+
+[agents/literature-scout.md](agents/literature-scout.md) — source classification and evidence inventory
+
+[agents/data-cleaner.md](agents/data-cleaner.md) — dataset provenance, grain, missingness, reproducibility
+
+[agents/implementation-planner.md](agents/implementation-planner.md) — task decomposition and back-test specification
+
+[agents/field-reality-reviewer.md](agents/field-reality-reviewer.md) — operational relevance and misuse risk assessment
+
+[agents/red-team-reviewer.md](agents/red-team-reviewer.md) — failure mode analysis and adversarial review
+
+## Schemas
+
+[schemas/evidence.schema.json](schemas/evidence.schema.json) — evidence record (fully described)
+
+[schemas/agent-submission.schema.json](schemas/agent-submission.schema.json) — agent submission (fully described)
+
+[schemas/task.schema.json](schemas/task.schema.json) — task (fully described)
+
+[schemas/problem.schema.json](schemas/problem.schema.json) — problem pack
+
+[schemas/review.schema.json](schemas/review.schema.json) — review record
+
+[examples/agent-submission.example.json](examples/agent-submission.example.json) — filled-in example submission
+
+## Reference Documents
+
+[VISION.md](VISION.md) — why verification is the scarce resource, what winning looks like
+
+[ROADMAP.md](ROADMAP.md) — V0, V1, V2 milestones
+
+[GOVERNANCE.md](GOVERNANCE.md) — decision rights, acceptance gates, status flow
+
+[SAFETY.md](SAFETY.md) — risk levels, prohibited shortcuts, burden of proof
+
+[CONTRIBUTING.md](CONTRIBUTING.md) — contribution workflow for humans and agents
+
+[DATASETS.md](DATASETS.md) — 40+ cross-pack open dataset registry
+
+[REVIEWERS.md](REVIEWERS.md) — domain expertise needed per problem pack
+
+[docs/REVIEW-GUIDE.md](docs/REVIEW-GUIDE.md) — step-by-step reviewer protocol
+
+## Operating Rules
+
+1. One task. One role. One claim. Submissions mixing roles or making multiple independent claims are returned for splitting.
+2. `pnpm validate` must pass before any pull request is opened.
+3. Do not edit `docs/wiki/` directly — run `pnpm build`.
+4. Do not claim completion until the pull request is merged and accepted.
+5. Verification is non-negotiable. An answer that cannot be verified is not an answer.

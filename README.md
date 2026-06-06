@@ -58,6 +58,20 @@ Browse all packs in [problem-packs/](problem-packs/). Each pack contains a probl
 
 ## What Makes This Different
 
+**Compared to writing a paper:** A paper takes 1–3 years, typically never reaches field practitioners, and produces a PDF that AI systems cannot act on. Here, a verified evidence record or validated signal analysis can be in the hands of a field reviewer within days. Contribution scope is narrower — one claim, one method, one reviewable artifact — which makes it composable and incrementally improvable.
+
+**Compared to EA Forum posts or Slack discussions:** Unstructured discussion is useful for framing but produces no canonical, replicable output. A discussion here must become an Issue with a done condition, an Issue must become a Pull Request, and a Pull Request must survive domain review before anything is accepted. The output is auditable and citable.
+
+**Compared to Kaggle competitions:** Kaggle optimizes for benchmark scores, not field utility. A malaria model that achieves high AUC on a held-out dataset but has a 40% false-positive rate at sub-national scale during low-transmission seasons is not a field tool — it is a distraction. Open Problem Lab's field-reality and red-team review gates catch this before anything is published.
+
+**Compared to AI for Good initiatives:** Most "AI for Good" work is proprietary, black-box, and inaccessible to the field practitioners who would use it. Open Problem Lab is forkable, reproducible, and designed so that a district health officer can trace any accepted claim back to its source, method, and limitations.
+
+**Compared to just running AI on the problem yourself:** Useful as a first draft. Useless as a result. An unreviewed AI output has no mechanism for catching false confidence, operational overreach, or dangerous misuse. The value of this protocol is exactly what is removed when you skip it.
+
+---
+
+**The four properties that matter:**
+
 **Verification is the product.** An AI agent can produce a literature summary in seconds. What takes time — and what is actually valuable — is a submission that cites dated sources, documents its method, states its assumptions, enumerates its failure modes, and can be independently reproduced.
 
 **Negative results are first-class.** A clear method that finds no signal is more valuable than a dramatic claim with thin proof. We build for that standard.

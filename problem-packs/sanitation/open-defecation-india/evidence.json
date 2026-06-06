@@ -1,0 +1,56 @@
+[
+  {
+    "id": "jmp-india-sanitation-2023",
+    "problem_id": "sanitation/open-defecation-india",
+    "claim": "WHO/UNICEF JMP data shows India eliminated an estimated 450 million open defecators between 2015 and 2020, the fastest sanitation improvement globally, but estimates over 150 million people still practice open defecation and notes persistent urban-rural and state-level disparities.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO/UNICEF JMP India country data",
+      "url": "https://washdata.org/data/household#!/ind"
+    },
+    "source_date": "2023-07-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed JMP India sanitation estimates, trend data, and methodology documentation.",
+    "limitations": [
+      "JMP estimates are modeled from survey data and may smooth district-level variation.",
+      "Estimates depend on survey timing, which varies across states."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "nfhs-5-sanitation-2021",
+    "problem_id": "sanitation/open-defecation-india",
+    "claim": "India's National Family Health Survey-5 found that open defecation rates varied from under 1 percent to over 40 percent across districts in some states, with usage rates consistently below reported toilet-construction rates.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "National Family Health Survey-5 India Report",
+      "url": "https://dhsprogram.com/publications/publication-FR374-DHS-Final-Reports.cfm"
+    },
+    "source_date": "2021-11-24",
+    "access_date": "2026-06-06",
+    "method": "Reviewed NFHS-5 sanitation indicators, state and district fact sheets, and survey methodology.",
+    "limitations": [
+      "Survey timing varies across phases, complicating cross-state comparison.",
+      "Sanitation usage is self-reported and may be subject to social-desirability bias."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "wolf-sanitation-child-health-2022",
+    "problem_id": "sanitation/open-defecation-india",
+    "claim": "A 2022 systematic review estimated that improved sanitation reduces diarrheal disease risk by approximately 25 percent, with larger effects when coverage exceeds 60 percent of the community, suggesting community-level coverage matters beyond household-level access.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Impact of drinking water, sanitation and handwashing with soap on childhood diarrhoeal disease: updated meta-analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35041711/"
+    },
+    "source_date": "2022-01-17",
+    "access_date": "2026-06-06",
+    "method": "Reviewed meta-analysis methods, included study characteristics, and effect-size estimates.",
+    "limitations": [
+      "Meta-analysis is global, not India-specific.",
+      "Effect sizes vary substantially by context and baseline conditions."
+    ],
+    "confidence": "high"
+  }
+]

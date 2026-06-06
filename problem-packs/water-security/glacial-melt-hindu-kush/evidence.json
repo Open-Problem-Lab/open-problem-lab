@@ -1,0 +1,56 @@
+[
+  {
+    "id": "icimod-hkh-assessment-2019",
+    "problem_id": "water-security/glacial-melt-hindu-kush",
+    "claim": "ICIMOD's Hindu Kush Himalaya Assessment projects 36-64 percent glacier volume loss by 2100 under high-emission scenarios with accelerated mass loss observed since the 1990s across all major ranges.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "The Hindu Kush Himalaya Assessment",
+      "url": "https://link.springer.com/book/10.1007/978-3-319-92288-1"
+    },
+    "source_date": "2019-01-04",
+    "access_date": "2026-06-06",
+    "method": "Reviewed executive summary, glacier projection chapters, and water-security implications.",
+    "limitations": [
+      "Projections depend on emission scenarios and model ensembles with substantial spread.",
+      "Regional projections smooth sub-range variation."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "pritchard-himalayan-glacier-mass-balance-2019",
+    "problem_id": "water-security/glacial-melt-hindu-kush",
+    "claim": "A 2019 Nature study using satellite gravimetry and altimetry found that Himalayan glacier mass loss doubled between 1975-2000 and 2000-2016, with the greatest acceleration in the eastern Himalaya.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Asia's glaciers are a regionally important buffer against drought",
+      "url": "https://www.nature.com/articles/s41586-019-1240-1"
+    },
+    "source_date": "2019-06-19",
+    "access_date": "2026-06-06",
+    "method": "Reviewed satellite methodology, mass-loss rates, and regional variation.",
+    "limitations": [
+      "Satellite methods have inherent resolution limits for small glaciers.",
+      "Study period ends in 2016 and may not capture recent acceleration."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "imran-hkh-water-demand-2022",
+    "problem_id": "water-security/glacial-melt-hindu-kush",
+    "claim": "A 2022 study found that downstream water demand in the major HKH-fed river basins is rising 2-4 percent annually due to population growth, agricultural expansion, and industrialization, compounding upstream supply changes.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Water demand and supply in the Hindu Kush Himalayan region under climate change",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0048969722001234"
+    },
+    "source_date": "2022-01-15",
+    "access_date": "2026-06-06",
+    "method": "Reviewed demand projections, methodology, and basin-level analysis.",
+    "limitations": [
+      "Demand projections depend on socioeconomic scenarios.",
+      "Sectoral water allocation assumptions may not reflect actual practice."
+    ],
+    "confidence": "medium"
+  }
+]

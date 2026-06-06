@@ -1,0 +1,109 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "education/learning-loss-post-pandemic",
+    "title": "Inventory learning assessment data sources for low-income countries",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating international assessments, national assessments, irregular surveys, and unusable sources.",
+    "inputs": [
+      "World Bank learning poverty database",
+      "UNESCO school closure tracker",
+      "PISA and TIMSS databases",
+      "EGRA and similar assessment data",
+      "systematic review references"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, assessment type, sample size, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit data-quality tier assignments."
+  },
+  {
+    "id": "learning-loss-estimation",
+    "problem_id": "education/learning-loss-post-pandemic",
+    "title": "Estimate learning loss for at least two low-income countries",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A reproducible learning loss estimation for at least two low-income countries using available assessment data, with explicit data-quality tiers and uncertainty bounds.",
+    "inputs": [
+      "pre-pandemic assessment data",
+      "post-pandemic assessment data",
+      "school-closure duration data",
+      "estimation methodology"
+    ],
+    "expected_artifact": "validation.md update with estimation methodology and data checks.",
+    "validation_method": "Replicator reruns estimation with alternative data subsets and confirms loss estimates within reported uncertainty range.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Each country estimate includes data-quality tier, uncertainty bounds, and documentation of assessment comparability issues with replication confirmed."
+  },
+  {
+    "id": "recovery-tracking",
+    "problem_id": "education/learning-loss-post-pandemic",
+    "title": "Track learning recovery from post-pandemic assessment rounds",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A recovery tracking analysis comparing sequential post-pandemic assessment rounds to determine whether learning gaps are closing, stable, or widening.",
+    "inputs": [
+      "learning loss estimates",
+      "multiple post-pandemic assessment rounds",
+      "remediation program data"
+    ],
+    "expected_artifact": "outputs.md update with recovery trajectory analysis.",
+    "validation_method": "Replicator confirms that recovery calculations account for cohort differences and confirms trajectory direction with alternative methods.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Recovery analysis includes at least two post-pandemic assessment time points with explicit cohort-difference caveats and replication confirmed."
+  },
+  {
+    "id": "data-quality-tiering",
+    "problem_id": "education/learning-loss-post-pandemic",
+    "title": "Define data-quality tiers for learning loss evidence",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A tiered classification system for learning loss evidence quality, from tier-1 longitudinal comparable assessments to tier-4 reconstructed or modeled estimates.",
+    "inputs": [
+      "learning loss estimation results",
+      "assessment metadata",
+      "data-quality literature"
+    ],
+    "expected_artifact": "validation.md update with data-quality tier definitions and country assignments.",
+    "validation_method": "Reviewer confirms tier definitions are well-specified and country assignments are justified by documented methodology.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Data-quality tier system is defined with at least three tiers, each with explicit criteria, and all country estimates are assigned to tiers."
+  },
+  {
+    "id": "red-team-over-precision-review",
+    "problem_id": "education/learning-loss-post-pandemic",
+    "title": "Red-team over-precise and defeatist learning loss communication",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying where learning loss estimates could be presented with false precision, stigmatize affected cohorts, or justify harmful education policies.",
+    "inputs": ["learning loss estimates", "data-quality tiering", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk failure mode has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every learning loss estimate includes explicit uncertainty communication, non-stigmatization language, and blocks claims not supported by the data-quality tier."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "education/learning-loss-post-pandemic",
+    "title": "Check whether learning loss outputs match education ministry decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether learning loss estimates would change any real education remediation decision responsibly.",
+    "inputs": [
+      "draft outputs",
+      "education ministry operational constraints",
+      "teacher and community engagement context"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk for the output, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The output has a named user, named decision, explicit non-stigmatization safeguards, and replicated field-reality review before publication."
+  }
+]

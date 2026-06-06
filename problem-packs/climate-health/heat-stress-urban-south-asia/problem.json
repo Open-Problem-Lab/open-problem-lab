@@ -1,0 +1,44 @@
+{
+  "id": "climate-health/heat-stress-urban-south-asia",
+  "title": "Urban Heat Stress Mortality Risk In South Asia",
+  "status": "scoped",
+  "domain": ["climate-health", "public-health"],
+  "region": ["south-asia"],
+  "summary": "Build a verified workflow for identifying where urban heat island effects, wet-bulb temperature extremes, and population vulnerability create the highest heat-stress mortality risk in South Asian cities.",
+  "why_it_matters": "South Asia faces some of the highest wet-bulb temperatures on Earth, approaching the 35°C survivability limit during extreme heat events. The 2015 heatwave killed over 2,500 people in India and Pakistan. Urban heat island effects add 3-8°C to background temperatures in dense cities. Mortality is concentrated among outdoor workers, slum dwellers, and elderly populations without cooling access. City-scale risk maps that combine heat exposure, population vulnerability, and cooling-access data are nearly absent.",
+  "success_metrics": [
+    {
+      "metric": "Exposure accuracy",
+      "target": "Heat-exposure maps validated against ground-station data where available.",
+      "validation_method": "Compare satellite-derived LST to station measurements."
+    },
+    {
+      "metric": "Vulnerability integration",
+      "target": "Risk maps combine exposure, population density, and vulnerability indicators.",
+      "validation_method": "Reviewer confirms vulnerability data sources and methodology."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No heat-action-plan recommendation merged without review and replication.",
+      "validation_method": "Check task status, review records."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

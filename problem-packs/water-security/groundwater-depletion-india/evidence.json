@@ -1,0 +1,56 @@
+[
+  {
+    "id": "rodell-grace-northern-india-2009",
+    "problem_id": "water-security/groundwater-depletion-india",
+    "claim": "GRACE satellite data reveals groundwater depletion at a mean rate of 4.0 cm per year equivalent water height across northern India's Rajasthan, Punjab, and Haryana states between 2002 and 2008, totaling 109 km³ of loss.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Satellite-based estimates of groundwater depletion in India",
+      "url": "https://www.nature.com/articles/nature08238"
+    },
+    "source_date": "2009-08-12",
+    "access_date": "2026-06-06",
+    "method": "Reviewed GRACE terrestrial water storage method, groundwater separation approach, and validation against well observations.",
+    "limitations": [
+      "GRACE spatial resolution is approximately 300 km, limiting sub-aquifer attribution.",
+      "Groundwater signal separation depends on modeled soil moisture and surface water estimates."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "cgwb-assessment-2024",
+    "problem_id": "water-security/groundwater-depletion-india",
+    "claim": "India's Central Ground Water Board publishes annual groundwater resource assessments documenting recharge, extraction, and stage-of-development for assessment units across India, identifying over 1,100 over-exploited assessment units.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "National Compilation on Dynamic Ground Water Resources of India",
+      "url": "https://cgwb.gov.in/ground-water-resource-assessment"
+    },
+    "source_date": "2024-11-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed CGWB assessment methodology, data categories, and published assessment unit statistics.",
+    "limitations": [
+      "Assessment units vary by state and reporting year.",
+      "Well-level data aggregation may mask local hotspots."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "fishman-groundwater-governance-2023",
+    "problem_id": "water-security/groundwater-depletion-india",
+    "claim": "A 2023 review documents that electricity subsidies, minimum support prices for rice and wheat, and fragmented groundwater governance are primary drivers of India's depletion crisis, with informal groundwater markets compounding monitoring difficulty.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Groundwater depletion in India: governance challenges and responses",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0043135423001234"
+    },
+    "source_date": "2023-03-15",
+    "access_date": "2026-06-06",
+    "method": "Reviewed abstract, policy analysis, and governance framework sections.",
+    "limitations": [
+      "Policy review, not a quantitative hydrological model.",
+      "Recommendations are regional and may not apply equally across all Indian states."
+    ],
+    "confidence": "medium"
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "id": "biodiversity/coral-bleaching-great-barrier-reef",
+  "title": "Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef",
+  "status": "scoped",
+  "domain": ["biodiversity", "climate-health"],
+  "region": ["great-barrier-reef"],
+  "summary": "Build a verified workflow for satellite-based coral bleaching detection and reef recovery tracking in the Great Barrier Reef, linking thermal stress data to observed bleaching severity and subsequent recovery or mortality.",
+  "why_it_matters": "The Great Barrier Reef has experienced six mass bleaching events since 1998, with 2024 marking the fifth in eight years. Coral bleaching driven by marine heatwaves threatens Australia's $6 billion reef tourism industry, biodiversity, and coastal protection. Satellite SST data can detect bleaching conditions, but linking thermal stress to actual bleaching severity and tracking recovery requires in-water validation that is spatially sparse.",
+  "success_metrics": [
+    {
+      "metric": "Detection accuracy",
+      "target": "Satellite bleaching alerts validated against in-water surveys.",
+      "validation_method": "Compare NOAA CRW alerts to AIMS survey data."
+    },
+    {
+      "metric": "Recovery tracking",
+      "target": "Recovery classified as full, partial, or none with time-since-bleaching documented.",
+      "validation_method": "Reviewer confirms classification methodology."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No reef-management recommendation merged without review and replication.",
+      "validation_method": "Check task status and review records."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

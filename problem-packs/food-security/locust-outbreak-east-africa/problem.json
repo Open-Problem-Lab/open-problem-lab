@@ -1,0 +1,44 @@
+{
+  "id": "food-security/locust-outbreak-east-africa",
+  "title": "Desert Locust Outbreak Early Warning In East Africa",
+  "status": "scoped",
+  "domain": ["food-security", "climate-health"],
+  "region": ["east-africa"],
+  "summary": "Build a verified workflow for assessing where vegetation, soil moisture, and wind signals can improve desert locust outbreak early warning in East Africa at sub-national scale, without conflating a model alert with a control operation order.",
+  "why_it_matters": "Desert locust swarms can consume enough food in one day to feed millions of people. The 2019-2020 East Africa upsurge threatened food security for over 23 million people. FAO's Locust Watch already uses remote sensing, but verification of which signals are truly predictive at actionable lead times remains thin.",
+  "success_metrics": [
+    {
+      "metric": "Signal traceability",
+      "target": "Every outbreak signal candidate links to a dated evidence record with method and limitations.",
+      "validation_method": "Run schema validation and reviewer spot-checks against evidence.json and evidence.md."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No control operation recommendation is merged without review and replication.",
+      "validation_method": "Check task status, review records, and safety flags before accepting outputs.md."
+    },
+    {
+      "metric": "Lead-time usefulness",
+      "target": "Candidate signals report lead-time distributions with false-alarm rates at each lead.",
+      "validation_method": "Review back-test results and confirm lead-time degradation is documented."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review for operational claims, and replication for quantitative outputs."
+  }
+}

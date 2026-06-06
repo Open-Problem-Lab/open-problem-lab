@@ -1,0 +1,110 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "disaster-resilience/cyclone-early-warning-bangladesh",
+    "title": "Inventory cyclone data sources for Bay of Bengal",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating cyclone track data, storm surge models, population data, shelter data, and unusable sources.",
+    "inputs": [
+      "IBTrACS archive",
+      "JTWC best track data",
+      "BMD warning bulletins",
+      "population datasets",
+      "shelter databases"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "track-forecast-verification",
+    "problem_id": "disaster-resilience/cyclone-early-warning-bangladesh",
+    "title": "Verify cyclone track forecast accuracy by lead time",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A track forecast verification report with error distances, intensity errors, and landfall timing errors at 24, 48, and 72-hour lead times for all Bay of Bengal cyclones since 2010.",
+    "inputs": [
+      "IBTrACS best track data",
+      "operational forecast bulletins",
+      "Bay of Bengal storm list"
+    ],
+    "expected_artifact": "validation.md update with track error statistics by lead time.",
+    "validation_method": "Replicator reruns track error calculations against withheld cyclones and confirms error statistics within reported tolerance.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "high",
+    "done_condition": "Track errors include mean and 95th percentile distance errors and intensity errors at 24, 48, and 72 hours with replication confirmed."
+  },
+  {
+    "id": "storm-surge-verification",
+    "problem_id": "disaster-resilience/cyclone-early-warning-bangladesh",
+    "title": "Verify storm surge model accuracy at coastal district scale",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A storm surge model verification report comparing model predictions to tide gauge observations and post-event survey data for major cyclones.",
+    "inputs": [
+      "storm surge model outputs",
+      "tide gauge data",
+      "post-event surge surveys",
+      "GEBCO bathymetry"
+    ],
+    "expected_artifact": "validation.md update with surge error statistics by district.",
+    "validation_method": "Replicator reruns surge model validation against independent tide gauge records and confirms error bounds.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "high",
+    "done_condition": "Surge verification includes mean error, maximum error, and bias for each coastal district with replication confirmed."
+  },
+  {
+    "id": "false-alarm-profiling",
+    "problem_id": "disaster-resilience/cyclone-early-warning-bangladesh",
+    "title": "Profile false-alarm rates at evacuation-relevant lead times",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A false-alarm profile showing hit rate, false-alarm rate, and missed-event rate for candidate evacuation signal thresholds at 24, 48, and 72-hour lead times for each coastal district.",
+    "inputs": [
+      "track verification results",
+      "surge verification results",
+      "population exposure data",
+      "district boundaries"
+    ],
+    "expected_artifact": "outputs.md update with false-alarm profile table.",
+    "validation_method": "Replicator reruns false-alarm calculation on independent cyclone dataset and confirms rates within reported tolerance.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "high",
+    "done_condition": "Every candidate signal includes a false-alarm rate, hit rate, and missed-event rate at each lead time with replication confirmed."
+  },
+  {
+    "id": "red-team-false-confidence",
+    "problem_id": "disaster-resilience/cyclone-early-warning-bangladesh",
+    "title": "Red-team false-confidence evacuation signals",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying how false-alarm profiles could be misinterpreted, how evacuation thresholds could fail, and who would be harmed by false confidence.",
+    "inputs": ["false-alarm profile", "track and surge verification", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk failure mode has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every evacuation signal claim is either blocked, softened to verification language, or gated behind field-reality review and replicated red-team review."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "disaster-resilience/cyclone-early-warning-bangladesh",
+    "title": "Check whether verification outputs match CPP decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether track and surge verification outputs would change any real CPP warning decision responsibly.",
+    "inputs": [
+      "draft outputs",
+      "CPP operational protocols",
+      "warning dissemination constraints"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk for the output, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The output has a named user, named decision, explicit non-use cases, and replicated field-reality review before publication."
+  }
+]

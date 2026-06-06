@@ -1,0 +1,56 @@
+[
+  {
+    "id": "who-household-air-pollution-2024",
+    "problem_id": "energy-access/clean-cooking-sub-saharan-africa",
+    "claim": "WHO reports that household air pollution from solid fuel cooking causes 3.2 million premature deaths annually, making it the second-largest environmental health risk after ambient air pollution, with Sub-Saharan Africa carrying the highest per-capita burden.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Household air pollution - WHO fact sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/household-air-pollution-and-health"
+    },
+    "source_date": "2024-10-16",
+    "access_date": "2026-06-06",
+    "method": "Reviewed WHO fact sheet for disease burden, exposure pathways, fuel types, and intervention strategies.",
+    "limitations": [
+      "Global burden estimates are modeled, not directly measured at household level.",
+      "Burden attribution shares pathways with ambient air pollution."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "iea-africa-energy-outlook-2022",
+    "problem_id": "energy-access/clean-cooking-sub-saharan-africa",
+    "claim": "IEA Africa Energy Outlook documents that over 900 million people in Sub-Saharan Africa lack clean cooking access, the number is growing due to population outpacing adoption, and achieving universal access by 2030 requires unprecedented investment in LPG, electricity, and improved biomass stoves.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Africa Energy Outlook 2022",
+      "url": "https://www.iea.org/reports/africa-energy-outlook-2022"
+    },
+    "source_date": "2022-06-20",
+    "access_date": "2026-06-06",
+    "method": "Reviewed IEA Africa Energy Outlook chapters on clean cooking access, investment requirements, and technology pathways.",
+    "limitations": [
+      "IEA projections assume policy environments that may not materialize.",
+      "Access estimates rely on household survey data of variable quality."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "shupler-lancet-planet-health-2021",
+    "problem_id": "energy-access/clean-cooking-sub-saharan-africa",
+    "claim": "A 2021 Lancet Planetary Health modeling study estimated that transitioning 50 percent of solid fuel users in Sub-Saharan Africa to clean fuels could avert over 400,000 premature deaths annually, but identified cost, infrastructure, and sustained adoption as major barriers.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Health and climate benefits of clean cooking transitions in Sub-Saharan Africa",
+      "url": "https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(21)00003-2/fulltext"
+    },
+    "source_date": "2021-02-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed abstract, modeling methodology, health impact estimation, and barrier analysis.",
+    "limitations": [
+      "Modeling study assumes full and sustained fuel switching, not observed adoption patterns.",
+      "Sub-national heterogeneity in fuel stacking and exposure is partially smoothed."
+    ],
+    "confidence": "medium"
+  }
+]

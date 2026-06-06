@@ -1,0 +1,44 @@
+{
+  "id": "climate-adaptation/sea-level-rise-small-islands",
+  "title": "Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States",
+  "status": "scoped",
+  "domain": ["climate-adaptation", "disaster-resilience"],
+  "region": ["small-island-developing-states"],
+  "summary": "Build a verified workflow for assessing where sea-level rise, coastal erosion, and storm-surge compound to create the highest exposure in Small Island Developing States, supporting adaptation prioritization without overstating the precision of local SLR projections.",
+  "why_it_matters": "Small Island Developing States contribute less than 1 percent of global greenhouse emissions but face existential threats from sea-level rise. Many SIDS have maximum elevations under 5 meters, populations concentrated on coastlines, and economies dependent on climate-vulnerable tourism and fisheries. Projecting SLR at island scale is hard enough; deciding which adaptation investments to prioritize with uncertain projections is harder and more consequential.",
+  "success_metrics": [
+    {
+      "metric": "Projection traceability",
+      "target": "Every SLR projection used links to a dated evidence record with model, scenario, and local downscaling method documented.",
+      "validation_method": "Run schema validation and reviewer spot-checks against evidence.json and evidence.md."
+    },
+    {
+      "metric": "Exposure mapping confidence",
+      "target": "Coastal exposure maps include uncertainty ranges for SLR, subsidence, and storm-surge components.",
+      "validation_method": "Reviewer confirms that each exposure map layer includes documented uncertainty bounds."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No adaptation investment or relocation recommendation is merged without review and replication.",
+      "validation_method": "Check task status, review records, and safety flags."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 3,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review for adaptation claims, replication for all quantitative SLR and exposure analyses, and field-reality review before any adaptation prioritization."
+  }
+}

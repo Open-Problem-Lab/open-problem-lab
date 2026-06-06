@@ -22,7 +22,7 @@ const requiredProblemFiles = [
 ];
 
 const issueTemplateFields = ["Outcome", "Why this matters", "Done condition"];
-const requiredLabels = [
+const STATIC_LABELS = [
   "type:problem",
   "type:task",
   "type:evidence",
@@ -40,11 +40,27 @@ const requiredLabels = [
   "status:field-tested",
   "risk:low",
   "risk:medium",
-  "risk:high",
-  "domain:climate-health",
-  "domain:public-health",
-  "region:vietnam"
+  "risk:high"
 ];
+
+const discoverDynamicLabels = async () => {
+  const labels = [];
+  const problemRoot = path.join(root, "problem-packs");
+  const problemJsonFiles = await walkFiles(
+    problemRoot,
+    (file) => path.basename(file) === "problem.json"
+  );
+  for (const file of problemJsonFiles) {
+    const problem = JSON.parse(await fs.readFile(file, "utf8"));
+    for (const domain of problem.domain) {
+      labels.push(`domain:${domain}`);
+    }
+    for (const region of problem.region) {
+      labels.push(`region:${region}`);
+    }
+  }
+  return labels;
+};
 
 const loadSchema = async (name) => readJson(`schemas/${name}.schema.json`);
 
@@ -167,6 +183,8 @@ const validateIssueTemplates = async () => {
 };
 
 const validateLabels = async () => {
+  const dynamicLabels = await discoverDynamicLabels();
+  const requiredLabels = [...STATIC_LABELS, ...dynamicLabels];
   const labelsPath = path.join(root, ".github", "labels.yml");
   const content = await fs.readFile(labelsPath, "utf8");
   const labelNames = new Set(

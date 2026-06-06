@@ -1,0 +1,56 @@
+[
+  {
+    "id": "unicef-who-wb-stunting-2023",
+    "problem_id": "public-health/stunting-sub-saharan-africa",
+    "claim": "UNICEF, WHO, and World Bank joint estimates report 149 million stunted children under five globally, with 40 percent in Sub-Saharan Africa where absolute numbers are rising, and stunting rates exceeding 50 percent in several countries.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Levels and Trends in Child Malnutrition - JME 2023",
+      "url": "https://www.who.int/publications/i/item/9789240073791"
+    },
+    "source_date": "2023-03-31",
+    "access_date": "2026-06-06",
+    "method": "Reviewed JME report methodology, country estimates, and regional trends.",
+    "limitations": [
+      "JME estimates are modeled at national and regional levels and may smooth sub-national variation.",
+      "Estimates depend on available survey data which is irregular."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bhutta-lancet-nutrition-2021",
+    "problem_id": "public-health/stunting-sub-saharan-africa",
+    "claim": "A 2021 Lancet series estimated that scaling ten evidence-based nutrition interventions to 90 percent coverage could reduce stunting by 20 percent, with the largest impacts from maternal nutrition, breastfeeding promotion, and complementary feeding.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Evidence-based interventions for improvement of maternal and child nutrition: what can be done and at what cost?",
+      "url": "https://www.thelancet.com/series/maternal-and-child-nutrition"
+    },
+    "source_date": "2021-06-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed Lancet series intervention packages, effect sizes, and coverage estimates.",
+    "limitations": [
+      "Intervention coverage scaling is modeled, not observed.",
+      "Effect sizes are global averages and may not apply equally in all contexts."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "osgood-zimmerman-stunting-mapping-2018",
+    "problem_id": "public-health/stunting-sub-saharan-africa",
+    "claim": "A 2018 Nature study mapped child stunting at 5km resolution across Africa using geostatistical methods and DHS data, finding substantial sub-national variation within countries and identifying hotspots not visible from national averages.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Mapping child growth failure in Africa between 2000 and 2015",
+      "url": "https://www.nature.com/articles/nature25760"
+    },
+    "source_date": "2018-02-28",
+    "access_date": "2026-06-06",
+    "method": "Reviewed mapping methodology, spatial resolution, uncertainty quantification, and hotspot identification.",
+    "limitations": [
+      "Estimates are modeled from survey data and may not reflect recent changes.",
+      "5km resolution is interpolated, not directly measured."
+    ],
+    "confidence": "medium"
+  }
+]

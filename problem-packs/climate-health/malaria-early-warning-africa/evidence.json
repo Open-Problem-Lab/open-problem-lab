@@ -1,0 +1,56 @@
+[
+  {
+    "id": "who-malaria-fact-sheet-2024",
+    "problem_id": "climate-health/malaria-early-warning-africa",
+    "claim": "WHO reports 608,000 malaria deaths in 2022, 95 percent in Sub-Saharan Africa, with 76 percent among children under five, and identifies vector control, chemoprevention, and early diagnosis as core interventions.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO malaria fact sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/malaria"
+    },
+    "source_date": "2024-12-11",
+    "access_date": "2026-06-06",
+    "method": "Reviewed WHO fact sheet for global burden, transmission, control strategies, and climate context statements.",
+    "limitations": [
+      "Global fact sheet, not a sub-national dataset.",
+      "Burden figures are modeled estimates, not direct counts."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-world-malaria-report-2024",
+    "problem_id": "climate-health/malaria-early-warning-africa",
+    "claim": "WHO World Malaria Report 2024 documents that climate change and extreme weather events are increasing malaria risk through changing transmission dynamics, with particular concern for seasonal forecasting reliability.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "World Malaria Report 2024",
+      "url": "https://www.who.int/teams/global-malaria-programme/reports/world-malaria-report-2024"
+    },
+    "source_date": "2024-12-11",
+    "access_date": "2026-06-06",
+    "method": "Reviewed WHO World Malaria Report executive summary and climate-relevant sections.",
+    "limitations": [
+      "Report-level analysis, not district-level operational data.",
+      "Climate statements are directional, not quantitative thresholds."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "lowbridge-malaria-ews-systematic-review-2021",
+    "problem_id": "climate-health/malaria-early-warning-africa",
+    "claim": "A 2021 systematic review of climate-informed malaria early warning systems found moderate skill at seasonal lead times using rainfall and temperature predictors, but high false-positive rates at sub-national scales and limited operational deployment evidence.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Climate-informed early warning systems for malaria: a systematic review",
+      "url": "https://malariajournal.biomedcentral.com/articles/10.1186/s12936-021-04001-x"
+    },
+    "source_date": "2021-12-20",
+    "access_date": "2026-06-06",
+    "method": "Reviewed abstract, methods, systematic search strategy, and results of the Malaria Journal article.",
+    "limitations": [
+      "Systematic review evidence still needs replication for specific countries.",
+      "Operational deployment evidence remains thin across the studies reviewed."
+    ],
+    "confidence": "high"
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "education/girls-education-sub-saharan-africa",
+    "title": "Inventory girls education data sources",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "Dated source inventory.",
+    "inputs": [
+      "DHS data",
+      "MICS data",
+      "UNESCO UIS",
+      "school location data",
+      "barrier studies"
+    ],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Five sources classified."
+  },
+  {
+    "id": "enrollment-retention-gap",
+    "problem_id": "education/girls-education-sub-saharan-africa",
+    "title": "Analyze enrollment and retention gaps at sub-national scale",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "Sub-national gap analysis by gender, age, and wealth quintile.",
+    "inputs": ["DHS/MICS datasets", "education indicators", "analysis methodology"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator reruns with alternative survey subsets.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Gap analysis includes confidence intervals, survey-year documentation, and replication."
+  },
+  {
+    "id": "barrier-classification",
+    "problem_id": "education/girls-education-sub-saharan-africa",
+    "title": "Classify barriers to girls secondary education",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Barrier classification by type, spatial extent, and evidence strength.",
+    "inputs": ["gap analysis", "DHS barrier indicators", "supplementary barrier studies"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms each barrier class has cited evidence.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Barrier classification includes evidence strength rating and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "education/girls-education-sub-saharan-africa",
+    "title": "Red-team misuse of education-gap data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["gap analysis", "barrier classification", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "education/girls-education-sub-saharan-africa",
+    "title": "Check whether outputs match education ministry decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "education ministry context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases, replicated review."
+  }
+]

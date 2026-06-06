@@ -1,0 +1,44 @@
+{
+  "id": "air-quality/pm25-monitoring-south-asia",
+  "title": "PM2.5 Monitoring Gaps And Health Impact In South Asia",
+  "status": "scoped",
+  "domain": ["air-quality", "public-health"],
+  "region": ["south-asia"],
+  "summary": "Build a verified workflow for identifying where PM2.5 monitoring gaps produce the largest health-burden uncertainty in South Asia, and where low-cost sensor networks or satellite-derived estimates could fill the highest-priority gaps.",
+  "why_it_matters": "South Asia has the world's highest ambient PM2.5 concentrations, with annual averages in Delhi, Dhaka, and Lahore frequently exceeding WHO guidelines by 10-20 times. Ambient air pollution causes an estimated 2 million premature deaths annually in the region. But ground-level monitoring is sparse — India has roughly 300 continuous monitoring stations for 1.4 billion people. Where the monitors aren't is often where the worst exposure occurs.",
+  "success_metrics": [
+    {
+      "metric": "Gap traceability",
+      "target": "Every monitoring gap identified is linked to a dated evidence record comparing ground monitors, satellite estimates, and population density.",
+      "validation_method": "Run schema validation and reviewer spot-checks against evidence.json and evidence.md."
+    },
+    {
+      "metric": "Priority ranking transparency",
+      "target": "Gap prioritization methodology is explicit including weights for population, baseline concentration, and data uncertainty.",
+      "validation_method": "Reviewer can reproduce gap ranking with documented weights and inputs."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No sensor deployment or regulatory recommendation is merged without review and replication.",
+      "validation_method": "Check task status, review records, and safety flags."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review for regulatory claims, and replication for quantitative monitoring gap analyses."
+  }
+}

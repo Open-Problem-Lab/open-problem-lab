@@ -1,0 +1,44 @@
+{
+  "id": "water-security/groundwater-depletion-india",
+  "title": "Groundwater Depletion Risk Assessment In India",
+  "status": "scoped",
+  "domain": ["water-security", "food-security"],
+  "region": ["india"],
+  "summary": "Build a verified workflow for assessing where satellite gravimetry, well records, and agricultural demand data signal accelerating groundwater depletion in India at aquifer and district scale.",
+  "why_it_matters": "India extracts more groundwater than any other country, supporting over 60 percent of irrigated agriculture and drinking water for 600 million people. GRACE satellite data shows northern basins losing groundwater mass equivalent to major lakes each year. Verified depletion risk signals could guide conservation before irreversible aquifer collapse.",
+  "success_metrics": [
+    {
+      "metric": "Data integration traceability",
+      "target": "Every depletion signal links satellite, well, and demand data with dated evidence records.",
+      "validation_method": "Run schema validation and reviewer spot-checks against evidence.json and evidence.md."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No water allocation or restriction recommendation is merged without review and replication.",
+      "validation_method": "Check task status, review records, and safety flags before accepting outputs.md."
+    },
+    {
+      "metric": "Aquifer-level usefulness",
+      "target": "Candidate analyses preserve aquifer-level or district grain wherever source data permits.",
+      "validation_method": "Review reproducibility steps and confirm spatial aggregation choices in pull requests."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review for operational claims, and replication for quantitative outputs."
+  }
+}

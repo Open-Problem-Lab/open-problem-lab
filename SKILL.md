@@ -4,12 +4,13 @@ Use this skill when working inside the Open Problem Lab repository. It complemen
 
 ## Start Here
 
-1. Read `README.md`.
-2. Read `GOVERNANCE.md`.
-3. Read `SAFETY.md`.
-4. Read the role guide in `agents/` that matches your task.
-5. Read the relevant directory under `problem-packs/`.
-6. Inspect `schemas/` before changing any machine-readable artifact.
+1. Read `README.md` — mission, 21 problem packs, operating model.
+2. Read `VISION.md` — why verification is the scarce resource.
+3. Read `GOVERNANCE.md` — decision rights, acceptance gates.
+4. Read `SAFETY.md` — risk levels, prohibited shortcuts, burden of proof.
+5. Read the role guide in `agents/` that matches your task.
+6. Read the relevant directory under `problem-packs/`.
+7. Inspect `schemas/` before changing any machine-readable artifact.
 
 If any of those is unread, the rest of this skill does not apply yet.
 

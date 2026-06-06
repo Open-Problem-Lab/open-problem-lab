@@ -1,0 +1,38 @@
+[
+  {
+    "id": "iea-sdg7-tracking-2024",
+    "problem_id": "energy-access/mini-grid-rural-sub-saharan-africa",
+    "claim": "IEA SDG7 Tracking reports over 600 million people in Sub-Saharan Africa lack electricity access, rural electrification rates below 30 percent, and mini-grids identified as least-cost solution for over 40 percent of new connections needed by 2030.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Tracking SDG7: The Energy Progress Report 2024",
+      "url": "https://trackingsdg7.esmap.org/"
+    },
+    "source_date": "2024-05-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed SDG7 report chapters on electricity access, mini-grid projections, and investment needs.",
+    "limitations": [
+      "Access data is modeled from surveys of variable quality.",
+      "Least-cost classification depends on demand assumptions."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "world-bank-mini-grid-cost-trends-2023",
+    "problem_id": "energy-access/mini-grid-rural-sub-saharan-africa",
+    "claim": "Solar PV costs have fallen 90 percent since 2010, solar-hybrid mini-grid levelized cost of electricity is below diesel for most rural communities, and mini-grid installed costs are projected to fall further with scale.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Mini Grids for Half a Billion People",
+      "url": "https://www.worldbank.org/en/topic/energy/publication/mini-grids-for-half-a-billion-people"
+    },
+    "source_date": "2023-06-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed World Bank report on mini-grid costs, deployment projections, and policy recommendations.",
+    "limitations": [
+      "Cost projections assume supportive regulatory environments.",
+      "Actual costs vary substantially by country and site conditions."
+    ],
+    "confidence": "high"
+  }
+]

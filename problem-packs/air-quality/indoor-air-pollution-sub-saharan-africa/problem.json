@@ -1,0 +1,39 @@
+{
+  "id": "air-quality/indoor-air-pollution-sub-saharan-africa",
+  "title": "Indoor Air Pollution Exposure From Solid Fuel Cooking In Sub-Saharan Africa",
+  "status": "scoped",
+  "domain": ["air-quality", "public-health"],
+  "region": ["sub-saharan-africa"],
+  "summary": "Build a verified workflow for estimating household-level indoor PM2.5 exposure from solid fuel cooking in Sub-Saharan Africa, linking fuel-type surveys, kitchen-ventilation data, and modeled exposure at sub-national scale.",
+  "why_it_matters": "Indoor air pollution from solid fuel cooking causes 700,000 premature deaths annually in Sub-Saharan Africa, more than malaria. Women and children under five have the highest exposure. But exposure estimates rely on fuel-type surveys that don't capture ventilation, cooking duration, or fuel stacking. Connecting survey data to actual exposure levels at sub-national scale would enable better targeting of clean-cooking interventions.",
+  "success_metrics": [
+    {
+      "metric": "Exposure traceability",
+      "target": "Every exposure estimate links fuel-type, ventilation, and duration data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No clean-cooking intervention recommendation without review and replication.",
+      "validation_method": "Check task status and review records."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

@@ -1,0 +1,108 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/stunting-sub-saharan-africa",
+    "title": "Inventory stunting and nutrition data sources",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating household surveys, modeled estimates, and unusable sources.",
+    "inputs": [
+      "DHS data",
+      "MICS data",
+      "JME estimates",
+      "published stunting maps",
+      "intervention coverage data"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records.",
+    "validation_method": "Reviewer checks sources for URL, date, methodology, grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five sources classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "stunting-rate-estimation",
+    "problem_id": "public-health/stunting-sub-saharan-africa",
+    "title": "Estimate sub-national stunting rates with multi-round comparison",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "Sub-national stunting rate estimates from at least two DHS or MICS rounds with comparability documentation.",
+    "inputs": [
+      "DHS/MICS survey datasets",
+      "WHO growth standards",
+      "comparison methodology"
+    ],
+    "expected_artifact": "validation.md update with estimation methodology.",
+    "validation_method": "Replicator reruns estimation on independent data subsets and confirms rates within reported confidence intervals.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Estimates include confidence intervals, survey-round comparability notes, and replication confirmed."
+  },
+  {
+    "id": "persistent-hotspot-classification",
+    "problem_id": "public-health/stunting-sub-saharan-africa",
+    "title": "Classify persistent stunting hotspots from multi-round analysis",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Classification of districts as persistent-hotspot, improving, worsening, or data-insufficient for stunting.",
+    "inputs": [
+      "multi-round stunting estimates",
+      "statistical methodology",
+      "data-quality tiering"
+    ],
+    "expected_artifact": "outputs.md update with hotspot classification map.",
+    "validation_method": "Replicator reruns classification with alternative thresholds and confirms hotspot persistence.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Classification requires at least two survey rounds and identifies data-insufficient districts."
+  },
+  {
+    "id": "intervention-coverage-gap",
+    "problem_id": "public-health/stunting-sub-saharan-africa",
+    "title": "Analyze nutrition intervention coverage gaps in stunting hotspots",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A gap analysis comparing intervention coverage in hotspot and non-hotspot districts.",
+    "inputs": [
+      "hotspot classification",
+      "DHS intervention coverage data",
+      "health facility data"
+    ],
+    "expected_artifact": "outputs.md update with coverage gap analysis.",
+    "validation_method": "Replicator reruns gap analysis with alternative coverage definitions.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Coverage gap analysis includes intervention-specific coverage rates and explicit non-causal caveats."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/stunting-sub-saharan-africa",
+    "title": "Red-team misuse of stunting data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review identifying stigmatization and misallocation risks.",
+    "inputs": ["hotspot classification", "coverage gap analysis", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms mitigations or blocks publication, then replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every claim is qualified or gated behind replication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/stunting-sub-saharan-africa",
+    "title": "Check whether outputs match nutrition program decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review of whether hotspot maps would change nutrition programming responsibly.",
+    "inputs": [
+      "draft outputs",
+      "nutrition program context",
+      "community engagement constraints"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies decision, user, timing, and misuse risk, then replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Output has named user, named decision, non-use cases, and replicated field-reality review."
+  }
+]

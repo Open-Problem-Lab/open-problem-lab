@@ -1,0 +1,44 @@
+{
+  "id": "water-security/glacial-melt-hindu-kush",
+  "title": "Glacial Melt Water Security Risk In The Hindu Kush Himalaya",
+  "status": "scoped",
+  "domain": ["water-security", "climate-adaptation"],
+  "region": ["hindu-kush-himalaya"],
+  "summary": "Build a verified workflow for assessing where glacial melt, snowpack decline, and precipitation change create the highest water-security risk in the Hindu Kush Himalaya river basins that supply 2 billion people downstream.",
+  "why_it_matters": "The Hindu Kush Himalaya holds the largest ice mass outside the poles and feeds ten major river systems including the Ganges, Indus, Brahmaputra, Mekong, and Yangtze. Glacial melt contributes 30-60 percent of dry-season flow in several basins. Accelerated melt threatens first floods, then water scarcity for 2 billion people downstream. Basin-scale climate projections exist but river-basin-scale water security risk analysis with honest uncertainty is underdeveloped.",
+  "success_metrics": [
+    {
+      "metric": "Projection traceability",
+      "target": "Every melt projection links to dated evidence with model ensemble and scenario.",
+      "validation_method": "Schema validation and reviewer spot-checks."
+    },
+    {
+      "metric": "Basin-scale utility",
+      "target": "Risk analysis preserves river-basin grain with upstream-downstream gradients.",
+      "validation_method": "Review basin-level aggregation choices."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No water-allocation recommendation is merged without review and replication.",
+      "validation_method": "Check task status and review records."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication for quantitative analyses."
+  }
+}

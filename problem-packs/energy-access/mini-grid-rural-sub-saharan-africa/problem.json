@@ -1,0 +1,44 @@
+{
+  "id": "energy-access/mini-grid-rural-sub-saharan-africa",
+  "title": "Mini-Grid Rural Electrification Viability In Sub-Saharan Africa",
+  "status": "scoped",
+  "domain": ["energy-access"],
+  "region": ["sub-saharan-africa"],
+  "summary": "Build a verified workflow for identifying where solar-hybrid mini-grids are technically and economically viable for rural electrification, linking settlement data, solar resource, demand estimates, and cost data at sub-national scale.",
+  "why_it_matters": "Over 600 million people in Sub-Saharan Africa lack electricity access. Grid extension to remote rural areas is often uneconomic. Solar-hybrid mini-grids are the most viable solution for many communities, but site selection requires combining settlement location, solar resource, demand estimation, and cost modeling — a stacking of uncertainties that can produce dangerously wrong investment decisions.",
+  "success_metrics": [
+    {
+      "metric": "Site-selection traceability",
+      "target": "Every viability factor links to dated evidence with methodology documented.",
+      "validation_method": "Schema validation and reviewer checks."
+    },
+    {
+      "metric": "Uncertainty communication",
+      "target": "Viability maps include explicit uncertainty from each input layer.",
+      "validation_method": "Reviewer confirms uncertainty documentation."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No mini-grid investment recommendation merged without review and replication.",
+      "validation_method": "Check task status and review records."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

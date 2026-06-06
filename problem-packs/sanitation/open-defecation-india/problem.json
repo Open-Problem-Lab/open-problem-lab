@@ -1,0 +1,44 @@
+{
+  "id": "sanitation/open-defecation-india",
+  "title": "Open Defecation Elimination And Sanitation Coverage Verification In India",
+  "status": "scoped",
+  "domain": ["sanitation", "public-health"],
+  "region": ["india"],
+  "summary": "Build a verified workflow for assessing where sanitation coverage data, open-defecation surveys, and health outcome data conflict or align at district scale in India, supporting honest measurement of Swachh Bharat Mission outcomes.",
+  "why_it_matters": "India's Swachh Bharat Mission declared the country open-defecation-free in 2019 after constructing over 100 million toilets. Independent surveys found persistent open defecation in many districts. The gap between administrative claims and measured reality has direct public-health consequences — unsafe sanitation causes an estimated 200,000 diarrheal deaths annually in India. Verifying where toilets exist, are used, and improve health is essential for honest targeting of the remaining sanitation gap.",
+  "success_metrics": [
+    {
+      "metric": "Data triangulation",
+      "target": "Every district sanitation claim is cross-referenced across administrative, survey, and health data sources.",
+      "validation_method": "Run schema validation and reviewer spot-checks against evidence.json and evidence.md."
+    },
+    {
+      "metric": "Health outcome linkage",
+      "target": "Sanitation coverage estimates are linked to child health outcomes where district-level data permits.",
+      "validation_method": "Reviewer verifies health data sources and statistical methodology."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No sanitation program recommendation is merged without review and replication.",
+      "validation_method": "Check task status, review records, and safety flags."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review for health claims, and replication for quantitative analyses."
+  }
+}

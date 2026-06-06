@@ -1,0 +1,39 @@
+{
+  "id": "education/girls-education-sub-saharan-africa",
+  "title": "Girls Secondary Education Enrollment And Retention Barriers In Sub-Saharan Africa",
+  "status": "scoped",
+  "domain": ["education"],
+  "region": ["sub-saharan-africa"],
+  "summary": "Build a verified workflow for identifying where secondary school enrollment and retention gaps for adolescent girls are largest in Sub-Saharan Africa, linking household survey data, school-access data, and barrier typology at sub-national scale.",
+  "why_it_matters": "Sub-Saharan Africa has the highest gender gap in secondary education globally. Only 43 percent of girls complete lower secondary school versus 50 percent of boys, with completion rates below 20 percent in several countries. Barriers include school fees, early marriage, pregnancy, distance to school, menstrual health management, and safety concerns. Verified enumeration of where gaps are largest and which barriers matter most is essential for intervention targeting.",
+  "success_metrics": [
+    {
+      "metric": "Barrier traceability",
+      "target": "Every barrier classification links to dated survey or study evidence.",
+      "validation_method": "Schema validation and reviewer checks."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No education policy recommendation merged without review and replication.",
+      "validation_method": "Check task status and review records."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

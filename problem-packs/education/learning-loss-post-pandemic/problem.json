@@ -1,0 +1,44 @@
+{
+  "id": "education/learning-loss-post-pandemic",
+  "title": "Post-Pandemic Learning Loss Measurement And Recovery Tracking In Low-Income Countries",
+  "status": "scoped",
+  "domain": ["education"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring and tracking post-pandemic learning loss in low-income countries where standardized assessment data is sparse, without overstating the precision of reconstructed learning estimates.",
+  "why_it_matters": "COVID-19 school closures affected 1.6 billion learners globally. The World Bank estimates that learning poverty — the share of children unable to read a simple text by age 10 — may have risen from 57 to 70 percent in low- and middle-income countries. But in the countries where the crisis was likely worst, systematic learning assessment data is most scarce. Reconstructing what was lost from fragmented data is essential for targeting recovery resources.",
+  "success_metrics": [
+    {
+      "metric": "Data transparency",
+      "target": "Every learning loss estimate includes source assessment type, sample size, date, and uncertainty bounds.",
+      "validation_method": "Run schema validation and reviewer spot-checks against evidence.json and evidence.md."
+    },
+    {
+      "metric": "Recovery signal identification",
+      "target": "Identified recovery trends are traceable to at least two independent data points.",
+      "validation_method": "Reviewer verifies multi-source triangulation for each recovery claim."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No education budget or curriculum recommendation is merged without review and replication.",
+      "validation_method": "Check task status, review records, and safety flags."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review for policy claims, and replication for quantitative learning loss estimates."
+  }
+}

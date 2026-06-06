@@ -1,0 +1,118 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "climate-adaptation/sea-level-rise-small-islands",
+    "title": "Inventory SLR projection and coastal exposure data sources for SIDS",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating SLR projections, elevation data, population data, storm-surge models, and unusable sources.",
+    "inputs": [
+      "IPCC AR6 SLR data",
+      "satellite altimetry",
+      "coastal elevation DEMs",
+      "tide-gauge data",
+      "population datasets",
+      "storm-surge model outputs"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, vertical accuracy, scenario coverage, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "island-coastal-exposure-mapping",
+    "problem_id": "climate-adaptation/sea-level-rise-small-islands",
+    "title": "Map coastal exposure under multiple SLR scenarios for at least two SIDS",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A reproducible island-scale coastal exposure map showing population and infrastructure within inundation zones under SSP2-4.5 and SSP5-8.5 scenarios for 2050 and 2100 timeframes.",
+    "inputs": [
+      "IPCC SLR projections",
+      "coastal elevation data",
+      "population data",
+      "infrastructure data",
+      "tide and storm-surge data"
+    ],
+    "expected_artifact": "validation.md update with exposure mapping specification.",
+    "validation_method": "Replicator reruns exposure mapping with alternative DEM and confirms inundation area and population estimates within reported uncertainty.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "high",
+    "done_condition": "Exposure maps include multiple SLR scenarios, vertical-accuracy uncertainty bounds, and explicit population-at-risk error ranges with replication confirmed."
+  },
+  {
+    "id": "compound-risk-analysis",
+    "problem_id": "climate-adaptation/sea-level-rise-small-islands",
+    "title": "Analyze compound risk from SLR, storm surge, and coastal erosion",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A compound-risk analysis combining SLR inundation, storm-surge return-period shifts, and coastal erosion trends to identify highest-risk coastal zones.",
+    "inputs": [
+      "coastal exposure maps",
+      "extreme sea-level return periods",
+      "coastal erosion data",
+      "coral-reef and mangrove degradation data"
+    ],
+    "expected_artifact": "outputs.md update with compound-risk analysis methodology and results.",
+    "validation_method": "Replicator reruns compound-risk analysis with alternative extreme-value methods and confirms high-risk zone ranking robustness.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Compound-risk analysis includes SLR, storm surge, and erosion components with explicit interaction assumptions and replication confirmed."
+  },
+  {
+    "id": "adaptation-prioritization-framework",
+    "problem_id": "climate-adaptation/sea-level-rise-small-islands",
+    "title": "Develop adaptation prioritization framework for island-scale decisions",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A framework for ranking adaptation options under deep SLR uncertainty, explicitly handling projection uncertainty, fiscal constraints, and SIDS governance capacity.",
+    "inputs": [
+      "compound-risk analysis",
+      "adaptation options catalog",
+      "fiscal and governance data",
+      "decision-making under uncertainty methods"
+    ],
+    "expected_artifact": "outputs.md and playbooks.md update with adaptation framework.",
+    "validation_method": "Replicator confirms framework includes explicit uncertainty handling, is not presented as an investment recommendation, and avoids forced-relocation language.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Framework includes explicit deep-uncertainty methods, non-investment-recommendation caveats, and SIDS-specific governance constraints with replication confirmed."
+  },
+  {
+    "id": "red-team-maladaptation-review",
+    "problem_id": "climate-adaptation/sea-level-rise-small-islands",
+    "title": "Red-team maladaptation and over-precise projection risks",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying where over-precise SLR projections, exposure maps, or adaptation frameworks could cause maladaptation, forced relocation, or harmful policy.",
+    "inputs": [
+      "coastal exposure maps",
+      "compound-risk analysis",
+      "adaptation framework",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk failure mode has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every adaptation or exposure claim is either qualified with deep-uncertainty language, softened to analytic language, or gated behind replicated field-reality review."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "climate-adaptation/sea-level-rise-small-islands",
+    "title": "Check whether outputs match SIDS adaptation planning decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether coastal exposure and adaptation outputs would change any real adaptation planning decision responsibly.",
+    "inputs": [
+      "draft outputs",
+      "SIDS adaptation planning context",
+      "climate finance access constraints"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk for the output, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The output has a named user, named decision, explicit safeguards against forced-relocation interpretations, and replicated field-reality review before publication."
+  }
+]

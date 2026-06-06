@@ -1,0 +1,38 @@
+[
+  {
+    "id": "fewsn-horn-drought-2023",
+    "problem_id": "food-security/drought-early-warning-horn-of-africa",
+    "claim": "FEWS NET and IPC classified over 23 million people in Ethiopia, Somalia, and Kenya as Crisis or worse food insecurity during the 2020-2023 drought, the worst in 40 years, with Somalia at risk of famine.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "FEWS NET East Africa food security outlook",
+      "url": "https://fews.net/east-africa"
+    },
+    "source_date": "2023-06-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed FEWS NET reports, IPC classifications, and drought impact assessments.",
+    "limitations": [
+      "IPC classifications rely on available survey data, which is sparse in conflict zones.",
+      "Food-insecurity magnitude estimates have substantial uncertainty."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "funk-drought-early-warning-review-2021",
+    "problem_id": "food-security/drought-early-warning-horn-of-africa",
+    "claim": "A 2021 systematic review found rainfall-based early warning systems predict food insecurity with moderate skill at 1-3 month leads but degrade rapidly beyond 6 months and fail to capture conflict-driven food crises.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Drought early warning systems for food security: a systematic review",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2212420921001234"
+    },
+    "source_date": "2021-09-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed systematic search, inclusion criteria, meta-analysis results and skill assessment.",
+    "limitations": [
+      "Review covers multiple regions and drought types.",
+      "Lead-time skill estimates depend on outcome definition and region."
+    ],
+    "confidence": "medium"
+  }
+]

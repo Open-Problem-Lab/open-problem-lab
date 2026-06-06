@@ -1,0 +1,44 @@
+{
+  "id": "disaster-resilience/cyclone-early-warning-bangladesh",
+  "title": "Cyclone Early Warning And Evacuation Signal Verification In Bangladesh",
+  "status": "scoped",
+  "domain": ["disaster-resilience", "climate-health"],
+  "region": ["bangladesh"],
+  "summary": "Build a verified workflow for assessing where cyclone track forecasts, storm surge models, and population exposure data can improve evacuation decision timing in coastal Bangladesh without encouraging false-confidence evacuation orders.",
+  "why_it_matters": "Bangladesh reduced cyclone mortality from hundreds of thousands to dozens through its Cyclone Preparedness Programme, early warning systems, and cyclone shelters. But the gap between a forecast track and a verified evacuation signal remains — false alarms erode trust, and late warnings leave people in the storm path. Verifying which signals are trustworthy at which lead times can strengthen a proven life-saving system.",
+  "success_metrics": [
+    {
+      "metric": "Signal traceability",
+      "target": "Every evacuation signal candidate links to a dated evidence record with method and limitations.",
+      "validation_method": "Run schema validation and reviewer spot-checks against evidence.json and evidence.md."
+    },
+    {
+      "metric": "False-alarm transparency",
+      "target": "Every signal candidate includes false-alarm rate by lead time as a primary metric.",
+      "validation_method": "Review back-test results and confirm false-alarm documentation."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No evacuation trigger threshold is merged without domain review, replication, and field-reality review.",
+      "validation_method": "Check task status, review records, and field-reality review sign-off."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 3,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication for all quantitative outputs, and field-reality review before any operational claim."
+  }
+}

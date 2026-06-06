@@ -1,0 +1,56 @@
+[
+  {
+    "id": "ipcc-ar6-heat-extremes-2021",
+    "problem_id": "climate-health/heat-stress-urban-south-asia",
+    "claim": "IPCC AR6 identifies South Asia as a global hotspot for extreme heat, with wet-bulb temperatures approaching 35°C in parts of the Indo-Gangetic Plain and coastal Pakistan during extreme events.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "IPCC AR6 WG1 Chapter 11: Weather and Climate Extreme Events",
+      "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-11/"
+    },
+    "source_date": "2021-08-09",
+    "access_date": "2026-06-06",
+    "method": "Reviewed extreme heat section, regional projections, and wet-bulb temperature analysis.",
+    "limitations": [
+      "Global climate model resolution may not fully capture urban heat island effects.",
+      "Wet-bulb projections depend on humidity modeling with substantial uncertainty."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "mazdiyasni-india-heatwave-2017",
+    "problem_id": "climate-health/heat-stress-urban-south-asia",
+    "claim": "A 2017 Science Advances study found that the 2015 India-Pakistan heatwave was the fifth deadliest globally since 1900, with excess mortality concentrated in urban areas among outdoor workers and elderly.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Increasing probability of mortality during Indian heat waves",
+      "url": "https://www.science.org/doi/10.1126/sciadv.1700066"
+    },
+    "source_date": "2017-06-07",
+    "access_date": "2026-06-06",
+    "method": "Reviewed mortality analysis, heatwave attribution, and vulnerability factors.",
+    "limitations": [
+      "Mortality data is incomplete and may undercount heat-related deaths.",
+      "Causal attribution to heat versus underlying conditions is challenging."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "hess-ahmedabad-heat-action-plan-2018",
+    "problem_id": "climate-health/heat-stress-urban-south-asia",
+    "claim": "Ahmedabad's Heat Action Plan, the first in South Asia, is estimated to have averted over 1,000 deaths annually through early warning, cooling centers, and public communication, demonstrating that urban heat adaptation is feasible.",
+    "evidence_type": "field-report",
+    "source": {
+      "title": "Building Adaptation to Extreme Heat: Ahmedabad Heat Action Plan",
+      "url": "https://www.nrdc.org/resources/ahmedabad-heat-action-plan"
+    },
+    "source_date": "2018-04-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed plan components, mortality impact estimates, and scalability assessment.",
+    "limitations": [
+      "Mortality attribution is modeled, not directly observed.",
+      "Generalizability across cities with different governance contexts is uncertain."
+    ],
+    "confidence": "medium"
+  }
+]

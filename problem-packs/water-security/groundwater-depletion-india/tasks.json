@@ -1,0 +1,110 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "water-security/groundwater-depletion-india",
+    "title": "Inventory groundwater data sources for India",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory that separates satellite gravimetry, well records, agricultural statistics, and unusable sources.",
+    "inputs": [
+      "GRACE mission documentation",
+      "CGWB assessment reports",
+      "IndiaWRIS well monitoring data",
+      "agricultural census records"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "aquifer-baseline",
+    "problem_id": "water-security/groundwater-depletion-india",
+    "title": "Define aquifer-level groundwater baseline requirements",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A reproducible baseline specification for aquifer-level groundwater storage, recharge, extraction, and stage-of-development.",
+    "inputs": [
+      "CGWB assessment unit data",
+      "GRACE mascon data",
+      "aquifer boundary definitions",
+      "precipitation reanalysis"
+    ],
+    "expected_artifact": "validation.md update with baseline formula and data quality checks.",
+    "validation_method": "Replicator reruns the baseline on a sample aquifer and confirms grain, missingness, unit consistency, and boundary handling.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "A reviewer can reproduce the baseline calculation and identify every excluded assessment unit or time period."
+  },
+  {
+    "id": "depletion-signal-analysis",
+    "problem_id": "water-security/groundwater-depletion-india",
+    "title": "Analyze depletion trends at aquifer and district scale",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A ranked set of depletion trend estimates with uncertainty ranges, seasonality adjustments, and recharge-year anomaly context.",
+    "inputs": [
+      "GRACE TWS anomaly time series",
+      "CGWB extraction data",
+      "well-level validation data",
+      "precipitation data"
+    ],
+    "expected_artifact": "outputs.md and validation.md updates with depletion trend estimates.",
+    "validation_method": "Replicator reruns depletion trend on independent well data and confirms trends within reported uncertainty range.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "No depletion trend is accepted without uncertainty bounds, validation against well data, and replication status."
+  },
+  {
+    "id": "agricultural-demand-correlation",
+    "problem_id": "water-security/groundwater-depletion-india",
+    "title": "Correlate agricultural demand patterns with depletion signals",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "An analysis linking district cropping patterns, irrigated area, electricity use, and groundwater depletion trends.",
+    "inputs": [
+      "agricultural census data",
+      "cropping pattern maps",
+      "electricity subsidy data",
+      "depletion trend estimates"
+    ],
+    "expected_artifact": "outputs.md update with agricultural demand correlation analysis.",
+    "validation_method": "Replicator confirms that correlation includes documented confounding variables and spatial autocorrelation treatment.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Correlation analysis includes confounding variables, spatial autocorrelation treatment, and explicit non-causal caveats."
+  },
+  {
+    "id": "red-team-operational-use",
+    "problem_id": "water-security/groundwater-depletion-india",
+    "title": "Red-team harmful operational interpretations of depletion data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying how depletion trend maps, ranking tables, or forecasts could mislead water allocation, cropping policy, or electricity pricing.",
+    "inputs": ["candidate outputs", "depletion trend estimates", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk failure mode has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every operational claim is either blocked, softened to analytic language, or gated behind domain review and replicated red-team review."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "water-security/groundwater-depletion-india",
+    "title": "Check whether outputs match Indian water management decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether depletion signals would change any real groundwater management decision responsibly.",
+    "inputs": [
+      "draft output",
+      "water management institutional context",
+      "local irrigation and drinking water constraints"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk for the output, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The output has a named user, named decision, explicit non-use cases, and replicated field-reality review before publication."
+  }
+]

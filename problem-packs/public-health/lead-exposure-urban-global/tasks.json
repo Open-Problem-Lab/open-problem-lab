@@ -1,0 +1,105 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/lead-exposure-urban-global",
+    "title": "Inventory lead exposure data sources for LMIC cities",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating industrial data, satellite imagery, blood-lead studies, exposure pathway studies, and unusable sources.",
+    "inputs": [
+      "UNICEF lead reports",
+      "WHO lead data",
+      "blood-lead study databases",
+      "open spatial data catalogs",
+      "industrial facility registries"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "risk-factor-spatial-inventory",
+    "problem_id": "public-health/lead-exposure-urban-global",
+    "title": "Build spatial inventory of lead risk factors in candidate LMIC cities",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A reproducible spatial inventory of known lead risk factors at neighborhood scale for at least two candidate LMIC cities.",
+    "inputs": [
+      "OpenStreetMap industrial land use",
+      "informal sector documentation",
+      "published lead-source maps",
+      "satellite imagery"
+    ],
+    "expected_artifact": "datasets.md update with risk factor spatial inventory.",
+    "validation_method": "Replicator confirms risk factor classification methodology and verifies spatial inventory against published sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least two candidate cities have a documented spatial risk factor inventory with source and classification methodology."
+  },
+  {
+    "id": "neighborhood-risk-mapping",
+    "problem_id": "public-health/lead-exposure-urban-global",
+    "title": "Produce neighborhood-scale lead risk factor proximity map",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A reproducible neighborhood-scale risk map that combines proximity to known lead sources with population data, at block or neighborhood grain.",
+    "inputs": [
+      "risk factor spatial inventory",
+      "population density data",
+      "proximity analysis methodology"
+    ],
+    "expected_artifact": "outputs.md update with risk map specification, color scale, and limitation statement.",
+    "validation_method": "Validate risk map against available blood-lead measurements, report correlation and error characteristics, then replicate against independent blood-lead data.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Risk map includes validation against blood-lead data where available, explicit uncertainty communication, and non-stigmatization guardrails."
+  },
+  {
+    "id": "blood-lead-validation",
+    "problem_id": "public-health/lead-exposure-urban-global",
+    "title": "Validate risk map against available blood-lead measurements",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A validation report comparing neighborhood risk scores to published blood-lead measurements, with correlation, sensitivity, and specificity.",
+    "inputs": ["risk map output", "published blood-lead studies", "validation methodology"],
+    "expected_artifact": "validation.md update with validation results table.",
+    "validation_method": "Replicator reruns validation and confirms correlation and error characteristics within reported tolerance.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "high",
+    "done_condition": "Validation includes sensitivity, specificity, area under curve, and explicit statement of where blood-lead data was unavailable."
+  },
+  {
+    "id": "red-team-misuse-review",
+    "problem_id": "public-health/lead-exposure-urban-global",
+    "title": "Red-team harmful interpretations of lead risk maps",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying how risk maps could cause stigmatization, displacement, property devaluation, or discriminatory screening.",
+    "inputs": ["candidate risk map", "safety policy", "environmental justice literature"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk failure mode has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every risk map includes explicit non-stigmatization language, identifies communities that could be harmed, and blocks publication if harm cannot be mitigated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/lead-exposure-urban-global",
+    "title": "Check whether risk maps match public-health decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether the risk map would change any real public-health decision responsibly.",
+    "inputs": [
+      "draft risk map",
+      "public-health screening constraints",
+      "community engagement context"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk for the output, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The output has a named user, named decision, explicit non-use cases including community protection safeguards, and replicated field-reality review before publication."
+  }
+]

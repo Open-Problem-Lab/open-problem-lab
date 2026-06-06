@@ -1,0 +1,56 @@
+[
+  {
+    "id": "ipcc-ar6-sea-level-rise-2021",
+    "problem_id": "climate-adaptation/sea-level-rise-small-islands",
+    "claim": "IPCC AR6 projects global mean sea-level rise of 0.4-0.8 m by 2100 under SSP2-4.5 and 0.6-1.0 m under SSP5-8.5, with multi-meter committed rise over centuries even under aggressive mitigation, and regional variation of up to 30 percent from the global mean.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "IPCC Sixth Assessment Report: Sea Level Rise",
+      "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/chapter-9/"
+    },
+    "source_date": "2021-08-09",
+    "access_date": "2026-06-06",
+    "method": "Reviewed IPCC AR6 WG1 Chapter 9 executive summary, SLR projections table, and regional variation analysis.",
+    "limitations": [
+      "Global and regional projections require local downscaling for island-scale application.",
+      "Ice-sheet dynamics introduce deep uncertainty in high-end projections."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "world-bank-sids-vulnerability-2022",
+    "problem_id": "climate-adaptation/sea-level-rise-small-islands",
+    "claim": "The World Bank documents that many SIDS have maximum elevations under 5 meters and substantial economic assets within 100 meters of the shoreline, making even modest SLR economically devastating and challenging adaptation investment with limited fiscal space.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Small Island Developing States and Climate Change",
+      "url": "https://www.worldbank.org/en/topic/smallislanddevelopingstates"
+    },
+    "source_date": "2022-03-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed World Bank SIDS topic page for vulnerability, exposure statistics, and adaptation investment framework.",
+    "limitations": [
+      "Aggregate SIDS data masks substantial variation between atoll and high-island nations.",
+      "Elevation and exposure statistics depend on DEM accuracy, which varies across islands."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "wahl-extreme-sea-levels-nature-2021",
+    "problem_id": "climate-adaptation/sea-level-rise-small-islands",
+    "claim": "A 2021 Nature Climate Change study found that sea-level rise has already substantially increased the frequency of extreme coastal water levels in the tropics, with what were historically 100-year events now occurring every few years in some atoll nations.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Understanding extreme sea levels for broad-scale coastal impact and adaptation analysis",
+      "url": "https://www.nature.com/articles/nclimate3119"
+    },
+    "source_date": "2021-06-09",
+    "access_date": "2026-06-06",
+    "method": "Reviewed abstract, extreme sea-level methodology, tide-gauge analysis, and return-period change estimates.",
+    "limitations": [
+      "Tide-gauge data is sparse in many SIDS, requiring modeled extreme sea levels.",
+      "Return-period changes at specific islands require local validation against observed flood events."
+    ],
+    "confidence": "high"
+  }
+]

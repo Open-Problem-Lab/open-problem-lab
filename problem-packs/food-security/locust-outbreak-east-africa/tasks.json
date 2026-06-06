@@ -1,0 +1,105 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "title": "Inventory locust and environmental data sources for East Africa",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating vegetation indices, soil moisture, wind fields, field reports, and unusable sources.",
+    "inputs": [
+      "FAO Locust Watch platform",
+      "remote sensing data catalogs",
+      "field report archives",
+      "peer-reviewed locust studies"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "breeding-habitat-baseline",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "title": "Define breeding habitat suitability baseline for East Africa",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A reproducible baseline specification for desert locust breeding habitat suitability using vegetation, soil moisture, and rainfall data.",
+    "inputs": [
+      "MODIS NDVI data",
+      "CHIRPS rainfall data",
+      "SMAP soil moisture data",
+      "FAO reported breeding locations"
+    ],
+    "expected_artifact": "validation.md update with baseline specification and data checks.",
+    "validation_method": "Replicator reruns the baseline on a sample region and confirms grain, temporal resolution, and agreement with FAO reported breeding sites.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "A reviewer can reproduce the baseline calculation and identify false-positive and false-negative breeding habitat classifications against FAO field reports."
+  },
+  {
+    "id": "outbreak-signal-correlation",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "title": "Correlate environmental signals with outbreak timing and location",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A ranked list of candidate environmental signals with lead-time distributions and false-alarm profiles for swarm formation detection.",
+    "inputs": [
+      "breeding habitat baseline",
+      "wind field data",
+      "FAO swarm reports",
+      "temperature reanalysis"
+    ],
+    "expected_artifact": "outputs.md and validation.md updates with signal-lead-time matrix.",
+    "validation_method": "Back-test candidate signals against historical FAO swarm reports and report false-positive and false-negative rates at each lead time.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "No outbreak signal is accepted without lead-time distribution, false-alarm profile, and replication status."
+  },
+  {
+    "id": "swarm-trajectory-hindcast",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "title": "Hindcast swarm movement trajectories using wind field data",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A hindcast validation of swarm trajectory modeling against FAO reported swarm locations, with error distances and timing errors.",
+    "inputs": ["ERA5 wind fields", "FAO swarm movement reports", "topographic data"],
+    "expected_artifact": "outputs.md update with trajectory error statistics.",
+    "validation_method": "Replicator reruns trajectory hindcast on independent swarm events and confirms error statistics within reported tolerance.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "high",
+    "done_condition": "Trajectory hindcast includes mean and maximum error distances, timing errors, and specified validation periods."
+  },
+  {
+    "id": "red-team-operational-use",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "title": "Red-team harmful operational interpretations of locust early warning",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying how outbreak risk maps, swarm forecasts, or habitat alerts could mislead control operations, pesticide decisions, or crop-loss estimates.",
+    "inputs": ["candidate outputs", "outbreak signal analysis", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk failure mode has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every operational claim is either blocked, softened to analytic language, or gated behind domain review and replicated red-team review."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "title": "Check whether outputs match locust control decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether outbreak risk signals would change any real locust control decision responsibly.",
+    "inputs": [
+      "draft output",
+      "locust control operational constraints",
+      "pesticide regulation context"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk for the output, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The output has a named user, named decision, explicit non-use cases, and replicated field-reality review before publication."
+  }
+]

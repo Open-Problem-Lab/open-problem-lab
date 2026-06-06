@@ -1,0 +1,44 @@
+{
+  "id": "climate-health/malaria-early-warning-africa",
+  "title": "Malaria Early Warning Signals In Sub-Saharan Africa",
+  "status": "scoped",
+  "domain": ["climate-health", "public-health"],
+  "region": ["sub-saharan-africa"],
+  "summary": "Build a verified workflow for identifying where rainfall, temperature, and vegetation signals may provide usable lead time for sub-national malaria early warning in Sub-Saharan Africa, without pretending that a model output replaces local operational judgment.",
+  "why_it_matters": "Malaria kills over 600,000 people annually, mostly children under five in Sub-Saharan Africa. Climate-informed early warning could save lives if signals are verified and uncertainty is communicated honestly. False certainty or unvalidated forecasts risk diverting resources and eroding trust.",
+  "success_metrics": [
+    {
+      "metric": "Signal traceability",
+      "target": "Every candidate climate signal links to a dated evidence record with method and limitations.",
+      "validation_method": "Run schema validation and reviewer spot-checks against evidence.json and evidence.md."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No alert threshold or intervention recommendation is merged without review and replication.",
+      "validation_method": "Check task status, review records, and safety flags before accepting outputs.md updates."
+    },
+    {
+      "metric": "Sub-national usefulness",
+      "target": "Candidate analyses preserve the finest geographic grain that source data permits.",
+      "validation_method": "Review reproducibility steps and confirm aggregation choices in pull requests."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review for operational claims, and replication for quantitative outputs."
+  }
+}

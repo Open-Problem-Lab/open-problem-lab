@@ -1,0 +1,44 @@
+{
+  "id": "biodiversity/deforestation-amazon",
+  "title": "Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin",
+  "status": "scoped",
+  "domain": ["biodiversity", "climate-health"],
+  "region": ["amazon"],
+  "summary": "Build a verified workflow linking satellite-based deforestation detection to species-range loss risk in the Amazon basin, separating verified habitat-loss signals from unverified extinction-risk claims.",
+  "why_it_matters": "The Amazon contains 10 percent of known species and stores 150-200 billion tons of carbon. Deforestation rates exceeding 10,000 km² per year threaten extinction for species with small ranges, drive carbon feedback loops, and make the forest-fire tipping point more likely. Satellite-based monitoring exists but linking deforestation pixels to species-level risk with verifiable certainty remains underdeveloped.",
+  "success_metrics": [
+    {
+      "metric": "Deforestation detection accuracy",
+      "target": "Deforestation detection validated against independent reference data with documented commission and omission errors.",
+      "validation_method": "Compare satellite-based deforestation estimates to PRODES and independent reference datasets."
+    },
+    {
+      "metric": "Species-risk linkage traceability",
+      "target": "Every species-range loss estimate links to dated deforestation and species-occurrence evidence.",
+      "validation_method": "Reviewer traces each species-risk claim through deforestation data to occurrence data."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No extinction-risk or protected-area recommendation is merged without review and replication.",
+      "validation_method": "Check task status, review records, and safety flags."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review for extinction-risk claims, and replication for quantitative deforestation-species analyses."
+  }
+}

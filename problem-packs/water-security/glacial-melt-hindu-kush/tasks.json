@@ -1,0 +1,88 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "water-security/glacial-melt-hindu-kush",
+    "title": "Inventory glacial melt and water data sources",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating glacier monitoring, climate projections, water demand, and unusable sources.",
+    "inputs": [
+      "ICIMOD data",
+      "satellite altimetry",
+      "climate model projections",
+      "water demand data",
+      "population data"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records.",
+    "validation_method": "Reviewer checks sources for URL, date, methodology, grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five sources classified as usable, limited, or rejected."
+  },
+  {
+    "id": "melt-projection-comparison",
+    "problem_id": "water-security/glacial-melt-hindu-kush",
+    "title": "Compare glacial melt projections across models and scenarios",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A basin-scale comparison of melt-rate projections from multiple climate model ensembles with uncertainty ranges.",
+    "inputs": [
+      "ICIMOD projection data",
+      "CMIP6 model outputs",
+      "satellite mass-balance observations",
+      "basin boundaries"
+    ],
+    "expected_artifact": "validation.md update with projection comparison.",
+    "validation_method": "Replicator reruns comparison with alternative model subset and confirms divergence patterns.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Projection comparison includes at least three model ensembles and multiple scenarios."
+  },
+  {
+    "id": "water-security-risk-ranking",
+    "problem_id": "water-security/glacial-melt-hindu-kush",
+    "title": "Rank river basins by compound water-security risk",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A risk ranking combining melt projections, precipitation change, and downstream demand growth.",
+    "inputs": [
+      "melt projection comparison",
+      "precipitation data",
+      "water demand projections",
+      "population data"
+    ],
+    "expected_artifact": "outputs.md update with risk ranking.",
+    "validation_method": "Replicator confirms ranking robustness to alternative weightings.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Risk ranking includes explicit methodology, scenario uncertainty, and sensitivity testing with replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "water-security/glacial-melt-hindu-kush",
+    "title": "Red-team misuse of water-security projections",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review identifying transboundary conflict and maladaptation risks.",
+    "inputs": ["risk ranking", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms mitigations or blocks publication, then replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every operational claim qualified or gated behind replication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "water-security/glacial-melt-hindu-kush",
+    "title": "Check whether outputs match basin water management decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review of whether risk rankings would change water planning responsibly.",
+    "inputs": ["draft outputs", "water management institutional context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Output has named user, named decision, non-use cases, and replicated field-reality review."
+  }
+]

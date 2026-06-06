@@ -1,0 +1,101 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "biodiversity/coral-bleaching-great-barrier-reef",
+    "title": "Inventory coral bleaching data sources",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "Dated source inventory separating satellite SST, in-water surveys, and unusable sources.",
+    "inputs": [
+      "NOAA CRW data",
+      "AIMS survey data",
+      "GBRMPA aerial surveys",
+      "Sentinel-2 imagery",
+      "IMOS SST"
+    ],
+    "expected_artifact": "datasets.md plus evidence.json updates.",
+    "validation_method": "Reviewer checks sources for URL, methodology, grain, limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five sources classified as usable, limited, or rejected."
+  },
+  {
+    "id": "bleaching-alert-validation",
+    "problem_id": "biodiversity/coral-bleaching-great-barrier-reef",
+    "title": "Validate satellite bleaching alerts against in-water surveys",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A validation report comparing NOAA CRW DHW alerts to AIMS bleaching survey results with hit rate and false-alarm rate.",
+    "inputs": ["NOAA CRW DHW data", "AIMS bleaching survey data", "reef location data"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator reruns validation with alternative DHW thresholds.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Validation includes hit rate, false-alarm rate, and SST-survey temperature comparison."
+  },
+  {
+    "id": "reef-bleaching-severity-mapping",
+    "problem_id": "biodiversity/coral-bleaching-great-barrier-reef",
+    "title": "Produce reef-scale bleaching severity maps from combined satellite and survey data",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Reef-scale bleaching severity classification using validated satellite alerts and survey data.",
+    "inputs": [
+      "validated bleaching alerts",
+      "AIMS survey data",
+      "GBRMPA aerial survey data",
+      "Sentinel-2 benthic data"
+    ],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms severity classification against independent survey data.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Severity map includes methodology, validation metrics, and spatial coverage gaps."
+  },
+  {
+    "id": "recovery-classification",
+    "problem_id": "biodiversity/coral-bleaching-great-barrier-reef",
+    "title": "Classify post-bleaching recovery trajectories",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Recovery classification as full, partial, or none based on multi-year survey data with time-since-bleaching.",
+    "inputs": [
+      "bleaching severity map",
+      "AIMS coral cover trend data",
+      "time-since-bleaching data"
+    ],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator reruns classification with alternative recovery thresholds.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Recovery classification includes multi-year data, explicit criteria, and sensitivity analysis."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "biodiversity/coral-bleaching-great-barrier-reef",
+    "title": "Red-team misuse of bleaching and recovery data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review for overstatement of mortality and discouragement of conservation effort.",
+    "inputs": ["severity map", "recovery classification", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review.",
+    "validation_method": "Reviewer confirms mitigations or blocks, then replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated behind replication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "biodiversity/coral-bleaching-great-barrier-reef",
+    "title": "Check whether outputs match reef management decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review of whether bleaching maps change reef management responsibly.",
+    "inputs": ["draft outputs", "reef management context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases, replicated review."
+  }
+]

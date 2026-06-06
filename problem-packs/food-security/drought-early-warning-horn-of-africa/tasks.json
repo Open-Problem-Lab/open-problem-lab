@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "food-security/drought-early-warning-horn-of-africa",
+    "title": "Inventory drought and food insecurity data sources",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "Dated source inventory separating rainfall, vegetation, market, IPC, and unusable sources.",
+    "inputs": [
+      "CHIRPS rainfall",
+      "MODIS NDVI",
+      "FEWS NET IPC",
+      "WFP prices",
+      "livestock data"
+    ],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources for URL, methodology, grain.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five sources classified with explicit reasons."
+  },
+  {
+    "id": "signal-validation",
+    "problem_id": "food-security/drought-early-warning-horn-of-africa",
+    "title": "Validate drought signals against food insecurity outcomes",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "Lead-time analysis correlating rainfall, vegetation, and price signals to IPC phase deterioration.",
+    "inputs": ["CHIRPS data", "MODIS NDVI", "price data", "IPC classifications"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator reruns with alternative time windows and confirms skill metrics.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "high",
+    "done_condition": "Signal validation includes lead-time distributions, hit rates, and false-alarm rates with replication."
+  },
+  {
+    "id": "false-alarm-profiling",
+    "problem_id": "food-security/drought-early-warning-horn-of-africa",
+    "title": "Profile false-alarm rates at actionable lead times",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "False-alarm profiles showing rates at 1, 3, and 6-month leads with cost-of-error analysis.",
+    "inputs": ["signal validation results", "humanitarian response data"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms false-alarm rate sensitivity to threshold choices.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "False-alarm profiles include lead-time degradation and explicit caveats with replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "food-security/drought-early-warning-horn-of-africa",
+    "title": "Red-team misuse of food-insecurity forecasts",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review for aid-diversion and false-confidence risks.",
+    "inputs": ["false-alarm profiles", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review.",
+    "validation_method": "Reviewer confirms mitigations or blocks, then replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "food-security/drought-early-warning-horn-of-africa",
+    "title": "Check whether outputs match humanitarian decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review of whether signals change humanitarian response responsibly.",
+    "inputs": ["draft outputs", "humanitarian coordination context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, then replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases, replicated review."
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "world-bank-learning-poverty-2022",
+    "problem_id": "education/learning-loss-post-pandemic",
+    "claim": "The World Bank estimated that COVID-19 school closures increased learning poverty — the share of children unable to read a simple text by age 10 — from 57 to 70 percent in low- and middle-income countries, with the largest increases in Sub-Saharan Africa and South Asia.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "The State of Global Learning Poverty: 2022 Update",
+      "url": "https://www.worldbank.org/en/topic/education/publication/state-of-global-learning-poverty"
+    },
+    "source_date": "2022-06-23",
+    "access_date": "2026-06-06",
+    "method": "Reviewed World Bank report methodology, learning poverty definition, simulation approach, and regional breakdowns.",
+    "limitations": [
+      "Learning poverty estimates are simulated, not directly measured, and depend on school-closure duration assumptions.",
+      "The estimate smooths over substantial within-country variation."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "unesco-school-closures-2022",
+    "problem_id": "education/learning-loss-post-pandemic",
+    "claim": "UNESCO documented that COVID-19 school closures averaged 20 weeks in low-income countries versus 10 weeks in high-income countries, with some countries exceeding 40 weeks of full or partial closure.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "UNESCO Global Monitoring of School Closures Caused by COVID-19",
+      "url": "https://en.unesco.org/covid19/educationresponse"
+    },
+    "source_date": "2022-03-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed UNESCO school closure dashboard for country-level closure duration, status, and regional patterns.",
+    "limitations": [
+      "Closure duration does not capture remote-learning quality or reach.",
+      "Country reporting on partial closures is inconsistent."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "betthauser-learning-loss-review-2023",
+    "problem_id": "education/learning-loss-post-pandemic",
+    "claim": "A 2023 systematic review and meta-analysis of 42 studies across 15 countries found average learning deficits of 0.14 standard deviations, but noted that 85 percent of studies were from high-income countries and that low-income country estimates remain sparse.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "A systematic review and meta-analysis of the evidence on learning during the COVID-19 pandemic",
+      "url": "https://www.nature.com/articles/s41562-022-01506-4"
+    },
+    "source_date": "2023-01-30",
+    "access_date": "2026-06-06",
+    "method": "Reviewed abstract, systematic search strategy, meta-analytic methods, and study quality assessment.",
+    "limitations": [
+      "Heavily weighted toward high-income countries with pre-existing longitudinal assessment systems.",
+      "The 0.14 SD average masks heterogeneity by subject, grade, and country income level."
+    ],
+    "confidence": "medium"
+  }
+]

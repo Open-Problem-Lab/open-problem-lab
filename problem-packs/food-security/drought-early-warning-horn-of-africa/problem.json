@@ -1,0 +1,44 @@
+{
+  "id": "food-security/drought-early-warning-horn-of-africa",
+  "title": "Drought Early Warning And Food Insecurity Prediction In The Horn Of Africa",
+  "status": "scoped",
+  "domain": ["food-security", "disaster-resilience"],
+  "region": ["east-africa"],
+  "summary": "Build a verified workflow for assessing where rainfall, vegetation, and market-price signals provide usable lead time for food insecurity early warning in the Horn of Africa.",
+  "why_it_matters": "The Horn of Africa experienced its worst drought in 40 years during 2020-2023, pushing over 23 million people into acute food insecurity across Ethiopia, Somalia, and Kenya. FEWS NET and IPC provide early warning, but connecting rainfall and vegetation signals to food-insecurity outcomes with verified lead times at sub-national scale remains underdeveloped.",
+  "success_metrics": [
+    {
+      "metric": "Signal traceability",
+      "target": "Every food-insecurity predictor links to dated evidence with method and limitations.",
+      "validation_method": "Schema validation and reviewer spot-checks."
+    },
+    {
+      "metric": "Lead-time accuracy",
+      "target": "Candidate signals report lead-time distributions with false-alarm rates.",
+      "validation_method": "Review back-test results."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No food-aid recommendation merged without review and replication.",
+      "validation_method": "Check task status and review records."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

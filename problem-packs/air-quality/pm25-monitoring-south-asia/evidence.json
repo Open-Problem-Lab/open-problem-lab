@@ -1,0 +1,56 @@
+[
+  {
+    "id": "who-ambient-air-pollution-2024",
+    "problem_id": "air-quality/pm25-monitoring-south-asia",
+    "claim": "WHO reports that 99 percent of the global population breathes air exceeding WHO guideline limits, with the highest ambient PM2.5 concentrations in the Eastern Mediterranean and South-East Asia regions, and estimates 4.2 million premature deaths globally from ambient air pollution in 2019.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Ambient (outdoor) air pollution - WHO fact sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/ambient-(outdoor)-air-quality-and-health"
+    },
+    "source_date": "2024-10-24",
+    "access_date": "2026-06-06",
+    "method": "Reviewed WHO fact sheet for global burden, exposure statistics, and PM2.5 health effects evidence.",
+    "limitations": [
+      "Burden estimates rely on modeled exposure surfaces where monitors are absent.",
+      "South Asia-specific breakdown requires additional sources beyond the global fact sheet."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "health-effects-institute-state-of-global-air-2024",
+    "problem_id": "air-quality/pm25-monitoring-south-asia",
+    "claim": "The Health Effects Institute State of Global Air 2024 report finds that ambient PM2.5 is the second-leading risk factor for death globally and that South Asia has the highest population-weighted average PM2.5 concentrations of any region, exceeding 50 µg/m³ annually in many locations.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "State of Global Air 2024",
+      "url": "https://www.stateofglobalair.org/"
+    },
+    "source_date": "2024-06-18",
+    "access_date": "2026-06-06",
+    "method": "Reviewed State of Global Air interactive data platform, regional summaries, and methodology documentation.",
+    "limitations": [
+      "Global burden estimates at country scale, not sub-national exposure verification.",
+      "Satellite-derived PM2.5 input may undercount localized high-concentration hotspots."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "cpcb-monitoring-network-2023",
+    "problem_id": "air-quality/pm25-monitoring-south-asia",
+    "claim": "India's Central Pollution Control Board operates approximately 300 continuous ambient air quality monitoring stations nationally, concentrated in major cities, leaving most rural and peri-urban areas with no ground-level PM2.5 monitoring data.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "CPCB National Air Quality Monitoring Programme",
+      "url": "https://cpcb.nic.in/monitoring-network-3/"
+    },
+    "source_date": "2023-12-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed CPCB monitoring network page for station counts, locations, and monitoring parameters.",
+    "limitations": [
+      "Station count and locations change over time and may not reflect temporary outages.",
+      "Station data availability and quality vary by site and parameter."
+    ],
+    "confidence": "high"
+  }
+]

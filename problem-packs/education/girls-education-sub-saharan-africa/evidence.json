@@ -1,0 +1,38 @@
+[
+  {
+    "id": "unesco-gender-report-2023",
+    "problem_id": "education/girls-education-sub-saharan-africa",
+    "claim": "UNESCO reports Sub-Saharan Africa has highest gender gap in secondary education, 43% girls vs 50% boys completing lower secondary, rates below 20% in Sahel, and identifies school fees, early marriage, and safety as key barriers.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global Education Monitoring Report 2023: Gender Report",
+      "url": "https://www.unesco.org/gem-report/en/2023-gender"
+    },
+    "source_date": "2023-07-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed GEM Gender Report chapters on Sub-Saharan Africa, enrollment trends, and barrier analysis.",
+    "limitations": [
+      "Completion data is modeled from surveys of variable recency.",
+      "Barrier classification is qualitative and may not capture local variation."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "baird-girls-education-review-2020",
+    "problem_id": "education/girls-education-sub-saharan-africa",
+    "claim": "A 2020 systematic review found eliminating school fees, cash transfers, and school safety improvements had strongest evidence for increasing girls secondary enrollment, but effect sizes varied by context.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Improving girls secondary education outcomes in low-income countries: a systematic review",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/19439342.2020.1784159"
+    },
+    "source_date": "2020-07-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed systematic search, meta-analysis methods, and intervention effect sizes.",
+    "limitations": [
+      "Effect sizes vary substantially by context and outcome measure.",
+      "Many studies are from East Africa, with fewer from West and Central Africa."
+    ],
+    "confidence": "medium"
+  }
+]

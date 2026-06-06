@@ -1,0 +1,112 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "energy-access/clean-cooking-sub-saharan-africa",
+    "title": "Inventory clean cooking and health data sources for Sub-Saharan Africa",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating household surveys, health data, access data, enterprise data, and unusable sources.",
+    "inputs": [
+      "DHS survey documentation",
+      "WHO health observatory",
+      "IEA access database",
+      "Clean Cooking Alliance enterprise data",
+      "Global Burden of Disease data"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "health-burden-baseline",
+    "problem_id": "energy-access/clean-cooking-sub-saharan-africa",
+    "title": "Estimate sub-national household air pollution health burden",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A reproducible baseline of household air pollution-attributable disease burden at the finest sub-national grain that available data permits.",
+    "inputs": [
+      "DHS cooking fuel data",
+      "Global Burden of Disease HAP layer",
+      "population data",
+      "health outcome statistics"
+    ],
+    "expected_artifact": "validation.md update with health burden estimation methodology and data checks.",
+    "validation_method": "Replicator reruns burden estimation on independent survey data subset and confirms estimates within reported uncertainty.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Burden estimation includes uncertainty bounds, sub-national grain documentation, and modeling assumptions with replication confirmed."
+  },
+  {
+    "id": "adoption-barrier-classification",
+    "problem_id": "energy-access/clean-cooking-sub-saharan-africa",
+    "title": "Classify and map clean cooking adoption barriers",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A spatial classification of adoption barriers categorized as economic, infrastructural, cultural, and regulatory with cited evidence for each barrier class.",
+    "inputs": [
+      "DHS survey data",
+      "household income data",
+      "LPG infrastructure maps",
+      "clean cooking enterprise data",
+      "policy environment data"
+    ],
+    "expected_artifact": "outputs.md update with barrier classification and spatial analysis.",
+    "validation_method": "Replicator confirms that each barrier classification is traceable to a cited source and that barrier classes are well-defined.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Barrier classification includes economic, infrastructural, cultural, and regulatory categories with spatial extent mapped and replication confirmed."
+  },
+  {
+    "id": "health-benefit-scenario-analysis",
+    "problem_id": "energy-access/clean-cooking-sub-saharan-africa",
+    "title": "Model health benefits under different adoption scenarios",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A scenario analysis estimating health benefits under different clean cooking adoption rates, explicitly modeling fuel stacking and imperfect adoption.",
+    "inputs": [
+      "health burden baseline",
+      "adoption barrier classification",
+      "technology cost data",
+      "intervention cost-effectiveness data"
+    ],
+    "expected_artifact": "outputs.md update with scenario analysis results.",
+    "validation_method": "Replicator reruns scenario analysis with alternative fuel-stacking assumptions and confirms benefit ranges.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "high",
+    "done_condition": "Scenario analysis includes at least three adoption scenarios, explicitly models fuel stacking, and includes caveat that modeled benefits assume sustained use."
+  },
+  {
+    "id": "red-team-overstatement-review",
+    "problem_id": "energy-access/clean-cooking-sub-saharan-africa",
+    "title": "Red-team overstated health benefit and adoption claims",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying where health benefit estimates could be overstated, adoption barriers mischaracterized, or technology transition recommendations could cause harm.",
+    "inputs": ["health benefit scenarios", "barrier classification", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk failure mode has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every health-benefit or adoption claim is either qualified with fuel-stacking caveats, softened to analytic language, or gated behind replication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "energy-access/clean-cooking-sub-saharan-africa",
+    "title": "Check whether outputs match clean cooking program decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether burden maps and barrier analyses would change any real clean cooking program decision responsibly.",
+    "inputs": [
+      "draft outputs",
+      "clean cooking program operational context",
+      "community engagement constraints"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk for the output, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The output has a named user, named decision, explicit fuel-stacking caveats, and replicated field-reality review before publication."
+  }
+]

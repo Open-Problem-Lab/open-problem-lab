@@ -1,0 +1,56 @@
+[
+  {
+    "id": "haque-bangladesh-cyclone-mortality-2012",
+    "problem_id": "disaster-resilience/cyclone-early-warning-bangladesh",
+    "claim": "A 2012 review documents the reduction in Bangladesh cyclone mortality from 300,000-500,000 in 1970 to 3,406 in 2007 Cyclone Sidr through the establishment of the Cyclone Preparedness Programme, early warning dissemination, and cyclone shelter construction.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Reduced death rates from cyclones in Bangladesh: what more needs to be done?",
+      "url": "https://www.who.int/bulletin/volumes/90/2/11-088302/en/"
+    },
+    "source_date": "2012-02-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed WHO Bulletin article mortality analysis, CPP description, and shelter infrastructure assessment.",
+    "limitations": [
+      "Historical mortality data before 1970 is estimated, not precise.",
+      "Review does not quantify modern false-alarm rates."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "alam-bangladesh-cpp-2020",
+    "problem_id": "disaster-resilience/cyclone-early-warning-bangladesh",
+    "claim": "Bangladesh's Cyclone Preparedness Programme operates 76,000 volunteers across coastal districts, maintains over 14,000 cyclone shelters, and uses a flag-based plus mobile-phone early warning dissemination system that reaches most but not all coastal communities.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Cyclone Preparedness Programme Bangladesh",
+      "url": "https://www.cpp.gov.bd/"
+    },
+    "source_date": "2020-06-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed CPP website for program structure, volunteer numbers, shelter inventory, and warning dissemination methods.",
+    "limitations": [
+      "Official program data may overstate effective coverage for hardest-to-reach communities.",
+      "Shelter capacity figures may not reflect actual usable space during a cyclone."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "mohapatra-track-error-bob-2020",
+    "problem_id": "disaster-resilience/cyclone-early-warning-bangladesh",
+    "claim": "A 2020 analysis of Bay of Bengal cyclone track forecast errors finds mean errors of 50-80 km at 24 hours and 80-120 km at 48 hours, with intensification forecasts showing larger errors than track forecasts.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Evaluation of operational tropical cyclone track and intensity forecasts in the Bay of Bengal",
+      "url": "https://link.springer.com/article/10.1007/s00703-020-00745-8"
+    },
+    "source_date": "2020-09-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed abstract, forecast methodology, track error statistics by lead time, and intensity error analysis.",
+    "limitations": [
+      "Forecast errors reflect operational model performance during the study period, which may have improved since 2020.",
+      "Track errors are basin averages and may differ for specific districts."
+    ],
+    "confidence": "high"
+  }
+]

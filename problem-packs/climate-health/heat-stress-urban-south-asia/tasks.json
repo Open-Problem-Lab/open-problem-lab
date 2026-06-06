@@ -1,0 +1,83 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "climate-health/heat-stress-urban-south-asia",
+    "title": "Inventory urban heat and health data sources",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "Dated source inventory separating satellite LST, weather stations, population, vulnerability, and unusable sources.",
+    "inputs": [
+      "Landsat LST",
+      "ERA5 temperature",
+      "population data",
+      "DHS data",
+      "mortality data"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json.",
+    "validation_method": "Reviewer checks sources for URL, date, methodology, grain.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five sources classified as usable, limited, or rejected."
+  },
+  {
+    "id": "heat-exposure-mapping",
+    "problem_id": "climate-health/heat-stress-urban-south-asia",
+    "title": "Map intra-urban heat exposure for at least two South Asian cities",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "30m-resolution LST maps with urban-heat-island quantification and ground-station validation.",
+    "inputs": ["Landsat LST", "weather station data", "city boundaries"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator validates against independent station data and confirms LST-station correlation.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "LST-station comparison with error statistics and replication."
+  },
+  {
+    "id": "vulnerability-risk-mapping",
+    "problem_id": "climate-health/heat-stress-urban-south-asia",
+    "title": "Produce vulnerability-weighted heat risk maps",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Risk maps combining heat exposure, population density, and vulnerability indicators at neighborhood scale.",
+    "inputs": [
+      "heat exposure maps",
+      "population data",
+      "DHS vulnerability indicators",
+      "informal settlement data"
+    ],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator reruns with alternative vulnerability weightings.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Risk map includes methodology, alternative weighting sensitivity, and non-stigmatization caveats."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "climate-health/heat-stress-urban-south-asia",
+    "title": "Red-team misuse of heat risk maps",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review for stigmatization, displacement, and false-precision risks.",
+    "inputs": ["risk maps", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review.",
+    "validation_method": "Reviewer confirms mitigations or blocks, then replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "climate-health/heat-stress-urban-south-asia",
+    "title": "Check whether outputs match heat-action planning decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review of whether risk maps change heat-action planning responsibly.",
+    "inputs": ["draft outputs", "heat action plan context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases, replicated review."
+  }
+]

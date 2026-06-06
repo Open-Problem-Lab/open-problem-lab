@@ -1,0 +1,44 @@
+{
+  "id": "energy-access/clean-cooking-sub-saharan-africa",
+  "title": "Clean Cooking Adoption Barriers And Health Impact In Sub-Saharan Africa",
+  "status": "scoped",
+  "domain": ["energy-access", "public-health"],
+  "region": ["sub-saharan-africa"],
+  "summary": "Build a verified workflow for identifying where household air pollution from solid fuel cooking creates the highest disease burden and where adoption of clean cooking solutions faces the most tractable barriers.",
+  "why_it_matters": "Nearly 2.4 billion people cook with solid fuels, causing 3.2 million premature deaths annually from household air pollution. Sub-Saharan Africa has the lowest clean cooking access rate globally, with over 80 percent of households reliant on wood, charcoal, or dung. The health burden is severe but spatially uneven — verified mapping of where interventions would save the most lives is incomplete.",
+  "success_metrics": [
+    {
+      "metric": "Burden traceability",
+      "target": "Every health-burden estimate links to dated evidence records with method and spatial grain documented.",
+      "validation_method": "Run schema validation and reviewer spot-checks against evidence.json and evidence.md."
+    },
+    {
+      "metric": "Barrier classification",
+      "target": "Adoption barriers are classified as economic, infrastructural, cultural, or regulatory with cited evidence for each.",
+      "validation_method": "Reviewer checks barrier classifications against cited source evidence."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No clean cooking technology recommendation is merged without review and replication.",
+      "validation_method": "Check task status, review records, and safety flags."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review for health claims, and replication for quantitative burden and barrier analyses."
+  }
+}

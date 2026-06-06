@@ -1,0 +1,111 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "biodiversity/deforestation-amazon",
+    "title": "Inventory deforestation and biodiversity data sources for Amazon basin",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating deforestation monitoring, species occurrence, range maps, and unusable sources.",
+    "inputs": [
+      "INPE PRODES documentation",
+      "Global Forest Watch portal",
+      "GBIF occurrence data",
+      "IUCN Red List data",
+      "MapBiomas land cover"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "deforestation-verification",
+    "problem_id": "biodiversity/deforestation-amazon",
+    "title": "Verify satellite-based deforestation detection against PRODES reference",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A verification report comparing GLAD and other satellite-based deforestation alerts to PRODES reference data, with commission error, omission error, and spatial accuracy statistics.",
+    "inputs": [
+      "GLAD alert data",
+      "PRODES reference data",
+      "MapBiomas land cover change",
+      "validation methodology"
+    ],
+    "expected_artifact": "validation.md update with verification statistics.",
+    "validation_method": "Replicator reruns verification on independent time period and confirms error statistics within reported tolerance.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Verification includes commission error, omission error, and spatial accuracy at state scale with replication confirmed."
+  },
+  {
+    "id": "species-range-loss-estimation",
+    "problem_id": "biodiversity/deforestation-amazon",
+    "title": "Estimate species-range loss from verified deforestation data",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A species-range loss analysis intersecting verified deforestation data with IUCN range maps and GBIF occurrence data, ranked by proportion of range lost with uncertainty bounds.",
+    "inputs": [
+      "verified deforestation data",
+      "IUCN range maps",
+      "GBIF occurrence data",
+      "species taxonomy reference"
+    ],
+    "expected_artifact": "outputs.md update with species-range loss ranking.",
+    "validation_method": "Replicator reruns range-loss estimation with independent occurrence data subset and confirms ranking within reported uncertainty.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Range-loss ranking includes uncertainty bounds, species with fewer than 10 occurrence records flagged, and replication confirmed."
+  },
+  {
+    "id": "conservation-prioritization",
+    "problem_id": "biodiversity/deforestation-amazon",
+    "title": "Analyze conservation prioritization implications of range-loss data",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "An analysis of how range-loss rankings interact with existing protected-area boundaries, indigenous territories, and recent deforestation fronts to identify conservation gaps.",
+    "inputs": [
+      "species-range loss ranking",
+      "protected area boundaries",
+      "indigenous territory boundaries",
+      "deforestation front maps"
+    ],
+    "expected_artifact": "outputs.md update with conservation gap analysis.",
+    "validation_method": "Replicator confirms that gap analysis does not conflate correlation with causation and includes explicit non-use cases.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Gap analysis includes explicit non-conservation-recommendation caveats and avoids naming specific unprotected areas as conservation priorities."
+  },
+  {
+    "id": "red-team-overstatement-review",
+    "problem_id": "biodiversity/deforestation-amazon",
+    "title": "Red-team overstated extinction-risk and deforestation claims",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying where species-range loss analysis could overstate extinction risk, misrepresent deforestation trends, or justify harmful land-use policies.",
+    "inputs": ["range-loss ranking", "gap analysis", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk failure mode has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every extinction-risk or prioritization claim is either blocked, softened to uncertainty-qualified language, or gated behind replicated review."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "biodiversity/deforestation-amazon",
+    "title": "Check whether outputs match conservation decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether deforestation and species-risk outputs would change any real conservation decision responsibly.",
+    "inputs": [
+      "draft outputs",
+      "conservation institutional context",
+      "indigenous and local community safeguards"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk for the output, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The output has a named user, named decision, explicit safeguards against indigenous displacement, and replicated field-reality review before publication."
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "climate-health/malaria-early-warning-africa",
+    "title": "Inventory malaria and climate data sources for Sub-Saharan Africa",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory that separates health surveillance, climate reanalysis, environmental data, and unusable sources.",
+    "inputs": [
+      "WHO malaria reports",
+      "DHIS2 documentation",
+      "climate reanalysis sources",
+      "systematic review references"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "subnational-baseline",
+    "problem_id": "climate-health/malaria-early-warning-africa",
+    "title": "Define sub-national malaria baseline requirements",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A reproducible baseline specification for sub-national malaria incidence with denominator handling, reporting lag documentation, and missingness profile.",
+    "inputs": [
+      "health surveillance data candidate",
+      "administrative boundary source",
+      "population denominator source"
+    ],
+    "expected_artifact": "validation.md update with baseline formula and data checks.",
+    "validation_method": "Replicator reruns the baseline on a sample district and confirms grain, missingness, reporting lag, and denominator behavior.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "A reviewer can reproduce the baseline calculation and identify every excluded district, month, and known reporting gap."
+  },
+  {
+    "id": "climate-signal-review",
+    "problem_id": "climate-health/malaria-early-warning-africa",
+    "title": "Review rainfall, temperature, and vegetation signal candidates",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A ranked list of candidate climate signals with lead-time assumptions, false-positive profiles, and failure modes.",
+    "inputs": [
+      "rainfall data",
+      "temperature data",
+      "vegetation index data",
+      "sub-national malaria baseline"
+    ],
+    "expected_artifact": "task-map.md and validation.md updates with candidate signal tests.",
+    "validation_method": "Back-test candidate signals against historical data and report false-positive and false-negative behavior at seasonal lead times.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "No candidate signal is accepted without back-test results, limitations, and replication status."
+  },
+  {
+    "id": "back-test-review",
+    "problem_id": "climate-health/malaria-early-warning-africa",
+    "title": "Back-test candidate signals with false-alarm profiling",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A back-test report documenting false-positive rates, false-negative rates, and lead-time degradation for each candidate signal at sub-national scale.",
+    "inputs": [
+      "candidate signal outputs",
+      "historical case data",
+      "validation.md baseline"
+    ],
+    "expected_artifact": "outputs.md and validation.md updates with back-test results table.",
+    "validation_method": "Replicator reruns back-test against a withheld validation period and confirms false-alarm metrics within reported tolerance.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "high",
+    "done_condition": "Back-test results include false-positive rate, false-negative rate, lead-time skill, and specified validation period for every candidate signal."
+  },
+  {
+    "id": "red-team-operational-use",
+    "problem_id": "climate-health/malaria-early-warning-africa",
+    "title": "Red-team harmful operational interpretations of malaria early warning",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review that identifies how alerts, risk maps, or seasonal forecasts could mislead district health operations.",
+    "inputs": ["candidate outputs", "back-test report", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk failure mode has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every operational claim is either blocked, softened to analytic language, or gated behind domain review and replicated red-team review."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "climate-health/malaria-early-warning-africa",
+    "title": "Check whether outputs match district health decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether the proposed artifact would change any real district health workflow responsibly.",
+    "inputs": ["draft output", "district health operational constraints", "reviewer notes"],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk for the output, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The output has a named user, named decision, explicit non-use cases, and replicated field-reality review before publication."
+  }
+]

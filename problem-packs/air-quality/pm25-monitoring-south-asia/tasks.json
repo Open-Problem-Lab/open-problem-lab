@@ -1,0 +1,110 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "air-quality/pm25-monitoring-south-asia",
+    "title": "Inventory PM2.5 monitoring and air quality data sources for South Asia",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating ground monitors, satellite-derived estimates, low-cost sensors, and unusable sources.",
+    "inputs": [
+      "CPCB monitoring network data",
+      "OpenAQ platform",
+      "State of Global Air PM2.5 surfaces",
+      "TROPOMI satellite data",
+      "population datasets"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, measurement method, calibration, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "monitor-network-gap-map",
+    "problem_id": "air-quality/pm25-monitoring-south-asia",
+    "title": "Map ground monitoring network gaps for India and one other South Asian country",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A reproducible spatial map of existing ground PM2.5 monitors and their coverage gaps at district or equivalent scale, with population within and outside monitoring coverage zones.",
+    "inputs": [
+      "CPCB station data",
+      "OpenAQ station data",
+      "population density data",
+      "administrative boundaries"
+    ],
+    "expected_artifact": "validation.md update with monitoring gap map specification.",
+    "validation_method": "Replicator confirms station locations against official sources and reproduces gap map with alternative buffer radii.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Gap map includes station count, population inside and outside coverage zones, and buffer methodology with replication confirmed."
+  },
+  {
+    "id": "satellite-estimate-validation",
+    "problem_id": "air-quality/pm25-monitoring-south-asia",
+    "title": "Validate satellite-derived PM2.5 against ground monitors where co-located",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A validation report comparing satellite-derived PM2.5 estimates to ground monitor measurements, with error statistics by region, season, and concentration level.",
+    "inputs": [
+      "State of Global Air PM2.5 surfaces",
+      "ground monitor PM2.5 data",
+      "regional and seasonal classifications"
+    ],
+    "expected_artifact": "validation.md update with satellite-to-ground error statistics.",
+    "validation_method": "Replicator reruns validation with alternative satellite products and confirms error statistics within reported range.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Validation includes RMSE, bias, and correlation by region and season with replication confirmed."
+  },
+  {
+    "id": "gap-priority-ranking",
+    "problem_id": "air-quality/pm25-monitoring-south-asia",
+    "title": "Rank monitoring gaps by population, concentration, and uncertainty",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A priority-ranked list of monitoring gaps weighted by population within gap, estimated PM2.5 concentration, and satellite uncertainty.",
+    "inputs": [
+      "monitoring gap map",
+      "satellite PM2.5 estimates",
+      "satellite validation results",
+      "population data"
+    ],
+    "expected_artifact": "outputs.md update with gap priority ranking.",
+    "validation_method": "Replicator reruns ranking with alternative weightings and confirms that top-ranked gaps are robust to reasonable weight changes.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Ranking includes explicit weighting methodology, sensitivity to weight changes, and statement that ranking is for discussion not deployment with replication confirmed."
+  },
+  {
+    "id": "red-team-over-precision-review",
+    "problem_id": "air-quality/pm25-monitoring-south-asia",
+    "title": "Red-team over-precise exposure estimates and regulatory misuse",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying where gap maps and exposure estimates could be misinterpreted as precise measurements or justify regulatory rollback.",
+    "inputs": ["gap priority ranking", "satellite validation results", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk failure mode has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every exposure or gap claim is either qualified with satellite-uncertainty caveats, softened to analytic language, or gated behind replication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "air-quality/pm25-monitoring-south-asia",
+    "title": "Check whether outputs match pollution control board decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether monitoring gap maps would change any real monitoring-network deployment decision responsibly.",
+    "inputs": [
+      "draft outputs",
+      "pollution control board operational context",
+      "regulatory monitoring mandate constraints"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk for the output, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The output has a named user, named decision, explicit caveats about regulatory vs. informational monitoring, and replicated field-reality review before publication."
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "unicef-pure-earth-toxic-truth-2020",
+    "problem_id": "public-health/lead-exposure-urban-global",
+    "claim": "UNICEF and Pure Earth report that approximately 1 in 3 children globally have blood lead levels above 5 µg/dL, with 90 percent of the burden in low- and middle-income countries, and that informal lead-acid battery recycling is a major source.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "The Toxic Truth: Children's Exposure to Lead Pollution",
+      "url": "https://www.unicef.org/reports/toxic-truth-childrens-exposure-to-lead-pollution-2020"
+    },
+    "source_date": "2020-07-30",
+    "access_date": "2026-06-06",
+    "method": "Reviewed UNICEF report methodology, global burden estimates, exposure pathway analysis, and policy recommendations.",
+    "limitations": [
+      "Global burden estimates rely on modeled data where blood-lead measurements are sparse.",
+      "Report covers multiple exposure pathways but does not provide neighborhood-scale risk maps."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-lead-factsheet-2024",
+    "problem_id": "public-health/lead-exposure-urban-global",
+    "claim": "WHO identifies lead as one of ten chemicals of major public health concern, states there is no known safe blood lead level for children, and documents that lead exposure accounts for 5.5 million cardiovascular deaths and 0.9 million intellectual disability deaths annually.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO Lead poisoning fact sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/lead-poisoning-and-health"
+    },
+    "source_date": "2024-10-11",
+    "access_date": "2026-06-06",
+    "method": "Reviewed WHO fact sheet for health effects, exposure sources, global burden, and prevention strategies.",
+    "limitations": [
+      "Global fact sheet, not a spatial risk assessment.",
+      "Burden estimates reflect IHME modeling which may oversmooth local variation."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "ericson-lead-recycling-kathmandu-2021",
+    "problem_id": "public-health/lead-exposure-urban-global",
+    "claim": "A 2021 study in Kathmandu, Nepal, found that informal lead-acid battery recycling operations were concentrated in dense residential neighborhoods and were associated with soil lead levels exceeding 1,000 ppm within 100 meters, confirming that recycled battery processing creates hyperlocal lead hotspots.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Soil lead contamination from informal lead-acid battery recycling in Kathmandu",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0013935121002134"
+    },
+    "source_date": "2021-05-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed abstract, soil sampling methodology, spatial analysis approach, and results linking recycling proximity to soil contamination.",
+    "limitations": [
+      "Single-city study, not validated across multiple LMIC urban contexts.",
+      "Soil lead is a proxy for exposure, not a direct blood-lead measurement."
+    ],
+    "confidence": "medium"
+  }
+]

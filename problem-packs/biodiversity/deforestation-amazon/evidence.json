@@ -1,0 +1,56 @@
+[
+  {
+    "id": "inpe-prodes-2023",
+    "problem_id": "biodiversity/deforestation-amazon",
+    "claim": "INPE's PRODES system has monitored Amazon deforestation via Landsat-class satellite imagery since 1988, documenting over 420,000 km² of cumulative deforestation and providing the official Brazilian government deforestation rate used for policy enforcement.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "PRODES - Monitoring of the Brazilian Amazon Forest by Satellite",
+      "url": "http://www.obt.inpe.br/OBT/assuntos/programas/amazonia/prodes"
+    },
+    "source_date": "2023-11-09",
+    "access_date": "2026-06-06",
+    "method": "Reviewed INPE PRODES methodology, data access portal, and deforestation statistics.",
+    "limitations": [
+      "PRODES has a minimum mapping unit of 6.25 hectares, missing smaller clearings.",
+      "Cloud cover in the wet season may delay deforestation detection."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "albert-amazon-biodiversity-science-2021",
+    "problem_id": "biodiversity/deforestation-amazon",
+    "claim": "A 2021 Science study estimated over 10,000 tree species and at least 2,300 vertebrate species have 30 percent or more of their range in the Amazon basin, making them vulnerable to habitat loss that has already affected an estimated 2.5 million km².",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "How many tree species are there in the Amazon and how many will go extinct?",
+      "url": "https://www.science.org/doi/10.1126/science.abf3872"
+    },
+    "source_date": "2021-07-02",
+    "access_date": "2026-06-06",
+    "method": "Reviewed abstract, species inventory methodology, spatial analysis, and extinction risk projections.",
+    "limitations": [
+      "Species range estimates rely on occurrence data that undersamples remote areas.",
+      "Extinction risk projections assume no conservation intervention."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "hansen-glad-alerts-2022",
+    "problem_id": "biodiversity/deforestation-amazon",
+    "claim": "The University of Maryland's GLAD alert system provides near-real-time deforestation alerts at 30-meter resolution derived from Landsat imagery, distributed via Global Forest Watch, identifying new forest loss weekly across the tropics.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "GLAD Global Forest Alerts",
+      "url": "https://www.globalforestwatch.org/map"
+    },
+    "source_date": "2022-01-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed GLAD methodology, Global Forest Watch data portal, and alert system documentation.",
+    "limitations": [
+      "GLAD alerts detect tree cover loss, not deforestation type or cause.",
+      "30m resolution may not capture selective logging or understory degradation."
+    ],
+    "confidence": "high"
+  }
+]

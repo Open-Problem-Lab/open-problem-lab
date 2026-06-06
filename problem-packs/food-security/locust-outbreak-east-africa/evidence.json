@@ -1,0 +1,56 @@
+[
+  {
+    "id": "fao-desert-locust-factsheet-2025",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "claim": "FAO describes desert locusts as the most dangerous migratory pest globally, with swarms capable of extending across 30 countries and 20 percent of the Earth's land surface, and identifies remote sensing as a core component of early warning.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "FAO Desert Locust factsheet",
+      "url": "https://www.fao.org/locusts/en/"
+    },
+    "source_date": "2025-03-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed FAO Locust Watch portal for operational framework, early warning methodology, and data sources.",
+    "limitations": [
+      "Organizational overview, not a quantitative validation of signal accuracy.",
+      "FAO's operational data access may be restricted for some regions."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "fao-east-africa-upsurge-2020",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "claim": "FAO reports the 2019-2020 East Africa desert locust upsurge as the worst in 70 years for Kenya and 25 years for Ethiopia and Somalia, threatening food security for over 23 million people and requiring $230 million in control operations.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Desert Locust Crisis: East Africa 2019-2020",
+      "url": "https://www.fao.org/emergencies/crisis/desertlocust/en/"
+    },
+    "source_date": "2020-09-15",
+    "access_date": "2026-06-06",
+    "method": "Reviewed FAO crisis response pages detailing upsurge timeline, affected countries, control costs, and food-security impact.",
+    "limitations": [
+      "FAO operational reports reflect available field surveillance, which was constrained by conflict zones.",
+      "Food-security impact estimates are modeled, not directly measured."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "ceccato-locust-remote-sensing-review-2020",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "claim": "A 2020 review found that MODIS NDVI and CHIRPS rainfall data can identify likely desert locust breeding habitats, but the transition from habitat detection to swarm formation warning remains poorly validated against field-reported swarm timing and location.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Remote sensing for desert locust early warning: a review",
+      "url": "https://www.mdpi.com/2072-4292/12/18/2987"
+    },
+    "source_date": "2020-09-10",
+    "access_date": "2026-06-06",
+    "method": "Reviewed abstract, methodology, remote sensing data sources, and validation results sections.",
+    "limitations": [
+      "Validation is limited to available field reports, which undersample remote and conflict areas.",
+      "Review covers multiple regions and may not reflect East Africa-specific wind patterns."
+    ],
+    "confidence": "medium"
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "air-quality/indoor-air-pollution-sub-saharan-africa",
+    "title": "Inventory indoor air pollution data sources",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "Dated source inventory.",
+    "inputs": [
+      "DHS data",
+      "GBD HAP layer",
+      "kitchen PM2.5 measurements",
+      "ventilation studies"
+    ],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Five sources classified."
+  },
+  {
+    "id": "exposure-estimation",
+    "problem_id": "air-quality/indoor-air-pollution-sub-saharan-africa",
+    "title": "Develop household PM2.5 exposure estimation methodology",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "Exposure estimation methodology combining fuel type, ventilation, and duration with validation against measurements.",
+    "inputs": [
+      "DHS fuel and ventilation data",
+      "kitchen PM2.5 studies",
+      "exposure modeling methodology"
+    ],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator reruns estimation against independent measurement data.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Methodology validated against measurements with error statistics and replication."
+  },
+  {
+    "id": "exposure-mapping",
+    "problem_id": "air-quality/indoor-air-pollution-sub-saharan-africa",
+    "title": "Produce sub-national indoor PM2.5 exposure maps",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Sub-national exposure maps with fuel-stacking caveats and uncertainty ranges.",
+    "inputs": ["exposure methodology", "DHS data", "population data"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator reruns with alternative ventilation assumptions.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Exposure maps include fuel-stacking caveats, uncertainty ranges, replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "air-quality/indoor-air-pollution-sub-saharan-africa",
+    "title": "Red-team over-precise exposure and intervention claims",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["exposure maps", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "air-quality/indoor-air-pollution-sub-saharan-africa",
+    "title": "Check whether outputs match clean-cooking program needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "clean-cooking program context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases, replicated review."
+  }
+]

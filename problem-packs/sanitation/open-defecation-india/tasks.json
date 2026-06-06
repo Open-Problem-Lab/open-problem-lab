@@ -1,0 +1,111 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "sanitation/open-defecation-india",
+    "title": "Inventory sanitation and health data sources for India",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating household surveys, administrative data, health data, and unusable sources.",
+    "inputs": [
+      "NFHS data",
+      "JMP data",
+      "SBM administrative records",
+      "census data",
+      "child health surveys"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records.",
+    "validation_method": "Reviewer checks each source for URL, date, access status, methodology, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "coverage-triangulation",
+    "problem_id": "sanitation/open-defecation-india",
+    "title": "Triangulate sanitation coverage estimates across data sources at district level",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A district-level comparison of sanitation access and use estimates from NFHS, SBM, and census data with documentation of where estimates diverge.",
+    "inputs": [
+      "NFHS-5 district data",
+      "SBM administrative data",
+      "census data",
+      "reconciliation methodology"
+    ],
+    "expected_artifact": "validation.md update with triangulation methodology.",
+    "validation_method": "Replicator reruns triangulation with alternative data subsets and confirms divergence patterns.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Triangulation identifies districts where administrative and survey estimates diverge by more than 15 percentage points with replication confirmed."
+  },
+  {
+    "id": "use-construction-gap",
+    "problem_id": "sanitation/open-defecation-india",
+    "title": "Quantify toilet-use versus construction gap at district level",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A district-level analysis of the gap between reported toilet construction and measured toilet use, categorized by gap size and associated factors.",
+    "inputs": [
+      "coverage triangulation results",
+      "water access data",
+      "maintenance data",
+      "behavioral survey data"
+    ],
+    "expected_artifact": "outputs.md update with gap analysis.",
+    "validation_method": "Replicator reruns gap analysis with alternative use-definition thresholds.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Gap analysis identifies districts with largest construction-use gaps and associated factors with replication confirmed."
+  },
+  {
+    "id": "health-outcome-correlation",
+    "problem_id": "sanitation/open-defecation-india",
+    "title": "Correlate sanitation coverage with child health outcomes",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A district-level correlation analysis between sanitation coverage measures and child diarrheal disease, stunting, and under-five mortality, with explicit caveats against causal attribution.",
+    "inputs": [
+      "sanitation coverage data",
+      "NFHS-5 health indicators",
+      "confounding variable data",
+      "statistical methodology"
+    ],
+    "expected_artifact": "outputs.md update with health correlation analysis.",
+    "validation_method": "Replicator reruns correlation with alternative confounder sets and confirms direction and approximate magnitude.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Correlation analysis includes confounder controls, explicit non-causal caveats, and replication confirmed."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "sanitation/open-defecation-india",
+    "title": "Red-team misuse of sanitation coverage and health data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying how coverage gaps could be misinterpreted or weaponized against states or communities.",
+    "inputs": ["gap analysis", "health correlation", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every failure mode has mitigation or blocks publication, then replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every program-relevant claim is qualified with uncertainty or gated behind replication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "sanitation/open-defecation-india",
+    "title": "Check whether outputs match sanitation program decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether coverage and gap analyses would change any real SBM or health program decision responsibly.",
+    "inputs": [
+      "draft outputs",
+      "SBM operational context",
+      "district administration constraints"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies actual decision, user, timing, and misuse risk, then replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Output has named user, named decision, explicit non-use cases, and replicated field-reality review."
+  }
+]

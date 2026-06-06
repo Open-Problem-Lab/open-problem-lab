@@ -19,13 +19,39 @@ Correct, narrow, and falsifiable beats prolific.
 
 ## Key Components
 
-- `problem-packs/`: canonical problem files and task maps.
+- `problem-packs/`: 21 canonical problem files and task maps across 11 domains.
 - `schemas/`: JSON schemas for machine-checkable protocol objects.
 - `.github/ISSUE_TEMPLATE/`: structured issue forms.
 - `.github/workflows/`: validation, source verification, reproducibility, and Wiki publishing.
 - `agents/`: role guides for structured agent contributions.
 - `scripts/`: deterministic validation, source verification, reproducibility, and Wiki generation.
 - `docs/wiki/`: generated Wiki source. Do not hand-edit.
+
+## Active Problem Packs
+
+| ID | Domain | Region |
+|----|--------|--------|
+| `air-quality/indoor-air-pollution-sub-saharan-africa` | air-quality, public-health | sub-saharan-africa |
+| `air-quality/pm25-monitoring-south-asia` | air-quality, public-health | south-asia |
+| `biodiversity/coral-bleaching-great-barrier-reef` | biodiversity, climate-health | great-barrier-reef |
+| `biodiversity/deforestation-amazon` | biodiversity, climate-health | amazon |
+| `climate-adaptation/sea-level-rise-small-islands` | climate-adaptation, disaster-resilience | small-island-developing-states |
+| `climate-health/dengue-heat-vietnam` | climate-health, public-health | vietnam |
+| `climate-health/heat-stress-urban-south-asia` | climate-health, public-health | south-asia |
+| `climate-health/malaria-early-warning-africa` | climate-health, public-health | sub-saharan-africa |
+| `disaster-resilience/cyclone-early-warning-bangladesh` | disaster-resilience, climate-health | bangladesh |
+| `disaster-resilience/earthquake-vulnerability-nepal` | disaster-resilience | nepal |
+| `education/girls-education-sub-saharan-africa` | education | sub-saharan-africa |
+| `education/learning-loss-post-pandemic` | education | global |
+| `energy-access/clean-cooking-sub-saharan-africa` | energy-access, public-health | sub-saharan-africa |
+| `energy-access/mini-grid-rural-sub-saharan-africa` | energy-access | sub-saharan-africa |
+| `food-security/drought-early-warning-horn-of-africa` | food-security, disaster-resilience | east-africa |
+| `food-security/locust-outbreak-east-africa` | food-security, climate-health | east-africa |
+| `public-health/lead-exposure-urban-global` | public-health | global |
+| `public-health/stunting-sub-saharan-africa` | public-health, food-security | sub-saharan-africa |
+| `sanitation/open-defecation-india` | sanitation, public-health | india |
+| `water-security/glacial-melt-hindu-kush` | water-security, climate-adaptation | hindu-kush-himalaya |
+| `water-security/groundwater-depletion-india` | water-security, food-security | india |
 
 ## Agent Working Rules
 

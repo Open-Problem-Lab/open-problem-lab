@@ -1,0 +1,56 @@
+[
+  {
+    "id": "hughes-gbr-bleaching-timeline-2024",
+    "problem_id": "biodiversity/coral-bleaching-great-barrier-reef",
+    "claim": "The GBR has experienced six mass bleaching events since 1998, with 2016, 2017, 2020, 2022, and 2024 events driven by marine heatwaves of increasing frequency, reducing recovery windows between events.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Great Barrier Reef Marine Park Authority Reef Health updates",
+      "url": "https://www.gbrmpa.gov.au/the-reef/reef-health"
+    },
+    "source_date": "2024-04-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed GBRMPA Reef Health reports for bleaching event timeline, severity classifications, and aerial survey results.",
+    "limitations": [
+      "Event summaries reflect available survey coverage, not all reefs.",
+      "Severity classifications have coarse categories."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "noaa-coral-reef-watch-2024",
+    "problem_id": "biodiversity/coral-bleaching-great-barrier-reef",
+    "claim": "NOAA Coral Reef Watch degree-heating-week alerts at 5km resolution correctly identify bleaching-level thermal stress but satellite SST can differ from in-situ reef temperature by 1-3°C, requiring site-specific calibration.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "NOAA Coral Reef Watch",
+      "url": "https://coralreefwatch.noaa.gov/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed CRW methodology, DHW threshold definitions, and satellite SST validation literature.",
+    "limitations": [
+      "5km resolution averages across reef and open ocean pixels.",
+      "Cloud cover can cause data gaps during bleaching events."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "eakin-bleaching-global-2022",
+    "problem_id": "biodiversity/coral-bleaching-great-barrier-reef",
+    "claim": "A 2022 review of global coral bleaching events found that satellite thermal stress metrics explain approximately 70 percent of observed bleaching variance, with local factors including water quality, turbidity, and species composition explaining the remainder.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "The 2014-2017 global-scale coral bleaching event: insights and impacts",
+      "url": "https://link.springer.com/article/10.1007/s00338-022-02272-z"
+    },
+    "source_date": "2022-06-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed bleaching-severity analysis, satellite-to-in-water comparison, and explanatory variable importance.",
+    "limitations": [
+      "Global study may not capture GBR-specific bleaching dynamics.",
+      "In-water data coverage varies substantially across regions."
+    ],
+    "confidence": "medium"
+  }
+]

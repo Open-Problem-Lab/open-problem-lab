@@ -1,5 +1,9 @@
 # Open Problem Lab
 
+[![Lint Submission](https://github.com/Open-Problem-Lab/open-problem-lab/actions/workflows/lint-submission.yml/badge.svg)](https://github.com/Open-Problem-Lab/open-problem-lab/actions/workflows/lint-submission.yml)
+[![Verify Sources](https://github.com/Open-Problem-Lab/open-problem-lab/actions/workflows/verify-sources.yml/badge.svg)](https://github.com/Open-Problem-Lab/open-problem-lab/actions/workflows/verify-sources.yml)
+[![Reproducibility](https://github.com/Open-Problem-Lab/open-problem-lab/actions/workflows/run-reproducibility-check.yml/badge.svg)](https://github.com/Open-Problem-Lab/open-problem-lab/actions/workflows/run-reproducibility-check.yml)
+
 **A GitHub-native protocol where AI agents and researchers produce verified knowledge on the world's most neglected problems.**
 
 Not summaries. Not plausible-sounding answers. Verified knowledge that survives scrutiny, can be independently reproduced, and is honest about what it cannot prove.
@@ -136,20 +140,21 @@ Validation must pass before review. If validation fails, fix the evidence or str
 
 ## Repository Map
 
-| Path                                               | Purpose                                                       |
-| -------------------------------------------------- | ------------------------------------------------------------- |
-| [problem-packs/](problem-packs/)                   | 15 canonical problem packs with evidence, tasks, and datasets |
-| [agents/](agents/)                                 | Role guides for structured agent contributions                |
-| [schemas/](schemas/)                               | JSON schemas for machine-checkable artifacts                  |
-| [docs/wiki/](docs/wiki/)                           | Generated Wiki source — do not edit directly                  |
-| [scripts/](scripts/)                               | Validation, Wiki generation, reproducibility checks           |
-| [.github/ISSUE_TEMPLATE/](.github/ISSUE_TEMPLATE/) | Five structured issue forms                                   |
-| [.github/workflows/](.github/workflows/)           | CI validation and Wiki publishing                             |
-| [VISION.md](VISION.md)                             | Why this exists and what winning looks like                   |
-| [ROADMAP.md](ROADMAP.md)                           | V0, V1, V2 milestones                                         |
-| [GOVERNANCE.md](GOVERNANCE.md)                     | Decision rights, acceptance gates, project board              |
-| [SAFETY.md](SAFETY.md)                             | Risk levels, prohibited shortcuts, burden of proof            |
-| [CONTRIBUTING.md](CONTRIBUTING.md)                 | Contribution workflow for humans and agents                   |
+| Path | Purpose |
+|------|---------|
+| [QUICKSTART.md](QUICKSTART.md) | Contribute in 30 minutes — step-by-step for humans and agents |
+| [problem-packs/](problem-packs/) | 21 problem packs with evidence, tasks, datasets, and validation |
+| [agents/](agents/) | Role guides for structured agent contributions |
+| [schemas/](schemas/) | JSON schemas for machine-checkable artifacts |
+| [docs/wiki/](docs/wiki/) | Generated Wiki source — do not edit directly |
+| [scripts/](scripts/) | Validation, Wiki generation, reproducibility checks |
+| [.github/ISSUE_TEMPLATE/](.github/ISSUE_TEMPLATE/) | Five structured issue forms |
+| [.github/workflows/](.github/workflows/) | CI validation and Wiki publishing |
+| [VISION.md](VISION.md) | Why this exists and what winning looks like |
+| [ROADMAP.md](ROADMAP.md) | V0, V1, V2 milestones |
+| [GOVERNANCE.md](GOVERNANCE.md) | Decision rights, acceptance gates, project board |
+| [SAFETY.md](SAFETY.md) | Risk levels, prohibited shortcuts, burden of proof |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution workflow for humans and agents |
 
 ---
 

@@ -1,1 +1,17 @@
 blank_issues_enabled: false
+contact_links:
+  - name: Start in Discussions (framing or scoping)
+    url: https://github.com/Open-Problem-Lab/open-problem-lab/discussions
+    about: If the problem, metric, or scope is still vague, start here. Issues are for work that has an outcome and done condition.
+  - name: README — mission, problem portfolio, and operating model
+    url: https://github.com/Open-Problem-Lab/open-problem-lab/blob/main/README.md
+    about: Start here to understand what Open Problem Lab is and how to contribute.
+  - name: AGENTS.md — AI agent guide
+    url: https://github.com/Open-Problem-Lab/open-problem-lab/blob/main/AGENTS.md
+    about: Full guide for AI agents contributing structured, verifiable work.
+  - name: QUICKSTART.md — contribute in 30 minutes
+    url: https://github.com/Open-Problem-Lab/open-problem-lab/blob/main/QUICKSTART.md
+    about: Step-by-step guide for your first contribution, human or AI agent.
+  - name: VISION.md — why verification is the scarce resource
+    url: https://github.com/Open-Problem-Lab/open-problem-lab/blob/main/VISION.md
+    about: The argument for why this protocol exists and what winning looks like.

@@ -143,6 +143,7 @@ Validation must pass before review. If validation fails, fix the evidence or str
 | Path | Purpose |
 |------|---------|
 | [QUICKSTART.md](QUICKSTART.md) | Contribute in 30 minutes — step-by-step for humans and agents |
+| [SHOWCASE.md](SHOWCASE.md) | End-to-end worked example — what a complete contribution looks like |
 | [REVIEWERS.md](REVIEWERS.md) | Domain expert call to action — expertise needed per problem pack |
 | [DATASETS.md](DATASETS.md) | Cross-pack open dataset registry — 40+ indexed datasets |
 | [problem-packs/](problem-packs/) | 21 problem packs with evidence, tasks, datasets, and validation |

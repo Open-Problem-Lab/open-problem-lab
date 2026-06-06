@@ -1,0 +1,86 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "climate-health/dengue-heat-vietnam",
+    "title": "Inventory usable dengue and climate data sources",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory that separates official surveillance, research datasets, climate reanalysis, and unusable sources.",
+    "inputs": [
+      "WHO dengue sources",
+      "Vietnam public-health sources",
+      "peer-reviewed dengue-climate studies",
+      "climate reanalysis documentation"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "district-baseline",
+    "problem_id": "climate-health/dengue-heat-vietnam",
+    "title": "Define district-level baseline requirements",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A reproducible baseline specification for district-level dengue incidence and denominator handling.",
+    "inputs": [
+      "surveillance data candidate",
+      "administrative boundary source",
+      "population denominator source"
+    ],
+    "expected_artifact": "validation.md update with baseline formula and data checks.",
+    "validation_method": "Replicator reruns the baseline on a sample file and confirms grain, missingness, and denominator behavior.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "A reviewer can reproduce the baseline calculation and identify every excluded district or month."
+  },
+  {
+    "id": "hydromet-signal-review",
+    "problem_id": "climate-health/dengue-heat-vietnam",
+    "title": "Review heat, rainfall, and drought signal candidates",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A ranked list of candidate hydrometeorological signals with lead-time assumptions and failure modes.",
+    "inputs": [
+      "temperature data",
+      "rainfall data",
+      "drought index data",
+      "district-level dengue baseline"
+    ],
+    "expected_artifact": "task-map.md and validation.md updates with candidate signal tests.",
+    "validation_method": "Back-test candidate signals against historical data and report false-positive and false-negative behavior.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "No candidate signal is accepted without back-test results, limitations, and replication status."
+  },
+  {
+    "id": "red-team-operational-use",
+    "problem_id": "climate-health/dengue-heat-vietnam",
+    "title": "Red-team harmful operational interpretations",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review that identifies how rankings, alerts, or maps could mislead public-health action.",
+    "inputs": ["candidate outputs", "validation notes", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk failure mode has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every operational claim is either blocked, softened to analytic language, or gated behind domain review and replicated red-team review."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "climate-health/dengue-heat-vietnam",
+    "title": "Check whether outputs match field decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether the proposed artifact would change any real workflow responsibly.",
+    "inputs": ["draft output", "local implementation constraints", "reviewer notes"],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk for the output, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The output has a named user, named decision, explicit non-use cases, and replicated field-reality review before publication."
+  }
+]

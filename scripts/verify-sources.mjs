@@ -1,0 +1,75 @@
+import { promises as fs } from "node:fs";
+import path from "node:path";
+import { root, walkFiles } from "./lib/files.mjs";
+
+const fetchWithTimeout = async (url, method) => {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 15_000);
+  try {
+    return await fetch(url, {
+      method,
+      redirect: "follow",
+      signal: controller.signal,
+      headers: {
+        "User-Agent": "open-problem-lab-source-check/0.1"
+      }
+    });
+  } finally {
+    clearTimeout(timeout);
+  }
+};
+
+const checkUrl = async (url) => {
+  const head = await fetchWithTimeout(url, "HEAD").catch((error) => ({ error }));
+  if (!head.error && head.status >= 200 && head.status < 400) {
+    return { status: head.status, method: "HEAD", ok: true };
+  }
+
+  const get = await fetchWithTimeout(url, "GET").catch((error) => ({ error }));
+  if (get.error) {
+    throw new Error(`${url} failed: ${get.error.message}`);
+  }
+
+  if ((get.status >= 200 && get.status < 400) || get.status === 403) {
+    return {
+      status: get.status,
+      method: "GET",
+      ok: true,
+      note: get.status === 403 ? "reachable but automated access is forbidden" : undefined
+    };
+  }
+
+  throw new Error(`${url} returned HTTP ${get.status}`);
+};
+
+const main = async () => {
+  const evidenceFiles = await walkFiles(
+    path.join(root, "problem-packs"),
+    (file) => path.basename(file) === "evidence.json"
+  );
+
+  const records = [];
+  for (const file of evidenceFiles) {
+    const evidence = JSON.parse(await fs.readFile(file, "utf8"));
+    for (const record of evidence) {
+      records.push({ ...record, file: path.relative(root, file) });
+    }
+  }
+
+  if (records.length === 0) {
+    throw new Error("No evidence records found.");
+  }
+
+  for (const record of records) {
+    const result = await checkUrl(record.source.url);
+    const suffix = result.note ? ` (${result.note})` : "";
+    console.log(`${record.id}: ${result.method} ${result.status}${suffix}`);
+  }
+
+  console.log(`Verified ${records.length} evidence source URL(s).`);
+};
+
+main().catch((error) => {
+  console.error(error.message);
+  process.exit(1);
+});

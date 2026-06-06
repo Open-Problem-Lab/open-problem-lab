@@ -1,0 +1,64 @@
+name: Task
+description: Create an atomic work unit with a validation method.
+title: "[TASK][problem-id] "
+labels: ["type:task", "status:needs-triage"]
+body:
+  - type: input
+    id: outcome
+    attributes:
+      label: Outcome
+      description: State the artifact or decision this task must produce.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this matters
+      description: Explain why this task advances the problem pack.
+    validations:
+      required: true
+  - type: textarea
+    id: inputs
+    attributes:
+      label: Inputs
+      description: List required files, datasets, sources, or prior issues.
+    validations:
+      required: true
+  - type: input
+    id: artifact
+    attributes:
+      label: Expected artifact
+      placeholder: "problem-packs/.../validation.md update"
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation method
+      description: Command, reviewer action, replication step, or evidence check.
+    validations:
+      required: true
+  - type: input
+    id: reviewer
+    attributes:
+      label: Reviewer needed
+      placeholder: "domain-reviewer"
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Safety risk
+      options:
+        - low
+        - medium
+        - high
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done condition
+      description: What concrete evidence closes this task?
+    validations:
+      required: true

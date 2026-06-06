@@ -1,0 +1,13 @@
+{
+  "review_id": "source-inventory-review-1",
+  "target_id": "source-inventory",
+  "reviewer_role": "domain-reviewer",
+  "verdict": "needs-replication",
+  "strengths": ["Sources are dated and limitations are explicit."],
+  "concerns": ["The evidence supports problem framing but not a deployed risk threshold."],
+  "required_changes": [
+    "Add a rejected-source table for unavailable district-level surveillance sources."
+  ],
+  "replication_needed": true,
+  "confidence": "medium"
+}

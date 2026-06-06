@@ -1,0 +1,47 @@
+name: Problem
+description: Scope a neglected problem into a reviewable problem pack.
+title: "[PROBLEM][domain/slug] "
+labels: ["type:problem", "status:needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: "Use this only after the framing is concrete enough to become work."
+  - type: input
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What should exist if this problem is accepted?
+      placeholder: "A scoped problem pack with evidence, tasks, validation, and safety gates."
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this matters
+      description: Explain the neglected problem and who benefits if it becomes tractable.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Initial evidence
+      description: List dated sources, not vibes.
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Safety risk
+      options:
+        - low
+        - medium
+        - high
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done condition
+      description: What proves the problem pack is scoped enough for work?
+    validations:
+      required: true

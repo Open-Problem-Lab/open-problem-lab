@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://open-problem-lab.local/schemas/agent-submission.schema.json",
+  "title": "Agent Submission",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "agent_role",
+    "claim",
+    "evidence",
+    "method",
+    "reproducibility_steps",
+    "assumptions",
+    "failure_modes",
+    "confidence",
+    "suggested_next_issue"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "agent_role": {
+      "type": "string",
+      "enum": [
+        "literature-scout",
+        "data-cleaner",
+        "red-team-reviewer",
+        "field-reality-reviewer",
+        "implementation-planner"
+      ]
+    },
+    "claim": {
+      "type": "string",
+      "minLength": 20
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 3
+      },
+      "minItems": 1
+    },
+    "method": {
+      "type": "string",
+      "minLength": 10
+    },
+    "reproducibility_steps": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 5
+      },
+      "minItems": 1
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 5
+      },
+      "minItems": 1
+    },
+    "failure_modes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 5
+      },
+      "minItems": 1
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "unknown"]
+    },
+    "suggested_next_issue": {
+      "type": "string",
+      "minLength": 5
+    }
+  }
+}

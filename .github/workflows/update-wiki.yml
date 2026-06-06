@@ -1,0 +1,65 @@
+name: Update Wiki
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publish docs/wiki to the GitHub Wiki repository"
+        required: true
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+jobs:
+  update-wiki:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Generate wiki pages
+        run: pnpm build
+
+      - name: Validate wiki freshness
+        run: pnpm validate
+
+      - name: Upload wiki artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: open-problem-lab-wiki
+          path: docs/wiki
+
+      - name: Publish to GitHub Wiki
+        if: inputs.publish == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          rm -rf /tmp/open-problem-lab-wiki
+          git clone "https://x-access-token:${GH_TOKEN}@github.com/${REPOSITORY}.wiki.git" /tmp/open-problem-lab-wiki
+          rsync -a --delete docs/wiki/ /tmp/open-problem-lab-wiki/
+          cd /tmp/open-problem-lab-wiki
+          git add .
+          git diff --cached --quiet || git commit -m "Update generated wiki"
+          git push

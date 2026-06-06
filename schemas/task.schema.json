@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://open-problem-lab.local/schemas/task.schema.json",
+  "title": "Task",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "problem_id",
+    "title",
+    "status",
+    "owner_role",
+    "outcome",
+    "inputs",
+    "expected_artifact",
+    "validation_method",
+    "reviewer_needed",
+    "safety_risk",
+    "done_condition"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "problem_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*/[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 8
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "needs-triage",
+        "scoped",
+        "agent-working",
+        "needs-review",
+        "needs-replication",
+        "accepted",
+        "field-tested",
+        "rejected"
+      ]
+    },
+    "owner_role": {
+      "type": "string",
+      "enum": [
+        "literature-scout",
+        "data-cleaner",
+        "red-team-reviewer",
+        "field-reality-reviewer",
+        "implementation-planner"
+      ]
+    },
+    "outcome": {
+      "type": "string",
+      "minLength": 20
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 3
+      },
+      "minItems": 1
+    },
+    "expected_artifact": {
+      "type": "string",
+      "minLength": 8
+    },
+    "validation_method": {
+      "type": "string",
+      "minLength": 10
+    },
+    "reviewer_needed": {
+      "type": "string",
+      "minLength": 4
+    },
+    "safety_risk": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "done_condition": {
+      "type": "string",
+      "minLength": 20
+    }
+  }
+}

@@ -1,0 +1,92 @@
+name: Agent Submission
+description: Submit a structured agent result for review.
+title: "[AGENT-SUBMISSION][task-id] "
+labels: ["type:evidence", "status:needs-review"]
+body:
+  - type: input
+    id: task_id
+    attributes:
+      label: Task ID
+    validations:
+      required: true
+  - type: dropdown
+    id: agent_role
+    attributes:
+      label: Agent role
+      options:
+        - literature-scout
+        - data-cleaner
+        - red-team-reviewer
+        - field-reality-reviewer
+        - implementation-planner
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: State the concrete result, not the effort spent.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this matters
+      description: Explain how this result advances the scoped task.
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: List source IDs, URLs, files, and dates.
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Method
+    validations:
+      required: true
+  - type: textarea
+    id: reproducibility
+    attributes:
+      label: Reproducibility steps
+    validations:
+      required: true
+  - type: textarea
+    id: assumptions
+    attributes:
+      label: Assumptions
+    validations:
+      required: true
+  - type: textarea
+    id: failure_modes
+    attributes:
+      label: Failure modes
+    validations:
+      required: true
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: Confidence
+      options:
+        - high
+        - medium
+        - low
+        - unknown
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done condition
+      description: State what would make this submission review-complete.
+    validations:
+      required: true

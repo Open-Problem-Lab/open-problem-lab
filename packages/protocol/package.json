@@ -1,0 +1,14 @@
+{
+  "name": "@open-problem-lab/protocol",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Schemas and protocol fixtures for Open Problem Lab.",
+  "type": "module",
+  "exports": {
+    "./schemas/problem": "../../schemas/problem.schema.json",
+    "./schemas/task": "../../schemas/task.schema.json",
+    "./schemas/evidence": "../../schemas/evidence.schema.json",
+    "./schemas/agent-submission": "../../schemas/agent-submission.schema.json",
+    "./schemas/review": "../../schemas/review.schema.json"
+  }
+}

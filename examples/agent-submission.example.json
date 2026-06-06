@@ -1,0 +1,21 @@
+{
+  "task_id": "source-inventory",
+  "agent_role": "literature-scout",
+  "claim": "WHO and peer-reviewed sources are sufficient to justify a scoped evidence inventory, but not sufficient to publish an operational dengue alert.",
+  "evidence": ["who-dengue-fact-sheet-2025", "gibb-vietnam-dengue-2023"],
+  "method": "Compared source type, geographic grain, date, and operational relevance for the initial problem pack.",
+  "reproducibility_steps": [
+    "Open evidence.json.",
+    "Verify each source URL and source date.",
+    "Confirm whether the source supports framing, modeling, or operational use."
+  ],
+  "assumptions": [
+    "The first vertical should favor verifiable public sources over private data access."
+  ],
+  "failure_modes": [
+    "A reader may treat climate association as a local causal threshold.",
+    "A contributor may skip district-level denominator checks."
+  ],
+  "confidence": "medium",
+  "suggested_next_issue": "Inventory public district-level dengue surveillance data access."
+}

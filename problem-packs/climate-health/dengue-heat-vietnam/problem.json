@@ -1,0 +1,44 @@
+{
+  "id": "climate-health/dengue-heat-vietnam",
+  "title": "Dengue, Heat, And Rainfall Risk In Viet Nam",
+  "status": "scoped",
+  "domain": ["climate-health", "public-health"],
+  "region": ["vietnam"],
+  "summary": "Build a verified workflow for assessing where climate, water infrastructure, mobility, and dengue surveillance signals may support earlier district-level dengue risk review in Viet Nam.",
+  "why_it_matters": "Dengue is climate-sensitive, operationally local, and easy to overstate. A useful contribution must separate evidence-backed risk review from unreviewed public-health advice.",
+  "success_metrics": [
+    {
+      "metric": "Evidence traceability",
+      "target": "Every accepted claim links to a dated evidence record with method and limitations.",
+      "validation_method": "Run schema validation and reviewer spot-checks against evidence.json and evidence.md."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No alert, threshold, or intervention recommendation is merged without review and replication.",
+      "validation_method": "Check task status, review records, and safety flags before accepting outputs.md updates."
+    },
+    {
+      "metric": "District-level usefulness",
+      "target": "Candidate analyses preserve district-level grain whenever source data permits it.",
+      "validation_method": "Review reproducibility steps and confirm aggregation choices in pull requests."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review for operational claims, and replication for quantitative outputs."
+  }
+}

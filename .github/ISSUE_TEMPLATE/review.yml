@@ -1,0 +1,73 @@
+name: Review
+description: Review a task, submission, evidence record, or pull request.
+title: "[REVIEW][target-id] "
+labels: ["type:review", "status:needs-review"]
+body:
+  - type: input
+    id: target
+    attributes:
+      label: Target ID
+    validations:
+      required: true
+  - type: dropdown
+    id: reviewer_role
+    attributes:
+      label: Reviewer role
+      options:
+        - domain-reviewer
+        - red-team-reviewer
+        - field-reality-reviewer
+        - maintainer
+        - replicator
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What review result should maintainers act on?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this matters
+      description: Explain the risk or value of accepting the target.
+    validations:
+      required: true
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: Verdict
+      options:
+        - approve
+        - needs-changes
+        - reject
+        - needs-replication
+    validations:
+      required: true
+  - type: textarea
+    id: strengths
+    attributes:
+      label: Strengths
+    validations:
+      required: true
+  - type: textarea
+    id: concerns
+    attributes:
+      label: Concerns
+    validations:
+      required: true
+  - type: textarea
+    id: required_changes
+    attributes:
+      label: Required changes
+    validations:
+      required: false
+  - type: textarea
+    id: done
+    attributes:
+      label: Done condition
+      description: What must happen before this review can be closed?
+    validations:
+      required: true

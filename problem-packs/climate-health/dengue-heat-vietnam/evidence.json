@@ -1,0 +1,56 @@
+[
+  {
+    "id": "who-dengue-fact-sheet-2025",
+    "problem_id": "climate-health/dengue-heat-vietnam",
+    "claim": "WHO reports that dengue incidence has grown dramatically and identifies climate change, high rainfall, humidity, urbanization, and surveillance limits as factors associated with dengue epidemic risk.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO dengue fact sheet",
+      "url": "https://www.who.int/en/news-room/fact-sheets/detail/dengue-and-severe-dengue"
+    },
+    "source_date": "2025-08-21",
+    "access_date": "2026-06-06",
+    "method": "Reviewed WHO fact sheet lines covering global burden, risk factors, transmission, prevention, and WHO response.",
+    "limitations": [
+      "Global fact sheet, not a district-level Viet Nam dataset.",
+      "Associations do not by themselves prove local causal thresholds."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-vietnam-dengue-topic",
+    "problem_id": "climate-health/dengue-heat-vietnam",
+    "claim": "WHO Viet Nam describes dengue in Viet Nam as unstable, seasonally peaking from June to October, with central and southern regions carrying most cases and deaths.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO Viet Nam dengue health topic page",
+      "url": "https://www.who.int/vietnam/health-topics/dengue"
+    },
+    "source_date": "2026-06-06",
+    "access_date": "2026-06-06",
+    "method": "Reviewed WHO Viet Nam dengue topic page for country-specific seasonality and regional burden statements.",
+    "limitations": [
+      "Fetched page did not expose a clear last-updated date; source_date is set to access date and should be replaced if WHO metadata becomes available.",
+      "Page summarizes historical burden and does not provide current district-level time series."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "gibb-vietnam-dengue-2023",
+    "problem_id": "climate-health/dengue-heat-vietnam",
+    "claim": "A peer-reviewed Viet Nam study found that dengue emergence is shaped by interactions among temperature, hydrometeorology, infrastructure, and mobility using 23 years of district-level surveillance data.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Interactions between climate change, urban infrastructure and mobility are driving dengue emergence in Vietnam",
+      "url": "https://www.nature.com/articles/s41467-023-43954-0"
+    },
+    "source_date": "2023-12-11",
+    "access_date": "2026-06-06",
+    "method": "Reviewed abstract, methods summary, results, and discussion of the Nature Communications article.",
+    "limitations": [
+      "Peer-reviewed modeling evidence still needs replication before operational use.",
+      "Passive surveillance data can reflect reporting access, not only true incidence."
+    ],
+    "confidence": "high"
+  }
+]

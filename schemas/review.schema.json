@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://open-problem-lab.local/schemas/review.schema.json",
+  "title": "Review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "review_id",
+    "target_id",
+    "reviewer_role",
+    "verdict",
+    "strengths",
+    "concerns",
+    "required_changes",
+    "replication_needed",
+    "confidence"
+  ],
+  "properties": {
+    "review_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "target_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "reviewer_role": {
+      "type": "string",
+      "enum": [
+        "domain-reviewer",
+        "red-team-reviewer",
+        "field-reality-reviewer",
+        "maintainer",
+        "replicator"
+      ]
+    },
+    "verdict": {
+      "type": "string",
+      "enum": ["approve", "needs-changes", "reject", "needs-replication"]
+    },
+    "strengths": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 5
+      },
+      "minItems": 1
+    },
+    "concerns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 5
+      }
+    },
+    "required_changes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 5
+      }
+    },
+    "replication_needed": {
+      "type": "boolean"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "unknown"]
+    }
+  }
+}

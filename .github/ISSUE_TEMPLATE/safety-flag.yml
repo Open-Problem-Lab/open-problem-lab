@@ -1,0 +1,57 @@
+name: Safety Flag
+description: Flag unsafe, misleading, or unreviewed operational use.
+title: "[SAFETY][target-id] "
+labels: ["type:safety", "risk:high", "status:needs-review"]
+body:
+  - type: input
+    id: target
+    attributes:
+      label: Target ID
+      description: Issue, pull request, file, output, or claim being flagged.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What safety action should result from this flag?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this matters
+      description: Describe potential harm, misuse, or overclaim.
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Safety risk
+      options:
+        - low
+        - medium
+        - high
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Cite the exact claim, file, comment, or output.
+    validations:
+      required: true
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Proposed mitigation
+      description: Block, revise, replicate, add limitation, or escalate.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done condition
+      description: What proves the safety risk has been handled?
+    validations:
+      required: true

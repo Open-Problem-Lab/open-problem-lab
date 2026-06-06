@@ -1,0 +1,21 @@
+{
+  "name": "open-problem-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A GitHub-native protocol for verified AI contributions to neglected global problems.",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/generate-wiki.mjs",
+    "lint": "node scripts/validate-repo.mjs",
+    "reproducibility:check": "node scripts/check-reproducibility.mjs",
+    "validate": "node scripts/validate-repo.mjs",
+    "verify:sources": "node scripts/verify-sources.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1",
+    "prettier": "3.8.3"
+  }
+}

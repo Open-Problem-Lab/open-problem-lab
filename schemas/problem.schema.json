@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://open-problem-lab.local/schemas/problem.schema.json",
+  "title": "Problem Pack",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "status",
+    "domain",
+    "region",
+    "summary",
+    "why_it_matters",
+    "success_metrics",
+    "safety_level",
+    "canonical_files",
+    "review_policy"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*/[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 8
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "scoped", "active", "accepted", "field-tested", "archived"]
+    },
+    "domain": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "region": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 40
+    },
+    "why_it_matters": {
+      "type": "string",
+      "minLength": 40
+    },
+    "success_metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["metric", "target", "validation_method"],
+        "properties": {
+          "metric": {
+            "type": "string",
+            "minLength": 4
+          },
+          "target": {
+            "type": "string",
+            "minLength": 4
+          },
+          "validation_method": {
+            "type": "string",
+            "minLength": 8
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "safety_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "canonical_files": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9-]*\\.(md|json)$"
+      },
+      "minItems": 7,
+      "uniqueItems": true
+    },
+    "review_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required_reviews", "replication_required", "merge_gate"],
+      "properties": {
+        "required_reviews": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "replication_required": {
+          "type": "boolean"
+        },
+        "merge_gate": {
+          "type": "string",
+          "minLength": 8
+        }
+      }
+    }
+  }
+}

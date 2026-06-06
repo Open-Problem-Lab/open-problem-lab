@@ -29,6 +29,8 @@ Field-Tested
 
 The canonical label manifest is `.github/labels.yml`. `pnpm validate` checks that every governance-required label is present in that file.
 
-## Remote Limitation
+## GitHub Repository
 
-This local repository currently has no configured Git remote. Remote setup, Wiki enablement, and Project board creation require a GitHub repository URL and maintainer permissions.
+The canonical remote is at `https://github.com/Open-Problem-Lab/open-problem-lab`.
+
+To sync labels from `.github/labels.yml`, use the `github-label-sync` tool or the GitHub API. To enable Wiki publishing, configure the `update-wiki.yml` workflow and enable the Wiki on the repository settings page.

@@ -1,0 +1,78 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/road-traffic-injury-urban-global",
+    "title": "Inventory road traffic and trauma data",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "Dated source inventory.",
+    "inputs": [
+      "police crash data",
+      "hospital registries",
+      "OSM roads",
+      "facility data",
+      "population data"
+    ],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Five sources classified."
+  },
+  {
+    "id": "crash-hotspot-mapping",
+    "problem_id": "public-health/road-traffic-injury-urban-global",
+    "title": "Map crash hotspots using police and hospital data",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "Crash hotspot map with severity classification and data-source triangulation.",
+    "inputs": ["police reports", "trauma registries", "road network data"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator confirms hotspot methodology and data-source sensitivity.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Crash map triangulates police and hospital data with replication."
+  },
+  {
+    "id": "trauma-access-gap",
+    "problem_id": "public-health/road-traffic-injury-urban-global",
+    "title": "Estimate trauma care access gaps from crash locations",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Population and crash victims outside 30- and 60-minute reach of trauma facilities.",
+    "inputs": ["crash hotspot map", "facility locations", "travel-time data"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator reruns with alternative travel-time estimates and confirms gap robustness.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Access gap includes sensitivity to facility-capability classification and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/road-traffic-injury-urban-global",
+    "title": "Red-team misuse of crash and access data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["gap analysis", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/road-traffic-injury-urban-global",
+    "title": "Check whether outputs match EMS decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "EMS operational context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases, replicated review."
+  }
+]

@@ -41,39 +41,39 @@ The done condition in `tasks.json` is the authority on completion — not your a
 
 ## Active Problem Packs (21)
 
-| ID | Domain |
-|----|--------|
-| `air-quality/indoor-air-pollution-sub-saharan-africa` | air-quality, public-health |
-| `air-quality/pm25-monitoring-south-asia` | air-quality, public-health |
-| `biodiversity/coral-bleaching-great-barrier-reef` | biodiversity, climate-health |
-| `biodiversity/deforestation-amazon` | biodiversity, climate-health |
-| `climate-adaptation/sea-level-rise-small-islands` | climate-adaptation, disaster-resilience |
-| `climate-health/dengue-heat-vietnam` | climate-health, public-health |
-| `climate-health/heat-stress-urban-south-asia` | climate-health, public-health |
-| `climate-health/malaria-early-warning-africa` | climate-health, public-health |
-| `disaster-resilience/cyclone-early-warning-bangladesh` | disaster-resilience, climate-health |
-| `disaster-resilience/earthquake-vulnerability-nepal` | disaster-resilience |
-| `education/girls-education-sub-saharan-africa` | education |
-| `education/learning-loss-post-pandemic` | education |
-| `energy-access/clean-cooking-sub-saharan-africa` | energy-access, public-health |
-| `energy-access/mini-grid-rural-sub-saharan-africa` | energy-access |
-| `food-security/drought-early-warning-horn-of-africa` | food-security, disaster-resilience |
-| `food-security/locust-outbreak-east-africa` | food-security, climate-health |
-| `public-health/lead-exposure-urban-global` | public-health |
-| `public-health/stunting-sub-saharan-africa` | public-health, food-security |
-| `sanitation/open-defecation-india` | sanitation, public-health |
-| `water-security/glacial-melt-hindu-kush` | water-security, climate-adaptation |
-| `water-security/groundwater-depletion-india` | water-security, food-security |
+| ID                                                     | Domain                                  |
+| ------------------------------------------------------ | --------------------------------------- |
+| `air-quality/indoor-air-pollution-sub-saharan-africa`  | air-quality, public-health              |
+| `air-quality/pm25-monitoring-south-asia`               | air-quality, public-health              |
+| `biodiversity/coral-bleaching-great-barrier-reef`      | biodiversity, climate-health            |
+| `biodiversity/deforestation-amazon`                    | biodiversity, climate-health            |
+| `climate-adaptation/sea-level-rise-small-islands`      | climate-adaptation, disaster-resilience |
+| `climate-health/dengue-heat-vietnam`                   | climate-health, public-health           |
+| `climate-health/heat-stress-urban-south-asia`          | climate-health, public-health           |
+| `climate-health/malaria-early-warning-africa`          | climate-health, public-health           |
+| `disaster-resilience/cyclone-early-warning-bangladesh` | disaster-resilience, climate-health     |
+| `disaster-resilience/earthquake-vulnerability-nepal`   | disaster-resilience                     |
+| `education/girls-education-sub-saharan-africa`         | education                               |
+| `education/learning-loss-post-pandemic`                | education                               |
+| `energy-access/clean-cooking-sub-saharan-africa`       | energy-access, public-health            |
+| `energy-access/mini-grid-rural-sub-saharan-africa`     | energy-access                           |
+| `food-security/drought-early-warning-horn-of-africa`   | food-security, disaster-resilience      |
+| `food-security/locust-outbreak-east-africa`            | food-security, climate-health           |
+| `public-health/lead-exposure-urban-global`             | public-health                           |
+| `public-health/stunting-sub-saharan-africa`            | public-health, food-security            |
+| `sanitation/open-defecation-india`                     | sanitation, public-health               |
+| `water-security/glacial-melt-hindu-kush`               | water-security, climate-adaptation      |
+| `water-security/groundwater-depletion-india`           | water-security, food-security           |
 
 ## Agent Role Guides
 
-| Role | File | When to use |
-|------|------|-------------|
-| Literature Scout | `agents/literature-scout.md` | Source inventory, evidence classification |
-| Data Cleaner | `agents/data-cleaner.md` | Dataset provenance and cleaning |
-| Implementation Planner | `agents/implementation-planner.md` | Task decomposition, back-test specs |
-| Field-Reality Reviewer | `agents/field-reality-reviewer.md` | Operational relevance check |
-| Red-Team Reviewer | `agents/red-team-reviewer.md` | Failure mode analysis |
+| Role                   | File                               | When to use                               |
+| ---------------------- | ---------------------------------- | ----------------------------------------- |
+| Literature Scout       | `agents/literature-scout.md`       | Source inventory, evidence classification |
+| Data Cleaner           | `agents/data-cleaner.md`           | Dataset provenance and cleaning           |
+| Implementation Planner | `agents/implementation-planner.md` | Task decomposition, back-test specs       |
+| Field-Reality Reviewer | `agents/field-reality-reviewer.md` | Operational relevance check               |
+| Red-Team Reviewer      | `agents/red-team-reviewer.md`      | Failure mode analysis                     |
 
 Each guide has: mission, required output table, good/bad examples, failure modes, self-check questions, merge gate.
 
@@ -81,13 +81,13 @@ Each guide has: mission, required output table, good/bad examples, failure modes
 
 Machine-checkable schemas for every artifact type. Read before creating or editing JSON artifacts.
 
-| Schema | File |
-|--------|------|
-| Problem pack | `schemas/problem.schema.json` |
-| Task | `schemas/task.schema.json` |
-| Evidence record | `schemas/evidence.schema.json` |
+| Schema           | File                                   |
+| ---------------- | -------------------------------------- |
+| Problem pack     | `schemas/problem.schema.json`          |
+| Task             | `schemas/task.schema.json`             |
+| Evidence record  | `schemas/evidence.schema.json`         |
 | Agent submission | `schemas/agent-submission.schema.json` |
-| Review | `schemas/review.schema.json` |
+| Review           | `schemas/review.schema.json`           |
 
 All schemas have `description` fields on every property.
 
@@ -96,6 +96,7 @@ All schemas have `description` fields on every property.
 **One task. One role. One claim.** Submissions that mix roles or make multiple independent claims are returned for splitting.
 
 Every evidence record requires:
+
 - Claim: one specific, falsifiable statement
 - Source: title and stable URL
 - Source date and access date
@@ -117,6 +118,7 @@ Every evidence record requires:
 ## Protocol Self-Improvement
 
 When you finish a task, report in the PR body under a `Protocol Notes` heading:
+
 - Any validator rule that would have caught a bug you hit
 - Any schema field that should be required, enumerated, or removed
 - Any agent-guide failure mode you actually fell into

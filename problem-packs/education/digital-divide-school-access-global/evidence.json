@@ -1,0 +1,38 @@
+[
+  {
+    "id": "unicef-itu-digital-divide-2020",
+    "problem_id": "education/digital-divide-school-access-global",
+    "claim": "UNICEF and ITU estimate 1.3 billion school-age children lack home internet access, two-thirds of schools in low-income countries have no internet, and the digital divide compounds existing education inequalities.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "How many children and young people have internet access at home?",
+      "url": "https://data.unicef.org/resources/children-and-young-people-internet-access-at-home-during-covid19/"
+    },
+    "source_date": "2020-12-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed UNICEF report methodology, household survey compilation, and school-level estimates.",
+    "limitations": [
+      "School connectivity estimates are modeled from available surveys and may miss recent improvements.",
+      "Home access varies substantially within countries."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "giga-project-connectivity-2024",
+    "problem_id": "education/digital-divide-school-access-global",
+    "claim": "Giga, a UNICEF-ITU initiative, has mapped school locations and connectivity status for over 1 million schools across 30 countries using satellite imagery and ML, providing the most comprehensive school-connectivity dataset available.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Giga: Connect every school to the Internet",
+      "url": "https://giga.global/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed Giga methodology, country coverage, school-mapping approach, and connectivity classification.",
+    "limitations": [
+      "Satellite-based classification may misclassify intermittent connectivity.",
+      "Coverage is concentrated in Giga partner countries."
+    ],
+    "confidence": "high"
+  }
+]

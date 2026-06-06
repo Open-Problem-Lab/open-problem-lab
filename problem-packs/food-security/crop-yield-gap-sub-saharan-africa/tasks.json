@@ -1,0 +1,77 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "food-security/crop-yield-gap-sub-saharan-africa",
+    "title": "Inventory crop yield and soil data",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "Dated source inventory.",
+    "inputs": ["FAOSTAT", "GYGA", "Sentinel-2", "soil data", "rainfall data"],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Five sources classified."
+  },
+  {
+    "id": "satellite-yield-estimation",
+    "problem_id": "food-security/crop-yield-gap-sub-saharan-africa",
+    "title": "Estimate crop yields from satellite data",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "Sub-national yield estimates with uncertainty bounds.",
+    "inputs": [
+      "Sentinel-2 imagery",
+      "crop-type maps",
+      "ground-truth yield data",
+      "estimation model"
+    ],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator reruns estimation with alternative models and confirms accuracy.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Yield estimates with RMSE against ground truth and replication."
+  },
+  {
+    "id": "yield-gap-analysis",
+    "problem_id": "food-security/crop-yield-gap-sub-saharan-africa",
+    "title": "Quantify sub-national yield gaps",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Yield gap map linking actual to attainable yields with constraint identification.",
+    "inputs": ["satellite yield estimates", "GYGA potential", "soil data", "rainfall data"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms gap methodology and constraint attribution.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Gap analysis includes constraint attribution and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "food-security/crop-yield-gap-sub-saharan-africa",
+    "title": "Red-team misuse of yield gap data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["gap analysis", "safety policy"],
+    "expected_artifact": "SAFETY.md review.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "food-security/crop-yield-gap-sub-saharan-africa",
+    "title": "Check whether outputs match extension decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "extension context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases."
+  }
+]

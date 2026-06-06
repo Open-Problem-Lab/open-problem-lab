@@ -1,0 +1,88 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/wasting-severe-acute-sub-saharan-africa",
+    "title": "Inventory SAM prevalence and treatment data sources",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "Dated source inventory separating survey, program, and unusable data.",
+    "inputs": [
+      "DHS anthropometry",
+      "SMART surveys",
+      "HMIS treatment data",
+      "CMAM program data",
+      "population denominators"
+    ],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources for URL, methodology, grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five sources classified as usable, limited, or rejected."
+  },
+  {
+    "id": "district-sam-burden",
+    "problem_id": "public-health/wasting-severe-acute-sub-saharan-africa",
+    "title": "Estimate district-level SAM burden from survey data",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "District-level SAM prevalence and burden estimates with confidence intervals and survey-year documentation.",
+    "inputs": [
+      "DHS datasets",
+      "SMART survey data",
+      "population data",
+      "WHO growth standards"
+    ],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator reruns on alternative survey subsets and confirms estimates within reported confidence intervals.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Estimates include CI, survey year, sample size, and replication."
+  },
+  {
+    "id": "treatment-coverage-gap",
+    "problem_id": "public-health/wasting-severe-acute-sub-saharan-africa",
+    "title": "Analyze SAM treatment coverage gaps at district level",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "District-level comparison of estimated SAM cases to children treated, with coverage gap classification.",
+    "inputs": [
+      "SAM burden estimates",
+      "HMIS treatment data",
+      "CMAM program data",
+      "population data"
+    ],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator reruns with alternative treatment data sources and confirms gap classification robustness.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Coverage gap analysis includes data reconciliation methodology, explicit caveats about HMIS completeness, and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/wasting-severe-acute-sub-saharan-africa",
+    "title": "Red-team misuse of treatment coverage gap data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review for supply-chain misallocation and program-defunding risks.",
+    "inputs": ["gap analysis", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review.",
+    "validation_method": "Mitigations or block, then replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/wasting-severe-acute-sub-saharan-africa",
+    "title": "Check whether outputs match nutrition program decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "nutrition program context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases, replicated review."
+  }
+]

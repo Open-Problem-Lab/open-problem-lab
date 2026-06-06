@@ -121,3 +121,6 @@
 - name: "region:vietnam"
   color: "006B75"
   description: "Viet Nam region tag."
+- name: "region:west-africa"
+  color: "006B75"
+  description: "West Africa region tag."

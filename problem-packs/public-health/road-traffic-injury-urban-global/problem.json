@@ -1,0 +1,39 @@
+{
+  "id": "public-health/road-traffic-injury-urban-global",
+  "title": "Road Traffic Injury Mortality Risk And Emergency Trauma Care Access In Low- And Middle-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for identifying where road traffic injury mortality risk is highest and trauma care access is lowest in LMIC cities, linking crash data, road-network data, and health-facility data at urban scale.",
+  "why_it_matters": "Road traffic injuries kill 1.3 million people annually — the leading cause of death for people aged 5-29. Over 90 percent of deaths occur in LMICs, where rapid motorization has outpaced road safety infrastructure and trauma care systems. The golden hour after injury determines survival, yet verified maps of where crashes occur and which trauma centers can respond in time are almost entirely absent from the most affected cities.",
+  "success_metrics": [
+    {
+      "metric": "Data integration",
+      "target": "Crash locations linked to trauma-facility locations with travel-time estimates.",
+      "validation_method": "Schema validation and reviewer checks."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No traffic enforcement or hospital investment recommendation without review and replication.",
+      "validation_method": "Check task status and review records."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

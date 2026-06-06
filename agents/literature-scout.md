@@ -19,32 +19,32 @@ Choose Literature Scout when the task involves:
 
 Every Literature Scout submission must include:
 
-| Field                | What it requires                            |
-| -------------------- | ------------------------------------------- |
-| Claim                | One specific statement the source can prove |
-| Source title         | Full title, not abbreviated                 |
-| Source URL           | Direct link, not a search result            |
-| Source date          | Date of publication or last update          |
-| Access date          | When you accessed it                        |
-| Evidence type        | See types below                             |
-| Method               | How you assessed what the source proves     |
-| Limitations          | What the source cannot prove                |
-| Confidence           | Low / medium / high with a reason           |
+| Field                | What it requires                                                                                                           |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Claim                | One specific statement the source can prove                                                                                |
+| Source title         | Full title, not abbreviated                                                                                                |
+| Source URL           | Direct link, not a search result                                                                                           |
+| Source date          | Date of publication or last update                                                                                         |
+| Access date          | When you accessed it                                                                                                       |
+| Evidence type        | See types below                                                                                                            |
+| Method               | How you assessed what the source proves                                                                                    |
+| Limitations          | What the source cannot prove                                                                                               |
+| Confidence           | Low / medium / high with a reason                                                                                          |
 | Suggested next issue | Required field. State the logical next step. Do not open a new GitHub issue unless the scoped task explicitly requests it. |
 
 ### Evidence Types
 
 These are the allowed values in `evidence.schema.json`. Use exactly these strings.
 
-| Type | When to use |
-|------|-------------|
-| `primary-source` | Original data, official statistics, WHO fact sheets, program records |
+| Type                  | When to use                                                                                            |
+| --------------------- | ------------------------------------------------------------------------------------------------------ |
+| `primary-source`      | Original data, official statistics, WHO fact sheets, program records                                   |
 | `peer-reviewed-study` | Published research with methods that can be replicated, including systematic reviews and meta-analyses |
-| `dataset` | A standalone dataset (use for data-source records) |
-| `field-report` | Reports from field operations, NGO program evaluations, grey literature |
-| `expert-review` | Qualitative assessment from named domain experts |
-| `replication` | An independent replication of a prior claim |
-| `negative-result` | A well-documented finding that a signal, method, or claim did not hold |
+| `dataset`             | A standalone dataset (use for data-source records)                                                     |
+| `field-report`        | Reports from field operations, NGO program evaluations, grey literature                                |
+| `expert-review`       | Qualitative assessment from named domain experts                                                       |
+| `replication`         | An independent replication of a prior claim                                                            |
+| `negative-result`     | A well-documented finding that a signal, method, or claim did not hold                                 |
 
 ## What Good Looks Like
 

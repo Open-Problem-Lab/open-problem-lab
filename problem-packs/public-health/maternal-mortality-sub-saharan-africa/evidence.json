@@ -1,0 +1,38 @@
+[
+  {
+    "id": "who-maternal-mortality-2023",
+    "problem_id": "public-health/maternal-mortality-sub-saharan-africa",
+    "claim": "WHO reports 287000 maternal deaths globally in 2020, Sub-Saharan Africa accounting for approximately 70 percent, with lifetime risk exceeding 1 in 40 in highest-burden countries versus 1 in 12000 in high-income countries.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Maternal mortality - WHO fact sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/maternal-mortality"
+    },
+    "source_date": "2023-02-22",
+    "access_date": "2026-06-06",
+    "method": "Reviewed WHO fact sheet burden estimates, causes, and intervention coverage.",
+    "limitations": [
+      "Maternal mortality estimates are modeled where civil registration is incomplete.",
+      "Sub-national estimates may smooth high-risk areas."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "kruk-lancet-quality-2018",
+    "problem_id": "public-health/maternal-mortality-sub-saharan-africa",
+    "claim": "The 2018 Lancet Commission on High-Quality Health Systems found facility delivery rates increased but many facilities classified as providing emergency obstetric care lack key signal functions: blood transfusion, cesarean section, magnesium sulfate.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "High-quality health systems in the Sustainable Development Goals era: time for a revolution",
+      "url": "https://www.thelancet.com/commissions/quality-health-systems"
+    },
+    "source_date": "2018-09-05",
+    "access_date": "2026-06-06",
+    "method": "Reviewed Commission findings on EmOC signal functions, quality measurement, and access gaps.",
+    "limitations": [
+      "Commission reports aggregate data from multiple country studies with varying methods.",
+      "Facility readiness data currency varies substantially by country."
+    ],
+    "confidence": "high"
+  }
+]

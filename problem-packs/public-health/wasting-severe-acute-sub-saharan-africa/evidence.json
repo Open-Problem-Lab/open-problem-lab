@@ -1,0 +1,56 @@
+[
+  {
+    "id": "unicef-who-wb-wasting-2023",
+    "problem_id": "public-health/wasting-severe-acute-sub-saharan-africa",
+    "claim": "UNICEF, WHO, and World Bank joint estimates report 45 million children under five with wasting globally, 13.6 million with severe acute malnutrition, with SAM prevalence exceeding 5 percent in several Sub-Saharan African countries and treatment coverage below 30 percent region-wide.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Levels and Trends in Child Malnutrition - JME 2023",
+      "url": "https://www.who.int/publications/i/item/9789240073791"
+    },
+    "source_date": "2023-03-31",
+    "access_date": "2026-06-06",
+    "method": "Reviewed JME report wasting prevalence estimates, regional breakdowns, and methodology documentation.",
+    "limitations": [
+      "JME estimates are modeled at national level and may smooth district-level variation.",
+      "SAM treatment coverage data is not systematically collected by household surveys."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "global-nutrition-report-wasting-2021",
+    "problem_id": "public-health/wasting-severe-acute-sub-saharan-africa",
+    "claim": "The 2021 Global Nutrition Report found that only 6 of 51 Sub-Saharan African countries were on track to meet the 2025 World Health Assembly target for reducing childhood wasting, with conflict, climate shocks, and weak health systems identified as primary barriers.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "2021 Global Nutrition Report",
+      "url": "https://globalnutritionreport.org/reports/2021-global-nutrition-report/"
+    },
+    "source_date": "2021-11-23",
+    "access_date": "2026-06-06",
+    "method": "Reviewed wasting chapter, country progress assessments, and barrier analysis.",
+    "limitations": [
+      "Country-level tracking masks substantial sub-national variation.",
+      "Treatment coverage data depends on country reporting completeness."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "roger-sam-treatment-coverage-review-2022",
+    "problem_id": "public-health/wasting-severe-acute-sub-saharan-africa",
+    "claim": "A 2022 systematic review found that community-based management of acute malnutrition achieves recovery rates above 90 percent when treatment coverage exceeds 70 percent, but median coverage across Sub-Saharan Africa was 27 percent, with the largest gaps in conflict-affected and remote rural districts.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Coverage of community-based management of severe acute malnutrition programmes in Sub-Saharan Africa: a systematic review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35120012/"
+    },
+    "source_date": "2022-02-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed systematic search, coverage estimation methods, and gap analysis.",
+    "limitations": [
+      "Coverage measurement methods vary substantially across studies.",
+      "Treatment quality, not just coverage, affects recovery rates."
+    ],
+    "confidence": "medium"
+  }
+]

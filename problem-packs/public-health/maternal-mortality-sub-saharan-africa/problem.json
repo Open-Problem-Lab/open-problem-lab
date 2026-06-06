@@ -1,0 +1,39 @@
+{
+  "id": "public-health/maternal-mortality-sub-saharan-africa",
+  "title": "Maternal Mortality Facility Delivery And Emergency Obstetric Care Access In Sub-Saharan Africa",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["sub-saharan-africa"],
+  "summary": "Build a verified workflow for identifying where maternal mortality risk is highest and emergency obstetric care access is lowest in Sub-Saharan Africa, linking DHS delivery data, health facility location data, and travel-time estimates at sub-national scale.",
+  "why_it_matters": "Sub-Saharan Africa accounts for roughly two-thirds of global maternal deaths, with lifetime risk of maternal death exceeding 1 in 40 in several countries versus 1 in 12,000 in high-income countries. The majority of deaths occur from preventable causes — hemorrhage, sepsis, eclampsia — for which timely access to emergency obstetric care is the single most effective intervention. But verified facility-level EmOC readiness data and travel-time maps that could guide ambulance placement and referral protocols are incomplete.",
+  "success_metrics": [
+    {
+      "metric": "Access traceability",
+      "target": "Every EmOC access estimate links facility location, service readiness, and travel-time data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No health-system investment recommendation merged without review and replication.",
+      "validation_method": "Check task status and review records."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

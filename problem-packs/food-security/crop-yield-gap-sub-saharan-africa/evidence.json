@@ -1,0 +1,35 @@
+[
+  {
+    "id": "fao-cereal-yields-africa-2023",
+    "problem_id": "food-security/crop-yield-gap-sub-saharan-africa",
+    "claim": "FAO reports Sub-Saharan African cereal yields average 1.5 t/ha versus 5.6 in East Asia, with soil degradation, limited fertilizer use (average 15 kg/ha versus 150 globally), and rainfed dependence as primary constraints.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "FAOSTAT Crops and livestock products",
+      "url": "https://www.fao.org/faostat/en/#data/QCL"
+    },
+    "source_date": "2023-12-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed FAOSTAT crop production and yield data for Sub-Saharan Africa.",
+    "limitations": [
+      "FAOSTAT data is reported at national level, smoothing sub-national variation.",
+      "Smallholder yields may differ from national averages."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "gyga-africa-yield-gap-2022",
+    "problem_id": "food-security/crop-yield-gap-sub-saharan-africa",
+    "claim": "The Global Yield Gap Atlas estimates water-limited yield potential for maize at 8-12 t/ha in Sub-Saharan Africa versus actual yields of 1-3 t/ha, indicating a yield gap of 70-85 percent attributable to nutrient and water limitations.",
+    "evidence_type": "primary-source",
+    "source": { "title": "Global Yield Gap Atlas", "url": "https://www.yieldgap.org/" },
+    "source_date": "2022-06-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed GYGA methodology, crop model descriptions, and Sub-Saharan Africa yield gap estimates.",
+    "limitations": [
+      "Water-limited potential assumes optimal nutrient supply, overestimating attainable yield on degraded soils.",
+      "Sub-national estimates depend on climate data quality."
+    ],
+    "confidence": "high"
+  }
+]

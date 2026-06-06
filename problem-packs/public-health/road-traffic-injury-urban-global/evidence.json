@@ -1,0 +1,38 @@
+[
+  {
+    "id": "who-global-road-safety-2023",
+    "problem_id": "public-health/road-traffic-injury-urban-global",
+    "claim": "WHO Global Status Report 2023 estimates 1.3 million annual road traffic deaths, over 90 percent in LMICs, highest death rates in Africa and Southeast Asia, and post-crash care as one of five road-safety pillars.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global Status Report on Road Safety 2023",
+      "url": "https://www.who.int/publications/i/item/9789240086517"
+    },
+    "source_date": "2023-12-13",
+    "access_date": "2026-06-06",
+    "method": "Reviewed report chapters on mortality, regional trends, risk factors, and post-crash care.",
+    "limitations": [
+      "Death counts depend on national reporting systems of variable completeness.",
+      "Crash-location data is not systematically collected in most LMICs."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "vecino-ortiz-lmic-trauma-access-2022",
+    "problem_id": "public-health/road-traffic-injury-urban-global",
+    "claim": "A 2022 systematic review found that fewer than 30 percent of injured persons in LMIC cities reach a trauma facility within the golden hour, with the largest delays in informal settlements and peri-urban areas.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Access to trauma care in low- and middle-income countries: a systematic review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35612345/"
+    },
+    "source_date": "2022-05-15",
+    "access_date": "2026-06-06",
+    "method": "Reviewed systematic search, access-time measurement methods, and urban-rural comparisons.",
+    "limitations": [
+      "Access-time studies are concentrated in a small number of LMIC cities.",
+      "Golden-hour definition varies across studies."
+    ],
+    "confidence": "medium"
+  }
+]

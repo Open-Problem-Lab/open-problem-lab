@@ -1,0 +1,38 @@
+[
+  {
+    "id": "who-mental-health-atlas-2023",
+    "problem_id": "public-health/mental-health-treatment-gap-global",
+    "claim": "WHO Mental Health Atlas 2023 reports treatment gap exceeds 75 percent in LMICs, surpasses 90 percent for severe disorders, and mental health workforce density in low-income countries averages 0.1 psychiatrists per 100000 population.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Mental Health Atlas 2023",
+      "url": "https://www.who.int/publications/i/item/9789240081692"
+    },
+    "source_date": "2023-10-09",
+    "access_date": "2026-06-06",
+    "method": "Reviewed Atlas chapters on treatment gap, workforce, and service availability by country income group.",
+    "limitations": [
+      "Country-level reporting varies in completeness and recency.",
+      "Treatment gap estimates depend on prevalence surveys of variable quality."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "patel-global-mental-health-lancet-2018",
+    "problem_id": "public-health/mental-health-treatment-gap-global",
+    "claim": "The 2018 Lancet Commission on Global Mental Health found task-sharing with community health workers effective for depression care in multiple LMIC trials, suggesting treatment gap measurement must account for non-specialist and informal care.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "The Lancet Commission on global mental health and sustainable development",
+      "url": "https://www.thelancet.com/commissions/global-mental-health"
+    },
+    "source_date": "2018-10-09",
+    "access_date": "2026-06-06",
+    "method": "Reviewed Commission findings on treatment gap, task-sharing evidence, and measurement recommendations.",
+    "limitations": [
+      "Task-sharing trial results may not generalize to all contexts.",
+      "Informal and traditional care quality is not standardized."
+    ],
+    "confidence": "high"
+  }
+]

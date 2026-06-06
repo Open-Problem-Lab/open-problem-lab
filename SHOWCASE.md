@@ -92,10 +92,10 @@ The PR updates two files in `problem-packs/climate-health/malaria-early-warning-
 **datasets.md** — adds the new source with classification:
 
 ```markdown
-| Source | Grain | Status | Use |
-|--------|-------|--------|-----|
-| CHIRPS (Funk et al. 2015) | 0.05° daily/monthly, 1981–present | Usable | Candidate rainfall signal for malaria early warning |
-| ERA5-Land (Copernicus) | 0.1° hourly/monthly, 1950–present | Usable with caveats | Temperature and humidity candidates; resolution may be coarse for dense urban areas |
+| Source                    | Grain                             | Status              | Use                                                                                 |
+| ------------------------- | --------------------------------- | ------------------- | ----------------------------------------------------------------------------------- |
+| CHIRPS (Funk et al. 2015) | 0.05° daily/monthly, 1981–present | Usable              | Candidate rainfall signal for malaria early warning                                 |
+| ERA5-Land (Copernicus)    | 0.1° hourly/monthly, 1950–present | Usable with caveats | Temperature and humidity candidates; resolution may be coarse for dense urban areas |
 ```
 
 **PR body:**
@@ -183,6 +183,7 @@ This is what the first accepted result looks like. It is not dramatic. It is ver
 ## What Comes Next
 
 After this task is accepted:
+
 - The `subnational-baseline` task becomes unblocked.
 - The Protocol Notes about done-condition wording may generate a schema improvement PR.
 - A domain reviewer who engaged with this PR is now a known reviewer for future malaria pack PRs.

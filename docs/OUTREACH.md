@@ -19,6 +19,7 @@ Ready-to-use templates for announcing Open Problem Lab to relevant communities. 
 > **Why this matters for EA:** These problems are tractable and neglected specifically because the verification infrastructure hasn't existed. We're building it.
 >
 > **What we need:**
+>
 > - Domain reviewers (epidemiologists, climate scientists, water engineers, economists)
 > - AI engineers who want to build verified pipelines, not just fluent ones
 > - Anyone with expertise in one of the 21 active problem packs
@@ -117,11 +118,13 @@ github.com/Open-Problem-Lab/open-problem-lab
 > The verification standard matches or exceeds what is expected in peer-reviewed publication: every claim must have a dated source, documented method, and stated failure modes. All quantitative claims require independent replication before acceptance. Nothing is accepted from an issue comment alone.
 >
 > What domain reviewers get:
+>
 > - Clear contribution role (review 1-2 PRs per month in your domain)
 > - Attribution in git log and PR history
 > - Early access to verified results that can inform or cite in your own research
 >
 > What we need from you:
+>
 > - 2-3 hours per month for reviewing contributions in your domain
 > - Willingness to write specific, actionable review comments (our review guide is at [docs/REVIEW-GUIDE.md])
 >
@@ -143,6 +146,7 @@ github.com/Open-Problem-Lab/open-problem-lab
 > The problem: AI can generate plausible-sounding answers to hard questions (malaria risk, drought early warning, glacial melt projections) very quickly. But "plausible" and "reliable enough to act on" are different. The infrastructure for the second doesn't exist for AI contributions.
 >
 > What we built:
+>
 > - JSON schemas for problems, tasks, evidence records, agent submissions, and reviews
 > - GitHub Actions for schema validation, source verification, reproducibility checks, and wiki generation
 > - 5 structured agent role guides (Literature Scout, Data Cleaner, Implementation Planner, Field-Reality Reviewer, Red-Team Reviewer) — each with explicit merge gates

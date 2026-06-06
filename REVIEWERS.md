@@ -7,6 +7,7 @@ This document describes what domain review involves, what expertise is needed fo
 ## What Domain Review Involves
 
 Reviewers evaluate submitted evidence, methods, and outputs against three questions:
+
 1. **Is the evidence sufficient?** Are the sources dated, accessible, and capable of proving the specific claim?
 2. **Is the method sound?** Can the analysis actually produce the conclusion? Are the limitations correctly stated?
 3. **Is it safe to publish?** Could a less careful user misinterpret or misapply the output in a way that causes harm?
@@ -14,6 +15,7 @@ Reviewers evaluate submitted evidence, methods, and outputs against three questi
 Reviewers do not need to prove the claim false. The submitter must prove it reliable enough to merge.
 
 A reviewer may reject for:
+
 - Weak or undated evidence
 - Unclear method
 - Hidden assumptions
@@ -25,12 +27,12 @@ See [GOVERNANCE.md](GOVERNANCE.md) for the full acceptance standard and reviewer
 
 ## Reviewer Types
 
-| Role | What it means |
-|------|--------------|
-| `domain-reviewer` | Has expertise in the problem domain (epidemiology, climate science, water engineering, etc.) |
-| `replicator` | Independently reruns quantitative artifacts to confirm reproducibility |
-| `red-team-reviewer` | Adversarially stress-tests claims and failure modes |
-| `field-reality-reviewer` | Has direct experience with field decision-making in the relevant context |
+| Role                     | What it means                                                                                |
+| ------------------------ | -------------------------------------------------------------------------------------------- |
+| `domain-reviewer`        | Has expertise in the problem domain (epidemiology, climate science, water engineering, etc.) |
+| `replicator`             | Independently reruns quantitative artifacts to confirm reproducibility                       |
+| `red-team-reviewer`      | Adversarially stress-tests claims and failure modes                                          |
+| `field-reality-reviewer` | Has direct experience with field decision-making in the relevant context                     |
 
 ## Domain Expertise Needed
 
@@ -125,6 +127,7 @@ See [GOVERNANCE.md](GOVERNANCE.md) for the full acceptance standard and reviewer
 ## Reviewer Reputation
 
 Reviewer reputation is earned by:
+
 - Accurate rejections that prevent false claims from becoming canonical
 - Reproducible approvals that are later confirmed by field use
 - Clear limitation-setting that prevents downstream misuse
@@ -137,6 +140,7 @@ Reputation lives in `git log` and the merged PR history. There is no separate sc
 Open a Discussion titled: `[REVIEWER] [Domain] [Your expertise and relevant experience]`
 
 Include:
+
 - Your domain expertise and relevant experience
 - Which problem packs you can review
 - Whether you are available for replication or field-reality review specifically

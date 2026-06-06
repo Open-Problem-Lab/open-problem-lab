@@ -1,0 +1,39 @@
+{
+  "id": "public-health/mental-health-treatment-gap-global",
+  "title": "Mental Health Treatment Gap Measurement In Low- And Middle-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring the mental health treatment gap — the proportion of people with mental disorders who receive no care — in low- and middle-income countries, linking prevalence surveys, health-system capacity data, and treatment-seeking behavior surveys.",
+  "why_it_matters": "WHO estimates the mental health treatment gap exceeds 75 percent in most low- and middle-income countries, rising above 90 percent for severe conditions like psychosis. Depression alone is the leading cause of disability globally. But treatment gap estimates rely on prevalence surveys conducted irregularly and health-system data that does not systematically capture private, traditional, or community-based care. Measuring the gap honestly at sub-national scale is the first step toward closing it.",
+  "success_metrics": [
+    {
+      "metric": "Measurement traceability",
+      "target": "Every treatment gap estimate links dated prevalence and treatment data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No mental health service recommendation without review and replication.",
+      "validation_method": "Check task status and review records."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

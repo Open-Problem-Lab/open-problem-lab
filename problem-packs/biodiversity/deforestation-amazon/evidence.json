@@ -18,20 +18,21 @@
     "confidence": "high"
   },
   {
-    "id": "albert-amazon-biodiversity-science-2021",
+    "id": "barlow-amazon-disturbance-biodiversity-2016",
     "problem_id": "biodiversity/deforestation-amazon",
-    "claim": "A 2021 Science study estimated over 10,000 tree species and at least 2,300 vertebrate species have 30 percent or more of their range in the Amazon basin, making them vulnerable to habitat loss that has already affected an estimated 2.5 million km².",
+    "claim": "A 2016 Nature study found that anthropogenic disturbance (selective logging, hunting, and fire) in Amazon forests doubles the effective biodiversity loss beyond direct deforestation alone, with combined impacts measured across multiple taxonomic groups and land-use types.",
     "evidence_type": "peer-reviewed-study",
     "source": {
-      "title": "How many tree species are there in the Amazon and how many will go extinct?",
-      "url": "https://www.science.org/doi/10.1126/science.abf3872"
+      "title": "Anthropogenic disturbance in tropical forests can double biodiversity loss from deforestation",
+      "url": "https://www.nature.com/articles/nature19305"
     },
-    "source_date": "2021-07-02",
-    "access_date": "2026-06-06",
-    "method": "Reviewed abstract, species inventory methodology, spatial analysis, and extinction risk projections.",
+    "source_date": "2016-09-14",
+    "access_date": "2026-06-07",
+    "method": "Reviewed abstract, methods, multi-taxa sampling approach, and results showing additive biodiversity loss from disturbance beyond deforestation frontier.",
     "limitations": [
-      "Species range estimates rely on occurrence data that undersamples remote areas.",
-      "Extinction risk projections assume no conservation intervention."
+      "Multi-taxa sampling was conducted in the Brazilian Amazon; applicability to other Amazon sub-regions requires verification.",
+      "Disturbance effects interact with deforestation proximity in ways that may not generalize across land-use gradients.",
+      "Original Science.org URL for prior evidence record (10.1126/science.abf3872) was found to return HTTP 404 during verify:sources on 2026-06-07 and was replaced with this alternative source."
     ],
     "confidence": "high"
   },

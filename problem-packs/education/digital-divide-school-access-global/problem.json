@@ -1,0 +1,34 @@
+{
+  "id": "education/digital-divide-school-access-global",
+  "title": "Digital Divide Measurement And School Internet Connectivity In Low-Income Countries",
+  "status": "scoped",
+  "domain": ["education"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring the school-level digital divide — internet connectivity, device access, and digital literacy — in low-income countries, linking school census data, infrastructure maps, and connectivity measurements.",
+  "why_it_matters": "UNICEF and ITU estimate 1.3 billion school-age children lack home internet access and two-thirds of schools in low-income countries lack any internet connection. Digital learning cannot reach the children who need it most if schools have no connectivity. But school-level connectivity data is fragmented — some countries have detailed school census data with ICT indicators, others have nothing.",
+  "success_metrics": [
+    {
+      "metric": "Data transparency",
+      "target": "Every connectivity estimate links school-level or survey data with year and methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "low",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, replication."
+  }
+}

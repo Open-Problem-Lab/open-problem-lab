@@ -1,0 +1,34 @@
+{
+  "id": "food-security/crop-yield-gap-sub-saharan-africa",
+  "title": "Crop Yield Gap Analysis For Smallholder Farmers In Sub-Saharan Africa",
+  "status": "scoped",
+  "domain": ["food-security", "climate-adaptation"],
+  "region": ["sub-saharan-africa"],
+  "summary": "Build a verified workflow for measuring the gap between actual and attainable crop yields for smallholder farmers, linking satellite-derived yield estimates, soil data, and climate data at sub-national scale.",
+  "why_it_matters": "Sub-Saharan African cereal yields average 1.5 tons per hectare versus 3+ tons attainable with improved practices. Closing the gap could double food production without expanding farmland. Global Yield Gap Atlas provides modeled estimates, but sub-national verification linking satellite yield estimates, soil constraints, and farmer practice data is underdeveloped.",
+  "success_metrics": [
+    {
+      "metric": "Yield estimate traceability",
+      "target": "Every yield estimate links satellite or survey data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

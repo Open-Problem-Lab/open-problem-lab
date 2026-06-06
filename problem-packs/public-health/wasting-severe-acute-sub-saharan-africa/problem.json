@@ -1,0 +1,39 @@
+{
+  "id": "public-health/wasting-severe-acute-sub-saharan-africa",
+  "title": "Severe Acute Malnutrition Wasting Detection And Treatment Coverage In Sub-Saharan Africa",
+  "status": "scoped",
+  "domain": ["public-health", "food-security"],
+  "region": ["sub-saharan-africa"],
+  "summary": "Build a verified workflow for identifying where severe acute malnutrition wasting prevalence is highest and treatment coverage is lowest in Sub-Saharan Africa, linking nutrition survey data, health facility records, and community-based management programs at sub-national scale.",
+  "why_it_matters": "Severe acute malnutrition kills over 500,000 children under five annually. Ready-to-use therapeutic foods and community-based management can treat 90 percent of cases if children are reached. But treatment coverage in Sub-Saharan Africa averages below 30 percent, and the gap between SAM prevalence surveys and treatment program reach is rarely systematically verified at district scale.",
+  "success_metrics": [
+    {
+      "metric": "Coverage gap traceability",
+      "target": "Every district SAM burden estimate and treatment coverage estimate links to dated survey or program data with methodology.",
+      "validation_method": "Schema validation and reviewer spot-checks against evidence.json and evidence.md."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No nutrition program or supply-chain recommendation merged without review and replication.",
+      "validation_method": "Check task status, review records, and safety flags."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review for program claims, replication for quantitative analyses."
+  }
+}

@@ -24,8 +24,8 @@ Example: "Adds three evidence records to evidence.json for the malaria-early-war
 Follow the evidence.json schema exactly. -->
 
 | Evidence ID | Source | Source date | Proves | Cannot prove |
-|-------------|--------|-------------|--------|-------------|
-| | | | | |
+| ----------- | ------ | ----------- | ------ | ------------ |
+|             |        |             |        |              |
 
 ## Files Changed
 
@@ -43,11 +43,13 @@ pnpm validate
 ```
 
 <!-- For evidence URL changes, also run: -->
+
 ```bash
 pnpm verify:sources
 ```
 
 <!-- For task-map or artifact changes, also run: -->
+
 ```bash
 pnpm reproducibility:check
 ```

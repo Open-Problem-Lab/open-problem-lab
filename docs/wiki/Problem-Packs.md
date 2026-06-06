@@ -100,6 +100,16 @@ Build a verified workflow for assessing where cyclone track forecasts, storm sur
 
 Build a verified workflow for assessing where building-stock vulnerability, population density, and seismic hazard create the highest earthquake mortality risk in Nepal at municipal scale.
 
+## Digital Divide Measurement And School Internet Connectivity In Low-Income Countries
+
+- ID: `education/digital-divide-school-access-global`
+- Status: `scoped`
+- Domain: `education`
+- Region: `global`
+- Source: [problem-packs/education/digital-divide-school-access-global](../../problem-packs/education/digital-divide-school-access-global/problem.md)
+
+Build a verified workflow for measuring the school-level digital divide — internet connectivity, device access, and digital literacy — in low-income countries, linking school census data, infrastructure maps, and connectivity measurements.
+
 ## Girls Secondary Education Enrollment And Retention Barriers In Sub-Saharan Africa
 
 - ID: `education/girls-education-sub-saharan-africa`
@@ -140,6 +150,16 @@ Build a verified workflow for identifying where household air pollution from sol
 
 Build a verified workflow for identifying where solar-hybrid mini-grids are technically and economically viable for rural electrification, linking settlement data, solar resource, demand estimates, and cost data at sub-national scale.
 
+## Crop Yield Gap Analysis For Smallholder Farmers In Sub-Saharan Africa
+
+- ID: `food-security/crop-yield-gap-sub-saharan-africa`
+- Status: `scoped`
+- Domain: `food-security`, `climate-adaptation`
+- Region: `sub-saharan-africa`
+- Source: [problem-packs/food-security/crop-yield-gap-sub-saharan-africa](../../problem-packs/food-security/crop-yield-gap-sub-saharan-africa/problem.md)
+
+Build a verified workflow for measuring the gap between actual and attainable crop yields for smallholder farmers, linking satellite-derived yield estimates, soil data, and climate data at sub-national scale.
+
 ## Drought Early Warning And Food Insecurity Prediction In The Horn Of Africa
 
 - ID: `food-security/drought-early-warning-horn-of-africa`
@@ -149,6 +169,16 @@ Build a verified workflow for identifying where solar-hybrid mini-grids are tech
 - Source: [problem-packs/food-security/drought-early-warning-horn-of-africa](../../problem-packs/food-security/drought-early-warning-horn-of-africa/problem.md)
 
 Build a verified workflow for assessing where rainfall, vegetation, and market-price signals provide usable lead time for food insecurity early warning in the Horn of Africa.
+
+## Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa
+
+- ID: `food-security/fisheries-overexploitation-west-africa`
+- Status: `scoped`
+- Domain: `food-security`, `biodiversity`
+- Region: `west-africa`
+- Source: [problem-packs/food-security/fisheries-overexploitation-west-africa](../../problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md)
+
+Build a verified workflow for detecting overexploitation of small-scale fisheries in West Africa using satellite vessel-monitoring data, catch-reconstruction estimates, and coastal-community livelihood data.
 
 ## Desert Locust Outbreak Early Warning In East Africa
 
@@ -189,6 +219,16 @@ Build a verified workflow for identifying where maternal mortality risk is highe
 - Source: [problem-packs/public-health/mental-health-treatment-gap-global](../../problem-packs/public-health/mental-health-treatment-gap-global/problem.md)
 
 Build a verified workflow for measuring the mental health treatment gap — the proportion of people with mental disorders who receive no care — in low- and middle-income countries, linking prevalence surveys, health-system capacity data, and treatment-seeking behavior surveys.
+
+## Road Traffic Injury Mortality Risk And Emergency Trauma Care Access In Low- And Middle-Income Countries
+
+- ID: `public-health/road-traffic-injury-urban-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/road-traffic-injury-urban-global](../../problem-packs/public-health/road-traffic-injury-urban-global/problem.md)
+
+Build a verified workflow for identifying where road traffic injury mortality risk is highest and trauma care access is lowest in LMIC cities, linking crash data, road-network data, and health-facility data at urban scale.
 
 ## Child Stunting Hotspot Identification In Sub-Saharan Africa
 

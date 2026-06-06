@@ -154,25 +154,25 @@ Validation must pass before review. If validation fails, fix the evidence or str
 
 ## Repository Map
 
-| Path | Purpose |
-|------|---------|
-| [QUICKSTART.md](QUICKSTART.md) | Contribute in 30 minutes — step-by-step for humans and agents |
-| [SHOWCASE.md](SHOWCASE.md) | End-to-end worked example — what a complete contribution looks like |
-| [REVIEWERS.md](REVIEWERS.md) | Domain expert call to action — expertise needed per problem pack |
-| [DATASETS.md](DATASETS.md) | Cross-pack open dataset registry — 40+ indexed datasets |
-| [problem-packs/](problem-packs/) | 21 problem packs with evidence, tasks, datasets, and validation |
-| [agents/](agents/) | Role guides for structured agent contributions |
-| [schemas/](schemas/) | JSON schemas for machine-checkable artifacts |
-| [docs/REVIEW-GUIDE.md](docs/REVIEW-GUIDE.md) | Step-by-step guide for domain reviewers |
-| [docs/wiki/](docs/wiki/) | Generated Wiki source — do not edit directly |
-| [scripts/](scripts/) | Validation, Wiki generation, reproducibility checks |
-| [.github/ISSUE_TEMPLATE/](.github/ISSUE_TEMPLATE/) | Five structured issue forms |
-| [.github/workflows/](.github/workflows/) | CI validation and Wiki publishing |
-| [VISION.md](VISION.md) | Why this exists and what winning looks like |
-| [ROADMAP.md](ROADMAP.md) | V0, V1, V2 milestones |
-| [GOVERNANCE.md](GOVERNANCE.md) | Decision rights, acceptance gates, project board |
-| [SAFETY.md](SAFETY.md) | Risk levels, prohibited shortcuts, burden of proof |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution workflow for humans and agents |
+| Path                                               | Purpose                                                             |
+| -------------------------------------------------- | ------------------------------------------------------------------- |
+| [QUICKSTART.md](QUICKSTART.md)                     | Contribute in 30 minutes — step-by-step for humans and agents       |
+| [SHOWCASE.md](SHOWCASE.md)                         | End-to-end worked example — what a complete contribution looks like |
+| [REVIEWERS.md](REVIEWERS.md)                       | Domain expert call to action — expertise needed per problem pack    |
+| [DATASETS.md](DATASETS.md)                         | Cross-pack open dataset registry — 40+ indexed datasets             |
+| [problem-packs/](problem-packs/)                   | 21 problem packs with evidence, tasks, datasets, and validation     |
+| [agents/](agents/)                                 | Role guides for structured agent contributions                      |
+| [schemas/](schemas/)                               | JSON schemas for machine-checkable artifacts                        |
+| [docs/REVIEW-GUIDE.md](docs/REVIEW-GUIDE.md)       | Step-by-step guide for domain reviewers                             |
+| [docs/wiki/](docs/wiki/)                           | Generated Wiki source — do not edit directly                        |
+| [scripts/](scripts/)                               | Validation, Wiki generation, reproducibility checks                 |
+| [.github/ISSUE_TEMPLATE/](.github/ISSUE_TEMPLATE/) | Five structured issue forms                                         |
+| [.github/workflows/](.github/workflows/)           | CI validation and Wiki publishing                                   |
+| [VISION.md](VISION.md)                             | Why this exists and what winning looks like                         |
+| [ROADMAP.md](ROADMAP.md)                           | V0, V1, V2 milestones                                               |
+| [GOVERNANCE.md](GOVERNANCE.md)                     | Decision rights, acceptance gates, project board                    |
+| [SAFETY.md](SAFETY.md)                             | Risk levels, prohibited shortcuts, burden of proof                  |
+| [CONTRIBUTING.md](CONTRIBUTING.md)                 | Contribution workflow for humans and agents                         |
 
 ---
 

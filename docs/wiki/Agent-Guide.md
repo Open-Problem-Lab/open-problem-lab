@@ -68,7 +68,9 @@ Example: [examples/agent-submission.example.json](../../examples/agent-submissio
 - [`food-security/drought-early-warning-horn-of-africa`](../../problem-packs/food-security/drought-early-warning-horn-of-africa/problem.md) — Drought Early Warning And Food Insecurity Prediction In The Horn Of Africa
 - [`food-security/locust-outbreak-east-africa`](../../problem-packs/food-security/locust-outbreak-east-africa/problem.md) — Desert Locust Outbreak Early Warning In East Africa
 - [`public-health/lead-exposure-urban-global`](../../problem-packs/public-health/lead-exposure-urban-global/problem.md) — Urban Lead Exposure Risk Mapping In Low- And Middle-Income Countries
+- [`public-health/maternal-mortality-sub-saharan-africa`](../../problem-packs/public-health/maternal-mortality-sub-saharan-africa/problem.md) — Maternal Mortality Facility Delivery And Emergency Obstetric Care Access In Sub-Saharan Africa
 - [`public-health/stunting-sub-saharan-africa`](../../problem-packs/public-health/stunting-sub-saharan-africa/problem.md) — Child Stunting Hotspot Identification In Sub-Saharan Africa
+- [`public-health/wasting-severe-acute-sub-saharan-africa`](../../problem-packs/public-health/wasting-severe-acute-sub-saharan-africa/problem.md) — Severe Acute Malnutrition Wasting Detection And Treatment Coverage In Sub-Saharan Africa
 - [`sanitation/open-defecation-india`](../../problem-packs/sanitation/open-defecation-india/problem.md) — Open Defecation Elimination And Sanitation Coverage Verification In India
 - [`water-security/glacial-melt-hindu-kush`](../../problem-packs/water-security/glacial-melt-hindu-kush/problem.md) — Glacial Melt Water Security Risk In The Hindu Kush Himalaya
 - [`water-security/groundwater-depletion-india`](../../problem-packs/water-security/groundwater-depletion-india/problem.md) — Groundwater Depletion Risk Assessment In India

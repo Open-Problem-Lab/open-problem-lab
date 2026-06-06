@@ -170,6 +170,16 @@ Build a verified workflow for assessing where vegetation, soil moisture, and win
 
 Build a verified workflow for identifying where legacy lead sources, industrial emissions, and informal recycling create elevated child blood lead levels in low- and middle-income country cities.
 
+## Maternal Mortality Facility Delivery And Emergency Obstetric Care Access In Sub-Saharan Africa
+
+- ID: `public-health/maternal-mortality-sub-saharan-africa`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `sub-saharan-africa`
+- Source: [problem-packs/public-health/maternal-mortality-sub-saharan-africa](../../problem-packs/public-health/maternal-mortality-sub-saharan-africa/problem.md)
+
+Build a verified workflow for identifying where maternal mortality risk is highest and emergency obstetric care access is lowest in Sub-Saharan Africa, linking DHS delivery data, health facility location data, and travel-time estimates at sub-national scale.
+
 ## Child Stunting Hotspot Identification In Sub-Saharan Africa
 
 - ID: `public-health/stunting-sub-saharan-africa`
@@ -179,6 +189,16 @@ Build a verified workflow for identifying where legacy lead sources, industrial 
 - Source: [problem-packs/public-health/stunting-sub-saharan-africa](../../problem-packs/public-health/stunting-sub-saharan-africa/problem.md)
 
 Build a verified workflow for identifying where child stunting rates are highest and most persistent in Sub-Saharan Africa, linking nutrition survey data, food security indicators, and intervention coverage to support stunting reduction targeting.
+
+## Severe Acute Malnutrition Wasting Detection And Treatment Coverage In Sub-Saharan Africa
+
+- ID: `public-health/wasting-severe-acute-sub-saharan-africa`
+- Status: `scoped`
+- Domain: `public-health`, `food-security`
+- Region: `sub-saharan-africa`
+- Source: [problem-packs/public-health/wasting-severe-acute-sub-saharan-africa](../../problem-packs/public-health/wasting-severe-acute-sub-saharan-africa/problem.md)
+
+Build a verified workflow for identifying where severe acute malnutrition wasting prevalence is highest and treatment coverage is lowest in Sub-Saharan Africa, linking nutrition survey data, health facility records, and community-based management programs at sub-national scale.
 
 ## Open Defecation Elimination And Sanitation Coverage Verification In India
 

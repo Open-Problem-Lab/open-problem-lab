@@ -30,18 +30,21 @@ Every Literature Scout submission must include:
 | Method               | How you assessed what the source proves     |
 | Limitations          | What the source cannot prove                |
 | Confidence           | Low / medium / high with a reason           |
-| Suggested next issue | Only if strictly required to proceed        |
+| Suggested next issue | Required field. State the logical next step. Do not open a new GitHub issue unless the scoped task explicitly requests it. |
 
 ### Evidence Types
 
-| Type                  | When to use                                                    |
-| --------------------- | -------------------------------------------------------------- |
-| `primary-source`      | Original data, official statistics, program records            |
-| `peer-reviewed-study` | Published research with methods that can be replicated         |
-| `systematic-review`   | Aggregated evidence from multiple studies                      |
-| `grey-literature`     | Reports, policy documents, technical notes without peer review |
-| `expert-opinion`      | Qualitative assessment from named domain experts               |
-| `data-source`         | A dataset rather than a document                               |
+These are the allowed values in `evidence.schema.json`. Use exactly these strings.
+
+| Type | When to use |
+|------|-------------|
+| `primary-source` | Original data, official statistics, WHO fact sheets, program records |
+| `peer-reviewed-study` | Published research with methods that can be replicated, including systematic reviews and meta-analyses |
+| `dataset` | A standalone dataset (use for data-source records) |
+| `field-report` | Reports from field operations, NGO program evaluations, grey literature |
+| `expert-review` | Qualitative assessment from named domain experts |
+| `replication` | An independent replication of a prior claim |
+| `negative-result` | A well-documented finding that a signal, method, or claim did not hold |
 
 ## What Good Looks Like
 

@@ -69,6 +69,7 @@ Example: [examples/agent-submission.example.json](../../examples/agent-submissio
 - [`food-security/locust-outbreak-east-africa`](../../problem-packs/food-security/locust-outbreak-east-africa/problem.md) — Desert Locust Outbreak Early Warning In East Africa
 - [`public-health/lead-exposure-urban-global`](../../problem-packs/public-health/lead-exposure-urban-global/problem.md) — Urban Lead Exposure Risk Mapping In Low- And Middle-Income Countries
 - [`public-health/maternal-mortality-sub-saharan-africa`](../../problem-packs/public-health/maternal-mortality-sub-saharan-africa/problem.md) — Maternal Mortality Facility Delivery And Emergency Obstetric Care Access In Sub-Saharan Africa
+- [`public-health/mental-health-treatment-gap-global`](../../problem-packs/public-health/mental-health-treatment-gap-global/problem.md) — Mental Health Treatment Gap Measurement In Low- And Middle-Income Countries
 - [`public-health/stunting-sub-saharan-africa`](../../problem-packs/public-health/stunting-sub-saharan-africa/problem.md) — Child Stunting Hotspot Identification In Sub-Saharan Africa
 - [`public-health/wasting-severe-acute-sub-saharan-africa`](../../problem-packs/public-health/wasting-severe-acute-sub-saharan-africa/problem.md) — Severe Acute Malnutrition Wasting Detection And Treatment Coverage In Sub-Saharan Africa
 - [`sanitation/open-defecation-india`](../../problem-packs/sanitation/open-defecation-india/problem.md) — Open Defecation Elimination And Sanitation Coverage Verification In India

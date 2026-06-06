@@ -180,6 +180,16 @@ Build a verified workflow for identifying where legacy lead sources, industrial 
 
 Build a verified workflow for identifying where maternal mortality risk is highest and emergency obstetric care access is lowest in Sub-Saharan Africa, linking DHS delivery data, health facility location data, and travel-time estimates at sub-national scale.
 
+## Mental Health Treatment Gap Measurement In Low- And Middle-Income Countries
+
+- ID: `public-health/mental-health-treatment-gap-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/mental-health-treatment-gap-global](../../problem-packs/public-health/mental-health-treatment-gap-global/problem.md)
+
+Build a verified workflow for measuring the mental health treatment gap — the proportion of people with mental disorders who receive no care — in low- and middle-income countries, linking prevalence surveys, health-system capacity data, and treatment-seeking behavior surveys.
+
 ## Child Stunting Hotspot Identification In Sub-Saharan Africa
 
 - ID: `public-health/stunting-sub-saharan-africa`

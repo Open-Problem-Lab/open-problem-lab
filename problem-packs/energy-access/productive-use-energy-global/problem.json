@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["energy-access", "food-security"],
   "region": ["global"],
-  "summary": "Build a verified workflow for identifying where electrification enables productive-use applications in agricultural value chains.",
-  "why_it_matters": "Build a verified workflow for identifying where electrification enables productive-use applications in agricultural value chains.",
+  "summary": "Build a verified workflow for mapping the gap between electricity access and productive use in agricultural value chains at sub-national scale in LMICs, with explicit mini-grid customer data limitations, agricultural value-chain specificity, and the distinction between electricity availability and verified productive use.",
+  "why_it_matters": "Electrification alone does not generate rural development — productive use in income-generating activities drives prosperity. World Bank estimates 20-30 percent income gains from productive agricultural electrification, but fewer than 10 percent of SSA mini-grids serve productive-use customers. Mini-grid operators track connections, not productive use. Without verified productive-use data, energy-access investments cannot be targeted where they would most increase rural incomes.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Productive-use data granularity",
+      "target": "Every productive-use claim documents whether data comes from mini-grid operator surveys, enterprise surveys, or agricultural value-chain studies, and explicitly states coverage limitations.",
+      "validation_method": "Schema validation and reviewer spot-checks against productive-use data documentation."
+    },
+    {
+      "metric": "Access-vs-productive-use distinction",
+      "target": "No income-impact claim is merged without documenting that electricity access does not equal verified productive use — equipment adoption, affordability, technical capacity, and market access are all necessary conditions.",
+      "validation_method": "Reviewer confirms access-vs-productive-use distinction in every effectiveness claim."
+    },
+    {
+      "metric": "Agricultural value-chain specificity",
+      "target": "Every productive-use analysis documents which value chains (milling, drying, cold storage, irrigation, processing) are analyzed and their specific electricity-demand requirements.",
+      "validation_method": "Red-team reviewer confirms value-chain specificity and electricity-demand documentation."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, productive-use safety review, and replication for quantitative outputs."
   }
 }

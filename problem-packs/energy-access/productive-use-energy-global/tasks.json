@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "energy-access/productive-use-energy-global",
-    "title": "Inventory data sources for energy-access/productive-use-energy-global",
+    "title": "Inventory mini-grid operator data, enterprise surveys, agricultural value-chain studies, and productive-use evaluation data for LMIC rural areas",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for productive use of energy for agricultural value chains in rural areas.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates mini-grid operator customer data, enterprise surveys, agricultural value-chain studies, and productive-use evaluations into usable, limited, and rejected categories with explicit productive-use data granularity and access-vs-use distinction documentation.",
+    "inputs": [
+      "World Bank productive-use framework documentation",
+      "Mini-grid operator survey reports for target countries",
+      "Agricultural value-chain electrification studies",
+      "Enterprise survey data for rural electrification areas",
+      "Published productive-use evaluation reports"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and documented limitations — particularly productive-use data granularity and access-vs-use distinction.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering productive-use data granularity, value-chain specificity, and context-dependency documentation."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "productive-use-gap-mapping",
     "problem_id": "energy-access/productive-use-energy-global",
-    "title": "Measure sub-national gap for productive use of energy for agricultural value chains in rural areas",
+    "title": "Map productive-use gaps in agricultural value chains for at least two LMIC contexts",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A sub-national productive-use gap analysis for at least two LMIC contexts, documenting mini-grid customer data, agricultural value-chain electricity demand, and the gap between electricity access and verified productive use.",
+    "inputs": [
+      "Mini-grid operator customer data for target contexts",
+      "Agricultural value-chain electricity-demand data",
+      "Enterprise survey data where available",
+      "Administrative boundary data for sub-national aggregation"
+    ],
+    "expected_artifact": "validation.md update with productive-use methodology and data-limitation documentation.",
+    "validation_method": "Replicator confirms productive-use data extraction, value-chain specificity, and access-vs-use distinction for each target context.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Productive-use gap analysis includes methodology, value-chain results, data-limitation documentation, and replication status for at least two contexts."
   },
   {
-    "id": "risk-mapping",
+    "id": "income-impact-analysis",
     "problem_id": "energy-access/productive-use-energy-global",
-    "title": "Produce sub-national risk map for productive use of energy for agricultural value chains in rural areas",
+    "title": "Analyze income and productivity impact of electrification in agricultural value chains with context-dependency documentation",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "An income-impact analysis linking electrification to agricultural productivity and rural income, with explicit context-dependency documentation, confound controls for market access and human capital, and the distinction between electricity access and verified productive use.",
+    "inputs": [
+      "productive-use gap analysis results",
+      "income and productivity survey data for electrified areas",
+      "market-access and human-capital confound data",
+      "published income-impact evaluations for context"
+    ],
+    "expected_artifact": "outputs.md update with impact methodology and context-dependency documentation.",
+    "validation_method": "Replicator confirms impact methodology, confound controls, and access-vs-use distinction for each target context.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "done_condition": "Income-impact analysis includes methodology, context-dependency documentation, confound controls, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-productive-use-overstatement",
     "problem_id": "energy-access/productive-use-energy-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team productive-use overstatement and projected-income-claim risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how productive-use gap maps could overstate the income-gain potential of electrification, how projected rather than observed productive-use data could mislead investment, and how context-dependency could be lost in generalization.",
+    "inputs": [
+      "income-impact analysis outputs",
+      "productive-use gap outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every income-impact claim has context-dependency documentation, access-vs-use distinction, and confound controls. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
-    "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "safety_risk": "medium",
+    "done_condition": "Every productive-use and income-impact claim is either blocked, softened to context-limited language with explicit access-vs-use caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "energy-access/productive-use-energy-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match mini-grid operator and agricultural extension decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the productive-use gap and income-impact analysis would change any real decision for mini-grid operators, agricultural extension services, or rural development programs without creating perverse incentives.",
+    "inputs": [
+      "draft productive-use and income outputs",
+      "mini-grid operator business-model context",
+      "agricultural extension program documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for mini-grid and agricultural extension audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that projected income gains drive investment without observed productive-use evidence, or that context-dependent results are overgeneralized. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
-    "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "safety_risk": "medium",
+    "done_condition": "The output has a named user (e.g., Kenya Rural Electrification Authority productive-use officer), named decision (e.g., mini-grid site selection for agricultural value chains), explicit non-use cases (e.g., not for income-gain projections without observed productive-use data), and replicated field-reality review."
   }
 ]

@@ -300,6 +300,16 @@ Build a verified workflow for identifying where maternal mortality risk is highe
 
 Build a verified workflow for measuring the mental health treatment gap — the proportion of people with mental disorders who receive no care — in low- and middle-income countries, linking prevalence surveys, health-system capacity data, and treatment-seeking behavior surveys.
 
+## Neglected Tropical Disease Mass Drug Administration Coverage Gaps In Sub-Saharan Africa
+
+- ID: `public-health/ntd-mass-drug-administration-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `sub-saharan-africa`
+- Source: [problem-packs/public-health/ntd-mass-drug-administration-global](../../problem-packs/public-health/ntd-mass-drug-administration-global/problem.md)
+
+Build a verified workflow for identifying where NTD mass drug administration coverage is lowest and disease persistence is highest, linking WHO PCT data, treatment registers, and disease-mapping data at district scale.
+
 ## Road Traffic Injury Mortality Risk And Emergency Trauma Care Access In Low- And Middle-Income Countries
 
 - ID: `public-health/road-traffic-injury-urban-global`

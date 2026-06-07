@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["climate-adaptation", "food-security"],
   "region": ["global"],
-  "summary": "Build a verified workflow for measuring climate-resilient seed access and adoption gaps.",
-  "why_it_matters": "Build a verified workflow for measuring climate-resilient seed access and adoption gaps.",
+  "summary": "Build a verified workflow for mapping climate-resilient seed availability and estimating adoption gaps in smallholder agriculture, with explicit seed-system barrier classification, on-farm-yield-gap documentation, and farmer-preference context.",
+  "why_it_matters": "Fewer than 10 percent of smallholder farmers in Sub-Saharan Africa and South Asia use improved climate-resilient seed varieties despite decades of breeding-program investment. The bottleneck is not genetic — climate-resilient varieties exist in breeder collections — but delivery: seed multiplication, distribution, last-mile retail, farmer awareness, affordability, and trust. Without verified adoption-gap analysis, seed-system investments cannot be targeted where they would most increase climate resilience for the farmers who need it most.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Seed-system data traceability",
+      "target": "Every adoption-gap claim links to seed-availability data, farmer-survey data, or seed-system indicator with source, date, and geographic grain.",
+      "validation_method": "Schema validation and reviewer spot-checks against TASAI, CGIAR, and national agricultural survey documentation."
+    },
+    {
+      "metric": "On-farm-yield-gap documentation",
+      "target": "No climate-resilient seed effectiveness claim is merged without documenting the difference between on-station trial yields and on-farm yields under actual farmer conditions.",
+      "validation_method": "Reviewer confirms yield-gap documentation for every crop-country combination where effectiveness is claimed."
+    },
+    {
+      "metric": "Seed-barrier classification",
+      "target": "Every adoption-gap analysis documents which seed-system barriers (multiplication, distribution, awareness, affordability, trust) are most tractable for the analyzed context.",
+      "validation_method": "Red-team reviewer confirms barrier classification methodology and tractability assessment."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, yield-gap safety review, and replication for quantitative outputs."
   }
 }

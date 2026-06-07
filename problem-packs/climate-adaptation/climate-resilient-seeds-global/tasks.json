@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "climate-adaptation/climate-resilient-seeds-global",
-    "title": "Inventory data sources for climate-adaptation/climate-resilient-seeds-global",
+    "title": "Inventory seed-system, adoption-survey, climate-variety release, and on-farm trial data sources for SSA and South Asia",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for climate-resilient seed access and adoption gaps in smallholder agriculture.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates seed-system indicators (TASAI), CGIAR variety-release catalogs, national agricultural survey adoption data, and on-farm trial results into usable, limited, and rejected categories with explicit crop-country coverage assessment.",
+    "inputs": [
+      "TASAI seed-sector documentation",
+      "CGIAR center climate-resilient variety catalogs",
+      "National agricultural survey reports (LSMS, DHS, IHS)",
+      "Published on-farm trial studies for climate-resilient varieties",
+      "Seed-system barrier classification literature"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, crop-country coverage, and documented adoption-measurement methodology.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering crop-country coverage, adoption-measurement methodology, and seed-system data availability."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "adoption-gap-mapping",
     "problem_id": "climate-adaptation/climate-resilient-seeds-global",
-    "title": "Measure sub-national gap for climate-resilient seed access and adoption gaps in smallholder agriculture",
+    "title": "Map climate-resilient seed availability and adoption gaps for at least two countries and two staple crops",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A sub-national seed-availability and adoption-gap analysis for at least two countries and two crops, documenting variety-release status, seed-system infrastructure, farmer adoption rates, and on-farm yield-gap data where available.",
+    "inputs": [
+      "TASAI or equivalent seed-system data for target countries",
+      "CGIAR variety-release catalogs for target crops",
+      "National agricultural survey adoption data",
+      "Published on-farm trial results for target crop-country combinations"
+    ],
+    "expected_artifact": "validation.md update with adoption-gap methodology and crop-country results.",
+    "validation_method": "Replicator confirms seed-system data extraction, adoption-rate calculation, and yield-gap documentation for each crop-country combination.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Adoption-gap analysis includes methodology, crop-country results, seed-system barrier documentation, yield-gap assessment, and replication status for at least two countries and two crops."
   },
   {
-    "id": "risk-mapping",
+    "id": "barrier-classification",
     "problem_id": "climate-adaptation/climate-resilient-seeds-global",
-    "title": "Produce sub-national risk map for climate-resilient seed access and adoption gaps in smallholder agriculture",
+    "title": "Classify seed-system barriers by tractability for target crop-country combinations",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A barrier-classification analysis identifying which seed-system bottlenecks (multiplication, distribution, awareness, affordability, trust) are most tractable for each target crop-country combination, with explicit documentation of farmer-preference interactions with climate-resilience traits.",
+    "inputs": [
+      "adoption-gap analysis results",
+      "seed-system barrier literature",
+      "farmer-preference studies for target crops and regions",
+      "published seed-system intervention evaluations"
+    ],
+    "expected_artifact": "outputs.md update with barrier-classification methodology and tractability assessment.",
+    "validation_method": "Replicator confirms barrier-classification methodology, tractability assessment, and farmer-preference documentation for each crop-country combination.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "done_condition": "Barrier classification includes methodology, tractability ranking, farmer-preference interaction documentation, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-adoption-overstatement",
     "problem_id": "climate-adaptation/climate-resilient-seeds-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team adoption-gap overstatement and yield-promise risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how adoption-gap maps could overstate the problem by ignoring farmer rational preferences, how yield-gap claims could promise performance that on-farm conditions cannot deliver, and how results could be used to justify seed subsidies that crowd out private-sector distribution.",
+    "inputs": [
+      "adoption-gap analysis outputs",
+      "barrier-classification outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every adoption-gap claim has seed-system data documentation, every yield-gap claim has on-farm-vs-on-station distinction, and every barrier classification has farmer-preference context. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "done_condition": "Every adoption-gap claim is either blocked, softened to data-limited language with explicit yield-gap caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "climate-adaptation/climate-resilient-seeds-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match seed-system and agricultural extension decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the adoption-gap analysis would change any real decision for national agricultural research systems, seed companies, or extension services without creating perverse incentives.",
+    "inputs": [
+      "draft adoption-gap and barrier outputs",
+      "seed-system program context",
+      "agricultural extension service documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for seed-system and extension audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that adoption-gap maps justify seed subsidies that crowd out private distribution or that yield-gap claims promise performance farmer conditions cannot deliver. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "done_condition": "The output has a named user (e.g., CIMMYT seed-system program manager), named decision (e.g., seed-multiplication investment targeting), explicit non-use cases (e.g., not for blanket seed-subsidy justification), and replicated field-reality review."
   }
 ]

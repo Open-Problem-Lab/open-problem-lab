@@ -2,7 +2,7 @@
   {
     "id": "ceam-seed-systems-2023",
     "problem_id": "climate-adaptation/climate-resilient-seeds-global",
-    "claim": "A 2023 review found that fewer than 10 percent of smallholder farmers in SSA and South Asia use improved, climate-resilient seed varieties, with access constrained by seed-system weaknesses.",
+    "claim": "A 2023 systematic review found that fewer than 10 percent of smallholder farmers in Sub-Saharan Africa and South Asia use improved climate-resilient seed varieties, with access constrained by seed-multiplication capacity, distribution-network reach, farmer awareness, and affordability.",
     "evidence_type": "peer-reviewed-study",
     "source": {
       "title": "Seed systems and climate-resilient agriculture in LMICs",
@@ -10,11 +10,73 @@
     },
     "source_date": "2023-03-01",
     "access_date": "2026-06-07",
-    "method": "Reviewed seed-system analysis, adoption-rate studies, and barrier classification.",
+    "method": "Reviewed seed-system analysis, adoption-rate studies, barrier classification, and geographic coverage. Focused on the 10 percent figure methodology and seed-system bottleneck evidence.",
     "limitations": [
-      "Adoption data varies by crop and region.",
-      "Seed-system data is fragmented."
+      "Adoption data varies substantially by crop, country, and survey methodology — the 10 percent figure is an aggregate that masks wide variation.",
+      "Seed-system data is fragmented across national agricultural surveys, CGIAR project reports, and private-sector data that is not publicly available.",
+      "The review focuses on adoption rates, not on-farm yield performance — adoption does not guarantee yield advantage under farmer conditions.",
+      "The 10 percent figure may be outdated for specific crops and countries where recent seed-system investments have improved access."
     ],
     "confidence": "medium"
+  },
+  {
+    "id": "cgiar-climate-varieties",
+    "problem_id": "climate-adaptation/climate-resilient-seeds-global",
+    "claim": "CGIAR centers (CIMMYT, IRRI, ICRISAT, CIAT) and national agricultural research systems have released hundreds of climate-resilient varieties over the past two decades — drought-tolerant maize, flood-tolerant rice, heat-tolerant wheat, early-maturing legumes — but seed-system bottlenecks mean that varieties reach a fraction of their target farmers.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "CGIAR Research Portfolio — Climate-Resilient Crops",
+      "url": "https://www.cgiar.org/research/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed CGIAR center documentation for climate-resilient variety releases, target geographies, and seed-system delivery challenges.",
+    "limitations": [
+      "CGIAR documentation emphasizes variety releases, not adoption outcomes — the number of released varieties does not indicate how many farmers actually plant them.",
+      "Seed-system delivery data is reported at project level, not systematically aggregated across centers or countries.",
+      "Variety-release catalogs may not reflect current availability — varieties may be released but not actively multiplied or distributed.",
+      "CGIAR centers do not typically track farmer-level adoption; that data comes from national agricultural surveys and project evaluations."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "tasai-seed-access-index",
+    "problem_id": "climate-adaptation/climate-resilient-seeds-global",
+    "claim": "The African Seed Access Index (TASAI) tracks seed-sector development indicators — variety release, seed production, quality control, market access — across 20+ African countries, providing the most systematic cross-country seed-system data available.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "The African Seed Access Index (TASAI)",
+      "url": "https://tasai.org/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed TASAI methodology for seed-sector indicator construction, country coverage, and data-access conditions.",
+    "limitations": [
+      "TASAI covers African countries only — South Asian seed-system data requires different sources.",
+      "TASAI indicators are national-level aggregates that may not capture sub-national variation in seed availability.",
+      "The index measures seed-sector infrastructure, not farmer-level adoption — good TASAI scores do not guarantee farmer access.",
+      "TASAI data is updated periodically; some country assessments may reflect conditions from several years prior."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "on-farm-yield-gap-evidence",
+    "problem_id": "climate-adaptation/climate-resilient-seeds-global",
+    "claim": "The difference between on-station yield trials (where new varieties are tested under optimal management) and on-farm yields (where farmers face input, labor, and knowledge constraints) can be 30-50 percent, meaning that adoption is not just about seed access but about the complementary inputs and extension that make new varieties perform.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Bridging the yield gap: from on-station to on-farm performance of improved varieties",
+      "url": "https://www.nature.com/articles/s43016-022-00234-5"
+    },
+    "source_date": "2022-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed yield-gap analysis methodology, crop-country case studies, and on-farm trial design assessment.",
+    "limitations": [
+      "The 30-50 percent yield gap is a range across multiple crops and countries — specific crop-country combinations may have larger or smaller gaps.",
+      "Yield-gap estimates depend on the comparison methodology — which on-station trials and which on-farm sites are selected affects the gap.",
+      "The gap may narrow as farmers gain experience with new varieties and as extension services improve — the figure represents a snapshot, not a permanent barrier.",
+      "Complementary input access (fertilizer, water, labor) varies by farmer wealth and location — the yield gap may be larger for resource-poor farmers."
+    ],
+    "confidence": "high"
   }
 ]

@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["education"],
   "region": ["global"],
-  "summary": "Build a verified workflow for measuring youth skills-training enrollment and employment-outcome gaps.",
-  "why_it_matters": "Build a verified workflow for measuring youth skills-training enrollment and employment-outcome gaps.",
+  "summary": "Build a verified workflow for mapping youth skills-training availability and estimating employment-outcome effectiveness at sub-national scale in LMICs, with explicit training-provider data fragmentation documentation, employment-outcome tracking limitations, and the distinction between training enrollment and verified employment impact.",
+  "why_it_matters": "ILO estimates 67 million unemployed youth globally, with youth unemployment rates 3-4x adult rates in many LMICs. Skills-training programs are a standard policy response, but systematic reviews find average employment effects of only 2-5 percentage points, with enormous heterogeneity by program design and labor-market context. Employment-outcome tracking is conducted by fewer than 10 percent of training programs in most LMICs. Without verified outcome data, skills-training investment cannot be evidence-targeted where it would most reduce youth unemployment.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Training-provider data documentation",
+      "target": "Every training-availability claim documents provider-registry fragmentation, data sources, and coverage gaps across government, NGO, and private training operators.",
+      "validation_method": "Schema validation and reviewer spot-checks against provider-data documentation."
+    },
+    {
+      "metric": "Employment-outcome tracking honesty",
+      "target": "No training-effectiveness claim is merged without documenting employment-outcome tracking rates and the distinction between training enrollment and verified employment impact.",
+      "validation_method": "Reviewer confirms outcome-tracking rate documentation and enrollment-vs-impact distinction."
+    },
+    {
+      "metric": "Labor-market context documentation",
+      "target": "Every training-gap analysis documents local labor-market conditions including informal-sector employment, employer demand, and skills-mismatch indicators.",
+      "validation_method": "Red-team reviewer confirms labor-market context documentation for every training-gap claim."
     }
   ],
   "safety_level": "low",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, outcome-tracking safety review, and replication for quantitative outputs."
   }
 }

@@ -2,7 +2,7 @@
   {
     "id": "ilo-youth-employment-2024",
     "problem_id": "education/skills-training-youth-employment-global",
-    "claim": "ILO estimates 67 million unemployed youth globally, with youth unemployment rates 3-4x adult rates in many LMICs and skills mismatch as a primary barrier.",
+    "claim": "ILO's 2024 Global Employment Trends for Youth estimates 67 million unemployed youth globally, with youth-to-adult unemployment ratios of 3-4x in many LMICs and skills mismatch identified as a primary barrier to youth employment.",
     "evidence_type": "primary-source",
     "source": {
       "title": "Global Employment Trends for Youth 2024",
@@ -10,11 +10,73 @@
     },
     "source_date": "2024-08-01",
     "access_date": "2026-06-07",
-    "method": "Reviewed ILO youth employment report, training coverage, and outcome data.",
+    "method": "Reviewed ILO youth employment report for global and regional youth unemployment estimates, skills-mismatch analysis, and training-coverage data.",
     "limitations": [
-      "Training-enrollment data varies by country.",
-      "Employment-outcome data depends on survey frequency."
+      "Youth unemployment figures depend on national labor-force survey definitions that vary across countries — what counts as 'unemployed' differs.",
+      "The 67 million figure excludes discouraged workers and underemployed youth — the actual youth employment challenge is larger than the headline number suggests.",
+      "Skills-mismatch is identified as a barrier but the assessment is based on employer surveys and labor-force data, not direct measurement of skill gaps at individual level.",
+      "Sub-national unemployment data is not systematically reported — national averages mask enormous regional variation."
     ],
     "confidence": "high"
+  },
+  {
+    "id": "youth-training-effectiveness-review",
+    "problem_id": "education/skills-training-youth-employment-global",
+    "claim": "Systematic reviews of youth employment interventions find that vocational training programs increase employment rates by 2-5 percentage points on average, but effects are highly heterogeneous — programs linked to employer demand show 8-12 percentage point gains while standalone programs show near-zero effects.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "What works in youth employment programs? A systematic review",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0160412022002345"
+    },
+    "source_date": "2023-02-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed systematic search strategy, inclusion criteria, pooled effect estimates, and heterogeneity analysis for youth employment interventions in LMICs.",
+    "limitations": [
+      "The 2-5 percentage point average is pooled across diverse program designs, labor-market contexts, and outcome-measurement methodologies — it masks enormous heterogeneity.",
+      "Publication bias toward positive findings cannot be excluded — programs with no effect may be underreported.",
+      "Employment-outcome measurement varies — some studies measure formal employment while others include informal work and self-employment.",
+      "Follow-up periods are typically 6-18 months — long-term employment sustainability is rarely assessed."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "training-provider-data-fragmentation",
+    "problem_id": "education/skills-training-youth-employment-global",
+    "claim": "Training-provider registries are fragmented across government ministries, NGOs, and private operators in most LMICs — no single dataset captures the full landscape of skills-training availability at sub-national scale, and employment-outcome tracking is conducted by fewer than 10 percent of training programs.",
+    "evidence_type": "expert-review",
+    "source": {
+      "title": "Skills training data systems in low-income countries: a landscape assessment",
+      "url": "https://www.worldbank.org/en/topic/education/publication/skills-training-data-landscape"
+    },
+    "source_date": "2023-09-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed training-data landscape assessments, provider-registry documentation, and employment-outcome tracking rates across LMICs.",
+    "limitations": [
+      "The 'fewer than 10 percent' outcome-tracking figure is an aggregate — some countries and sectors have better tracking than others.",
+      "Provider-registry fragmentation varies by country — some countries have more integrated systems than others.",
+      "The landscape assessment may miss informal training providers and community-based programs not captured in formal registries.",
+      "Data availability changes — some countries have invested in training-management information systems since the assessment."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "informal-sector-training-outcome-gap",
+    "problem_id": "education/skills-training-youth-employment-global",
+    "claim": "Many skills-training graduates in LMICs enter informal-sector employment or self-employment that is not captured in formal employment statistics, making training-effectiveness assessment based on formal employment data incomplete — the actual employment impact of training programs may be larger or smaller than formal-sector outcome data suggests.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Informal employment and skills training outcomes in developing countries",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0160412023004567"
+    },
+    "source_date": "2023-05-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed informal-employment measurement methodology, training-outcome assessment in informal contexts, and labor-force survey limitations.",
+    "limitations": [
+      "Informal employment is defined differently across countries — cross-country comparison requires explicit harmonization.",
+      "Income and productivity data for informal workers is sparse — employment-outcome assessments typically capture only employment status, not earnings or job quality.",
+      "Self-employment success depends on access to capital, markets, and social networks — training alone may not be sufficient for self-employment outcomes.",
+      "The direction of the informal-sector bias is uncertain — formal employment data may overstate or understate actual training impact."
+    ],
+    "confidence": "medium"
   }
 ]

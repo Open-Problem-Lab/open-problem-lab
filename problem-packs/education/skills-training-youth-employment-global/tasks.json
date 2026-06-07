@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "education/skills-training-youth-employment-global",
-    "title": "Inventory data sources for education/skills-training-youth-employment-global",
+    "title": "Inventory training-provider, employment-outcome, labor-market, and skills-mismatch data sources for LMICs",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for youth skills training and employment outcome gaps in low-income countries.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates training-provider registries, employment-outcome survey data, labor-force surveys, enterprise surveys, and skills-mismatch assessments into usable, limited, and rejected categories with explicit provider-data fragmentation and outcome-tracking documentation.",
+    "inputs": [
+      "National training-provider registry documentation for target countries",
+      "Labor-force survey methodology and youth employment modules",
+      "Enterprise survey data on employer skill demands",
+      "Published training-program effectiveness evaluations",
+      "ILO and World Bank skills-data documentation"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and documented limitations — particularly provider-registry fragmentation and employment-outcome tracking rates.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "low",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering provider-data fragmentation, outcome-tracking rates, and informal-sector measurement gaps."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "training-availability-mapping",
     "problem_id": "education/skills-training-youth-employment-global",
-    "title": "Measure sub-national gap for youth skills training and employment outcome gaps in low-income countries",
+    "title": "Map sub-national skills-training availability for at least two LMICs using provider registries and program documentation",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A sub-national training-availability analysis for at least two LMICs, documenting provider-registry data sources, fragmentation across government/NGO/private sectors, and coverage gaps.",
+    "inputs": [
+      "National training-provider registries for target countries",
+      "NGO and private training-program documentation",
+      "Administrative boundary data for district-level aggregation",
+      "Published training-landscape assessments"
+    ],
+    "expected_artifact": "validation.md update with availability methodology and data-fragmentation documentation.",
+    "validation_method": "Replicator confirms provider-data extraction, fragmentation documentation, and coverage-gap assessment for each target country.",
     "reviewer_needed": "replicator",
     "safety_risk": "low",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Training-availability analysis includes methodology, provider-data fragmentation documentation, coverage gaps, and replication status for at least two countries."
   },
   {
-    "id": "risk-mapping",
+    "id": "employment-outcome-analysis",
     "problem_id": "education/skills-training-youth-employment-global",
-    "title": "Produce sub-national risk map for youth skills training and employment outcome gaps in low-income countries",
+    "title": "Analyze employment outcomes of skills-training programs using labor-force and enterprise survey data",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "An employment-outcome analysis linking training availability to labor-force survey employment data, with explicit documentation of outcome-tracking limitations, informal-sector measurement gaps, and the distinction between training enrollment and verified employment impact.",
+    "inputs": [
+      "training-availability analysis results",
+      "labor-force survey youth employment data",
+      "enterprise survey data on employer skill demands",
+      "published training-effectiveness evaluations for context"
+    ],
+    "expected_artifact": "outputs.md update with outcome methodology and tracking-limitation documentation.",
+    "validation_method": "Replicator confirms outcome-linkage methodology, informal-sector measurement documentation, and enrollment-vs-impact distinction.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "low",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "safety_risk": "medium",
+    "done_condition": "Employment-outcome analysis includes methodology, outcome-tracking limitations, informal-sector documentation, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-effectiveness-overstatement",
     "problem_id": "education/skills-training-youth-employment-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team training-effectiveness overstatement and outcome-tracking-gap risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how training-availability maps could imply effectiveness without outcome data, how pooled effect estimates could mask program-design heterogeneity, and how informal-sector employment gaps could make formal outcome data misleading.",
+    "inputs": [
+      "employment-outcome analysis outputs",
+      "training-availability outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every effectiveness claim has outcome-tracking rate documentation, heterogeneity context, and informal-sector measurement caveats. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
-    "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "safety_risk": "medium",
+    "done_condition": "Every training-effectiveness claim is either blocked, softened to outcome-data-limited language with explicit heterogeneity and informal-sector caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "education/skills-training-youth-employment-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match training-provider and employer-organization decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the training-availability and employment-outcome analysis would change any real decision for training providers, employer organizations, or labor-ministry programs without creating perverse incentives.",
+    "inputs": [
+      "draft training and outcome outputs",
+      "training-provider program context",
+      "employer-organization skill-demand documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for training-provider and employer audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that availability maps imply effectiveness without outcome data, or that pooled effect estimates mask heterogeneity. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
-    "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "safety_risk": "medium",
+    "done_condition": "The output has a named user (e.g., Kenya National Industrial Training Authority director), named decision (e.g., training-program expansion targeting), explicit non-use cases (e.g., not for program expansion without outcome evidence), and replicated field-reality review."
   }
 ]

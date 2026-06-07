@@ -310,6 +310,16 @@ Build a verified workflow for identifying where road traffic injury mortality ri
 
 Build a verified workflow for identifying where child stunting rates are highest and most persistent in Sub-Saharan Africa, linking nutrition survey data, food security indicators, and intervention coverage to support stunting reduction targeting.
 
+## Tuberculosis Case Detection And Treatment Completion Gaps In High-Burden Countries
+
+- ID: `public-health/tb-detection-treatment-gap-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/tb-detection-treatment-gap-global](../../problem-packs/public-health/tb-detection-treatment-gap-global/problem.md)
+
+Build a verified workflow for measuring the TB detection gap and treatment completion gap in high-burden countries, linking national TB program data, prevalence surveys, and private-sector care data at sub-national scale.
+
 ## Severe Acute Malnutrition Wasting Detection And Treatment Coverage In Sub-Saharan Africa
 
 - ID: `public-health/wasting-severe-acute-sub-saharan-africa`

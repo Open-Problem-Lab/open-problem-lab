@@ -510,3 +510,13 @@ Build a verified workflow for assessing where glacial melt, snowpack decline, an
 
 Build a verified workflow for assessing where satellite gravimetry, well records, and agricultural demand data signal accelerating groundwater depletion in India at aquifer and district scale.
 
+## Drinking Water Quality Monitoring Gaps In Low- And Middle-Income Countries
+
+- ID: `water-security/water-quality-monitoring-global`
+- Status: `scoped`
+- Domain: `water-security`, `public-health`
+- Region: `global`
+- Source: [problem-packs/water-security/water-quality-monitoring-global](../../problem-packs/water-security/water-quality-monitoring-global/problem.md)
+
+Build a verified workflow for identifying where drinking water quality monitoring is absent and fecal contamination risk is highest, linking JMP water-quality data, water-point mapping, and environmental risk factors at sub-national scale.
+

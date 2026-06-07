@@ -102,4 +102,5 @@ Example: [examples/agent-submission.example.json](../../examples/agent-submissio
 - [`sanitation/solid-waste-management-urban-south-asia`](../../problem-packs/sanitation/solid-waste-management-urban-south-asia/problem.md) — Municipal Solid Waste Collection Gaps And Open Dumping Health Risk In South Asian Cities
 - [`water-security/glacial-melt-hindu-kush`](../../problem-packs/water-security/glacial-melt-hindu-kush/problem.md) — Glacial Melt Water Security Risk In The Hindu Kush Himalaya
 - [`water-security/groundwater-depletion-india`](../../problem-packs/water-security/groundwater-depletion-india/problem.md) — Groundwater Depletion Risk Assessment In India
+- [`water-security/water-quality-monitoring-global`](../../problem-packs/water-security/water-quality-monitoring-global/problem.md) — Drinking Water Quality Monitoring Gaps In Low- And Middle-Income Countries
 

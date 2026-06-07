@@ -2,19 +2,19 @@
   "summary": {
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
-    "total_packs": 51,
-    "total_scoped_tasks": 51,
+    "total_packs": 52,
+    "total_scoped_tasks": 52,
     "by_role": {
-      "literature-scout": 51
+      "literature-scout": 52
     },
     "by_risk": {
-      "medium": 49,
+      "medium": 50,
       "low": 1,
       "high": 1
     },
     "by_domain": {
       "air-quality": 2,
-      "public-health": 33,
+      "public-health": 34,
       "biodiversity": 3,
       "climate-health": 7,
       "climate-adaptation": 6,
@@ -23,7 +23,7 @@
       "energy-access": 3,
       "food-security": 8,
       "sanitation": 2,
-      "water-security": 2
+      "water-security": 3
     }
   },
   "tasks": [
@@ -1122,6 +1122,28 @@
       "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
       "tasks_file": "problem-packs/water-security/groundwater-depletion-india/tasks.json",
       "problem_file": "problem-packs/water-security/groundwater-depletion-india/problem.md"
+    },
+    {
+      "pack_id": "water-security/water-quality-monitoring-global",
+      "pack_title": "Drinking Water Quality Monitoring Gaps In Low- And Middle-Income Countries",
+      "pack_status": "scoped",
+      "domain": [
+        "water-security",
+        "public-health"
+      ],
+      "region": [
+        "global"
+      ],
+      "task_id": "source-inventory",
+      "title": "Inventory water-quality monitoring data",
+      "owner_role": "literature-scout",
+      "reviewer_needed": "domain-reviewer",
+      "safety_risk": "medium",
+      "outcome": "A dated source inventory separating JMP, water-point, and environmental data.",
+      "expected_artifact": "datasets.md update plus evidence.json records.",
+      "done_condition": "Four sources classified.",
+      "tasks_file": "problem-packs/water-security/water-quality-monitoring-global/tasks.json",
+      "problem_file": "problem-packs/water-security/water-quality-monitoring-global/problem.md"
     }
   ]
 }

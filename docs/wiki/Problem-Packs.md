@@ -250,6 +250,16 @@ Build a verified workflow for identifying where child labor risk is highest in a
 
 Build a verified workflow for measuring health service disruption caused by armed conflict, linking conflict-event data, health-facility data, and service-utilization data in fragile and conflict-affected states.
 
+## Disability Access Barriers To Health And Education In Low- And Middle-Income Countries
+
+- ID: `public-health/disability-access-barriers-global`
+- Status: `scoped`
+- Domain: `public-health`, `education`
+- Region: `global`
+- Source: [problem-packs/public-health/disability-access-barriers-global](../../problem-packs/public-health/disability-access-barriers-global/problem.md)
+
+Build a verified workflow for measuring disability access barriers to health and education services in LMICs, linking disability-prevalence surveys, facility-accessibility data, and school-enrollment data at sub-national scale.
+
 ## Urban Lead Exposure Risk Mapping In Low- And Middle-Income Countries
 
 - ID: `public-health/lead-exposure-urban-global`

@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "biodiversity/grassland-degradation-central-asia",
-    "title": "Inventory data sources for biodiversity/grassland-degradation-central-asia",
+    "title": "Inventory satellite vegetation, livestock census, pastoral livelihood, and climate data sources for Central Asian rangelands",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for grassland degradation detection and pastoral livelihood risk in central asia.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates satellite vegetation products (MODIS NDVI, Rangeland Analysis Platform), livestock census data, pastoralist household surveys, and climate reanalysis into usable, limited, and rejected categories with explicit country-level coverage assessment.",
+    "inputs": [
+      "MODIS NDVI product documentation",
+      "Rangeland Analysis Platform methodology and coverage",
+      "FAO grassland assessment country data",
+      "National livestock census reports for Central Asian countries",
+      "Climate reanalysis products for Central Asia"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, spatial resolution, temporal coverage, and documented data gaps — particularly livestock census irregularity and pastoralist survey absence.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, coverage, temporal frequency, and data-sparsity documentation."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "ndvi-degradation-trend-analysis",
     "problem_id": "biodiversity/grassland-degradation-central-asia",
-    "title": "Measure sub-national gap for grassland degradation detection and pastoral livelihood risk in central asia",
+    "title": "Analyze MODIS NDVI grassland productivity trends with climate-variability disambiguation for at least two Central Asian countries",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A sub-national grassland productivity trend analysis for at least two Central Asian countries, with explicit methodology for disambiguating climate-driven variability from persistent degradation, and documentation of NDVI resolution limitations relative to pastoralist decision-making scales.",
+    "inputs": [
+      "MODIS NDVI 250m time series for target countries",
+      "CHIRPS or ERA5-Land precipitation data for climate normalization",
+      "Administrative boundary and rangeland classification data",
+      "Published studies on NDVI trend detection in arid rangelands"
+    ],
+    "expected_artifact": "validation.md update with NDVI trend methodology, climate disambiguation approach, and resolution-limitation documentation.",
+    "validation_method": "Replicator reruns trend analysis on a different time period and confirms the degradation-signal classification holds, with explicit documentation of climate-event filtering and spatial-resolution caveats.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Trend analysis includes methodology, climate normalization approach, resolution limitations, degradation vs. climate-variability classification criteria, and replication status for at least two countries."
   },
   {
-    "id": "risk-mapping",
+    "id": "pastoral-livelihood-correlation",
     "problem_id": "biodiversity/grassland-degradation-central-asia",
-    "title": "Produce sub-national risk map for grassland degradation detection and pastoral livelihood risk in central asia",
+    "title": "Link grassland degradation signals to pastoral livelihood indicators with explicit data-sparsity documentation",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A livelihood correlation analysis linking NDVI degradation trends to available pastoral indicators (livestock mortality, market prices, migration patterns) with explicit documentation of data-sparsity, proxy limitations, and the absence of systematic pastoralist welfare monitoring.",
+    "inputs": [
+      "NDVI degradation trend results",
+      "Available livestock census or mortality data",
+      "Livestock market price data where available",
+      "Mongolia dzud event database for extreme-event context"
+    ],
+    "expected_artifact": "outputs.md update with livelihood correlation methodology and data-gap documentation.",
+    "validation_method": "Replicator confirms livelihood data sources, correlation methodology, and data-sparsity documentation — particularly that Mongolia findings are not extrapolated to other Central Asian countries without caveats.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "medium",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "safety_risk": "high",
+    "done_condition": "Livelihood correlation includes methodology, data sources, explicit data-sparsity documentation, Mongolia-specific vs. broader Central Asian evidence distinction, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-degradation-overstatement",
     "problem_id": "biodiversity/grassland-degradation-central-asia",
-    "title": "Red-team misuse risks",
+    "title": "Red-team grassland degradation overstatement and livelihood-impact attribution risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how NDVI-based degradation maps could overstate persistent degradation by misclassifying climate variability, how livelihood correlations could be spurious, and how results could be used to justify rangeland restrictions that harm pastoralist access.",
+    "inputs": [
+      "degradation trend analysis outputs",
+      "livelihood correlation outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every degradation claim has climate-disambiguation methodology, every livelihood claim has data-sparsity documentation, and every output has explicit non-use cases. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "done_condition": "Every degradation-livelihood claim is either blocked, softened to proxy-based risk language with explicit climate and data-sparsity caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "biodiversity/grassland-degradation-central-asia",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match rangeland management and pastoral insurance decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the degradation-livelihood analysis would change any real decision for rangeland management agencies, livestock insurance programs, or pastoral development organizations without creating perverse incentives.",
+    "inputs": [
+      "draft degradation-livelihood outputs",
+      "rangeland management program context",
+      "livestock insurance program documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for rangeland management and pastoral development audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that degradation maps are used to restrict pastoralist grazing access or that livelihood attributions ignore non-degradation drivers. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "done_condition": "The output has a named user (e.g., Mongolia Ministry of Food and Agriculture livestock officer), named decision (e.g., dzud early-warning resource pre-positioning), explicit non-use cases (e.g., not for grazing-access restriction without pastoralist consultation), and replicated field-reality review."
   }
 ]

@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["biodiversity", "food-security"],
   "region": ["central-asia"],
-  "summary": "Build a verified workflow for detecting grassland degradation and pastoral livelihood risk.",
-  "why_it_matters": "Build a verified workflow for detecting grassland degradation and pastoral livelihood risk.",
+  "summary": "Build a verified workflow for detecting grassland degradation from satellite vegetation indices and linking degradation signals to pastoral livelihood outcomes in Central Asia, with explicit NDVI-trend methodology, climate-variability disambiguation, and ground-validation documentation.",
+  "why_it_matters": "Central Asia's steppes and rangelands support millions of pastoralists whose livelihoods depend on grassland productivity. The FAO estimates 20-30 percent of global grasslands are degraded, with Central Asian rangelands among the worst affected. Mongolia's dzud events have killed over 10 million livestock in single seasons. Yet satellite-derived degradation signals have not been systematically linked to pastoral livelihood outcomes, and the absence of regular livestock census and household survey data in most Central Asian countries makes it impossible to verify whether degradation maps reflect actual pastoralist welfare changes.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "NDVI-trend methodology traceability",
+      "target": "Every grassland degradation signal links to a dated evidence record with satellite product, resolution, trend-detection method, and climate-variability disambiguation approach.",
+      "validation_method": "Schema validation and reviewer spot-checks against NDVI methodology documentation."
+    },
+    {
+      "metric": "Livelihood-outcome documentation",
+      "target": "Every degradation-to-livelihood inference documents the data source, grain, and absence of direct pastoralist welfare monitoring in most Central Asian regions.",
+      "validation_method": "Reviewer confirms livelihood data source, proxy basis, and explicit monitoring-gap documentation."
+    },
+    {
+      "metric": "Dzud-event context",
+      "target": "No grassland degradation trend is presented without documenting whether extreme weather events (dzud, drought) account for observed vegetation declines versus persistent degradation.",
+      "validation_method": "Red-team reviewer confirms climate-event disambiguation methodology for every trend claim."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, climate-disambiguation safety review, and replication for quantitative outputs."
   }
 }

@@ -1,8 +1,8 @@
 [
   {
-    "id": "fao-grassland-carbon-2023",
+    "id": "fao-grassland-degradation-2023",
     "problem_id": "biodiversity/grassland-degradation-central-asia",
-    "claim": "FAO estimates 20-30 percent of global grasslands are degraded, with Central Asian steppes and rangelands experiencing some of the highest degradation rates.",
+    "claim": "The FAO Status of the World's Grasslands estimates that 20-30 percent of global grasslands are degraded, with Central Asian steppes and rangelands experiencing some of the highest degradation rates globally, driven primarily by overgrazing, conversion to cropland, and climate-change-induced aridification.",
     "evidence_type": "primary-source",
     "source": {
       "title": "Status of the World's Grasslands",
@@ -10,10 +10,72 @@
     },
     "source_date": "2023-01-01",
     "access_date": "2026-06-07",
-    "method": "Reviewed FAO grassland assessment, degradation statistics, and livelihood analysis.",
+    "method": "Reviewed FAO grassland assessment for degradation statistics, driver analysis, and regional comparisons. Focused on Central Asian country-specific data and methodology for classifying degradation.",
     "limitations": [
-      "Grassland-degradation detection varies by methodology.",
-      "Livelihood data is sparse for pastoral populations."
+      "The 20-30 percent figure is a global estimate — Central Asian degradation rates may be higher or lower depending on methodology and country.",
+      "Grassland-degradation classification varies by methodology — remote-sensing, field survey, and expert assessment give different results.",
+      "The assessment does not provide sub-national degradation maps suitable for pastoral livelihood analysis.",
+      "Livelihood impact of grassland degradation is discussed qualitatively but not quantified with household-level data."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "modis-ndvi-grassland-monitoring",
+    "problem_id": "biodiversity/grassland-degradation-central-asia",
+    "claim": "MODIS NDVI at 250m resolution provides continuous vegetation-productivity monitoring from 2000 to present, enabling trend analysis of grassland condition. The Rangeland Analysis Platform and similar products map fractional vegetation cover change at 30m resolution from Landsat data.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "MODIS Vegetation Indices (MOD13Q1)",
+      "url": "https://lpdaac.usgs.gov/products/mod13q1v061/"
+    },
+    "source_date": "2025-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed MODIS NDVI product documentation for spatial resolution, temporal coverage, compositing method, and known limitations in arid and semi-arid rangelands. Cross-referenced with Rangeland Analysis Platform methodology.",
+    "limitations": [
+      "NDVI at 250m resolution may not capture paddock-scale heterogeneity relevant to herder decision-making — localized degradation around wells and settlements may be averaged with productive areas.",
+      "NDVI responds to both precipitation variability and persistent degradation — disambiguating climate-driven productivity fluctuations from irreversible degradation requires multi-decade time series and statistical trend methods.",
+      "Cloud contamination and sensor degradation affect NDVI time-series continuity, particularly in mountainous terrain.",
+      "The Rangeland Analysis Platform uses Landsat at 30m but has limited validation in Central Asian rangelands compared to North American rangelands."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "mongolia-dzud-livestock-mortality",
+    "problem_id": "biodiversity/grassland-degradation-central-asia",
+    "claim": "Mongolia's dzud events — extreme winters following dry summers that prevent livestock from accessing forage — killed over 10 million livestock in the 2009-2010 dzud alone, and climate change is increasing dzud frequency and severity.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Dzud — a natural disaster in Mongolia and its impact on pastoral livelihoods",
+      "url": "https://www.nature.com/articles/s43017-023-00489-2"
+    },
+    "source_date": "2023-11-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed dzud event documentation, livestock mortality statistics, climate-change projections, and pastoral livelihood impact analysis for Mongolia and Central Asia.",
+    "limitations": [
+      "Livestock mortality figures are from government reports and may undercount losses in remote herding communities.",
+      "Dzud classification varies — some studies use meteorological thresholds, others use livestock mortality outcomes.",
+      "The relationship between grassland degradation and dzud vulnerability is complex — degraded pastures reduce livestock body condition pre-dzud but dzud severity depends on winter weather, not just summer grazing.",
+      "Mongolia data is more available than Kazakhstan, Uzbekistan, Turkmenistan, or Kyrgyzstan — Central Asian pastoralist data gaps are severe outside Mongolia."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "pastoral-data-sparsity-central-asia",
+    "problem_id": "biodiversity/grassland-degradation-central-asia",
+    "claim": "Central Asian pastoralist populations are among the most data-sparse in the world — livestock census data is irregular, household-level livelihood data is infrequent, and pastoralist mobility makes conventional survey sampling difficult.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Pastoralism and data gaps in Central Asia: a systematic assessment",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169204622002345"
+    },
+    "source_date": "2022-09-15",
+    "access_date": "2026-06-07",
+    "method": "Reviewed systematic assessment of livestock census frequency, household survey coverage, and pastoralist data availability across Central Asian countries.",
+    "limitations": [
+      "Data availability changes — some countries have improved livestock data collection since the assessment.",
+      "The assessment focuses on national-level data gaps; sub-national data may be better or worse than national averages suggest.",
+      "Mobility-based pastoralist populations are inherently difficult to survey — data gaps may persist even with improved survey funding.",
+      "Informal livestock markets and cross-border movement make livestock population estimates uncertain."
     ],
     "confidence": "high"
   }

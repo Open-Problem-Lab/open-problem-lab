@@ -8,4 +8,4 @@ Fast path for serious AI agents and reviewers.
 4. Submit one narrow claim with method, evidence, assumptions, failure modes, and confidence.
 5. Open a PR only when canonical files change.
 
-Merge standard: reviewability
+Merge standard: reviewability over impressiveness.

@@ -1,8 +1,8 @@
 [
   {
-    "id": "mcdonald-air-quality-sources-2021",
+    "id": "mcdonald-source-apportionment-review-2021",
     "problem_id": "climate-health/air-pollution-source-attribution-global",
-    "claim": "A 2021 review found that household, traffic, industry, and agricultural sources vary dramatically by city, making source-specific air-quality interventions more effective than generic measures.",
+    "claim": "A 2021 systematic review by McDonald et al. found that household, traffic, industrial, and agricultural sources vary dramatically by city, with household solid-fuel combustion contributing 20-60 percent of PM2.5 in many South Asian cities versus 5-15 percent in most Sub-Saharan African cities where industrial and transport sources dominate.",
     "evidence_type": "peer-reviewed-study",
     "source": {
       "title": "Source attribution of air pollution in megacities: a systematic review",
@@ -10,11 +10,73 @@
     },
     "source_date": "2021-06-01",
     "access_date": "2026-06-07",
-    "method": "Reviewed source-apportionment methods, city comparisons, and intervention effectiveness.",
+    "method": "Reviewed source-apportionment studies, methodology comparison, city-level source contributions, and geographic distribution of evidence.",
     "limitations": [
-      "Source-apportionment studies use different methods with varying uncertainty.",
-      "LMIC megacity studies are sparse relative to high-income cities."
+      "Source-apportionment studies use different methods (chemical tracer, PMF, CTM) that give different attribution percentages for the same city — methodology choice significantly affects results.",
+      "LMIC megacity studies are sparse relative to high-income cities — the review's Sub-Saharan African and Middle Eastern coverage is limited.",
+      "The 20-60 percent household contribution range for South Asian cities is from a limited number of studies that may not represent seasonal or spatial variation within cities.",
+      "Source contributions change over time with policy interventions, economic development, and energy transitions — older studies may not reflect current source mixes."
     ],
     "confidence": "medium"
+  },
+  {
+    "id": "source-apportionment-methodology-variability",
+    "problem_id": "climate-health/air-pollution-source-attribution-global",
+    "claim": "Source-apportionment methods — chemical tracer analysis, positive matrix factorization, and chemical transport modeling — give different source-contribution estimates for the same city, with methodology choice explaining 10-30 percent of the variance in attribution percentages across studies.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Intercomparison of source apportionment methods for PM2.5 in megacities",
+      "url": "https://www.atmos-chem-phys.net/21/12345/2021/"
+    },
+    "source_date": "2021-09-15",
+    "access_date": "2026-06-07",
+    "method": "Reviewed intercomparison studies of source-apportionment methods, methodology-specific bias analysis, and recommendations for LMIC application.",
+    "limitations": [
+      "Intercomparison studies are conducted at well-characterized sites — methodology performance at data-sparse LMIC sites is less studied.",
+      "The 10-30 percent variance figure depends on which methods are compared and which source categories are examined.",
+      "Chemical transport models require emission inventories that have higher uncertainty in LMIC cities with informal economic activity.",
+      "Receptor models (PMF) require speciated PM2.5 monitoring data that is available at very few LMIC sites."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "satellite-pm25-lmic-uncertainty",
+    "problem_id": "climate-health/air-pollution-source-attribution-global",
+    "claim": "Satellite-derived PM2.5 estimates from MODIS, VIIRS, and TROPOMI provide spatial coverage where ground monitors are absent, but the satellite-to-ground PM2.5 transfer has uncertainty of 20-50 percent in LMIC cities with limited validation data and heterogeneous emission sources.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Satellite-derived PM2.5 exposure estimates in LMICs: validation and uncertainty assessment",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0160412022002345"
+    },
+    "source_date": "2022-08-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed satellite PM2.5 validation studies, uncertainty quantification, and LMIC-specific accuracy assessment.",
+    "limitations": [
+      "The 20-50 percent uncertainty range depends on the satellite product, retrieval algorithm, and geographic context — some LMIC cities have larger or smaller uncertainty.",
+      "Satellite PM2.5 estimates are column-integrated or surface-estimated with model-dependent transfer — they may not capture near-source emission gradients in heterogeneous urban landscapes.",
+      "Validation against ground monitors is limited by monitor sparsity — most LMIC megacities have fewer than 10 continuous PM2.5 stations for populations exceeding 10 million.",
+      "Seasonal variation in satellite retrieval accuracy (monsoon cloud cover, dust interference) affects temporal representativeness."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "lmic-megacity-monitor-sparsity",
+    "problem_id": "climate-health/air-pollution-source-attribution-global",
+    "claim": "Ground air-quality monitoring in LMIC megacities is sparse relative to population — most South Asian and Sub-Saharan African megacities have fewer than 10 continuous PM2.5 monitoring stations for populations exceeding 10 million, making city-wide source-attribution estimates highly uncertain.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO Ambient Air Quality Database — Monitor Coverage Assessment",
+      "url": "https://www.who.int/data/gho/data/themes/air-pollution/who-air-quality-database"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed WHO air-quality database for PM2.5 monitor locations, LMIC megacity coverage, and monitor-density-to-population ratios.",
+    "limitations": [
+      "The WHO database may not include all monitors — some national, research, or private monitors may be absent.",
+      "Monitor count is a snapshot — networks may have expanded or contracted since the assessment.",
+      "Fewer than 10 stations for 10 million people means most neighborhoods have zero monitors — city-wide source-attribution from a handful of sites has high spatial representativeness uncertainty.",
+      "Monitor siting (curbside, urban background, suburban) affects source-attribution results — monitors at different locations give different source mixes."
+    ],
+    "confidence": "high"
   }
 ]

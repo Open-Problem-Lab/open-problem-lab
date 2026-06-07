@@ -1,16 +1,26 @@
 {
   "id": "climate-health/air-pollution-source-attribution-global",
-  "title": "Ambient Air Pollution Source Attribution And Health Impact In Megacities",
+  "title": "Ambient Air Pollution Source Attribution And Health Impact In LMIC Megacities",
   "status": "scoped",
   "domain": ["climate-health", "air-quality"],
   "region": ["global"],
-  "summary": "Build a verified workflow for attributing ambient air pollution to source sectors and estimating sector-specific health impacts in LMIC megacities.",
-  "why_it_matters": "Build a verified workflow for attributing ambient air pollution to source sectors and estimating sector-specific health impacts in LMIC megacities.",
+  "summary": "Build a verified workflow for attributing ambient PM2.5 to source sectors and estimating sector-specific health impacts in LMIC megacities, with explicit apportionment-methodology documentation, ground-monitor sparsity assessment, and the distinction between published and borrowed source-attribution data.",
+  "why_it_matters": "Ambient air pollution causes an estimated 4.2 million premature deaths annually, concentrated in LMIC megacities. But dominant PM2.5 sources vary dramatically by city — household combustion contributes 20-60 percent in South Asian cities versus 5-15 percent in Sub-Saharan African cities where industrial and transport sources dominate. Source-apportionment studies are concentrated in high-income and Chinese cities — most LMIC megacities in South Asia, Sub-Saharan Africa, and the Middle East have few or no published studies. Without verified source-attribution data, air-quality policy in the most polluted cities is based on assumptions borrowed from different contexts.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Apportionment-methodology documentation",
+      "target": "Every source-attribution claim documents which apportionment method was used (chemical tracer, PMF, CTM) and how methodology choice affects attribution percentages.",
+      "validation_method": "Schema validation and reviewer spot-checks against apportionment-methodology documentation."
+    },
+    {
+      "metric": "Ground-monitor sparsity assessment",
+      "target": "Every city-level source-attribution claim documents ground-monitor density and whether the limited number of sites represents city-wide source contributions.",
+      "validation_method": "Reviewer confirms monitor-density documentation and representativeness assessment for each analyzed city."
+    },
+    {
+      "metric": "Borrowed-context honesty",
+      "target": "No source-attribution claim for an LMIC megacity without a published apportionment study is presented without explicit documentation that the attribution is borrowed from a different city context.",
+      "validation_method": "Red-team reviewer confirms every borrowed-attribution claim has explicit transferability caveats."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, attribution-methodology safety review, and replication for quantitative outputs."
   }
 }

@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "climate-health/air-pollution-source-attribution-global",
-    "title": "Inventory data sources for climate-health/air-pollution-source-attribution-global",
+    "title": "Inventory source-apportionment studies, satellite PM2.5 products, and ground-monitor networks for LMIC megacities",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for ambient air pollution source attribution and health impact in megacities.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates published source-apportionment studies, satellite PM2.5 products, ground-monitor networks, and emission inventories into usable, limited, and rejected categories with explicit LMIC megacity coverage and methodology-comparison assessment.",
+    "inputs": [
+      "Published source-apportionment studies for LMIC megacities",
+      "Satellite PM2.5 product documentation (MODIS, VIIRS, TROPOMI)",
+      "WHO air-quality database monitor inventory",
+      "Emission inventory documentation for LMIC cities",
+      "Source-apportionment methodology intercomparison studies"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic coverage, and documented limitations — particularly apportionment-methodology variability and monitor sparsity in LMIC megacities.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering LMIC megacity coverage, apportionment methodology, and monitor-density documentation."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "source-attribution-mapping",
     "problem_id": "climate-health/air-pollution-source-attribution-global",
-    "title": "Measure sub-national gap for ambient air pollution source attribution and health impact in megacities",
+    "title": "Map PM2.5 source-attribution for at least two LMIC megacities with published apportionment studies",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A source-attribution analysis for at least two LMIC megacities using published apportionment studies, documenting methodology choice, source-contribution estimates, seasonal variation, and monitor-density representativeness.",
+    "inputs": [
+      "Published source-apportionment studies for target cities",
+      "Satellite PM2.5 spatial data for target cities",
+      "Ground-monitor locations and density data",
+      "Emission inventory data where available"
+    ],
+    "expected_artifact": "validation.md update with source-attribution methodology and city-level results.",
+    "validation_method": "Replicator confirms apportionment-study extraction, methodology documentation, and monitor-density representativeness assessment for each target city.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Source-attribution analysis includes methodology, city-level results, seasonal variation documentation, monitor representativeness assessment, and replication status for at least two cities."
   },
   {
-    "id": "risk-mapping",
+    "id": "sector-health-impact",
     "problem_id": "climate-health/air-pollution-source-attribution-global",
-    "title": "Produce sub-national risk map for ambient air pollution source attribution and health impact in megacities",
+    "title": "Estimate sector-specific health impacts from source-attributed PM2.5 concentrations",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A sector-specific health-impact analysis applying concentration-response functions to source-attributed PM2.5 for at least two LMIC megacities, with explicit documentation of concentration-response transferability and source-attribution uncertainty propagation.",
+    "inputs": [
+      "source-attribution analysis results",
+      "concentration-response function literature",
+      "population and baseline mortality data for target cities",
+      "source-attribution uncertainty estimates"
+    ],
+    "expected_artifact": "outputs.md update with health-impact methodology and sector-specific results.",
+    "validation_method": "Replicator confirms concentration-response application, uncertainty propagation methodology, and source-attribution-to-health-impact chain documentation.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "medium",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "safety_risk": "high",
+    "done_condition": "Health-impact analysis includes methodology, sector-specific results, concentration-response transferability caveats, uncertainty propagation, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-attribution-overstatement",
     "problem_id": "climate-health/air-pollution-source-attribution-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team source-attribution overstatement and borrowed-context risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how source-attribution estimates could overstate certainty by ignoring methodology variability, how borrowed-context attributions (from different cities) could mislead policy, and how sector-specific health impacts could be misused for source-specific regulation without adequate evidence.",
+    "inputs": [
+      "source-attribution analysis outputs",
+      "sector-health-impact outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every source-attribution claim has methodology documentation, monitor-representativeness assessment, and borrowed-context caveats where applicable. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "done_condition": "Every source-attribution claim is either blocked, softened to methodology-limited language with explicit representativeness caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "climate-health/air-pollution-source-attribution-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match air-quality policy and industrial regulation decision needs in LMIC megacities",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the source-attribution analysis would change any real decision for air-quality management agencies, industrial regulators, or transport planners in LMIC megacities without creating perverse incentives.",
+    "inputs": [
+      "draft source-attribution and health-impact outputs",
+      "air-quality policy context for target cities",
+      "industrial and transport regulatory framework documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for air-quality policy and regulatory audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that borrowed-context attributions drive regulation inappropriate for the actual source mix, or that methodology-limited estimates are treated as definitive. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "done_condition": "The output has a named user (e.g., Delhi Pollution Control Committee officer), named decision (e.g., source-specific emission control targeting), explicit non-use cases (e.g., not for industrial closure without local source-apportionment evidence), and replicated field-reality review."
   }
 ]

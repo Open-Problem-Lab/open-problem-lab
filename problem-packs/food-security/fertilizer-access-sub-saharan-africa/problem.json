@@ -1,16 +1,26 @@
 {
   "id": "food-security/fertilizer-access-sub-saharan-africa",
-  "title": "Fertilizer Access And Soil Nutrient Depletion In Smallholder Agriculture",
+  "title": "Fertilizer Access And Soil Nutrient Depletion In Smallholder Agriculture In Sub-Saharan Africa",
   "status": "scoped",
   "domain": ["food-security"],
   "region": ["sub-saharan-africa"],
-  "summary": "Build a verified workflow for measuring fertilizer access gaps and soil nutrient depletion in smallholder farming systems in Sub-Saharan Africa.",
-  "why_it_matters": "Build a verified workflow for measuring fertilizer access gaps and soil nutrient depletion in smallholder farming systems in Sub-Saharan Africa.",
+  "summary": "Build a verified workflow for mapping fertilizer access gaps and soil nutrient depletion at sub-national scale in SSA smallholder farming systems, with explicit fertilizer-use data limitations, distribution-infrastructure barriers, and soil-specific response variability documentation.",
+  "why_it_matters": "SSA smallholder farmers use 15 kg/ha of fertilizer — one-tenth the global average. Soil nutrient depletion costs 3 percent of agricultural GDP annually. Fertilizer distribution is concentrated near transport corridors while remote areas face 50-200 percent price markups. Fertilizer response in degraded soils is 30-50 percent lower than in well-managed soils. Without verified sub-national analysis, fertilizer subsidy and soil health programs cannot be targeted where they would most improve food security.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Fertilizer-use data granularity",
+      "target": "Every fertilizer-access claim documents whether data is national aggregate or sub-national, and explicitly states where district-level data is absent.",
+      "validation_method": "Schema validation and reviewer spot-checks against fertilizer-use data documentation."
+    },
+    {
+      "metric": "Distribution-infrastructure documentation",
+      "target": "No fertilizer-access analysis is merged without documenting distribution-infrastructure barriers including transport costs, price markups, and rural availability.",
+      "validation_method": "Reviewer confirms distribution-infrastructure barrier documentation for each analyzed country."
+    },
+    {
+      "metric": "Soil-specific response variability",
+      "target": "No fertilizer-effectiveness claim is merged without documenting that response rates in degraded soils are 30-50 percent lower and that soil-specific recommendations are essential.",
+      "validation_method": "Red-team reviewer confirms soil-response variability documentation for every effectiveness claim."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, soil-response safety review, and replication for quantitative outputs."
   }
 }

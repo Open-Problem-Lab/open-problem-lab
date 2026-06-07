@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "food-security/fertilizer-access-sub-saharan-africa",
-    "title": "Inventory data sources for food-security/fertilizer-access-sub-saharan-africa",
+    "title": "Inventory fertilizer-use, soil-nutrient, distribution-infrastructure, and fertilizer-response data sources for SSA",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for fertilizer access and soil nutrient depletion in smallholder agriculture.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates fertilizer-use survey data, AfSIS soil-nutrient data, distribution-infrastructure studies, and fertilizer-response trials into usable, limited, and rejected categories with explicit sub-national data granularity and soil-specific response documentation.",
+    "inputs": [
+      "Africa Fertilizer Summit documentation and country data",
+      "AfSIS soil data documentation and spatial coverage",
+      "Published fertilizer distribution and pricing studies for SSA",
+      "Fertilizer-response trial databases and meta-analyses",
+      "National agricultural survey fertilizer-use modules"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and documented limitations — particularly sub-national data granularity and soil-response variability documentation.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering sub-national granularity, soil-nutrient coverage, and distribution-infrastructure documentation."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "fertilizer-access-mapping",
     "problem_id": "food-security/fertilizer-access-sub-saharan-africa",
-    "title": "Measure sub-national gap for fertilizer access and soil nutrient depletion in smallholder agriculture",
+    "title": "Map sub-national fertilizer access gaps for at least two SSA countries",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A sub-national fertilizer-access analysis for at least two SSA countries, documenting fertilizer-use data sources, distribution-infrastructure barriers, and price-markup patterns.",
+    "inputs": [
+      "National agricultural survey fertilizer-use data for target countries",
+      "Fertilizer distribution-infrastructure and price data",
+      "Transport-network and market-location data",
+      "Administrative boundary data for district-level aggregation"
+    ],
+    "expected_artifact": "validation.md update with access methodology and data-limitation documentation.",
+    "validation_method": "Replicator confirms fertilizer-use data extraction, distribution-infrastructure documentation, and data-gap assessment for each target country.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Fertilizer-access analysis includes methodology, sub-national results, distribution-infrastructure documentation, and replication status for at least two countries."
   },
   {
-    "id": "risk-mapping",
+    "id": "soil-nutrient-depletion-analysis",
     "problem_id": "food-security/fertilizer-access-sub-saharan-africa",
-    "title": "Produce sub-national risk map for fertilizer access and soil nutrient depletion in smallholder agriculture",
+    "title": "Analyze soil nutrient depletion and fertilizer response variability for target countries",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A soil-nutrient depletion and fertilizer-response analysis for target countries, documenting AfSIS data coverage, nutrient-balance methodology, and soil-specific response variability with explicit research-site extrapolation limitations.",
+    "inputs": [
+      "fertilizer-access analysis results",
+      "AfSIS soil nutrient data for target regions",
+      "Published fertilizer-response trials for target soil types and crops",
+      "Crop-yield and management data for nutrient-balance calculations"
+    ],
+    "expected_artifact": "outputs.md update with soil methodology and response-variability documentation.",
+    "validation_method": "Replicator confirms soil-data methodology, nutrient-balance calculations, and response-variability documentation for each target country.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "done_condition": "Soil-nutrient analysis includes methodology, AfSIS coverage limitations, response-variability documentation, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-fertilizer-overstatement",
     "problem_id": "food-security/fertilizer-access-sub-saharan-africa",
-    "title": "Red-team misuse risks",
+    "title": "Red-team fertilizer-access overstatement and blanket-recommendation risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how fertilizer-access gap maps could overstate the problem by ignoring soil-specific response variability, how national averages could mask sub-national targeting needs, and how results could drive blanket fertilizer subsidies without soil-specific recommendations.",
+    "inputs": [
+      "soil-nutrient analysis outputs",
+      "fertilizer-access outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every fertilizer-access claim has sub-national data documentation, every soil claim has AfSIS coverage limitations, and every effectiveness claim has response-variability context. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
-    "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "safety_risk": "medium",
+    "done_condition": "Every fertilizer and soil claim is either blocked, softened to data-limited language with explicit response-variability and sub-national caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "food-security/fertilizer-access-sub-saharan-africa",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match agricultural ministry and soil-health program decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the fertilizer-access and soil-nutrient analysis would change any real decision for agricultural ministries, fertilizer distributors, or soil-health programs without creating perverse incentives.",
+    "inputs": [
+      "draft fertilizer and soil outputs",
+      "agricultural ministry program context",
+      "fertilizer distribution and soil-health program documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for agricultural ministry and soil-health audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that national averages mask sub-national targeting needs, or that blanket fertilizer recommendations ignore soil-specific response variability. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
-    "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "safety_risk": "medium",
+    "done_condition": "The output has a named user (e.g., Kenya Ministry of Agriculture soil-fertility officer), named decision (e.g., fertilizer subsidy targeting by soil type), explicit non-use cases (e.g., not for blanket fertilizer recommendations without soil-specific analysis), and replicated field-reality review."
   }
 ]

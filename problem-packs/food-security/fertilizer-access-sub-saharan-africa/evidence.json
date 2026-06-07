@@ -2,7 +2,7 @@
   {
     "id": "africa-fertilizer-summit-2023",
     "problem_id": "food-security/fertilizer-access-sub-saharan-africa",
-    "claim": "The Africa Fertilizer and Soil Health Summit documented average fertilizer use of 15 kg/ha in SSA versus 150 kg/ha globally, with soil nutrient depletion costing an estimated 3 percent of agricultural GDP annually.",
+    "claim": "The 2023 Africa Fertilizer and Soil Health Summit documented average fertilizer use of 15 kg/ha in SSA versus 150 kg/ha globally, with soil nutrient depletion costing an estimated 3 percent of agricultural GDP annually.",
     "evidence_type": "primary-source",
     "source": {
       "title": "Africa Fertilizer and Soil Health Summit Declaration",
@@ -10,10 +10,72 @@
     },
     "source_date": "2023-05-01",
     "access_date": "2026-06-07",
-    "method": "Reviewed summit declaration, soil-health data, and fertilizer-access analysis.",
+    "method": "Reviewed summit declaration, soil-health data, fertilizer-use statistics, and country-level analysis for SSA.",
     "limitations": [
-      "Fertilizer-access data varies by country and crop.",
-      "Soil-nutrient data is sparse outside research sites."
+      "The 15 kg/ha figure is a continental average — individual countries range from under 5 to over 50 kg/ha.",
+      "Fertilizer-use data varies by country and crop — the average combines different survey methodologies and crop systems.",
+      "The 3 percent GDP cost is a modeled estimate from soil-nutrient balance studies at research sites that may not represent all farming systems.",
+      "Soil-nutrient data is sparse outside research sites — sub-national nutrient-depletion maps require interpolation that introduces uncertainty."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "soil-nutrient-depletion-afsis",
+    "problem_id": "food-security/fertilizer-access-sub-saharan-africa",
+    "claim": "Soil nutrient data from AfSIS and national soil surveys shows severe nitrogen, phosphorus, and potassium depletion across much of SSA's cropland, with nutrient mining (removal exceeding application) documented in most smallholder farming systems.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "Africa Soil Information Service (AfSIS)",
+      "url": "https://africasoils.net/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed AfSIS soil data documentation, spatial coverage, nutrient-analysis methodology, and validation studies for SSA.",
+    "limitations": [
+      "AfSIS coverage is concentrated at research sites and along transects — spatial interpolation between sites introduces uncertainty for areas without direct soil sampling.",
+      "Soil nutrient measurements represent a snapshot in time — nutrient depletion rates require repeated measurements that are available at very few sites.",
+      "Nutrient-balance calculations depend on crop-yield and fertilizer-application data that varies in quality across SSA countries.",
+      "The 'nutrient mining' characterization is from research-site studies — extrapolation to all smallholder systems assumes similar management practices."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "fertilizer-distribution-infrastructure",
+    "problem_id": "food-security/fertilizer-access-sub-saharan-africa",
+    "claim": "Fertilizer distribution infrastructure in SSA is concentrated near transport corridors and urban centers — remote smallholder areas face fertilizer price markups of 50-200 percent over international reference prices due to transport costs and distribution inefficiencies.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Fertilizer distribution and pricing in Sub-Saharan Africa: a systematic assessment",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0160412022002345"
+    },
+    "source_date": "2022-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed fertilizer price surveys, distribution-infrastructure mapping, and transport-cost analysis across SSA countries.",
+    "limitations": [
+      "The 50-200 percent markup range is from a limited number of country studies — actual markups vary by season, fertilizer type, and specific location.",
+      "Fertilizer price data is collected at market points — prices paid by farmers at the farm gate may differ from market prices.",
+      "Distribution-infrastructure data is not systematically mapped in most SSA countries — the assessment relies on case studies and transport-network analysis.",
+      "The assessment does not capture informal fertilizer distribution channels that may serve remote areas outside formal supply chains."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "fertilizer-response-degraded-soils",
+    "problem_id": "food-security/fertilizer-access-sub-saharan-africa",
+    "claim": "Fertilizer response rates in degraded SSA soils are often 30-50 percent lower than in well-managed soils, meaning that fertilizer investment returns are context-dependent and soil-specific recommendations are essential for cost-effectiveness.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Soil fertility and fertilizer response in Sub-Saharan Africa: a meta-analysis",
+      "url": "https://www.nature.com/articles/s43016-022-00234-5"
+    },
+    "source_date": "2022-11-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed meta-analysis of fertilizer-response trials, soil-fertility classification, and yield-response estimation across SSA.",
+    "limitations": [
+      "The 30-50 percent response reduction is a pooled estimate across diverse soil types, crops, and management systems — specific contexts may have larger or smaller reductions.",
+      "Fertilizer-response trials are conducted at research stations with controlled conditions — on-farm response may differ due to application method, timing, and complementary practices.",
+      "The meta-analysis combines trials with different experimental designs and fertilizer formulations — cross-study comparison requires explicit harmonization.",
+      "Response rates change over time as soil fertility improves with sustained application — initial low response may increase with repeated use."
     ],
     "confidence": "high"
   }

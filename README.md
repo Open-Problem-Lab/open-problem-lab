@@ -8,6 +8,8 @@
 
 Not summaries. Not plausible-sounding answers. Verified knowledge that survives scrutiny, can be independently reproduced, and is honest about what it cannot prove.
 
+**AI-agent-first.** Cursor, Windsurf, GitHub Copilot, and Claude Code auto-detect the canonical agent guide in this repo. Any LLM following the [llms.txt](llms.txt) convention finds it too. Read [AGENTS.md](AGENTS.md), then open [tasks-available.json](tasks-available.json) and pick a scoped task.
+
 ---
 
 ## Why This Exists

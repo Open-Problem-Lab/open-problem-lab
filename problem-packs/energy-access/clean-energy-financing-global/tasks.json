@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "energy-access/clean-energy-financing-global",
-    "title": "Inventory data sources for energy-access/clean-energy-financing-global",
+    "title": "Inventory investment-flow, project-pipeline, and financing-structure data sources for clean energy in low-income countries",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for clean energy financing access gaps in low-income countries.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates investment-flow databases (IRENA, Bloomberg NEF, CPI), project-pipeline data, financing-structure assessments, and energy-access gap data into usable, limited, and rejected categories with explicit sub-national data granularity and financing-structure documentation.",
+    "inputs": [
+      "IRENA World Energy Transitions Outlook documentation",
+      "Bloomberg NEF clean energy investment data methodology",
+      "Climate Policy Initiative global landscape of climate finance reports",
+      "Published missing-middle financing assessments for distributed energy",
+      "Development-finance institution project pipeline documentation"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and documented limitations — particularly sub-national data granularity and financing-structure barrier documentation.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering sub-national granularity, financing-structure documentation, and concessional-finance allocation data."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "financing-gap-mapping",
     "problem_id": "energy-access/clean-energy-financing-global",
-    "title": "Measure sub-national gap for clean energy financing access gaps in low-income countries",
+    "title": "Map clean energy financing gaps at sub-national scale for at least two low-income countries",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A sub-national financing-gap analysis for at least two low-income countries, documenting investment-flow data sources, sub-national data limitations, and the gap between national aggregates and district-level financing access.",
+    "inputs": [
+      "IRENA and Bloomberg NEF investment data for target countries",
+      "Energy-access gap data from national surveys",
+      "Project-pipeline data where available",
+      "Administrative boundary data for sub-national aggregation"
+    ],
+    "expected_artifact": "validation.md update with financing methodology and data-limitation documentation.",
+    "validation_method": "Replicator confirms investment data extraction, sub-national granularity assessment, and data-gap documentation for each target country.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Financing-gap analysis includes methodology, sub-national results, data-limitation documentation, and replication status for at least two countries."
   },
   {
-    "id": "risk-mapping",
+    "id": "financing-structure-analysis",
     "problem_id": "energy-access/clean-energy-financing-global",
-    "title": "Produce sub-national risk map for clean energy financing access gaps in low-income countries",
+    "title": "Analyze financing-structure barriers including missing middle, concessional-finance allocation, and de-risking instrument coverage",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A financing-structure analysis documenting missing-middle barriers, concessional-finance allocation bias, and de-risking instrument coverage, with explicit volume-vs-access distinction and country-context documentation.",
+    "inputs": [
+      "financing-gap analysis results",
+      "published missing-middle assessments",
+      "Climate Policy Initiative concessional-finance data",
+      "de-risking instrument documentation from development-finance institutions"
+    ],
+    "expected_artifact": "outputs.md update with structure methodology and barrier documentation.",
+    "validation_method": "Replicator confirms structure-analysis methodology, barrier documentation, and volume-vs-access distinction for each target country.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "done_condition": "Financing-structure analysis includes methodology, barrier documentation, volume-vs-access distinction, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-financing-overstatement",
     "problem_id": "energy-access/clean-energy-financing-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team financing-gap overstatement and volume-implies-access risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how aggregate investment statistics could mask sub-national targeting needs, how volume-gap claims could imply that increasing finance alone closes access gaps, and how missing-middle barriers could be underestimated.",
+    "inputs": [
+      "financing-structure analysis outputs",
+      "financing-gap outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every financing-gap claim has sub-national data documentation, volume-vs-access distinction, and missing-middle barrier context. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
-    "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "safety_risk": "medium",
+    "done_condition": "Every financing-gap claim is either blocked, softened to data-limited language with explicit volume-vs-access and missing-middle caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "energy-access/clean-energy-financing-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match development-finance and energy-enterprise decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the financing-gap and structure analysis would change any real decision for development-finance institutions, energy-access enterprises, or concessional-finance managers without creating perverse incentives.",
+    "inputs": [
+      "draft financing and structure outputs",
+      "development-finance institution program context",
+      "energy-access enterprise financing context"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for development-finance and enterprise audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that aggregate statistics mask sub-national targeting needs, or that volume-gap claims imply finance alone closes access gaps. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
-    "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "safety_risk": "medium",
+    "done_condition": "The output has a named user (e.g., IFC distributed energy financing officer), named decision (e.g., concessional-finance allocation to last-mile distributed energy), explicit non-use cases (e.g., not for claiming finance volume alone closes access gaps), and replicated field-reality review."
   }
 ]

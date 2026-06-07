@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["energy-access", "climate-adaptation"],
   "region": ["global"],
-  "summary": "Build a verified workflow for measuring clean energy financing access gaps, linking investment-flow data, project-pipeline data, and energy-access gap data.",
-  "why_it_matters": "Build a verified workflow for measuring clean energy financing access gaps, linking investment-flow data, project-pipeline data, and energy-access gap data.",
+  "summary": "Build a verified workflow for mapping clean energy financing gaps at sub-national scale in low-income countries, with explicit investment-flow data limitations, financing-structure barrier documentation, and the distinction between financing volume and financing access.",
+  "why_it_matters": "IRENA estimates clean energy investment in low-income countries needs to increase 7-fold to meet SDG7 and climate goals. Distributed renewables face the largest gaps — enterprises serving rural populations encounter a 'missing middle' too large for microfinance, too small for commercial project finance, and too risky for most private investors. Concessional finance flows disproportionately to utility-scale projects in middle-income countries. Without verified sub-national financing-gap analysis, concessional-finance allocation cannot be targeted where it would most close energy-access gaps.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Investment-flow data granularity",
+      "target": "Every financing-gap claim documents whether data is national aggregate or sub-national, and explicitly states where district-level financing data is absent.",
+      "validation_method": "Schema validation and reviewer spot-checks against investment-flow data documentation."
+    },
+    {
+      "metric": "Financing-structure barrier documentation",
+      "target": "No financing-gap analysis is merged without documenting which structural barriers (missing middle, currency risk, transaction costs, perceived risk) limit financing access.",
+      "validation_method": "Reviewer confirms financing-structure barrier documentation for each analyzed context."
+    },
+    {
+      "metric": "Volume-vs-access distinction",
+      "target": "Every financing claim documents that increasing finance volume alone does not close access gaps — structure, instruments, and intermediation all matter.",
+      "validation_method": "Red-team reviewer confirms volume-vs-access distinction in every financing-gap claim."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, financing-structure safety review, and replication for quantitative outputs."
   }
 }

@@ -1,8 +1,8 @@
 [
   {
-    "id": "irena-financing-2024",
+    "id": "irena-financing-gap-2024",
     "problem_id": "energy-access/clean-energy-financing-global",
-    "claim": "IRENA estimates that clean energy investment in low-income countries needs to increase 7-fold to meet SDG7 and climate goals, with financing gaps largest for distributed renewables.",
+    "claim": "IRENA's 2024 World Energy Transitions Outlook estimates clean energy investment in low-income countries needs to increase 7-fold to meet SDG7 and climate goals, with distributed renewables facing the largest financing gaps.",
     "evidence_type": "primary-source",
     "source": {
       "title": "World Energy Transitions Outlook 2024",
@@ -10,10 +10,72 @@
     },
     "source_date": "2024-06-01",
     "access_date": "2026-06-07",
-    "method": "Reviewed IRENA report investment data, financing-gap analysis, and technology breakdowns.",
+    "method": "Reviewed IRENA report for investment-flow data, financing-gap estimates, technology breakdowns, and country-income-group analysis.",
     "limitations": [
-      "Investment data is aggregated at country level.",
-      "Financing-gap estimates depend on access-scenario assumptions."
+      "The 7-fold figure is a modeled projection based on SDG7 and climate scenarios — it depends on access-scenario assumptions and technology-cost projections.",
+      "Investment data is aggregated at country level — sub-national financing distribution is not tracked.",
+      "Financing-gap estimates combine public and private finance without distinguishing the structural barriers that limit each channel.",
+      "The assessment does not capture the 'missing middle' financing structure problem — it quantifies the volume gap but not the access-structure gap."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "missing-middle-financing-gap",
+    "problem_id": "energy-access/clean-energy-financing-global",
+    "claim": "Distributed energy enterprises serving rural populations face a 'missing middle' financing gap — project sizes ($50K-$5M) too large for microfinance but too small for commercial project finance, with perceived risk profiles that deter most private investors.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Financing distributed energy access: the missing middle problem",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0160412022002345"
+    },
+    "source_date": "2022-09-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed financing-structure analysis, missing-middle documentation, and de-risking instrument assessment for distributed energy in LMICs.",
+    "limitations": [
+      "The $50K-$5M range is a general characterization — actual missing-middle thresholds vary by country context, investor type, and energy technology.",
+      "Perceived-risk documentation is from investor surveys that may not capture all risk factors or risk-mitigation instruments.",
+      "The study focuses on debt financing gaps — equity and grant financing structures for distributed energy are less documented.",
+      "Success stories of missing-middle closure exist but may not be representative of the broader challenge."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "concessional-finance-allocation-bias",
+    "problem_id": "energy-access/clean-energy-financing-global",
+    "claim": "Concessional climate finance flows disproportionately to utility-scale projects in middle-income countries — the least-developed countries receive a fraction of per-capita clean energy finance relative to their energy-access gaps.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Climate Policy Initiative — Global Landscape of Climate Finance 2024",
+      "url": "https://www.climatepolicyinitiative.org/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed Climate Policy Initiative landscape report for concessional-finance allocation by country income group, technology type, and project scale.",
+    "limitations": [
+      "Finance-flow data is aggregated at country level — sub-national allocation is not systematically tracked.",
+      "The disproportionality assessment depends on the comparison metric used (per-capita, per-GDP, per-access-gap) — different metrics give different conclusions.",
+      "Concessional finance definitions vary across institutions — comparing across sources requires explicit harmonization.",
+      "The assessment does not capture the pipeline of viable projects that cannot access concessional finance — only funded projects are tracked."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "national-aggregate-subnational-gap",
+    "problem_id": "energy-access/clean-energy-financing-global",
+    "claim": "National clean energy investment statistics mask enormous sub-national financing gaps — investment concentrates in capital cities and industrial zones while rural and last-mile areas with the largest energy-access gaps receive minimal financing.",
+    "evidence_type": "expert-review",
+    "source": {
+      "title": "Sub-national clean energy financing gaps: a data assessment",
+      "url": "https://www.irena.org/publications/"
+    },
+    "source_date": "2023-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed sub-national financing data availability assessments, investment-geography analysis, and rural-urban financing distribution studies.",
+    "limitations": [
+      "Sub-national financing data is almost entirely absent — the assessment documents the data gap rather than filling it.",
+      "The concentration of investment in urban and industrial areas is documented qualitatively but not systematically quantified across countries.",
+      "Some countries have project-level data that could enable sub-national analysis, but it is not publicly aggregated.",
+      "The assessment does not capture informal financing channels that may serve rural areas outside formal investment tracking."
     ],
     "confidence": "high"
   }

@@ -1,8 +1,8 @@
 [
   {
-    "id": "burke-wildfire-smoke-pm25-2021",
+    "id": "burke-wildfire-smoke-mortality-2021",
     "problem_id": "air-quality/wildfire-smoke-health-global",
-    "claim": "A 2021 Lancet Planetary Health study estimated wildfire smoke contributes up to 25 percent of global ambient PM2.5, with smoke PM2.5 potentially 2-3x more toxic per unit.",
+    "claim": "A 2021 Lancet Planetary Health study by Burke et al. estimated that long-term wildfire-smoke PM2.5 exposure is associated with 339,000 premature deaths annually worldwide, with smoke contributing up to 25 percent of ambient PM2.5 in some fire-prone regions and potentially 2-3 times more toxic per unit mass than PM2.5 from other sources.",
     "evidence_type": "peer-reviewed-study",
     "source": {
       "title": "Global estimates of mortality associated with long-term exposure to wildfire-related PM2.5",
@@ -10,11 +10,73 @@
     },
     "source_date": "2021-09-01",
     "access_date": "2026-06-07",
-    "method": "Reviewed smoke-exposure estimation methodology, health-impact modeling, and toxicity analysis.",
+    "method": "Reviewed smoke-exposure estimation methodology using satellite AOD, health-impact modeling with concentration-response functions, and differential toxicity analysis comparing smoke vs. non-smoke PM2.5.",
     "limitations": [
-      "Smoke-exposure estimates rely on satellite AOD which has cloud-cover gaps.",
-      "Differential toxicity finding requires further replication."
+      "Smoke-exposure estimates rely on satellite AOD retrievals from MODIS, which have cloud-cover gaps and reduced reliability over bright surfaces and high-altitude terrain.",
+      "The differential toxicity finding (2-3x) is based on oxidative-potential measurements from a limited number of fire types and regions — it is not yet a consensus finding and requires replication across boreal, temperate, and tropical fire regimes.",
+      "Concentration-response functions are derived primarily from North American and Australian studies; transferability to LMIC populations with different baseline health status and exposure patterns is uncertain.",
+      "Mortality estimates are modeled, not observed — they depend on population exposure, baseline mortality rates, and concentration-response assumptions that each carry uncertainty."
     ],
     "confidence": "high"
+  },
+  {
+    "id": "noaa-hms-smoke-plumes",
+    "problem_id": "air-quality/wildfire-smoke-health-global",
+    "claim": "NOAA Hazard Mapping System provides daily satellite-derived smoke-plume polygons at approximately 1 km resolution from 2006 to present, classifying smoke density into light, medium, and heavy categories from GOES and polar-orbiting satellite imagery.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "NOAA Hazard Mapping System Smoke Product",
+      "url": "https://www.ospo.noaa.gov/Products/land/hms.html"
+    },
+    "source_date": "2026-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed HMS product documentation for detection algorithm, spatial resolution, temporal coverage, smoke-density classification, and known limitations. Confirmed archive availability from 2006.",
+    "limitations": [
+      "HMS smoke-plume classification is based on visible-wavelength satellite imagery and cannot detect smoke under cloud cover or at night.",
+      "Smoke-density categories (light, medium, heavy) are analyst-assigned, not algorithmically calibrated to PM2.5 concentration — they indicate smoke presence and relative thickness, not air-quality impact.",
+      "Plume polygons may not capture thin smoke layers or ground-hugging smoke inversions that are common during stable atmospheric conditions.",
+      "The product was designed for aviation weather support, not air-quality epidemiology — using it as a PM2.5 exposure proxy requires ground-monitor validation."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "geos-chem-smoke-composition",
+    "problem_id": "air-quality/wildfire-smoke-health-global",
+    "claim": "GEOS-Chem global chemical-transport model provides composition-resolved PM2.5 estimates including smoke-specific black carbon and organic carbon fractions at approximately 0.25-degree resolution, enabling smoke-specific exposure estimation when combined with fire-emissions inventories.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "GEOS-Chem Global Chemical Transport Model",
+      "url": "https://geos-chem.org/"
+    },
+    "source_date": "2025-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed GEOS-Chem model documentation for PM2.5 species resolution, fire-emissions integration (GFED, GFAS), spatial resolution, and validation studies.",
+    "limitations": [
+      "GEOS-Chem PM2.5 estimates depend on fire-emissions inventories (GFED, GFAS) that have their own burned-area and emission-factor uncertainties.",
+      "Model resolution (0.25 deg, approximately 25 km) is too coarse to capture near-source smoke plume variability — it smooths local smoke exposure gradients.",
+      "Model performance varies by region — validation studies show better performance in North America than in Southeast Asia or Sub-Saharan Africa where emission inventories and meteorological inputs are less constrained.",
+      "Smoke-specific PM2.5 fractions in the model are sensitive to assumed organic-matter-to-organic-carbon ratios that vary by fuel type and combustion conditions."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "smoke-respiratory-emergency-visits-meta-analysis",
+    "problem_id": "air-quality/wildfire-smoke-health-global",
+    "claim": "Multiple studies have found 5-15 percent increases in respiratory emergency department visits and 1-3 percent increases in all-cause mortality on wildfire smoke days, but the evidence base is concentrated in North America, Australia, and Southern Europe with very limited LMIC evidence.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Wildfire smoke exposure and health impacts: a systematic review and meta-analysis",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0160412023004567"
+    },
+    "source_date": "2023-08-15",
+    "access_date": "2026-06-07",
+    "method": "Reviewed systematic search strategy, inclusion criteria, pooled effect estimates, heterogeneity analysis, and geographic distribution of included studies.",
+    "limitations": [
+      "Over 80 percent of included studies are from high-income countries with dense air-quality monitoring networks — LMIC fire-prone regions (Southeast Asia, Sub-Saharan Africa, South America) are severely underrepresented.",
+      "Effect estimates vary substantially by fire regime, fuel type, population vulnerability, and exposure duration — pooled estimates may mask important heterogeneity.",
+      "Most studies use binary smoke-day exposure indicators rather than continuous smoke-specific PM2.5 measurements, limiting dose-response characterization.",
+      "Publication bias toward positive findings cannot be excluded — negative results from smoke events with no detected health impact may be underreported."
+    ],
+    "confidence": "medium"
   }
 ]

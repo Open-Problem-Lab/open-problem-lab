@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["air-quality", "public-health", "climate-health"],
   "region": ["global"],
-  "summary": "Build a verified workflow for estimating wildfire smoke PM2.5 exposure and respiratory health impact, linking satellite-derived smoke plumes, ground-monitor PM2.5, and health-utilization data in fire-prone regions.",
-  "why_it_matters": "Wildfire smoke contributes up to 25 percent of global PM2.5 and is increasing with climate change. Smoke PM2.5 may be more toxic than other PM2.5 sources. NOAA HMS and GEOS-Chem provide smoke-plume and composition data, but linking smoke exposure to verified health outcomes at sub-national scale is underdeveloped.",
+  "summary": "Build a verified workflow for estimating wildfire-smoke-specific PM2.5 exposure and respiratory health impact in fire-prone regions, linking satellite-derived smoke plumes, chemical-transport model composition, ground-monitor PM2.5, and health-utilization data with explicit exposure-validation methodology and non-smoke PM2.5 confound controls.",
+  "why_it_matters": "Wildfire smoke contributes up to 25 percent of global ambient PM2.5, and the fraction is rising as climate change extends fire seasons across boreal, temperate, and tropical regions. Smoke-derived PM2.5 may be 2-3 times more toxic per unit mass than other PM2.5 sources due to oxidative potential and co-pollutant profiles, though this differential toxicity finding requires further replication. Health systems in fire-prone regions need verified smoke-specific exposure estimates to target advisories and resource allocation without misattributing non-smoke respiratory burden.",
   "success_metrics": [
     {
-      "metric": "Exposure traceability",
-      "target": "Every smoke-exposure estimate links satellite, monitor, and health data with methodology.",
-      "validation_method": "Schema validation and reviewer checks."
+      "metric": "Exposure-validation traceability",
+      "target": "Every smoke-exposure estimate links satellite plume data, model composition, and ground-monitor validation with documented correlation and gap analysis.",
+      "validation_method": "Schema validation, evidence.json completeness check, and reviewer spot-checks against satellite-to-monitor validation methodology."
+    },
+    {
+      "metric": "Differential-toxicity honesty",
+      "target": "No smoke-toxicity claim is merged without documenting the replication status, confounding structure, and fire-regime-specific limitations of the differential toxicity finding.",
+      "validation_method": "Red-team reviewer confirms every toxicity claim has explicit uncertainty bounds and non-replicated status documented."
+    },
+    {
+      "metric": "LMIC evidence-gap documentation",
+      "target": "Every regional health-impact claim documents whether ground-monitor and health-outcome data is available and sufficient for the claimed geographic scope.",
+      "validation_method": "Reviewer confirms evidence-gap documentation for every region where health-impact claims are made, with explicit statement where LMIC data is absent."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, exposure-validation safety review, and replication for quantitative outputs."
   }
 }

@@ -8,13 +8,19 @@ The machine-readable ledger is `evidence.json`.
 
 ### Burke et al. 2021 Lancet Planetary Health
 
-Use this source for the global wildfire-smoke PM2.5 burden estimate — wildfire smoke contributes up to 25 percent of global ambient PM2.5, with smoke-derived PM2.5 potentially 2-3 times more toxic per unit mass than PM2.5 from other sources. The differential-toxicity finding is based on oxidative-potential measurements and epidemiological studies but is not yet a consensus finding — it requires further replication across different fire regimes, fuel types, and population settings.
+Use this source for the global wildfire-smoke mortality burden and differential toxicity framing. The 339,000 annual premature deaths figure is modeled, not observed — it depends on satellite AOD-derived exposure estimates, population data, and concentration-response functions that each carry uncertainty. The 2-3x differential toxicity finding is based on oxidative-potential measurements from a limited number of fire types and is not yet a consensus finding. Do not use the 25 percent, 2-3x, or 339,000 figures without noting their methodology-dependent uncertainty and the fact that concentration-response functions are derived primarily from North American and Australian studies.
 
-Smoke-exposure estimates in this study rely on satellite AOD (aerosol optical depth) retrievals, primarily from MODIS, which have cloud-cover gaps and are less reliable in areas with high surface albedo. Do not use the 25 percent or 2-3x figures without noting their uncertainty. For sub-national analysis, satellite-derived smoke-exposure estimates must be validated against ground-level PM2.5 monitors where available, and the validation results must be reported.
+### NOAA HMS Smoke Plumes
 
-### NOAA Hazard Mapping System Context
+Use HMS as a smoke-presence indicator, not a quantitative PM2.5 proxy. Smoke-density categories (light, medium, heavy) are analyst-assigned, not calibrated to ground-level PM2.5. HMS cannot detect smoke under clouds or at night. For epidemiological analysis, HMS plume data must be combined with chemical-transport model output and validated against ground monitors — do not use HMS plume polygons alone as an exposure metric.
 
-NOAA HMS produces daily satellite-derived smoke-plume polygons at approximately 1 km resolution from GOES and polar-orbiting imagery, classified into light, medium, and heavy smoke density. The archive extends from 2006 to present. HMS smoke-plume classification is based on visible-wavelength satellite imagery and can miss smoke under clouds or at night — it should be treated as a smoke-presence indicator, not a quantitative PM2.5 measurement. GEOS-Chem provides composition-resolved PM2.5 estimates including smoke-specific black-carbon and organic-carbon fractions, enabling smoke-specific exposure estimation when combined with HMS plume data.
+### GEOS-Chem Composition
+
+GEOS-Chem provides the best available global estimate of smoke-specific PM2.5 fractions, but model resolution (approximately 25 km) smooths local smoke gradients. Model performance varies by region — better validated in North America than in Southeast Asia or Sub-Saharan Africa. Smoke-specific fractions depend on assumed organic-matter-to-organic-carbon ratios that vary by fuel type. Always document which fire-emissions inventory (GFED vs. GFAS) was used and report model-vs-monitor validation results for the specific region analyzed.
+
+### Respiratory Emergency Visit Meta-Analysis
+
+Use this source for the pooled effect estimate range (5-15 percent respiratory visit increase) with the critical caveat that over 80 percent of included studies are from high-income countries. LMIC fire-prone regions — Southeast Asia peat fires, Sub-Saharan African savanna fires, South American cerrado fires — are severely underrepresented. Do not extrapolate North American effect estimates to LMIC populations without explicit transferability caveats and documentation of the evidence gap.
 
 ## Evidence Quality Rule
 

@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "air-quality/wildfire-smoke-health-global",
-    "title": "Inventory wildfire smoke and health data",
+    "title": "Inventory satellite smoke-detection, chemical-transport model, ground-monitor, and respiratory health data sources for fire-prone regions",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory.",
-    "inputs": ["NOAA HMS", "GEOS-Chem", "ground monitors", "health data"],
-    "expected_artifact": "datasets.md plus evidence.json.",
-    "validation_method": "Reviewer checks sources.",
+    "outcome": "A dated source inventory that separates satellite smoke-plume products (NOAA HMS), chemical-transport model composition (GEOS-Chem), ground PM2.5 monitors, and respiratory health-utilization data into usable, limited, and rejected categories with explicit LMIC coverage assessment.",
+    "inputs": [
+      "NOAA HMS smoke-plume product documentation",
+      "GEOS-Chem model documentation and validation studies",
+      "Ground PM2.5 monitor network inventories for fire-prone regions",
+      "Published systematic reviews of wildfire smoke health impacts",
+      "Health management information system documentation for LMIC fire-prone regions"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, spatial resolution, temporal coverage, and documented limitations — particularly LMIC data availability and satellite detection gaps under cloud cover.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "Four sources classified."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, coverage, LMIC availability, and known detection gaps."
   },
   {
-    "id": "smoke-exposure-mapping",
+    "id": "smoke-exposure-validation",
     "problem_id": "air-quality/wildfire-smoke-health-global",
-    "title": "Map wildfire smoke PM2.5 exposure at sub-national scale",
+    "title": "Validate satellite-derived smoke exposure against ground-monitor PM2.5 in at least two fire-prone regions",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A smoke-specific PM2.5 exposure map.",
-    "inputs": ["HMS plumes", "GEOS-Chem composition", "AOD data", "monitor data"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator validates exposure against ground monitors and confirms methodology.",
+    "outcome": "A validation report documenting the correlation between NOAA HMS smoke-plume indicators, GEOS-Chem smoke-specific PM2.5 estimates, and ground-level PM2.5 monitors during smoke and non-smoke periods for at least two regions with different fire regimes, with explicit documentation of monitor density and LMIC coverage gaps.",
+    "inputs": [
+      "NOAA HMS daily smoke-plume polygons",
+      "GEOS-Chem smoke-specific PM2.5 composition output",
+      "Ground PM2.5 monitor data from EPA (US), state agencies, and available LMIC networks",
+      "Meteorological data for atmospheric context during smoke events"
+    ],
+    "expected_artifact": "validation.md update with satellite-to-monitor correlation methodology, regional comparison, and LMIC gap documentation.",
+    "validation_method": "Replicator reruns the exposure validation on a different time period and confirms the correlation direction and magnitude hold for each region, with explicit documentation of which monitors were used and where coverage was insufficient.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Exposure map with monitor validation and replication."
+    "done_condition": "Validation report includes satellite-to-monitor correlation coefficients for at least two regions, smoke vs. non-smoke seasonal comparison, monitor density assessment, and explicit LMIC coverage-gap documentation."
   },
   {
     "id": "health-impact-analysis",
     "problem_id": "air-quality/wildfire-smoke-health-global",
-    "title": "Analyze respiratory health impact of smoke exposure",
+    "title": "Analyze respiratory health impact of smoke-specific PM2.5 with confound controls for non-smoke exposure",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A health-impact analysis linking smoke exposure to respiratory outcomes.",
-    "inputs": ["exposure map", "health utilization data", "population data"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms impact methodology and confound controls.",
+    "outcome": "A health-impact analysis linking validated smoke-specific PM2.5 exposure to respiratory health outcomes for at least one region, with explicit confound controls for non-smoke PM2.5, temperature, humidity, and baseline respiratory disease seasonality.",
+    "inputs": [
+      "validated smoke-exposure estimates",
+      "respiratory health-utilization data (ED visits, hospitalizations)",
+      "non-smoke PM2.5 baseline data",
+      "meteorological confound data (temperature, humidity)"
+    ],
+    "expected_artifact": "outputs.md update with health-impact methodology, effect estimates, and confound documentation.",
+    "validation_method": "Replicator reruns the health-impact model with alternative confound specifications and confirms the smoke-specific effect estimate is robust to confound choice, with explicit documentation of which health data was available and LMIC evidence gaps.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "high",
-    "done_condition": "Impact analysis with confound controls and replication."
+    "done_condition": "Health-impact analysis includes effect estimates with confidence intervals, confound controls for at least three non-smoke factors, sensitivity analysis, and explicit documentation of LMIC evidence gaps and data limitations."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-exposure-misclassification",
     "problem_id": "air-quality/wildfire-smoke-health-global",
-    "title": "Red-team misuse of smoke health data",
+    "title": "Red-team smoke-exposure misclassification and health-impact overstatement risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "Failure-mode review.",
-    "inputs": ["impact analysis", "safety policy"],
-    "expected_artifact": "SAFETY.md review.",
-    "validation_method": "Mitigations or block, replicated.",
+    "outcome": "A failure-mode review identifying how satellite-derived smoke exposure could misclassify exposure, how health-impact estimates could overstate effects by ignoring confounders, and how results could be misused to justify panic-based fire suppression or undermine prescribed-burning programs.",
+    "inputs": [
+      "health-impact analysis outputs",
+      "exposure validation report",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every health-impact claim has documented exposure-validation limitations, confound controls, and LMIC evidence gaps. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Claims qualified or gated."
+    "done_condition": "Every smoke-health claim is either blocked, softened to analytic language with explicit exposure-misclassification caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "air-quality/wildfire-smoke-health-global",
-    "title": "Check whether outputs match air-quality planning needs",
+    "title": "Check whether outputs match air-quality management and health-ministry decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "Field-facing review.",
-    "inputs": ["draft outputs", "air-quality context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "outcome": "A field-facing review of whether the smoke-health analysis would change any real decision for air-quality management agencies, health-ministry environmental health units, or emergency management offices without creating panic or undermining prescribed-burning programs.",
+    "inputs": [
+      "draft health-impact outputs",
+      "air-quality advisory context",
+      "prescribed-burning program documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for air-quality and health-ministry audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that health-impact estimates cause panic during fire events or are used to justify blanket fire suppression that increases catastrophic fire risk. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision."
+    "done_condition": "The output has a named user (e.g., state air-quality manager), named decision (e.g., smoke advisory threshold), explicit non-use cases (e.g., not for individual evacuation orders, not for prescribed-burning ban justification), and replicated field-reality review."
   }
 ]

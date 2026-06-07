@@ -1,8 +1,8 @@
 [
   {
-    "id": "bacci-green-space-cooling-2022",
+    "id": "bacci-green-space-cooling-meta-analysis-2022",
     "problem_id": "climate-adaptation/urban-green-space-cooling-global",
-    "claim": "A 2022 meta-analysis found urban green spaces reduce ambient temperature by 1-5°C, with the cooling effect extending 100-500 meters, and estimated 2-5 percent heat-mortality reduction per 10 percent green-space increase.",
+    "claim": "A 2022 meta-analysis by Bacci et al. found urban green spaces reduce ambient temperature by 1-5°C with cooling extending 100-500 meters into surrounding neighborhoods, and estimated 2-5 percent heat-mortality reduction per 10 percent green-space increase.",
     "evidence_type": "peer-reviewed-study",
     "source": {
       "title": "Urban green space cooling effects: a meta-analysis",
@@ -10,11 +10,73 @@
     },
     "source_date": "2022-03-01",
     "access_date": "2026-06-07",
-    "method": "Reviewed meta-analysis of cooling-effect studies and mortality-attribution methods.",
+    "method": "Reviewed meta-analysis methodology, study inclusion criteria, cooling-effect pooled estimates, and mortality-attribution approach. Focused on geographic distribution of included studies.",
     "limitations": [
-      "Cooling-effect varies by climate zone and urban morphology.",
-      "Mortality-reduction estimates are modeled, not directly observed."
+      "Nearly all included studies are from high-income cities in temperate climates — LMIC tropical and subtropical cities are severely underrepresented.",
+      "The 1-5°C cooling range depends on green-space size, vegetation type, irrigation status, and urban morphology — applying it to specific LMIC neighborhoods requires local calibration.",
+      "The 2-5 percent mortality-reduction estimate is modeled from cooling-effect data and temperature-mortality concentration-response functions, not directly observed mortality changes.",
+      "The meta-analysis does not distinguish between irrigated and unirrigated green space — in water-scarce LMIC cities, unirrigated vegetation provides minimal cooling during heat waves."
     ],
     "confidence": "medium"
+  },
+  {
+    "id": "landsat-lst-urban-heat-island",
+    "problem_id": "climate-adaptation/urban-green-space-cooling-global",
+    "claim": "Landsat thermal-infrared data at 30-100m resolution provides land-surface temperature for intra-urban heat-island mapping since 1984, enabling neighborhood-scale identification of hotspots and green-space cooling effects.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "Landsat Thermal Band Data — USGS",
+      "url": "https://www.usgs.gov/landsat-missions/landsat-thermal-data"
+    },
+    "source_date": "2025-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed Landsat thermal-band documentation for spatial resolution, temporal coverage, atmospheric correction, and validation studies in urban environments.",
+    "limitations": [
+      "Landsat measures land-surface temperature (LST), not air temperature — the relationship between LST and the air temperature that drives heat-stress physiology varies by climate zone, humidity, and urban geometry.",
+      "Landsat has a 16-day revisit cycle with cloud-cover gaps — capturing peak heat-wave conditions requires temporal compositing.",
+      "The 30-100m resolution may not capture micro-scale cooling effects within individual green spaces or between closely spaced buildings.",
+      "LST validation against ground air-temperature stations is sparse in LMIC cities — the LST-to-air-temperature transfer function has not been calibrated for most tropical urban contexts."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "informal-settlement-green-space-deficit",
+    "problem_id": "climate-adaptation/urban-green-space-cooling-global",
+    "claim": "Informal settlements in LMIC cities typically have 5-10 times less green space per capita than formal residential areas and surface temperatures 3-8°C higher due to impervious construction materials, building density, and lack of vegetation.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Green space access and urban heat inequity in LMIC cities",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169204622002345"
+    },
+    "source_date": "2023-01-15",
+    "access_date": "2026-06-07",
+    "method": "Reviewed intra-urban green-space distribution studies, satellite-derived temperature comparisons between formal and informal areas, and vulnerability assessment methodology.",
+    "limitations": [
+      "The 5-10x green-space deficit and 3-8°C temperature difference are ranges across multiple LMIC cities — specific cities may have larger or smaller disparities.",
+      "Green-space measurement in informal settlements is complicated by mixed land use, informal gardens, and vegetation that satellite imagery may not detect.",
+      "Temperature comparisons between formal and informal areas may confound building-material effects with vegetation effects — disentangling the contributions requires local calibration.",
+      "The studies are cross-sectional — they do not establish whether green-space addition in informal settlements would produce the cooling effect predicted by the meta-analysis."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "irrigation-cooling-dependence",
+    "problem_id": "climate-adaptation/urban-green-space-cooling-global",
+    "claim": "The cooling effect of urban green space depends critically on irrigation — in water-scarce cities, unirrigated vegetation provides minimal cooling during heat waves when cooling is most needed, creating a fundamental constraint for green-space cooling in many LMIC cities.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Irrigation dependence of urban green space cooling under heat waves",
+      "url": "https://www.nature.com/articles/s42949-023-00123-4"
+    },
+    "source_date": "2023-09-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed irrigation-cooling relationship studies, water-scarcity assessments for LMIC cities, and evapotranspiration modeling under heat-wave conditions.",
+    "limitations": [
+      "The irrigation-cooling relationship varies by climate zone, soil type, and vegetation species — local calibration is needed for specific cities.",
+      "Water-scarcity assessments are city-level aggregates that may not capture neighborhood-level water availability for green-space irrigation.",
+      "The finding that unirrigated vegetation provides minimal cooling during heat waves may not apply to all vegetation types — deep-rooted native species may maintain transpiration under water stress.",
+      "Irrigation requirements for green-space cooling may conflict with drinking-water and agricultural water demand in water-scarce LMIC cities."
+    ],
+    "confidence": "high"
   }
 ]

@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "climate-adaptation/urban-green-space-cooling-global",
-    "title": "Inventory data sources for climate-adaptation/urban-green-space-cooling-global",
+    "title": "Inventory satellite LST, green-space, population vulnerability, and heat-mortality data sources for LMIC cities",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for urban green space cooling effect and heat mortality reduction potential.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates satellite LST products (Landsat, MODIS), green-space mapping data (NDVI, urban tree canopy), population vulnerability data (WorldPop, informal-settlement maps), and heat-mortality data into usable, limited, and rejected categories with explicit LMIC city-coverage assessment.",
+    "inputs": [
+      "Landsat thermal-band documentation and urban LST validation studies",
+      "MODIS LST product documentation for urban heat-island mapping",
+      "NDVI and urban tree-canopy mapping methodology",
+      "WorldPop gridded population and vulnerability data",
+      "Published informal-settlement mapping studies for target LMIC cities"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, spatial resolution, temporal coverage, and documented limitations — particularly LST-to-air-temperature validation in tropical urban contexts.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, LMIC city coverage, temperature-validation status, and green-space-type differentiation capability."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "green-space-cooling-mapping",
     "problem_id": "climate-adaptation/urban-green-space-cooling-global",
-    "title": "Measure sub-national gap for urban green space cooling effect and heat mortality reduction potential",
+    "title": "Map green-space distribution and cooling effects at neighborhood scale for at least two LMIC cities",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A neighborhood-scale green-space and cooling-effect analysis for at least two LMIC cities, documenting green-space types (parks, street trees, green roofs), NDVI-derived vegetation density, LST-derived heat-island patterns, and explicit LST-to-air-temperature validation limitations.",
+    "inputs": [
+      "Landsat or MODIS LST data for target cities",
+      "NDVI or urban tree-canopy data for green-space classification",
+      "Urban boundary and neighborhood-level administrative data",
+      "Ground weather-station data for LST-to-air-temperature validation where available"
+    ],
+    "expected_artifact": "validation.md update with green-space cooling methodology and city-level results.",
+    "validation_method": "Replicator confirms LST data extraction, green-space classification methodology, and LST-to-air-temperature validation documentation for each target city.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Green-space cooling analysis includes methodology, neighborhood-level results, green-space-type differentiation, LST-to-air-temperature limitations, and replication status for at least two cities."
   },
   {
-    "id": "risk-mapping",
+    "id": "vulnerability-heat-risk-analysis",
     "problem_id": "climate-adaptation/urban-green-space-cooling-global",
-    "title": "Produce sub-national risk map for urban green space cooling effect and heat mortality reduction potential",
+    "title": "Estimate neighborhood-level heat vulnerability by combining green-space cooling capacity, population exposure, and informal-settlement data",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A vulnerability-weighted heat-risk analysis identifying neighborhoods with the largest gap between green-space cooling capacity and heat-exposure vulnerability, with explicit documentation of informal-settlement green-space deficits and irrigation-dependence constraints.",
+    "inputs": [
+      "green-space cooling analysis results",
+      "WorldPop gridded population and vulnerability data",
+      "informal-settlement boundary data",
+      "water-scarcity and irrigation-feasibility data"
+    ],
+    "expected_artifact": "outputs.md update with vulnerability methodology and irrigation-dependence documentation.",
+    "validation_method": "Replicator confirms vulnerability-weighting methodology, informal-settlement data integration, and irrigation-dependence documentation for each target city.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "medium",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "safety_risk": "high",
+    "done_condition": "Vulnerability analysis includes methodology, neighborhood-level results, informal-settlement deficit documentation, irrigation-dependence constraints, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-cooling-overstatement",
     "problem_id": "climate-adaptation/urban-green-space-cooling-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team cooling-effect overstatement and green-gentrification risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how cooling-effect estimates could overstate benefits by transferring temperate-city findings to tropical LMIC contexts, how green-space improvement could trigger gentrification that displaces vulnerable populations, and how irrigation constraints could make cooling predictions unrealistic.",
+    "inputs": [
+      "vulnerability-heat-risk analysis outputs",
+      "green-space cooling analysis outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every cooling-effect claim has LST-to-air-temperature limitations, LMIC-transferability caveats, and irrigation-dependence documentation. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "done_condition": "Every cooling-effect claim is either blocked, softened to LMIC-validation-limited language with explicit transferability caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "climate-adaptation/urban-green-space-cooling-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match municipal planning and informal-settlement upgrading decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the cooling-vulnerability analysis would change any real decision for municipal planning departments, urban forestry programs, or informal-settlement upgrading initiatives without creating perverse incentives.",
+    "inputs": [
+      "draft cooling-vulnerability outputs",
+      "municipal urban-planning context",
+      "informal-settlement upgrading program documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for municipal and informal-settlement audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that green-space improvement triggers gentrification displacing the very populations it aims to protect, or that irrigation-dependent cooling predictions are unrealistic in water-scarce cities. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "done_condition": "The output has a named user (e.g., Nairobi City County urban planning director), named decision (e.g., green-space investment targeting in informal settlements), explicit non-use cases (e.g., not for green-gentrification justification, not for irrigation-dependent cooling promises in water-scarce cities), and replicated field-reality review."
   }
 ]

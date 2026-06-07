@@ -2,12 +2,19 @@
 
 ## Accepted Outputs
 
-None yet.
+No accepted outputs exist yet.
 
-## Candidate Types
+This is deliberate. The first pack is scoped, not solved.
 
-Evidence inventory, sub-national gap map, red-team review, field-reality review.
+## Candidate Output Types
+
+- Evidence inventory with satellite LST product comparison and LMIC city temperature-validation assessment.
+- Neighborhood-scale green-space and cooling-effect map for at least two LMIC cities.
+- Vulnerability-weighted heat-risk analysis identifying neighborhoods with the largest green-space cooling deficit.
+- Irrigation-dependence assessment for green-space cooling in water-scarce cities.
+- Failure-mode review of cooling-effect overstatement and green-gentrification risks.
+- Field-reality review with municipal planning and informal-settlement upgrading context.
 
 ## Publication Rule
 
-Outputs must state what they are not. A gap map is not a policy or investment recommendation.
+Published outputs must say what they are not. A cooling-effect map is not a guarantee of air-temperature reduction — LST measures surface temperature, not the air temperature that drives heat-stress physiology. Green-space improvement recommendations must document irrigation feasibility and green-gentrification risk.

@@ -2,71 +2,94 @@
   {
     "id": "source-inventory",
     "problem_id": "education/school-feeding-coverage-global",
-    "title": "Inventory data sources for education/school-feeding-coverage-global",
+    "title": "Inventory WFP program data, national feeding reports, enrollment, and nutrition-outcome data sources for low-income countries",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for school feeding program coverage and nutritional impact gaps.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates WFP school feeding survey data, national program reports, enrollment and attendance data, and nutrition-outcome surveys into usable, limited, and rejected categories with explicit sub-national data availability and meal-quality documentation.",
+    "inputs": [
+      "WFP State of School Feeding report and annual survey documentation",
+      "National school feeding program reports for target countries",
+      "Enrollment and attendance data from education management information systems",
+      "Anthropometric and dietary-diversity survey data (DHS, MICS)",
+      "Published school feeding effectiveness evaluations"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and documented limitations — particularly sub-national coverage granularity and meal-quality documentation.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering sub-national coverage, meal-quality data, and nutritional-outcome measurement."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "coverage-mapping",
     "problem_id": "education/school-feeding-coverage-global",
-    "title": "Measure sub-national gap for school feeding program coverage and nutritional impact gaps",
+    "title": "Map sub-national school feeding coverage for at least two low-income countries",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A sub-national school feeding coverage analysis for at least two low-income countries, documenting data sources, national-vs-sub-national granularity, and coverage-gap assessment.",
+    "inputs": [
+      "WFP survey data and national program reports for target countries",
+      "School-level feeding program data where available",
+      "Administrative boundary data for district-level aggregation",
+      "Enrollment data from education management information systems"
+    ],
+    "expected_artifact": "validation.md update with coverage methodology and data-granularity documentation.",
+    "validation_method": "Replicator confirms coverage data extraction, sub-national granularity assessment, and data-gap documentation for each target country.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Coverage analysis includes methodology, sub-national results, data-granularity documentation, and replication status for at least two countries."
   },
   {
-    "id": "risk-mapping",
+    "id": "nutritional-impact-analysis",
     "problem_id": "education/school-feeding-coverage-global",
-    "title": "Produce sub-national risk map for school feeding program coverage and nutritional impact gaps",
+    "title": "Analyze nutritional impact of school feeding using anthropometric and dietary-diversity data where available",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A nutritional-impact analysis linking school feeding coverage to anthropometric and dietary-diversity outcomes, with explicit documentation of meal-quality variation, enrollment-vs-nutrition evidence distinction, and concurrent-intervention confounds.",
+    "inputs": [
+      "coverage analysis results",
+      "anthropometric survey data (DHS, MICS) for target countries",
+      "meal-quality and nutritional-content data where available",
+      "published nutritional-impact evaluations for context"
+    ],
+    "expected_artifact": "outputs.md update with impact methodology and meal-quality documentation.",
+    "validation_method": "Replicator confirms impact-linkage methodology, meal-quality documentation, and enrollment-vs-nutrition distinction for each target country.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "done_condition": "Nutritional-impact analysis includes methodology, meal-quality variation documentation, enrollment-vs-nutrition distinction, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-coverage-overstatement",
     "problem_id": "education/school-feeding-coverage-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team coverage overstatement and nutritional-impact exaggeration risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how national coverage statistics could mask district-level gaps, how coverage without meal-quality data could overstate nutritional impact, and how enrollment effects could be conflated with nutrition effects.",
+    "inputs": [
+      "coverage and impact analysis outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every coverage claim has sub-national granularity documentation, every nutritional claim has meal-quality context, and every effectiveness claim distinguishes enrollment from nutrition effects. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
-    "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "safety_risk": "medium",
+    "done_condition": "Every coverage and impact claim is either blocked, softened to data-limited language with explicit meal-quality and enrollment-vs-nutrition caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "education/school-feeding-coverage-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match education ministry and WFP program decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the coverage-impact analysis would change any real decision for education ministries, WFP country offices, or school feeding program managers without creating perverse incentives.",
+    "inputs": [
+      "draft coverage and impact outputs",
+      "education ministry school feeding context",
+      "WFP program management documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for education ministry and WFP audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that national statistics mask district-level gaps, or that coverage without meal-quality data is treated as nutritional impact. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
-    "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "safety_risk": "medium",
+    "done_condition": "The output has a named user (e.g., WFP Ethiopia school feeding coordinator), named decision (e.g., program expansion targeting to uncovered districts), explicit non-use cases (e.g., not for claiming nutritional impact without meal-quality data), and replicated field-reality review."
   }
 ]

@@ -1,16 +1,26 @@
 {
   "id": "education/school-feeding-coverage-global",
-  "title": "School Feeding Program Coverage And Nutritional Impact Gaps",
+  "title": "School Feeding Program Coverage And Nutritional Impact Gaps In Low-Income Countries",
   "status": "scoped",
   "domain": ["education", "food-security"],
   "region": ["global"],
-  "summary": "Build a verified workflow for measuring school feeding program coverage and nutritional impact, linking WFP program data, enrollment data, and nutrition-outcome data.",
-  "why_it_matters": "Build a verified workflow for measuring school feeding program coverage and nutritional impact, linking WFP program data, enrollment data, and nutrition-outcome data.",
+  "summary": "Build a verified workflow for mapping school feeding program coverage and estimating nutritional impact at sub-national scale in low-income countries, with explicit coverage-data limitations, meal-quality variation documentation, and the distinction between program existence and verified nutritional impact.",
+  "why_it_matters": "WFP estimates 418 million children receive school meals globally, but coverage in low-income countries is below 20 percent — the children who most need school meals are least likely to receive them. School feeding increases enrollment by 8-12 percentage points on average, but nutritional-impact evidence is weaker and meal quality varies enormously. National coverage statistics mask district-level gaps where rural schools have no programs. Without verified sub-national coverage analysis, program expansion cannot be targeted where it would most reduce hunger and increase enrollment.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Coverage-data granularity documentation",
+      "target": "Every coverage claim documents whether data is national aggregate or sub-national, and explicitly states where district-level data is absent.",
+      "validation_method": "Schema validation and reviewer spot-checks against coverage-data granularity documentation."
+    },
+    {
+      "metric": "Meal-quality variation documentation",
+      "target": "No nutritional-impact claim is merged without documenting meal-quality variation, micronutrient content, and dietary-diversity differences across programs.",
+      "validation_method": "Reviewer confirms meal-quality and nutritional-content documentation."
+    },
+    {
+      "metric": "Enrollment-vs-nutrition distinction",
+      "target": "Every effectiveness claim distinguishes enrollment/attendance effects (strong evidence) from nutritional-impact effects (weaker evidence).",
+      "validation_method": "Red-team reviewer confirms enrollment-vs-nutrition evidence distinction."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, meal-quality safety review, and replication for quantitative outputs."
   }
 }

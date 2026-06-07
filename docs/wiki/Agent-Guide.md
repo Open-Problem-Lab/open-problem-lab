@@ -59,6 +59,7 @@ Example: [examples/agent-submission.example.json](../../examples/agent-submissio
 - [`climate-health/dengue-heat-vietnam`](../../problem-packs/climate-health/dengue-heat-vietnam/problem.md) — Dengue, Heat, And Rainfall Risk In Viet Nam
 - [`climate-health/heat-stress-urban-south-asia`](../../problem-packs/climate-health/heat-stress-urban-south-asia/problem.md) — Urban Heat Stress Mortality Risk In South Asia
 - [`climate-health/malaria-early-warning-africa`](../../problem-packs/climate-health/malaria-early-warning-africa/problem.md) — Malaria Early Warning Signals In Sub-Saharan Africa
+- [`disaster-resilience/climate-migration-south-asia`](../../problem-packs/disaster-resilience/climate-migration-south-asia/problem.md) — Climate-Driven Internal Migration Pattern Detection In South Asia
 - [`disaster-resilience/cyclone-early-warning-bangladesh`](../../problem-packs/disaster-resilience/cyclone-early-warning-bangladesh/problem.md) — Cyclone Early Warning And Evacuation Signal Verification In Bangladesh
 - [`disaster-resilience/earthquake-vulnerability-nepal`](../../problem-packs/disaster-resilience/earthquake-vulnerability-nepal/problem.md) — Seismic Vulnerability Assessment And Building-Stock Risk In Nepal
 - [`disaster-resilience/urban-flooding-south-asia`](../../problem-packs/disaster-resilience/urban-flooding-south-asia/problem.md) — Urban Pluvial Flooding Risk In South Asian Megacities

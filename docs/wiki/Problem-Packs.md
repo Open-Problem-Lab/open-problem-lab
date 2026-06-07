@@ -80,6 +80,16 @@ Build a verified workflow for identifying where urban heat island effects, wet-b
 
 Build a verified workflow for identifying where rainfall, temperature, and vegetation signals may provide usable lead time for sub-national malaria early warning in Sub-Saharan Africa, without pretending that a model output replaces local operational judgment.
 
+## Climate-Driven Internal Migration Pattern Detection In South Asia
+
+- ID: `disaster-resilience/climate-migration-south-asia`
+- Status: `scoped`
+- Domain: `disaster-resilience`, `climate-adaptation`
+- Region: `south-asia`
+- Source: [problem-packs/disaster-resilience/climate-migration-south-asia](../../problem-packs/disaster-resilience/climate-migration-south-asia/problem.md)
+
+Build a verified workflow for detecting climate-driven internal migration patterns in South Asia, linking census migration data, satellite-derived environmental change, and economic indicators at sub-national scale.
+
 ## Cyclone Early Warning And Evacuation Signal Verification In Bangladesh
 
 - ID: `disaster-resilience/cyclone-early-warning-bangladesh`

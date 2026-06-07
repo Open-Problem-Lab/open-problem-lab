@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["air-quality", "public-health"],
   "region": ["south-asia"],
-  "summary": "Build a verified workflow for measuring agricultural residue burning contribution to PM2.5 and health impact in South Asia.",
-  "why_it_matters": "Build a verified workflow for measuring agricultural residue burning contribution to PM2.5 and health impact in South Asia.",
+  "summary": "Build a verified workflow for linking satellite-detected agricultural residue burning to ground-level PM2.5 concentrations and respiratory health outcomes in the Indo-Gangetic Plain, with explicit source-apportionment methodology and non-burning confound controls.",
+  "why_it_matters": "An estimated 30 million tons of rice paddy residue are burned annually across Punjab, Haryana, and Uttar Pradesh, contributing 20-30 percent of peak-season PM2.5 in Delhi. The health burden falls disproportionately on rural populations near burning sites and urban residents downwind. Without verified source attribution, interventions risk targeting agricultural burning while ignoring co-occurring industrial, vehicular, and residential pollution sources.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Source-attribution traceability",
+      "target": "Every agricultural-burning-to-PM2.5 claim links to a dated evidence record with source-apportionment method and confound documentation.",
+      "validation_method": "Schema validation, evidence.json completeness check, and reviewer spot-checks against source-apportionment methodology."
+    },
+    {
+      "metric": "Ground-monitor validation coverage",
+      "target": "Satellite fire-detection products are validated against available CPCB ground-monitor PM2.5 data during burning and non-burning periods.",
+      "validation_method": "Replicator confirms validation methodology, monitor selection criteria, and seasonal comparison protocol."
+    },
+    {
+      "metric": "Health-attribution honesty",
+      "target": "No respiratory health claim is merged without documented confound control for non-burning PM2.5 sources and co-occurring seasonal factors.",
+      "validation_method": "Red-team reviewer confirms every health-attribution claim has explicit limitations and non-use cases documented."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, source-attribution safety review, and replication for quantitative outputs."
   }
 }

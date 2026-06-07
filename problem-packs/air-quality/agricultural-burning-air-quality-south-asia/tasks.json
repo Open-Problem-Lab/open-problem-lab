@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "air-quality/agricultural-burning-air-quality-south-asia",
-    "title": "Inventory data sources for air-quality/agricultural-burning-air-quality-south-asia",
+    "title": "Inventory satellite fire-detection, ground PM2.5, source-apportionment, and respiratory health data sources for the Indo-Gangetic Plain",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for agricultural residue burning air quality impact in south asia.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates satellite fire-detection products (MODIS, VIIRS, GFED), ground PM2.5 monitors (CPCB, state boards), source-apportionment studies, and respiratory health-utilization data into usable, limited, and rejected categories.",
+    "inputs": [
+      "MODIS and VIIRS fire-detection documentation from NASA FIRMS",
+      "GFED emissions methodology and data access documentation",
+      "CPCB National Air Quality Monitoring Programme station inventory",
+      "Published source-apportionment studies for Delhi and Indo-Gangetic Plain",
+      "Hospital respiratory admission data availability from state health departments"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, spatial resolution, temporal coverage, and documented limitations — particularly satellite detection gaps during cloudy periods.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, coverage, access conditions, and known detection gaps."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "fire-pm25-validation",
     "problem_id": "air-quality/agricultural-burning-air-quality-south-asia",
-    "title": "Measure sub-national gap for agricultural residue burning air quality impact in south asia",
+    "title": "Validate satellite fire-detection products against CPCB ground-monitor PM2.5 during burning and non-burning periods",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A validation report documenting the relationship between satellite fire counts and ground-level PM2.5 at available CPCB stations during October-November burning season versus non-burning baseline months, with explicit documentation of monitor sparsity in rural burning areas.",
+    "inputs": [
+      "MODIS and VIIRS fire-count data for Punjab, Haryana, and UP",
+      "CPCB PM2.5 data for available stations in the Indo-Gangetic Plain",
+      "Administrative boundary data for burning districts",
+      "Weather data for cloud-cover correction of satellite detection gaps"
+    ],
+    "expected_artifact": "validation.md update with fire-PM2.5 correlation methodology and results.",
+    "validation_method": "Replicator reruns the fire-PM2.5 validation on a different time period and confirms the correlation direction and magnitude hold, with explicit documentation of which CPCB stations were used and why rural coverage is insufficient.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Validation report includes fire-count-to-PM2.5 correlation coefficients, seasonal comparison (burning vs. non-burning), station selection rationale, and explicit documentation of rural monitoring gaps."
   },
   {
-    "id": "risk-mapping",
+    "id": "source-attribution-analysis",
     "problem_id": "air-quality/agricultural-burning-air-quality-south-asia",
-    "title": "Produce sub-national risk map for agricultural residue burning air quality impact in south asia",
+    "title": "Produce sub-national source-attribution analysis separating agricultural burning PM2.5 from non-burning sources",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A source-attribution analysis for at least two Indo-Gangetic Plain states that estimates the agricultural-burning contribution to peak-season PM2.5 while documenting the methodology for separating burning from residential biomass, industrial, vehicular, and Diwali-period sources.",
+    "inputs": [
+      "Fire-PM2.5 validation results",
+      "Published source-apportionment studies for comparison",
+      "Non-burning PM2.5 baseline data from CPCB stations",
+      "Meteorological data for dispersion modeling context"
+    ],
+    "expected_artifact": "outputs.md update with source-attribution methodology and results table.",
+    "validation_method": "Replicator reruns source-attribution with alternative confound assumptions and confirms the burning-attribution range is consistent with published studies within stated methodology differences.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "medium",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "safety_risk": "high",
+    "done_condition": "Source-attribution analysis includes explicit methodology, burning-attribution percentage range with confidence intervals, confound documentation for at least three non-burning sources, and comparison with published source-apportionment studies."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-source-overstatement",
     "problem_id": "air-quality/agricultural-burning-air-quality-south-asia",
-    "title": "Red-team misuse risks",
+    "title": "Red-team agricultural burning source-attribution overstatement and intervention misdirection risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how burning-attribution maps could mislead policy toward agricultural interventions while ignoring larger non-burning PM2.5 sources, or could be used punitively against smallholder farmers without addressing the economic constraints of residue management.",
+    "inputs": [
+      "source-attribution analysis outputs",
+      "safety policy",
+      "published critiques of source-apportionment methodology"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every source-attribution claim has documented limitations for non-burning confounds, satellite detection gaps, and methodology-dependent ranges. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "done_condition": "Every agricultural-burning health claim is either blocked, softened to analytic language with explicit confound caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "air-quality/agricultural-burning-air-quality-south-asia",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match agricultural extension and pollution control board decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the source-attribution analysis would change any real decision for state pollution control boards, agricultural extension services, or farmer organizations without creating perverse incentives.",
+    "inputs": [
+      "draft source-attribution outputs",
+      "crop-residue management program context",
+      "Happy Seeder adoption barrier studies"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for pollution control and agricultural extension audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that burning-focused interventions ignore larger PM2.5 sources or punish farmers without providing viable alternatives. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "done_condition": "The output has a named user (e.g., Punjab Pollution Control Board officer), named decision (e.g., Happy Seeder subsidy targeting), explicit non-use cases (e.g., not for individual farmer penalties), and replicated field-reality review."
   }
 ]

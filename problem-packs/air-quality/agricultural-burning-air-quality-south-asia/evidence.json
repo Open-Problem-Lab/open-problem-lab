@@ -1,8 +1,8 @@
 [
   {
-    "id": "jack-stubble-burning-2022",
+    "id": "jack-stubble-burning-pm25-2022",
     "problem_id": "air-quality/agricultural-burning-air-quality-south-asia",
-    "claim": "A 2022 study estimated agricultural residue burning contributes 20-30 percent of peak-season PM2.5 in Delhi and 10-15 percent across the Indo-Gangetic Plain during post-harvest periods.",
+    "claim": "A 2022 systematic review estimated that agricultural residue burning contributes 20-30 percent of peak-season PM2.5 in Delhi during October-November and 10-15 percent across the broader Indo-Gangetic Plain during post-harvest periods, based on source-apportionment studies using chemical tracer analysis and satellite fire-detection data.",
     "evidence_type": "peer-reviewed-study",
     "source": {
       "title": "Agricultural residue burning and air quality in South Asia: a review",
@@ -10,10 +10,92 @@
     },
     "source_date": "2022-03-15",
     "access_date": "2026-06-07",
-    "method": "Reviewed source-apportionment studies, fire-detection data, and health-impact estimates.",
+    "method": "Reviewed source-apportionment studies, fire-detection data integration, and health-impact estimates. Examined chemical tracer methodology for separating agricultural burning from residential biomass and industrial sources.",
     "limitations": [
-      "Fire-detection by MODIS misses small fires.",
-      "Source-attribution is model-dependent and has uncertainty."
+      "Source-attribution percentages vary by methodology — chemical tracer, receptor modeling, and satellite-based approaches give different ranges.",
+      "Most source-apportionment studies cover Delhi and a few major cities; rural Indo-Gangetic Plain coverage is sparse.",
+      "The 20-30 percent contribution estimate is for peak burning weeks only, not annual average — seasonal context is essential.",
+      "Fire-detection by MODIS at 1km resolution misses small fires and smoldering burns that produce substantial PM2.5."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "modis-viirs-fire-detection",
+    "problem_id": "air-quality/agricultural-burning-air-quality-south-asia",
+    "claim": "MODIS (Terra and Aqua) and VIIRS satellite instruments detect active agricultural fires at 375m-1km resolution, with NASA FIRMS providing near-real-time fire-alert data and GFED providing emissions estimates including black carbon, organic carbon, and PM2.5 from agricultural burning.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "NASA Fire Information for Resource Management System (FIRMS)",
+      "url": "https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms"
+    },
+    "source_date": "2026-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed FIRMS documentation for detection algorithm, spatial resolution, temporal coverage, and data access conditions. Cross-referenced with GFED emissions methodology documentation.",
+    "limitations": [
+      "MODIS 1km resolution misses fires smaller than approximately 100m, systematically underestimating small-field burning common in fragmented agricultural landscapes.",
+      "Cloud cover during October-November monsoon withdrawal period blocks satellite detection for days at a time.",
+      "VIIRS 375m resolution improves detection but still misses smoldering residue fires with low thermal signature.",
+      "GFED emissions estimates depend on burned-area algorithms that have known commission and omission errors in agricultural landscapes."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "cpcb-monitoring-network-south-asia",
+    "problem_id": "air-quality/agricultural-burning-air-quality-south-asia",
+    "claim": "India's CPCB operates approximately 300 continuous ambient air-quality monitoring stations nationally — roughly one per 4.7 million people — heavily concentrated in urban areas and sparse in the rural Punjab-Haryana agricultural belt where burning occurs.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Central Pollution Control Board — National Air Quality Monitoring Programme",
+      "url": "https://cpcb.nic.in/national-air-quality-monitoring-programme/"
+    },
+    "source_date": "2025-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed CPCB station inventory for geographic distribution, monitoring parameters, and data availability. Mapped station locations against Punjab-Haryana burning districts.",
+    "limitations": [
+      "Station count grows annually; the 300 figure is approximate and may not reflect the most recent additions.",
+      "Rural monitoring stations in Punjab and Haryana are extremely sparse relative to the burning area — most districts have zero monitors.",
+      "PM2.5 measurement methods vary across stations; not all use the same reference method.",
+      "Data access requires registration and download from the CPCB portal; real-time API availability is limited."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "crop-residue-management-program-india",
+    "problem_id": "air-quality/agricultural-burning-air-quality-south-asia",
+    "claim": "The Indian government's crop-residue management program has provided over 200,000 subsidized Happy Seeder machines and other no-burn equipment to farmers, but burning continues at large scale — approximately 50-70 percent of rice residue is still burned in Punjab despite eight years of the program.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Commission for Air Quality Management — Annual Report on Crop Residue Management",
+      "url": "https://caqm.nic.in/"
+    },
+    "source_date": "2025-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed CAQM annual reports for machine distribution statistics, burning incidence data from VIIRS fire counts, and program expenditure. Cross-referenced with Punjab Agricultural University field studies on Happy Seeder adoption barriers.",
+    "limitations": [
+      "Machine distribution numbers do not equal adoption — many subsidized machines remain underutilized due to narrow planting windows and operational constraints.",
+      "Burning percentage estimates from VIIRS fire counts vs. ground surveys differ substantially.",
+      "Program reports may understate continued burning to maintain political narrative of progress.",
+      "Economic analysis of Happy Seeder cost-effectiveness does not account for all farmer-level constraints including wheat yield penalties reported in some soil conditions."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "delhi-respiratory-burden-burning-season",
+    "problem_id": "air-quality/agricultural-burning-air-quality-south-asia",
+    "claim": "Delhi hospitals report a 20-30 percent increase in respiratory emergency visits during October-November burning season compared to baseline months, but attributing this increase specifically to agricultural burning versus co-occurring Diwali fireworks, winter inversion trapping, and diesel generator use remains methodologically contested.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Respiratory morbidity associated with air pollution in Delhi during crop residue burning season",
+      "url": "https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(23)00234-5/fulltext"
+    },
+    "source_date":  "2023-10-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed hospital admission data analysis, confound control methodology, and exposure assessment approach for the October-November period in Delhi.",
+    "limitations": [
+      "Hospital admission data reflects health-seeking behavior and hospital capacity, not true respiratory incidence.",
+      "The 20-30 percent increase cannot be cleanly attributed to agricultural burning — Diwali (fireworks), temperature drop, and winter inversion all co-occur.",
+      "Confounding by socioeconomic status, indoor air pollution, and occupational exposure is difficult to control.",
+      "Study covers Delhi only; rural populations near burning sites are even less studied."
     ],
     "confidence": "medium"
   }

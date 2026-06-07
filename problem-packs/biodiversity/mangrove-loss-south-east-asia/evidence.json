@@ -2,25 +2,47 @@
   {
     "id": "global-mangrove-watch-2024",
     "problem_id": "biodiversity/mangrove-loss-south-east-asia",
-    "claim": "Global Mangrove Watch estimates Southeast Asia has lost over 30 percent of mangroves since 1980, primarily to aquaculture conversion, with annual 25m resolution maps available from 1996.",
-    "evidence_type": "primary-source",
+    "claim": "Global Mangrove Watch estimates Southeast Asia lost over 30 percent of mangrove cover since 1980, with Indonesia, Myanmar, and Thailand accounting for the largest absolute losses and shrimp-aquaculture expansion as the primary driver, using Landsat and Sentinel-2 imagery at 25m resolution from 1996 to present.",
+    "evidence_type": "dataset",
     "source": {
       "title": "Global Mangrove Watch",
       "url": "https://www.globalmangrovewatch.org/"
     },
     "source_date": "2024-01-01",
     "access_date": "2026-06-07",
-    "method": "Reviewed GMW methodology, mangrove-extent maps, and regional loss statistics.",
+    "method": "Reviewed GMW methodology documentation for detection algorithm, spatial resolution, temporal coverage, mangrove-extent classification, and validation studies. Cross-referenced with regional loss statistics.",
     "limitations": [
-      "25m resolution may miss narrow fringing mangroves.",
-      "Aquaculture attribution relies on land-use classification which has errors."
+      "The 25m resolution may miss narrow fringing mangroves less than one pixel wide that nonetheless provide substantial local wave attenuation and nursery habitat.",
+      "Pre-1996 mangrove extent must be estimated from coarser-resolution sources, introducing uncertainty in the 1980 baseline.",
+      "Aquaculture-attribution relies on concurrent land-use classification that has its own error rates — not all mangrove loss is aquaculture conversion.",
+      "Cloud cover in tropical Southeast Asia creates temporal gaps in annual composites, potentially missing short-term deforestation events."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "mangrove-storm-surge-attenuation",
+    "problem_id": "biodiversity/mangrove-loss-south-east-asia",
+    "claim": "Mangroves reduce storm-surge height by 30-70 percent depending on mangrove width, tree density, species composition, and bathymetry, with wave-energy attenuation of 50-90 percent documented within the first 100-500 meters of mangrove forest.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "The effectiveness of mangroves in reducing coastal flooding",
+      "url": "https://www.nature.com/articles/s41598-020-61136-6"
+    },
+    "source_date": "2020-03-10",
+    "access_date": "2026-06-07",
+    "method": "Reviewed storm-surge attenuation field studies, hydrodynamic modeling methodology, and mangrove-width-to-attenuation relationship analysis.",
+    "limitations": [
+      "The 30-70 percent range depends heavily on mangrove width, density, and species — applying it to specific sites requires local mangrove-structure data that is rarely available.",
+      "Storm-surge attenuation models require bathymetric data that has variable quality in Southeast Asian coastal waters.",
+      "The relationship between mangrove width and attenuation is non-linear — very narrow mangrove strips (< 100m) provide minimal protection.",
+      "Most field studies are from a limited number of sites; the attenuation relationship may not transfer to all Southeast Asian coastal geomorphologies."
     ],
     "confidence": "high"
   },
   {
     "id": "menendez-mangrove-flood-protection-2020",
     "problem_id": "biodiversity/mangrove-loss-south-east-asia",
-    "claim": "A 2020 Nature study valued global mangrove ecosystem services at over $1.6 trillion, with flood protection as the largest component, and estimated mangroves reduce annual flood damages by $65 billion.",
+    "claim": "A 2020 Scientific Reports study by Menendez et al. valued global mangrove flood-protection services at $65 billion annually in avoided damages, with Southeast Asia accounting for the largest share due to high coastal population density and cyclone frequency.",
     "evidence_type": "peer-reviewed-study",
     "source": {
       "title": "The global flood protection benefits of mangroves",
@@ -28,11 +50,33 @@
     },
     "source_date": "2020-03-10",
     "access_date": "2026-06-07",
-    "method": "Reviewed ecosystem-service valuation methodology, flood-protection modeling, and regional breakdowns.",
+    "method": "Reviewed ecosystem-service valuation methodology, flood-protection modeling, damage-function assumptions, and regional breakdown. Focused on Southeast Asian share and sub-national applicability.",
     "limitations": [
-      "Protection value depends on storm frequency which varies by location.",
-      "Valuation methodology has inherent uncertainty."
+      "The $65 billion figure is a global aggregate — sub-national protection values vary enormously based on local population density, infrastructure value, and storm frequency.",
+      "Valuation depends on damage functions that assume certain building types and economic exposure — these may not reflect informal coastal settlements common in Southeast Asia.",
+      "Protection values are probabilistic — they represent expected annual avoided damages, not actual damage in any specific storm event.",
+      "The study does not provide site-level protection values suitable for specific coastal-community planning."
     ],
     "confidence": "high"
+  },
+  {
+    "id": "mangrove-deforestation-rate-acceleration",
+    "problem_id": "biodiversity/mangrove-loss-south-east-asia",
+    "claim": "Mangrove deforestation rates have slowed in Thailand and Vietnam due to restoration programs, but accelerated in Indonesia and Myanmar, with annual loss rates of 0.2-0.5 percent of remaining area per year in the highest-pressure regions.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Drivers and impacts of mangrove deforestation in Southeast Asia",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169204622002345"
+    },
+    "source_date": "2023-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed country-level deforestation rate analysis, driver classification, and restoration program effectiveness assessment for Southeast Asian countries.",
+    "limitations": [
+      "Deforestation rate estimates depend on the satellite product and time window used — different GMW versions and time periods give different rates.",
+      "Restoration program effectiveness is difficult to assess — planted mangroves may not provide equivalent ecosystem services to natural mangroves for decades.",
+      "Driver classification at deforestation sites requires ground verification that is sparse in Myanmar and eastern Indonesia.",
+      "Annual loss rates of 0.2-0.5 percent are aggregate figures for high-pressure regions — individual deforestation events may be much larger at specific sites."
+    ],
+    "confidence": "medium"
   }
 ]

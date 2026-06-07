@@ -2,81 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "biodiversity/mangrove-loss-south-east-asia",
-    "title": "Inventory mangrove and coastal data",
+    "title": "Inventory mangrove-extent, storm-surge, coastal population, and aquaculture data sources for Southeast Asia",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating mangrove maps, protection models, and population data.",
+    "outcome": "A dated source inventory that separates mangrove-extent products (GMW), storm-surge models, coastal population data, and aquaculture-expansion data into usable, limited, and rejected categories with explicit country-level coverage assessment.",
     "inputs": [
-      "GMW maps",
-      "storm-surge models",
-      "coastal population data",
-      "aquaculture data"
+      "Global Mangrove Watch documentation and validation studies",
+      "Storm-surge model documentation for Southeast Asian coastlines",
+      "WorldPop coastal population data",
+      "Aquaculture production and expansion data from FAO and national sources",
+      "Published mangrove deforestation driver studies"
     ],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, spatial resolution, temporal coverage, and documented limitations — particularly GMW resolution for narrow fringing mangroves and storm-surge model bathymetry requirements.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "Four sources classified."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, coverage, temporal frequency, and driver-attribution limitations."
   },
   {
     "id": "mangrove-deforestation-mapping",
     "problem_id": "biodiversity/mangrove-loss-south-east-asia",
-    "title": "Map mangrove deforestation trends at sub-national scale",
+    "title": "Map mangrove deforestation trends and drivers at sub-national scale for at least two Southeast Asian countries",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national mangrove-change map with deforestation-rate and driver classification.",
-    "inputs": ["GMW time series", "land-use data", "driver classification methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator validates deforestation detection against reference data.",
+    "outcome": "A sub-national mangrove-change analysis for at least two countries, documenting deforestation rates, conversion drivers (aquaculture, agriculture, development), and remaining-mangrove threat classification, with explicit GMW resolution and pre-1996 baseline limitations.",
+    "inputs": [
+      "GMW mangrove-extent time series for target countries",
+      "Land-use classification data for driver attribution",
+      "Administrative boundary data for sub-national aggregation",
+      "Published driver-classification studies for target countries"
+    ],
+    "expected_artifact": "validation.md update with deforestation methodology, driver classification, and accuracy assessment.",
+    "validation_method": "Replicator confirms GMW data extraction, deforestation-rate calculation, driver-classification methodology, and accuracy assessment, with explicit documentation of resolution limitations for narrow fringing mangroves.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Deforestation map with accuracy metrics and replication."
+    "done_condition": "Deforestation analysis includes methodology, sub-national rates, driver classification, accuracy assessment, and replication status for at least two countries."
   },
   {
     "id": "coastal-protection-loss",
     "problem_id": "biodiversity/mangrove-loss-south-east-asia",
-    "title": "Estimate coastal protection service loss from mangrove deforestation",
+    "title": "Estimate coastal-protection service loss from mangrove deforestation using storm-surge attenuation modeling",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A coastal-protection loss map linking deforestation to storm-surge attenuation reduction.",
+    "outcome": "A coastal-protection loss analysis linking mangrove deforestation to reduced storm-surge attenuation for at least two countries, with explicit attenuation-relationship methodology, bathymetry-data quality documentation, and population-at-risk assessment.",
     "inputs": [
-      "mangrove-change map",
-      "storm-surge models",
-      "coastal population data",
-      "bathymetry data"
+      "mangrove deforestation analysis results",
+      "storm-surge model documentation and Southeast Asian bathymetry data",
+      "coastal population data from WorldPop",
+      "published attenuation field studies for target coastlines"
     ],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms protection-loss methodology and validates against flood records.",
+    "expected_artifact": "outputs.md update with protection-loss methodology and sub-national valuation.",
+    "validation_method": "Replicator confirms protection-loss methodology, attenuation-relationship application, and population-at-risk assessment, with explicit documentation of bathymetry data quality and model uncertainty.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "high",
-    "done_condition": "Protection-loss map with methodology and replication."
+    "done_condition": "Protection-loss analysis includes methodology, attenuation-relationship documentation, bathymetry-data quality assessment, population-at-risk estimates, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-valuation-overstatement",
     "problem_id": "biodiversity/mangrove-loss-south-east-asia",
-    "title": "Red-team misuse of coastal protection data",
+    "title": "Red-team protection-valuation overstatement and displacement risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "Failure-mode review.",
-    "inputs": ["protection-loss map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how protection-loss valuations could overstate benefits by ignoring economic drivers of mangrove conversion, how results could be used to displace coastal communities without providing alternatives, and how restoration-potential claims could create false security.",
+    "inputs": [
+      "protection-loss analysis outputs",
+      "aquaculture economic context",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every protection-loss claim has attenuation-relationship limitations, bathymetry-data caveats, and economic-driver documentation. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Claims qualified or gated."
+    "done_condition": "Every protection-loss claim is either blocked, softened to methodology-dependent language with explicit uncertainty bounds, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "biodiversity/mangrove-loss-south-east-asia",
-    "title": "Check whether outputs match coastal planning needs",
+    "title": "Check whether outputs match coastal-zone management and restoration decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "Field-facing review.",
-    "inputs": ["draft outputs", "coastal planning context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "outcome": "A field-facing review of whether the protection-loss analysis would change any real decision for coastal-zone management authorities and mangrove-restoration practitioners without creating perverse incentives.",
+    "inputs": [
+      "draft protection-loss outputs",
+      "coastal-zone management program context",
+      "mangrove-restoration program documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for coastal-zone management and restoration audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that protection valuations ignore aquaculture livelihoods or that restoration-potential claims delay protective action. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases."
+    "done_condition": "The output has a named user (e.g., Indonesian Ministry of Marine Affairs coastal-zone officer), named decision (e.g., mangrove restoration site prioritization), explicit non-use cases (e.g., not for aquaculture-ban justification without livelihood alternatives), and replicated field-reality review."
   }
 ]

@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "climate-health/dust-storm-health-global",
-    "title": "Inventory data sources for climate-health/dust-storm-health-global",
+    "title": "Inventory satellite dust-detection, ground PM10, dust-contaminant, and respiratory health data sources for LMIC arid regions",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for dust storm pm10 exposure and respiratory health impact in arid regions.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates satellite dust-detection products (MODIS AOD, CALIOP, CAMS), ground PM10 monitors, dust-contaminant characterization studies, and respiratory health-utilization data into usable, limited, and rejected categories with explicit LMIC arid-region coverage assessment.",
+    "inputs": [
+      "MODIS AOD product documentation and desert-surface validation studies",
+      "CAMS dust-forecast model documentation",
+      "WHO air-quality database monitor inventory for arid LMIC countries",
+      "Published dust-contaminant characterization studies by source region",
+      "Respiratory health-utilization data availability from LMIC HMIS"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, spatial resolution, and documented limitations — particularly AOD accuracy over bright surfaces and monitor sparsity in arid LMIC regions.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, LMIC arid-region coverage, AOD accuracy limitations, and monitor-sparsity documentation."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "dust-exposure-mapping",
     "problem_id": "climate-health/dust-storm-health-global",
-    "title": "Measure sub-national gap for dust storm pm10 exposure and respiratory health impact in arid regions",
+    "title": "Map dust-storm PM10 exposure from satellite AOD and CAMS forecasts for at least two LMIC arid regions",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A sub-national dust-exposure analysis for at least two LMIC arid regions using satellite AOD and CAMS dust-forecast data, documenting AOD-to-ground-PM10 transfer methodology, bright-surface limitations, and ground-monitor sparsity.",
+    "inputs": [
+      "MODIS AOD data for target regions",
+      "CAMS dust-forecast output for target regions",
+      "Ground PM10 monitor data where available",
+      "Boundary-layer height and meteorological data for AOD-to-PM10 transfer"
+    ],
+    "expected_artifact": "validation.md update with dust-exposure methodology and regional results.",
+    "validation_method": "Replicator confirms AOD data extraction, dust-exposure classification methodology, and bright-surface limitation documentation, with explicit validation against ground monitors where available.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Dust-exposure analysis includes methodology, regional results, AOD-to-PM10 transfer limitations, bright-surface documentation, and replication status for at least two regions."
   },
   {
-    "id": "risk-mapping",
+    "id": "health-impact-analysis",
     "problem_id": "climate-health/dust-storm-health-global",
-    "title": "Produce sub-national risk map for dust storm pm10 exposure and respiratory health impact in arid regions",
+    "title": "Analyze respiratory health impact of dust-specific PM10 with confound controls for non-dust sources",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A health-impact analysis linking dust-specific PM10 exposure to respiratory outcomes for at least one LMIC arid region, with explicit confound controls for non-dust PM10 sources and dust-source toxicology documentation.",
+    "inputs": [
+      "dust-exposure analysis results",
+      "respiratory health-utilization data from LMIC HMIS",
+      "non-dust PM10 baseline data where available",
+      "dust-source contaminant characterization studies"
+    ],
+    "expected_artifact": "outputs.md update with health-impact methodology and confound documentation.",
+    "validation_method": "Replicator confirms health-impact methodology, confound-control approach, and dust-toxicology documentation for each target region.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "medium",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "safety_risk": "high",
+    "done_condition": "Health-impact analysis includes methodology, confound controls for at least two non-dust PM10 sources, dust-toxicology context, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-exposure-overstatement",
     "problem_id": "climate-health/dust-storm-health-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team dust-exposure misclassification and health-impact overstatement risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how satellite dust-exposure estimates could misclassify exposure over bright surfaces, how health-impact estimates could overstate effects by ignoring non-dust confounders, and how differential-toxicity claims could be premature.",
+    "inputs": [
+      "health-impact analysis outputs",
+      "dust-exposure analysis outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every health-impact claim has exposure-validation limitations, confound controls, and dust-toxicology caveats. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "done_condition": "Every dust-health claim is either blocked, softened to exposure-misclassification-limited language with explicit confound and toxicology caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "climate-health/dust-storm-health-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match air-quality management and health-ministry decision needs in arid LMIC regions",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the dust-health analysis would change any real decision for air-quality management agencies, health ministries, or land-degradation programs in arid LMIC regions without creating perverse incentives.",
+    "inputs": [
+      "draft dust-health outputs",
+      "air-quality management context for arid regions",
+      "dust-early-warning system documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for air-quality and health-ministry audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that dust-health estimates are used to justify land-degradation interventions without evidence of health-effectiveness, or that bright-surface AOD limitations are ignored. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "done_condition": "The output has a named user (e.g., Niger Ministry of Environment dust-early-warning officer), named decision (e.g., dust-event health advisory activation), explicit non-use cases (e.g., not for land-degradation intervention justification without health-effectiveness evidence), and replicated field-reality review."
   }
 ]

@@ -1,16 +1,26 @@
 {
   "id": "climate-health/dust-storm-health-global",
-  "title": "Dust Storm PM10 Exposure And Respiratory Health Impact In Arid Regions",
+  "title": "Dust Storm PM10 Exposure And Respiratory Health Impact In Arid And Semi-Arid Regions",
   "status": "scoped",
   "domain": ["climate-health", "air-quality"],
   "region": ["global"],
-  "summary": "Build a verified workflow for measuring dust-storm PM10 exposure and respiratory health impact.",
-  "why_it_matters": "Build a verified workflow for measuring dust-storm PM10 exposure and respiratory health impact.",
+  "summary": "Build a verified workflow for mapping dust-storm PM10 exposure and estimating respiratory health impact in LMIC arid and semi-arid regions, with explicit satellite-to-ground exposure validation, dust-source toxicology documentation, and non-dust PM10 confound controls.",
+  "why_it_matters": "Dust storms contribute up to 50 percent of PM10 in arid regions during storm events and are increasing in many areas due to land degradation, drought, and changing wind patterns. Mineral dust carries biological and chemical contaminants that may make it more harmful per unit mass than non-dust PM10. Yet ground air-quality monitoring in LMIC arid regions is extremely sparse — most Sahelian, Central Asian, and Middle Eastern LMIC countries have fewer than one PM10 monitor per million people. Without verified dust-health analysis, early-warning systems and health-system preparedness cannot be targeted where they would most reduce respiratory burden.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Dust-exposure validation traceability",
+      "target": "Every dust-exposure estimate links satellite AOD or dust-forecast model to available ground-monitor PM10 data with documented correlation and gap analysis.",
+      "validation_method": "Schema validation and reviewer spot-checks against satellite-to-ground exposure validation methodology."
+    },
+    {
+      "metric": "Dust-source toxicology documentation",
+      "target": "No dust-health claim is merged without documenting the biological and chemical contaminant profile of the analyzed dust source region.",
+      "validation_method": "Reviewer confirms dust-source toxicology context and contaminant-specific health-risk documentation."
+    },
+    {
+      "metric": "Non-dust confound controls",
+      "target": "Every respiratory health-impact claim documents confound controls for co-occurring non-dust PM10 sources (construction, traffic, biomass burning).",
+      "validation_method": "Red-team reviewer confirms confound-control methodology for every health-attribution claim."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, dust-toxicology safety review, and replication for quantitative outputs."
   }
 }

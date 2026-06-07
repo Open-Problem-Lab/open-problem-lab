@@ -2,7 +2,7 @@
   {
     "id": "goudie-dust-health-2014",
     "problem_id": "climate-health/dust-storm-health-global",
-    "claim": "A 2014 review found that dust storms contribute up to 50 percent of PM10 in arid regions and are associated with 5-10 percent increases in respiratory hospitalizations during dust events.",
+    "claim": "A 2014 review by Goudie found that dust storms contribute up to 50 percent of PM10 in arid regions during storm events and are associated with 5-10 percent increases in respiratory hospitalizations, with effects strongest in children, elderly, and populations with pre-existing respiratory conditions.",
     "evidence_type": "peer-reviewed-study",
     "source": {
       "title": "Desert dust and human health disorders",
@@ -10,11 +10,73 @@
     },
     "source_date": "2014-03-01",
     "access_date": "2026-06-07",
-    "method": "Reviewed dust-health literature, exposure assessment methods, and health-impact estimates.",
+    "method": "Reviewed dust-health literature synthesis, exposure assessment methods, and health-impact estimates across arid regions.",
     "limitations": [
-      "Dust-exposure assessment depends on satellite AOD with cloud-cover gaps.",
-      "Health-impact attribution is confounded by co-occurring PM sources."
+      "The 5-10 percent hospitalization increase is a pooled estimate from studies concentrated in high-income arid countries (US Southwest, Australia, Israel) — LMIC arid regions are underrepresented.",
+      "Dust-exposure assessment in reviewed studies relied on ground monitors or binary dust-day indicators — satellite AOD-based exposure has not been systematically linked to health outcomes.",
+      "The review does not distinguish health effects by dust-source mineralogy or biological contaminant content — toxicological profiles vary by source region.",
+      "Confound control for non-dust PM10 sources varies across studies — the pooled estimate may overstate dust-specific effects."
     ],
     "confidence": "medium"
+  },
+  {
+    "id": "satellite-dust-detection",
+    "problem_id": "climate-health/dust-storm-health-global",
+    "claim": "MODIS aerosol optical depth and CALIOP lidar data detect dust plumes at 1-10 km resolution, with the Copernicus Atmosphere Monitoring Service providing dust-forecast models at 40 km resolution globally, enabling dust-exposure mapping in regions without ground monitors.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "Copernicus Atmosphere Monitoring Service — Dust Forecasts",
+      "url": "https://atmosphere.copernicus.eu/"
+    },
+    "source_date": "2025-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed CAMS dust-forecast documentation, MODIS AOD retrieval accuracy in desert environments, and CALIOP lidar dust-detection capabilities.",
+    "limitations": [
+      "MODIS AOD retrieval accuracy is reduced over bright desert surfaces — the bright-surface algorithm has higher uncertainty than over vegetated or ocean surfaces.",
+      "CAMS dust-forecast models at 40 km resolution smooth local dust-storm variability — near-source exposure gradients are not captured.",
+      "AOD measures column-integrated aerosol, not ground-level concentration — the AOD-to-ground-PM10 relationship depends on boundary-layer height, dust altitude, and deposition rates.",
+      "Cloud cover blocks AOD retrieval — dust events co-occurring with cloud may be missed."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "dust-biological-contaminants",
+    "problem_id": "climate-health/dust-storm-health-global",
+    "claim": "Mineral dust carries biological and chemical contaminants — bacteria, fungi, endotoxins, heavy metals, and pesticide residues — that may contribute to health effects beyond mineral particle mass, making dust PM10 potentially more harmful per unit mass than non-dust PM10 from other sources.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Biological and chemical contaminants in desert dust and health implications",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0160412023004567"
+    },
+    "source_date": "2023-04-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed dust-contaminant characterization studies, toxicological analysis, and health-effect comparison between dust and non-dust PM10.",
+    "limitations": [
+      "Dust-contaminant profiles vary enormously by source region — Saharan dust differs from Central Asian dust in mineralogy and biological content.",
+      "The differential toxicity finding is based on a limited number of in-vitro and epidemiological studies — it is not yet a consensus finding.",
+      "Contaminant concentrations in dust depend on source-soil conditions, transport distance, and atmospheric processing during transport.",
+      "Health studies rarely measure contaminant-specific exposure — attributing health effects to mineral mass versus biological contaminants is methodologically difficult."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "ground-monitor-sparsity-arid-lmic",
+    "problem_id": "climate-health/dust-storm-health-global",
+    "claim": "Ground air-quality monitoring in LMIC arid regions is extremely sparse — most Sahelian, Central Asian, and Middle Eastern LMIC countries have fewer than one PM10 monitor per million people, making satellite-to-ground exposure validation difficult and health-impact attribution uncertain.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO Ambient Air Quality Database — Monitor Coverage Assessment",
+      "url": "https://www.who.int/data/gho/data/themes/air-pollution/who-air-quality-database"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed WHO air-quality database for PM10 monitor locations, country coverage, and monitor density in arid LMIC regions.",
+    "limitations": [
+      "The WHO database may not include all monitors — some national or research monitors may be absent.",
+      "Monitor count is a snapshot — networks may have expanded or contracted since the assessment.",
+      "Fewer than one monitor per million people means most districts have zero monitors — satellite exposure estimates cannot be validated at sub-national scale.",
+      "PM10 measurement methods vary across monitors — some use reference methods while others use less accurate techniques."
+    ],
+    "confidence": "high"
   }
 ]

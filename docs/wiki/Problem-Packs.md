@@ -180,6 +180,16 @@ Build a verified workflow for assessing where rainfall, vegetation, and market-p
 
 Build a verified workflow for detecting overexploitation of small-scale fisheries in West Africa using satellite vessel-monitoring data, catch-reconstruction estimates, and coastal-community livelihood data.
 
+## Livestock Disease Surveillance And Pastoralist Livelihood Risk In East Africa
+
+- ID: `food-security/livestock-disease-surveillance-east-africa`
+- Status: `scoped`
+- Domain: `food-security`, `public-health`
+- Region: `east-africa`
+- Source: [problem-packs/food-security/livestock-disease-surveillance-east-africa](../../problem-packs/food-security/livestock-disease-surveillance-east-africa/problem.md)
+
+Build a verified workflow for detecting livestock disease outbreaks and estimating pastoralist livelihood risk in East Africa, linking syndromic surveillance data, satellite-derived forage conditions, and market-price anomalies.
+
 ## Desert Locust Outbreak Early Warning In East Africa
 
 - ID: `food-security/locust-outbreak-east-africa`

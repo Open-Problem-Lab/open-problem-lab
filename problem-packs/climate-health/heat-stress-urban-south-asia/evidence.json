@@ -36,20 +36,21 @@
     "confidence": "high"
   },
   {
-    "id": "hess-ahmedabad-heat-action-plan-2018",
+    "id": "knowlton-ahmedabad-heat-action-plan-2014",
     "problem_id": "climate-health/heat-stress-urban-south-asia",
-    "claim": "Ahmedabad's Heat Action Plan, the first in South Asia, is estimated to have averted over 1,000 deaths annually through early warning, cooling centers, and public communication, demonstrating that urban heat adaptation is feasible.",
-    "evidence_type": "field-report",
+    "claim": "The 2014 PLOS Medicine study documenting development of South Asia's first heat-health action plan in Ahmedabad found that the 2010 HAP was associated with a reduction in all-cause mortality during a subsequent heat event, demonstrating that urban heat adaptation interventions are implementable in a South Asian megacity context.",
+    "evidence_type": "peer-reviewed-study",
     "source": {
-      "title": "Building Adaptation to Extreme Heat: Ahmedabad Heat Action Plan",
-      "url": "https://www.nrdc.org/resources/ahmedabad-heat-action-plan"
+      "title": "Development and Implementation of South Asia's First Heat-Health Action Plan in Ahmedabad, Gujarat, India",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001609"
     },
-    "source_date": "2018-04-01",
-    "access_date": "2026-06-06",
-    "method": "Reviewed plan components, mortality impact estimates, and scalability assessment.",
+    "source_date": "2014-07-29",
+    "access_date": "2026-06-07",
+    "method": "Reviewed study design, intervention components, mortality comparison methodology, and implementation constraints.",
     "limitations": [
-      "Mortality attribution is modeled, not directly observed.",
-      "Generalizability across cities with different governance contexts is uncertain."
+      "Mortality reduction is estimated from comparison years, not from a randomized trial — confounding from concurrent interventions cannot be ruled out.",
+      "Results are from one city; generalizability to cities with different governance, health system capacity, and population characteristics is uncertain.",
+      "Original NRDC resource URL (https://www.nrdc.org/resources/ahmedabad-heat-action-plan) was found to return HTTP 404 during verify:sources on 2026-06-07 and was replaced with this primary study reference."
     ],
     "confidence": "medium"
   }

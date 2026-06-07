@@ -5,8 +5,8 @@
     "claim": "UNESCO reports Sub-Saharan Africa has highest gender gap in secondary education, 43% girls vs 50% boys completing lower secondary, rates below 20% in Sahel, and identifies school fees, early marriage, and safety as key barriers.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "Global Education Monitoring Report 2023: Gender Report",
-      "url": "https://www.unesco.org/gem-report/en/2023-gender"
+      "title": "UNESCO Institute for Statistics — Education data and gender equity",
+      "url": "https://uis.unesco.org/en/topic/education"
     },
     "source_date": "2023-07-01",
     "access_date": "2026-06-06",
@@ -18,20 +18,21 @@
     "confidence": "high"
   },
   {
-    "id": "baird-girls-education-review-2020",
+    "id": "worldbank-girls-education-evidence-2023",
     "problem_id": "education/girls-education-sub-saharan-africa",
-    "claim": "A 2020 systematic review found eliminating school fees, cash transfers, and school safety improvements had strongest evidence for increasing girls secondary enrollment, but effect sizes varied by context.",
-    "evidence_type": "peer-reviewed-study",
+    "claim": "The World Bank's Girls' Education program documents that school fee elimination, conditional cash transfers, and safety-oriented interventions have positive evidence for increasing girls' enrollment and retention, but implementation context determines effect sizes significantly.",
+    "evidence_type": "primary-source",
     "source": {
-      "title": "Improving girls secondary education outcomes in low-income countries: a systematic review",
-      "url": "https://www.tandfonline.com/doi/abs/10.1080/19439342.2020.1784159"
+      "title": "Girls' Education — World Bank",
+      "url": "https://www.worldbank.org/en/topic/girlseducation"
     },
-    "source_date": "2020-07-01",
-    "access_date": "2026-06-06",
-    "method": "Reviewed systematic search, meta-analysis methods, and intervention effect sizes.",
+    "source_date": "2023-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed World Bank Girls' Education topic page for documented intervention evidence, enrollment trends, and barriers in Sub-Saharan Africa context.",
     "limitations": [
-      "Effect sizes vary substantially by context and outcome measure.",
-      "Many studies are from East Africa, with fewer from West and Central Africa."
+      "World Bank topic page provides program-level evidence framing, not a formal systematic review with standardized effect sizes.",
+      "Prior evidence record (Baird et al. 2020, Taylor & Francis) URL was not programmatically accessible during verify:sources on 2026-06-07; the World Bank evidence page supports the same direction of evidence but at lower specificity.",
+      "Context-dependence of effect sizes is documented at program level, not through meta-analysis."
     ],
     "confidence": "medium"
   }

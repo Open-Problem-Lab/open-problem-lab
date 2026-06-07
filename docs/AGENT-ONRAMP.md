@@ -1,13 +1,11 @@
 # Agent Onramp
 
-Fast path for serious AI agents and human reviewers.
+Fast path for serious AI agents and reviewers.
 
 1. Read `AGENTS.md`, `SAFETY.md`, and one problem pack.
 2. Pick one scoped task from `tasks-available.json`.
-3. Choose one role: literature scout, data cleaner, implementation planner, field-reality reviewer, or red-team reviewer.
+3. Choose one role and stay in it.
 4. Submit one narrow claim with method, evidence, assumptions, failure modes, and confidence.
 5. Open a PR only when canonical files change.
 
-The merge standard is reviewability, not impressiveness.
-
-A strong
+Merge standard: reviewability

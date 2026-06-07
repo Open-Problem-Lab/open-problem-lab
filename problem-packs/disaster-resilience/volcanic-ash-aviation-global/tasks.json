@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "disaster-resilience/volcanic-ash-aviation-global",
-    "title": "Inventory data sources for disaster-resilience/volcanic-ash-aviation-global",
+    "title": "Inventory satellite ash-detection products, volcanic monitoring networks, ash-transport models, and aviation operational data sources",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for volcanic ash aviation hazard detection and airspace management gaps.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates satellite ash-detection products (MODIS, VIIRS, infrared sounders), volcanic monitoring networks (VAACs, ground stations, seismic), ash-transport models (HYSPLIT, NAME, FLEXPART), and aviation encounter data into usable, limited, and rejected categories with explicit regional coverage assessment.",
+    "inputs": [
+      "ICAO VAAC coverage documentation and detection capability reports",
+      "Satellite ash-detection product documentation and validation studies",
+      "Ash-transport model documentation and intercomparison studies",
+      "Volcanic monitoring network density data by region",
+      "Aviation ash encounter case studies and engine damage data"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, detection capability, and documented regional gaps — particularly false-positive rates, nighttime limitations, and submarine volcanic monitoring coverage.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "safety_risk": "high",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering detection capability, regional coverage, false-positive documentation, and monitoring-network density."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "detection-capability-mapping",
     "problem_id": "disaster-resilience/volcanic-ash-aviation-global",
-    "title": "Measure sub-national gap for volcanic ash aviation hazard detection and airspace management gaps",
+    "title": "Map volcanic ash detection capability and monitoring-network gaps for at least two volcanic regions",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A regional ash-detection capability analysis for at least two volcanic regions, documenting satellite detection accuracy, ground-monitor density, VAAC operational capacity, and false-positive/false-negative risk assessment.",
+    "inputs": [
+      "ICAO VAAC coverage and capability data",
+      "Satellite ash-detection validation studies for target regions",
+      "Ground-based volcanic monitoring station inventory",
+      "Historical eruption and ash-plume data for target regions"
+    ],
+    "expected_artifact": "validation.md update with detection-capability methodology and regional results.",
+    "validation_method": "Replicator confirms VAAC capability data extraction, satellite detection accuracy assessment, and monitoring-network gap documentation for each target region.",
     "reviewer_needed": "replicator",
-    "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "safety_risk": "high",
+    "done_condition": "Detection-capability analysis includes methodology, regional results, false-positive and false-negative documentation, monitoring-network gaps, and replication status for at least two regions."
   },
   {
-    "id": "risk-mapping",
+    "id": "forecast-uncertainty-analysis",
     "problem_id": "disaster-resilience/volcanic-ash-aviation-global",
-    "title": "Produce sub-national risk map for volcanic ash aviation hazard detection and airspace management gaps",
+    "title": "Analyze ash-concentration forecast uncertainty from eruption-source parameter propagation",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A forecast-uncertainty analysis documenting how eruption-source parameter uncertainty (ash height, mass loading, particle size) propagates through ash-transport models into concentration-forecast uncertainty at aviation-route waypoints.",
+    "inputs": [
+      "ash-transport model documentation and sensitivity studies",
+      "erupted-source parameter estimation methodology",
+      "historical eruption source parameter data",
+      "aviation route waypoint data for target volcanic regions"
+    ],
+    "expected_artifact": "outputs.md update with forecast-uncertainty methodology and waypoint-level results.",
+    "validation_method": "Replicator confirms source-parameter sensitivity analysis, uncertainty propagation methodology, and waypoint-level results documentation.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "high",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "done_condition": "Forecast-uncertainty analysis includes methodology, source-parameter sensitivity results, waypoint-level uncertainty bounds, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-detection-overstatement",
     "problem_id": "disaster-resilience/volcanic-ash-aviation-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team ash-detection overstatement and false-negative safety risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how ash-detection capability maps could overstate coverage, how false-positive contamination could undermine operational trust, and how false-negative missed detections in poorly monitored regions could create catastrophic aviation safety risks.",
+    "inputs": [
+      "detection-capability analysis outputs",
+      "forecast-uncertainty analysis outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every detection-capability claim has false-positive and false-negative documentation, every forecast claim has source-parameter uncertainty, and every output has explicit aviation-safety non-use cases. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "done_condition": "Every detection and forecast claim is either blocked, softened to uncertainty-limited language with explicit false-negative risk documentation, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "disaster-resilience/volcanic-ash-aviation-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match aviation safety authority and airline operations decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the detection-capability and forecast-uncertainty analysis would change any real decision for aviation safety authorities, airline operations centers, or VAACs without creating perverse incentives.",
+    "inputs": [
+      "draft detection and forecast outputs",
+      "aviation safety authority operational context",
+      "airline operations center decision context"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for aviation safety and airline operations audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that detection-capability maps are used to justify airspace closures in well-monitored regions while ignoring gaps in poorly monitored regions, or that forecast uncertainty is presented as definitive guidance. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "done_condition": "The output has a named user (e.g., London VAAC operations officer), named decision (e.g., ash-advisory confidence level for route planning), explicit non-use cases (e.g., not for airspace closure recommendations, not for safe-flight threshold determination), and replicated field-reality review."
   }
 ]

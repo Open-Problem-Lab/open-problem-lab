@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["disaster-resilience"],
   "region": ["global"],
-  "summary": "Build a verified workflow for volcanic ash detection and aviation-hazard risk mapping.",
-  "why_it_matters": "Build a verified workflow for volcanic ash detection and aviation-hazard risk mapping.",
+  "summary": "Build a verified workflow for mapping volcanic ash detection capability and ash-concentration forecast accuracy along aviation routes, with explicit satellite detection limitations, eruption-source parameter uncertainty, and regional monitoring-network coverage assessment.",
+  "why_it_matters": "Volcanic ash causes engine failure, windshield abrasion, and flight-system contamination. The 2010 Eyjafjallajökull eruption caused over 100,000 flight cancellations and $5 billion in economic losses. ICAO's nine VAACs provide global monitoring, but detection capability varies dramatically — the East African Rift, Central Asian volcanic arcs, and Southeast Asian volcanic belts have far sparser monitoring than the North Atlantic and Pacific. Without verified ash-detection capability assessment, aviation risk management in poorly monitored volcanic regions relies on assumptions that may not hold.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Detection-capability traceability",
+      "target": "Every ash-detection capability claim links to satellite product accuracy, ground-monitor density, and VAAC coverage data with documented regional gaps.",
+      "validation_method": "Schema validation and reviewer spot-checks against VAAC coverage and satellite detection documentation."
+    },
+    {
+      "metric": "Forecast-uncertainty documentation",
+      "target": "No ash-concentration forecast claim is merged without documenting eruption-source parameter uncertainty propagation and model validation status.",
+      "validation_method": "Reviewer confirms forecast uncertainty methodology and eruption-source parameter documentation."
+    },
+    {
+      "metric": "False-negative risk assessment",
+      "target": "Every detection-gap analysis documents the risk of missed detections in poorly monitored volcanic regions, including submarine volcanoes and remote volcanic arcs.",
+      "validation_method": "Red-team reviewer confirms false-negative risk documentation for every detection-gap claim."
     }
   ],
   "safety_level": "high",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, aviation-safety review, and replication for quantitative outputs."
   }
 }

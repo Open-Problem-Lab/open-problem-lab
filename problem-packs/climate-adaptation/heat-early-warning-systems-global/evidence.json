@@ -2,7 +2,7 @@
   {
     "id": "wmo-heat-health-2023",
     "problem_id": "climate-adaptation/heat-early-warning-systems-global",
-    "claim": "WMO estimates fewer than 40 LMICs have operational heat-health early warning systems, and where they exist, evaluation of mortality-reduction effectiveness is rare.",
+    "claim": "WMO's State of Climate Services 2023 report on health estimates that fewer than 40 LMICs have operational heat-health early warning systems. Where systems exist, systematic evaluation of mortality-reduction effectiveness is rare — fewer than 10 countries globally have published heat-wave mortality time series with pre- and post-warning-system comparison.",
     "evidence_type": "primary-source",
     "source": {
       "title": "WMO State of Climate Services 2023: Health",
@@ -10,11 +10,73 @@
     },
     "source_date": "2023-11-02",
     "access_date": "2026-06-07",
-    "method": "Reviewed WMO report on heat-health warning systems, country coverage, and effectiveness evaluation.",
+    "method": "Reviewed WMO report for heat-health warning system country coverage, operational status classification, and effectiveness evaluation assessment. Focused on the gap between system existence and verified effectiveness.",
     "limitations": [
-      "Effectiveness evaluation data is sparse.",
-      "Warning-system coverage does not guarantee effective response."
+      "The 'fewer than 40' figure is a binary existence indicator — it does not capture whether warnings reach vulnerable populations, trigger protective actions, or reduce mortality.",
+      "Effectiveness evaluation data is sparse — the report itself notes the absence of systematic evaluation in most countries.",
+      "System coverage does not guarantee effective response — the gap between warning issuance and protective action is not captured by the existence indicator.",
+      "Country-level coverage data may not capture sub-national variation — some countries have national systems that are operational only in major cities."
     ],
     "confidence": "high"
+  },
+  {
+    "id": "ahmedabad-heat-action-plan",
+    "problem_id": "climate-adaptation/heat-early-warning-systems-global",
+    "claim": "Ahmedabad's Heat Action Plan (India, 2013) is the most cited LMIC heat early warning example, with estimated mortality reduction of approximately 1,100 deaths per year based on pre- and post-implementation all-cause mortality comparison during heat waves.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Ahmedabad Heat Action Plan: A model for heat-health early warning in LMICs",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2542519622002345"
+    },
+    "source_date": "2022-04-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed Ahmedabad Heat Action Plan evaluation methodology, mortality comparison approach, and implementation context. Focused on the all-cause mortality data limitation and confound controls.",
+    "limitations": [
+      "The 1,100 deaths figure is based on all-cause mortality data, not heat-specific cause-of-death coding — heat attribution relies on statistical comparison with baseline periods.",
+      "The evaluation did not control for secular trends in healthcare access, housing quality, and air conditioning adoption that may explain part of the mortality reduction.",
+      "Ahmedabad is a large urban center with relatively good vital registration — the methodology may not transfer to rural LMIC settings with incomplete mortality data.",
+      "The evaluation is a single-city case study — it does not establish that similar results would occur in other LMIC urban contexts."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "heat-mortality-lmic-data-gap",
+    "problem_id": "climate-adaptation/heat-early-warning-systems-global",
+    "claim": "Sub-national heat-mortality data is sparse in LMICs because vital registration systems are incomplete and heat-attributable deaths are rarely coded as such — most heat-mortality estimates rely on statistical models applied to all-cause mortality data, not direct cause-of-death attribution.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Global heat mortality burden and data gaps in low- and middle-income countries",
+      "url": "https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(23)00234-5/fulltext"
+    },
+    "source_date": "2023-08-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed global heat-mortality burden estimation, vital registration completeness assessment, and LMIC data-gap documentation.",
+    "limitations": [
+      "Heat-mortality estimates for LMICs are modeled from all-cause mortality data with temperature exposure — they are not direct counts of heat-attributable deaths.",
+      "Vital registration completeness varies enormously across LMICs — some countries have less than 10 percent death registration.",
+      "The statistical methods used to estimate heat mortality (e.g., time-series regression) assume certain exposure-response relationships that may not hold in tropical LMIC contexts.",
+      "Sentinel surveillance and burial record data may provide alternative mortality signals but have not been systematically validated for heat-mortality estimation."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "forecast-based-financing-heat",
+    "problem_id": "climate-adaptation/heat-early-warning-systems-global",
+    "claim": "The Red Cross Red Crescent Climate Centre and WMO have developed forecast-based financing mechanisms for heatwaves that release pre-agreed funds when temperature thresholds are crossed, but the number of countries with operational heat-related forecast-based financing protocols is under five.",
+    "evidence_type": "field-report",
+    "source": {
+      "title": "Forecast-based financing for heatwaves: operational experience and lessons learned",
+      "url": "https://www.climatecentre.org/our-work/forecast-based-financing"
+    },
+    "source_date": "2024-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed IFRC Climate Centre documentation for forecast-based financing heat protocols, country implementation status, and operational lessons.",
+    "limitations": [
+      "Forecast-based financing protocols are operational in fewer than five countries — the evidence base is too small for generalization.",
+      "Protocol effectiveness has not been systematically evaluated — fund release does not guarantee effective protective action.",
+      "Temperature thresholds in protocols are based on local climate statistics that may not account for changing heat-wave frequency and intensity under climate change.",
+      "Operational experience is concentrated in countries with relatively strong national meteorological services — transferability to weaker-institutional-capacity LMICs is uncertain."
+    ],
+    "confidence": "medium"
   }
 ]

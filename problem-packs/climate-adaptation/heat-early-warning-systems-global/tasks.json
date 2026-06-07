@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "climate-adaptation/heat-early-warning-systems-global",
-    "title": "Inventory data sources for climate-adaptation/heat-early-warning-systems-global",
+    "title": "Inventory heat-mortality, warning-system coverage, and forecast-based financing data sources for LMICs",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for heat early warning system coverage and effectiveness in low-income countries.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates heat-mortality data (vital registration, sentinel surveillance, burial records), warning-system coverage data (WMO, IFRC, national meteorological agencies), and forecast-based financing program data into usable, limited, and rejected categories with explicit LMIC data-quality assessment.",
+    "inputs": [
+      "WMO State of Climate Services reports",
+      "IFRC Climate Centre forecast-based financing documentation",
+      "Published heat-mortality studies for LMICs",
+      "National meteorological agency heat warning system documentation",
+      "Vital registration completeness data from WHO and UN"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic coverage, and documented data-quality limitations — particularly vital registration completeness and heat-specific cause-of-death coding.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering geographic coverage, data quality, temporal consistency, and LMIC data gaps."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "warning-system-coverage-mapping",
     "problem_id": "climate-adaptation/heat-early-warning-systems-global",
-    "title": "Measure sub-national gap for heat early warning system coverage and effectiveness in low-income countries",
+    "title": "Map heat early warning system coverage at national and sub-national scale for at least two LMICs",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A heat early warning system coverage map for at least two LMICs, documenting system existence, operational status, population reach, and the distinction between nominal existence and verified operational capacity at sub-national scale.",
+    "inputs": [
+      "WMO heat-health warning system country data",
+      "IFRC and national meteorological agency documentation",
+      "Published case studies of heat warning system implementation",
+      "Population data for coverage estimation"
+    ],
+    "expected_artifact": "validation.md update with coverage methodology and sub-national results.",
+    "validation_method": "Replicator confirms coverage data extraction, operational status classification, and population-reach estimation methodology for each target country.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Coverage map includes methodology, sub-national results, operational status documentation, and replication status for at least two LMICs."
   },
   {
-    "id": "risk-mapping",
+    "id": "effectiveness-evaluation-analysis",
     "problem_id": "climate-adaptation/heat-early-warning-systems-global",
-    "title": "Produce sub-national risk map for heat early warning system coverage and effectiveness in low-income countries",
+    "title": "Analyze heat-mortality trends in regions with and without warning systems with climate-trend adjustment",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A heat-mortality trend analysis comparing regions with and without warning systems, with explicit documentation of mortality-data quality, climate-trend adjustment methodology, and the distinction between system existence and verified effectiveness.",
+    "inputs": [
+      "warning-system coverage map",
+      "heat-mortality data or all-cause mortality with temperature exposure data",
+      "climate trend data for adjustment",
+      "published warning-system effectiveness studies"
+    ],
+    "expected_artifact": "outputs.md update with effectiveness methodology and data-quality documentation.",
+    "validation_method": "Replicator confirms mortality-trend methodology, climate-trend adjustment, and data-quality documentation — particularly the distinction between system existence and verified effectiveness.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "high",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "done_condition": "Effectiveness analysis includes methodology, mortality-data quality assessment, climate-trend adjustment, existence-vs-effectiveness distinction, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-effectiveness-overstatement",
     "problem_id": "climate-adaptation/heat-early-warning-systems-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team warning-system effectiveness overstatement and confound attribution risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how effectiveness estimates could overstate mortality reduction by confounding with secular healthcare and housing trends, how system-coverage maps could imply protection that does not exist, and how results could be used to justify underinvestment in other climate-adaptation measures.",
+    "inputs": [
+      "effectiveness evaluation outputs",
+      "warning-system coverage map",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every effectiveness claim has mortality-data quality documentation, climate-trend adjustment, and confound controls. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "done_condition": "Every effectiveness claim is either blocked, softened to data-quality-limited language with explicit confound caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "climate-adaptation/heat-early-warning-systems-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match meteorological service and disaster-management decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the coverage-effectiveness analysis would change any real decision for national meteorological services, disaster-management authorities, or climate-adaptation funders without creating perverse incentives.",
+    "inputs": [
+      "draft effectiveness outputs",
+      "national meteorological service context",
+      "disaster-management authority context"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for meteorological and disaster-management audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that effectiveness estimates are used to justify underinvestment in other adaptation measures or that coverage maps imply protection that does not exist. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "done_condition": "The output has a named user (e.g., Indian Meteorological Department heat-wave coordinator), named decision (e.g., heat action plan resource allocation), explicit non-use cases (e.g., not for claiming heat mortality is solved in any LMIC), and replicated field-reality review."
   }
 ]

@@ -2,12 +2,18 @@
 
 ## Accepted Outputs
 
-None yet.
+No accepted outputs exist yet.
 
-## Candidate Types
+This is deliberate. The first pack is scoped, not solved.
 
-Evidence inventory, sub-national gap map, red-team review, field-reality review.
+## Candidate Output Types
+
+- Evidence inventory with heat-mortality data quality assessment and LMIC vital registration completeness documentation.
+- Sub-national heat early warning system coverage map for at least two LMICs.
+- Heat-mortality trend analysis comparing regions with and without warning systems.
+- Failure-mode review of effectiveness overstatement and confound attribution risks.
+- Field-reality review with meteorological service and disaster-management context.
 
 ## Publication Rule
 
-Outputs must state what they are not. A gap map is not a policy or investment recommendation.
+Published outputs must say what they are not. A coverage map is not proof of protection. An effectiveness estimate is not a mortality-reduction guarantee. Warning-system existence does not equal verified effectiveness — the distinction must be explicit in every output.

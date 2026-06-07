@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["climate-adaptation", "public-health"],
   "region": ["global"],
-  "summary": "Build a verified workflow for measuring heat early warning system coverage and estimating effectiveness in reducing heat mortality.",
-  "why_it_matters": "Build a verified workflow for measuring heat early warning system coverage and estimating effectiveness in reducing heat mortality.",
+  "summary": "Build a verified workflow for mapping heat early warning system coverage and estimating mortality-reduction effectiveness in LMICs, with explicit documentation of mortality-data quality, climate-trend adjustment, and the distinction between system existence and demonstrated effectiveness.",
+  "why_it_matters": "Heatwaves are the deadliest weather-related hazard globally, yet fewer than 40 LMICs have operational heat-health early warning systems. Where systems exist, systematic evaluation of mortality-reduction effectiveness is almost entirely absent — fewer than 10 countries have published pre- and post-warning-system mortality comparison data. The gap between nominal warning-system existence and verified effectiveness is the core measurement problem. Without verified effectiveness analysis, investment in heat early warning cannot be prioritized against competing climate-adaptation investments.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "System-coverage traceability",
+      "target": "Every heat early warning system coverage claim links to WMO, IFRC, or national meteorological agency source with date, geographic scope, and operational status documentation.",
+      "validation_method": "Schema validation and reviewer spot-checks against WMO and national meteorological agency documentation."
+    },
+    {
+      "metric": "Effectiveness-evaluation honesty",
+      "target": "No mortality-reduction effectiveness claim is merged without documenting mortality-data quality, climate-trend adjustment, and the distinction between system existence and verified effectiveness.",
+      "validation_method": "Red-team reviewer confirms every effectiveness claim has explicit data-quality and confound-control documentation."
+    },
+    {
+      "metric": "LMIC-transferability documentation",
+      "target": "Every effectiveness estimate documents whether it is derived from the analyzed LMIC context or transferred from high-income country studies with explicit transferability caveats.",
+      "validation_method": "Reviewer confirms effectiveness estimate source and LMIC-applicability assessment."
     }
   ],
   "safety_level": "high",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, effectiveness-evaluation safety review, and replication for quantitative outputs."
   }
 }

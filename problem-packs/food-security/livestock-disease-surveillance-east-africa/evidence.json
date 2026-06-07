@@ -1,1 +1,38 @@
-[{"id":"fao-livestock-east-africa-2023","problem_id":"food-security/livestock-disease-surveillance-east-africa","claim":"FAO reports livestock contribute 30-50 percent of agricultural GDP in East African countries, support 20 million pastoralists, and that diseases including RVF, CBPP, and PPR cause annual losses exceeding 20 percent of herd value in some areas.","evidence_type":"primary-source","source":{"title":"FAO Livestock Sector Briefs: East Africa","url":"https://www.fao.org/livestock-systems/en/"},"source_date":"2023-06-01","access_date":"2026-06-06","method":"Reviewed FAO livestock sector briefs and disease-impact assessments for East Africa.","limitations":["Disease-impact estimates are modeled and may not capture local variation.","Livestock population data is based on census data of variable recency."],"confidence":"high"},{"id":"anyamba-rvf-satellite-early-warning-2009","problem_id":"food-security/livestock-disease-surveillance-east-africa","claim":"A 2009 study demonstrated that satellite-derived vegetation indices and sea-surface temperature anomalies can predict Rift Valley fever outbreak risk in East Africa with 2-3 month lead time, forming the basis for operational early warning.","evidence_type":"peer-reviewed-study","source":{"title":"Prediction of a Rift Valley fever outbreak","url":"https://www.pnas.org/doi/10.1073/pnas.0806490106"},"source_date":"2009-02-17","access_date":"2026-06-06","method":"Reviewed RVF prediction model, NDVI-SST methodology, and validation results.","limitations":["Model performance varies by region and outbreak magnitude.","Does not predict PPR or CBPP, which have different environmental drivers."],"confidence":"high"}]
+[
+  {
+    "id": "fao-livestock-east-africa-2023",
+    "problem_id": "food-security/livestock-disease-surveillance-east-africa",
+    "claim": "FAO reports livestock contribute 30-50 percent of agricultural GDP in East African countries, support 20 million pastoralists, and that diseases including RVF, CBPP, and PPR cause annual losses exceeding 20 percent of herd value in some areas.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "FAO Livestock Sector Briefs: East Africa",
+      "url": "https://www.fao.org/livestock-systems/en/"
+    },
+    "source_date": "2023-06-01",
+    "access_date": "2026-06-06",
+    "method": "Reviewed FAO livestock sector briefs and disease-impact assessments for East Africa.",
+    "limitations": [
+      "Disease-impact estimates are modeled and may not capture local variation.",
+      "Livestock population data is based on census data of variable recency."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "anyamba-rvf-satellite-early-warning-2009",
+    "problem_id": "food-security/livestock-disease-surveillance-east-africa",
+    "claim": "A 2009 study demonstrated that satellite-derived vegetation indices and sea-surface temperature anomalies can predict Rift Valley fever outbreak risk in East Africa with 2-3 month lead time, forming the basis for operational early warning.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Prediction of a Rift Valley fever outbreak",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.0806490106"
+    },
+    "source_date": "2009-02-17",
+    "access_date": "2026-06-06",
+    "method": "Reviewed RVF prediction model, NDVI-SST methodology, and validation results.",
+    "limitations": [
+      "Model performance varies by region and outbreak magnitude.",
+      "Does not predict PPR or CBPP, which have different environmental drivers."
+    ],
+    "confidence": "high"
+  }
+]

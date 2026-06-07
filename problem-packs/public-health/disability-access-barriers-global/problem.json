@@ -1,1 +1,34 @@
-{"id":"public-health/disability-access-barriers-global","title":"Disability Access Barriers To Health And Education In Low- And Middle-Income Countries","status":"scoped","domain":["public-health","education"],"region":["global"],"summary":"Build a verified workflow for measuring disability access barriers to health and education services in LMICs, linking disability-prevalence surveys, facility-accessibility data, and school-enrollment data at sub-national scale.","why_it_matters":"WHO estimates 1.3 billion people — 16 percent of the global population — live with significant disability, with 80 percent in LMICs. The Washington Group questions in DHS and census surveys now enable disability-disaggregated analysis. But facility-accessibility audits and school-enrollment data are rarely linked to disability data in ways that reveal geographic access gaps.","success_metrics":[{"metric":"Data integration","target":"Every access-gap estimate links disability-prevalence, facility, and school data with methodology.","validation_method":"Schema validation and reviewer checks."}],"safety_level":"medium","canonical_files":["datasets.md","evidence.json","evidence.md","outputs.md","playbooks.md","problem.json","problem.md","task-map.md","tasks.json","validation.md"],"review_policy":{"required_reviews":2,"replication_required":true,"merge_gate":"Schema validation, domain review, safety review, replication."}}
+{
+  "id": "public-health/disability-access-barriers-global",
+  "title": "Disability Access Barriers To Health And Education In Low- And Middle-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health", "education"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring disability access barriers to health and education services in LMICs, linking disability-prevalence surveys, facility-accessibility data, and school-enrollment data at sub-national scale.",
+  "why_it_matters": "WHO estimates 1.3 billion people — 16 percent of the global population — live with significant disability, with 80 percent in LMICs. The Washington Group questions in DHS and census surveys now enable disability-disaggregated analysis. But facility-accessibility audits and school-enrollment data are rarely linked to disability data in ways that reveal geographic access gaps.",
+  "success_metrics": [
+    {
+      "metric": "Data integration",
+      "target": "Every access-gap estimate links disability-prevalence, facility, and school data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

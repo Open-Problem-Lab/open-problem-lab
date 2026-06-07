@@ -1,1 +1,77 @@
-[{"id":"source-inventory","problem_id":"public-health/disability-access-barriers-global","title":"Inventory disability and access data","status":"scoped","owner_role":"literature-scout","outcome":"Dated source inventory.","inputs":["DHS/MICS WG data","facility registries","school census","population data"],"expected_artifact":"datasets.md plus evidence.json.","validation_method":"Reviewer checks sources.","reviewer_needed":"domain-reviewer","safety_risk":"medium","done_condition":"Four sources classified."},{"id":"disability-prevalence-mapping","problem_id":"public-health/disability-access-barriers-global","title":"Map sub-national disability prevalence","status":"needs-triage","owner_role":"data-cleaner","outcome":"Disability-prevalence map with confidence intervals.","inputs":["DHS/MICS WG data","population data","prevalence methodology"],"expected_artifact":"validation.md update.","validation_method":"Replicator confirms prevalence estimation and sample-size adequacy.","reviewer_needed":"replicator","safety_risk":"medium","done_condition":"Prevalence map with CI and replication."},{"id":"access-barrier-analysis","problem_id":"public-health/disability-access-barriers-global","title":"Analyze health and education access barriers","status":"needs-triage","owner_role":"implementation-planner","outcome":"Access-barrier map combining prevalence, facility location, and travel time.","inputs":["disability data","facility locations","school data","travel-time data"],"expected_artifact":"outputs.md update.","validation_method":"Replicator confirms barrier methodology.","reviewer_needed":"domain-reviewer","safety_risk":"high","done_condition":"Barrier analysis includes travel-time and facility-accessibility caveats with replication."},{"id":"red-team-review","problem_id":"public-health/disability-access-barriers-global","title":"Red-team misuse of disability data","status":"needs-triage","owner_role":"red-team-reviewer","outcome":"Failure-mode review.","inputs":["barrier analysis","safety policy"],"expected_artifact":"SAFETY.md review.","validation_method":"Mitigations or block, replicated.","reviewer_needed":"red-team-reviewer","safety_risk":"high","done_condition":"Claims qualified or gated."},{"id":"field-reality-check","problem_id":"public-health/disability-access-barriers-global","title":"Check whether outputs match inclusive-planning needs","status":"needs-triage","owner_role":"field-reality-reviewer","outcome":"Field-facing review.","inputs":["draft outputs","inclusive-service context"],"expected_artifact":"playbooks.md update.","validation_method":"Field reviewer identifies decision, user, misuse risk, replicated.","reviewer_needed":"field-reality-reviewer","safety_risk":"high","done_condition":"Named user, named decision, non-use cases."}]
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/disability-access-barriers-global",
+    "title": "Inventory disability and access data",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "Dated source inventory.",
+    "inputs": [
+      "DHS/MICS WG data",
+      "facility registries",
+      "school census",
+      "population data"
+    ],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Four sources classified."
+  },
+  {
+    "id": "disability-prevalence-mapping",
+    "problem_id": "public-health/disability-access-barriers-global",
+    "title": "Map sub-national disability prevalence",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "Disability-prevalence map with confidence intervals.",
+    "inputs": ["DHS/MICS WG data", "population data", "prevalence methodology"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator confirms prevalence estimation and sample-size adequacy.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Prevalence map with CI and replication."
+  },
+  {
+    "id": "access-barrier-analysis",
+    "problem_id": "public-health/disability-access-barriers-global",
+    "title": "Analyze health and education access barriers",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Access-barrier map combining prevalence, facility location, and travel time.",
+    "inputs": ["disability data", "facility locations", "school data", "travel-time data"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms barrier methodology.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Barrier analysis includes travel-time and facility-accessibility caveats with replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/disability-access-barriers-global",
+    "title": "Red-team misuse of disability data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["barrier analysis", "safety policy"],
+    "expected_artifact": "SAFETY.md review.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/disability-access-barriers-global",
+    "title": "Check whether outputs match inclusive-planning needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "inclusive-service context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases."
+  }
+]

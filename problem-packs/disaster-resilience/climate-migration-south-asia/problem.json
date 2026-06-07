@@ -1,1 +1,34 @@
-{"id":"disaster-resilience/climate-migration-south-asia","title":"Climate-Driven Internal Migration Pattern Detection In South Asia","status":"scoped","domain":["disaster-resilience","climate-adaptation"],"region":["south-asia"],"summary":"Build a verified workflow for detecting climate-driven internal migration patterns in South Asia, linking census migration data, satellite-derived environmental change, and economic indicators at sub-national scale.","why_it_matters":"The World Bank estimates climate change could force 40 million internal migrants in South Asia by 2050. But migration data comes from censuses conducted every 10 years, and attributing migration to climate versus economic drivers is methodologically contested. Satellite data can track the environmental changes people are fleeing, but linking environmental signals to verified migration flows is the missing chain.","success_metrics":[{"metric":"Attribution honesty","target":"Every migration signal distinguishes climate-correlated from climate-caused migration with explicit methodology.","validation_method":"Schema validation and reviewer checks."}],"safety_level":"high","canonical_files":["datasets.md","evidence.json","evidence.md","outputs.md","playbooks.md","problem.json","problem.md","task-map.md","tasks.json","validation.md"],"review_policy":{"required_reviews":2,"replication_required":true,"merge_gate":"Schema validation, domain review, safety review, replication."}}
+{
+  "id": "disaster-resilience/climate-migration-south-asia",
+  "title": "Climate-Driven Internal Migration Pattern Detection In South Asia",
+  "status": "scoped",
+  "domain": ["disaster-resilience", "climate-adaptation"],
+  "region": ["south-asia"],
+  "summary": "Build a verified workflow for detecting climate-driven internal migration patterns in South Asia, linking census migration data, satellite-derived environmental change, and economic indicators at sub-national scale.",
+  "why_it_matters": "The World Bank estimates climate change could force 40 million internal migrants in South Asia by 2050. But migration data comes from censuses conducted every 10 years, and attributing migration to climate versus economic drivers is methodologically contested. Satellite data can track the environmental changes people are fleeing, but linking environmental signals to verified migration flows is the missing chain.",
+  "success_metrics": [
+    {
+      "metric": "Attribution honesty",
+      "target": "Every migration signal distinguishes climate-correlated from climate-caused migration with explicit methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

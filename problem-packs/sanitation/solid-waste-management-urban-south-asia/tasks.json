@@ -1,1 +1,82 @@
-[{"id":"source-inventory","problem_id":"sanitation/solid-waste-management-urban-south-asia","title":"Inventory solid waste data sources","status":"scoped","owner_role":"literature-scout","outcome":"Dated source inventory.","inputs":["What a Waste","satellite imagery","OSM roads","population data","informal-sector studies"],"expected_artifact":"datasets.md plus evidence.json.","validation_method":"Reviewer checks sources.","reviewer_needed":"domain-reviewer","safety_risk":"medium","done_condition":"Five sources classified."},{"id":"waste-generation-estimation","problem_id":"sanitation/solid-waste-management-urban-south-asia","title":"Estimate neighborhood-level waste generation","status":"needs-triage","owner_role":"data-cleaner","outcome":"Neighborhood waste-generation estimates using population density and per-capita generation factors.","inputs":["population data","What a Waste generation rates","land-use data"],"expected_artifact":"validation.md update.","validation_method":"Replicator confirms methodology and sensitivity to generation factors.","reviewer_needed":"replicator","safety_risk":"medium","done_condition":"Generation estimates with methodology documentation and replication."},{"id":"collection-gap-mapping","problem_id":"sanitation/solid-waste-management-urban-south-asia","title":"Map waste-collection gaps at neighborhood scale","status":"needs-triage","owner_role":"implementation-planner","outcome":"Collection-gap map comparing generation to collection coverage.","inputs":["waste-generation estimates","collection-route data","municipal service data"],"expected_artifact":"outputs.md update.","validation_method":"Replicator confirms gap methodology and sensitivity.","reviewer_needed":"domain-reviewer","safety_risk":"high","done_condition":"Gap map includes informal-sector acknowledgment and replication."},{"id":"red-team-review","problem_id":"sanitation/solid-waste-management-urban-south-asia","title":"Red-team misuse of waste collection data","status":"needs-triage","owner_role":"red-team-reviewer","outcome":"Failure-mode review.","inputs":["gap map","safety policy"],"expected_artifact":"SAFETY.md review.","validation_method":"Mitigations or block, replicated.","reviewer_needed":"red-team-reviewer","safety_risk":"high","done_condition":"Claims qualified or gated."},{"id":"field-reality-check","problem_id":"sanitation/solid-waste-management-urban-south-asia","title":"Check whether outputs match municipal waste planning needs","status":"needs-triage","owner_role":"field-reality-reviewer","outcome":"Field-facing review.","inputs":["draft outputs","municipal waste context"],"expected_artifact":"playbooks.md update.","validation_method":"Field reviewer identifies decision, user, misuse risk, replicated.","reviewer_needed":"field-reality-reviewer","safety_risk":"high","done_condition":"Named user, named decision, non-use cases."}]
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "sanitation/solid-waste-management-urban-south-asia",
+    "title": "Inventory solid waste data sources",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "Dated source inventory.",
+    "inputs": [
+      "What a Waste",
+      "satellite imagery",
+      "OSM roads",
+      "population data",
+      "informal-sector studies"
+    ],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Five sources classified."
+  },
+  {
+    "id": "waste-generation-estimation",
+    "problem_id": "sanitation/solid-waste-management-urban-south-asia",
+    "title": "Estimate neighborhood-level waste generation",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "Neighborhood waste-generation estimates using population density and per-capita generation factors.",
+    "inputs": ["population data", "What a Waste generation rates", "land-use data"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator confirms methodology and sensitivity to generation factors.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Generation estimates with methodology documentation and replication."
+  },
+  {
+    "id": "collection-gap-mapping",
+    "problem_id": "sanitation/solid-waste-management-urban-south-asia",
+    "title": "Map waste-collection gaps at neighborhood scale",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Collection-gap map comparing generation to collection coverage.",
+    "inputs": [
+      "waste-generation estimates",
+      "collection-route data",
+      "municipal service data"
+    ],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms gap methodology and sensitivity.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Gap map includes informal-sector acknowledgment and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "sanitation/solid-waste-management-urban-south-asia",
+    "title": "Red-team misuse of waste collection data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["gap map", "safety policy"],
+    "expected_artifact": "SAFETY.md review.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "sanitation/solid-waste-management-urban-south-asia",
+    "title": "Check whether outputs match municipal waste planning needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "municipal waste context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases."
+  }
+]

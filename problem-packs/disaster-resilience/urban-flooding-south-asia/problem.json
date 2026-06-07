@@ -1,1 +1,34 @@
-{"id":"disaster-resilience/urban-flooding-south-asia","title":"Urban Pluvial Flooding Risk In South Asian Megacities","status":"scoped","domain":["disaster-resilience","climate-adaptation"],"region":["south-asia"],"summary":"Build a verified workflow for assessing where impervious surface expansion, drainage inadequacy, and extreme rainfall create the highest pluvial flooding risk in South Asian megacities at neighborhood scale.","why_it_matters":"South Asian megacities experience increasingly frequent pluvial flooding as impervious surfaces replace permeable ground and drainage systems fail to keep pace. The 2022 Pakistan floods and repeated Mumbai, Dhaka, and Chennai flooding events demonstrate that drainage infrastructure and land-use data are not connected in a way that enables neighborhood-scale risk mapping.","success_metrics":[{"metric":"Data integration","target":"Every flooding risk estimate links impervious-surface, drainage, and rainfall data with methodology.","validation_method":"Schema validation and reviewer checks."}],"safety_level":"medium","canonical_files":["datasets.md","evidence.json","evidence.md","outputs.md","playbooks.md","problem.json","problem.md","task-map.md","tasks.json","validation.md"],"review_policy":{"required_reviews":2,"replication_required":true,"merge_gate":"Schema validation, domain review, safety review, replication."}}
+{
+  "id": "disaster-resilience/urban-flooding-south-asia",
+  "title": "Urban Pluvial Flooding Risk In South Asian Megacities",
+  "status": "scoped",
+  "domain": ["disaster-resilience", "climate-adaptation"],
+  "region": ["south-asia"],
+  "summary": "Build a verified workflow for assessing where impervious surface expansion, drainage inadequacy, and extreme rainfall create the highest pluvial flooding risk in South Asian megacities at neighborhood scale.",
+  "why_it_matters": "South Asian megacities experience increasingly frequent pluvial flooding as impervious surfaces replace permeable ground and drainage systems fail to keep pace. The 2022 Pakistan floods and repeated Mumbai, Dhaka, and Chennai flooding events demonstrate that drainage infrastructure and land-use data are not connected in a way that enables neighborhood-scale risk mapping.",
+  "success_metrics": [
+    {
+      "metric": "Data integration",
+      "target": "Every flooding risk estimate links impervious-surface, drainage, and rainfall data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

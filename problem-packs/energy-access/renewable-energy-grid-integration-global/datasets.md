@@ -1,12 +1,12 @@
 # Dataset Inventory
 
-| Source | Grain | Status | Use |
-| ------ | ----- | ------ | --- |
-| IRENA renewable statistics | Country | Usable | Installed capacity and generation |
-| IEA investment data | Country | Usable | Clean energy investment flows |
-| Global Solar Atlas | ~1km | Usable | Solar resource |
-| Global Wind Atlas | ~250m | Usable | Wind resource |
-| Utility grid data | National grid | Variable | Grid capacity and interconnection |
+| Source                     | Grain         | Status   | Use                               |
+| -------------------------- | ------------- | -------- | --------------------------------- |
+| IRENA renewable statistics | Country       | Usable   | Installed capacity and generation |
+| IEA investment data        | Country       | Usable   | Clean energy investment flows     |
+| Global Solar Atlas         | ~1km          | Usable   | Solar resource                    |
+| Global Wind Atlas          | ~250m         | Usable   | Wind resource                     |
+| Utility grid data          | National grid | Variable | Grid capacity and interconnection |
 
 ## Required Properties
 

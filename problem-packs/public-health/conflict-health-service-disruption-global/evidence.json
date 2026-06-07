@@ -1,1 +1,38 @@
-[{"id":"who-attacks-healthcare-2024","problem_id":"public-health/conflict-health-service-disruption-global","claim":"WHO Surveillance System for Attacks on Healthcare documented over 1500 attacks in 2023, with majority in Ukraine, Palestine, Sudan, and Myanmar, but facility-level service disruption data remains fragmentary.","evidence_type":"primary-source","source":{"title":"Surveillance System for Attacks on Health Care","url":"https://www.who.int/emergencies/attacks-on-health-care"},"source_date":"2024-05-01","access_date":"2026-06-07","method":"Reviewed WHO SSA annual report and attack statistics.","limitations":["Attack reporting depends on verification access, which is limited in active conflict zones.","Attack count does not measure service disruption directly."],"confidence":"high"},{"id":"blanchet-conflict-health-disruption-lancet-2022","problem_id":"public-health/conflict-health-service-disruption-global","claim":"A 2022 Lancet study found conflict-zone facilities within 25 km of armed clashes experienced 30-60 percent reductions in outpatient visits and 40-80 percent reductions in maternal health services, with DHIS2 data enabling utilization tracking.","evidence_type":"peer-reviewed-study","source":{"title":"Health service disruption in conflict-affected settings: a multi-country analysis","url":"https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(22)00345-2/fulltext"},"source_date":"2022-03-15","access_date":"2026-06-07","method":"Reviewed facility-utilization analysis, conflict-proximity methodology, and service-disruption estimates.","limitations":["DHIS2 data completeness varies during conflict.","Proximity-based analysis may misclassify facilities not directly in conflict zones."],"confidence":"medium"}]
+[
+  {
+    "id": "who-attacks-healthcare-2024",
+    "problem_id": "public-health/conflict-health-service-disruption-global",
+    "claim": "WHO Surveillance System for Attacks on Healthcare documented over 1500 attacks in 2023, with majority in Ukraine, Palestine, Sudan, and Myanmar, but facility-level service disruption data remains fragmentary.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Surveillance System for Attacks on Health Care",
+      "url": "https://www.who.int/emergencies/attacks-on-health-care"
+    },
+    "source_date": "2024-05-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed WHO SSA annual report and attack statistics.",
+    "limitations": [
+      "Attack reporting depends on verification access, which is limited in active conflict zones.",
+      "Attack count does not measure service disruption directly."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "blanchet-conflict-health-disruption-lancet-2022",
+    "problem_id": "public-health/conflict-health-service-disruption-global",
+    "claim": "A 2022 Lancet study found conflict-zone facilities within 25 km of armed clashes experienced 30-60 percent reductions in outpatient visits and 40-80 percent reductions in maternal health services, with DHIS2 data enabling utilization tracking.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Health service disruption in conflict-affected settings: a multi-country analysis",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(22)00345-2/fulltext"
+    },
+    "source_date": "2022-03-15",
+    "access_date": "2026-06-07",
+    "method": "Reviewed facility-utilization analysis, conflict-proximity methodology, and service-disruption estimates.",
+    "limitations": [
+      "DHIS2 data completeness varies during conflict.",
+      "Proximity-based analysis may misclassify facilities not directly in conflict zones."
+    ],
+    "confidence": "medium"
+  }
+]

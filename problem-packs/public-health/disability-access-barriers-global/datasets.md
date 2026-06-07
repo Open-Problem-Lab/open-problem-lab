@@ -1,11 +1,11 @@
 # Dataset Inventory
 
-| Source | Grain | Status | Use |
-| ------ | ----- | ------ | --- |
-| DHS/MICS Washington Group | Cluster | Usable | Disability prevalence |
-| Health facility registries | Facility | Variable | Facility location |
-| School census data | School | Variable | School location and enrollment |
-| WorldPop population | 100m | Usable | Population denominator |
+| Source                     | Grain    | Status   | Use                            |
+| -------------------------- | -------- | -------- | ------------------------------ |
+| DHS/MICS Washington Group  | Cluster  | Usable   | Disability prevalence          |
+| Health facility registries | Facility | Variable | Facility location              |
+| School census data         | School   | Variable | School location and enrollment |
+| WorldPop population        | 100m     | Usable   | Population denominator         |
 
 ## Required Properties
 

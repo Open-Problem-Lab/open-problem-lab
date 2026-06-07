@@ -1,1 +1,91 @@
-[{"id":"source-inventory","problem_id":"disaster-resilience/urban-flooding-south-asia","title":"Inventory urban flood risk data","status":"scoped","owner_role":"literature-scout","outcome":"Dated source inventory.","inputs":["Landsat","SAR flood maps","CHIRPS","drainage data","population"],"expected_artifact":"datasets.md plus evidence.json.","validation_method":"Reviewer checks sources.","reviewer_needed":"domain-reviewer","safety_risk":"medium","done_condition":"Five sources classified."},{"id":"impervious-surface-mapping","problem_id":"disaster-resilience/urban-flooding-south-asia","title":"Map impervious surface at neighborhood scale","status":"needs-triage","owner_role":"data-cleaner","outcome":"Impervious-surface fraction map with change-over-time analysis.","inputs":["Landsat time series","land-cover classification"],"expected_artifact":"validation.md update.","validation_method":"Replicator confirms classification accuracy against reference data.","reviewer_needed":"replicator","safety_risk":"medium","done_condition":"Impervious map with accuracy metrics and replication."},{"id":"drainage-capacity","problem_id":"disaster-resilience/urban-flooding-south-asia","title":"Estimate drainage-capacity insufficiency","status":"needs-triage","owner_role":"implementation-planner","outcome":"Drainage-capacity gap map at neighborhood scale.","inputs":["drainage data","impervious-surface map","rainfall extremes"],"expected_artifact":"outputs.md update.","validation_method":"Replicator confirms capacity methodology.","reviewer_needed":"domain-reviewer","safety_risk":"high","done_condition":"Drainage-capacity gap with replication."},{"id":"flood-risk-mapping","problem_id":"disaster-resilience/urban-flooding-south-asia","title":"Produce neighborhood pluvial flood risk map","status":"needs-triage","owner_role":"implementation-planner","outcome":"Risk map combining impervious surface, drainage, and rainfall.","inputs":["impervious map","drainage analysis","rainfall extremes","population data"],"expected_artifact":"outputs.md update.","validation_method":"Replicator confirms risk methodology and validates against historical floods.","reviewer_needed":"domain-reviewer","safety_risk":"high","done_condition":"Risk map validated against historical events with replication."},{"id":"red-team-review","problem_id":"disaster-resilience/urban-flooding-south-asia","title":"Red-team misuse of flood risk maps","status":"needs-triage","owner_role":"red-team-reviewer","outcome":"Failure-mode review.","inputs":["risk map","safety policy"],"expected_artifact":"SAFETY.md review.","validation_method":"Mitigations or block, replicated.","reviewer_needed":"red-team-reviewer","safety_risk":"high","done_condition":"Claims qualified or gated."},{"id":"field-reality-check","problem_id":"disaster-resilience/urban-flooding-south-asia","title":"Check whether outputs match urban planning needs","status":"needs-triage","owner_role":"field-reality-reviewer","outcome":"Field-facing review.","inputs":["draft outputs","urban planning context"],"expected_artifact":"playbooks.md update.","validation_method":"Field reviewer identifies decision, user, misuse risk, replicated.","reviewer_needed":"field-reality-reviewer","safety_risk":"high","done_condition":"Named user, named decision, non-use cases."}]
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "disaster-resilience/urban-flooding-south-asia",
+    "title": "Inventory urban flood risk data",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "Dated source inventory.",
+    "inputs": ["Landsat", "SAR flood maps", "CHIRPS", "drainage data", "population"],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Five sources classified."
+  },
+  {
+    "id": "impervious-surface-mapping",
+    "problem_id": "disaster-resilience/urban-flooding-south-asia",
+    "title": "Map impervious surface at neighborhood scale",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "Impervious-surface fraction map with change-over-time analysis.",
+    "inputs": ["Landsat time series", "land-cover classification"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator confirms classification accuracy against reference data.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Impervious map with accuracy metrics and replication."
+  },
+  {
+    "id": "drainage-capacity",
+    "problem_id": "disaster-resilience/urban-flooding-south-asia",
+    "title": "Estimate drainage-capacity insufficiency",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Drainage-capacity gap map at neighborhood scale.",
+    "inputs": ["drainage data", "impervious-surface map", "rainfall extremes"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms capacity methodology.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Drainage-capacity gap with replication."
+  },
+  {
+    "id": "flood-risk-mapping",
+    "problem_id": "disaster-resilience/urban-flooding-south-asia",
+    "title": "Produce neighborhood pluvial flood risk map",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Risk map combining impervious surface, drainage, and rainfall.",
+    "inputs": [
+      "impervious map",
+      "drainage analysis",
+      "rainfall extremes",
+      "population data"
+    ],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms risk methodology and validates against historical floods.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Risk map validated against historical events with replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "disaster-resilience/urban-flooding-south-asia",
+    "title": "Red-team misuse of flood risk maps",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["risk map", "safety policy"],
+    "expected_artifact": "SAFETY.md review.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "disaster-resilience/urban-flooding-south-asia",
+    "title": "Check whether outputs match urban planning needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "urban planning context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases."
+  }
+]

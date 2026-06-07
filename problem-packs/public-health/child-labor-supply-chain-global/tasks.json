@@ -1,1 +1,78 @@
-[{"id":"source-inventory","problem_id":"public-health/child-labor-supply-chain-global","title":"Inventory child labor and supply chain data","status":"scoped","owner_role":"literature-scout","outcome":"Dated source inventory.","inputs":["ILO data","national surveys","MapSPAM","supply-chain data","population"],"expected_artifact":"datasets.md plus evidence.json.","validation_method":"Reviewer checks sources.","reviewer_needed":"domain-reviewer","safety_risk":"medium","done_condition":"Five sources classified."},{"id":"child-labor-compilation","problem_id":"public-health/child-labor-supply-chain-global","title":"Compile sub-national child labor prevalence data","status":"needs-triage","owner_role":"data-cleaner","outcome":"Sub-national child labor dataset with survey documentation.","inputs":["national surveys","ILO data","survey methodology"],"expected_artifact":"validation.md update.","validation_method":"Replicator confirms survey comparability and compilation.","reviewer_needed":"replicator","safety_risk":"medium","done_condition":"Dataset with source-year documentation and replication."},{"id":"supply-chain-risk-mapping","problem_id":"public-health/child-labor-supply-chain-global","title":"Map child labor supply-chain risk","status":"needs-triage","owner_role":"implementation-planner","outcome":"Risk map linking child labor prevalence to crop-production areas.","inputs":["child labor data","crop maps","supply-chain data"],"expected_artifact":"outputs.md update.","validation_method":"Replicator confirms crop-attribution methodology.","reviewer_needed":"domain-reviewer","safety_risk":"high","done_condition":"Risk map includes attribution-probability caveats and replication."},{"id":"red-team-review","problem_id":"public-health/child-labor-supply-chain-global","title":"Red-team misuse of child labor risk data","status":"needs-triage","owner_role":"red-team-reviewer","outcome":"Failure-mode review.","inputs":["risk map","safety policy"],"expected_artifact":"SAFETY.md review.","validation_method":"Mitigations or block, replicated.","reviewer_needed":"red-team-reviewer","safety_risk":"high","done_condition":"Claims qualified or gated."},{"id":"field-reality-check","problem_id":"public-health/child-labor-supply-chain-global","title":"Check whether outputs match supply-chain due diligence needs","status":"needs-triage","owner_role":"field-reality-reviewer","outcome":"Field-facing review.","inputs":["draft outputs","supply-chain context"],"expected_artifact":"playbooks.md update.","validation_method":"Field reviewer identifies decision, user, misuse risk, replicated.","reviewer_needed":"field-reality-reviewer","safety_risk":"high","done_condition":"Named user, named decision, non-use cases."}]
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/child-labor-supply-chain-global",
+    "title": "Inventory child labor and supply chain data",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "Dated source inventory.",
+    "inputs": [
+      "ILO data",
+      "national surveys",
+      "MapSPAM",
+      "supply-chain data",
+      "population"
+    ],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Five sources classified."
+  },
+  {
+    "id": "child-labor-compilation",
+    "problem_id": "public-health/child-labor-supply-chain-global",
+    "title": "Compile sub-national child labor prevalence data",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "Sub-national child labor dataset with survey documentation.",
+    "inputs": ["national surveys", "ILO data", "survey methodology"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator confirms survey comparability and compilation.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Dataset with source-year documentation and replication."
+  },
+  {
+    "id": "supply-chain-risk-mapping",
+    "problem_id": "public-health/child-labor-supply-chain-global",
+    "title": "Map child labor supply-chain risk",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Risk map linking child labor prevalence to crop-production areas.",
+    "inputs": ["child labor data", "crop maps", "supply-chain data"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms crop-attribution methodology.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Risk map includes attribution-probability caveats and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/child-labor-supply-chain-global",
+    "title": "Red-team misuse of child labor risk data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["risk map", "safety policy"],
+    "expected_artifact": "SAFETY.md review.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/child-labor-supply-chain-global",
+    "title": "Check whether outputs match supply-chain due diligence needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "supply-chain context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases."
+  }
+]

@@ -1,1 +1,34 @@
-{"id":"public-health/child-labor-supply-chain-global","title":"Child Labor Detection And Supply Chain Risk In Global Agriculture","status":"scoped","domain":["public-health"],"region":["global"],"summary":"Build a verified workflow for identifying where child labor risk is highest in agricultural supply chains, linking household-survey data, crop-production maps, and supply-chain traceability data at sub-national scale.","why_it_matters":"ILO and UNICEF estimate 160 million children in child labor, 70 percent in agriculture. Cocoa, coffee, cotton, and palm oil supply chains face regulatory pressure from EU and US forced-labor bans. But sub-national data on where child labor occurs and which supply chains are implicated is fragmentary, making enforcement and remediation targeting imprecise.","success_metrics":[{"metric":"Data traceability","target":"Every child-labor risk estimate links survey, crop, and supply-chain data with methodology.","validation_method":"Schema validation and reviewer checks."}],"safety_level":"high","canonical_files":["datasets.md","evidence.json","evidence.md","outputs.md","playbooks.md","problem.json","problem.md","task-map.md","tasks.json","validation.md"],"review_policy":{"required_reviews":2,"replication_required":true,"merge_gate":"Schema validation, domain review, safety review, replication."}}
+{
+  "id": "public-health/child-labor-supply-chain-global",
+  "title": "Child Labor Detection And Supply Chain Risk In Global Agriculture",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for identifying where child labor risk is highest in agricultural supply chains, linking household-survey data, crop-production maps, and supply-chain traceability data at sub-national scale.",
+  "why_it_matters": "ILO and UNICEF estimate 160 million children in child labor, 70 percent in agriculture. Cocoa, coffee, cotton, and palm oil supply chains face regulatory pressure from EU and US forced-labor bans. But sub-national data on where child labor occurs and which supply chains are implicated is fragmentary, making enforcement and remediation targeting imprecise.",
+  "success_metrics": [
+    {
+      "metric": "Data traceability",
+      "target": "Every child-labor risk estimate links survey, crop, and supply-chain data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

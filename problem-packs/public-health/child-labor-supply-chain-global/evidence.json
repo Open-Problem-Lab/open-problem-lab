@@ -1,1 +1,38 @@
-[{"id":"ilo-unicef-child-labor-2021","problem_id":"public-health/child-labor-supply-chain-global","claim":"ILO and UNICEF estimate 160 million children in child labor globally, 70 percent in agriculture, highest absolute numbers in Sub-Saharan Africa, with prevalence concentrated in low-income agricultural households.","evidence_type":"primary-source","source":{"title":"Child Labour: Global estimates 2020, trends and the road forward","url":"https://www.ilo.org/ipec/ChildlabourstatisticsSIMPOC/WCMS_800023/lang--en/index.htm"},"source_date":"2021-06-10","access_date":"2026-06-07","method":"Reviewed ILO-UNICEF joint estimates, sectoral breakdown, and methodology.","limitations":["Estimates are modeled from surveys of variable recency and comparability.","Sub-national breakdowns are not available from global estimates."],"confidence":"high"},{"id":"jouanjean-supply-chain-child-labor-2022","problem_id":"public-health/child-labor-supply-chain-global","claim":"A 2022 analysis found that linking household-survey child labor prevalence to crop-production maps enables supply-chain risk estimation, but survey coverage gaps in high-risk countries remain the primary constraint.","evidence_type":"peer-reviewed-study","source":{"title":"Linking child labor data to agricultural supply chains: methods and limitations","url":"https://www.sciencedirect.com/science/article/abs/pii/S0305750X22001234"},"source_date":"2022-06-01","access_date":"2026-06-07","method":"Reviewed linking methodology, crop-production mapping, and survey-gap analysis.","limitations":["Survey-to-crop attribution is probabilistic, not verified at farm level.","Supply-chain traceability data is proprietary and incomplete."],"confidence":"medium"}]
+[
+  {
+    "id": "ilo-unicef-child-labor-2021",
+    "problem_id": "public-health/child-labor-supply-chain-global",
+    "claim": "ILO and UNICEF estimate 160 million children in child labor globally, 70 percent in agriculture, highest absolute numbers in Sub-Saharan Africa, with prevalence concentrated in low-income agricultural households.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Child Labour: Global estimates 2020, trends and the road forward",
+      "url": "https://www.ilo.org/ipec/ChildlabourstatisticsSIMPOC/WCMS_800023/lang--en/index.htm"
+    },
+    "source_date": "2021-06-10",
+    "access_date": "2026-06-07",
+    "method": "Reviewed ILO-UNICEF joint estimates, sectoral breakdown, and methodology.",
+    "limitations": [
+      "Estimates are modeled from surveys of variable recency and comparability.",
+      "Sub-national breakdowns are not available from global estimates."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "jouanjean-supply-chain-child-labor-2022",
+    "problem_id": "public-health/child-labor-supply-chain-global",
+    "claim": "A 2022 analysis found that linking household-survey child labor prevalence to crop-production maps enables supply-chain risk estimation, but survey coverage gaps in high-risk countries remain the primary constraint.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Linking child labor data to agricultural supply chains: methods and limitations",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0305750X22001234"
+    },
+    "source_date": "2022-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed linking methodology, crop-production mapping, and survey-gap analysis.",
+    "limitations": [
+      "Survey-to-crop attribution is probabilistic, not verified at farm level.",
+      "Supply-chain traceability data is proprietary and incomplete."
+    ],
+    "confidence": "medium"
+  }
+]

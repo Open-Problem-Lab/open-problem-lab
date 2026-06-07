@@ -60,10 +60,24 @@ const main = async () => {
     throw new Error("No evidence records found.");
   }
 
+  const failures = [];
   for (const record of records) {
-    const result = await checkUrl(record.source.url);
-    const suffix = result.note ? ` (${result.note})` : "";
-    console.log(`${record.id}: ${result.method} ${result.status}${suffix}`);
+    try {
+      const result = await checkUrl(record.source.url);
+      const suffix = result.note ? ` (${result.note})` : "";
+      console.log(`${record.id}: ${result.method} ${result.status}${suffix}`);
+    } catch (err) {
+      console.error(`FAIL: ${record.id} — ${err.message}`);
+      failures.push({ id: record.id, url: record.source.url, error: err.message });
+    }
+  }
+
+  if (failures.length > 0) {
+    console.error(`\n${failures.length} URL(s) failed verification:`);
+    for (const f of failures) {
+      console.error(`  ${f.id}: ${f.url}`);
+    }
+    throw new Error(`${failures.length} evidence URL(s) failed.`);
   }
 
   console.log(`Verified ${records.length} evidence source URL(s).`);

@@ -79,6 +79,7 @@ Example: [examples/agent-submission.example.json](../../examples/agent-submissio
 - [`public-health/child-labor-supply-chain-global`](../../problem-packs/public-health/child-labor-supply-chain-global/problem.md) — Child Labor Detection And Supply Chain Risk In Global Agriculture
 - [`public-health/conflict-health-service-disruption-global`](../../problem-packs/public-health/conflict-health-service-disruption-global/problem.md) — Conflict-Driven Health Service Disruption Measurement In Fragile States
 - [`public-health/disability-access-barriers-global`](../../problem-packs/public-health/disability-access-barriers-global/problem.md) — Disability Access Barriers To Health And Education In Low- And Middle-Income Countries
+- [`public-health/drowning-prevention-south-asia`](../../problem-packs/public-health/drowning-prevention-south-asia/problem.md) — Child Drowning Mortality And Supervision Gaps In South Asia
 - [`public-health/health-workforce-density-global`](../../problem-packs/public-health/health-workforce-density-global/problem.md) — Health Workforce Density And Skill-Mix Gaps In Low-Income Countries
 - [`public-health/hiv-treatment-cascade-global`](../../problem-packs/public-health/hiv-treatment-cascade-global/problem.md) — HIV Treatment Cascade Gaps And 95-95-95 Target Tracking In Sub-Saharan Africa
 - [`public-health/lead-exposure-urban-global`](../../problem-packs/public-health/lead-exposure-urban-global/problem.md) — Urban Lead Exposure Risk Mapping In Low- And Middle-Income Countries

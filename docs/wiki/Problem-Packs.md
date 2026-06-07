@@ -280,6 +280,16 @@ Build a verified workflow for measuring health service disruption caused by arme
 
 Build a verified workflow for measuring disability access barriers to health and education services in LMICs, linking disability-prevalence surveys, facility-accessibility data, and school-enrollment data at sub-national scale.
 
+## Child Drowning Mortality And Supervision Gaps In South Asia
+
+- ID: `public-health/drowning-prevention-south-asia`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `south-asia`
+- Source: [problem-packs/public-health/drowning-prevention-south-asia](../../problem-packs/public-health/drowning-prevention-south-asia/problem.md)
+
+Build a verified workflow for measuring child drowning mortality risk and supervision gaps in South Asia, linking survey data, water-body mapping, and childcare-access data at sub-national scale.
+
 ## Health Workforce Density And Skill-Mix Gaps In Low-Income Countries
 
 - ID: `public-health/health-workforce-density-global`

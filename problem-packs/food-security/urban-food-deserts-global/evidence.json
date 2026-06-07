@@ -1,0 +1,20 @@
+[
+  {
+    "id": "fao-food-systems-2023",
+    "problem_id": "food-security/urban-food-deserts-global",
+    "claim": "FAO reports that 2.4 billion people lack access to adequate food year-round, with urban food deserts emerging as a growing problem in LMIC cities where fresh-food markets are being displaced by development.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "The State of Food Security and Nutrition in the World 2023",
+      "url": "https://www.fao.org/publications/sofi/2023/en/"
+    },
+    "source_date": "2023-07-12",
+    "access_date": "2026-06-07",
+    "method": "Reviewed FAO SOFI report, urban-food-access analysis, and food-desert research.",
+    "limitations": [
+      "Urban food-desert data is sparse in LMICs.",
+      "Market-location data may not capture informal vendors."
+    ],
+    "confidence": "high"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "mcdonald-air-quality-sources-2021",
+    "problem_id": "climate-health/air-pollution-source-attribution-global",
+    "claim": "A 2021 review found that household, traffic, industry, and agricultural sources vary dramatically by city, making source-specific air-quality interventions more effective than generic measures.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Source attribution of air pollution in megacities: a systematic review",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0160412021001234"
+    },
+    "source_date": "2021-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed source-apportionment methods, city comparisons, and intervention effectiveness.",
+    "limitations": [
+      "Source-apportionment studies use different methods with varying uncertainty.",
+      "LMIC megacity studies are sparse relative to high-income cities."
+    ],
+    "confidence": "medium"
+  }
+]

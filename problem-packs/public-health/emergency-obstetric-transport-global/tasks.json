@@ -1,0 +1,92 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/emergency-obstetric-transport-global",
+    "title": "Inventory emergency transport and maternal health data",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating travel-time data, facility data, ambulance data, and mortality data.",
+    "inputs": [
+      "MAP travel-time surfaces",
+      "OSM roads",
+      "facility registries",
+      "ambulance data",
+      "population data"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records.",
+    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Five sources classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "travel-time-mapping",
+    "problem_id": "public-health/emergency-obstetric-transport-global",
+    "title": "Map emergency obstetric travel-time access at sub-national scale",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A sub-national map of population within 30-minute and 60-minute travel time of EmOC facilities.",
+    "inputs": [
+      "MAP travel-time surfaces",
+      "EmOC facility data",
+      "population data",
+      "road-network data"
+    ],
+    "expected_artifact": "validation.md update with travel-time methodology.",
+    "validation_method": "Replicator reruns travel-time analysis with alternative routing algorithms and confirms access estimates within reported tolerance.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Travel-time map with population-access statistics and replication."
+  },
+  {
+    "id": "ambulance-coverage-gap",
+    "problem_id": "public-health/emergency-obstetric-transport-global",
+    "title": "Map ambulance-coverage gaps relative to maternal mortality risk",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "An ambulance-coverage gap map combining travel-time access, ambulance-depot locations, and maternal mortality data.",
+    "inputs": [
+      "travel-time map",
+      "ambulance-depot data",
+      "maternal mortality data",
+      "population data"
+    ],
+    "expected_artifact": "outputs.md update with ambulance-gap map.",
+    "validation_method": "Replicator confirms gap methodology and validates ambulance data against independent sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Gap map includes ambulance-data caveats, mortality-risk weighting, and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/emergency-obstetric-transport-global",
+    "title": "Red-team misuse of emergency transport data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying facility-closure, false-precision, and misallocation risks.",
+    "inputs": ["gap map", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review note.",
+    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every operational claim is either qualified, softened to analytic language, or gated behind replication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/emergency-obstetric-transport-global",
+    "title": "Check whether outputs match EMS and maternal health planning needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether transport-gap maps change ambulance deployment or community transport schemes responsibly.",
+    "inputs": [
+      "draft outputs",
+      "EMS operational context",
+      "maternal health program context"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk, then replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, explicit non-use cases, and replicated field-reality review."
+  }
+]

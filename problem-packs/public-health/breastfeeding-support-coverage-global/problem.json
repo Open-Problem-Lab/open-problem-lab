@@ -1,0 +1,34 @@
+{
+  "id": "public-health/breastfeeding-support-coverage-global",
+  "title": "Early Breastfeeding Initiation And Exclusive Breastfeeding Support Coverage Gaps In Low-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring early breastfeeding initiation and exclusive breastfeeding support coverage gaps, linking DHS feeding-practice data, health-facility baby-friendly status, and maternity-protection policy data at sub-national scale.",
+  "why_it_matters": "WHO/UNICEF estimate that improving breastfeeding could save 820,000 child lives annually — the single most effective child-survival intervention. Yet only 44 percent of newborns are breastfed within the first hour and 48 percent exclusively breastfed for six months. Baby-Friendly Hospital Initiative certification and maternity-leave policies exist but sub-national linkage to actual feeding practices is absent.",
+  "success_metrics": [
+    {
+      "metric": "Coverage traceability",
+      "target": "Every support-coverage estimate links feeding-practice data, facility data, and policy data with methodology.",
+      "validation_method": "Schema validation and reviewer spot-checks against evidence.json and evidence.md."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review for program claims, and replication for quantitative analyses."
+  }
+}

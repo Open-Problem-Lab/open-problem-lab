@@ -1,0 +1,20 @@
+[
+  {
+    "id": "world-bank-water-security-2024",
+    "problem_id": "water-security/transboundary-water-conflict-global",
+    "claim": "World Bank estimates 60 percent of global freshwater flows cross national boundaries, with 150+ transboundary agreements covering fewer than half of the world's shared basins.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Water Security and Transboundary Cooperation",
+      "url": "https://www.worldbank.org/en/topic/water"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed World Bank water security frameworks and transboundary cooperation analysis.",
+    "limitations": [
+      "Conflict-risk projections are modeled and have substantial uncertainty.",
+      "Institutional-capacity data is qualitative."
+    ],
+    "confidence": "high"
+  }
+]

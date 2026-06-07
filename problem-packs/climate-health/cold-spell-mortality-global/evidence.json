@@ -1,0 +1,20 @@
+[
+  {
+    "id": "gasparrini-cold-mortality-2015",
+    "problem_id": "climate-health/cold-spell-mortality-global",
+    "claim": "A 2015 Lancet study found that cold temperatures cause more deaths globally than heat, with cold-attributable mortality concentrated in populations without adequate heating and insulation.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Mortality risk attributable to high and low ambient temperature",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(14)62114-0/fulltext"
+    },
+    "source_date": "2015-07-25",
+    "access_date": "2026-06-07",
+    "method": "Reviewed multi-country mortality-temperature analysis, attributable fractions, and regional patterns.",
+    "limitations": [
+      "Cold-spell mortality data is sparse in LMICs.",
+      "Heating-access data is not systematically collected."
+    ],
+    "confidence": "high"
+  }
+]

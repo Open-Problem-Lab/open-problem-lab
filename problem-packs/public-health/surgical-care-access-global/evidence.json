@@ -1,0 +1,20 @@
+[
+  {
+    "id": "meara-lancet-surgery-2015",
+    "problem_id": "public-health/surgical-care-access-global",
+    "claim": "The Lancet Commission on Global Surgery estimated 5 billion people lack access to safe, affordable surgical care, with surgical workforce density below 20 per 100,000 in most LMICs.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Global Surgery 2030: evidence and solutions for achieving health, welfare, and economic development",
+      "url": "https://www.thelancet.com/commissions/global-surgery"
+    },
+    "source_date": "2015-04-26",
+    "access_date": "2026-06-07",
+    "method": "Reviewed Lancet Commission findings on surgical access, workforce, and economic impact.",
+    "limitations": [
+      "Surgical-access data is modeled from facility surveys.",
+      "Workforce data may not capture task-shifting to non-specialists."
+    ],
+    "confidence": "high"
+  }
+]

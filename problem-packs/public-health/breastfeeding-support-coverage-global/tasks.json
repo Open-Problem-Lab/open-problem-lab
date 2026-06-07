@@ -1,0 +1,87 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/breastfeeding-support-coverage-global",
+    "title": "Inventory breastfeeding practice and support data sources",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating DHS feeding-practice data, BFHI facility data, maternity-policy data, and unusable sources.",
+    "inputs": [
+      "DHS breastfeeding modules",
+      "BFHI registries",
+      "maternity-leave policy databases",
+      "facility data",
+      "population data"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records.",
+    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five sources classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "breastfeeding-practice-mapping",
+    "problem_id": "public-health/breastfeeding-support-coverage-global",
+    "title": "Map sub-national early initiation and exclusive breastfeeding rates",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A sub-national map of early breastfeeding initiation and exclusive-breastfeeding rates with confidence intervals and survey-year documentation.",
+    "inputs": ["DHS datasets", "population denominators", "small-area estimation methods"],
+    "expected_artifact": "validation.md update with practice-map methodology.",
+    "validation_method": "Replicator reruns estimation with alternative survey subsets and confirms rates within reported confidence intervals.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Practice maps include confidence intervals, survey-year documentation, and replication."
+  },
+  {
+    "id": "bfhi-coverage-gap",
+    "problem_id": "public-health/breastfeeding-support-coverage-global",
+    "title": "Map BFHI certification and breastfeeding-support coverage gaps",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A coverage-gap map comparing breastfeeding rates to BFHI-certification and maternity-leave policy coverage.",
+    "inputs": [
+      "breastfeeding-practice maps",
+      "BFHI facility data",
+      "maternity-policy data",
+      "population data"
+    ],
+    "expected_artifact": "outputs.md update with support-coverage gap map.",
+    "validation_method": "Replicator confirms gap methodology and validates BFHI data against independent sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Gap map includes BFHI-data currency caveats, maternity-policy context, and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/breastfeeding-support-coverage-global",
+    "title": "Red-team misuse of breastfeeding support data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying stigmatization of non-breastfeeding mothers, penalization of non-certified facilities, and undermining of community breastfeeding norms.",
+    "inputs": ["gap map", "safety policy", "infant-feeding ethics guidance"],
+    "expected_artifact": "SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk failure mode has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every claim qualified or gated behind replication with explicit non-stigmatization safeguards."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/breastfeeding-support-coverage-global",
+    "title": "Check whether outputs match nutrition and maternity program decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether support-coverage maps would change actual facility-certification or community-support decisions responsibly.",
+    "inputs": [
+      "draft outputs",
+      "nutrition program context",
+      "maternity-care operational context"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk for the output, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Output has a named user, named decision, explicit non-use cases, and replicated field-reality review."
+  }
+]

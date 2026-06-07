@@ -1,0 +1,20 @@
+[
+  {
+    "id": "unicef-pneumonia-2024",
+    "problem_id": "public-health/childhood-pneumonia-treatment-global",
+    "claim": "UNICEF estimates pneumonia kills over 700,000 children under five annually, with only 60 percent of caregivers seeking appropriate care and fewer than 40 percent receiving antibiotics.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Pneumonia in Children: UNICEF Data",
+      "url": "https://data.unicef.org/topic/child-health/pneumonia/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed UNICEF pneumonia data, care-seeking indicators, and treatment coverage.",
+    "limitations": [
+      "Care-seeking data is self-reported.",
+      "Treatment data depends on health-facility surveys."
+    ],
+    "confidence": "high"
+  }
+]

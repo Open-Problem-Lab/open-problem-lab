@@ -1,0 +1,34 @@
+{
+  "id": "climate-health/air-pollution-source-attribution-global",
+  "title": "Ambient Air Pollution Source Attribution And Health Impact In Megacities",
+  "status": "scoped",
+  "domain": ["climate-health", "air-quality"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for attributing ambient air pollution to source sectors and estimating sector-specific health impacts in LMIC megacities.",
+  "why_it_matters": "Build a verified workflow for attributing ambient air pollution to source sectors and estimating sector-specific health impacts in LMIC megacities.",
+  "success_metrics": [
+    {
+      "metric": "Data traceability",
+      "target": "Every claim links dated evidence with methodology.",
+      "validation_method": "Schema validation and reviewer spot-checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "unicef-u5mr-report-2024",
+    "problem_id": "public-health/child-mortality-inequality-global",
+    "claim": "UNICEF reports global under-five mortality fell from 93 to 37 per 1000 live births between 1990 and 2022, but the poorest-richest mortality ratio exceeds 2:1 in over 30 LMICs and sub-national inequality widened in many countries.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Levels and Trends in Child Mortality 2024",
+      "url": "https://data.unicef.org/resources/levels-and-trends-in-child-mortality-2024/"
+    },
+    "source_date": "2024-03-13",
+    "access_date": "2026-06-07",
+    "method": "Reviewed UNICEF child mortality report, inequality analysis, and wealth-disaggregated data.",
+    "limitations": [
+      "Sub-national mortality estimates are modeled and have wide confidence intervals for small districts.",
+      "Wealth-disaggregated data depends on DHS and MICS survey frequency."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "victora-u5mr-inequality-lancet-2020",
+    "problem_id": "public-health/child-mortality-inequality-global",
+    "claim": "A 2020 Lancet Global Health study found that sub-national inequality in child mortality widened in over 40 percent of LMICs between 2000 and 2015, even as national averages declined, with the poorest districts showing the slowest improvement.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Subnational inequalities in under-five mortality in low- and middle-income countries",
+      "url": "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(20)30234-5/fulltext"
+    },
+    "source_date": "2020-07-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed sub-national inequality analysis, trend methodology, and wealth-disaggregated findings.",
+    "limitations": [
+      "Inequality measurement depends on survey frequency and district sample sizes.",
+      "Study period ends in 2015 and may not reflect recent trends."
+    ],
+    "confidence": "medium"
+  }
+]

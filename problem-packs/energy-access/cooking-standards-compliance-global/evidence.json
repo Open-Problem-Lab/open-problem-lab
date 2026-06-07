@@ -1,0 +1,20 @@
+[
+  {
+    "id": "iso-clean-cookstoves-2023",
+    "problem_id": "energy-access/cooking-standards-compliance-global",
+    "claim": "ISO and IWA standards for clean cookstoves exist but compliance verification is absent for most stoves sold in LMICs, with laboratory performance often diverging substantially from field performance.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "ISO 19867-1:2018 Clean cookstoves and clean cooking solutions",
+      "url": "https://www.iso.org/standard/66519.html"
+    },
+    "source_date": "2018-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed ISO standards, compliance-verification systems, and field-performance studies.",
+    "limitations": [
+      "Field-performance data is sparse relative to laboratory data.",
+      "Verification systems vary by country."
+    ],
+    "confidence": "high"
+  }
+]

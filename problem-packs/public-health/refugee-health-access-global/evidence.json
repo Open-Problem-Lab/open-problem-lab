@@ -1,0 +1,20 @@
+[
+  {
+    "id": "unhcr-health-access-2024",
+    "problem_id": "public-health/refugee-health-access-global",
+    "claim": "UNHCR reports that over 110 million people are forcibly displaced globally, with refugee health-service access systematically lower than host populations and dependent on humanitarian funding cycles.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "UNHCR Global Health Report 2024",
+      "url": "https://www.unhcr.org/health.html"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed UNHCR health report, service-access indicators, and gap analysis.",
+    "limitations": [
+      "Refugee health data varies by camp and host-country context.",
+      "Health-access comparison requires host-population data."
+    ],
+    "confidence": "high"
+  }
+]

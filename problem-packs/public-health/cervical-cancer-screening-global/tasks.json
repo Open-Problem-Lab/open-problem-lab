@@ -1,0 +1,72 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/cervical-cancer-screening-global",
+    "title": "Inventory data sources for public-health/cervical-cancer-screening-global",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for cervical cancer screening coverage gaps in low- and middle-income countries.",
+    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
+    "expected_artifact": "datasets.md update plus evidence.json records.",
+    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "sub-national-gap-analysis",
+    "problem_id": "public-health/cervical-cancer-screening-global",
+    "title": "Measure sub-national gap for cervical cancer screening coverage gaps in low- and middle-income countries",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
+    "inputs": ["compiled data", "population denominators", "analysis methodology"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+  },
+  {
+    "id": "risk-mapping",
+    "problem_id": "public-health/cervical-cancer-screening-global",
+    "title": "Produce sub-national risk map for cervical cancer screening coverage gaps in low- and middle-income countries",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
+    "inputs": ["gap analysis", "population data", "geographic boundaries"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Gap map with methodology, caveats, and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/cervical-cancer-screening-global",
+    "title": "Red-team misuse risks",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
+    "inputs": ["gap map", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review note.",
+    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every claim qualified or gated behind replication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/cervical-cancer-screening-global",
+    "title": "Check whether outputs match decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
+    "inputs": ["draft outputs", "implementation context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases, replicated review."
+  }
+]

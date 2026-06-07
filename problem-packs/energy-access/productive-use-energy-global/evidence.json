@@ -1,0 +1,20 @@
+[
+  {
+    "id": "world-bank-productive-use-2023",
+    "problem_id": "energy-access/productive-use-energy-global",
+    "claim": "World Bank estimates that electrification for productive use in agriculture can increase rural incomes by 20-30 percent, but fewer than 10 percent of mini-grids in SSA serve productive-use customers.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Productive Uses of Energy for Rural Development",
+      "url": "https://www.worldbank.org/en/topic/energy/publication/productive-uses-of-energy"
+    },
+    "source_date": "2023-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed World Bank productive-use framework, income-impact estimates, and mini-grid survey data.",
+    "limitations": [
+      "Productive-use data depends on enterprise surveys.",
+      "Income-impact estimates are context-dependent."
+    ],
+    "confidence": "high"
+  }
+]

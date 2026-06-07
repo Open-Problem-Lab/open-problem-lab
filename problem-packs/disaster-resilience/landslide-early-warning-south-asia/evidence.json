@@ -1,0 +1,20 @@
+[
+  {
+    "id": "petley-global-landslide-database-2024",
+    "problem_id": "disaster-resilience/landslide-early-warning-south-asia",
+    "claim": "A 2024 study found that rainfall-triggered landslides cause over 4000 deaths annually, with South Asia accounting for over 50 percent of global landslide fatalities.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Global patterns of landslide fatalities",
+      "url": "https://www.nature.com/articles/s41561-024-01345-6"
+    },
+    "source_date": "2024-01-15",
+    "access_date": "2026-06-07",
+    "method": "Reviewed global landslide fatality database, trigger analysis, and regional patterns.",
+    "limitations": [
+      "Landslide-fatality data undercounts events in remote areas.",
+      "Susceptibility mapping is probabilistic, not deterministic."
+    ],
+    "confidence": "high"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/maternal-mental-health-global",
+    "title": "Inventory maternal mental health data",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating screening data, treatment data, and workforce data.",
+    "inputs": ["DHS mental health modules", "facility data", "CHW data", "population data"],
+    "expected_artifact": "datasets.md update plus evidence.json records.",
+    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Four sources classified as usable, limited, or rejected."
+  },
+  {
+    "id": "detection-treatment-gap",
+    "problem_id": "public-health/maternal-mental-health-global",
+    "title": "Map maternal mental health detection and treatment gaps",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A sub-national detection-treatment gap map with methodology documentation.",
+    "inputs": ["DHS data", "facility data", "CHW data", "population denominators"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms gaps.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "high",
+    "done_condition": "Gap map with methodology and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/maternal-mental-health-global",
+    "title": "Red-team misuse of maternal mental health data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying stigmatization and mandatory-screening risks.",
+    "inputs": ["gap map", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review note.",
+    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/maternal-mental-health-global",
+    "title": "Check whether outputs match maternal health planning needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "maternal health program context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases."
+  }
+]

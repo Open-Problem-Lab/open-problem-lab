@@ -1,0 +1,34 @@
+{
+  "id": "public-health/emergency-obstetric-transport-global",
+  "title": "Emergency Obstetric Transport Access And Ambulance Coverage Gaps In Low-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring emergency obstetric transport access gaps, linking health-facility location data, road-network data, ambulance-registry data, and maternal-mortality data at sub-national scale.",
+  "why_it_matters": "The three-delays model identifies delay in reaching a facility as the second most lethal gap in maternal survival. Yet ambulance coverage data is almost entirely absent from sub-national health information in low-income countries. OpenStreetMap road networks and travel-time surfaces exist globally — linking these to where ambulances are actually stationed and where maternal deaths occur is the missing operational link.",
+  "success_metrics": [
+    {
+      "metric": "Access traceability",
+      "target": "Every access-gap estimate links facility, road-network, ambulance, and mortality data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

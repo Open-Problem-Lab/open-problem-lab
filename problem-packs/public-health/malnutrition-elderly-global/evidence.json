@@ -1,0 +1,20 @@
+[
+  {
+    "id": "who-ageing-nutrition-2023",
+    "problem_id": "public-health/malnutrition-elderly-global",
+    "claim": "WHO estimates 25 percent of adults over 65 in LMICs are undernourished, rising above 40 percent in several countries, with elderly nutrition systematically excluded from nutrition-surveillance systems.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO Decade of Healthy Ageing: Nutrition",
+      "url": "https://www.who.int/initiatives/decade-of-healthy-ageing"
+    },
+    "source_date": "2023-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed WHO ageing-nutrition framework and prevalence estimates.",
+    "limitations": [
+      "Elderly nutrition data is sparse in most LMICs.",
+      "Anthropometric standards for elderly populations are less established."
+    ],
+    "confidence": "high"
+  }
+]

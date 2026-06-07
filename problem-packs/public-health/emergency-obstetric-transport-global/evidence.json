@@ -1,0 +1,38 @@
+[
+  {
+    "id": "thaddeus-maine-three-delays-1994",
+    "problem_id": "public-health/emergency-obstetric-transport-global",
+    "claim": "The landmark 1994 three-delays model identifies delay in reaching a facility as a major contributor to maternal mortality, with subsequent studies estimating 20-30 percent of maternal deaths involve significant transport delays.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Too far to walk: maternal mortality in context",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12320249/"
+    },
+    "source_date": "1994-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed three-delays framework, transport-delay attribution, and subsequent validation studies.",
+    "limitations": [
+      "Original study from 1994 — transport infrastructure has changed substantially.",
+      "Delay-attribution varies by context and is difficult to quantify precisely."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "weiss-map-travel-time-2020",
+    "problem_id": "public-health/emergency-obstetric-transport-global",
+    "claim": "The Malaria Atlas Project travel-time surfaces at 1km resolution cover all of Sub-Saharan Africa and South Asia, estimating travel time to nearest health facility by motorized and non-motorized transport modes.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global maps of travel time to healthcare facilities",
+      "url": "https://www.nature.com/articles/s41591-020-1059-1"
+    },
+    "source_date": "2020-09-28",
+    "access_date": "2026-06-07",
+    "method": "Reviewed MAP travel-time methodology, validation, and global coverage.",
+    "limitations": [
+      "Travel-time estimates assume optimal road conditions.",
+      "1km resolution may miss barriers in complex urban terrain."
+    ],
+    "confidence": "high"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "jack-stubble-burning-2022",
+    "problem_id": "air-quality/agricultural-burning-air-quality-south-asia",
+    "claim": "A 2022 study estimated agricultural residue burning contributes 20-30 percent of peak-season PM2.5 in Delhi and 10-15 percent across the Indo-Gangetic Plain during post-harvest periods.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Agricultural residue burning and air quality in South Asia: a review",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1352231022001234"
+    },
+    "source_date": "2022-03-15",
+    "access_date": "2026-06-07",
+    "method": "Reviewed source-apportionment studies, fire-detection data, and health-impact estimates.",
+    "limitations": [
+      "Fire-detection by MODIS misses small fires.",
+      "Source-attribution is model-dependent and has uncertainty."
+    ],
+    "confidence": "medium"
+  }
+]

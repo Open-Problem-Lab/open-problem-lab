@@ -1,0 +1,20 @@
+[
+  {
+    "id": "bacci-green-space-cooling-2022",
+    "problem_id": "climate-adaptation/urban-green-space-cooling-global",
+    "claim": "A 2022 meta-analysis found urban green spaces reduce ambient temperature by 1-5°C, with the cooling effect extending 100-500 meters, and estimated 2-5 percent heat-mortality reduction per 10 percent green-space increase.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Urban green space cooling effects: a meta-analysis",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0048969722003456"
+    },
+    "source_date": "2022-03-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed meta-analysis of cooling-effect studies and mortality-attribution methods.",
+    "limitations": [
+      "Cooling-effect varies by climate zone and urban morphology.",
+      "Mortality-reduction estimates are modeled, not directly observed."
+    ],
+    "confidence": "medium"
+  }
+]

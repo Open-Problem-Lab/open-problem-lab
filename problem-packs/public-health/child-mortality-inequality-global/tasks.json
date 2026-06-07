@@ -1,0 +1,109 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/child-mortality-inequality-global",
+    "title": "Inventory child mortality and inequality data sources",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating DHS mortality data, wealth-index data, intervention-coverage data, and unusable sources.",
+    "inputs": [
+      "DHS mortality modules",
+      "DHS wealth-index data",
+      "MICS data",
+      "intervention-coverage data",
+      "population data"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records.",
+    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five sources classified as usable, limited, or rejected with explicit reasons."
+  },
+  {
+    "id": "district-mortality-estimation",
+    "problem_id": "public-health/child-mortality-inequality-global",
+    "title": "Estimate district-level under-five mortality with wealth disaggregation",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "District-level under-five mortality estimates by wealth quintile with confidence intervals and sample-size documentation.",
+    "inputs": [
+      "DHS datasets",
+      "MICS datasets",
+      "small-area estimation methodology",
+      "population denominators"
+    ],
+    "expected_artifact": "validation.md update with estimation methodology.",
+    "validation_method": "Replicator reruns estimation with alternative mortality models and confirms estimates within reported confidence intervals.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "District-level mortality estimates by wealth quintile, with sample-size adequacy flags for districts with fewer than 500 live births, and replication."
+  },
+  {
+    "id": "inequality-trend-tracking",
+    "problem_id": "public-health/child-mortality-inequality-global",
+    "title": "Track sub-national inequality trends across survey rounds",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "An inequality-trend analysis classifying districts as improving, worsening, or unchanged in mortality inequality across survey rounds.",
+    "inputs": [
+      "district mortality estimates",
+      "multiple survey rounds",
+      "inequality metrics"
+    ],
+    "expected_artifact": "outputs.md update with inequality-trend map.",
+    "validation_method": "Replicator confirms trend classification methodology and validates against alternative inequality metrics.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Trend map includes inequality-metric documentation, survey-round comparability notes, and replication."
+  },
+  {
+    "id": "coverage-equity-analysis",
+    "problem_id": "public-health/child-mortality-inequality-global",
+    "title": "Analyze intervention-coverage equity relative to mortality inequality",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "An equity analysis linking wealth-disaggregated intervention coverage to mortality inequality at district level.",
+    "inputs": [
+      "inequality-trend map",
+      "DHS coverage data",
+      "intervention-coverage indicators"
+    ],
+    "expected_artifact": "outputs.md update with coverage-equity analysis.",
+    "validation_method": "Replicator confirms equity methodology and validates coverage indicators.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Coverage-equity analysis includes explicit non-causal caveats and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/child-mortality-inequality-global",
+    "title": "Red-team misuse of inequality data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying stigmatization of poor-performing districts, false-precision in small-area estimates, and misuse for punitive rather than supportive purposes.",
+    "inputs": ["inequality-trend map", "coverage-equity analysis", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk failure mode has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every inequality claim includes sample-size caveats, non-stigmatization language, and is gated behind replication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/child-mortality-inequality-global",
+    "title": "Check whether outputs match equity-oriented health planning needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether inequality-trend maps change equity-oriented resource allocation or outreach strategy responsibly.",
+    "inputs": [
+      "draft outputs",
+      "district health planning context",
+      "health-equity unit mandate"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk for the output, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Output has named user, named decision, explicit non-use cases, small-sample caveats, and replicated field-reality review."
+  }
+]

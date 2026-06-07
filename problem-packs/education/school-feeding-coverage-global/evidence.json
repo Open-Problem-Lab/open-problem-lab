@@ -1,0 +1,20 @@
+[
+  {
+    "id": "wfp-school-feeding-2024",
+    "problem_id": "education/school-feeding-coverage-global",
+    "claim": "WFP State of School Feeding report estimates 418 million children receive school meals globally, but coverage in low-income countries is below 20 percent.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "State of School Feeding Worldwide 2024",
+      "url": "https://www.wfp.org/publications/state-school-feeding-worldwide"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed WFP report on coverage, funding, and nutritional impact.",
+    "limitations": [
+      "Coverage data depends on country program reporting.",
+      "Nutritional impact measures vary across programs."
+    ],
+    "confidence": "high"
+  }
+]

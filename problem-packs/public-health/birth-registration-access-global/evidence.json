@@ -1,0 +1,20 @@
+[
+  {
+    "id": "unicef-birth-registration-2023",
+    "problem_id": "public-health/birth-registration-access-global",
+    "claim": "UNICEF estimates 1 in 4 children under five globally are not registered, with registration rates below 20 percent in several Sub-Saharan African countries.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Birth Registration for Every Child by 2030",
+      "url": "https://data.unicef.org/resources/birth-registration-for-every-child-by-2030/"
+    },
+    "source_date": "2023-12-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed UNICEF birth-registration report, coverage data, and barriers analysis.",
+    "limitations": [
+      "Registration data depends on survey timing.",
+      "Service-linkage data is qualitative."
+    ],
+    "confidence": "high"
+  }
+]

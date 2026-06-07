@@ -1,0 +1,20 @@
+[
+  {
+    "id": "icao-vaac-2024",
+    "problem_id": "disaster-resilience/volcanic-ash-aviation-global",
+    "claim": "ICAO's Volcanic Ash Advisory Centers monitor volcanic activity globally, but ash-detection gaps exist in regions with sparse ground-based and satellite coverage.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "ICAO Volcanic Ash Advisory Centre Status Report",
+      "url": "https://www.icao.int/safety/meteorology/vaac/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed ICAO VAAC reporting, detection technology, and coverage gaps.",
+    "limitations": [
+      "Satellite ash detection is unreliable in cloudy conditions.",
+      "Ash-concentration forecasts have significant uncertainty."
+    ],
+    "confidence": "high"
+  }
+]

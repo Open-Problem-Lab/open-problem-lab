@@ -1,0 +1,20 @@
+[
+  {
+    "id": "goudie-dust-health-2014",
+    "problem_id": "climate-health/dust-storm-health-global",
+    "claim": "A 2014 review found that dust storms contribute up to 50 percent of PM10 in arid regions and are associated with 5-10 percent increases in respiratory hospitalizations during dust events.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Desert dust and human health disorders",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24564883/"
+    },
+    "source_date": "2014-03-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed dust-health literature, exposure assessment methods, and health-impact estimates.",
+    "limitations": [
+      "Dust-exposure assessment depends on satellite AOD with cloud-cover gaps.",
+      "Health-impact attribution is confounded by co-occurring PM sources."
+    ],
+    "confidence": "medium"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "who-nurturing-care-2023",
+    "problem_id": "education/early-childhood-development-global",
+    "claim": "WHO/UNICEF Nurturing Care Framework estimates 250 million children under five in LMICs are at risk of not reaching their developmental potential due to poverty, malnutrition, and lack of stimulation.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Nurturing Care Framework Progress Report 2023",
+      "url": "https://www.who.int/publications/i/item/9789240063341"
+    },
+    "source_date": "2023-05-15",
+    "access_date": "2026-06-07",
+    "method": "Reviewed Nurturing Care Framework progress report and ECD indicators.",
+    "limitations": [
+      "ECD measurement instruments vary across countries.",
+      "Intervention-coverage data is sparse at sub-national scale."
+    ],
+    "confidence": "high"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "fao-grassland-carbon-2023",
+    "problem_id": "biodiversity/grassland-degradation-central-asia",
+    "claim": "FAO estimates 20-30 percent of global grasslands are degraded, with Central Asian steppes and rangelands experiencing some of the highest degradation rates.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Status of the World's Grasslands",
+      "url": "https://www.fao.org/publications/grasslands/2023"
+    },
+    "source_date": "2023-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed FAO grassland assessment, degradation statistics, and livelihood analysis.",
+    "limitations": [
+      "Grassland-degradation detection varies by methodology.",
+      "Livelihood data is sparse for pastoral populations."
+    ],
+    "confidence": "high"
+  }
+]

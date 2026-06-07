@@ -1,0 +1,20 @@
+[
+  {
+    "id": "africa-fertilizer-summit-2023",
+    "problem_id": "food-security/fertilizer-access-sub-saharan-africa",
+    "claim": "The Africa Fertilizer and Soil Health Summit documented average fertilizer use of 15 kg/ha in SSA versus 150 kg/ha globally, with soil nutrient depletion costing an estimated 3 percent of agricultural GDP annually.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Africa Fertilizer and Soil Health Summit Declaration",
+      "url": "https://www.afdb.org/en/topics-and-sectors/initiatives-partnerships/africa-fertilizer-and-soil-health-summit"
+    },
+    "source_date": "2023-05-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed summit declaration, soil-health data, and fertilizer-access analysis.",
+    "limitations": [
+      "Fertilizer-access data varies by country and crop.",
+      "Soil-nutrient data is sparse outside research sites."
+    ],
+    "confidence": "high"
+  }
+]

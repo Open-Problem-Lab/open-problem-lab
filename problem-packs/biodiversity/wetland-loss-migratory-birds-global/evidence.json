@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ramsar-wetland-loss-2023",
+    "problem_id": "biodiversity/wetland-loss-migratory-birds-global",
+    "claim": "Ramsar Convention reports 35 percent of global wetlands have been lost since 1970, with the fastest losses in Asia and Africa, threatening migratory bird populations that depend on wetland stopover sites.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global Wetland Outlook 2023",
+      "url": "https://www.ramsar.org/resources/global-wetland-outlook"
+    },
+    "source_date": "2023-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed Ramsar Global Wetland Outlook, loss statistics, and biodiversity-impact analysis.",
+    "limitations": [
+      "Wetland mapping varies by methodology.",
+      "Bird-population data is sparse for many species."
+    ],
+    "confidence": "high"
+  }
+]

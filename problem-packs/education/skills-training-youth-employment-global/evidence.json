@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ilo-youth-employment-2024",
+    "problem_id": "education/skills-training-youth-employment-global",
+    "claim": "ILO estimates 67 million unemployed youth globally, with youth unemployment rates 3-4x adult rates in many LMICs and skills mismatch as a primary barrier.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global Employment Trends for Youth 2024",
+      "url": "https://www.ilo.org/publications/global-employment-trends-youth-2024"
+    },
+    "source_date": "2024-08-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed ILO youth employment report, training coverage, and outcome data.",
+    "limitations": [
+      "Training-enrollment data varies by country.",
+      "Employment-outcome data depends on survey frequency."
+    ],
+    "confidence": "high"
+  }
+]

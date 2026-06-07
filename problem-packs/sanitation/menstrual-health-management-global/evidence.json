@@ -1,0 +1,20 @@
+[
+  {
+    "id": "who-unicef-mhm-2023",
+    "problem_id": "sanitation/menstrual-health-management-global",
+    "claim": "WHO/UNICEF JMP estimates millions of girls lack access to menstrual health materials, facilities, and information, with school absenteeism during menstruation reported by 10-20 percent of girls in multiple LMICs.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "JMP Progress on Drinking Water, Sanitation and Hygiene 2023",
+      "url": "https://www.who.int/publications/i/item/9789240073790"
+    },
+    "source_date": "2023-07-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed JMP report MHM indicators, school-attendance data, and barrier analysis.",
+    "limitations": [
+      "MHM data is newly collected and methodology is still maturing.",
+      "School-attendance data is self-reported and may have social-desirability bias."
+    ],
+    "confidence": "high"
+  }
+]

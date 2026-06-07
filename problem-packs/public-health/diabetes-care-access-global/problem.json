@@ -1,0 +1,34 @@
+{
+  "id": "public-health/diabetes-care-access-global",
+  "title": "Diabetes Detection And Insulin Access Gaps In Low- And Middle-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring diabetes detection and insulin access gaps in LMICs, linking STEPS survey data and medicine-availability data.",
+  "why_it_matters": "Build a verified workflow for measuring diabetes detection and insulin access gaps in LMICs, linking STEPS survey data and medicine-availability data.",
+  "success_metrics": [
+    {
+      "metric": "Data traceability",
+      "target": "Every claim links dated evidence with methodology.",
+      "validation_method": "Schema validation and reviewer spot-checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

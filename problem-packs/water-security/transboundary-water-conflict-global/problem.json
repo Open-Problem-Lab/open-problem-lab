@@ -1,0 +1,34 @@
+{
+  "id": "water-security/transboundary-water-conflict-global",
+  "title": "Transboundary Water Conflict Risk In Climate-Stressed River Basins",
+  "status": "scoped",
+  "domain": ["water-security"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for identifying where climate-driven water stress increases transboundary conflict risk, linking water-availability projections, upstream-downstream dependency data, and institutional-capacity data.",
+  "why_it_matters": "Build a verified workflow for identifying where climate-driven water stress increases transboundary conflict risk, linking water-availability projections, upstream-downstream dependency data, and institutional-capacity data.",
+  "success_metrics": [
+    {
+      "metric": "Data traceability",
+      "target": "Every claim links dated evidence with methodology.",
+      "validation_method": "Schema validation and reviewer spot-checks."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

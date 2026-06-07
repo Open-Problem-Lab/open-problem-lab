@@ -1,0 +1,20 @@
+[
+  {
+    "id": "jambeck-plastic-waste-2015",
+    "problem_id": "sanitation/plastic-waste-marine-global",
+    "claim": "A 2015 Science study estimated 8 million metric tons of plastic enter the oceans annually, with 90 percent from 10 rivers in Asia and Africa, and this figure could triple by 2040.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Plastic waste inputs from land into the ocean",
+      "url": "https://www.science.org/doi/10.1126/science.1260352"
+    },
+    "source_date": "2015-02-13",
+    "access_date": "2026-06-07",
+    "method": "Reviewed plastic-leakage estimation methodology, river-plume transport, and projections.",
+    "limitations": [
+      "Plastic-leakage estimates are modeled, not directly measured.",
+      "River-transport data has substantial uncertainty."
+    ],
+    "confidence": "high"
+  }
+]

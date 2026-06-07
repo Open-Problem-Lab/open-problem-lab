@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ceam-seed-systems-2023",
+    "problem_id": "climate-adaptation/climate-resilient-seeds-global",
+    "claim": "A 2023 review found that fewer than 10 percent of smallholder farmers in SSA and South Asia use improved, climate-resilient seed varieties, with access constrained by seed-system weaknesses.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Seed systems and climate-resilient agriculture in LMICs",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2211912423001234"
+    },
+    "source_date": "2023-03-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed seed-system analysis, adoption-rate studies, and barrier classification.",
+    "limitations": [
+      "Adoption data varies by crop and region.",
+      "Seed-system data is fragmented."
+    ],
+    "confidence": "medium"
+  }
+]

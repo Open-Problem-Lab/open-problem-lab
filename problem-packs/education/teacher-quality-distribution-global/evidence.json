@@ -1,0 +1,20 @@
+[
+  {
+    "id": "unesco-teacher-gap-2024",
+    "problem_id": "education/teacher-quality-distribution-global",
+    "claim": "UNESCO estimates a global shortage of 44 million teachers to achieve universal primary and secondary education by 2030, with the most severe shortages in SSA where pupil-to-trained-teacher ratios exceed 200:1.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global Report on Teachers 2024",
+      "url": "https://www.unesco.org/en/teachers"
+    },
+    "source_date": "2024-02-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed UNESCO teacher report, shortage estimates, and deployment-equity analysis.",
+    "limitations": [
+      "Teacher-qualification data varies by country definition.",
+      "Deployment data may not capture teacher absenteeism."
+    ],
+    "confidence": "high"
+  }
+]

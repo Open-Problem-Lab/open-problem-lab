@@ -1,0 +1,20 @@
+[
+  {
+    "id": "who-oral-health-2022",
+    "problem_id": "public-health/oral-health-access-global",
+    "claim": "WHO estimates 3.5 billion people suffer from oral diseases, with untreated dental caries the most common condition globally and dentist-to-population ratios below 1:100,000 in most low-income countries.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global Oral Health Status Report 2022",
+      "url": "https://www.who.int/publications/i/item/9789240061484"
+    },
+    "source_date": "2022-11-18",
+    "access_date": "2026-06-07",
+    "method": "Reviewed WHO oral health report, disease burden, and workforce data.",
+    "limitations": [
+      "Oral-health service data is sparse in LMICs.",
+      "Workforce data may not capture informal dental care."
+    ],
+    "confidence": "high"
+  }
+]

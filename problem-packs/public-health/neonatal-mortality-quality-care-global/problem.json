@@ -1,0 +1,34 @@
+{
+  "id": "public-health/neonatal-mortality-quality-care-global",
+  "title": "Neonatal Mortality And Quality Of Inpatient Newborn Care In Low-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring neonatal mortality risk relative to inpatient newborn care quality, linking DHS neonatal mortality data, health-facility assessment data, and service-readiness indicators.",
+  "why_it_matters": "2.3 million newborns died in the first month of life in 2022 — nearly half of all under-five deaths. The majority died from preventable causes: prematurity, birth asphyxia, and sepsis. While facility delivery rates have increased, the quality of inpatient newborn care in many facilities remains dangerously low, with gaps in resuscitation, thermal care, and infection management.",
+  "success_metrics": [
+    {
+      "metric": "Quality traceability",
+      "target": "Every quality-gap estimate links facility-assessment data and mortality data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

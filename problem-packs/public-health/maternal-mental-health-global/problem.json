@@ -1,0 +1,34 @@
+{
+  "id": "public-health/maternal-mental-health-global",
+  "title": "Perinatal Maternal Mental Health Detection And Care Access Gaps In Low-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring perinatal maternal depression detection and care access gaps in low-income countries, linking DHS maternal-health data, mental-health service data, and community-health-worker data.",
+  "why_it_matters": "WHO estimates 10-20 percent of women in LMICs experience perinatal depression, with detection rates below 10 percent and treatment rates near zero in most low-income countries. Maternal depression affects child growth, development, and survival, yet maternal mental health is systematically excluded from maternal health programs.",
+  "success_metrics": [
+    {
+      "metric": "Detection traceability",
+      "target": "Every detection-gap estimate links survey, service, and workforce data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

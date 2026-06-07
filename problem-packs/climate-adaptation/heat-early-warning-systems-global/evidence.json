@@ -1,0 +1,20 @@
+[
+  {
+    "id": "wmo-heat-health-2023",
+    "problem_id": "climate-adaptation/heat-early-warning-systems-global",
+    "claim": "WMO estimates fewer than 40 LMICs have operational heat-health early warning systems, and where they exist, evaluation of mortality-reduction effectiveness is rare.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WMO State of Climate Services 2023: Health",
+      "url": "https://public.wmo.int/en/resources/library/state-of-climate-services-2023-health"
+    },
+    "source_date": "2023-11-02",
+    "access_date": "2026-06-07",
+    "method": "Reviewed WMO report on heat-health warning systems, country coverage, and effectiveness evaluation.",
+    "limitations": [
+      "Effectiveness evaluation data is sparse.",
+      "Warning-system coverage does not guarantee effective response."
+    ],
+    "confidence": "high"
+  }
+]

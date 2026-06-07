@@ -1,0 +1,77 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/neonatal-mortality-quality-care-global",
+    "title": "Inventory neonatal health data",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory.",
+    "inputs": [
+      "DHS neonatal data",
+      "SPA facility data",
+      "HMIS inpatient data",
+      "population data"
+    ],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Four sources classified."
+  },
+  {
+    "id": "neonatal-mortality-mapping",
+    "problem_id": "public-health/neonatal-mortality-quality-care-global",
+    "title": "Map sub-national neonatal mortality rates",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A sub-national neonatal mortality map with confidence intervals.",
+    "inputs": ["DHS data", "population data", "small-area estimation methodology"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator confirms estimation methodology.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Mortality map with methodology and replication."
+  },
+  {
+    "id": "facility-quality-gap",
+    "problem_id": "public-health/neonatal-mortality-quality-care-global",
+    "title": "Map inpatient newborn care quality gaps",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A quality-gap map comparing mortality to facility readiness.",
+    "inputs": ["mortality map", "SPA data", "facility locations", "population data"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms quality methodology.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Gap map with methodology and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/neonatal-mortality-quality-care-global",
+    "title": "Red-team misuse of quality-gap data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["gap map", "safety policy"],
+    "expected_artifact": "SAFETY.md review.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/neonatal-mortality-quality-care-global",
+    "title": "Check whether outputs match newborn care planning needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "newborn care program context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision."
+  }
+]

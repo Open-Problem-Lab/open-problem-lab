@@ -1,0 +1,38 @@
+[
+  {
+    "id": "victora-breastfeeding-lancet-2016",
+    "problem_id": "public-health/breastfeeding-support-coverage-global",
+    "claim": "The 2016 Lancet Breastfeeding Series estimated that universal breastfeeding could prevent 820000 child deaths annually, making it the single most effective child-survival intervention.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Breastfeeding in the 21st century: epidemiology, mechanisms, and lifelong effect",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(15)01024-7/fulltext"
+    },
+    "source_date": "2016-01-30",
+    "access_date": "2026-06-07",
+    "method": "Reviewed Lancet series on breastfeeding epidemiology, survival benefits, and intervention effectiveness.",
+    "limitations": [
+      "Mortality reduction estimates are modeled and depend on baseline mortality assumptions.",
+      "Intervention-effectiveness data is strongest for low-income settings."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "unicef-breastfeeding-scorecard-2024",
+    "problem_id": "public-health/breastfeeding-support-coverage-global",
+    "claim": "UNICEF Global Breastfeeding Scorecard reports 44 percent early initiation and 48 percent exclusive breastfeeding at six months globally, with the lowest rates in West and Central Africa and South Asia.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "UNICEF Global Breastfeeding Scorecard 2024",
+      "url": "https://www.unicef.org/documents/global-breastfeeding-scorecard-2024"
+    },
+    "source_date": "2024-08-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed UNICEF scorecard, country-level breastfeeding indicators, and policy tracking.",
+    "limitations": [
+      "Country-level data masks substantial sub-national variation.",
+      "Exclusive-breastfeeding data is self-reported and may have recall bias."
+    ],
+    "confidence": "high"
+  }
+]

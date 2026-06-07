@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ipbes-pollinators-2016",
+    "problem_id": "biodiversity/pollinator-decline-agriculture-global",
+    "claim": "IPBES assessment found that 16 percent of vertebrate pollinators are threatened and wild pollinator populations are declining in many regions, threatening 5-8 percent of global crop production.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "IPBES Assessment Report on Pollinators, Pollination and Food Production",
+      "url": "https://www.ipbes.net/assessment-reports/pollinators"
+    },
+    "source_date": "2016-02-26",
+    "access_date": "2026-06-07",
+    "method": "Reviewed IPBES report chapters on pollinator status, drivers of decline, and crop-pollination dependence.",
+    "limitations": [
+      "Pollinator monitoring data is sparse outside Europe and North America.",
+      "Crop-pollination dependence estimates vary by crop and region."
+    ],
+    "confidence": "high"
+  }
+]

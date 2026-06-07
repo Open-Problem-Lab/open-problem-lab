@@ -1,0 +1,20 @@
+[
+  {
+    "id": "who-diabetes-2024",
+    "problem_id": "public-health/diabetes-care-access-global",
+    "claim": "WHO estimates 537 million adults have diabetes, with 75 percent in LMICs and insulin unavailable or unaffordable for over 50 percent of those who need it.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO Diabetes Fact Sheet 2024",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/diabetes"
+    },
+    "source_date": "2024-04-05",
+    "access_date": "2026-06-07",
+    "method": "Reviewed WHO diabetes fact sheet, global burden, and insulin-access data.",
+    "limitations": [
+      "Detection rates depend on screening coverage.",
+      "Insulin-access data is from facility surveys of variable frequency."
+    ],
+    "confidence": "high"
+  }
+]

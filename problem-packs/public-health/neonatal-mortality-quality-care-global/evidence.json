@@ -1,0 +1,20 @@
+[
+  {
+    "id": "unicef-neonatal-mortality-2024",
+    "problem_id": "public-health/neonatal-mortality-quality-care-global",
+    "claim": "UNICEF estimates 2.3 million neonatal deaths in 2022, with SSA and South Asia accounting for over 80 percent, and three causes — prematurity, birth asphyxia, sepsis — responsible for 75 percent of deaths.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Levels and Trends in Child Mortality 2024",
+      "url": "https://data.unicef.org/resources/levels-and-trends-in-child-mortality-2024/"
+    },
+    "source_date": "2024-03-13",
+    "access_date": "2026-06-07",
+    "method": "Reviewed UNICEF child mortality report, neonatal mortality data, and cause-of-death breakdown.",
+    "limitations": [
+      "Cause-of-death data depends on verbal autopsy where vital registration is incomplete.",
+      "Sub-national mortality estimates are modeled."
+    ],
+    "confidence": "high"
+  }
+]

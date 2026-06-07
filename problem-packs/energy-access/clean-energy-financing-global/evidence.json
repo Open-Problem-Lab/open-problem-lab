@@ -1,0 +1,20 @@
+[
+  {
+    "id": "irena-financing-2024",
+    "problem_id": "energy-access/clean-energy-financing-global",
+    "claim": "IRENA estimates that clean energy investment in low-income countries needs to increase 7-fold to meet SDG7 and climate goals, with financing gaps largest for distributed renewables.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "World Energy Transitions Outlook 2024",
+      "url": "https://www.irena.org/publications/2024/Jun/World-Energy-Transitions-Outlook-2024"
+    },
+    "source_date": "2024-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed IRENA report investment data, financing-gap analysis, and technology breakdowns.",
+    "limitations": [
+      "Investment data is aggregated at country level.",
+      "Financing-gap estimates depend on access-scenario assumptions."
+    ],
+    "confidence": "high"
+  }
+]

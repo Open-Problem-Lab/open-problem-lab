@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ioc-tsunami-warning-2024",
+    "problem_id": "disaster-resilience/tsunami-early-warning-indian-ocean",
+    "claim": "UNESCO IOC reports that all Indian Ocean countries have tsunami-warning infrastructure but last-mile dissemination and community-preparedness gaps remain in over 60 percent of coastal districts.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "IOC Tsunami Early Warning and Mitigation System Status Report 2024",
+      "url": "https://www.ioc.unesco.org/en/ioc-tsunami"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed IOC status report on warning-system coverage, last-mile gaps, and preparedness indicators.",
+    "limitations": [
+      "Warning-system coverage does not guarantee effective response.",
+      "Preparedness data is self-reported."
+    ],
+    "confidence": "high"
+  }
+]

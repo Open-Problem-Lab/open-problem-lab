@@ -1,0 +1,20 @@
+[
+  {
+    "id": "who-maternal-mental-health-2022",
+    "problem_id": "public-health/maternal-mental-health-global",
+    "claim": "WHO estimates 10-20 percent of women in LMICs experience perinatal depression, with detection below 10 percent, treatment near zero, and significant child-development consequences.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO Guide for Integration of Perinatal Mental Health in Maternal and Child Health Services",
+      "url": "https://www.who.int/publications/i/item/9789240057142"
+    },
+    "source_date": "2022-09-19",
+    "access_date": "2026-06-07",
+    "method": "Reviewed WHO guide, prevalence estimates, and integration framework.",
+    "limitations": [
+      "Prevalence estimates depend on screening instrument and population.",
+      "Detection data is sparse outside research settings."
+    ],
+    "confidence": "high"
+  }
+]

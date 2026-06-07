@@ -1,0 +1,20 @@
+[
+  {
+    "id": "who-anemia-prevalence-2023",
+    "problem_id": "public-health/anemia-women-adolescents-global",
+    "claim": "WHO estimates 30 percent of women aged 15-49 have anemia, with prevalence exceeding 50 percent in several Sub-Saharan African and South Asian countries.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO Global Anaemia Estimates 2023",
+      "url": "https://www.who.int/data/gho/data/themes/topics/anaemia_in_women_and_children"
+    },
+    "source_date": "2023-05-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed WHO anemia database, prevalence estimates, and intervention coverage.",
+    "limitations": [
+      "Anemia estimates modeled from surveys of variable recency.",
+      "IFA coverage data is self-reported."
+    ],
+    "confidence": "high"
+  }
+]

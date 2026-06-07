@@ -1,0 +1,34 @@
+{
+  "id": "climate-health/dust-storm-health-global",
+  "title": "Dust Storm PM10 Exposure And Respiratory Health Impact In Arid Regions",
+  "status": "scoped",
+  "domain": ["climate-health", "air-quality"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring dust-storm PM10 exposure and respiratory health impact.",
+  "why_it_matters": "Build a verified workflow for measuring dust-storm PM10 exposure and respiratory health impact.",
+  "success_metrics": [
+    {
+      "metric": "Data traceability",
+      "target": "Every claim links dated evidence with methodology.",
+      "validation_method": "Schema validation and reviewer spot-checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

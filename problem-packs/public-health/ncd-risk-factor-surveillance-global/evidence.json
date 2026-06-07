@@ -1,0 +1,20 @@
+[
+  {
+    "id": "who-steps-surveillance-2023",
+    "problem_id": "public-health/ncd-risk-factor-surveillance-global",
+    "claim": "WHO STEPS surveys have been conducted in over 120 countries but fewer than 40 percent repeat surveys within five years, leaving gaps in NCD risk-factor trend data in high-burden countries.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO STEPS Surveillance Manual",
+      "url": "https://www.who.int/teams/noncommunicable-diseases/surveillance/systems-tools/steps"
+    },
+    "source_date": "2023-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed STEPS country coverage, survey frequency, and data gaps.",
+    "limitations": [
+      "STEPS surveys measure risk factors, not disease prevalence.",
+      "Survey timing varies and is not synchronized across countries."
+    ],
+    "confidence": "high"
+  }
+]

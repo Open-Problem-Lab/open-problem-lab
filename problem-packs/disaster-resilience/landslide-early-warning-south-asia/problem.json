@@ -1,0 +1,34 @@
+{
+  "id": "disaster-resilience/landslide-early-warning-south-asia",
+  "title": "Landslide Early Warning And Vulnerability Mapping In The Himalayan Region",
+  "status": "scoped",
+  "domain": ["disaster-resilience"],
+  "region": ["south-asia"],
+  "summary": "Build a verified workflow for landslide susceptibility mapping and early warning in the Himalayan region, linking satellite-derived slope-stability data, rainfall-trigger data, and population-exposure data.",
+  "why_it_matters": "Build a verified workflow for landslide susceptibility mapping and early warning in the Himalayan region, linking satellite-derived slope-stability data, rainfall-trigger data, and population-exposure data.",
+  "success_metrics": [
+    {
+      "metric": "Data traceability",
+      "target": "Every claim links dated evidence with methodology.",
+      "validation_method": "Schema validation and reviewer spot-checks."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

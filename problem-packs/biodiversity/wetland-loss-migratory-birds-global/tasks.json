@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "biodiversity/wetland-loss-migratory-birds-global",
-    "title": "Inventory data sources for biodiversity/wetland-loss-migratory-birds-global",
+    "title": "Inventory satellite wetland-change, bird-population, flyway, and protected-area data sources for migratory flyway analysis",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for wetland loss detection and migratory bird population impact.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates satellite wetland-change products (JRC Global Surface Water), bird-population databases (IWC, eBird), flyway boundary data, and Ramsar protected-site data into usable, limited, and rejected categories with explicit flyway-coverage assessment.",
+    "inputs": [
+      "JRC Global Surface Water Explorer documentation",
+      "International Waterbird Census data-access documentation",
+      "eBird flyway coverage and bias assessment",
+      "Ramsar Sites Information Service",
+      "Published flyway-scale bird population trend studies"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, spatial resolution, temporal coverage, and documented flyway-coverage gaps — particularly IWC monitoring asymmetry between European and Asian/African flyways.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, flyway coverage, temporal consistency, and monitoring-gap documentation."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "wetland-change-mapping",
     "problem_id": "biodiversity/wetland-loss-migratory-birds-global",
-    "title": "Measure sub-national gap for wetland loss detection and migratory bird population impact",
+    "title": "Map satellite-detected wetland change at key stopover sites along at least one major migratory flyway",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A stopover-site wetland-change analysis for at least one major flyway, documenting permanent water loss, seasonal change, and conversion trends at sites with bird-population monitoring data, with explicit resolution and tidal-cycle limitations.",
+    "inputs": [
+      "JRC Global Surface Water monthly observations for target flyway region",
+      "Ramsar site boundaries and other key stopover-site locations",
+      "Administrative boundary data for regional aggregation",
+      "Published intertidal wetland mapping studies for tidal-cycle correction"
+    ],
+    "expected_artifact": "validation.md update with wetland-change methodology and site-level results.",
+    "validation_method": "Replicator confirms JRC data extraction, wetland-change classification methodology, and tidal-cycle handling for intertidal sites, with explicit documentation of resolution limitations for small wetlands.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Wetland-change analysis includes methodology, site-level results, resolution limitations, tidal-cycle documentation, and replication status for at least one flyway."
   },
   {
-    "id": "risk-mapping",
+    "id": "bird-population-correlation",
     "problem_id": "biodiversity/wetland-loss-migratory-birds-global",
-    "title": "Produce sub-national risk map for wetland loss detection and migratory bird population impact",
+    "title": "Link wetland-change trends to migratory bird population counts at stopover sites with multi-threat attribution",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A bird-population correlation analysis linking wetland-change trends to IWC and eBird population counts for at least one flyway, with explicit documentation of monitoring-coverage gaps, temporal consistency limitations, and multi-threat attribution caveats.",
+    "inputs": [
+      "wetland-change analysis results",
+      "IWC and eBird population count data for target flyway",
+      "Published threat assessments for target flyway species",
+      "Flyway boundary and stopover-site dependency data"
+    ],
+    "expected_artifact": "outputs.md update with correlation methodology and multi-threat attribution documentation.",
+    "validation_method": "Replicator confirms population data extraction, correlation methodology, and multi-threat attribution documentation — particularly that wetland loss is not presented as the sole driver of decline.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "medium",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "safety_risk": "high",
+    "done_condition": "Correlation analysis includes methodology, monitoring-coverage gaps, temporal consistency assessment, multi-threat attribution caveats, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-attribution-overstatement",
     "problem_id": "biodiversity/wetland-loss-migratory-birds-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team wetland-loss attribution overstatement and conservation-priority misuse risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how wetland-bird correlations could overstate the role of wetland loss relative to other flyway threats, how results could be misused to justify conservation-priority changes without multi-threat context, and how site-level analysis could be misinterpreted at flyway scale.",
+    "inputs": [
+      "bird-population correlation outputs",
+      "wetland-change analysis outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every wetland-bird attribution claim has multi-threat caveats, monitoring-coverage documentation, and explicit non-use cases. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "done_condition": "Every wetland-bird attribution claim is either blocked, softened to multi-threat context language with explicit monitoring-gap caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "biodiversity/wetland-loss-migratory-birds-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match wetland conservation and flyway management decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the wetland-bird analysis would change any real decision for conservation organizations, Ramsar Convention bodies, or flyway management partnerships without creating perverse incentives.",
+    "inputs": [
+      "draft wetland-bird outputs",
+      "Ramsar Convention and flyway partnership context",
+      "conservation-priority-setting documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for conservation and flyway management audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that wetland-loss attribution diverts attention from other flyway threats or that site-level findings are over-extrapolated to flyway scale. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "done_condition": "The output has a named user (e.g., East Asian-Australasian Flyway Partnership secretariat), named decision (e.g., stopover-site conservation prioritization), explicit non-use cases (e.g., not for flyway-scale population decline attribution without multi-threat context), and replicated field-reality review."
   }
 ]

@@ -2,7 +2,7 @@
   {
     "id": "ramsar-wetland-loss-2023",
     "problem_id": "biodiversity/wetland-loss-migratory-birds-global",
-    "claim": "Ramsar Convention reports 35 percent of global wetlands have been lost since 1970, with the fastest losses in Asia and Africa, threatening migratory bird populations that depend on wetland stopover sites.",
+    "claim": "The Ramsar Global Wetland Outlook 2023 reports 35 percent of global wetlands lost since 1970, with the fastest losses in Asia (driven by coastal reclamation and aquaculture) and Africa (driven by agricultural expansion and water diversion), at a rate three times faster than forest loss.",
     "evidence_type": "primary-source",
     "source": {
       "title": "Global Wetland Outlook 2023",
@@ -10,10 +10,72 @@
     },
     "source_date": "2023-01-01",
     "access_date": "2026-06-07",
-    "method": "Reviewed Ramsar Global Wetland Outlook, loss statistics, and biodiversity-impact analysis.",
+    "method": "Reviewed Ramsar Global Wetland Outlook for global and regional loss statistics, driver analysis, and biodiversity-impact framing. Focused on the 35 percent figure methodology and regional breakdown.",
     "limitations": [
-      "Wetland mapping varies by methodology.",
-      "Bird-population data is sparse for many species."
+      "The 35 percent figure is a global aggregate — regional and local loss rates vary substantially, and some wetland types (e.g., inland marshes) have lost more than others (e.g., mangroves).",
+      "Wetland mapping methodology varies by country and time period — the 35 percent figure combines multiple mapping approaches with different classification standards.",
+      "The Outlook does not provide site-level loss data suitable for flyway-scale stopover-site analysis.",
+      "The figure dates from 1970 — more recent losses in critical flyway regions may be accelerating."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "jrc-global-surface-water",
+    "problem_id": "biodiversity/wetland-loss-migratory-birds-global",
+    "claim": "JRC Global Surface Water Explorer provides monthly surface-water observations at 30m resolution from 1984 to present from Landsat imagery, covering all inland and coastal water bodies larger than 30x30 meters, enabling detection of permanent wetland loss, seasonal changes, and conversion to other land uses.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "JRC Global Surface Water Explorer",
+      "url": "https://global-surface-water.appspot.com/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed JRC product documentation for detection algorithm, spatial resolution, temporal coverage, water-body classification, and validation studies. Focused on intertidal and small-wetland detection capabilities.",
+    "limitations": [
+      "The 30m resolution may miss small ephemeral wetlands that provide critical stopover habitat for migratory birds — wetlands smaller than one Landsat pixel are not detected.",
+      "Intertidal wetland detection is complicated by tidal cycles — the same pixel may appear as water or land depending on tidal state, not actual wetland loss.",
+      "Cloud cover in tropical regions creates temporal gaps in the monthly time series.",
+      "The product classifies surface water, not wetland habitat quality — a water body that persists but is degraded by pollution or disturbance is not captured as habitat loss."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "east-asian-australasian-flyway-decline",
+    "problem_id": "biodiversity/wetland-loss-migratory-birds-global",
+    "claim": "Shorebird populations on the East Asian-Australasian Flyway have declined by over 50 percent since the 1990s, primarily due to the loss of intertidal wetlands in the Yellow Sea region from coastal reclamation for agriculture, aquaculture, and urban development.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Rapid population decline in migratory shorebirds along the East Asian-Australasian Flyway",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534719302345"
+    },
+    "source_date": "2023-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed population trend analysis methodology, stopover-site dependency assessment, and threat-attribution approach for East Asian-Australasian Flyway shorebirds.",
+    "limitations": [
+      "The 50 percent decline figure is an aggregate across multiple shorebird species — individual species trends vary from stable to over 80 percent decline.",
+      "Population trends are derived from International Waterbird Census and national bird surveys with variable monitoring effort across sites and years.",
+      "Attributing declines specifically to Yellow Sea wetland loss is complicated by other threats across the flyway — hunting in Southeast Asia, disturbance at Australian non-breeding sites, and climate-change effects on Arctic breeding grounds.",
+      "The causal chain from wetland loss to population decline has been established primarily for bar-tailed godwit and red knot; for many other species the linkage is inferred rather than directly demonstrated."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "international-waterbird-census-coverage",
+    "problem_id": "biodiversity/wetland-loss-migratory-birds-global",
+    "claim": "The International Waterbird Census and eBird provide population-count data for migratory waterbirds at thousands of sites globally, but data is concentrated in well-monitored sites in Europe and North America with sparser coverage along Asian and African flyways where wetland loss is fastest.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "International Waterbird Census — Wetlands International",
+      "url": "https://www.wetlands.org/what-we-do/international-waterbird-census/"
+    },
+    "source_date": "2025-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed IWC data-access documentation, site-coverage maps, and temporal-coverage assessment. Cross-referenced with eBird flyway coverage for migratory waterbirds.",
+    "limitations": [
+      "IWC site coverage is heavily biased toward European wetlands — Asian and African flyway coverage is sparser and less consistent across years.",
+      "Count methodology varies across sites and countries — some sites have rigorous annual counts while others have opportunistic or infrequent surveys.",
+      "eBird data has severe spatial bias toward accessible sites near roads and towns — remote wetlands critical for shorebirds may be underrepresented.",
+      "Temporal coverage varies by site — long-term trend analysis requires consistent monitoring effort that is available at few Asian or African sites."
     ],
     "confidence": "high"
   }

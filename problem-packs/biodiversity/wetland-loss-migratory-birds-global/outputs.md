@@ -2,12 +2,18 @@
 
 ## Accepted Outputs
 
-None yet.
+No accepted outputs exist yet.
 
-## Candidate Types
+This is deliberate. The first pack is scoped, not solved.
 
-Evidence inventory, sub-national gap map, red-team review, field-reality review.
+## Candidate Output Types
+
+- Evidence inventory with satellite wetland product comparison and flyway bird-monitoring coverage assessment.
+- Stopover-site wetland-change analysis with JRC temporal coverage and resolution limitations.
+- Flyway-scale bird-population correlation linking wetland-change trends to IWC and eBird population counts.
+- Failure-mode review of wetland-loss attribution overstatement and conservation-priority misuse.
+- Field-reality review with Ramsar Convention and flyway partnership context.
 
 ## Publication Rule
 
-Outputs must state what they are not. A gap map is not a policy or investment recommendation.
+Published outputs must say what they are not. A wetland-bird correlation is not proof that wetland loss is the primary driver of population decline — other flyway threats (hunting, pollution, climate change, disturbance) must be documented. Stopover-site analysis is not flyway-scale attribution without multi-site synthesis and monitoring-coverage documentation.

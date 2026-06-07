@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["biodiversity", "climate-health"],
   "region": ["global"],
-  "summary": "Build a verified workflow for detecting wetland loss and estimating migratory bird population impact using satellite-derived wetland maps and bird-count data.",
-  "why_it_matters": "Build a verified workflow for detecting wetland loss and estimating migratory bird population impact using satellite-derived wetland maps and bird-count data.",
+  "summary": "Build a verified workflow for linking satellite-detected wetland loss at specific stopover sites along major migratory flyways to waterbird population trends, with explicit wetland-bird linkage methodology, flyway-scale data-coverage assessment, and multi-threat attribution documentation.",
+  "why_it_matters": "An estimated 35 percent of global wetlands have been lost since 1970, with the fastest losses in Asia and Africa. Shorebird populations on the East Asian-Australasian Flyway have declined by over 50 percent since the 1990s, primarily due to intertidal wetland loss in the Yellow Sea. Yet the analytical chain from satellite-detected wetland change at specific stopover sites to flyway-scale population impact has not been systematically built. Without verified wetland-bird linkage analysis, conservation prioritization relies on expert judgment that may miss critical unprotected stopover sites.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Wetland-change detection traceability",
+      "target": "Every wetland-loss claim links to satellite product, resolution, temporal coverage, and wetland-type classification methodology.",
+      "validation_method": "Schema validation and reviewer spot-checks against satellite wetland-change documentation."
+    },
+    {
+      "metric": "Flyway-scale data-coverage documentation",
+      "target": "Every bird-population trend claim documents International Waterbird Census and eBird data coverage for the analyzed flyway, including site-monitoring gaps and temporal coverage.",
+      "validation_method": "Reviewer confirms data-coverage assessment for each flyway analyzed."
+    },
+    {
+      "metric": "Multi-threat attribution honesty",
+      "target": "No wetland-loss-to-bird-decline attribution is merged without documenting other threats across the migratory range (hunting, pollution, climate change, disturbance).",
+      "validation_method": "Red-team reviewer confirms every attribution claim has explicit multi-threat caveats."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, multi-threat attribution safety review, and replication for quantitative outputs."
   }
 }

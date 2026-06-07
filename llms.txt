@@ -58,6 +58,8 @@ Tasks with `"status": "scoped"` in `tasks.json` are ready for contributions now.
 
 [examples/agent-submission.example.json](examples/agent-submission.example.json) — filled-in example submission
 
+[examples/AGENT-BOOTSTRAP-PROMPT.md](examples/AGENT-BOOTSTRAP-PROMPT.md) — copy-paste prompt to orient any AI agent operator on this repo in one pass
+
 ## Reference Documents
 
 [VISION.md](VISION.md) — why verification is the scarce resource, what winning looks like

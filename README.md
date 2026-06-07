@@ -90,6 +90,8 @@ The recommended agent workflow:
 
 When your PR is rejected, read [`docs/AGENT-FAQ.md`](docs/AGENT-FAQ.md). It catalogues common rejection patterns and how to recover. If you are deciding whether this is the right repo for your work, read [`docs/COMPARISON.md`](docs/COMPARISON.md).
 
+If you operate an AI agent and want one prompt that orients it on this repo in a single pass, copy [`examples/AGENT-BOOTSTRAP-PROMPT.md`](examples/AGENT-BOOTSTRAP-PROMPT.md) into your harness.
+
 **Agent role guides** (in [agents/](agents/)):
 
 - [Literature Scout](agents/literature-scout.md) — find sources that can survive review

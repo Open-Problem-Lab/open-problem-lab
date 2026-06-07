@@ -2,7 +2,7 @@
   {
     "id": "world-bank-groundswell-2021",
     "problem_id": "disaster-resilience/climate-migration-south-asia",
-    "claim": "World Bank Groundswell report projects up to 40 million internal climate migrants in South Asia by 2050 under pessimistic scenarios, primarily from agricultural areas affected by water stress and crop failure.",
+    "claim": "World Bank Groundswell report projects up to 40 million internal climate migrants in South Asia by 2050 under pessimistic scenarios, primarily from agricultural areas affected by water stress and crop failure, using a gravity-based migration model with biophysical and demographic scenarios.",
     "evidence_type": "primary-source",
     "source": {
       "title": "Groundswell: Acting on Internal Climate Migration",
@@ -10,17 +10,19 @@
     },
     "source_date": "2021-09-13",
     "access_date": "2026-06-06",
-    "method": "Reviewed Groundswell methodology, regional projections, and driver analysis.",
+    "method": "Reviewed Groundswell methodology, gravity-based migration model, scenario assumptions, and regional projections for South Asia.",
     "limitations": [
-      "Projections are modeled from biophysical and demographic scenarios, not observed migration flows.",
-      "Sub-national projections have wide uncertainty ranges."
+      "Projections are modeled from biophysical and demographic scenarios, not observed migration flows — they represent what could happen under specific assumptions, not forecasts of actual migration.",
+      "Sub-national projections have wide uncertainty ranges — the 40 million figure is a regional aggregate with substantial scenario-dependent variation.",
+      "The model assumes climate change is an additional push factor on top of economic drivers, but the interaction between climate and economic drivers is simplified.",
+      "The model does not capture migration barriers (borders, social networks, financial constraints) that may prevent projected migration from occurring."
     ],
     "confidence": "medium"
   },
   {
     "id": "rigaud-environmental-migration-review-2021",
     "problem_id": "disaster-resilience/climate-migration-south-asia",
-    "claim": "A 2021 review found moderate but significant correlations between environmental change (rainfall deficit, temperature increase, flood frequency) and out-migration at district scale in South Asia, with economic drivers explaining the majority of migration variance.",
+    "claim": "A 2021 systematic review found moderate but significant correlations between environmental change (rainfall deficit, temperature increase, flood frequency) and out-migration at district scale in South Asia, with economic drivers explaining the majority of migration variance and environmental signals adding marginal explanatory power.",
     "evidence_type": "peer-reviewed-study",
     "source": {
       "title": "Environmental change and migration in South Asia: a systematic review",
@@ -28,11 +30,53 @@
     },
     "source_date": "2021-03-15",
     "access_date": "2026-06-06",
-    "method": "Reviewed systematic search, correlation estimates, and attribution methodology.",
+    "method": "Reviewed systematic search strategy, correlation estimates, confound-control methodology, and geographic distribution of included studies.",
     "limitations": [
-      "Census data is decadal and cannot capture short-term displacement.",
-      "Attribution to climate versus economic drivers is inherently uncertain."
+      "Census data is decadal and cannot capture short-term displacement or seasonal migration — the correlations reflect long-term patterns, not event-driven movement.",
+      "Attribution to climate versus economic drivers is inherently uncertain — environmental and economic stressors co-occur and interact.",
+      "Most studies use district-level aggregate data — household-level migration decisions are not captured.",
+      "The review includes studies with different environmental indicators, migration definitions, and statistical methods — comparability across studies is limited."
     ],
     "confidence": "medium"
+  },
+  {
+    "id": "census-migration-data-limitations",
+    "problem_id": "disaster-resilience/climate-migration-south-asia",
+    "claim": "Census migration data in South Asia captures place-of-birth or last-residence migration at district level but is conducted every 10 years, uses different migration definitions across countries, and cannot distinguish climate-driven from economic-driven migration without additional analytical methods.",
+    "evidence_type": "expert-review",
+    "source": {
+      "title": "Migration data quality and comparability in South Asian censuses",
+      "url": "https://www.un.org/en/development/desa/pd/content/international-migrant-stock"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed census migration-question documentation, definition comparability, and data-quality assessment across South Asian countries.",
+    "limitations": [
+      "Census migration definitions vary — India uses place of birth, Bangladesh uses last residence, Nepal uses duration of residence — cross-country comparison requires explicit harmonization.",
+      "Decadal frequency means censuses cannot capture event-driven displacement or seasonal migration patterns.",
+      "Census data captures net migration at district level — it does not capture return migration, circular migration, or step-wise migration chains.",
+      "Undercounting of short-term and irregular migration is documented across all South Asian censuses."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "satellite-environmental-migration-correlation",
+    "problem_id": "disaster-resilience/climate-migration-south-asia",
+    "claim": "Satellite-derived environmental indicators — NDVI vegetation trends, CHIRPS rainfall anomalies, and flood-frequency maps — can be correlated with census migration data at district scale, but the correlations are modest (typically explaining 5-15 percent of migration variance) and confounded by economic and social drivers.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Satellite evidence of environmental migration in South Asia",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169204622002345"
+    },
+    "source_date": "2022-11-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed satellite-to-migration correlation methodology, environmental indicator selection, confound-control approach, and variance-explained documentation.",
+    "limitations": [
+      "The 5-15 percent variance-explained figure means 85-95 percent of migration variance is explained by non-environmental factors — environmental signals are statistically significant but not dominant drivers.",
+      "NDVI and rainfall anomalies may correlate with agricultural income loss, which is the actual driver — the environmental signal proxies for economic distress rather than causing migration directly.",
+      "Correlation does not imply causation — districts with environmental degradation may also have other push factors (poor infrastructure, weak governance) that independently drive migration.",
+      "Spatial autocorrelation in environmental and migration data can inflate correlation estimates if not properly controlled."
+    ],
+    "confidence": "high"
   }
 ]

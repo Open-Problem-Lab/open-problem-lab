@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["disaster-resilience", "climate-adaptation"],
   "region": ["south-asia"],
-  "summary": "Build a verified workflow for detecting climate-driven internal migration patterns in South Asia, linking census migration data, satellite-derived environmental change, and economic indicators at sub-national scale.",
-  "why_it_matters": "The World Bank estimates climate change could force 40 million internal migrants in South Asia by 2050. But migration data comes from censuses conducted every 10 years, and attributing migration to climate versus economic drivers is methodologically contested. Satellite data can track the environmental changes people are fleeing, but linking environmental signals to verified migration flows is the missing chain.",
+  "summary": "Build a verified workflow for detecting environmental-migration correlations at sub-national scale in South Asia using census migration data and satellite-derived environmental change, with explicit economic-confound controls, non-causal attribution caveats, and the distinction between adaptive and distress-driven migration.",
+  "why_it_matters": "The World Bank estimates climate change could force 40 million internal migrants in South Asia by 2050. Migration data comes from decadal censuses that ask where people live, not why they moved. Satellite data can see the environmental changes people may be fleeing, but attributing migration to climate versus economic drivers is methodologically contested — economic drivers explain more migration variance than environmental signals in most studies. Without verified correlation analysis with appropriate attribution caveats, climate-migration claims risk being used to restrict mobility or justify inappropriate policy responses.",
   "success_metrics": [
     {
       "metric": "Attribution honesty",
-      "target": "Every migration signal distinguishes climate-correlated from climate-caused migration with explicit methodology.",
-      "validation_method": "Schema validation and reviewer checks."
+      "target": "Every migration-environment correlation claim documents economic confound controls and explicitly states correlation does not imply causation.",
+      "validation_method": "Schema validation and reviewer spot-checks against attribution-methodology documentation."
+    },
+    {
+      "metric": "Migration-definition documentation",
+      "target": "Every migration-flow claim documents the census migration definition used (place of birth, last residence, duration) and cross-country comparability limitations.",
+      "validation_method": "Reviewer confirms migration-definition source and comparability assessment."
+    },
+    {
+      "metric": "Adaptive-vs-distress distinction",
+      "target": "No migration claim is merged without documenting whether observed migration is likely adaptive (household strategy) or distress-driven (forced displacement), with explicit evidence for the classification.",
+      "validation_method": "Red-team reviewer confirms adaptive-vs-distress documentation for every migration claim."
     }
   ],
   "safety_level": "high",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, attribution-safety review, and replication for quantitative outputs."
   }
 }

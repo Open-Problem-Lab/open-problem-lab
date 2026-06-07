@@ -2,77 +2,94 @@
   {
     "id": "source-inventory",
     "problem_id": "disaster-resilience/climate-migration-south-asia",
-    "title": "Inventory migration and environmental data",
+    "title": "Inventory census migration, satellite environmental, economic, and survey data sources for South Asian migration-environment analysis",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "Dated source inventory.",
+    "outcome": "A dated source inventory that separates census migration data (definition, frequency, coverage), satellite environmental indicators (NDVI, CHIRPS, flood data), economic surveys (employment, income), and population data into usable, limited, and rejected categories with explicit cross-country comparability assessment.",
     "inputs": [
-      "census migration",
-      "NDVI",
-      "CHIRPS",
-      "employment surveys",
-      "population data"
+      "National census migration-question documentation for South Asian countries",
+      "MODIS NDVI and CHIRPS rainfall product documentation",
+      "NSS and equivalent employment/income survey documentation",
+      "WorldPop gridded population data",
+      "Published environmental-migration correlation studies"
     ],
-    "expected_artifact": "datasets.md plus evidence.json.",
-    "validation_method": "Reviewer checks sources.",
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, migration-definition comparability, and environmental-indicator methodology.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "medium",
-    "done_condition": "Five sources classified."
+    "safety_risk": "high",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering migration-definition comparability, temporal resolution, and cross-country harmonization."
   },
   {
-    "id": "migration-compilation",
+    "id": "migration-data-compilation",
     "problem_id": "disaster-resilience/climate-migration-south-asia",
-    "title": "Compile sub-national migration flow data",
+    "title": "Compile harmonized district-level migration flow data for at least two South Asian countries",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "District-level migration-flow dataset with comparability documentation.",
-    "inputs": ["census data", "survey data", "migration definitions"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator confirms data compilation and comparability.",
+    "outcome": "A harmonized district-level migration-flow dataset for at least two South Asian countries, documenting census migration definitions used, harmonization methodology, and cross-country comparability limitations.",
+    "inputs": [
+      "Census migration data for target countries",
+      "Migration-definition documentation and harmonization methodology",
+      "Administrative boundary data for district-level aggregation",
+      "Published census migration-data quality assessments"
+    ],
+    "expected_artifact": "validation.md update with migration-data methodology and comparability assessment.",
+    "validation_method": "Replicator confirms census data extraction, definition harmonization methodology, and comparability documentation for each target country.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Migration dataset with source documentation and replication."
+    "done_condition": "Migration dataset includes methodology, definition documentation, harmonization approach, and replication status for at least two countries."
   },
   {
-    "id": "environmental-correlation",
+    "id": "environmental-correlation-analysis",
     "problem_id": "disaster-resilience/climate-migration-south-asia",
-    "title": "Correlate environmental change with migration flows",
+    "title": "Correlate satellite-derived environmental change with census migration flows with economic confound controls",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "Correlation analysis with explicit non-causal caveats.",
-    "inputs": ["migration data", "NDVI trends", "rainfall anomalies", "economic controls"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator reruns with alternative environmental indicators and confirms correlation robustness.",
+    "outcome": "A correlation analysis linking NDVI trends, rainfall anomalies, and flood frequency to census migration flows at district scale, with explicit economic-confound controls, variance-explained documentation, and non-causal attribution caveats.",
+    "inputs": [
+      "harmonized migration-flow dataset",
+      "MODIS NDVI trends for target districts",
+      "CHIRPS rainfall anomalies for target periods",
+      "economic control variables (employment, income, agricultural productivity)"
+    ],
+    "expected_artifact": "outputs.md update with correlation methodology, confound controls, and non-causal caveats.",
+    "validation_method": "Replicator confirms correlation methodology, economic-confound controls, variance-explained documentation, and spatial-autocorrelation handling.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "high",
-    "done_condition": "Correlation includes economic controls, non-causal caveats, and replication."
+    "done_condition": "Correlation analysis includes methodology, economic confound controls, variance-explained (5-15 percent typical), non-causal caveats, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-attribution-overstatement",
     "problem_id": "disaster-resilience/climate-migration-south-asia",
-    "title": "Red-team misuse of climate migration claims",
+    "title": "Red-team climate-migration attribution overstatement and mobility-restriction risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "Failure-mode review.",
-    "inputs": ["correlation analysis", "safety policy"],
-    "expected_artifact": "SAFETY.md review.",
-    "validation_method": "Mitigations or block, replicated.",
+    "outcome": "A failure-mode review identifying how environmental-migration correlations could overstate climate causation, how migration maps could be used to restrict mobility rather than support adaptation, and how the adaptive-vs-distress distinction could be lost in policy communication.",
+    "inputs": [
+      "environmental correlation analysis outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every correlation claim has economic-confound controls, variance-explained documentation, and non-causal caveats. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Claims qualified or gated."
+    "done_condition": "Every climate-migration claim is either blocked, softened to correlation-limited language with explicit economic confound and non-causal caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "disaster-resilience/climate-migration-south-asia",
-    "title": "Check whether outputs match urban-planning decision needs",
+    "title": "Check whether outputs match urban-planning and adaptation-policy decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "Field-facing review.",
-    "inputs": ["draft outputs", "urban planning context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "outcome": "A field-facing review of whether the environmental-migration correlation analysis would change any real decision for urban planners, adaptation policymakers, or district administrators without creating perverse incentives.",
+    "inputs": [
+      "draft correlation outputs",
+      "urban planning context for destination cities",
+      "adaptation policy context for origin districts"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for urban-planning and adaptation audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that migration maps are used to restrict mobility rather than support adaptation, or that modest correlations are presented as climate causation. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases."
+    "done_condition": "The output has a named user (e.g., Dhaka city urban planner), named decision (e.g., service provision planning for climate-origin migrants), explicit non-use cases (e.g., not for mobility restriction, not for climate-attribution claims without economic confound controls), and replicated field-reality review."
   }
 ]

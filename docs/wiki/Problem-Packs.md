@@ -250,6 +250,16 @@ Build a verified workflow for measuring alcohol taxation and marketing regulatio
 
 Build a verified workflow for measuring antimicrobial resistance surveillance gaps in LMICs, linking WHO GLASS data, national laboratory data, and antibiotic-consumption data at sub-national scale.
 
+## Avoidable Blindness And Cataract Surgical Coverage Gaps In Low- And Middle-Income Countries
+
+- ID: `public-health/blindness-vision-impairment-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/blindness-vision-impairment-global](../../problem-packs/public-health/blindness-vision-impairment-global/problem.md)
+
+Build a verified workflow for measuring avoidable blindness prevalence and cataract surgical coverage gaps in LMICs, linking RAAB survey data, eye-health workforce data, and facility-location data at sub-national scale.
+
 ## Child Labor Detection And Supply Chain Risk In Global Agriculture
 
 - ID: `public-health/child-labor-supply-chain-global`

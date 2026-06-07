@@ -223,9 +223,9 @@ const validateMarkdown = async () => {
   }
 };
 
-const validateWikiFreshness = async () => {
-  await new Promise((resolve, reject) => {
-    const child = spawn(process.execPath, ["scripts/generate-wiki.mjs", "--check"], {
+const runGenerator = (script, label) =>
+  new Promise((resolve, reject) => {
+    const child = spawn(process.execPath, [script, "--check"], {
       cwd: root,
       stdio: "pipe"
     });
@@ -235,10 +235,15 @@ const validateWikiFreshness = async () => {
     });
     child.on("close", (code) => {
       if (code === 0) resolve();
-      else reject(new Error(stderr.trim() || "Wiki freshness check failed."));
+      else reject(new Error(stderr.trim() || `${label} freshness check failed.`));
     });
   });
-};
+
+const validateWikiFreshness = async () =>
+  runGenerator("scripts/generate-wiki.mjs", "Wiki");
+
+const validateTaskIndexFreshness = async () =>
+  runGenerator("scripts/generate-task-index.mjs", "Task index");
 
 const main = async () => {
   const schemas = await compileSchemas();
@@ -248,6 +253,7 @@ const main = async () => {
   await validateLabels();
   await validateMarkdown();
   await validateWikiFreshness();
+  await validateTaskIndexFreshness();
   console.log("Open Problem Lab validation passed.");
 };
 

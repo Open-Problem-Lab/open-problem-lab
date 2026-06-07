@@ -2,71 +2,93 @@
   {
     "id": "source-inventory",
     "problem_id": "biodiversity/pollinator-decline-agriculture-global",
-    "title": "Inventory data sources for biodiversity/pollinator-decline-agriculture-global",
+    "title": "Inventory pollinator-monitoring, crop-production, habitat-change, and pesticide-use data sources for LMIC agricultural regions",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for pollinator decline detection and crop-pollination service risk in agricultural regions.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates pollinator-monitoring databases (GBIF, iNaturalist, regional surveys), crop-production maps (MapSPAM, FAO), satellite habitat-change products (Sentinel-2, Landsat), and pesticide-use proxies into usable, limited, and rejected categories with explicit LMIC coverage assessment.",
+    "inputs": [
+      "IPBES pollinator assessment and referenced studies",
+      "MapSPAM crop-production documentation",
+      "Sentinel-2 and Landsat land-cover product documentation",
+      "GBIF and iNaturalist pollinator occurrence data availability by region",
+      "FAO pesticide-use statistics and national agricultural survey reports"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic coverage, taxonomic scope, and documented LMIC data gaps.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering geographic coverage, taxonomic scope, temporal resolution, and LMIC data gaps."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "crop-pollination-dependence-mapping",
     "problem_id": "biodiversity/pollinator-decline-agriculture-global",
-    "title": "Measure sub-national gap for pollinator decline detection and crop-pollination service risk in agricultural regions",
+    "title": "Map sub-national crop-pollination dependence for at least two LMIC agricultural regions using MapSPAM data",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A sub-national crop-pollination-dependence map for at least two LMIC regions, documenting which crops are classified as pollinator-dependent, the source of each classification, and whether the classification was derived from temperate or tropical studies.",
+    "inputs": [
+      "MapSPAM crop-production data for target regions",
+      "Pollination-dependence classification literature",
+      "Administrative boundary data for sub-national aggregation"
+    ],
+    "expected_artifact": "validation.md update with crop-pollination classification methodology and regional applicability assessment.",
+    "validation_method": "Replicator confirms MapSPAM data extraction, crop classification methodology, and pollination-dependence source documentation for each target region.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Crop-pollination-dependence map includes methodology documentation, classification source for each crop, temperate-vs-tropical applicability assessment, and replication status."
   },
   {
-    "id": "risk-mapping",
+    "id": "habitat-change-analysis",
     "problem_id": "biodiversity/pollinator-decline-agriculture-global",
-    "title": "Produce sub-national risk map for pollinator decline detection and crop-pollination service risk in agricultural regions",
+    "title": "Analyze satellite-derived habitat-change trends as pollinator habitat pressure proxies for target regions",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A habitat-change analysis linking satellite land-cover trends to pollinator habitat pressure indicators, with explicit documentation that the habitat-to-pollinator inference chain relies on proxy relationships not validated with ground monitoring in the analyzed regions.",
+    "inputs": [
+      "Sentinel-2 or Landsat land-cover change data for target regions",
+      "Crop-pollination-dependence map",
+      "Published studies on landscape simplification and pollinator abundance"
+    ],
+    "expected_artifact": "outputs.md update with habitat-change methodology and proxy-validation documentation.",
+    "validation_method": "Replicator confirms satellite data extraction, land-cover trend methodology, and proxy-relationship documentation with explicit limitations.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "done_condition": "Habitat-change analysis includes methodology, trend results, explicit proxy-validation limitations, and documentation of the absence of ground-truth pollinator monitoring in analyzed regions."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-proxy-overstatement",
     "problem_id": "biodiversity/pollinator-decline-agriculture-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team pollinator-decline overstatement and crop-loss attribution risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how proxy-based pollination-service risk maps could overstate pollinator decline, attribute crop-production changes to pollinator loss without evidence, or be used to justify interventions that undermine farmer confidence in natural pollination services.",
+    "inputs": [
+      "habitat-change analysis outputs",
+      "crop-pollination-dependence map",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every pollination-risk claim has documented proxy limitations, absence of direct pollinator monitoring, and crop-loss attribution caveats. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "done_condition": "Every pollinator-decline claim is either blocked, softened to proxy-based risk language with explicit monitoring-gap caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "biodiversity/pollinator-decline-agriculture-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match agricultural extension and conservation decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the pollination-service risk analysis would change any real decision for agricultural research institutions, extension services, or conservation programs without creating perverse incentives.",
+    "inputs": [
+      "draft risk-map outputs",
+      "agricultural extension program context",
+      "conservation program documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for agricultural and conservation audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that proxy-based risk maps are treated as verified decline measurements or that crop-loss attributions lack direct evidence. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "done_condition": "The output has a named user (e.g., national agricultural research institute entomologist), named decision (e.g., pollinator habitat conservation targeting), explicit non-use cases (e.g., not for pesticide ban justification without direct evidence), and replicated field-reality review."
   }
 ]

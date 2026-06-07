@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["biodiversity", "food-security"],
   "region": ["global"],
-  "summary": "Build a verified workflow for detecting wild pollinator decline and estimating crop-pollination service risk in agricultural regions.",
-  "why_it_matters": "Build a verified workflow for detecting wild pollinator decline and estimating crop-pollination service risk in agricultural regions.",
+  "summary": "Build a verified workflow for estimating crop-pollination service risk from satellite-derived habitat-change indicators in LMIC agricultural regions, with explicit documentation of pollinator-monitoring data gaps and crop-pollination-dependence classification limitations.",
+  "why_it_matters": "An estimated 5-8 percent of global crop production by volume depends on animal pollination, valued at $235-577 billion annually. Wild pollinator populations are declining in many regions, but over 80 percent of pollinator studies come from Europe and North America — the LMIC agricultural regions where pollinator-dependent crop production is growing fastest have almost no systematic wild pollinator monitoring. Without verified risk assessment, agricultural extension and conservation programs cannot target interventions where pollination-service loss would most affect food security and farmer livelihoods.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Pollinator-data-gap traceability",
+      "target": "Every pollination-service risk claim documents whether direct pollinator monitoring data exists for the analyzed region or relies entirely on proxy indicators.",
+      "validation_method": "Schema validation and reviewer spot-checks confirming that every regional claim states its evidence basis as direct monitoring, proxy, or assumption."
+    },
+    {
+      "metric": "Crop-pollination-dependence documentation",
+      "target": "Every crop-pollination risk estimate documents the source and methodology of pollination-dependence classification, including whether it was derived from temperate or tropical studies.",
+      "validation_method": "Reviewer confirms classification source, geographic applicability, and crop-specific confidence for each pollination-dependent crop analyzed."
+    },
+    {
+      "metric": "Proxy-validation honesty",
+      "target": "No habitat-change-to-pollinator-abundance inference is merged without documenting the correlation basis and the absence of ground-truth pollinator monitoring in most LMIC regions.",
+      "validation_method": "Red-team reviewer confirms every proxy-based claim has explicit limitations documenting what the proxy cannot prove about actual pollinator populations."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, proxy-validation safety review, and replication for quantitative outputs."
   }
 }

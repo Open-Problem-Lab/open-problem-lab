@@ -2,7 +2,7 @@
   {
     "id": "ipbes-pollinators-2016",
     "problem_id": "biodiversity/pollinator-decline-agriculture-global",
-    "claim": "IPBES assessment found that 16 percent of vertebrate pollinators are threatened and wild pollinator populations are declining in many regions, threatening 5-8 percent of global crop production.",
+    "claim": "The IPBES Assessment Report found that 16 percent of vertebrate pollinators are threatened with extinction, wild pollinator populations are declining in many regions, and pollinator-dependent crops contribute 5-8 percent of global crop production by volume, valued at $235-577 billion annually.",
     "evidence_type": "primary-source",
     "source": {
       "title": "IPBES Assessment Report on Pollinators, Pollination and Food Production",
@@ -10,10 +10,72 @@
     },
     "source_date": "2016-02-26",
     "access_date": "2026-06-07",
-    "method": "Reviewed IPBES report chapters on pollinator status, drivers of decline, and crop-pollination dependence.",
+    "method": "Reviewed IPBES report chapters on pollinator status, drivers of decline, crop-pollination dependence, and geographic evidence gaps. Focused on the documented concentration of studies in Europe and North America.",
     "limitations": [
-      "Pollinator monitoring data is sparse outside Europe and North America.",
-      "Crop-pollination dependence estimates vary by crop and region."
+      "The 16 percent figure is for vertebrate pollinators only — insect pollinator status is far less documented.",
+      "Over 80 percent of studies in the assessment come from Europe and North America — LMIC pollinator trends are largely inferred, not observed.",
+      "The $235-577 billion valuation range depends on crop-production price assumptions and pollination-dependence classifications that vary by methodology.",
+      "The assessment is from 2016 — pollinator decline has accelerated in some regions and new monitoring data has emerged in others."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "mapspam-crop-production",
+    "problem_id": "biodiversity/pollinator-decline-agriculture-global",
+    "claim": "MapSPAM provides global crop-production maps at approximately 10km resolution distinguishing pollinator-dependent crops (fruits, vegetables, nuts, oilseeds) from wind-pollinated staples (rice, wheat, maize), enabling sub-national estimation of pollination-service dependence.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "MapSPAM — Spatial Production Allocation Model",
+      "url": "https://mapspam.info/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed MapSPAM documentation for crop classification methodology, spatial resolution, geographic coverage, and pollination-dependence categorization approach.",
+    "limitations": [
+      "MapSPAM crop-production maps are modeled allocations based on subnational statistics, not direct field observations — they have allocation uncertainty particularly in mixed-cropping systems.",
+      "Pollination-dependence classifications are based on global averages from primarily temperate-zone studies — tropical crop varieties may have different pollination requirements.",
+      "The 10km resolution smooths fine-scale crop diversity in smallholder mosaic landscapes where pollinator habitat and crop fields are intermixed.",
+      "MapSPAM does not distinguish between irrigated and rainfed production, which affects both crop-pollinator interactions and yield vulnerability."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "sentinel-2-landsat-habitat-monitoring",
+    "problem_id": "biodiversity/pollinator-decline-agriculture-global",
+    "claim": "Satellite-derived land-cover and land-use change data at 10-30m resolution from Sentinel-2 and Landsat can track habitat fragmentation, agricultural intensification, and landscape simplification — providing indirect indicators of pollinator habitat pressure in the absence of direct monitoring.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "Copernicus Sentinel-2 Land Monitoring Service",
+      "url": "https://land.copernicus.eu/"
+    },
+    "source_date": "2025-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed Sentinel-2 and Landsat land-cover classification products for spatial resolution, temporal coverage, habitat-class detail, and validation studies in agricultural landscapes.",
+    "limitations": [
+      "Land-cover classification accuracy varies by region — tropical and dryland agricultural mosaics have lower classification accuracy than temperate cropland.",
+      "Habitat fragmentation metrics derived from land-cover maps are proxies for pollinator habitat quality — they do not measure floral resource availability, nesting site availability, or pesticide exposure.",
+      "The relationship between landscape simplification and pollinator abundance is documented primarily from European and North American studies — transferability to tropical agricultural landscapes is uncertain.",
+      "Temporal resolution of land-cover maps (annual or multi-year composites) may miss seasonal habitat changes important for pollinator life cycles."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "pollinator-monitoring-gap-tropical",
+    "problem_id": "biodiversity/pollinator-decline-agriculture-global",
+    "claim": "Systematic wild pollinator population monitoring is almost entirely absent from Sub-Saharan Africa, South Asia, and Southeast Asia — the regions where pollinator-dependent crop production is growing fastest. Over 80 percent of pollinator studies globally come from Europe and North America.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Global pollinator monitoring gaps and implications for food security",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0169534722002345"
+    },
+    "source_date": "2022-11-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed systematic search of pollinator monitoring programs by region, study-design quality assessment, and geographic coverage analysis.",
+    "limitations": [
+      "The 80 percent figure is from the IPBES assessment; more recent studies suggest the imbalance persists but exact percentages may have shifted slightly.",
+      "Some LMIC countries have emerging pollinator monitoring programs not yet captured in global reviews.",
+      "Absence of monitoring data does not mean absence of pollinator decline — it means the decline, if occurring, is undetected.",
+      "Citizen-science programs (e.g., iNaturalist) provide some opportunistic LMIC pollinator occurrence data but with severe spatial and taxonomic bias."
     ],
     "confidence": "high"
   }

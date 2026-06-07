@@ -340,6 +340,16 @@ Build a verified workflow for identifying where child stunting rates are highest
 
 Build a verified workflow for measuring the TB detection gap and treatment completion gap in high-burden countries, linking national TB program data, prevalence surveys, and private-sector care data at sub-national scale.
 
+## Childhood Vaccination Coverage Equity Gaps In Low- And Middle-Income Countries
+
+- ID: `public-health/vaccination-coverage-equity-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/vaccination-coverage-equity-global](../../problem-packs/public-health/vaccination-coverage-equity-global/problem.md)
+
+Build a verified workflow for measuring sub-national vaccination coverage equity gaps, linking DHS and MICS immunization data, wealth-quintile disaggregation, and health-facility data to identify zero-dose children.
+
 ## Severe Acute Malnutrition Wasting Detection And Treatment Coverage In Sub-Saharan Africa
 
 - ID: `public-health/wasting-severe-acute-sub-saharan-africa`

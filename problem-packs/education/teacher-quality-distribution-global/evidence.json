@@ -2,7 +2,7 @@
   {
     "id": "unesco-teacher-gap-2024",
     "problem_id": "education/teacher-quality-distribution-global",
-    "claim": "UNESCO estimates a global shortage of 44 million teachers to achieve universal primary and secondary education by 2030, with the most severe shortages in SSA where pupil-to-trained-teacher ratios exceed 200:1.",
+    "claim": "UNESCO's 2024 Global Report on Teachers estimates a global shortage of 44 million teachers for universal primary and secondary education by 2030, with Sub-Saharan Africa facing the most severe shortages and pupil-to-trained-teacher ratios exceeding 200:1 in some districts.",
     "evidence_type": "primary-source",
     "source": {
       "title": "Global Report on Teachers 2024",
@@ -10,10 +10,72 @@
     },
     "source_date": "2024-02-01",
     "access_date": "2026-06-07",
-    "method": "Reviewed UNESCO teacher report, shortage estimates, and deployment-equity analysis.",
+    "method": "Reviewed UNESCO teacher report for global shortage estimates, regional breakdown, and deployment-equity analysis.",
     "limitations": [
-      "Teacher-qualification data varies by country definition.",
-      "Deployment data may not capture teacher absenteeism."
+      "Teacher-qualification data varies by country definition — what counts as 'trained' differs across national education systems.",
+      "The 44 million figure is a modeled projection based on enrollment targets, not an observed shortage count.",
+      "Deployment data aggregates national statistics — sub-national distribution within countries is not systematically reported.",
+      "Teacher-absence data is not captured in the shortage estimate — effective teaching capacity is lower than teacher counts suggest."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "service-delivery-indicator-surveys",
+    "problem_id": "education/teacher-quality-distribution-global",
+    "claim": "Service Delivery Indicator surveys in multiple African countries document that teacher-content knowledge and pedagogical-skill scores vary dramatically within countries, with rural schools scoring 20-40 percent lower than urban schools on standardized teacher assessments.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "Service Delivery Indicator Surveys — World Bank",
+      "url": "https://www.worldbank.org/en/programs/service-delivery-indicators"
+    },
+    "source_date": "2023-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed SDI survey methodology, teacher-assessment instruments, and rural-urban comparison results across multiple African countries.",
+    "limitations": [
+      "SDI surveys are conducted in a limited number of African countries — coverage outside Africa is minimal.",
+      "Teacher-assessment scores are measured at a point in time — they do not capture whether rural teachers improve with experience or support.",
+      "The 20-40 percent rural-urban gap is a range across countries — specific country gaps may be larger or smaller.",
+      "SDI surveys measure teacher knowledge and skill, not actual classroom teaching effectiveness — the relationship between assessment scores and student learning is imperfect."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "teacher-absence-rates-lmic",
+    "problem_id": "education/teacher-quality-distribution-global",
+    "claim": "Teacher-absence rates of 15-25 percent are documented in multiple low-income countries through unannounced school visits, meaning that even when qualified teachers are deployed to rural areas, effective teaching time is substantially reduced.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Teacher absence in developing countries: a systematic review",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0160412022002345"
+    },
+    "source_date": "2022-04-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed systematic search of teacher-absence studies, measurement methodology (unannounced visits), and country-level results.",
+    "limitations": [
+      "Absence rates are measured through unannounced visits at a single point in time — they may not represent annual average absence.",
+      "Absence measurement methodology varies across studies — some capture only physical absence while others include present-but-not-teaching.",
+      "Absence rates in rural areas may be higher due to longer commutes and fewer monitoring systems — the rural penalty for deployment may compound absence.",
+      "The 15-25 percent range is from a limited number of countries — absence rates in countries without studies are unknown."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "emis-data-quality-variability",
+    "problem_id": "education/teacher-quality-distribution-global",
+    "claim": "National EMIS data provides school-level teacher counts and qualification data for some countries, but data quality, update frequency, and public accessibility vary enormously — many countries do not publish sub-national teacher-distribution data, making cross-country deployment-equity comparison methodologically challenging.",
+    "evidence_type": "expert-review",
+    "source": {
+      "title": "Education Management Information Systems: data quality assessment for low-income countries",
+      "url": "https://www.unesco.org/en/emis"
+    },
+    "source_date": "2023-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed EMIS documentation, data-quality assessments, and public-availability status across low-income countries.",
+    "limitations": [
+      "EMIS data quality is self-assessed by national authorities — independent verification is limited.",
+      "Update frequency varies from annual to irregular — some countries use EMIS data that is several years old.",
+      "Public accessibility varies — some countries publish detailed school-level data while others restrict access.",
+      "Teacher-qualification categories differ across countries — cross-country comparison requires explicit harmonization."
     ],
     "confidence": "high"
   }

@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "education/teacher-quality-distribution-global",
-    "title": "Inventory data sources for education/teacher-quality-distribution-global",
+    "title": "Inventory EMIS teacher-quality, SDI survey, learning-outcome, and deployment-policy data sources for low-income countries",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for teacher qualification distribution and deployment equity gaps in low-income countries.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates national EMIS teacher-qualification data, Service Delivery Indicator surveys, learning-outcome assessments (SACMEQ, PASEC, ASER), and deployment-policy documentation into usable, limited, and rejected categories with explicit EMIS data-quality and cross-country comparability assessment.",
+    "inputs": [
+      "National EMIS documentation and data-quality assessments for target countries",
+      "Service Delivery Indicator survey methodology and country coverage",
+      "SACMEQ, PASEC, and ASER learning-outcome assessment documentation",
+      "Published teacher-deployment policy analyses for target countries",
+      "UNESCO teacher-data documentation"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and documented limitations — particularly EMIS data quality, qualification-definition comparability, and SDI country coverage.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "low",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "safety_risk": "medium",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering EMIS data quality, qualification-definition comparability, and cross-country harmonization."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "teacher-distribution-mapping",
     "problem_id": "education/teacher-quality-distribution-global",
-    "title": "Measure sub-national gap for teacher qualification distribution and deployment equity gaps in low-income countries",
+    "title": "Map sub-national teacher-qualification distribution for at least two low-income countries using EMIS and SDI data",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A sub-national teacher-qualification distribution analysis for at least two low-income countries, documenting EMIS data quality, qualification-definition methodology, and rural-urban distribution patterns.",
+    "inputs": [
+      "National EMIS teacher-qualification data for target countries",
+      "SDI survey data where available",
+      "Administrative boundary data for district-level aggregation",
+      "Published EMIS data-quality assessments"
+    ],
+    "expected_artifact": "validation.md update with distribution methodology and data-quality assessment.",
+    "validation_method": "Replicator confirms EMIS data extraction, qualification-definition documentation, and rural-urban comparison methodology for each target country.",
     "reviewer_needed": "replicator",
-    "safety_risk": "low",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "safety_risk": "medium",
+    "done_condition": "Teacher-distribution analysis includes methodology, EMIS data-quality assessment, qualification-definition documentation, and replication status for at least two countries."
   },
   {
-    "id": "risk-mapping",
+    "id": "deployment-equity-analysis",
     "problem_id": "education/teacher-quality-distribution-global",
-    "title": "Produce sub-national risk map for teacher qualification distribution and deployment equity gaps in low-income countries",
+    "title": "Analyze deployment equity by linking teacher-qualification distribution to learning outcomes at district scale",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A deployment-equity analysis linking teacher-qualification distribution to learning-outcome data at district scale, with explicit qualification-proxy limitations and confound controls for school resources, student background, and community wealth.",
+    "inputs": [
+      "teacher-distribution analysis results",
+      "learning-outcome assessment data (SACMEQ, PASEC, ASER) where available",
+      "school-resource and student-background confound data",
+      "published teacher-quality-to-learning-outcome studies"
+    ],
+    "expected_artifact": "outputs.md update with equity methodology and proxy-limitation documentation.",
+    "validation_method": "Replicator confirms equity-linkage methodology, qualification-proxy limitations, and confound-control approach for each target country.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "low",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "safety_risk": "medium",
+    "done_condition": "Deployment-equity analysis includes methodology, qualification-proxy limitations, confound controls, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-proxy-overstatement",
     "problem_id": "education/teacher-quality-distribution-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team qualification-proxy overstatement and punitive-transfer risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how qualification-based deployment maps could overstate teaching-quality gaps by treating qualification as equivalent to effectiveness, how results could be used for punitive teacher transfers without addressing underlying incentive structures, and how absence data could stigmatize rural teachers.",
+    "inputs": [
+      "deployment-equity analysis outputs",
+      "teacher-distribution outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every deployment-equity claim has qualification-proxy limitations, confound controls, and explicit non-punitive-transfer disclaimers. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
-    "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "safety_risk": "medium",
+    "done_condition": "Every deployment-equity claim is either blocked, softened to proxy-limited language with explicit qualification-effectiveness caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "education/teacher-quality-distribution-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match education ministry and teacher-training institution decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the deployment-equity analysis would change any real decision for education ministries, teacher-training institutions, or rural-incentive program designers without creating perverse incentives.",
+    "inputs": [
+      "draft deployment-equity outputs",
+      "education ministry teacher-deployment policy context",
+      "teacher-training institution documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for education ministry and training-institution audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that qualification-based maps drive punitive transfers or that absence data stigmatizes rural teachers without addressing incentive structures. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
-    "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "safety_risk": "medium",
+    "done_condition": "The output has a named user (e.g., Kenya Ministry of Education teacher-deployment director), named decision (e.g., rural hardship allowance targeting), explicit non-use cases (e.g., not for punitive teacher transfers, not for stigmatizing rural teachers), and replicated field-reality review."
   }
 ]

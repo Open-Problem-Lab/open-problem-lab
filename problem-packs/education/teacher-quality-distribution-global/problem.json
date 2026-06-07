@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["education"],
   "region": ["global"],
-  "summary": "Build a verified workflow for measuring teacher qualification distribution and deployment equity gaps.",
-  "why_it_matters": "Build a verified workflow for measuring teacher qualification distribution and deployment equity gaps.",
+  "summary": "Build a verified workflow for mapping teacher-qualification distribution and deployment-equity gaps at sub-national scale in low-income countries, with explicit EMIS data-quality documentation, qualification-proxy limitations, and the distinction between teacher presence and teaching effectiveness.",
+  "why_it_matters": "UNESCO estimates a global shortage of 44 million teachers, but the shortage headline masks a deeper equity problem: qualified teachers concentrate in urban areas and wealthier districts, leaving rural communities with unqualified, absent, or temporary teachers. Service Delivery Indicator surveys document 20-40 percent lower teacher-assessment scores in rural schools. Without verified deployment-equity analysis, teacher-deployment policies and rural-incentive programs cannot be evidence-targeted where they would most improve learning outcomes.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "EMIS-data quality documentation",
+      "target": "Every teacher-distribution claim documents EMIS data quality, update frequency, and public accessibility for the analyzed country.",
+      "validation_method": "Schema validation and reviewer spot-checks against EMIS data-quality documentation."
+    },
+    {
+      "metric": "Qualification-proxy honesty",
+      "target": "No teacher-quality claim is merged without documenting that teacher qualification is a proxy for teaching effectiveness and that the proxy-to-effectiveness relationship is weak in many contexts.",
+      "validation_method": "Reviewer confirms qualification-proxy limitation documentation."
+    },
+    {
+      "metric": "Deployment-equity evidence",
+      "target": "Every deployment-gap claim links qualification distribution to learning-outcome data or explicitly documents the absence of such linkage.",
+      "validation_method": "Red-team reviewer confirms qualification-to-learning linkage or evidence-gap documentation."
     }
   ],
   "safety_level": "low",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, qualification-proxy safety review, and replication for quantitative outputs."
   }
 }

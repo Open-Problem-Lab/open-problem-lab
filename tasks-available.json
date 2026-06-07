@@ -2,18 +2,18 @@
   "summary": {
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
-    "total_packs": 46,
-    "total_scoped_tasks": 46,
+    "total_packs": 47,
+    "total_scoped_tasks": 47,
     "by_role": {
-      "literature-scout": 46
+      "literature-scout": 47
     },
     "by_risk": {
-      "medium": 45,
+      "medium": 46,
       "low": 1
     },
     "by_domain": {
       "air-quality": 2,
-      "public-health": 28,
+      "public-health": 29,
       "biodiversity": 3,
       "climate-health": 7,
       "climate-adaptation": 6,
@@ -821,6 +821,27 @@
       "done_condition": "Five sources classified.",
       "tasks_file": "problem-packs/public-health/road-traffic-injury-urban-global/tasks.json",
       "problem_file": "problem-packs/public-health/road-traffic-injury-urban-global/problem.md"
+    },
+    {
+      "pack_id": "public-health/sickle-cell-disease-sub-saharan-africa",
+      "pack_title": "Sickle Cell Disease Newborn Screening And Treatment Access Gaps In Sub-Saharan Africa",
+      "pack_status": "scoped",
+      "domain": [
+        "public-health"
+      ],
+      "region": [
+        "sub-saharan-africa"
+      ],
+      "task_id": "source-inventory",
+      "title": "Inventory SCD data sources",
+      "owner_role": "literature-scout",
+      "reviewer_needed": "domain-reviewer",
+      "safety_risk": "medium",
+      "outcome": "A dated source inventory separating prevalence maps, screening data, facility data, and unusable sources.",
+      "expected_artifact": "datasets.md update plus evidence.json records.",
+      "done_condition": "Five sources classified.",
+      "tasks_file": "problem-packs/public-health/sickle-cell-disease-sub-saharan-africa/tasks.json",
+      "problem_file": "problem-packs/public-health/sickle-cell-disease-sub-saharan-africa/problem.md"
     },
     {
       "pack_id": "public-health/stunting-sub-saharan-africa",

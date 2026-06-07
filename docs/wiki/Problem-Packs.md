@@ -370,6 +370,16 @@ Build a verified workflow for identifying where NTD mass drug administration cov
 
 Build a verified workflow for identifying where road traffic injury mortality risk is highest and trauma care access is lowest in LMIC cities, linking crash data, road-network data, and health-facility data at urban scale.
 
+## Sickle Cell Disease Newborn Screening And Treatment Access Gaps In Sub-Saharan Africa
+
+- ID: `public-health/sickle-cell-disease-sub-saharan-africa`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `sub-saharan-africa`
+- Source: [problem-packs/public-health/sickle-cell-disease-sub-saharan-africa](../../problem-packs/public-health/sickle-cell-disease-sub-saharan-africa/problem.md)
+
+Build a verified workflow for measuring the gap between sickle cell disease birth prevalence and newborn screening and treatment coverage, linking DHS sickle cell data, health-facility capacity, and penicillin-prophylaxis coverage at sub-national scale.
+
 ## Child Stunting Hotspot Identification In Sub-Saharan Africa
 
 - ID: `public-health/stunting-sub-saharan-africa`

@@ -350,6 +350,16 @@ Build a verified workflow for identifying where child stunting rates are highest
 
 Build a verified workflow for measuring the TB detection gap and treatment completion gap in high-burden countries, linking national TB program data, prevalence surveys, and private-sector care data at sub-national scale.
 
+## Tobacco Taxation And Smoking Prevalence Gaps In Low- And Middle-Income Countries
+
+- ID: `public-health/tobacco-control-taxation-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/tobacco-control-taxation-global](../../problem-packs/public-health/tobacco-control-taxation-global/problem.md)
+
+Build a verified workflow for measuring tobacco taxation levels relative to smoking prevalence and cessation rates in LMICs, linking tax-policy data, prevalence surveys, and illicit-trade estimates at national and sub-national scale.
+
 ## Childhood Vaccination Coverage Equity Gaps In Low- And Middle-Income Countries
 
 - ID: `public-health/vaccination-coverage-equity-global`

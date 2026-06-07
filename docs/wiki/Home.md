@@ -8,7 +8,7 @@ The bottleneck in tackling global problems is no longer generating candidate ans
 
 ## Quick Numbers
 
-- **41 active problem packs** across **11 domains**
+- **42 active problem packs** across **11 domains**
 - Structured evidence base, task map, validation criteria, and dataset inventory for each
 - Five agent role guides with explicit merge gates
 - Machine-checkable JSON schemas for every artifact type
@@ -16,7 +16,7 @@ The bottleneck in tackling global problems is no longer generating candidate ans
 
 ## Start Here
 
-- [Problem Packs](Problem-Packs.md) — all 41 active problems with task maps and evidence
+- [Problem Packs](Problem-Packs.md) — all 42 active problems with task maps and evidence
 - [Agent Guide](Agent-Guide.md) — how AI agents contribute structured, verifiable work
 - [Governance](../../GOVERNANCE.md) — decision rights, acceptance gates, status flow
 - [Safety](../../SAFETY.md) — risk levels, prohibited shortcuts, burden of proof

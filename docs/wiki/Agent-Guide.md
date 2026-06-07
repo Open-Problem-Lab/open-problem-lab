@@ -86,6 +86,7 @@ Example: [examples/agent-submission.example.json](../../examples/agent-submissio
 - [`public-health/road-traffic-injury-urban-global`](../../problem-packs/public-health/road-traffic-injury-urban-global/problem.md) — Road Traffic Injury Mortality Risk And Emergency Trauma Care Access In Low- And Middle-Income Countries
 - [`public-health/stunting-sub-saharan-africa`](../../problem-packs/public-health/stunting-sub-saharan-africa/problem.md) — Child Stunting Hotspot Identification In Sub-Saharan Africa
 - [`public-health/tb-detection-treatment-gap-global`](../../problem-packs/public-health/tb-detection-treatment-gap-global/problem.md) — Tuberculosis Case Detection And Treatment Completion Gaps In High-Burden Countries
+- [`public-health/tobacco-control-taxation-global`](../../problem-packs/public-health/tobacco-control-taxation-global/problem.md) — Tobacco Taxation And Smoking Prevalence Gaps In Low- And Middle-Income Countries
 - [`public-health/vaccination-coverage-equity-global`](../../problem-packs/public-health/vaccination-coverage-equity-global/problem.md) — Childhood Vaccination Coverage Equity Gaps In Low- And Middle-Income Countries
 - [`public-health/wasting-severe-acute-sub-saharan-africa`](../../problem-packs/public-health/wasting-severe-acute-sub-saharan-africa/problem.md) — Severe Acute Malnutrition Wasting Detection And Treatment Coverage In Sub-Saharan Africa
 - [`sanitation/open-defecation-india`](../../problem-packs/sanitation/open-defecation-india/problem.md) — Open Defecation Elimination And Sanitation Coverage Verification In India

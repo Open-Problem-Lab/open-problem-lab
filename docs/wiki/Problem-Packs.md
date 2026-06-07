@@ -230,6 +230,16 @@ Build a verified workflow for detecting livestock disease outbreaks and estimati
 
 Build a verified workflow for assessing where vegetation, soil moisture, and wind signals can improve desert locust outbreak early warning in East Africa at sub-national scale, without conflating a model alert with a control operation order.
 
+## Conflict-Driven Health Service Disruption Measurement In Fragile States
+
+- ID: `public-health/conflict-health-service-disruption-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/conflict-health-service-disruption-global](../../problem-packs/public-health/conflict-health-service-disruption-global/problem.md)
+
+Build a verified workflow for measuring health service disruption caused by armed conflict, linking conflict-event data, health-facility data, and service-utilization data in fragile and conflict-affected states.
+
 ## Urban Lead Exposure Risk Mapping In Low- And Middle-Income Countries
 
 - ID: `public-health/lead-exposure-urban-global`

@@ -18,20 +18,21 @@
     "confidence": "high"
   },
   {
-    "id": "funk-drought-early-warning-review-2021",
+    "id": "fewsnet-methodology-skill-assessment",
     "problem_id": "food-security/drought-early-warning-horn-of-africa",
-    "claim": "A 2021 systematic review found rainfall-based early warning systems predict food insecurity with moderate skill at 1-3 month leads but degrade rapidly beyond 6 months and fail to capture conflict-driven food crises.",
-    "evidence_type": "peer-reviewed-study",
+    "claim": "FEWS NET documents that its food security early warning methodology combines rainfall, vegetation, market price, and livelihood data to predict food insecurity at 1-3 month lead times, with skill degrading at longer leads and for conflict-driven crises where climate signals do not dominate.",
+    "evidence_type": "primary-source",
     "source": {
-      "title": "Drought early warning systems for food security: a systematic review",
-      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2212420921001234"
+      "title": "FEWS NET — Methodology for food security early warning",
+      "url": "https://fews.net/about/methodology"
     },
-    "source_date": "2021-09-01",
-    "access_date": "2026-06-06",
-    "method": "Reviewed systematic search, inclusion criteria, meta-analysis results and skill assessment.",
+    "source_date": "2023-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed FEWS NET methodology documentation for signal types, lead-time assumptions, and documented limitations of climate-based early warning in conflict-affected contexts.",
     "limitations": [
-      "Review covers multiple regions and drought types.",
-      "Lead-time skill estimates depend on outcome definition and region."
+      "FEWS NET methodology documentation describes operational practice, not a peer-reviewed skill assessment of forecast accuracy.",
+      "Lead-time and skill estimates for specific signal types require separate validation against historical outcomes.",
+      "Prior evidence record cited a ScienceDirect URL (pii/S2212420921001234) that returned HTTP 404 during verify:sources on 2026-06-07 and appeared to be a placeholder — replaced with this primary source."
     ],
     "confidence": "medium"
   }

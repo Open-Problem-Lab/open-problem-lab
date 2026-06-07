@@ -1,1 +1,34 @@
-{"id":"public-health/prison-health-tb-hiv-global","title":"Prison Health Tuberculosis And HIV Service Gaps In Low- And Middle-Income Countries","status":"scoped","domain":["public-health"],"region":["global"],"summary":"Build a verified workflow for measuring TB and HIV service gaps in prison populations in LMICs, linking prison-population data, TB and HIV prevalence studies in prisons, and health-service data.","why_it_matters":"Prison populations have TB rates 10-100 times higher than the general population and HIV prevalence 2-10 times higher. Overcrowding, poor ventilation, and delayed diagnosis create transmission hotspots that spill into communities upon release. Yet prison health data is systematically excluded from national health statistics in most LMICs.","success_metrics":[{"metric":"Data integration","target":"Every service-gap estimate links prison-population, prevalence, and health-service data with methodology.","validation_method":"Schema validation and reviewer checks."}],"safety_level":"high","canonical_files":["datasets.md","evidence.json","evidence.md","outputs.md","playbooks.md","problem.json","problem.md","task-map.md","tasks.json","validation.md"],"review_policy":{"required_reviews":2,"replication_required":true,"merge_gate":"Schema validation, domain review, safety review, replication."}}
+{
+  "id": "public-health/prison-health-tb-hiv-global",
+  "title": "Prison Health Tuberculosis And HIV Service Gaps In Low- And Middle-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring TB and HIV service gaps in prison populations in LMICs, linking prison-population data, TB and HIV prevalence studies in prisons, and health-service data.",
+  "why_it_matters": "Prison populations have TB rates 10-100 times higher than the general population and HIV prevalence 2-10 times higher. Overcrowding, poor ventilation, and delayed diagnosis create transmission hotspots that spill into communities upon release. Yet prison health data is systematically excluded from national health statistics in most LMICs.",
+  "success_metrics": [
+    {
+      "metric": "Data integration",
+      "target": "Every service-gap estimate links prison-population, prevalence, and health-service data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

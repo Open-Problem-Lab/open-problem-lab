@@ -1,1 +1,20 @@
-[{"id":"dolan-prison-tb-hiv-review-2021","problem_id":"public-health/prison-health-tb-hiv-global","claim":"A 2021 Lancet review found prison TB rates 10-100x general population, HIV 2-10x higher, and fewer than 30 LMICs report prison health data to WHO.","evidence_type":"peer-reviewed-study","source":{"title":"Prison health and infectious disease control in LMICs: a systematic review","url":"https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)00345-2/fulltext"},"source_date":"2021-03-01","access_date":"2026-06-07","method":"Reviewed systematic review methods, disease-burden estimates, and health-system integration analysis.","limitations":["Prison health data is sparse and likely underestimates true burden.","Studies concentrated in a small number of countries."],"confidence":"medium"}]
+[
+  {
+    "id": "dolan-prison-tb-hiv-review-2021",
+    "problem_id": "public-health/prison-health-tb-hiv-global",
+    "claim": "A 2021 Lancet review found prison TB rates 10-100x general population, HIV 2-10x higher, and fewer than 30 LMICs report prison health data to WHO.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Prison health and infectious disease control in LMICs: a systematic review",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)00345-2/fulltext"
+    },
+    "source_date": "2021-03-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed systematic review methods, disease-burden estimates, and health-system integration analysis.",
+    "limitations": [
+      "Prison health data is sparse and likely underestimates true burden.",
+      "Studies concentrated in a small number of countries."
+    ],
+    "confidence": "medium"
+  }
+]

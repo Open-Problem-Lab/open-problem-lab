@@ -1,1 +1,72 @@
-[{"id":"source-inventory","problem_id":"public-health/prison-health-tb-hiv-global","title":"Inventory prison health data","status":"scoped","owner_role":"literature-scout","outcome":"A dated source inventory separating prison-population data, disease-prevalence studies, and health-service data.","inputs":["WPB data","disease studies","national reports"],"expected_artifact":"datasets.md plus evidence.json.","validation_method":"Reviewer checks sources.","reviewer_needed":"domain-reviewer","safety_risk":"medium","done_condition":"Three sources classified."},{"id":"prison-population-mapping","problem_id":"public-health/prison-health-tb-hiv-global","title":"Map prison populations and disease burden","status":"needs-triage","owner_role":"data-cleaner","outcome":"Prison-population map with estimated TB and HIV burden.","inputs":["WPB data","prevalence studies","population denominators"],"expected_artifact":"validation.md update.","validation_method":"Replicator confirms population estimates and burden methodology.","reviewer_needed":"replicator","safety_risk":"medium","done_condition":"Population and burden map with methodology and replication."},{"id":"service-gap-analysis","problem_id":"public-health/prison-health-tb-hiv-global","title":"Analyze TB and HIV service gaps in prisons","status":"needs-triage","owner_role":"implementation-planner","outcome":"A service-gap map comparing disease burden to reported service access.","inputs":["burden map","service data","facility data"],"expected_artifact":"outputs.md update.","validation_method":"Replicator confirms gap methodology.","reviewer_needed":"domain-reviewer","safety_risk":"high","done_condition":"Gap analysis with methodology and replication."},{"id":"red-team-review","problem_id":"public-health/prison-health-tb-hiv-global","title":"Red-team misuse of prison health data","status":"needs-triage","owner_role":"red-team-reviewer","outcome":"Failure-mode review.","inputs":["gap analysis","safety policy"],"expected_artifact":"SAFETY.md review.","validation_method":"Mitigations or block, replicated.","reviewer_needed":"red-team-reviewer","safety_risk":"high","done_condition":"Claims qualified or gated."},{"id":"field-reality-check","problem_id":"public-health/prison-health-tb-hiv-global","title":"Check whether outputs match prison health planning needs","status":"needs-triage","owner_role":"field-reality-reviewer","outcome":"Field-facing review.","inputs":["draft outputs","prison health context"],"expected_artifact":"playbooks.md update.","validation_method":"Field reviewer identifies decision, user, misuse risk, replicated.","reviewer_needed":"field-reality-reviewer","safety_risk":"high","done_condition":"Named user, named decision."}]
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/prison-health-tb-hiv-global",
+    "title": "Inventory prison health data",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating prison-population data, disease-prevalence studies, and health-service data.",
+    "inputs": ["WPB data", "disease studies", "national reports"],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Three sources classified."
+  },
+  {
+    "id": "prison-population-mapping",
+    "problem_id": "public-health/prison-health-tb-hiv-global",
+    "title": "Map prison populations and disease burden",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "Prison-population map with estimated TB and HIV burden.",
+    "inputs": ["WPB data", "prevalence studies", "population denominators"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator confirms population estimates and burden methodology.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Population and burden map with methodology and replication."
+  },
+  {
+    "id": "service-gap-analysis",
+    "problem_id": "public-health/prison-health-tb-hiv-global",
+    "title": "Analyze TB and HIV service gaps in prisons",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A service-gap map comparing disease burden to reported service access.",
+    "inputs": ["burden map", "service data", "facility data"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms gap methodology.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Gap analysis with methodology and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/prison-health-tb-hiv-global",
+    "title": "Red-team misuse of prison health data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["gap analysis", "safety policy"],
+    "expected_artifact": "SAFETY.md review.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/prison-health-tb-hiv-global",
+    "title": "Check whether outputs match prison health planning needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "prison health context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision."
+  }
+]

@@ -10,8 +10,8 @@
 
 ## Baseline Requirements
 
-Monitoring coverage must document: JMP data sources, testing methodology, monitoring frequency, gap documentation.
+Postharvest loss must document: estimation methodology, crop type, loss-stage classification, validation.
 
 ## Model Requirements
 
-No contamination-risk map validated without: proxy validation, test-data comparison, replication.
+No loss-reduction gap validated without: storage-technology context, replication.

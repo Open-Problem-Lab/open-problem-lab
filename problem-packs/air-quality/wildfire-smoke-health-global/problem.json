@@ -1,0 +1,34 @@
+{
+  "id": "air-quality/wildfire-smoke-health-global",
+  "title": "Wildfire Smoke PM2.5 Exposure And Respiratory Health Impact In Fire-Prone Regions",
+  "status": "scoped",
+  "domain": ["air-quality", "public-health", "climate-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for estimating wildfire smoke PM2.5 exposure and respiratory health impact, linking satellite-derived smoke plumes, ground-monitor PM2.5, and health-utilization data in fire-prone regions.",
+  "why_it_matters": "Wildfire smoke contributes up to 25 percent of global PM2.5 and is increasing with climate change. Smoke PM2.5 may be more toxic than other PM2.5 sources. NOAA HMS and GEOS-Chem provide smoke-plume and composition data, but linking smoke exposure to verified health outcomes at sub-national scale is underdeveloped.",
+  "success_metrics": [
+    {
+      "metric": "Exposure traceability",
+      "target": "Every smoke-exposure estimate links satellite, monitor, and health data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

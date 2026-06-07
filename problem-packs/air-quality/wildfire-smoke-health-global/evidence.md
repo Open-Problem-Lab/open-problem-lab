@@ -1,8 +1,8 @@
 # Evidence Ledger
 
-### UNPFII 2023
+### Burke/Lancet 2021
 
-5-20 year life-expectancy gap. <30 countries have indigenous identifiers in health data.
+25% of global PM2.5 from wildfire smoke. 2-3x more toxic.
 
 ## Evidence Quality Rule
 

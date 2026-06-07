@@ -244,6 +244,38 @@ const validateWikiFreshness = async () => runGenerator("scripts/generate-wiki.mj
 const validateTaskIndexFreshness = async () =>
   runGenerator("scripts/generate-task-index.mjs", "Task index");
 
+const validateFormatting = async () =>
+  new Promise((resolve, reject) => {
+    const child = spawn("pnpm", ["--silent", "exec", "prettier", "--check", "."], {
+      cwd: root,
+      stdio: "pipe"
+    });
+    let stderr = "";
+    let stdout = "";
+    child.stdout.on("data", (chunk) => {
+      stdout += chunk.toString();
+    });
+    child.stderr.on("data", (chunk) => {
+      stderr += chunk.toString();
+    });
+    child.on("close", (code) => {
+      if (code === 0) {
+        resolve();
+      } else {
+        const offending = stdout
+          .split("\n")
+          .filter((line) => line.includes("[warn]"))
+          .slice(0, 10)
+          .join("\n");
+        reject(
+          new Error(
+            `Formatting check failed. Run \`pnpm format\` before committing.\n${offending}\n${stderr.trim()}`.trim()
+          )
+        );
+      }
+    });
+  });
+
 const main = async () => {
   const schemas = await compileSchemas();
   await validateProblemPacks(schemas);
@@ -253,6 +285,7 @@ const main = async () => {
   await validateMarkdown();
   await validateWikiFreshness();
   await validateTaskIndexFreshness();
+  await validateFormatting();
   console.log("Open Problem Lab validation passed.");
 };
 

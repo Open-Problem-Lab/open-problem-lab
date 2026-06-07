@@ -2,26 +2,26 @@
   "summary": {
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
-    "total_packs": 52,
-    "total_scoped_tasks": 52,
+    "total_packs": 54,
+    "total_scoped_tasks": 54,
     "by_role": {
-      "literature-scout": 52
+      "literature-scout": 54
     },
     "by_risk": {
-      "medium": 50,
+      "medium": 52,
       "low": 1,
       "high": 1
     },
     "by_domain": {
-      "air-quality": 2,
-      "public-health": 34,
+      "air-quality": 3,
+      "public-health": 35,
+      "climate-health": 8,
       "biodiversity": 3,
-      "climate-health": 7,
       "climate-adaptation": 6,
       "disaster-resilience": 6,
       "education": 4,
       "energy-access": 3,
-      "food-security": 8,
+      "food-security": 9,
       "sanitation": 2,
       "water-security": 3
     }
@@ -31,13 +31,8 @@
       "pack_id": "air-quality/indoor-air-pollution-sub-saharan-africa",
       "pack_title": "Indoor Air Pollution Exposure From Solid Fuel Cooking In Sub-Saharan Africa",
       "pack_status": "scoped",
-      "domain": [
-        "air-quality",
-        "public-health"
-      ],
-      "region": [
-        "sub-saharan-africa"
-      ],
+      "domain": ["air-quality", "public-health"],
+      "region": ["sub-saharan-africa"],
       "task_id": "source-inventory",
       "title": "Inventory indoor air pollution data sources",
       "owner_role": "literature-scout",
@@ -53,13 +48,8 @@
       "pack_id": "air-quality/pm25-monitoring-south-asia",
       "pack_title": "PM2.5 Monitoring Gaps And Health Impact In South Asia",
       "pack_status": "scoped",
-      "domain": [
-        "air-quality",
-        "public-health"
-      ],
-      "region": [
-        "south-asia"
-      ],
+      "domain": ["air-quality", "public-health"],
+      "region": ["south-asia"],
       "task_id": "source-inventory",
       "title": "Inventory PM2.5 monitoring and air quality data sources for South Asia",
       "owner_role": "literature-scout",
@@ -72,16 +62,28 @@
       "problem_file": "problem-packs/air-quality/pm25-monitoring-south-asia/problem.md"
     },
     {
+      "pack_id": "air-quality/wildfire-smoke-health-global",
+      "pack_title": "Wildfire Smoke PM2.5 Exposure And Respiratory Health Impact In Fire-Prone Regions",
+      "pack_status": "scoped",
+      "domain": ["air-quality", "public-health", "climate-health"],
+      "region": ["global"],
+      "task_id": "source-inventory",
+      "title": "Inventory wildfire smoke and health data",
+      "owner_role": "literature-scout",
+      "reviewer_needed": "domain-reviewer",
+      "safety_risk": "medium",
+      "outcome": "A dated source inventory.",
+      "expected_artifact": "datasets.md plus evidence.json.",
+      "done_condition": "Four sources classified.",
+      "tasks_file": "problem-packs/air-quality/wildfire-smoke-health-global/tasks.json",
+      "problem_file": "problem-packs/air-quality/wildfire-smoke-health-global/problem.md"
+    },
+    {
       "pack_id": "biodiversity/coral-bleaching-great-barrier-reef",
       "pack_title": "Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef",
       "pack_status": "scoped",
-      "domain": [
-        "biodiversity",
-        "climate-health"
-      ],
-      "region": [
-        "great-barrier-reef"
-      ],
+      "domain": ["biodiversity", "climate-health"],
+      "region": ["great-barrier-reef"],
       "task_id": "source-inventory",
       "title": "Inventory coral bleaching data sources",
       "owner_role": "literature-scout",
@@ -97,13 +99,8 @@
       "pack_id": "biodiversity/deforestation-amazon",
       "pack_title": "Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin",
       "pack_status": "scoped",
-      "domain": [
-        "biodiversity",
-        "climate-health"
-      ],
-      "region": [
-        "amazon"
-      ],
+      "domain": ["biodiversity", "climate-health"],
+      "region": ["amazon"],
       "task_id": "source-inventory",
       "title": "Inventory deforestation and biodiversity data sources for Amazon basin",
       "owner_role": "literature-scout",
@@ -119,13 +116,8 @@
       "pack_id": "climate-adaptation/sea-level-rise-small-islands",
       "pack_title": "Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States",
       "pack_status": "scoped",
-      "domain": [
-        "climate-adaptation",
-        "disaster-resilience"
-      ],
-      "region": [
-        "small-island-developing-states"
-      ],
+      "domain": ["climate-adaptation", "disaster-resilience"],
+      "region": ["small-island-developing-states"],
       "task_id": "source-inventory",
       "title": "Inventory SLR projection and coastal exposure data sources for SIDS",
       "owner_role": "literature-scout",
@@ -141,13 +133,8 @@
       "pack_id": "climate-health/dengue-heat-vietnam",
       "pack_title": "Dengue, Heat, And Rainfall Risk In Viet Nam",
       "pack_status": "scoped",
-      "domain": [
-        "climate-health",
-        "public-health"
-      ],
-      "region": [
-        "vietnam"
-      ],
+      "domain": ["climate-health", "public-health"],
+      "region": ["vietnam"],
       "task_id": "source-inventory",
       "title": "Inventory usable dengue and climate data sources",
       "owner_role": "literature-scout",
@@ -163,13 +150,8 @@
       "pack_id": "climate-health/heat-stress-urban-south-asia",
       "pack_title": "Urban Heat Stress Mortality Risk In South Asia",
       "pack_status": "scoped",
-      "domain": [
-        "climate-health",
-        "public-health"
-      ],
-      "region": [
-        "south-asia"
-      ],
+      "domain": ["climate-health", "public-health"],
+      "region": ["south-asia"],
       "task_id": "source-inventory",
       "title": "Inventory urban heat and health data sources",
       "owner_role": "literature-scout",
@@ -185,13 +167,8 @@
       "pack_id": "climate-health/malaria-early-warning-africa",
       "pack_title": "Malaria Early Warning Signals In Sub-Saharan Africa",
       "pack_status": "scoped",
-      "domain": [
-        "climate-health",
-        "public-health"
-      ],
-      "region": [
-        "sub-saharan-africa"
-      ],
+      "domain": ["climate-health", "public-health"],
+      "region": ["sub-saharan-africa"],
       "task_id": "source-inventory",
       "title": "Inventory malaria and climate data sources for Sub-Saharan Africa",
       "owner_role": "literature-scout",
@@ -207,13 +184,8 @@
       "pack_id": "disaster-resilience/climate-migration-south-asia",
       "pack_title": "Climate-Driven Internal Migration Pattern Detection In South Asia",
       "pack_status": "scoped",
-      "domain": [
-        "disaster-resilience",
-        "climate-adaptation"
-      ],
-      "region": [
-        "south-asia"
-      ],
+      "domain": ["disaster-resilience", "climate-adaptation"],
+      "region": ["south-asia"],
       "task_id": "source-inventory",
       "title": "Inventory migration and environmental data",
       "owner_role": "literature-scout",
@@ -229,13 +201,8 @@
       "pack_id": "disaster-resilience/cyclone-early-warning-bangladesh",
       "pack_title": "Cyclone Early Warning And Evacuation Signal Verification In Bangladesh",
       "pack_status": "scoped",
-      "domain": [
-        "disaster-resilience",
-        "climate-health"
-      ],
-      "region": [
-        "bangladesh"
-      ],
+      "domain": ["disaster-resilience", "climate-health"],
+      "region": ["bangladesh"],
       "task_id": "source-inventory",
       "title": "Inventory cyclone data sources for Bay of Bengal",
       "owner_role": "literature-scout",
@@ -251,12 +218,8 @@
       "pack_id": "disaster-resilience/earthquake-vulnerability-nepal",
       "pack_title": "Seismic Vulnerability Assessment And Building-Stock Risk In Nepal",
       "pack_status": "scoped",
-      "domain": [
-        "disaster-resilience"
-      ],
-      "region": [
-        "nepal"
-      ],
+      "domain": ["disaster-resilience"],
+      "region": ["nepal"],
       "task_id": "source-inventory",
       "title": "Inventory seismic risk data sources",
       "owner_role": "literature-scout",
@@ -272,13 +235,8 @@
       "pack_id": "disaster-resilience/urban-flooding-south-asia",
       "pack_title": "Urban Pluvial Flooding Risk In South Asian Megacities",
       "pack_status": "scoped",
-      "domain": [
-        "disaster-resilience",
-        "climate-adaptation"
-      ],
-      "region": [
-        "south-asia"
-      ],
+      "domain": ["disaster-resilience", "climate-adaptation"],
+      "region": ["south-asia"],
       "task_id": "source-inventory",
       "title": "Inventory urban flood risk data",
       "owner_role": "literature-scout",
@@ -294,12 +252,8 @@
       "pack_id": "education/digital-divide-school-access-global",
       "pack_title": "Digital Divide Measurement And School Internet Connectivity In Low-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "education"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["education"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory school connectivity data sources",
       "owner_role": "literature-scout",
@@ -315,12 +269,8 @@
       "pack_id": "education/girls-education-sub-saharan-africa",
       "pack_title": "Girls Secondary Education Enrollment And Retention Barriers In Sub-Saharan Africa",
       "pack_status": "scoped",
-      "domain": [
-        "education"
-      ],
-      "region": [
-        "sub-saharan-africa"
-      ],
+      "domain": ["education"],
+      "region": ["sub-saharan-africa"],
       "task_id": "source-inventory",
       "title": "Inventory girls education data sources",
       "owner_role": "literature-scout",
@@ -336,12 +286,8 @@
       "pack_id": "education/learning-loss-post-pandemic",
       "pack_title": "Post-Pandemic Learning Loss Measurement And Recovery Tracking In Low-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "education"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["education"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory learning assessment data sources for low-income countries",
       "owner_role": "literature-scout",
@@ -357,13 +303,8 @@
       "pack_id": "energy-access/clean-cooking-sub-saharan-africa",
       "pack_title": "Clean Cooking Adoption Barriers And Health Impact In Sub-Saharan Africa",
       "pack_status": "scoped",
-      "domain": [
-        "energy-access",
-        "public-health"
-      ],
-      "region": [
-        "sub-saharan-africa"
-      ],
+      "domain": ["energy-access", "public-health"],
+      "region": ["sub-saharan-africa"],
       "task_id": "source-inventory",
       "title": "Inventory clean cooking and health data sources for Sub-Saharan Africa",
       "owner_role": "literature-scout",
@@ -379,12 +320,8 @@
       "pack_id": "energy-access/mini-grid-rural-sub-saharan-africa",
       "pack_title": "Mini-Grid Rural Electrification Viability In Sub-Saharan Africa",
       "pack_status": "scoped",
-      "domain": [
-        "energy-access"
-      ],
-      "region": [
-        "sub-saharan-africa"
-      ],
+      "domain": ["energy-access"],
+      "region": ["sub-saharan-africa"],
       "task_id": "source-inventory",
       "title": "Inventory mini-grid viability data sources",
       "owner_role": "literature-scout",
@@ -400,13 +337,8 @@
       "pack_id": "energy-access/renewable-energy-grid-integration-global",
       "pack_title": "Renewable Energy Grid Integration Bottlenecks In Low- And Middle-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "energy-access",
-        "climate-adaptation"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["energy-access", "climate-adaptation"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory grid and renewable data",
       "owner_role": "literature-scout",
@@ -422,13 +354,8 @@
       "pack_id": "food-security/crop-yield-gap-sub-saharan-africa",
       "pack_title": "Crop Yield Gap Analysis For Smallholder Farmers In Sub-Saharan Africa",
       "pack_status": "scoped",
-      "domain": [
-        "food-security",
-        "climate-adaptation"
-      ],
-      "region": [
-        "sub-saharan-africa"
-      ],
+      "domain": ["food-security", "climate-adaptation"],
+      "region": ["sub-saharan-africa"],
       "task_id": "source-inventory",
       "title": "Inventory crop yield and soil data",
       "owner_role": "literature-scout",
@@ -444,13 +371,8 @@
       "pack_id": "food-security/drought-early-warning-horn-of-africa",
       "pack_title": "Drought Early Warning And Food Insecurity Prediction In The Horn Of Africa",
       "pack_status": "scoped",
-      "domain": [
-        "food-security",
-        "disaster-resilience"
-      ],
-      "region": [
-        "east-africa"
-      ],
+      "domain": ["food-security", "disaster-resilience"],
+      "region": ["east-africa"],
       "task_id": "source-inventory",
       "title": "Inventory drought and food insecurity data sources",
       "owner_role": "literature-scout",
@@ -466,13 +388,8 @@
       "pack_id": "food-security/fisheries-overexploitation-west-africa",
       "pack_title": "Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa",
       "pack_status": "scoped",
-      "domain": [
-        "food-security",
-        "biodiversity"
-      ],
-      "region": [
-        "west-africa"
-      ],
+      "domain": ["food-security", "biodiversity"],
+      "region": ["west-africa"],
       "task_id": "source-inventory",
       "title": "Inventory fisheries data sources",
       "owner_role": "literature-scout",
@@ -485,16 +402,28 @@
       "problem_file": "problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md"
     },
     {
+      "pack_id": "food-security/food-loss-postharvest-sub-saharan-africa",
+      "pack_title": "Postharvest Food Loss Measurement And Reduction Potential In Sub-Saharan Africa",
+      "pack_status": "scoped",
+      "domain": ["food-security"],
+      "region": ["sub-saharan-africa"],
+      "task_id": "source-inventory",
+      "title": "Inventory postharvest food loss data",
+      "owner_role": "literature-scout",
+      "reviewer_needed": "domain-reviewer",
+      "safety_risk": "medium",
+      "outcome": "A dated source inventory separating loss estimates, production data, and infrastructure data.",
+      "expected_artifact": "datasets.md update plus evidence.json records.",
+      "done_condition": "Five sources classified.",
+      "tasks_file": "problem-packs/food-security/food-loss-postharvest-sub-saharan-africa/tasks.json",
+      "problem_file": "problem-packs/food-security/food-loss-postharvest-sub-saharan-africa/problem.md"
+    },
+    {
       "pack_id": "food-security/livestock-disease-surveillance-east-africa",
       "pack_title": "Livestock Disease Surveillance And Pastoralist Livelihood Risk In East Africa",
       "pack_status": "scoped",
-      "domain": [
-        "food-security",
-        "public-health"
-      ],
-      "region": [
-        "east-africa"
-      ],
+      "domain": ["food-security", "public-health"],
+      "region": ["east-africa"],
       "task_id": "source-inventory",
       "title": "Inventory livestock disease and forage data",
       "owner_role": "literature-scout",
@@ -510,13 +439,8 @@
       "pack_id": "food-security/locust-outbreak-east-africa",
       "pack_title": "Desert Locust Outbreak Early Warning In East Africa",
       "pack_status": "scoped",
-      "domain": [
-        "food-security",
-        "climate-health"
-      ],
-      "region": [
-        "east-africa"
-      ],
+      "domain": ["food-security", "climate-health"],
+      "region": ["east-africa"],
       "task_id": "source-inventory",
       "title": "Inventory locust and environmental data sources for East Africa",
       "owner_role": "literature-scout",
@@ -532,12 +456,8 @@
       "pack_id": "public-health/alcohol-harm-reduction-global",
       "pack_title": "Alcohol Harm Reduction Policy Gaps And Heavy Episodic Drinking In Low- And Middle-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory alcohol policy and prevalence data",
       "owner_role": "literature-scout",
@@ -553,12 +473,8 @@
       "pack_id": "public-health/antimicrobial-resistance-surveillance-global",
       "pack_title": "Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory AMR surveillance data",
       "owner_role": "literature-scout",
@@ -574,12 +490,8 @@
       "pack_id": "public-health/blindness-vision-impairment-global",
       "pack_title": "Avoidable Blindness And Cataract Surgical Coverage Gaps In Low- And Middle-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory eye health data",
       "owner_role": "literature-scout",
@@ -595,12 +507,8 @@
       "pack_id": "public-health/child-labor-supply-chain-global",
       "pack_title": "Child Labor Detection And Supply Chain Risk In Global Agriculture",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory child labor and supply chain data",
       "owner_role": "literature-scout",
@@ -616,12 +524,8 @@
       "pack_id": "public-health/conflict-health-service-disruption-global",
       "pack_title": "Conflict-Driven Health Service Disruption Measurement In Fragile States",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory conflict and health service data",
       "owner_role": "literature-scout",
@@ -637,13 +541,8 @@
       "pack_id": "public-health/disability-access-barriers-global",
       "pack_title": "Disability Access Barriers To Health And Education In Low- And Middle-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "public-health",
-        "education"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health", "education"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory disability and access data",
       "owner_role": "literature-scout",
@@ -659,12 +558,8 @@
       "pack_id": "public-health/drowning-prevention-south-asia",
       "pack_title": "Child Drowning Mortality And Supervision Gaps In South Asia",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "south-asia"
-      ],
+      "domain": ["public-health"],
+      "region": ["south-asia"],
       "task_id": "source-inventory",
       "title": "Inventory drowning risk and water-body data",
       "owner_role": "literature-scout",
@@ -680,12 +575,8 @@
       "pack_id": "public-health/health-workforce-density-global",
       "pack_title": "Health Workforce Density And Skill-Mix Gaps In Low-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory workforce data",
       "owner_role": "literature-scout",
@@ -701,12 +592,8 @@
       "pack_id": "public-health/hiv-treatment-cascade-global",
       "pack_title": "HIV Treatment Cascade Gaps And 95-95-95 Target Tracking In Sub-Saharan Africa",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "sub-saharan-africa"
-      ],
+      "domain": ["public-health"],
+      "region": ["sub-saharan-africa"],
       "task_id": "source-inventory",
       "title": "Inventory HIV cascade data",
       "owner_role": "literature-scout",
@@ -722,12 +609,8 @@
       "pack_id": "public-health/indigenous-health-data-global",
       "pack_title": "Indigenous Health Data Sovereignty And Service Access Gaps In Settler-Colonial States",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory indigenous health data sources",
       "owner_role": "literature-scout",
@@ -743,12 +626,8 @@
       "pack_id": "public-health/informal-settlements-health-global",
       "pack_title": "Informal Settlement Health Access Gaps In Low- And Middle-Income Country Cities",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory informal settlement and health access data",
       "owner_role": "literature-scout",
@@ -764,12 +643,8 @@
       "pack_id": "public-health/lead-exposure-urban-global",
       "pack_title": "Urban Lead Exposure Risk Mapping In Low- And Middle-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory lead exposure data sources for LMIC cities",
       "owner_role": "literature-scout",
@@ -785,12 +660,8 @@
       "pack_id": "public-health/maternal-mortality-sub-saharan-africa",
       "pack_title": "Maternal Mortality Facility Delivery And Emergency Obstetric Care Access In Sub-Saharan Africa",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "sub-saharan-africa"
-      ],
+      "domain": ["public-health"],
+      "region": ["sub-saharan-africa"],
       "task_id": "source-inventory",
       "title": "Inventory maternal health data sources",
       "owner_role": "literature-scout",
@@ -806,12 +677,8 @@
       "pack_id": "public-health/mental-health-treatment-gap-global",
       "pack_title": "Mental Health Treatment Gap Measurement In Low- And Middle-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory mental health data sources",
       "owner_role": "literature-scout",
@@ -827,12 +694,8 @@
       "pack_id": "public-health/ntd-mass-drug-administration-global",
       "pack_title": "Neglected Tropical Disease Mass Drug Administration Coverage Gaps In Sub-Saharan Africa",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "sub-saharan-africa"
-      ],
+      "domain": ["public-health"],
+      "region": ["sub-saharan-africa"],
       "task_id": "source-inventory",
       "title": "Inventory NTD MDA data",
       "owner_role": "literature-scout",
@@ -848,12 +711,8 @@
       "pack_id": "public-health/prison-health-tb-hiv-global",
       "pack_title": "Prison Health Tuberculosis And HIV Service Gaps In Low- And Middle-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory prison health data",
       "owner_role": "literature-scout",
@@ -869,12 +728,8 @@
       "pack_id": "public-health/road-traffic-injury-urban-global",
       "pack_title": "Road Traffic Injury Mortality Risk And Emergency Trauma Care Access In Low- And Middle-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory road traffic and trauma data",
       "owner_role": "literature-scout",
@@ -890,12 +745,8 @@
       "pack_id": "public-health/sickle-cell-disease-sub-saharan-africa",
       "pack_title": "Sickle Cell Disease Newborn Screening And Treatment Access Gaps In Sub-Saharan Africa",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "sub-saharan-africa"
-      ],
+      "domain": ["public-health"],
+      "region": ["sub-saharan-africa"],
       "task_id": "source-inventory",
       "title": "Inventory SCD data sources",
       "owner_role": "literature-scout",
@@ -911,12 +762,8 @@
       "pack_id": "public-health/snakebite-antivenom-access-global",
       "pack_title": "Snakebite Envenoming Mortality And Antivenom Access Gaps In Rural Low-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory snakebite and antivenom data",
       "owner_role": "literature-scout",
@@ -932,13 +779,8 @@
       "pack_id": "public-health/stunting-sub-saharan-africa",
       "pack_title": "Child Stunting Hotspot Identification In Sub-Saharan Africa",
       "pack_status": "scoped",
-      "domain": [
-        "public-health",
-        "food-security"
-      ],
-      "region": [
-        "sub-saharan-africa"
-      ],
+      "domain": ["public-health", "food-security"],
+      "region": ["sub-saharan-africa"],
       "task_id": "source-inventory",
       "title": "Inventory stunting and nutrition data sources",
       "owner_role": "literature-scout",
@@ -954,12 +796,8 @@
       "pack_id": "public-health/tb-detection-treatment-gap-global",
       "pack_title": "Tuberculosis Case Detection And Treatment Completion Gaps In High-Burden Countries",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory TB data sources",
       "owner_role": "literature-scout",
@@ -975,12 +813,8 @@
       "pack_id": "public-health/tobacco-control-taxation-global",
       "pack_title": "Tobacco Taxation And Smoking Prevalence Gaps In Low- And Middle-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory tobacco tax and prevalence data",
       "owner_role": "literature-scout",
@@ -996,12 +830,8 @@
       "pack_id": "public-health/vaccination-coverage-equity-global",
       "pack_title": "Childhood Vaccination Coverage Equity Gaps In Low- And Middle-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory immunization data",
       "owner_role": "literature-scout",
@@ -1017,13 +847,8 @@
       "pack_id": "public-health/wasting-severe-acute-sub-saharan-africa",
       "pack_title": "Severe Acute Malnutrition Wasting Detection And Treatment Coverage In Sub-Saharan Africa",
       "pack_status": "scoped",
-      "domain": [
-        "public-health",
-        "food-security"
-      ],
-      "region": [
-        "sub-saharan-africa"
-      ],
+      "domain": ["public-health", "food-security"],
+      "region": ["sub-saharan-africa"],
       "task_id": "source-inventory",
       "title": "Inventory SAM prevalence and treatment data sources",
       "owner_role": "literature-scout",
@@ -1039,13 +864,8 @@
       "pack_id": "sanitation/open-defecation-india",
       "pack_title": "Open Defecation Elimination And Sanitation Coverage Verification In India",
       "pack_status": "scoped",
-      "domain": [
-        "sanitation",
-        "public-health"
-      ],
-      "region": [
-        "india"
-      ],
+      "domain": ["sanitation", "public-health"],
+      "region": ["india"],
       "task_id": "source-inventory",
       "title": "Inventory sanitation and health data sources for India",
       "owner_role": "literature-scout",
@@ -1061,13 +881,8 @@
       "pack_id": "sanitation/solid-waste-management-urban-south-asia",
       "pack_title": "Municipal Solid Waste Collection Gaps And Open Dumping Health Risk In South Asian Cities",
       "pack_status": "scoped",
-      "domain": [
-        "sanitation",
-        "public-health"
-      ],
-      "region": [
-        "south-asia"
-      ],
+      "domain": ["sanitation", "public-health"],
+      "region": ["south-asia"],
       "task_id": "source-inventory",
       "title": "Inventory solid waste data sources",
       "owner_role": "literature-scout",
@@ -1083,13 +898,8 @@
       "pack_id": "water-security/glacial-melt-hindu-kush",
       "pack_title": "Glacial Melt Water Security Risk In The Hindu Kush Himalaya",
       "pack_status": "scoped",
-      "domain": [
-        "water-security",
-        "climate-adaptation"
-      ],
-      "region": [
-        "hindu-kush-himalaya"
-      ],
+      "domain": ["water-security", "climate-adaptation"],
+      "region": ["hindu-kush-himalaya"],
       "task_id": "source-inventory",
       "title": "Inventory glacial melt and water data sources",
       "owner_role": "literature-scout",
@@ -1105,13 +915,8 @@
       "pack_id": "water-security/groundwater-depletion-india",
       "pack_title": "Groundwater Depletion Risk Assessment In India",
       "pack_status": "scoped",
-      "domain": [
-        "water-security",
-        "food-security"
-      ],
-      "region": [
-        "india"
-      ],
+      "domain": ["water-security", "food-security"],
+      "region": ["india"],
       "task_id": "source-inventory",
       "title": "Inventory groundwater data sources for India",
       "owner_role": "literature-scout",
@@ -1127,13 +932,8 @@
       "pack_id": "water-security/water-quality-monitoring-global",
       "pack_title": "Drinking Water Quality Monitoring Gaps In Low- And Middle-Income Countries",
       "pack_status": "scoped",
-      "domain": [
-        "water-security",
-        "public-health"
-      ],
-      "region": [
-        "global"
-      ],
+      "domain": ["water-security", "public-health"],
+      "region": ["global"],
       "task_id": "source-inventory",
       "title": "Inventory water-quality monitoring data",
       "owner_role": "literature-scout",

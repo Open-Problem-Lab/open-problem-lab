@@ -1,1 +1,34 @@
-{"id":"water-security/water-quality-monitoring-global","title":"Drinking Water Quality Monitoring Gaps In Low- And Middle-Income Countries","status":"scoped","domain":["water-security","public-health"],"region":["global"],"summary":"Build a verified workflow for identifying where drinking water quality monitoring is absent and fecal contamination risk is highest, linking JMP water-quality data, water-point mapping, and environmental risk factors at sub-national scale.","why_it_matters":"WHO/UNICEF JMP reports 2 billion people drink fecally contaminated water. But water-quality testing is sporadic in most LMICs — fewer than 30 countries report sub-national water-quality data to JMP. Satellite-derived environmental risk factors and water-point mapping can estimate contamination risk, but linking these to monitoring gaps has not been done systematically.","success_metrics":[{"metric":"Data integration","target":"Every monitoring-gap estimate links JMP data, water-point maps, and environmental risk with methodology.","validation_method":"Schema validation and reviewer checks."}],"safety_level":"medium","canonical_files":["datasets.md","evidence.json","evidence.md","outputs.md","playbooks.md","problem.json","problem.md","task-map.md","tasks.json","validation.md"],"review_policy":{"required_reviews":2,"replication_required":true,"merge_gate":"Schema validation, domain review, safety review, replication."}}
+{
+  "id": "water-security/water-quality-monitoring-global",
+  "title": "Drinking Water Quality Monitoring Gaps In Low- And Middle-Income Countries",
+  "status": "scoped",
+  "domain": ["water-security", "public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for identifying where drinking water quality monitoring is absent and fecal contamination risk is highest, linking JMP water-quality data, water-point mapping, and environmental risk factors at sub-national scale.",
+  "why_it_matters": "WHO/UNICEF JMP reports 2 billion people drink fecally contaminated water. But water-quality testing is sporadic in most LMICs — fewer than 30 countries report sub-national water-quality data to JMP. Satellite-derived environmental risk factors and water-point mapping can estimate contamination risk, but linking these to monitoring gaps has not been done systematically.",
+  "success_metrics": [
+    {
+      "metric": "Data integration",
+      "target": "Every monitoring-gap estimate links JMP data, water-point maps, and environmental risk with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

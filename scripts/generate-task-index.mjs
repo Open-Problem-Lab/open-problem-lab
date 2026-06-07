@@ -1,5 +1,6 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
+import prettier from "prettier";
 import { readJson, root } from "./lib/files.mjs";
 
 const checkOnly = process.argv.includes("--check");
@@ -100,7 +101,13 @@ const output = {
   tasks: available
 };
 
-await writeOrCheck("tasks-available.json", JSON.stringify(output, null, 2) + "\n");
+const raw = JSON.stringify(output, null, 2);
+const formatted = await prettier.format(raw, {
+  parser: "json",
+  filepath: "tasks-available.json"
+});
+
+await writeOrCheck("tasks-available.json", formatted);
 
 if (!checkOnly) {
   console.log(

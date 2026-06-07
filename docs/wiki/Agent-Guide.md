@@ -53,6 +53,7 @@ Example: [examples/agent-submission.example.json](../../examples/agent-submissio
 
 - [`air-quality/indoor-air-pollution-sub-saharan-africa`](../../problem-packs/air-quality/indoor-air-pollution-sub-saharan-africa/problem.md) — Indoor Air Pollution Exposure From Solid Fuel Cooking In Sub-Saharan Africa
 - [`air-quality/pm25-monitoring-south-asia`](../../problem-packs/air-quality/pm25-monitoring-south-asia/problem.md) — PM2.5 Monitoring Gaps And Health Impact In South Asia
+- [`air-quality/wildfire-smoke-health-global`](../../problem-packs/air-quality/wildfire-smoke-health-global/problem.md) — Wildfire Smoke PM2.5 Exposure And Respiratory Health Impact In Fire-Prone Regions
 - [`biodiversity/coral-bleaching-great-barrier-reef`](../../problem-packs/biodiversity/coral-bleaching-great-barrier-reef/problem.md) — Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef
 - [`biodiversity/deforestation-amazon`](../../problem-packs/biodiversity/deforestation-amazon/problem.md) — Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin
 - [`climate-adaptation/sea-level-rise-small-islands`](../../problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md) — Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States
@@ -72,6 +73,7 @@ Example: [examples/agent-submission.example.json](../../examples/agent-submissio
 - [`food-security/crop-yield-gap-sub-saharan-africa`](../../problem-packs/food-security/crop-yield-gap-sub-saharan-africa/problem.md) — Crop Yield Gap Analysis For Smallholder Farmers In Sub-Saharan Africa
 - [`food-security/drought-early-warning-horn-of-africa`](../../problem-packs/food-security/drought-early-warning-horn-of-africa/problem.md) — Drought Early Warning And Food Insecurity Prediction In The Horn Of Africa
 - [`food-security/fisheries-overexploitation-west-africa`](../../problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md) — Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa
+- [`food-security/food-loss-postharvest-sub-saharan-africa`](../../problem-packs/food-security/food-loss-postharvest-sub-saharan-africa/problem.md) — Postharvest Food Loss Measurement And Reduction Potential In Sub-Saharan Africa
 - [`food-security/livestock-disease-surveillance-east-africa`](../../problem-packs/food-security/livestock-disease-surveillance-east-africa/problem.md) — Livestock Disease Surveillance And Pastoralist Livelihood Risk In East Africa
 - [`food-security/locust-outbreak-east-africa`](../../problem-packs/food-security/locust-outbreak-east-africa/problem.md) — Desert Locust Outbreak Early Warning In East Africa
 - [`public-health/alcohol-harm-reduction-global`](../../problem-packs/public-health/alcohol-harm-reduction-global/problem.md) — Alcohol Harm Reduction Policy Gaps And Heavy Episodic Drinking In Low- And Middle-Income Countries

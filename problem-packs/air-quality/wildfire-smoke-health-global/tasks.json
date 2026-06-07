@@ -1,0 +1,72 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "air-quality/wildfire-smoke-health-global",
+    "title": "Inventory wildfire smoke and health data",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory.",
+    "inputs": ["NOAA HMS", "GEOS-Chem", "ground monitors", "health data"],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Four sources classified."
+  },
+  {
+    "id": "smoke-exposure-mapping",
+    "problem_id": "air-quality/wildfire-smoke-health-global",
+    "title": "Map wildfire smoke PM2.5 exposure at sub-national scale",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A smoke-specific PM2.5 exposure map.",
+    "inputs": ["HMS plumes", "GEOS-Chem composition", "AOD data", "monitor data"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator validates exposure against ground monitors and confirms methodology.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Exposure map with monitor validation and replication."
+  },
+  {
+    "id": "health-impact-analysis",
+    "problem_id": "air-quality/wildfire-smoke-health-global",
+    "title": "Analyze respiratory health impact of smoke exposure",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A health-impact analysis linking smoke exposure to respiratory outcomes.",
+    "inputs": ["exposure map", "health utilization data", "population data"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms impact methodology and confound controls.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Impact analysis with confound controls and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "air-quality/wildfire-smoke-health-global",
+    "title": "Red-team misuse of smoke health data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["impact analysis", "safety policy"],
+    "expected_artifact": "SAFETY.md review.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "air-quality/wildfire-smoke-health-global",
+    "title": "Check whether outputs match air-quality planning needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "air-quality context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision."
+  }
+]

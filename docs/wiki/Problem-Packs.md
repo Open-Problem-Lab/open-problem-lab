@@ -20,6 +20,16 @@ Build a verified workflow for estimating household-level indoor PM2.5 exposure f
 
 Build a verified workflow for identifying where PM2.5 monitoring gaps produce the largest health-burden uncertainty in South Asia, and where low-cost sensor networks or satellite-derived estimates could fill the highest-priority gaps.
 
+## Wildfire Smoke PM2.5 Exposure And Respiratory Health Impact In Fire-Prone Regions
+
+- ID: `air-quality/wildfire-smoke-health-global`
+- Status: `scoped`
+- Domain: `air-quality`, `public-health`, `climate-health`
+- Region: `global`
+- Source: [problem-packs/air-quality/wildfire-smoke-health-global](../../problem-packs/air-quality/wildfire-smoke-health-global/problem.md)
+
+Build a verified workflow for estimating wildfire smoke PM2.5 exposure and respiratory health impact, linking satellite-derived smoke plumes, ground-monitor PM2.5, and health-utilization data in fire-prone regions.
+
 ## Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef
 
 - ID: `biodiversity/coral-bleaching-great-barrier-reef`
@@ -209,6 +219,16 @@ Build a verified workflow for assessing where rainfall, vegetation, and market-p
 - Source: [problem-packs/food-security/fisheries-overexploitation-west-africa](../../problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md)
 
 Build a verified workflow for detecting overexploitation of small-scale fisheries in West Africa using satellite vessel-monitoring data, catch-reconstruction estimates, and coastal-community livelihood data.
+
+## Postharvest Food Loss Measurement And Reduction Potential In Sub-Saharan Africa
+
+- ID: `food-security/food-loss-postharvest-sub-saharan-africa`
+- Status: `scoped`
+- Domain: `food-security`
+- Region: `sub-saharan-africa`
+- Source: [problem-packs/food-security/food-loss-postharvest-sub-saharan-africa](../../problem-packs/food-security/food-loss-postharvest-sub-saharan-africa/problem.md)
+
+Build a verified workflow for measuring postharvest food loss at sub-national scale in Sub-Saharan Africa, linking crop-production data, storage-infrastructure data, and household-survey food-loss modules.
 
 ## Livestock Disease Surveillance And Pastoralist Livelihood Risk In East Africa
 

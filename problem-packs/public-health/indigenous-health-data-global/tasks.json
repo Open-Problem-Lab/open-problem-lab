@@ -1,1 +1,81 @@
-[{"id":"source-inventory","problem_id":"public-health/indigenous-health-data-global","title":"Inventory indigenous health data sources","status":"scoped","owner_role":"literature-scout","outcome":"A dated source inventory respecting CARE principles and documenting data-governance status.","inputs":["census data","indigenous-governed data","national health data","governance frameworks"],"expected_artifact":"datasets.md update plus evidence.json records.","validation_method":"Reviewer checks each source for governance documentation, methodology, and limitations.","reviewer_needed":"domain-reviewer","safety_risk":"high","done_condition":"Four sources classified with governance-status documentation."},{"id":"data-governance-consultation","problem_id":"public-health/indigenous-health-data-global","title":"Consult indigenous data governance for measurement framework","status":"needs-triage","owner_role":"field-reality-reviewer","outcome":"A measurement framework co-designed with indigenous data governance authorities.","inputs":["indigenous governance frameworks","CARE principles","community consultation"],"expected_artifact":"validation.md update with governance documentation.","validation_method":"Independent indigenous governance review confirms framework compliance.","reviewer_needed":"field-reality-reviewer","safety_risk":"high","done_condition":"Framework approved by indigenous data governance with documentation."},{"id":"health-access-gap","problem_id":"public-health/indigenous-health-data-global","title":"Measure health access gaps with data sovereignty","status":"needs-triage","owner_role":"implementation-planner","outcome":"An access-gap analysis governed by indigenous data sovereignty principles.","inputs":["sovereign health data","governance framework","service-utilization data"],"expected_artifact":"outputs.md update.","validation_method":"Replicator confirms methodology and governance compliance.","reviewer_needed":"domain-reviewer","safety_risk":"high","done_condition":"Gap analysis with governance compliance and replication."},{"id":"red-team-review","problem_id":"public-health/indigenous-health-data-global","title":"Red-team colonial data extraction risks","status":"needs-triage","owner_role":"red-team-reviewer","outcome":"Failure-mode review identifying data-extraction and stigmatization risks.","inputs":["gap analysis","governance framework","safety policy"],"expected_artifact":"SAFETY.md linked review note.","validation_method":"Mitigations or block, replicated.","reviewer_needed":"red-team-reviewer","safety_risk":"high","done_condition":"Claims qualified or gated with sovereignty safeguards."},{"id":"field-reality-check","problem_id":"public-health/indigenous-health-data-global","title":"Check whether outputs match indigenous health planning needs","status":"needs-triage","owner_role":"field-reality-reviewer","outcome":"Field-facing review with indigenous health governance.","inputs":["draft outputs","indigenous health governance"],"expected_artifact":"playbooks.md update.","validation_method":"Indigenous governance review identifies decision, user, misuse risk, replicated.","reviewer_needed":"field-reality-reviewer","safety_risk":"high","done_condition":"Named user, named decision, non-use cases, indigenous-governance sign-off."}]
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/indigenous-health-data-global",
+    "title": "Inventory indigenous health data sources",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory respecting CARE principles and documenting data-governance status.",
+    "inputs": [
+      "census data",
+      "indigenous-governed data",
+      "national health data",
+      "governance frameworks"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records.",
+    "validation_method": "Reviewer checks each source for governance documentation, methodology, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Four sources classified with governance-status documentation."
+  },
+  {
+    "id": "data-governance-consultation",
+    "problem_id": "public-health/indigenous-health-data-global",
+    "title": "Consult indigenous data governance for measurement framework",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A measurement framework co-designed with indigenous data governance authorities.",
+    "inputs": [
+      "indigenous governance frameworks",
+      "CARE principles",
+      "community consultation"
+    ],
+    "expected_artifact": "validation.md update with governance documentation.",
+    "validation_method": "Independent indigenous governance review confirms framework compliance.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Framework approved by indigenous data governance with documentation."
+  },
+  {
+    "id": "health-access-gap",
+    "problem_id": "public-health/indigenous-health-data-global",
+    "title": "Measure health access gaps with data sovereignty",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "An access-gap analysis governed by indigenous data sovereignty principles.",
+    "inputs": ["sovereign health data", "governance framework", "service-utilization data"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms methodology and governance compliance.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Gap analysis with governance compliance and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/indigenous-health-data-global",
+    "title": "Red-team colonial data extraction risks",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review identifying data-extraction and stigmatization risks.",
+    "inputs": ["gap analysis", "governance framework", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review note.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated with sovereignty safeguards."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/indigenous-health-data-global",
+    "title": "Check whether outputs match indigenous health planning needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review with indigenous health governance.",
+    "inputs": ["draft outputs", "indigenous health governance"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Indigenous governance review identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases, indigenous-governance sign-off."
+  }
+]

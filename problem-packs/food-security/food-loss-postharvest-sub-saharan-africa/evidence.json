@@ -1,0 +1,38 @@
+[
+  {
+    "id": "fao-food-loss-index-2023",
+    "problem_id": "food-security/food-loss-postharvest-sub-saharan-africa",
+    "claim": "FAO Food Loss Index estimates 30-40 percent of Sub-Saharan African food is lost postharvest, concentrated at handling, storage, and transport stages, with cereals and perishable crops most affected.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "FAO Food Loss and Waste Database",
+      "url": "https://www.fao.org/platform-food-loss-waste/flw-data/en/"
+    },
+    "source_date": "2023-12-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed FAO Food Loss Index methodology, regional estimates, and commodity breakdowns.",
+    "limitations": [
+      "Food-loss data is sparse and modeled for most countries.",
+      "Sub-national estimates are not available for most countries."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "aphlis-postharvest-loss-2023",
+    "problem_id": "food-security/food-loss-postharvest-sub-saharan-africa",
+    "claim": "APHLIS provides postharvest loss estimates for major cereals at provincial scale across SSA, with losses of 10-30 percent by crop and location.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "African Postharvest Losses Information System (APHLIS)",
+      "url": "https://www.aphlis.net/"
+    },
+    "source_date": "2023-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed APHLIS methodology, loss estimates, and country coverage.",
+    "limitations": [
+      "APHLIS covers cereals only, not perishable crops.",
+      "Estimates are modeled from available data, not directly measured."
+    ],
+    "confidence": "high"
+  }
+]

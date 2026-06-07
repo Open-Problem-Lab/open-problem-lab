@@ -1,1 +1,20 @@
-[{"id":"unpfii-indigenous-health-2023","problem_id":"public-health/indigenous-health-data-global","claim":"UNPFII documents life-expectancy gaps of 5-20 years between indigenous and non-indigenous populations, with fewer than 30 countries including indigenous identifiers in routine health data.","evidence_type":"primary-source","source":{"title":"State of the World's Indigenous Peoples: Health","url":"https://www.un.org/development/desa/indigenouspeoples/publications.html"},"source_date":"2023-01-01","access_date":"2026-06-07","method":"Reviewed UNPFII report chapters on health disparities and data collection.","limitations":["Indigenous population data depends on self-identification and census methodology.","Health-disparity data is sparse and inconsistent across countries."],"confidence":"high"}]
+[
+  {
+    "id": "unpfii-indigenous-health-2023",
+    "problem_id": "public-health/indigenous-health-data-global",
+    "claim": "UNPFII documents life-expectancy gaps of 5-20 years between indigenous and non-indigenous populations, with fewer than 30 countries including indigenous identifiers in routine health data.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "State of the World's Indigenous Peoples: Health",
+      "url": "https://www.un.org/development/desa/indigenouspeoples/publications.html"
+    },
+    "source_date": "2023-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed UNPFII report chapters on health disparities and data collection.",
+    "limitations": [
+      "Indigenous population data depends on self-identification and census methodology.",
+      "Health-disparity data is sparse and inconsistent across countries."
+    ],
+    "confidence": "high"
+  }
+]

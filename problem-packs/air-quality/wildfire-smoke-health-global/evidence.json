@@ -1,0 +1,20 @@
+[
+  {
+    "id": "burke-wildfire-smoke-pm25-2021",
+    "problem_id": "air-quality/wildfire-smoke-health-global",
+    "claim": "A 2021 Lancet Planetary Health study estimated wildfire smoke contributes up to 25 percent of global ambient PM2.5, with smoke PM2.5 potentially 2-3x more toxic per unit.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Global estimates of mortality associated with long-term exposure to wildfire-related PM2.5",
+      "url": "https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(21)00200-X/fulltext"
+    },
+    "source_date": "2021-09-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed smoke-exposure estimation methodology, health-impact modeling, and toxicity analysis.",
+    "limitations": [
+      "Smoke-exposure estimates rely on satellite AOD which has cloud-cover gaps.",
+      "Differential toxicity finding requires further replication."
+    ],
+    "confidence": "high"
+  }
+]

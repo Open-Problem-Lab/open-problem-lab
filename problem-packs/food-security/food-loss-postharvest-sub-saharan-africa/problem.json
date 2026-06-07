@@ -1,0 +1,34 @@
+{
+  "id": "food-security/food-loss-postharvest-sub-saharan-africa",
+  "title": "Postharvest Food Loss Measurement And Reduction Potential In Sub-Saharan Africa",
+  "status": "scoped",
+  "domain": ["food-security"],
+  "region": ["sub-saharan-africa"],
+  "summary": "Build a verified workflow for measuring postharvest food loss at sub-national scale in Sub-Saharan Africa, linking crop-production data, storage-infrastructure data, and household-survey food-loss modules.",
+  "why_it_matters": "FAO estimates 30-40 percent of food produced in Sub-Saharan Africa is lost postharvest — enough to feed 300 million people. Losses concentrate at the farm-to-market stage where storage, transport, and processing infrastructure is weakest. Measuring where losses are highest and what infrastructure would reduce them is the missing link for investment targeting.",
+  "success_metrics": [
+    {
+      "metric": "Measurement traceability",
+      "target": "Every loss estimate links production, storage, and survey data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

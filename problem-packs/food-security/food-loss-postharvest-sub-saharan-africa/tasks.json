@@ -1,0 +1,83 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "food-security/food-loss-postharvest-sub-saharan-africa",
+    "title": "Inventory postharvest food loss data",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating loss estimates, production data, and infrastructure data.",
+    "inputs": [
+      "APHLIS data",
+      "FAO Food Loss Index",
+      "MapSPAM",
+      "DHS storage",
+      "market access data"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records.",
+    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Five sources classified."
+  },
+  {
+    "id": "postharvest-loss-estimation",
+    "problem_id": "food-security/food-loss-postharvest-sub-saharan-africa",
+    "title": "Estimate sub-national postharvest food loss",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A sub-national postharvest loss map for major staple crops with methodology documentation.",
+    "inputs": ["APHLIS data", "production data", "climate data"],
+    "expected_artifact": "validation.md update with loss-estimation methodology.",
+    "validation_method": "Replicator validates loss estimates against household-survey food-loss modules where available.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Loss map with validation and replication."
+  },
+  {
+    "id": "loss-reduction-gap",
+    "problem_id": "food-security/food-loss-postharvest-sub-saharan-africa",
+    "title": "Map postharvest loss reduction potential",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A gap analysis identifying where storage-technology adoption would reduce losses most.",
+    "inputs": [
+      "loss map",
+      "storage-technology data",
+      "market-access data",
+      "population data"
+    ],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms reduction-potential methodology.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Gap analysis with replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "food-security/food-loss-postharvest-sub-saharan-africa",
+    "title": "Red-team misuse of food loss data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["gap analysis", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review note.",
+    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "food-security/food-loss-postharvest-sub-saharan-africa",
+    "title": "Check whether outputs match food-system planning needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "food-system planning context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases."
+  }
+]

@@ -1,1 +1,34 @@
-{"id":"public-health/vaccination-coverage-equity-global","title":"Childhood Vaccination Coverage Equity Gaps In Low- And Middle-Income Countries","status":"scoped","domain":["public-health"],"region":["global"],"summary":"Build a verified workflow for measuring sub-national vaccination coverage equity gaps, linking DHS and MICS immunization data, wealth-quintile disaggregation, and health-facility data to identify zero-dose children.","why_it_matters":"Immunization prevents 4 million deaths annually. Yet 20 million children remain unvaccinated or under-vaccinated, concentrated in the poorest wealth quintiles and remote districts. The Immunization Agenda 2030 targets zero-dose reduction, but measuring where zero-dose children live and why they are missed requires coverage-equity analysis that is underdeveloped at sub-national scale.","success_metrics":[{"metric":"Equity traceability","target":"Every coverage-equity estimate links survey data, wealth disaggregation, and facility data with methodology.","validation_method":"Schema validation and reviewer checks."}],"safety_level":"medium","canonical_files":["datasets.md","evidence.json","evidence.md","outputs.md","playbooks.md","problem.json","problem.md","task-map.md","tasks.json","validation.md"],"review_policy":{"required_reviews":2,"replication_required":true,"merge_gate":"Schema validation, domain review, safety review, replication."}}
+{
+  "id": "public-health/vaccination-coverage-equity-global",
+  "title": "Childhood Vaccination Coverage Equity Gaps In Low- And Middle-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring sub-national vaccination coverage equity gaps, linking DHS and MICS immunization data, wealth-quintile disaggregation, and health-facility data to identify zero-dose children.",
+  "why_it_matters": "Immunization prevents 4 million deaths annually. Yet 20 million children remain unvaccinated or under-vaccinated, concentrated in the poorest wealth quintiles and remote districts. The Immunization Agenda 2030 targets zero-dose reduction, but measuring where zero-dose children live and why they are missed requires coverage-equity analysis that is underdeveloped at sub-national scale.",
+  "success_metrics": [
+    {
+      "metric": "Equity traceability",
+      "target": "Every coverage-equity estimate links survey data, wealth disaggregation, and facility data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

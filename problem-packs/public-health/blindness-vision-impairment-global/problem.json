@@ -1,1 +1,34 @@
-{"id":"public-health/blindness-vision-impairment-global","title":"Avoidable Blindness And Cataract Surgical Coverage Gaps In Low- And Middle-Income Countries","status":"scoped","domain":["public-health"],"region":["global"],"summary":"Build a verified workflow for measuring avoidable blindness prevalence and cataract surgical coverage gaps in LMICs, linking RAAB survey data, eye-health workforce data, and facility-location data at sub-national scale.","why_it_matters":"WHO estimates 2.2 billion people have vision impairment, of whom 1 billion cases are preventable or unaddressed. Cataract accounts for 50 percent of blindness in LMICs. Cataract surgical coverage is below 50 percent in most low-income countries. RAAB surveys provide gold-standard sub-national blindness data, but linking survey data to eye-health workforce and facility data is underdeveloped.","success_metrics":[{"metric":"Coverage traceability","target":"Every CSC estimate links survey, workforce, and facility data with methodology.","validation_method":"Schema validation and reviewer checks."}],"safety_level":"medium","canonical_files":["datasets.md","evidence.json","evidence.md","outputs.md","playbooks.md","problem.json","problem.md","task-map.md","tasks.json","validation.md"],"review_policy":{"required_reviews":2,"replication_required":true,"merge_gate":"Schema validation, domain review, safety review, replication."}}
+{
+  "id": "public-health/blindness-vision-impairment-global",
+  "title": "Avoidable Blindness And Cataract Surgical Coverage Gaps In Low- And Middle-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring avoidable blindness prevalence and cataract surgical coverage gaps in LMICs, linking RAAB survey data, eye-health workforce data, and facility-location data at sub-national scale.",
+  "why_it_matters": "WHO estimates 2.2 billion people have vision impairment, of whom 1 billion cases are preventable or unaddressed. Cataract accounts for 50 percent of blindness in LMICs. Cataract surgical coverage is below 50 percent in most low-income countries. RAAB surveys provide gold-standard sub-national blindness data, but linking survey data to eye-health workforce and facility data is underdeveloped.",
+  "success_metrics": [
+    {
+      "metric": "Coverage traceability",
+      "target": "Every CSC estimate links survey, workforce, and facility data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

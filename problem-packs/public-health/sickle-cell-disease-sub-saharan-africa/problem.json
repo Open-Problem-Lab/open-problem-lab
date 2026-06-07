@@ -1,1 +1,34 @@
-{"id":"public-health/sickle-cell-disease-sub-saharan-africa","title":"Sickle Cell Disease Newborn Screening And Treatment Access Gaps In Sub-Saharan Africa","status":"scoped","domain":["public-health"],"region":["sub-saharan-africa"],"summary":"Build a verified workflow for measuring the gap between sickle cell disease birth prevalence and newborn screening and treatment coverage, linking DHS sickle cell data, health-facility capacity, and penicillin-prophylaxis coverage at sub-national scale.","why_it_matters":"Over 300000 babies are born with sickle cell disease annually, 75 percent in Sub-Saharan Africa. Without newborn screening and penicillin prophylaxis, 50-90 percent die before age five. Yet fewer than 10 percent of SCD births in SSA are identified through newborn screening, and hydroxyurea access is extremely limited. Mapping birth prevalence against screening and treatment coverage at district scale is prerequisite to closing the survival gap.","success_metrics":[{"metric":"Coverage traceability","target":"Every screening and treatment gap links prevalence, facility, and treatment data with methodology.","validation_method":"Schema validation and reviewer checks."}],"safety_level":"medium","canonical_files":["datasets.md","evidence.json","evidence.md","outputs.md","playbooks.md","problem.json","problem.md","task-map.md","tasks.json","validation.md"],"review_policy":{"required_reviews":2,"replication_required":true,"merge_gate":"Schema validation, domain review, safety review, replication."}}
+{
+  "id": "public-health/sickle-cell-disease-sub-saharan-africa",
+  "title": "Sickle Cell Disease Newborn Screening And Treatment Access Gaps In Sub-Saharan Africa",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["sub-saharan-africa"],
+  "summary": "Build a verified workflow for measuring the gap between sickle cell disease birth prevalence and newborn screening and treatment coverage, linking DHS sickle cell data, health-facility capacity, and penicillin-prophylaxis coverage at sub-national scale.",
+  "why_it_matters": "Over 300000 babies are born with sickle cell disease annually, 75 percent in Sub-Saharan Africa. Without newborn screening and penicillin prophylaxis, 50-90 percent die before age five. Yet fewer than 10 percent of SCD births in SSA are identified through newborn screening, and hydroxyurea access is extremely limited. Mapping birth prevalence against screening and treatment coverage at district scale is prerequisite to closing the survival gap.",
+  "success_metrics": [
+    {
+      "metric": "Coverage traceability",
+      "target": "Every screening and treatment gap links prevalence, facility, and treatment data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

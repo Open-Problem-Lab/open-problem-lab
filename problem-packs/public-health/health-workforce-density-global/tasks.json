@@ -1,1 +1,78 @@
-[{"id":"source-inventory","problem_id":"public-health/health-workforce-density-global","title":"Inventory workforce data","status":"scoped","owner_role":"literature-scout","outcome":"Dated source inventory.","inputs":["NHWA","national registries","payroll","facility registries","population"],"expected_artifact":"datasets.md plus evidence.json.","validation_method":"Reviewer checks sources.","reviewer_needed":"domain-reviewer","safety_risk":"medium","done_condition":"Five sources classified."},{"id":"workforce-compilation","problem_id":"public-health/health-workforce-density-global","title":"Compile sub-national workforce data","status":"needs-triage","owner_role":"data-cleaner","outcome":"Workforce dataset by cadre and location.","inputs":["registry data","payroll","facility data"],"expected_artifact":"validation.md update.","validation_method":"Replicator confirms data compilation and geo-location.","reviewer_needed":"replicator","safety_risk":"medium","done_condition":"Dataset with cadre classification and replication."},{"id":"density-skill-mix-mapping","problem_id":"public-health/health-workforce-density-global","title":"Map density and skill-mix gaps","status":"needs-triage","owner_role":"implementation-planner","outcome":"Density and skill-mix gap maps.","inputs":["workforce data","population data","staffing standards"],"expected_artifact":"outputs.md update.","validation_method":"Replicator confirms methodology.","reviewer_needed":"domain-reviewer","safety_risk":"high","done_condition":"Gap maps with replication."},{"id":"red-team-review","problem_id":"public-health/health-workforce-density-global","title":"Red-team misuse of workforce data","status":"needs-triage","owner_role":"red-team-reviewer","outcome":"Failure-mode review.","inputs":["gap maps","safety policy"],"expected_artifact":"SAFETY.md review.","validation_method":"Mitigations or block, replicated.","reviewer_needed":"red-team-reviewer","safety_risk":"high","done_condition":"Claims qualified or gated."},{"id":"field-reality-check","problem_id":"public-health/health-workforce-density-global","title":"Check whether outputs match HRH planning needs","status":"needs-triage","owner_role":"field-reality-reviewer","outcome":"Field-facing review.","inputs":["draft outputs","HRH context"],"expected_artifact":"playbooks.md update.","validation_method":"Field reviewer identifies decision, user, misuse risk, replicated.","reviewer_needed":"field-reality-reviewer","safety_risk":"high","done_condition":"Named user, named decision, non-use cases."}]
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/health-workforce-density-global",
+    "title": "Inventory workforce data",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "Dated source inventory.",
+    "inputs": [
+      "NHWA",
+      "national registries",
+      "payroll",
+      "facility registries",
+      "population"
+    ],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Five sources classified."
+  },
+  {
+    "id": "workforce-compilation",
+    "problem_id": "public-health/health-workforce-density-global",
+    "title": "Compile sub-national workforce data",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "Workforce dataset by cadre and location.",
+    "inputs": ["registry data", "payroll", "facility data"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator confirms data compilation and geo-location.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Dataset with cadre classification and replication."
+  },
+  {
+    "id": "density-skill-mix-mapping",
+    "problem_id": "public-health/health-workforce-density-global",
+    "title": "Map density and skill-mix gaps",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Density and skill-mix gap maps.",
+    "inputs": ["workforce data", "population data", "staffing standards"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms methodology.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Gap maps with replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/health-workforce-density-global",
+    "title": "Red-team misuse of workforce data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["gap maps", "safety policy"],
+    "expected_artifact": "SAFETY.md review.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/health-workforce-density-global",
+    "title": "Check whether outputs match HRH planning needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "HRH context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases."
+  }
+]

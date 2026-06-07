@@ -1,1 +1,34 @@
-{"id":"public-health/health-workforce-density-global","title":"Health Workforce Density And Skill-Mix Gaps In Low-Income Countries","status":"scoped","domain":["public-health"],"region":["global"],"summary":"Build a verified workflow for measuring health workforce density and skill-mix gaps at sub-national scale in low-income countries, linking national health workforce registries, facility-staffing data, and population data to identify where worker shortages are most severe.","why_it_matters":"WHO estimates a global shortage of 10 million health workers by 2030, concentrated in the poorest countries. The 2016 Global Strategy on Human Resources for Health set density targets of 4.45 per 1000 population, but 80 countries fall below this threshold. National workforce registries exist but sub-national distribution data is poor — knowing where health workers are and what skills they have is prerequisite to HRH strategy.","success_metrics":[{"metric":"Data traceability","target":"Every workforce estimate links registry, facility, and population data with methodology.","validation_method":"Schema validation and reviewer checks."}],"safety_level":"medium","canonical_files":["datasets.md","evidence.json","evidence.md","outputs.md","playbooks.md","problem.json","problem.md","task-map.md","tasks.json","validation.md"],"review_policy":{"required_reviews":2,"replication_required":true,"merge_gate":"Schema validation, domain review, safety review, replication."}}
+{
+  "id": "public-health/health-workforce-density-global",
+  "title": "Health Workforce Density And Skill-Mix Gaps In Low-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring health workforce density and skill-mix gaps at sub-national scale in low-income countries, linking national health workforce registries, facility-staffing data, and population data to identify where worker shortages are most severe.",
+  "why_it_matters": "WHO estimates a global shortage of 10 million health workers by 2030, concentrated in the poorest countries. The 2016 Global Strategy on Human Resources for Health set density targets of 4.45 per 1000 population, but 80 countries fall below this threshold. National workforce registries exist but sub-national distribution data is poor — knowing where health workers are and what skills they have is prerequisite to HRH strategy.",
+  "success_metrics": [
+    {
+      "metric": "Data traceability",
+      "target": "Every workforce estimate links registry, facility, and population data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

@@ -360,6 +360,16 @@ Build a verified workflow for measuring the mental health treatment gap — the 
 
 Build a verified workflow for identifying where NTD mass drug administration coverage is lowest and disease persistence is highest, linking WHO PCT data, treatment registers, and disease-mapping data at district scale.
 
+## Prison Health Tuberculosis And HIV Service Gaps In Low- And Middle-Income Countries
+
+- ID: `public-health/prison-health-tb-hiv-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/prison-health-tb-hiv-global](../../problem-packs/public-health/prison-health-tb-hiv-global/problem.md)
+
+Build a verified workflow for measuring TB and HIV service gaps in prison populations in LMICs, linking prison-population data, TB and HIV prevalence studies in prisons, and health-service data.
+
 ## Road Traffic Injury Mortality Risk And Emergency Trauma Care Access In Low- And Middle-Income Countries
 
 - ID: `public-health/road-traffic-injury-urban-global`

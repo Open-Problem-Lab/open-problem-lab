@@ -1,1 +1,20 @@
-[{"id":"unicef-who-wuenic-2024","problem_id":"public-health/vaccination-coverage-equity-global","claim":"WHO/UNICEF WUENIC estimates 20 million zero-dose and under-vaccinated children in 2023, declining from 28 million in 2019 but concentrated in ten countries and in poorest wealth quintile.","evidence_type":"primary-source","source":{"title":"WHO/UNICEF Estimates of National Immunization Coverage (WUENIC)","url":"https://www.who.int/teams/immunization-vaccines-and-biologicals/immunization-analysis-and-insights/global-monitoring/immunization-coverage"},"source_date":"2024-07-15","access_date":"2026-06-07","method":"Reviewed WUENIC coverage estimates, zero-dose trends, and country profiles.","limitations":["Coverage estimates are modeled from survey and administrative data.","Sub-national estimates are not systematically reported."],"confidence":"high"}]
+[
+  {
+    "id": "unicef-who-wuenic-2024",
+    "problem_id": "public-health/vaccination-coverage-equity-global",
+    "claim": "WHO/UNICEF WUENIC estimates 20 million zero-dose and under-vaccinated children in 2023, declining from 28 million in 2019 but concentrated in ten countries and in poorest wealth quintile.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO/UNICEF Estimates of National Immunization Coverage (WUENIC)",
+      "url": "https://www.who.int/teams/immunization-vaccines-and-biologicals/immunization-analysis-and-insights/global-monitoring/immunization-coverage"
+    },
+    "source_date": "2024-07-15",
+    "access_date": "2026-06-07",
+    "method": "Reviewed WUENIC coverage estimates, zero-dose trends, and country profiles.",
+    "limitations": [
+      "Coverage estimates are modeled from survey and administrative data.",
+      "Sub-national estimates are not systematically reported."
+    ],
+    "confidence": "high"
+  }
+]

@@ -1,1 +1,38 @@
-[{"id":"unaids-global-aids-update-2024","problem_id":"public-health/hiv-treatment-cascade-global","claim":"UNAIDS reports 39 million PLHIV globally, 25 million in SSA. 86% know status, 76% on treatment, 71% virally suppressed. Still short of 95-95-95 targets with largest gaps in western and central Africa.","evidence_type":"primary-source","source":{"title":"The Urgency of Now: AIDS at a Crossroads - UNAIDS Global AIDS Update 2024","url":"https://www.unaids.org/en/resources/documents/2024/global-aids-update-2024"},"source_date":"2024-07-22","access_date":"2026-06-07","method":"Reviewed UNAIDS report cascade data, regional breakdowns, and 95-95-95 tracking.","limitations":["Cascade estimates rely on modeled inputs where data is incomplete.","Sub-national cascade data is not systematically reported."],"confidence":"high"},{"id":"justman-phia-cascade-methods-2020","problem_id":"public-health/hiv-treatment-cascade-global","claim":"PHIA surveys provide gold-standard population-based HIV cascade estimates at district level with superior accuracy to routine program data, but are conducted every 3-5 years limiting temporal resolution.","evidence_type":"peer-reviewed-study","source":{"title":"Population-based HIV Impact Assessments: methods, findings, and future directions","url":"https://pubmed.ncbi.nlm.nih.gov/32804414/"},"source_date":"2020-08-01","access_date":"2026-06-07","method":"Reviewed PHIA methodology, cascade estimation approach, and comparison to routine data.","limitations":["PHIA surveys cover a limited number of countries.","Survey frequency limits temporal resolution for program monitoring."],"confidence":"high"}]
+[
+  {
+    "id": "unaids-global-aids-update-2024",
+    "problem_id": "public-health/hiv-treatment-cascade-global",
+    "claim": "UNAIDS reports 39 million PLHIV globally, 25 million in SSA. 86% know status, 76% on treatment, 71% virally suppressed. Still short of 95-95-95 targets with largest gaps in western and central Africa.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "The Urgency of Now: AIDS at a Crossroads - UNAIDS Global AIDS Update 2024",
+      "url": "https://www.unaids.org/en/resources/documents/2024/global-aids-update-2024"
+    },
+    "source_date": "2024-07-22",
+    "access_date": "2026-06-07",
+    "method": "Reviewed UNAIDS report cascade data, regional breakdowns, and 95-95-95 tracking.",
+    "limitations": [
+      "Cascade estimates rely on modeled inputs where data is incomplete.",
+      "Sub-national cascade data is not systematically reported."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "justman-phia-cascade-methods-2020",
+    "problem_id": "public-health/hiv-treatment-cascade-global",
+    "claim": "PHIA surveys provide gold-standard population-based HIV cascade estimates at district level with superior accuracy to routine program data, but are conducted every 3-5 years limiting temporal resolution.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Population-based HIV Impact Assessments: methods, findings, and future directions",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32804414/"
+    },
+    "source_date": "2020-08-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed PHIA methodology, cascade estimation approach, and comparison to routine data.",
+    "limitations": [
+      "PHIA surveys cover a limited number of countries.",
+      "Survey frequency limits temporal resolution for program monitoring."
+    ],
+    "confidence": "high"
+  }
+]

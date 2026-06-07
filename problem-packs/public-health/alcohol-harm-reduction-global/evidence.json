@@ -1,1 +1,20 @@
-[{"id":"who-global-alcohol-report-2024","problem_id":"public-health/alcohol-harm-reduction-global","claim":"WHO reports 3 million alcohol-attributable deaths annually, 75 percent among men, with LMICs having the lowest policy implementation and fastest-growing alcohol markets.","evidence_type":"primary-source","source":{"title":"Global Status Report on Alcohol and Health 2024","url":"https://www.who.int/news-room/fact-sheets/detail/alcohol"},"source_date":"2024-06-25","access_date":"2026-06-07","method":"Reviewed report chapters on mortality, policy implementation, and regional trends.","limitations":["Policy implementation self-reported by countries.","Mortality estimates have attribution uncertainty."],"confidence":"high"}]
+[
+  {
+    "id": "who-global-alcohol-report-2024",
+    "problem_id": "public-health/alcohol-harm-reduction-global",
+    "claim": "WHO reports 3 million alcohol-attributable deaths annually, 75 percent among men, with LMICs having the lowest policy implementation and fastest-growing alcohol markets.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global Status Report on Alcohol and Health 2024",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/alcohol"
+    },
+    "source_date": "2024-06-25",
+    "access_date": "2026-06-07",
+    "method": "Reviewed report chapters on mortality, policy implementation, and regional trends.",
+    "limitations": [
+      "Policy implementation self-reported by countries.",
+      "Mortality estimates have attribution uncertainty."
+    ],
+    "confidence": "high"
+  }
+]

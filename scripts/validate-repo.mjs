@@ -239,8 +239,7 @@ const runGenerator = (script, label) =>
     });
   });
 
-const validateWikiFreshness = async () =>
-  runGenerator("scripts/generate-wiki.mjs", "Wiki");
+const validateWikiFreshness = async () => runGenerator("scripts/generate-wiki.mjs", "Wiki");
 
 const validateTaskIndexFreshness = async () =>
   runGenerator("scripts/generate-task-index.mjs", "Task index");

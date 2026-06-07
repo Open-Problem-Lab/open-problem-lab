@@ -1,1 +1,38 @@
-[{"id":"who-global-tb-report-2024","problem_id":"public-health/tb-detection-treatment-gap-global","claim":"WHO Global TB Report 2024 estimates 10.6 million incident TB cases, 1.3 million deaths, 4 million undiagnosed or unreported cases, with India, Indonesia, China, Philippines, and Pakistan carrying 60 percent of global burden.","evidence_type":"primary-source","source":{"title":"Global Tuberculosis Report 2024","url":"https://www.who.int/teams/global-tuberculosis-programme/tb-reports/global-tuberculosis-report-2024"},"source_date":"2024-10-29","access_date":"2026-06-07","method":"Reviewed WHO TB report chapters on burden, detection gap, treatment outcomes, and country profiles.","limitations":["Burden estimates are modeled and depend on prevalence survey inputs of variable recency.","Sub-national estimates are not systematically reported."],"confidence":"high"},{"id":"arora-private-sector-tb-india-2022","problem_id":"public-health/tb-detection-treatment-gap-global","claim":"A 2022 analysis of India's TB notification data found private-sector notifications increased from 19 percent to 32 percent after mandatory notification policy, but 40 percent of initial care-seeking still occurred in the private sector, much of it unreported.","evidence_type":"peer-reviewed-study","source":{"title":"Private sector engagement in tuberculosis care in India: progress and gaps","url":"https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(22)00345-2/fulltext"},"source_date":"2022-09-01","access_date":"2026-06-07","method":"Reviewed private-sector notification trends, mandatory-notification impact, and remaining gaps.","limitations":["Notification data completeness varies by state and private-provider type.","Patients may seek care from multiple providers, complicating notification deduplication."],"confidence":"medium"}]
+[
+  {
+    "id": "who-global-tb-report-2024",
+    "problem_id": "public-health/tb-detection-treatment-gap-global",
+    "claim": "WHO Global TB Report 2024 estimates 10.6 million incident TB cases, 1.3 million deaths, 4 million undiagnosed or unreported cases, with India, Indonesia, China, Philippines, and Pakistan carrying 60 percent of global burden.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global Tuberculosis Report 2024",
+      "url": "https://www.who.int/teams/global-tuberculosis-programme/tb-reports/global-tuberculosis-report-2024"
+    },
+    "source_date": "2024-10-29",
+    "access_date": "2026-06-07",
+    "method": "Reviewed WHO TB report chapters on burden, detection gap, treatment outcomes, and country profiles.",
+    "limitations": [
+      "Burden estimates are modeled and depend on prevalence survey inputs of variable recency.",
+      "Sub-national estimates are not systematically reported."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "arora-private-sector-tb-india-2022",
+    "problem_id": "public-health/tb-detection-treatment-gap-global",
+    "claim": "A 2022 analysis of India's TB notification data found private-sector notifications increased from 19 percent to 32 percent after mandatory notification policy, but 40 percent of initial care-seeking still occurred in the private sector, much of it unreported.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Private sector engagement in tuberculosis care in India: progress and gaps",
+      "url": "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(22)00345-2/fulltext"
+    },
+    "source_date": "2022-09-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed private-sector notification trends, mandatory-notification impact, and remaining gaps.",
+    "limitations": [
+      "Notification data completeness varies by state and private-provider type.",
+      "Patients may seek care from multiple providers, complicating notification deduplication."
+    ],
+    "confidence": "medium"
+  }
+]

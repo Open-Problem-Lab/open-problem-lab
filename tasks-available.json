@@ -2,18 +2,18 @@
   "summary": {
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
-    "total_packs": 48,
-    "total_scoped_tasks": 48,
+    "total_packs": 49,
+    "total_scoped_tasks": 49,
     "by_role": {
-      "literature-scout": 48
+      "literature-scout": 49
     },
     "by_risk": {
-      "medium": 47,
+      "medium": 48,
       "low": 1
     },
     "by_domain": {
       "air-quality": 2,
-      "public-health": 30,
+      "public-health": 31,
       "biodiversity": 3,
       "climate-health": 7,
       "climate-adaptation": 6,
@@ -800,6 +800,27 @@
       "done_condition": "Four sources classified.",
       "tasks_file": "problem-packs/public-health/ntd-mass-drug-administration-global/tasks.json",
       "problem_file": "problem-packs/public-health/ntd-mass-drug-administration-global/problem.md"
+    },
+    {
+      "pack_id": "public-health/prison-health-tb-hiv-global",
+      "pack_title": "Prison Health Tuberculosis And HIV Service Gaps In Low- And Middle-Income Countries",
+      "pack_status": "scoped",
+      "domain": [
+        "public-health"
+      ],
+      "region": [
+        "global"
+      ],
+      "task_id": "source-inventory",
+      "title": "Inventory prison health data",
+      "owner_role": "literature-scout",
+      "reviewer_needed": "domain-reviewer",
+      "safety_risk": "medium",
+      "outcome": "A dated source inventory separating prison-population data, disease-prevalence studies, and health-service data.",
+      "expected_artifact": "datasets.md plus evidence.json.",
+      "done_condition": "Three sources classified.",
+      "tasks_file": "problem-packs/public-health/prison-health-tb-hiv-global/tasks.json",
+      "problem_file": "problem-packs/public-health/prison-health-tb-hiv-global/problem.md"
     },
     {
       "pack_id": "public-health/road-traffic-injury-urban-global",

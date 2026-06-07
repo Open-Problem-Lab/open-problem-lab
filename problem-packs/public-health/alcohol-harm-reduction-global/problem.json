@@ -1,1 +1,34 @@
-{"id":"public-health/alcohol-harm-reduction-global","title":"Alcohol Harm Reduction Policy Gaps And Heavy Episodic Drinking In Low- And Middle-Income Countries","status":"scoped","domain":["public-health"],"region":["global"],"summary":"Build a verified workflow for measuring alcohol taxation and marketing regulation relative to heavy episodic drinking prevalence in LMICs, linking STEPS survey data, policy-tracking data, and economic indicators.","why_it_matters":"Alcohol causes 3 million deaths annually, 75 percent among men and disproportionately in LMICs where alcohol industries aggressively expand. WHO's SAFER initiative recommends taxation, marketing restrictions, and availability controls but policy implementation is weakest in the fastest-growing markets. STEPS surveys capture heavy episodic drinking at sub-national scale in 100+ countries.","success_metrics":[{"metric":"Policy-prevalence traceability","target":"Every policy gap estimate links policy tracking and prevalence data with methodology.","validation_method":"Schema validation and reviewer checks."}],"safety_level":"medium","canonical_files":["datasets.md","evidence.json","evidence.md","outputs.md","playbooks.md","problem.json","problem.md","task-map.md","tasks.json","validation.md"],"review_policy":{"required_reviews":2,"replication_required":true,"merge_gate":"Schema validation, domain review, safety review, replication."}}
+{
+  "id": "public-health/alcohol-harm-reduction-global",
+  "title": "Alcohol Harm Reduction Policy Gaps And Heavy Episodic Drinking In Low- And Middle-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring alcohol taxation and marketing regulation relative to heavy episodic drinking prevalence in LMICs, linking STEPS survey data, policy-tracking data, and economic indicators.",
+  "why_it_matters": "Alcohol causes 3 million deaths annually, 75 percent among men and disproportionately in LMICs where alcohol industries aggressively expand. WHO's SAFER initiative recommends taxation, marketing restrictions, and availability controls but policy implementation is weakest in the fastest-growing markets. STEPS surveys capture heavy episodic drinking at sub-national scale in 100+ countries.",
+  "success_metrics": [
+    {
+      "metric": "Policy-prevalence traceability",
+      "target": "Every policy gap estimate links policy tracking and prevalence data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

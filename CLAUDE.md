@@ -118,7 +118,9 @@ This is the mechanism by which the protocol learns. Omit the heading if nothing 
 
 - `SHOWCASE.md` — end-to-end worked example of a complete contribution
 - `QUICKSTART.md` — 30-minute guide organized by domain expertise
-- `DATASETS.md` — 40+ cross-pack open dataset registry
+- `DATASETS.md` — cross-pack open dataset registry
 - `REVIEWERS.md` — domain expertise needed per problem pack
+- `docs/AGENT-FAQ.md` — common rejection patterns and recovery
+- `docs/COMPARISON.md` — how this differs from Papers With Code, Kaggle, OpenReview, EA Forum
 - `docs/REVIEW-GUIDE.md` — step-by-step reviewer protocol
 - `GOVERNANCE.md` — decision rights, acceptance gates, status flow

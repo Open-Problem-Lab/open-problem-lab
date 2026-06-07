@@ -1,1 +1,34 @@
-{"id":"public-health/tobacco-control-taxation-global","title":"Tobacco Taxation And Smoking Prevalence Gaps In Low- And Middle-Income Countries","status":"scoped","domain":["public-health"],"region":["global"],"summary":"Build a verified workflow for measuring tobacco taxation levels relative to smoking prevalence and cessation rates in LMICs, linking tax-policy data, prevalence surveys, and illicit-trade estimates at national and sub-national scale.","why_it_matters":"Tobacco kills 8 million people annually, 80 percent in LMICs. WHO FCTC recommends tobacco taxes at 75 percent of retail price yet most LMICs are below 50 percent. The tobacco industry argues tax increases fuel illicit trade. Sub-national smoking prevalence data exists from STEPS surveys. Linking tax-policy data to prevalence and illicit-trade estimates enables evidence-based tax policy.","success_metrics":[{"metric":"Data integration","target":"Every tax-prevalence estimate links tax, survey, and trade data with methodology.","validation_method":"Schema validation and reviewer checks."}],"safety_level":"medium","canonical_files":["datasets.md","evidence.json","evidence.md","outputs.md","playbooks.md","problem.json","problem.md","task-map.md","tasks.json","validation.md"],"review_policy":{"required_reviews":2,"replication_required":true,"merge_gate":"Schema validation, domain review, safety review, replication."}}
+{
+  "id": "public-health/tobacco-control-taxation-global",
+  "title": "Tobacco Taxation And Smoking Prevalence Gaps In Low- And Middle-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring tobacco taxation levels relative to smoking prevalence and cessation rates in LMICs, linking tax-policy data, prevalence surveys, and illicit-trade estimates at national and sub-national scale.",
+  "why_it_matters": "Tobacco kills 8 million people annually, 80 percent in LMICs. WHO FCTC recommends tobacco taxes at 75 percent of retail price yet most LMICs are below 50 percent. The tobacco industry argues tax increases fuel illicit trade. Sub-national smoking prevalence data exists from STEPS surveys. Linking tax-policy data to prevalence and illicit-trade estimates enables evidence-based tax policy.",
+  "success_metrics": [
+    {
+      "metric": "Data integration",
+      "target": "Every tax-prevalence estimate links tax, survey, and trade data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

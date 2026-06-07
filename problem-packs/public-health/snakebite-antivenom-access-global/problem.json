@@ -1,1 +1,34 @@
-{"id":"public-health/snakebite-antivenom-access-global","title":"Snakebite Envenoming Mortality And Antivenom Access Gaps In Rural Low-Income Countries","status":"scoped","domain":["public-health"],"region":["global"],"summary":"Build a verified workflow for measuring snakebite envenoming mortality risk and antivenom access gaps, linking WHO snakebite data, health-facility antivenom stocking data, and agricultural-population maps at sub-national scale.","why_it_matters":"WHO estimates 5.4 million snakebites annually, causing 138000 deaths and 400000 amputations. Sub-Saharan Africa and South Asia carry 85 percent of the burden. Antivenom is the only effective treatment, yet stock-outs are common in high-burden districts and counterfeit products are widespread. Mapping snakebite incidence against antivenom availability at district scale has not been done systematically.","success_metrics":[{"metric":"Access traceability","target":"Every antivenom gap estimate links incidence, facility, and stocking data with methodology.","validation_method":"Schema validation and reviewer checks."}],"safety_level":"high","canonical_files":["datasets.md","evidence.json","evidence.md","outputs.md","playbooks.md","problem.json","problem.md","task-map.md","tasks.json","validation.md"],"review_policy":{"required_reviews":2,"replication_required":true,"merge_gate":"Schema validation, domain review, safety review, replication."}}
+{
+  "id": "public-health/snakebite-antivenom-access-global",
+  "title": "Snakebite Envenoming Mortality And Antivenom Access Gaps In Rural Low-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring snakebite envenoming mortality risk and antivenom access gaps, linking WHO snakebite data, health-facility antivenom stocking data, and agricultural-population maps at sub-national scale.",
+  "why_it_matters": "WHO estimates 5.4 million snakebites annually, causing 138000 deaths and 400000 amputations. Sub-Saharan Africa and South Asia carry 85 percent of the burden. Antivenom is the only effective treatment, yet stock-outs are common in high-burden districts and counterfeit products are widespread. Mapping snakebite incidence against antivenom availability at district scale has not been done systematically.",
+  "success_metrics": [
+    {
+      "metric": "Access traceability",
+      "target": "Every antivenom gap estimate links incidence, facility, and stocking data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

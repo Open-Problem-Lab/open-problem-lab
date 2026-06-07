@@ -1,1 +1,20 @@
-[{"id":"who-snakebite-strategy-2019","problem_id":"public-health/snakebite-antivenom-access-global","claim":"WHO estimates 5.4 million snakebites, 138000 deaths, 400000 amputations annually, with SSA and South Asia carrying 85 percent, and launched a strategy targeting 50 percent mortality reduction by 2030.","evidence_type":"primary-source","source":{"title":"WHO Snakebite Envenoming Strategy","url":"https://www.who.int/publications/i/item/9789241515641"},"source_date":"2019-05-23","access_date":"2026-06-07","method":"Reviewed WHO strategy document, burden estimates, and antivenom access analysis.","limitations":["Snakebite incidence is underreported due to reliance on health-facility data and prevalent traditional-healer care-seeking.","Burden estimates are modeled from surveys in limited countries."],"confidence":"high"}]
+[
+  {
+    "id": "who-snakebite-strategy-2019",
+    "problem_id": "public-health/snakebite-antivenom-access-global",
+    "claim": "WHO estimates 5.4 million snakebites, 138000 deaths, 400000 amputations annually, with SSA and South Asia carrying 85 percent, and launched a strategy targeting 50 percent mortality reduction by 2030.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO Snakebite Envenoming Strategy",
+      "url": "https://www.who.int/publications/i/item/9789241515641"
+    },
+    "source_date": "2019-05-23",
+    "access_date": "2026-06-07",
+    "method": "Reviewed WHO strategy document, burden estimates, and antivenom access analysis.",
+    "limitations": [
+      "Snakebite incidence is underreported due to reliance on health-facility data and prevalent traditional-healer care-seeking.",
+      "Burden estimates are modeled from surveys in limited countries."
+    ],
+    "confidence": "high"
+  }
+]

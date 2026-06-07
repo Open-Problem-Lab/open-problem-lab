@@ -1,1 +1,38 @@
-[{"id":"who-ntd-roadmap-2023","problem_id":"public-health/ntd-mass-drug-administration-global","claim":"WHO estimates 1.7 billion people require MDA for at least one NTD annually, SSA carries highest burden for all five major PCT diseases, and the 2030 Roadmap targets elimination of at least one NTD in 100 countries.","evidence_type":"primary-source","source":{"title":"Ending the neglect to attain the Sustainable Development Goals: A road map for neglected tropical diseases 2021-2030","url":"https://www.who.int/publications/i/item/9789240010352"},"source_date":"2023-01-28","access_date":"2026-06-07","method":"Reviewed WHO NTD Roadmap, coverage targets, and elimination-verification framework.","limitations":["Coverage data is self-reported by national programs.","Elimination verification data is incomplete across endemic districts."],"confidence":"high"},{"id":"worrell-ntd-coverage-validation-2016","problem_id":"public-health/ntd-mass-drug-administration-global","claim":"A 2016 systematic comparison found that reported MDA coverage frequently overestimates actual treatment coverage by 20-40 percentage points when validated against independent coverage surveys.","evidence_type":"peer-reviewed-study","source":{"title":"Is mass drug administration coverage for NTDs what it seems?", "url":"https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0004491"},"source_date":"2016-01-28","access_date":"2026-06-07","method":"Reviewed coverage-comparison methodology, reported vs surveyed coverage gap, and causes of overestimation.","limitations":["Study data predates recent coverage improvements in several countries.","Coverage surveys are sparse and may not be representative."],"confidence":"medium"}]
+[
+  {
+    "id": "who-ntd-roadmap-2023",
+    "problem_id": "public-health/ntd-mass-drug-administration-global",
+    "claim": "WHO estimates 1.7 billion people require MDA for at least one NTD annually, SSA carries highest burden for all five major PCT diseases, and the 2030 Roadmap targets elimination of at least one NTD in 100 countries.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Ending the neglect to attain the Sustainable Development Goals: A road map for neglected tropical diseases 2021-2030",
+      "url": "https://www.who.int/publications/i/item/9789240010352"
+    },
+    "source_date": "2023-01-28",
+    "access_date": "2026-06-07",
+    "method": "Reviewed WHO NTD Roadmap, coverage targets, and elimination-verification framework.",
+    "limitations": [
+      "Coverage data is self-reported by national programs.",
+      "Elimination verification data is incomplete across endemic districts."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "worrell-ntd-coverage-validation-2016",
+    "problem_id": "public-health/ntd-mass-drug-administration-global",
+    "claim": "A 2016 systematic comparison found that reported MDA coverage frequently overestimates actual treatment coverage by 20-40 percentage points when validated against independent coverage surveys.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Is mass drug administration coverage for NTDs what it seems?",
+      "url": "https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0004491"
+    },
+    "source_date": "2016-01-28",
+    "access_date": "2026-06-07",
+    "method": "Reviewed coverage-comparison methodology, reported vs surveyed coverage gap, and causes of overestimation.",
+    "limitations": [
+      "Study data predates recent coverage improvements in several countries.",
+      "Coverage surveys are sparse and may not be representative."
+    ],
+    "confidence": "medium"
+  }
+]

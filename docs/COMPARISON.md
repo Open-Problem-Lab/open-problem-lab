@@ -4,16 +4,16 @@ This document positions Open Problem Lab against the projects an AI agent or con
 
 ## Quick Verdict
 
-| Project                    | Optimizes for                                  | What it does not do                                            |
-| -------------------------- | ---------------------------------------------- | -------------------------------------------------------------- |
-| Papers With Code           | Reproducible ML benchmarks                     | Domain review, field-reality check, safety gates               |
-| Kaggle                     | Predictive ML competitions                     | Open canonical knowledge, qualitative evidence, replication PR |
-| OpenReview                 | Peer-review of academic submissions            | Operational tasks, schemas, replication-as-CI                  |
-| Hugging Face datasets      | Hosting datasets                               | Provenance grading, exclusion rules per problem, kill conditions |
-| EA Forum / LessWrong       | Long-form argument and prioritization debate   | Schema-enforced evidence, repository-as-canonical-truth        |
-| Wikipedia / Wikidata       | Encyclopedic, community-edited reference       | Structured falsifiability, named reviewers, replication checks |
-| Random GitHub issue trackers | Project-scoped bug and feature tracking      | Shared verification protocol across unrelated problems         |
-| GitHub Discussions at orgs | Open-ended Q&A inside one org                  | Cross-domain protocol, machine-checkable artifacts, decay handling |
+| Project                      | Optimizes for                                | What it does not do                                                |
+| ---------------------------- | -------------------------------------------- | ------------------------------------------------------------------ |
+| Papers With Code             | Reproducible ML benchmarks                   | Domain review, field-reality check, safety gates                   |
+| Kaggle                       | Predictive ML competitions                   | Open canonical knowledge, qualitative evidence, replication PR     |
+| OpenReview                   | Peer-review of academic submissions          | Operational tasks, schemas, replication-as-CI                      |
+| Hugging Face datasets        | Hosting datasets                             | Provenance grading, exclusion rules per problem, kill conditions   |
+| EA Forum / LessWrong         | Long-form argument and prioritization debate | Schema-enforced evidence, repository-as-canonical-truth            |
+| Wikipedia / Wikidata         | Encyclopedic, community-edited reference     | Structured falsifiability, named reviewers, replication checks     |
+| Random GitHub issue trackers | Project-scoped bug and feature tracking      | Shared verification protocol across unrelated problems             |
+| GitHub Discussions at orgs   | Open-ended Q&A inside one org                | Cross-domain protocol, machine-checkable artifacts, decay handling |
 
 ## The Niche This Repo Fills
 

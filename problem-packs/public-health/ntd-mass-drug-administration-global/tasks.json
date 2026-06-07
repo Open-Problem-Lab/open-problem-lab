@@ -1,1 +1,77 @@
-[{"id":"source-inventory","problem_id":"public-health/ntd-mass-drug-administration-global","title":"Inventory NTD MDA data","status":"scoped","owner_role":"literature-scout","outcome":"Dated source inventory.","inputs":["PCT databank","mapping surveys","coverage surveys","treatment registers"],"expected_artifact":"datasets.md plus evidence.json.","validation_method":"Reviewer checks sources.","reviewer_needed":"domain-reviewer","safety_risk":"medium","done_condition":"Four sources classified."},{"id":"coverage-compilation","problem_id":"public-health/ntd-mass-drug-administration-global","title":"Compile district MDA coverage data","status":"needs-triage","owner_role":"data-cleaner","outcome":"Coverage dataset with data-quality documentation.","inputs":["PCT data","treatment registers","coverage surveys"],"expected_artifact":"validation.md update.","validation_method":"Replicator confirms data compilation and quality assessment.","reviewer_needed":"replicator","safety_risk":"medium","done_condition":"Coverage dataset with quality flags and replication."},{"id":"disease-mapping-comparison","problem_id":"public-health/ntd-mass-drug-administration-global","title":"Compare reported coverage to disease persistence","status":"needs-triage","owner_role":"implementation-planner","outcome":"Coverage-disease gap map.","inputs":["coverage data","mapping survey data","population data"],"expected_artifact":"outputs.md update.","validation_method":"Replicator confirms comparison methodology.","reviewer_needed":"domain-reviewer","safety_risk":"high","done_condition":"Gap map with methodology and replication."},{"id":"red-team-review","problem_id":"public-health/ntd-mass-drug-administration-global","title":"Red-team misuse of coverage data","status":"needs-triage","owner_role":"red-team-reviewer","outcome":"Failure-mode review.","inputs":["gap map","safety policy"],"expected_artifact":"SAFETY.md review.","validation_method":"Mitigations or block, replicated.","reviewer_needed":"red-team-reviewer","safety_risk":"high","done_condition":"Claims qualified or gated."},{"id":"field-reality-check","problem_id":"public-health/ntd-mass-drug-administration-global","title":"Check whether outputs match NTD program needs","status":"needs-triage","owner_role":"field-reality-reviewer","outcome":"Field-facing review.","inputs":["draft outputs","NTD program context"],"expected_artifact":"playbooks.md update.","validation_method":"Field reviewer identifies decision, user, misuse risk, replicated.","reviewer_needed":"field-reality-viewer","safety_risk":"high","done_condition":"Named user, named decision, non-use cases."}]
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/ntd-mass-drug-administration-global",
+    "title": "Inventory NTD MDA data",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "Dated source inventory.",
+    "inputs": [
+      "PCT databank",
+      "mapping surveys",
+      "coverage surveys",
+      "treatment registers"
+    ],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Four sources classified."
+  },
+  {
+    "id": "coverage-compilation",
+    "problem_id": "public-health/ntd-mass-drug-administration-global",
+    "title": "Compile district MDA coverage data",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "Coverage dataset with data-quality documentation.",
+    "inputs": ["PCT data", "treatment registers", "coverage surveys"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator confirms data compilation and quality assessment.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Coverage dataset with quality flags and replication."
+  },
+  {
+    "id": "disease-mapping-comparison",
+    "problem_id": "public-health/ntd-mass-drug-administration-global",
+    "title": "Compare reported coverage to disease persistence",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Coverage-disease gap map.",
+    "inputs": ["coverage data", "mapping survey data", "population data"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms comparison methodology.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Gap map with methodology and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/ntd-mass-drug-administration-global",
+    "title": "Red-team misuse of coverage data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["gap map", "safety policy"],
+    "expected_artifact": "SAFETY.md review.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/ntd-mass-drug-administration-global",
+    "title": "Check whether outputs match NTD program needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "NTD program context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-viewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases."
+  }
+]

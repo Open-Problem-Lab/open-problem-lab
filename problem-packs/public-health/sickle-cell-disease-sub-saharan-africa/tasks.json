@@ -1,1 +1,83 @@
-[{"id":"source-inventory","problem_id":"public-health/sickle-cell-disease-sub-saharan-africa","title":"Inventory SCD data sources","status":"scoped","owner_role":"literature-scout","outcome":"A dated source inventory separating prevalence maps, screening data, facility data, and unusable sources.","inputs":["DHS SCD modules","Piel global map","facility registries","screening program data","population data"],"expected_artifact":"datasets.md update plus evidence.json records.","validation_method":"Reviewer checks each source for URL, methodology, grain, and limitations.","reviewer_needed":"domain-reviewer","safety_risk":"medium","done_condition":"Five sources classified."},{"id":"scd-prevalence-mapping","problem_id":"public-health/sickle-cell-disease-sub-saharan-africa","title":"Map sub-national SCD birth prevalence","status":"needs-triage","owner_role":"data-cleaner","outcome":"Sub-national SCD birth-prevalence map combining DHS data and global allele-frequency maps.","inputs":["DHS SCD data","Piel allele-frequency map","population data"],"expected_artifact":"validation.md update.","validation_method":"Replicator confirms prevalence estimation methodology and cross-validation.","reviewer_needed":"replicator","safety_risk":"medium","done_condition":"Prevalence map with validation metrics and replication."},{"id":"screening-treatment-gap","problem_id":"public-health/sickle-cell-disease-sub-saharan-africa","title":"Map SCD screening and treatment coverage gaps","status":"needs-triage","owner_role":"implementation-planner","outcome":"Gap map comparing birth prevalence to screening and treatment coverage.","inputs":["prevalence map","screening data","facility capacity data","population data"],"expected_artifact":"outputs.md update.","validation_method":"Replicator confirms gap methodology and coverage-data validation.","reviewer_needed":"domain-reviewer","safety_risk":"high","done_condition":"Gap map with methodology and replication."},{"id":"red-team-review","problem_id":"public-health/sickle-cell-disease-sub-saharan-africa","title":"Red-team misuse of SCD data","status":"needs-triage","owner_role":"red-team-reviewer","outcome":"Failure-mode review.","inputs":["gap map","safety policy"],"expected_artifact":"SAFETY.md linked review note.","validation_method":"Mitigations or block, replicated.","reviewer_needed":"red-team-reviewer","safety_risk":"high","done_condition":"Claims qualified or gated."},{"id":"field-reality-check","problem_id":"public-health/sickle-cell-disease-sub-saharan-africa","title":"Check whether outputs match SCD program planning needs","status":"needs-triage","owner_role":"field-reality-reviewer","outcome":"Field-facing review.","inputs":["draft outputs","SCD program context"],"expected_artifact":"playbooks.md update.","validation_method":"Field reviewer identifies decision, user, misuse risk, replicated.","reviewer_needed":"field-reality-reviewer","safety_risk":"high","done_condition":"Named user, named decision."}]
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/sickle-cell-disease-sub-saharan-africa",
+    "title": "Inventory SCD data sources",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating prevalence maps, screening data, facility data, and unusable sources.",
+    "inputs": [
+      "DHS SCD modules",
+      "Piel global map",
+      "facility registries",
+      "screening program data",
+      "population data"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records.",
+    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Five sources classified."
+  },
+  {
+    "id": "scd-prevalence-mapping",
+    "problem_id": "public-health/sickle-cell-disease-sub-saharan-africa",
+    "title": "Map sub-national SCD birth prevalence",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "Sub-national SCD birth-prevalence map combining DHS data and global allele-frequency maps.",
+    "inputs": ["DHS SCD data", "Piel allele-frequency map", "population data"],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator confirms prevalence estimation methodology and cross-validation.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Prevalence map with validation metrics and replication."
+  },
+  {
+    "id": "screening-treatment-gap",
+    "problem_id": "public-health/sickle-cell-disease-sub-saharan-africa",
+    "title": "Map SCD screening and treatment coverage gaps",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Gap map comparing birth prevalence to screening and treatment coverage.",
+    "inputs": [
+      "prevalence map",
+      "screening data",
+      "facility capacity data",
+      "population data"
+    ],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms gap methodology and coverage-data validation.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Gap map with methodology and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/sickle-cell-disease-sub-saharan-africa",
+    "title": "Red-team misuse of SCD data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["gap map", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review note.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/sickle-cell-disease-sub-saharan-africa",
+    "title": "Check whether outputs match SCD program planning needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "SCD program context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision."
+  }
+]

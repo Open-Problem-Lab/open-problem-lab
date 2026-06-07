@@ -1,1 +1,77 @@
-[{"id":"source-inventory","problem_id":"public-health/hiv-treatment-cascade-global","title":"Inventory HIV cascade data","status":"scoped","owner_role":"literature-scout","outcome":"Dated source inventory.","inputs":["PHIA data","PEPFAR data","HMIS","viral-load data","population"],"expected_artifact":"datasets.md plus evidence.json.","validation_method":"Reviewer checks sources.","reviewer_needed":"domain-reviewer","safety_risk":"medium","done_condition":"Five sources classified."},{"id":"cascade-compilation","problem_id":"public-health/hiv-treatment-cascade-global","title":"Compile sub-national HIV cascade data","status":"needs-triage","owner_role":"data-cleaner","outcome":"Cascade dataset with PHIA-program reconciliation.","inputs":["PHIA estimates","program data","viral-load data","reconciliation methodology"],"expected_artifact":"validation.md update.","validation_method":"Replicator confirms reconciliation methodology.","reviewer_needed":"replicator","safety_risk":"medium","done_condition":"Cascade dataset with reconciliation and replication."},{"id":"cascade-gap-mapping","problem_id":"public-health/hiv-treatment-cascade-global","title":"Map sub-national cascade gaps","status":"needs-triage","owner_role":"implementation-planner","outcome":"Gap map at district level.","inputs":["cascade dataset","PHIA data","program data"],"expected_artifact":"outputs.md update.","validation_method":"Replicator confirms gap methodology.","reviewer_needed":"domain-reviewer","safety_risk":"high","done_condition":"Gap map with reconciliation documentation and replication."},{"id":"red-team-review","problem_id":"public-health/hiv-treatment-cascade-global","title":"Red-team misuse of cascade data","status":"needs-triage","owner_role":"red-team-reviewer","outcome":"Failure-mode review.","inputs":["gap map","safety policy"],"expected_artifact":"SAFETY.md review.","validation_method":"Mitigations or block, replicated.","reviewer_needed":"red-team-reviewer","safety_risk":"high","done_condition":"Claims qualified or gated."},{"id":"field-reality-check","problem_id":"public-health/hiv-treatment-cascade-global","title":"Check whether outputs match HIV program needs","status":"needs-triage","owner_role":"field-reality-reviewer","outcome":"Field-facing review.","inputs":["draft outputs","HIV program context"],"expected_artifact":"playbooks.md update.","validation_method":"Field reviewer identifies decision, user, misuse risk, replicated.","reviewer_needed":"field-reality-reviewer","safety_risk":"high","done_condition":"Named user, named decision, non-use cases."}]
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/hiv-treatment-cascade-global",
+    "title": "Inventory HIV cascade data",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "Dated source inventory.",
+    "inputs": ["PHIA data", "PEPFAR data", "HMIS", "viral-load data", "population"],
+    "expected_artifact": "datasets.md plus evidence.json.",
+    "validation_method": "Reviewer checks sources.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Five sources classified."
+  },
+  {
+    "id": "cascade-compilation",
+    "problem_id": "public-health/hiv-treatment-cascade-global",
+    "title": "Compile sub-national HIV cascade data",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "Cascade dataset with PHIA-program reconciliation.",
+    "inputs": [
+      "PHIA estimates",
+      "program data",
+      "viral-load data",
+      "reconciliation methodology"
+    ],
+    "expected_artifact": "validation.md update.",
+    "validation_method": "Replicator confirms reconciliation methodology.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Cascade dataset with reconciliation and replication."
+  },
+  {
+    "id": "cascade-gap-mapping",
+    "problem_id": "public-health/hiv-treatment-cascade-global",
+    "title": "Map sub-national cascade gaps",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "Gap map at district level.",
+    "inputs": ["cascade dataset", "PHIA data", "program data"],
+    "expected_artifact": "outputs.md update.",
+    "validation_method": "Replicator confirms gap methodology.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Gap map with reconciliation documentation and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/hiv-treatment-cascade-global",
+    "title": "Red-team misuse of cascade data",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review.",
+    "inputs": ["gap map", "safety policy"],
+    "expected_artifact": "SAFETY.md review.",
+    "validation_method": "Mitigations or block, replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/hiv-treatment-cascade-global",
+    "title": "Check whether outputs match HIV program needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "Field-facing review.",
+    "inputs": ["draft outputs", "HIV program context"],
+    "expected_artifact": "playbooks.md update.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases."
+  }
+]

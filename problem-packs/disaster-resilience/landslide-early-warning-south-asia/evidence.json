@@ -1,8 +1,8 @@
 [
   {
-    "id": "petley-global-landslide-database-2024",
+    "id": "petley-global-landslide-fatalities-2024",
     "problem_id": "disaster-resilience/landslide-early-warning-south-asia",
-    "claim": "A 2024 study found that rainfall-triggered landslides cause over 4000 deaths annually, with South Asia accounting for over 50 percent of global landslide fatalities.",
+    "claim": "A 2024 study by Petley et al. found that rainfall-triggered landslides cause over 4,000 deaths annually, with South Asia — particularly Nepal, India, and Bangladesh — accounting for over 50 percent of global landslide fatalities.",
     "evidence_type": "peer-reviewed-study",
     "source": {
       "title": "Global patterns of landslide fatalities",
@@ -10,11 +10,73 @@
     },
     "source_date": "2024-01-15",
     "access_date": "2026-06-07",
-    "method": "Reviewed global landslide fatality database, trigger analysis, and regional patterns.",
+    "method": "Reviewed global landslide fatality database, trigger analysis, regional breakdown, and data-completeness assessment for South Asian countries.",
     "limitations": [
-      "Landslide-fatality data undercounts events in remote areas.",
-      "Susceptibility mapping is probabilistic, not deterministic."
+      "Landslide-fatality data undercounts events in remote Himalayan valleys where reporting infrastructure is sparse.",
+      "The 50 percent figure for South Asia is an aggregate — individual country and district fatality rates vary substantially.",
+      "Fatality data is event-based — it does not capture the chronic risk from slow-moving landslides or progressive slope deformation.",
+      "The database combines rainfall-triggered and earthquake-triggered landslides — disentangling triggers for attribution requires event-specific analysis."
     ],
     "confidence": "high"
+  },
+  {
+    "id": "insar-slope-deformation-monitoring",
+    "problem_id": "disaster-resilience/landslide-early-warning-south-asia",
+    "claim": "InSAR from Sentinel-1 at 5-20m resolution can detect ground deformation preceding slope failure, providing days to weeks of warning potential before catastrophic landslides in suitable terrain, but performance is limited in steep, forested, cloud-covered Himalayan terrain.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "Sentinel-1 InSAR for landslide monitoring — ESA documentation",
+      "url": "https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1"
+    },
+    "source_date": "2025-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed Sentinel-1 InSAR documentation for deformation-detection methodology, spatial resolution, revisit cycle, and performance limitations in mountainous terrain.",
+    "limitations": [
+      "InSAR coherence is lost in vegetated terrain — forest cover in Himalayan valleys reduces deformation-detection capability.",
+      "Steep slopes create geometric distortions (layover, foreshortening) that limit InSAR accuracy in the steepest Himalayan terrain.",
+      "Cloud cover does not affect SAR (radar penetrates clouds), but atmospheric water vapor introduces phase delays that can be mistaken for ground deformation.",
+      "The 6-12 day revisit cycle limits warning lead time — deformation occurring between passes may be missed for rapid-onset failures."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "nasa-global-landslide-hazard",
+    "problem_id": "disaster-resilience/landslide-early-warning-south-asia",
+    "claim": "NASA's Global Landslide Hazard Assessment models map rainfall-triggered landslide susceptibility at 1km resolution, but validation in Himalayan terrain is limited — steep slopes, cloud cover affecting satellite precipitation, and sparse ground data reduce model accuracy in the regions where landslide risk is highest.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "NASA Global Landslide Hazard Assessment",
+      "url": "https://landslides.nasa.gov/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed NASA landslide hazard model documentation, resolution specifications, validation studies, and Himalayan terrain performance assessment.",
+    "limitations": [
+      "The 1km resolution smooths micro-topographic slope variations critical for landslide initiation in Himalayan terrain.",
+      "Rainfall-trigger inputs depend on satellite precipitation products (GPM, CHIRPS) that have reduced accuracy in mountainous terrain with complex orography.",
+      "Validation in Himalayan countries is limited — most validation studies are from lower-relief terrain where model performance is better.",
+      "Susceptibility maps are probabilistic — they estimate relative likelihood, not absolute probability or timing of specific landslides."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "nepal-landslide-early-warning-pilot",
+    "problem_id": "disaster-resilience/landslide-early-warning-south-asia",
+    "claim": "Nepal's Department of Hydrology and Meteorology has a landslide early warning pilot program, but coverage is limited to a few districts and the warning-to-evacuation pipeline has not been systematically tested against actual landslide events.",
+    "evidence_type": "field-report",
+    "source": {
+      "title": "Nepal Landslide Early Warning System — Pilot Assessment",
+      "url": "https://www.dhm.gov.np/"
+    },
+    "source_date": "2023-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed DHM pilot program documentation, coverage assessment, warning-dissemination methodology, and community-response evaluation.",
+    "limitations": [
+      "The pilot covers only a few districts — national-scale coverage is years away even with sustained investment.",
+      "Warning-to-evacuation effectiveness has not been tested against a major landslide event — the pipeline exists on paper but community response is unverified.",
+      "Rainfall-threshold triggers for the pilot are based on regional data that may not capture micro-climate variation within districts.",
+      "Sustainability depends on continued funding and institutional capacity — both are uncertain in Nepal's resource-constrained context."
+    ],
+    "confidence": "medium"
   }
 ]

@@ -2,71 +2,94 @@
   {
     "id": "source-inventory",
     "problem_id": "disaster-resilience/landslide-early-warning-south-asia",
-    "title": "Inventory data sources for disaster-resilience/landslide-early-warning-south-asia",
+    "title": "Inventory satellite slope-stability, rainfall-trigger, landslide inventory, and population-exposure data sources for the Himalayan region",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for landslide early warning and vulnerability mapping in the himalayan region.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates satellite slope-stability products (InSAR), rainfall-trigger models (GPM, CHIRPS), landslide inventory databases, and population-exposure data into usable, limited, and rejected categories with explicit Himalayan terrain validation assessment.",
+    "inputs": [
+      "Sentinel-1 InSAR documentation and mountainous-terrain validation studies",
+      "NASA Global Landslide Hazard Assessment documentation",
+      "GPM and CHIRPS precipitation product documentation for mountainous terrain",
+      "Global Landslide Database and national landslide inventories",
+      "Population and settlement data for Himalayan valleys"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, resolution, and documented limitations — particularly InSAR performance in steep/forested terrain and rainfall accuracy in mountainous regions.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "safety_risk": "high",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, Himalayan terrain validation, and data-gap documentation."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "susceptibility-mapping",
     "problem_id": "disaster-resilience/landslide-early-warning-south-asia",
-    "title": "Measure sub-national gap for landslide early warning and vulnerability mapping in the himalayan region",
+    "title": "Map landslide susceptibility using satellite deformation and rainfall-trigger data for at least two Himalayan countries",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A sub-national landslide-susceptibility analysis for at least two Himalayan countries, documenting InSAR deformation detection, rainfall-trigger thresholds, and explicit terrain-specific limitations for steep, forested, cloud-covered terrain.",
+    "inputs": [
+      "Sentinel-1 InSAR data for target Himalayan regions",
+      "GPM or CHIRPS rainfall data for target regions",
+      "NASA landslide hazard susceptibility maps",
+      "Published landslide inventory data for validation"
+    ],
+    "expected_artifact": "validation.md update with susceptibility methodology and terrain-specific limitations.",
+    "validation_method": "Replicator confirms InSAR data extraction, rainfall-threshold methodology, and terrain-specific limitation documentation for each target country.",
     "reviewer_needed": "replicator",
-    "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "safety_risk": "high",
+    "done_condition": "Susceptibility analysis includes methodology, terrain-specific limitations, InSAR performance documentation, rainfall-threshold methodology, and replication status for at least two countries."
   },
   {
-    "id": "risk-mapping",
+    "id": "population-exposure-analysis",
     "problem_id": "disaster-resilience/landslide-early-warning-south-asia",
-    "title": "Produce sub-national risk map for landslide early warning and vulnerability mapping in the himalayan region",
+    "title": "Estimate population exposure to landslide susceptibility in Himalayan valleys with critical infrastructure documentation",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A population-exposure analysis combining susceptibility maps with settlement locations, road networks, and critical infrastructure in Himalayan valleys, with explicit documentation that susceptibility maps are probabilistic, not predictive.",
+    "inputs": [
+      "susceptibility analysis results",
+      "WorldPop gridded population data",
+      "Road network and critical infrastructure location data",
+      "Administrative boundary data for district-level aggregation"
+    ],
+    "expected_artifact": "outputs.md update with exposure methodology and susceptibility-vs-prediction distinction.",
+    "validation_method": "Replicator confirms exposure methodology, settlement data integration, and susceptibility-vs-prediction documentation.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "high",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "done_condition": "Exposure analysis includes methodology, population estimates, infrastructure documentation, susceptibility-vs-prediction distinction, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-warning-overstatement",
     "problem_id": "disaster-resilience/landslide-early-warning-south-asia",
-    "title": "Red-team misuse risks",
+    "title": "Red-team susceptibility-map overstatement and false-prediction risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how susceptibility maps could be mistaken for predictions, how InSAR limitations could create false confidence in deformation monitoring, and how results could be used for inappropriate village-relocation or road-closure decisions.",
+    "inputs": [
+      "susceptibility and exposure analysis outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every susceptibility claim has probabilistic-language documentation, InSAR limitations, and explicit non-prediction disclaimers. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "done_condition": "Every susceptibility claim is either blocked, softened to probabilistic language with explicit terrain limitations, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "disaster-resilience/landslide-early-warning-south-asia",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match disaster-management and community-preparedness decision needs in Himalayan districts",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the susceptibility-exposure analysis would change any real decision for national disaster-management agencies or community-based preparedness programs in Himalayan districts without creating perverse incentives.",
+    "inputs": [
+      "draft susceptibility and exposure outputs",
+      "disaster-management agency context for target countries",
+      "community-based preparedness program documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for disaster-management and community-based audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that susceptibility maps are treated as predictions, or that InSAR limitations create false confidence in monitoring capability. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "done_condition": "The output has a named user (e.g., Nepal National Disaster Risk Reduction and Management Authority officer), named decision (e.g., district-level early warning pilot expansion), explicit non-use cases (e.g., not for village-relocation decisions, not for road-closure without ground verification), and replicated field-reality review."
   }
 ]

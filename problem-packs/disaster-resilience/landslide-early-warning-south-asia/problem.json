@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["disaster-resilience"],
   "region": ["south-asia"],
-  "summary": "Build a verified workflow for landslide susceptibility mapping and early warning in the Himalayan region, linking satellite-derived slope-stability data, rainfall-trigger data, and population-exposure data.",
-  "why_it_matters": "Build a verified workflow for landslide susceptibility mapping and early warning in the Himalayan region, linking satellite-derived slope-stability data, rainfall-trigger data, and population-exposure data.",
+  "summary": "Build a verified workflow for mapping landslide susceptibility and population exposure in the Himalayan region using satellite slope-stability data and rainfall-trigger models, with explicit InSAR limitations, rainfall-threshold methodology, and the distinction between susceptibility mapping and operational early warning.",
+  "why_it_matters": "Rainfall-triggered landslides kill over 4,000 people annually, with South Asia accounting for over 50 percent of global fatalities. The Himalayan region's extreme topography, monsoon rainfall, seismic activity, and rapid road construction create compounding risk for millions. Yet landslide early warning is almost entirely reactive — warnings are issued after landslides occur, not before. Without verified susceptibility and exposure analysis, early-warning investment cannot be targeted where it would most reduce mortality risk.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Susceptibility-methodology traceability",
+      "target": "Every susceptibility claim links to satellite data source, resolution, validation status, and InSAR limitations in steep terrain.",
+      "validation_method": "Schema validation and reviewer spot-checks against satellite slope-stability documentation."
+    },
+    {
+      "metric": "Rainfall-threshold documentation",
+      "target": "No rainfall-trigger claim is merged without documenting threshold methodology, temporal resolution, and micro-climate variation limitations.",
+      "validation_method": "Reviewer confirms rainfall-threshold source, methodology, and terrain-specific limitations."
+    },
+    {
+      "metric": "Susceptibility-vs-prediction distinction",
+      "target": "Every output explicitly distinguishes probabilistic susceptibility mapping from deterministic landslide prediction — susceptibility maps are not predictions.",
+      "validation_method": "Red-team reviewer confirms the susceptibility-vs-prediction distinction in every claim."
     }
   ],
   "safety_level": "high",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, susceptibility-methodology safety review, and replication for quantitative outputs."
   }
 }

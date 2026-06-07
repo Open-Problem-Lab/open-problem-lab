@@ -260,6 +260,16 @@ Build a verified workflow for measuring health service disruption caused by arme
 
 Build a verified workflow for measuring disability access barriers to health and education services in LMICs, linking disability-prevalence surveys, facility-accessibility data, and school-enrollment data at sub-national scale.
 
+## Health Workforce Density And Skill-Mix Gaps In Low-Income Countries
+
+- ID: `public-health/health-workforce-density-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/health-workforce-density-global](../../problem-packs/public-health/health-workforce-density-global/problem.md)
+
+Build a verified workflow for measuring health workforce density and skill-mix gaps at sub-national scale in low-income countries, linking national health workforce registries, facility-staffing data, and population data to identify where worker shortages are most severe.
+
 ## HIV Treatment Cascade Gaps And 95-95-95 Target Tracking In Sub-Saharan Africa
 
 - ID: `public-health/hiv-treatment-cascade-global`

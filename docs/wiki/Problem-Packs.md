@@ -240,6 +240,16 @@ Build a verified workflow for assessing where vegetation, soil moisture, and win
 
 Build a verified workflow for measuring alcohol taxation and marketing regulation relative to heavy episodic drinking prevalence in LMICs, linking STEPS survey data, policy-tracking data, and economic indicators.
 
+## Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries
+
+- ID: `public-health/antimicrobial-resistance-surveillance-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/antimicrobial-resistance-surveillance-global](../../problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md)
+
+Build a verified workflow for measuring antimicrobial resistance surveillance gaps in LMICs, linking WHO GLASS data, national laboratory data, and antibiotic-consumption data at sub-national scale.
+
 ## Child Labor Detection And Supply Chain Risk In Global Agriculture
 
 - ID: `public-health/child-labor-supply-chain-global`

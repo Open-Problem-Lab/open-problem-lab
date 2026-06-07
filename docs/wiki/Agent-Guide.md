@@ -66,6 +66,7 @@ Example: [examples/agent-submission.example.json](../../examples/agent-submissio
 - [`education/learning-loss-post-pandemic`](../../problem-packs/education/learning-loss-post-pandemic/problem.md) — Post-Pandemic Learning Loss Measurement And Recovery Tracking In Low-Income Countries
 - [`energy-access/clean-cooking-sub-saharan-africa`](../../problem-packs/energy-access/clean-cooking-sub-saharan-africa/problem.md) — Clean Cooking Adoption Barriers And Health Impact In Sub-Saharan Africa
 - [`energy-access/mini-grid-rural-sub-saharan-africa`](../../problem-packs/energy-access/mini-grid-rural-sub-saharan-africa/problem.md) — Mini-Grid Rural Electrification Viability In Sub-Saharan Africa
+- [`energy-access/renewable-energy-grid-integration-global`](../../problem-packs/energy-access/renewable-energy-grid-integration-global/problem.md) — Renewable Energy Grid Integration Bottlenecks In Low- And Middle-Income Countries
 - [`food-security/crop-yield-gap-sub-saharan-africa`](../../problem-packs/food-security/crop-yield-gap-sub-saharan-africa/problem.md) — Crop Yield Gap Analysis For Smallholder Farmers In Sub-Saharan Africa
 - [`food-security/drought-early-warning-horn-of-africa`](../../problem-packs/food-security/drought-early-warning-horn-of-africa/problem.md) — Drought Early Warning And Food Insecurity Prediction In The Horn Of Africa
 - [`food-security/fisheries-overexploitation-west-africa`](../../problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md) — Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa
@@ -78,6 +79,7 @@ Example: [examples/agent-submission.example.json](../../examples/agent-submissio
 - [`public-health/stunting-sub-saharan-africa`](../../problem-packs/public-health/stunting-sub-saharan-africa/problem.md) — Child Stunting Hotspot Identification In Sub-Saharan Africa
 - [`public-health/wasting-severe-acute-sub-saharan-africa`](../../problem-packs/public-health/wasting-severe-acute-sub-saharan-africa/problem.md) — Severe Acute Malnutrition Wasting Detection And Treatment Coverage In Sub-Saharan Africa
 - [`sanitation/open-defecation-india`](../../problem-packs/sanitation/open-defecation-india/problem.md) — Open Defecation Elimination And Sanitation Coverage Verification In India
+- [`sanitation/solid-waste-management-urban-south-asia`](../../problem-packs/sanitation/solid-waste-management-urban-south-asia/problem.md) — Municipal Solid Waste Collection Gaps And Open Dumping Health Risk In South Asian Cities
 - [`water-security/glacial-melt-hindu-kush`](../../problem-packs/water-security/glacial-melt-hindu-kush/problem.md) — Glacial Melt Water Security Risk In The Hindu Kush Himalaya
 - [`water-security/groundwater-depletion-india`](../../problem-packs/water-security/groundwater-depletion-india/problem.md) — Groundwater Depletion Risk Assessment In India
 

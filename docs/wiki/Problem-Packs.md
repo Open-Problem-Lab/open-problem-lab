@@ -150,6 +150,16 @@ Build a verified workflow for identifying where household air pollution from sol
 
 Build a verified workflow for identifying where solar-hybrid mini-grids are technically and economically viable for rural electrification, linking settlement data, solar resource, demand estimates, and cost data at sub-national scale.
 
+## Renewable Energy Grid Integration Bottlenecks In Low- And Middle-Income Countries
+
+- ID: `energy-access/renewable-energy-grid-integration-global`
+- Status: `scoped`
+- Domain: `energy-access`, `climate-adaptation`
+- Region: `global`
+- Source: [problem-packs/energy-access/renewable-energy-grid-integration-global](../../problem-packs/energy-access/renewable-energy-grid-integration-global/problem.md)
+
+Build a verified workflow for identifying where grid infrastructure, regulatory, and financial bottlenecks prevent renewable energy integration in LMICs, linking grid-capacity data, renewable-resource data, and investment-flow data at national and sub-national scale.
+
 ## Crop Yield Gap Analysis For Smallholder Farmers In Sub-Saharan Africa
 
 - ID: `food-security/crop-yield-gap-sub-saharan-africa`
@@ -269,6 +279,16 @@ Build a verified workflow for identifying where severe acute malnutrition wastin
 - Source: [problem-packs/sanitation/open-defecation-india](../../problem-packs/sanitation/open-defecation-india/problem.md)
 
 Build a verified workflow for assessing where sanitation coverage data, open-defecation surveys, and health outcome data conflict or align at district scale in India, supporting honest measurement of Swachh Bharat Mission outcomes.
+
+## Municipal Solid Waste Collection Gaps And Open Dumping Health Risk In South Asian Cities
+
+- ID: `sanitation/solid-waste-management-urban-south-asia`
+- Status: `scoped`
+- Domain: `sanitation`, `public-health`
+- Region: `south-asia`
+- Source: [problem-packs/sanitation/solid-waste-management-urban-south-asia](../../problem-packs/sanitation/solid-waste-management-urban-south-asia/problem.md)
+
+Build a verified workflow for measuring municipal solid waste collection gaps and open-dumping health risk in South Asian cities, linking waste-generation estimates, collection-route data, and informal-sector recycling data at neighborhood scale.
 
 ## Glacial Melt Water Security Risk In The Hindu Kush Himalaya
 

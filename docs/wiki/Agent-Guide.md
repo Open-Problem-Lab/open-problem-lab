@@ -61,6 +61,7 @@ Example: [examples/agent-submission.example.json](../../examples/agent-submissio
 - [`climate-health/malaria-early-warning-africa`](../../problem-packs/climate-health/malaria-early-warning-africa/problem.md) — Malaria Early Warning Signals In Sub-Saharan Africa
 - [`disaster-resilience/cyclone-early-warning-bangladesh`](../../problem-packs/disaster-resilience/cyclone-early-warning-bangladesh/problem.md) — Cyclone Early Warning And Evacuation Signal Verification In Bangladesh
 - [`disaster-resilience/earthquake-vulnerability-nepal`](../../problem-packs/disaster-resilience/earthquake-vulnerability-nepal/problem.md) — Seismic Vulnerability Assessment And Building-Stock Risk In Nepal
+- [`disaster-resilience/urban-flooding-south-asia`](../../problem-packs/disaster-resilience/urban-flooding-south-asia/problem.md) — Urban Pluvial Flooding Risk In South Asian Megacities
 - [`education/digital-divide-school-access-global`](../../problem-packs/education/digital-divide-school-access-global/problem.md) — Digital Divide Measurement And School Internet Connectivity In Low-Income Countries
 - [`education/girls-education-sub-saharan-africa`](../../problem-packs/education/girls-education-sub-saharan-africa/problem.md) — Girls Secondary Education Enrollment And Retention Barriers In Sub-Saharan Africa
 - [`education/learning-loss-post-pandemic`](../../problem-packs/education/learning-loss-post-pandemic/problem.md) — Post-Pandemic Learning Loss Measurement And Recovery Tracking In Low-Income Countries

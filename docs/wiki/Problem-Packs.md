@@ -100,6 +100,16 @@ Build a verified workflow for assessing where cyclone track forecasts, storm sur
 
 Build a verified workflow for assessing where building-stock vulnerability, population density, and seismic hazard create the highest earthquake mortality risk in Nepal at municipal scale.
 
+## Urban Pluvial Flooding Risk In South Asian Megacities
+
+- ID: `disaster-resilience/urban-flooding-south-asia`
+- Status: `scoped`
+- Domain: `disaster-resilience`, `climate-adaptation`
+- Region: `south-asia`
+- Source: [problem-packs/disaster-resilience/urban-flooding-south-asia](../../problem-packs/disaster-resilience/urban-flooding-south-asia/problem.md)
+
+Build a verified workflow for assessing where impervious surface expansion, drainage inadequacy, and extreme rainfall create the highest pluvial flooding risk in South Asian megacities at neighborhood scale.
+
 ## Digital Divide Measurement And School Internet Connectivity In Low-Income Countries
 
 - ID: `education/digital-divide-school-access-global`

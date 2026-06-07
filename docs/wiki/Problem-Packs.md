@@ -230,6 +230,16 @@ Build a verified workflow for detecting livestock disease outbreaks and estimati
 
 Build a verified workflow for assessing where vegetation, soil moisture, and wind signals can improve desert locust outbreak early warning in East Africa at sub-national scale, without conflating a model alert with a control operation order.
 
+## Child Labor Detection And Supply Chain Risk In Global Agriculture
+
+- ID: `public-health/child-labor-supply-chain-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/child-labor-supply-chain-global](../../problem-packs/public-health/child-labor-supply-chain-global/problem.md)
+
+Build a verified workflow for identifying where child labor risk is highest in agricultural supply chains, linking household-survey data, crop-production maps, and supply-chain traceability data at sub-national scale.
+
 ## Conflict-Driven Health Service Disruption Measurement In Fragile States
 
 - ID: `public-health/conflict-health-service-disruption-global`

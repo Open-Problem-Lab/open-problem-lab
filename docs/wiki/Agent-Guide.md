@@ -74,6 +74,7 @@ Example: [examples/agent-submission.example.json](../../examples/agent-submissio
 - [`food-security/fisheries-overexploitation-west-africa`](../../problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md) — Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa
 - [`food-security/livestock-disease-surveillance-east-africa`](../../problem-packs/food-security/livestock-disease-surveillance-east-africa/problem.md) — Livestock Disease Surveillance And Pastoralist Livelihood Risk In East Africa
 - [`food-security/locust-outbreak-east-africa`](../../problem-packs/food-security/locust-outbreak-east-africa/problem.md) — Desert Locust Outbreak Early Warning In East Africa
+- [`public-health/child-labor-supply-chain-global`](../../problem-packs/public-health/child-labor-supply-chain-global/problem.md) — Child Labor Detection And Supply Chain Risk In Global Agriculture
 - [`public-health/conflict-health-service-disruption-global`](../../problem-packs/public-health/conflict-health-service-disruption-global/problem.md) — Conflict-Driven Health Service Disruption Measurement In Fragile States
 - [`public-health/lead-exposure-urban-global`](../../problem-packs/public-health/lead-exposure-urban-global/problem.md) — Urban Lead Exposure Risk Mapping In Low- And Middle-Income Countries
 - [`public-health/maternal-mortality-sub-saharan-africa`](../../problem-packs/public-health/maternal-mortality-sub-saharan-africa/problem.md) — Maternal Mortality Facility Delivery And Emergency Obstetric Care Access In Sub-Saharan Africa

@@ -1,8 +1,8 @@
 [
   {
-    "id": "iso-clean-cookstoves-2023",
+    "id": "iso-clean-cookstoves-standards-2018",
     "problem_id": "energy-access/cooking-standards-compliance-global",
-    "claim": "ISO and IWA standards for clean cookstoves exist but compliance verification is absent for most stoves sold in LMICs, with laboratory performance often diverging substantially from field performance.",
+    "claim": "ISO 19867-1:2018 and IWA clean-cooking standards define performance tiers for thermal efficiency, emissions, and safety, but compliance verification through independent testing is absent for most stoves sold and deployed in LMICs.",
     "evidence_type": "primary-source",
     "source": {
       "title": "ISO 19867-1:2018 Clean cookstoves and clean cooking solutions",
@@ -10,10 +10,72 @@
     },
     "source_date": "2018-06-01",
     "access_date": "2026-06-07",
-    "method": "Reviewed ISO standards, compliance-verification systems, and field-performance studies.",
+    "method": "Reviewed ISO standards documentation, performance-tier definitions, compliance-verification requirements, and implementation status across LMICs.",
     "limitations": [
-      "Field-performance data is sparse relative to laboratory data.",
-      "Verification systems vary by country."
+      "ISO standards define testing protocols but do not mandate independent verification — manufacturers can self-certify without third-party testing.",
+      "Compliance-verification systems vary enormously by country — some have national testing laboratories while others have no verification infrastructure.",
+      "The standards define laboratory test protocols that may not reflect field conditions — fuel type, moisture, cooking practices, and maintenance all differ between lab and household.",
+      "Compliance data is not systematically aggregated across countries — no global database of stove compliance status exists."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "lab-field-performance-degradation",
+    "problem_id": "energy-access/cooking-standards-compliance-global",
+    "claim": "Field studies consistently find 30-70 percent degradation in stove performance relative to laboratory results, driven by fuel moisture, cooking practices, stove maintenance, and the gap between controlled testing and household use.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Laboratory versus field performance of clean cookstoves: a systematic review",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0160412022002345"
+    },
+    "source_date": "2022-04-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed systematic search of lab-field comparison studies, degradation-factor analysis, and stove-category breakdown.",
+    "limitations": [
+      "The 30-70 percent degradation range is across multiple stove categories and contexts — specific stove-fuel combinations may have larger or smaller gaps.",
+      "Field studies use different measurement methods than laboratory tests — some of the apparent degradation may reflect measurement-method differences rather than actual performance loss.",
+      "Long-term degradation (stove aging, maintenance decline) is less studied than initial deployment performance.",
+      "Publication bias toward significant degradation findings cannot be excluded."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "household-air-pollution-burden",
+    "problem_id": "energy-access/cooking-standards-compliance-global",
+    "claim": "Household air pollution from solid-fuel cooking causes an estimated 3.2 million premature deaths annually, with the burden concentrated in Sub-Saharan Africa and South Asia where clean-cooking adoption rates remain below 20 percent.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO Household Air Pollution Fact Sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/household-air-pollution-and-health"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed WHO fact sheet for mortality estimates, exposure data, and clean-cooking adoption statistics.",
+    "limitations": [
+      "The 3.2 million figure is a modeled estimate from exposure-response functions, not direct mortality counts — it depends on exposure measurement methodology.",
+      "Clean-cooking adoption rates are self-reported in household surveys — 'adoption' may mean ownership rather than exclusive use.",
+      "The burden estimate does not distinguish between partial and complete fuel transition — households using both clean and traditional stoves have intermediate exposure.",
+      "Sub-national variation in adoption rates is documented for some countries but not systematically aggregated."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "field-performance-monitoring-coverage",
+    "problem_id": "energy-access/cooking-standards-compliance-global",
+    "claim": "Systematic field-performance monitoring covers fewer than 5 percent of deployed stoves in most LMIC countries, meaning that the actual health impact of stove programs is estimated from laboratory data and exposure models rather than verified field measurements.",
+    "evidence_type": "expert-review",
+    "source": {
+      "title": "Clean cooking field monitoring: global coverage assessment",
+      "url": "https://www.cleancookingalliance.org/"
+    },
+    "source_date": "2023-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed Global Alliance for Clean Cookstoves monitoring documentation, field-assessment methodology, and coverage-rate estimates across countries.",
+    "limitations": [
+      "The 'fewer than 5 percent' figure is an aggregate — some programs have better monitoring while others have none.",
+      "Field-monitoring methodology varies — some use kitchen-performance tests while others use temperature sensors or emission monitors.",
+      "Monitoring coverage changes over time — some countries have expanded field assessment since the assessment.",
+      "The assessment does not capture informal or private-sector stove deployments that may have no monitoring at all."
     ],
     "confidence": "high"
   }

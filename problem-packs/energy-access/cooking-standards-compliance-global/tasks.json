@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "energy-access/cooking-standards-compliance-global",
-    "title": "Inventory data sources for energy-access/cooking-standards-compliance-global",
+    "title": "Inventory ISO/IWA standards, laboratory test data, field-performance studies, and compliance-verification systems for clean cookstoves",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for clean cooking standards compliance and stove performance verification gaps.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates ISO/IWA standards documentation, laboratory test data, field-performance studies, and compliance-verification system assessments into usable, limited, and rejected categories with explicit lab-field gap and verification-coverage documentation.",
+    "inputs": [
+      "ISO 19867-1 and IWA clean-cooking standards documentation",
+      "Published laboratory-field performance comparison studies",
+      "Global Alliance for Clean Cookstoves monitoring documentation",
+      "National clean-cooking program compliance data",
+      "WHO household air pollution health-burden data"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and documented limitations — particularly lab-field gap documentation and verification-system coverage.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering lab-field gap documentation, verification-coverage rates, and stove-category specificity."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "lab-field-gap-analysis",
     "problem_id": "energy-access/cooking-standards-compliance-global",
-    "title": "Measure sub-national gap for clean cooking standards compliance and stove performance verification gaps",
+    "title": "Analyze laboratory-to-field performance gaps for major stove categories in at least two LMIC contexts",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A laboratory-to-field performance gap analysis for at least two stove categories (improved biomass, LPG, ethanol, biogas) in at least two LMIC contexts, documenting measurement methodology, degradation factors, and stove-category-specific results.",
+    "inputs": [
+      "Published lab-field comparison studies for target stove categories",
+      "ISO/IWA laboratory test protocols for reference",
+      "Field-performance measurement methodology documentation",
+      "Fuel-moisture and cooking-practice data for degradation-factor analysis"
+    ],
+    "expected_artifact": "validation.md update with lab-field gap methodology and stove-category results.",
+    "validation_method": "Replicator confirms lab-field comparison methodology, measurement-method documentation, and stove-category-specific degradation estimates for each target context.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Lab-field gap analysis includes methodology, stove-category results, degradation-factor documentation, and replication status for at least two contexts."
   },
   {
-    "id": "risk-mapping",
+    "id": "compliance-verification-assessment",
     "problem_id": "energy-access/cooking-standards-compliance-global",
-    "title": "Produce sub-national risk map for clean cooking standards compliance and stove performance verification gaps",
+    "title": "Assess compliance-verification system coverage across LMIC countries",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A compliance-verification system assessment documenting which countries have independent testing infrastructure, verification-coverage rates across deployed stoves, and the gap between laboratory certification and field verification.",
+    "inputs": [
+      "ISO/IWA compliance-verification requirements",
+      "National testing-laboratory documentation for target countries",
+      "Global Alliance for Clean Cookstoves monitoring data",
+      "Published compliance-verification system assessments"
+    ],
+    "expected_artifact": "outputs.md update with verification methodology and coverage-rate documentation.",
+    "validation_method": "Replicator confirms verification-system assessment methodology, coverage-rate documentation, and lab-vs-field verification distinction for each target country.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "done_condition": "Verification assessment includes methodology, coverage rates, lab-vs-field verification distinction, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-lab-performance-overstatement",
     "problem_id": "energy-access/cooking-standards-compliance-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team laboratory-performance overstatement and health-impact extrapolation risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how laboratory performance data could overstate field emission reductions, how health-impact claims based on lab data could be misleading, and how compliance claims could create false confidence in stove programs.",
+    "inputs": [
+      "lab-field gap analysis outputs",
+      "compliance-verification outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every performance claim has lab-vs-field distinction, every health-impact claim has field-performance basis or explicit lab-data caveat, and every compliance claim has verification-coverage documentation. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "done_condition": "Every performance and health-impact claim is either blocked, softened to lab-data-limited language with explicit field-verification caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "energy-access/cooking-standards-compliance-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match clean-cooking program and manufacturer decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the lab-field gap and compliance-verification analysis would change any real decision for clean-cooking programs, stove manufacturers, or health ministries without creating perverse incentives.",
+    "inputs": [
+      "draft lab-field and compliance outputs",
+      "clean-cooking program context",
+      "stove manufacturer and market context"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for clean-cooking and manufacturer audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that lab-performance data is used for health-impact claims without field verification, or that compliance claims create false confidence in stove programs. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
-    "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "safety_risk": "medium",
+    "done_condition": "The output has a named user (e.g., Kenya Clean Cooking Association program director), named decision (e.g., stove procurement standards), explicit non-use cases (e.g., not for health-impact claims based on lab data alone), and replicated field-reality review."
   }
 ]

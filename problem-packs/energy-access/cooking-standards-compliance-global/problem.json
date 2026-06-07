@@ -1,16 +1,26 @@
 {
   "id": "energy-access/cooking-standards-compliance-global",
-  "title": "Clean Cooking Standards Compliance And Stove Performance Verification Gaps",
+  "title": "Clean Cooking Standards Compliance And Stove Performance Verification Gaps In Low-Income Countries",
   "status": "scoped",
   "domain": ["energy-access", "public-health"],
   "region": ["global"],
-  "summary": "Build a verified workflow for verifying clean-cooking stove performance and standards compliance.",
-  "why_it_matters": "Build a verified workflow for verifying clean-cooking stove performance and standards compliance.",
+  "summary": "Build a verified workflow for assessing clean-cooking stove standards compliance and laboratory-to-field performance gaps, with explicit ISO/IWA standards documentation, field-performance measurement methodology, and the distinction between laboratory and verified field performance.",
+  "why_it_matters": "Household air pollution from solid-fuel cooking kills 3.2 million people annually. ISO and IWA standards define stove performance tiers, but compliance verification is absent for most stoves deployed in LMICs. Laboratory tests show 50-90 percent emission reductions, yet field studies find 30-70 percent performance degradation from fuel moisture, cooking practices, and stove maintenance. Without verified field-performance data, clean-cooking investments cannot distinguish stoves that deliver real emission reductions from those that perform well only in the lab.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Laboratory-field performance documentation",
+      "target": "Every stove-performance claim documents the laboratory-to-field gap methodology and explicitly states whether performance data comes from lab tests or field measurements.",
+      "validation_method": "Schema validation and reviewer spot-checks against performance-measurement methodology documentation."
+    },
+    {
+      "metric": "Compliance-verification assessment",
+      "target": "Every standards-compliance claim documents the verification system used and its coverage across deployed stoves.",
+      "validation_method": "Reviewer confirms verification-system methodology and coverage-rate documentation."
+    },
+    {
+      "metric": "Field-performance vs lab-performance distinction",
+      "target": "No health-impact claim is merged without documenting whether it is based on laboratory or field performance data.",
+      "validation_method": "Red-team reviewer confirms lab-vs-field distinction in every health-impact claim."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, performance-verification safety review, and replication for quantitative outputs."
   }
 }

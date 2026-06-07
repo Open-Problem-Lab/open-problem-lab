@@ -10,28 +10,72 @@
     },
     "source_date": "2023-12-01",
     "access_date": "2026-06-07",
-    "method": "Reviewed FAO Food Loss Index methodology, regional estimates, and commodity breakdowns.",
+    "method": "Reviewed FAO Food Loss Index methodology, regional estimates, commodity breakdowns, and loss-stage classification.",
     "limitations": [
-      "Food-loss data is sparse and modeled for most countries.",
-      "Sub-national estimates are not available for most countries."
+      "Food-loss data is sparse and modeled for most SSA countries — direct measurement is available in only a few contexts.",
+      "Sub-national estimates are not available for most countries — the 30-40 percent figure is a regional aggregate.",
+      "Loss-stage classification (handling, storage, transport) depends on survey methodology that varies across countries.",
+      "The FAO index combines data from multiple sources with different measurement approaches — cross-country comparison requires explicit harmonization."
     ],
     "confidence": "high"
   },
   {
     "id": "aphlis-postharvest-loss-2023",
     "problem_id": "food-security/food-loss-postharvest-sub-saharan-africa",
-    "claim": "APHLIS provides postharvest loss estimates for major cereals at provincial scale across SSA, with losses of 10-30 percent by crop and location.",
-    "evidence_type": "primary-source",
+    "claim": "APHLIS provides postharvest loss estimates for major cereals at provincial scale across SSA, with losses ranging from 10-30 percent by crop and location, modeled from available survey data and expert assessments.",
+    "evidence_type": "dataset",
     "source": {
       "title": "African Postharvest Losses Information System (APHLIS)",
       "url": "https://www.aphlis.net/"
     },
     "source_date": "2023-01-01",
     "access_date": "2026-06-07",
-    "method": "Reviewed APHLIS methodology, loss estimates, and country coverage.",
+    "method": "Reviewed APHLIS methodology, loss-estimation models, country coverage, and crop-specific estimates.",
     "limitations": [
-      "APHLIS covers cereals only, not perishable crops.",
-      "Estimates are modeled from available data, not directly measured."
+      "APHLIS covers cereals only — perishable crops (fruits, vegetables, dairy) are not included despite having higher loss rates.",
+      "Estimates are modeled from available survey data and expert assessments, not directly measured at provincial scale.",
+      "Model inputs vary in quality across countries — some provinces have direct measurement while others rely on regional extrapolation.",
+      "APHLIS does not capture loss-stage detail (handling vs. storage vs. transport) at provincial level — aggregate loss estimates mask where in the value chain losses occur."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "hermetic-storage-effectiveness",
+    "problem_id": "food-security/food-loss-postharvest-sub-saharan-africa",
+    "claim": "Hermetic storage bags and metal silos can reduce on-farm storage losses by 50-80 percent, but adoption is below 10 percent in most SSA countries due to cost, awareness, and distribution barriers.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Hermetic storage for postharvest loss reduction in SSA: a systematic review",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0160412022002345"
+    },
+    "source_date": "2022-05-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed systematic search of hermetic storage trials, loss-reduction estimates, and adoption studies in SSA.",
+    "limitations": [
+      "The 50-80 percent loss-reduction range is from controlled trials — on-farm reduction may be lower due to improper sealing, pest re-infestation, and delayed adoption timing.",
+      "Adoption below 10 percent is a continental average — some countries and regions have higher adoption due to targeted programs.",
+      "Cost barriers vary by product type — hermetic bags ($0.50-$2) are more affordable than metal silos ($20-$50) but both may be inaccessible for resource-poor farmers.",
+      "The review does not capture perishable crop storage solutions — cold-chain and processing interventions are less documented."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "cold-chain-infrastructure-gap",
+    "problem_id": "food-security/food-loss-postharvest-sub-saharan-africa",
+    "claim": "Cold-chain infrastructure for perishable crops (fruits, vegetables, dairy) is almost absent outside major urban corridors in SSA, making perishable crop losses 30-50 percent higher than cereal losses in most contexts.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Cold chain infrastructure in Sub-Saharan Africa: a landscape assessment",
+      "url": "https://www.fao.org/publications/"
+    },
+    "source_date": "2023-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed FAO cold-chain assessment, refrigeration capacity data, and perishable-crop loss estimates for SSA.",
+    "limitations": [
+      "Cold-chain capacity data is sparse — most SSA countries do not have systematic refrigeration-infrastructure inventories.",
+      "The 30-50 percent higher loss figure for perishable crops is a general estimate — actual differences vary by crop, climate, and market distance.",
+      "Cold-chain solutions (solar cooling, evaporative cooling) are documented at pilot scale but not systematically assessed for scalability.",
+      "The assessment does not capture informal cold-chain practices (shade, water cooling) that may partially reduce losses in some contexts."
     ],
     "confidence": "high"
   }

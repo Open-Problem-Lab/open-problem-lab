@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["food-security"],
   "region": ["sub-saharan-africa"],
-  "summary": "Build a verified workflow for measuring postharvest food loss at sub-national scale in Sub-Saharan Africa, linking crop-production data, storage-infrastructure data, and household-survey food-loss modules.",
-  "why_it_matters": "FAO estimates 30-40 percent of food produced in Sub-Saharan Africa is lost postharvest — enough to feed 300 million people. Losses concentrate at the farm-to-market stage where storage, transport, and processing infrastructure is weakest. Measuring where losses are highest and what infrastructure would reduce them is the missing link for investment targeting.",
+  "summary": "Build a verified workflow for mapping postharvest food loss at sub-national scale in SSA, with explicit loss-estimation methodology documentation, crop-specific loss data, and the distinction between modeled estimates and verified household-level measurement.",
+  "why_it_matters": "FAO estimates 30-40 percent of food produced in SSA is lost postharvest — enough to feed 300 million people. Hermetic storage can reduce on-farm storage losses by 50-80 percent but adoption is below 10 percent. Cold-chain for perishable crops is almost absent outside urban corridors. Without verified sub-national loss analysis, storage-infrastructure and food-system investment cannot be targeted where losses are highest and most reducible.",
   "success_metrics": [
     {
-      "metric": "Measurement traceability",
-      "target": "Every loss estimate links production, storage, and survey data with methodology.",
-      "validation_method": "Schema validation and reviewer checks."
+      "metric": "Loss-estimation methodology documentation",
+      "target": "Every loss estimate documents whether data comes from APHLIS provincial modeling, FAO country aggregates, or household-survey direct measurement, and explicitly states methodology differences.",
+      "validation_method": "Schema validation and reviewer spot-checks against loss-estimation methodology documentation."
+    },
+    {
+      "metric": "Crop-specific and stage-specific loss data",
+      "target": "No loss claim is merged without documenting which crops and which postharvest stages (handling, storage, transport, processing) are covered.",
+      "validation_method": "Reviewer confirms crop-specific and stage-specific loss documentation."
+    },
+    {
+      "metric": "Modeled-vs-measured distinction",
+      "target": "Every loss estimate explicitly states whether it is a modeled estimate from APHLIS/FAO or a directly measured household-survey observation.",
+      "validation_method": "Red-team reviewer confirms modeled-vs-measured distinction in every loss claim."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, loss-estimation safety review, and replication for quantitative outputs."
   }
 }

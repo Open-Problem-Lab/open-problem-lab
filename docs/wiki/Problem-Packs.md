@@ -380,6 +380,16 @@ Build a verified workflow for identifying where road traffic injury mortality ri
 
 Build a verified workflow for measuring the gap between sickle cell disease birth prevalence and newborn screening and treatment coverage, linking DHS sickle cell data, health-facility capacity, and penicillin-prophylaxis coverage at sub-national scale.
 
+## Snakebite Envenoming Mortality And Antivenom Access Gaps In Rural Low-Income Countries
+
+- ID: `public-health/snakebite-antivenom-access-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/snakebite-antivenom-access-global](../../problem-packs/public-health/snakebite-antivenom-access-global/problem.md)
+
+Build a verified workflow for measuring snakebite envenoming mortality risk and antivenom access gaps, linking WHO snakebite data, health-facility antivenom stocking data, and agricultural-population maps at sub-national scale.
+
 ## Child Stunting Hotspot Identification In Sub-Saharan Africa
 
 - ID: `public-health/stunting-sub-saharan-africa`

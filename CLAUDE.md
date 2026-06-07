@@ -10,10 +10,14 @@ A GitHub-native verification protocol for AI contributions to neglected global p
 
 Read these in order:
 
-1. `README.md` — mission, 21 problem packs, operating model, why this vs. alternatives
-2. `VISION.md` — why verification is the scarce resource, what winning looks like
-3. `SAFETY.md` — risk levels, prohibited shortcuts, burden of proof
-4. The relevant `problem-packs/[domain]/[pack]/problem.md` before touching any pack
+1. `README.md` — mission, operating model, why this vs. alternatives
+2. `AGENTS.md` — the canonical agent guide (quality ratchet, self-improvement loop, anti-patterns)
+3. `SKILL.md` — street-smart contribution patterns
+4. `VISION.md` — why verification is the scarce resource, what winning looks like
+5. `SAFETY.md` — risk levels, prohibited shortcuts, burden of proof
+6. `tasks-available.json` — machine-readable index of every scoped task ready to pick up
+7. `docs/AGENT-FAQ.md` — common rejection patterns and how to recover
+8. The relevant `problem-packs/[domain]/[pack]/problem.md` before touching any pack
 
 ## Commands
 
@@ -31,39 +35,23 @@ pnpm format:check            # prettier verify
 
 ## How to Contribute
 
-1. Pick a problem pack with a `"status": "scoped"` task in its `tasks.json`.
-2. Read the role guide in `agents/` that matches your task.
+1. Open `tasks-available.json` and pick a task. Every entry is a scoped task ready to work on, with role, reviewer needed, risk level, and done condition.
+2. Read the role guide in `agents/` that matches the task's `owner_role`.
 3. Open a GitHub Issue using the Agent Submission template (`.github/ISSUE_TEMPLATE/agent-submission.yml`).
 4. If your submission changes canonical files, open a pull request.
 5. Wait for review. Do not claim completion until the PR is merged.
 
 The done condition in `tasks.json` is the authority on completion — not your assessment of the work.
 
-## Active Problem Packs (21)
+## Active Problem Packs
 
-| ID                                                     | Domain                                  |
-| ------------------------------------------------------ | --------------------------------------- |
-| `air-quality/indoor-air-pollution-sub-saharan-africa`  | air-quality, public-health              |
-| `air-quality/pm25-monitoring-south-asia`               | air-quality, public-health              |
-| `biodiversity/coral-bleaching-great-barrier-reef`      | biodiversity, climate-health            |
-| `biodiversity/deforestation-amazon`                    | biodiversity, climate-health            |
-| `climate-adaptation/sea-level-rise-small-islands`      | climate-adaptation, disaster-resilience |
-| `climate-health/dengue-heat-vietnam`                   | climate-health, public-health           |
-| `climate-health/heat-stress-urban-south-asia`          | climate-health, public-health           |
-| `climate-health/malaria-early-warning-africa`          | climate-health, public-health           |
-| `disaster-resilience/cyclone-early-warning-bangladesh` | disaster-resilience, climate-health     |
-| `disaster-resilience/earthquake-vulnerability-nepal`   | disaster-resilience                     |
-| `education/girls-education-sub-saharan-africa`         | education                               |
-| `education/learning-loss-post-pandemic`                | education                               |
-| `energy-access/clean-cooking-sub-saharan-africa`       | energy-access, public-health            |
-| `energy-access/mini-grid-rural-sub-saharan-africa`     | energy-access                           |
-| `food-security/drought-early-warning-horn-of-africa`   | food-security, disaster-resilience      |
-| `food-security/locust-outbreak-east-africa`            | food-security, climate-health           |
-| `public-health/lead-exposure-urban-global`             | public-health                           |
-| `public-health/stunting-sub-saharan-africa`            | public-health, food-security            |
-| `sanitation/open-defecation-india`                     | sanitation, public-health               |
-| `water-security/glacial-melt-hindu-kush`               | water-security, climate-adaptation      |
-| `water-security/groundwater-depletion-india`           | water-security, food-security           |
+The list of active packs grows quickly. Read the live canonical list rather than a static copy:
+
+- `tasks-available.json` — machine-readable index with task counts by role, risk, and domain
+- `docs/wiki/Problem-Packs.md` — auto-generated reader-facing list
+- `problem-packs/` — canonical source of truth
+
+Never trust an embedded count in any hand-written file. Trust the generated index.
 
 ## Agent Role Guides
 

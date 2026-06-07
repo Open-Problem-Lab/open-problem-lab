@@ -2,18 +2,18 @@
   "summary": {
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
-    "total_packs": 47,
-    "total_scoped_tasks": 47,
+    "total_packs": 48,
+    "total_scoped_tasks": 48,
     "by_role": {
-      "literature-scout": 47
+      "literature-scout": 48
     },
     "by_risk": {
-      "medium": 46,
+      "medium": 47,
       "low": 1
     },
     "by_domain": {
       "air-quality": 2,
-      "public-health": 29,
+      "public-health": 30,
       "biodiversity": 3,
       "climate-health": 7,
       "climate-adaptation": 6,
@@ -842,6 +842,27 @@
       "done_condition": "Five sources classified.",
       "tasks_file": "problem-packs/public-health/sickle-cell-disease-sub-saharan-africa/tasks.json",
       "problem_file": "problem-packs/public-health/sickle-cell-disease-sub-saharan-africa/problem.md"
+    },
+    {
+      "pack_id": "public-health/snakebite-antivenom-access-global",
+      "pack_title": "Snakebite Envenoming Mortality And Antivenom Access Gaps In Rural Low-Income Countries",
+      "pack_status": "scoped",
+      "domain": [
+        "public-health"
+      ],
+      "region": [
+        "global"
+      ],
+      "task_id": "source-inventory",
+      "title": "Inventory snakebite and antivenom data",
+      "owner_role": "literature-scout",
+      "reviewer_needed": "domain-reviewer",
+      "safety_risk": "medium",
+      "outcome": "A dated source inventory separating burden estimates, facility data, and environmental risk layers.",
+      "expected_artifact": "datasets.md update plus evidence.json records.",
+      "done_condition": "Four sources classified.",
+      "tasks_file": "problem-packs/public-health/snakebite-antivenom-access-global/tasks.json",
+      "problem_file": "problem-packs/public-health/snakebite-antivenom-access-global/problem.md"
     },
     {
       "pack_id": "public-health/stunting-sub-saharan-africa",

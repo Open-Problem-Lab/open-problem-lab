@@ -2,71 +2,94 @@
   {
     "id": "source-inventory",
     "problem_id": "education/digital-divide-school-access-global",
-    "title": "Inventory school connectivity data sources",
+    "title": "Inventory school connectivity, mobile-network, and digital-learning data sources for low-income countries",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "Dated source inventory.",
-    "inputs": ["Giga data", "school census", "mobile coverage maps", "population data"],
-    "expected_artifact": "datasets.md plus evidence.json.",
-    "validation_method": "Reviewer checks sources.",
+    "outcome": "A dated source inventory that separates Giga school-connectivity data, national school census ICT indicators, mobile-network coverage maps, and connectivity-quality studies into usable, limited, and rejected categories with explicit connectivity-classification methodology and data-currency assessment.",
+    "inputs": [
+      "Giga school-mapping documentation and connectivity-classification methodology",
+      "National school census ICT-indicator documentation for target countries",
+      "Mobile-network coverage data from GSMA and national regulators",
+      "Published connectivity-quality studies for school internet use",
+      "UNICEF/ITU digital divide data and methodology"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and documented limitations — particularly connectivity-classification methodology and data currency.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "low",
-    "done_condition": "Four sources classified."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering connectivity-classification methodology, data currency, and cross-validation status."
   },
   {
     "id": "connectivity-compilation",
     "problem_id": "education/digital-divide-school-access-global",
-    "title": "Compile school-level connectivity data",
+    "title": "Compile harmonized school-connectivity data for at least two low-income countries",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "Harmonized school connectivity dataset.",
-    "inputs": ["Giga school data", "school census ICT", "connectivity definitions"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator confirms data harmonization methodology.",
+    "outcome": "A harmonized school-connectivity dataset for at least two low-income countries, documenting connectivity-classification methodology, data currency, and cross-validation between Giga and school census data where possible.",
+    "inputs": [
+      "Giga school-connectivity data for target countries",
+      "National school census ICT indicators for target countries",
+      "Mobile-network coverage data for connectivity context",
+      "Published cross-validation studies between Giga and census data"
+    ],
+    "expected_artifact": "validation.md update with connectivity methodology and data-currency documentation.",
+    "validation_method": "Replicator confirms connectivity data extraction, classification methodology documentation, and data-currency assessment for each target country.",
     "reviewer_needed": "replicator",
     "safety_risk": "low",
-    "done_condition": "Connectivity classification methodology documented with replication."
+    "done_condition": "Connectivity dataset includes methodology, data-currency documentation, cross-validation assessment, and replication status for at least two countries."
   },
   {
     "id": "connectivity-gap-mapping",
     "problem_id": "education/digital-divide-school-access-global",
-    "title": "Map sub-national school connectivity gaps",
+    "title": "Map sub-national school connectivity gaps with quality-dimension documentation",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "Sub-national connectivity gap map.",
-    "inputs": ["connectivity data", "population data", "administrative boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms gap classification and spatial methodology.",
+    "outcome": "A sub-national connectivity-gap map for at least two low-income countries, with explicit documentation of connectivity classification, data currency, and the distinction between connectivity existence and verified digital-learning use.",
+    "inputs": [
+      "harmonized connectivity dataset",
+      "population and school-location data",
+      "administrative boundary data for district-level aggregation",
+      "connectivity-quality studies for bandwidth and reliability context"
+    ],
+    "expected_artifact": "outputs.md update with gap methodology and quality-dimension documentation.",
+    "validation_method": "Replicator confirms gap-classification methodology, data-currency documentation, and connectivity-vs-usage distinction for each target country.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "low",
-    "done_condition": "Gap map includes data-currency documentation and replication."
+    "done_condition": "Connectivity-gap map includes methodology, data-currency documentation, quality-dimension context, and replication status for at least two countries."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-connectivity-overstatement",
     "problem_id": "education/digital-divide-school-access-global",
-    "title": "Red-team misuse of connectivity gap data",
+    "title": "Red-team connectivity-map overstatement and technology-procurement misuse risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "Failure-mode review.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review.",
-    "validation_method": "Mitigations or block, replicated.",
+    "outcome": "A failure-mode review identifying how connectivity maps could overstate digital-readiness by ignoring electricity, device, and teacher-literacy gaps, how satellite classification could misclassify intermittent connectivity, and how results could drive technology procurement without complementary investments.",
+    "inputs": [
+      "connectivity-gap mapping outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every connectivity claim has classification-methodology documentation, data-currency assessment, and connectivity-vs-usage disclaimers. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "medium",
-    "done_condition": "Claims qualified or gated."
+    "done_condition": "Every connectivity claim is either blocked, softened to classification-limited language with explicit quality-dimension caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "education/digital-divide-school-access-global",
-    "title": "Check whether outputs match ICT planning needs",
+    "title": "Check whether outputs match education ministry ICT planning decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "Field-facing review.",
-    "inputs": ["draft outputs", "ICT planning context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "outcome": "A field-facing review of whether the connectivity-gap analysis would change any real decision for education ministry ICT directors or school-connectivity program managers without creating perverse incentives.",
+    "inputs": [
+      "draft connectivity-gap outputs",
+      "education ministry ICT planning context",
+      "school-connectivity program documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for education ministry ICT audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that connectivity maps drive technology procurement without complementary investments in electricity, devices, and teacher training. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "medium",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "done_condition": "The output has a named user (e.g., Rwanda Ministry of Education ICT director), named decision (e.g., school connectivity infrastructure targeting), explicit non-use cases (e.g., not for technology procurement without complementary investments), and replicated field-reality review."
   }
 ]

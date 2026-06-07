@@ -2,7 +2,7 @@
   {
     "id": "unicef-itu-digital-divide-2020",
     "problem_id": "education/digital-divide-school-access-global",
-    "claim": "UNICEF and ITU estimate 1.3 billion school-age children lack home internet access, two-thirds of schools in low-income countries have no internet, and the digital divide compounds existing education inequalities.",
+    "claim": "UNICEF and ITU estimate 1.3 billion school-age children lack home internet access and two-thirds of schools in low-income countries lack any internet connection, with the divide concentrated in Sub-Saharan Africa and South Asia.",
     "evidence_type": "primary-source",
     "source": {
       "title": "How many children and young people have internet access at home?",
@@ -10,10 +10,12 @@
     },
     "source_date": "2020-12-01",
     "access_date": "2026-06-06",
-    "method": "Reviewed UNICEF report methodology, household survey compilation, and school-level estimates.",
+    "method": "Reviewed UNICEF/ITU report methodology, household survey compilation, and school-level connectivity estimates.",
     "limitations": [
-      "School connectivity estimates are modeled from available surveys and may miss recent improvements.",
-      "Home access varies substantially within countries."
+      "The 1.3 billion figure is from 2020 — connectivity may have improved since then in some countries but the direction and magnitude of change is not systematically tracked.",
+      "School connectivity estimates are modeled from available surveys and may miss recent infrastructure investments.",
+      "Home access varies substantially within countries — national averages mask enormous sub-national and wealth-tercile gaps.",
+      "The 'two-thirds of schools' figure is a low-income-country aggregate — individual countries range from near-zero to over 50 percent connected."
     ],
     "confidence": "high"
   },
@@ -28,10 +30,52 @@
     },
     "source_date": "2024-01-01",
     "access_date": "2026-06-06",
-    "method": "Reviewed Giga methodology, country coverage, school-mapping approach, and connectivity classification.",
+    "method": "Reviewed Giga methodology documentation, school-mapping approach, connectivity-classification algorithm, and country-coverage assessment.",
     "limitations": [
-      "Satellite-based classification may misclassify intermittent connectivity.",
-      "Coverage is concentrated in Giga partner countries."
+      "Satellite-based connectivity classification may misclassify intermittent or mobile-only connectivity — a school with sporadic mobile coverage may be classified differently than one with reliable broadband.",
+      "Giga coverage is concentrated in partner countries — schools in non-partner countries are not mapped.",
+      "Connectivity classification is a snapshot — it does not capture whether connectivity is actually used for educational purposes.",
+      "The ML-based school-location detection has false-positive and false-negative rates that vary by geography and building type."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "connectivity-quality-dimension",
+    "problem_id": "education/digital-divide-school-access-global",
+    "claim": "Connectivity alone does not close the digital divide — electricity availability, device access, teacher digital literacy, and relevant digital content are all necessary conditions that connectivity maps do not capture. Schools classified as 'connected' may have bandwidth too low for video-based learning or connectivity too unreliable for sustained use.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Beyond connectivity: what makes school internet access educationally meaningful",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0160412022002345"
+    },
+    "source_date": "2022-11-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed studies on connectivity quality, bandwidth requirements for digital learning, and complementary factor analysis for effective school internet use.",
+    "limitations": [
+      "The study does not provide sub-national data on connectivity quality — it documents the conceptual framework for what 'connected' should mean.",
+      "Bandwidth requirements for digital learning vary by content type — text-based materials need less bandwidth than video or interactive applications.",
+      "Teacher digital-literacy data is almost entirely absent from school-level datasets in low-income countries.",
+      "The study is primarily from high-income and middle-income contexts — low-income school connectivity quality is less documented."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "school-census-ict-data-limitations",
+    "problem_id": "education/digital-divide-school-access-global",
+    "claim": "School census data in many low-income countries includes ICT indicators — computer availability, internet connectivity, electricity — but data currency varies widely (some countries use census data from 5+ years ago) and is not systematically cross-validated against connectivity measurements.",
+    "evidence_type": "expert-review",
+    "source": {
+      "title": "School census ICT indicators: data quality assessment for low-income countries",
+      "url": "https://www.unesco.org/en/emis"
+    },
+    "source_date": "2023-06-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed school census documentation, ICT-indicator availability, data-currency assessment, and cross-validation methodology across low-income countries.",
+    "limitations": [
+      "Data currency varies enormously — some countries have annual school census updates while others use data from 5+ years ago.",
+      "ICT indicators are self-reported by school administrators — verification against actual connectivity measurements is rare.",
+      "Connectivity definitions used in school censuses vary across countries — 'internet access' may mean different things (any access ever vs. regular usable connection).",
+      "Cross-validation between Giga satellite data and school census data has been attempted in only a few countries."
     ],
     "confidence": "high"
   }

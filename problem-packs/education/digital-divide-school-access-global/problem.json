@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["education"],
   "region": ["global"],
-  "summary": "Build a verified workflow for measuring the school-level digital divide — internet connectivity, device access, and digital literacy — in low-income countries, linking school census data, infrastructure maps, and connectivity measurements.",
-  "why_it_matters": "UNICEF and ITU estimate 1.3 billion school-age children lack home internet access and two-thirds of schools in low-income countries lack any internet connection. Digital learning cannot reach the children who need it most if schools have no connectivity. But school-level connectivity data is fragmented — some countries have detailed school census data with ICT indicators, others have nothing.",
+  "summary": "Build a verified workflow for mapping school-level internet connectivity and digital-divide gaps at sub-national scale in low-income countries, with explicit connectivity-classification methodology documentation, data-currency assessment, and the distinction between connectivity existence and verified digital-learning use.",
+  "why_it_matters": "UNICEF and ITU estimate 1.3 billion school-age children lack home internet and two-thirds of schools in low-income countries have no internet connection. The COVID-19 pandemic exposed this divide — children without connectivity lost education entirely. Giga has mapped 1 million+ schools across 30 countries, but connectivity-classification methodology varies, data currency is uneven, and connectivity alone does not close the divide without electricity, devices, and teacher training. Without verified connectivity-gap analysis, infrastructure investment cannot be evidence-targeted.",
   "success_metrics": [
     {
-      "metric": "Data transparency",
-      "target": "Every connectivity estimate links school-level or survey data with year and methodology.",
-      "validation_method": "Schema validation and reviewer checks."
+      "metric": "Connectivity-classification methodology",
+      "target": "Every connectivity claim documents the classification methodology used (satellite-derived, school census, mobile-network proxy) and its validation against ground-truth data.",
+      "validation_method": "Schema validation and reviewer spot-checks against connectivity-classification documentation."
+    },
+    {
+      "metric": "Data-currency documentation",
+      "target": "Every connectivity claim documents the data collection date and explicitly states whether data reflects current conditions or potentially outdated census records.",
+      "validation_method": "Reviewer confirms data-currency assessment for each analyzed country."
+    },
+    {
+      "metric": "Connectivity-vs-usage distinction",
+      "target": "No digital-learning claim is merged without documenting that connectivity existence does not equal verified educational use — electricity, devices, teacher digital literacy, and content are all necessary conditions.",
+      "validation_method": "Red-team reviewer confirms connectivity-vs-usage distinction in every effectiveness claim."
     }
   ],
   "safety_level": "low",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, replication."
+    "merge_gate": "Schema validation, domain review, connectivity-classification safety review, and replication for quantitative outputs."
   }
 }

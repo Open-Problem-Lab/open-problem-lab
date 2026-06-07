@@ -4,7 +4,7 @@ Use this skill when working inside the Open Problem Lab repository. It complemen
 
 ## Start Here
 
-1. Read `README.md` — mission, 21 problem packs, operating model.
+1. Read `README.md` — mission, operating model, why this vs alternatives.
 2. Read `VISION.md` — why verification is the scarce resource.
 3. Read `GOVERNANCE.md` — decision rights, acceptance gates.
 4. Read `SAFETY.md` — risk levels, prohibited shortcuts, burden of proof.

@@ -1,0 +1,34 @@
+{
+  "id": "biodiversity/mangrove-loss-south-east-asia",
+  "title": "Mangrove Deforestation Detection And Coastal Protection Loss In Southeast Asia",
+  "status": "scoped",
+  "domain": ["biodiversity", "climate-adaptation", "disaster-resilience"],
+  "region": ["south-east-asia"],
+  "summary": "Build a verified workflow for detecting mangrove deforestation and estimating coastal protection service loss in Southeast Asia, linking satellite-derived mangrove maps, storm-surge models, and coastal-population data.",
+  "why_it_matters": "Southeast Asia has lost over 30 percent of its mangroves since 1980, primarily to shrimp aquaculture and coastal development. Mangroves reduce storm-surge height by 30-70 percent and provide nursery habitat for fisheries. Global Mangrove Watch provides annual mangrove maps at 25m resolution, but linking deforestation to quantified coastal-protection loss has not been done systematically.",
+  "success_metrics": [
+    {
+      "metric": "Detection accuracy",
+      "target": "Deforestation detection validated against reference data with error statistics.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

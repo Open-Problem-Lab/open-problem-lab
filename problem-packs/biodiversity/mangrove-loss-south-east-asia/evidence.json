@@ -1,0 +1,38 @@
+[
+  {
+    "id": "global-mangrove-watch-2024",
+    "problem_id": "biodiversity/mangrove-loss-south-east-asia",
+    "claim": "Global Mangrove Watch estimates Southeast Asia has lost over 30 percent of mangroves since 1980, primarily to aquaculture conversion, with annual 25m resolution maps available from 1996.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global Mangrove Watch",
+      "url": "https://www.globalmangrovewatch.org/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed GMW methodology, mangrove-extent maps, and regional loss statistics.",
+    "limitations": [
+      "25m resolution may miss narrow fringing mangroves.",
+      "Aquaculture attribution relies on land-use classification which has errors."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "menendez-mangrove-flood-protection-2020",
+    "problem_id": "biodiversity/mangrove-loss-south-east-asia",
+    "claim": "A 2020 Nature study valued global mangrove ecosystem services at over $1.6 trillion, with flood protection as the largest component, and estimated mangroves reduce annual flood damages by $65 billion.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "The global flood protection benefits of mangroves",
+      "url": "https://www.nature.com/articles/s41598-020-61136-6"
+    },
+    "source_date": "2020-03-10",
+    "access_date": "2026-06-07",
+    "method": "Reviewed ecosystem-service valuation methodology, flood-protection modeling, and regional breakdowns.",
+    "limitations": [
+      "Protection value depends on storm frequency which varies by location.",
+      "Valuation methodology has inherent uncertainty."
+    ],
+    "confidence": "high"
+  }
+]

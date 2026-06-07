@@ -50,6 +50,16 @@ Build a verified workflow for satellite-based coral bleaching detection and reef
 
 Build a verified workflow linking satellite-based deforestation detection to species-range loss risk in the Amazon basin, separating verified habitat-loss signals from unverified extinction-risk claims.
 
+## Mangrove Deforestation Detection And Coastal Protection Loss In Southeast Asia
+
+- ID: `biodiversity/mangrove-loss-south-east-asia`
+- Status: `scoped`
+- Domain: `biodiversity`, `climate-adaptation`, `disaster-resilience`
+- Region: `south-east-asia`
+- Source: [problem-packs/biodiversity/mangrove-loss-south-east-asia](../../problem-packs/biodiversity/mangrove-loss-south-east-asia/problem.md)
+
+Build a verified workflow for detecting mangrove deforestation and estimating coastal protection service loss in Southeast Asia, linking satellite-derived mangrove maps, storm-surge models, and coastal-population data.
+
 ## Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States
 
 - ID: `climate-adaptation/sea-level-rise-small-islands`

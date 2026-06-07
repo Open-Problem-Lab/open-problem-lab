@@ -2,13 +2,13 @@
   "summary": {
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
-    "total_packs": 54,
-    "total_scoped_tasks": 54,
+    "total_packs": 55,
+    "total_scoped_tasks": 55,
     "by_role": {
-      "literature-scout": 54
+      "literature-scout": 55
     },
     "by_risk": {
-      "medium": 52,
+      "medium": 53,
       "low": 1,
       "high": 1
     },
@@ -16,9 +16,9 @@
       "air-quality": 3,
       "public-health": 35,
       "climate-health": 8,
-      "biodiversity": 3,
-      "climate-adaptation": 6,
-      "disaster-resilience": 6,
+      "biodiversity": 4,
+      "climate-adaptation": 7,
+      "disaster-resilience": 7,
       "education": 4,
       "energy-access": 3,
       "food-security": 9,
@@ -111,6 +111,23 @@
       "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
       "tasks_file": "problem-packs/biodiversity/deforestation-amazon/tasks.json",
       "problem_file": "problem-packs/biodiversity/deforestation-amazon/problem.md"
+    },
+    {
+      "pack_id": "biodiversity/mangrove-loss-south-east-asia",
+      "pack_title": "Mangrove Deforestation Detection And Coastal Protection Loss In Southeast Asia",
+      "pack_status": "scoped",
+      "domain": ["biodiversity", "climate-adaptation", "disaster-resilience"],
+      "region": ["south-east-asia"],
+      "task_id": "source-inventory",
+      "title": "Inventory mangrove and coastal data",
+      "owner_role": "literature-scout",
+      "reviewer_needed": "domain-reviewer",
+      "safety_risk": "medium",
+      "outcome": "A dated source inventory separating mangrove maps, protection models, and population data.",
+      "expected_artifact": "datasets.md update plus evidence.json records.",
+      "done_condition": "Four sources classified.",
+      "tasks_file": "problem-packs/biodiversity/mangrove-loss-south-east-asia/tasks.json",
+      "problem_file": "problem-packs/biodiversity/mangrove-loss-south-east-asia/problem.md"
     },
     {
       "pack_id": "climate-adaptation/sea-level-rise-small-islands",

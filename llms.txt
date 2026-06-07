@@ -28,7 +28,7 @@ The bottleneck in addressing global problems is not generating candidate answers
 
 ## Problem Packs
 
-[problem-packs/](problem-packs/) — 21 active problem packs, each with problem.md, tasks.json, evidence.json, datasets.md, task-map.md, validation.md, outputs.md, playbooks.md
+[problem-packs/](problem-packs/) — active problem packs, each with problem.md, tasks.json, evidence.json, datasets.md, task-map.md, validation.md, outputs.md, playbooks.md. Live count and per-pack metadata are in `tasks-available.json` and the generated wiki at `docs/wiki/Problem-Packs.md`.
 
 Tasks with `"status": "scoped"` in `tasks.json` are ready for contributions now.
 

@@ -14,7 +14,7 @@ Ready-to-use templates for announcing Open Problem Lab to relevant communities. 
 >
 > **The problem:** AI can now generate plausible-sounding answers to hard global problems. But plausible is not the same as verified. The world doesn't need more confident-sounding summaries of malaria risk. It needs one verified, reproducible, honest answer that a district health officer can actually trust.
 >
-> **What we built:** A protocol where every claim has a dated source, every method is documented, every failure mode is stated, and nothing becomes canonical without domain review and replication. 21 problem packs across 11 domains — malaria, dengue, glacial melt, stunting, coral bleaching, locust early warning, and more.
+> **What we built:** A protocol where every claim has a dated source, every method is documented, every failure mode is stated, and nothing becomes canonical without domain review and replication. A growing portfolio of problem packs across more than ten domains — malaria, dengue, glacial melt, stunting, coral bleaching, locust early warning, and more.
 >
 > **Why this matters for EA:** These problems are tractable and neglected specifically because the verification infrastructure hasn't existed. We're building it.
 >
@@ -22,7 +22,7 @@ Ready-to-use templates for announcing Open Problem Lab to relevant communities. 
 >
 > - Domain reviewers (epidemiologists, climate scientists, water engineers, economists)
 > - AI engineers who want to build verified pipelines, not just fluent ones
-> - Anyone with expertise in one of the 21 active problem packs
+> - Anyone with expertise in one of the all active problem packs
 >
 > See [REVIEWERS.md](https://github.com/Open-Problem-Lab/open-problem-lab/blob/main/REVIEWERS.md) for what domain expertise is needed and where.
 >
@@ -78,7 +78,7 @@ A malaria early warning signal with a 40% false-positive rate at sub-national sc
 
 No exceptions. No shortcuts. Nothing that weakens the validator.
 
-4/ 21 active problems open for contributions right now:
+4/ A growing portfolio of active problems open for contributions right now:
 
 - Malaria early warning (Sub-Saharan Africa)
 - Dengue risk (Viet Nam)
@@ -150,7 +150,7 @@ github.com/Open-Problem-Lab/open-problem-lab
 > - JSON schemas for problems, tasks, evidence records, agent submissions, and reviews
 > - GitHub Actions for schema validation, source verification, reproducibility checks, and wiki generation
 > - 5 structured agent role guides (Literature Scout, Data Cleaner, Implementation Planner, Field-Reality Reviewer, Red-Team Reviewer) — each with explicit merge gates
-> - 21 active problem packs — each with task maps, evidence records, dataset inventories, and validation criteria
+> - all active problem packs — each with task maps, evidence records, dataset inventories, and validation criteria
 >
 > The key design constraint: nothing becomes canonical without domain review and replication. AI agents are first-class contributors to evidence inventory and analysis, but not to acceptance decisions.
 >

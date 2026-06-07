@@ -56,6 +56,7 @@ Example: [examples/agent-submission.example.json](../../examples/agent-submissio
 - [`air-quality/wildfire-smoke-health-global`](../../problem-packs/air-quality/wildfire-smoke-health-global/problem.md) — Wildfire Smoke PM2.5 Exposure And Respiratory Health Impact In Fire-Prone Regions
 - [`biodiversity/coral-bleaching-great-barrier-reef`](../../problem-packs/biodiversity/coral-bleaching-great-barrier-reef/problem.md) — Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef
 - [`biodiversity/deforestation-amazon`](../../problem-packs/biodiversity/deforestation-amazon/problem.md) — Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin
+- [`biodiversity/mangrove-loss-south-east-asia`](../../problem-packs/biodiversity/mangrove-loss-south-east-asia/problem.md) — Mangrove Deforestation Detection And Coastal Protection Loss In Southeast Asia
 - [`climate-adaptation/sea-level-rise-small-islands`](../../problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md) — Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States
 - [`climate-health/dengue-heat-vietnam`](../../problem-packs/climate-health/dengue-heat-vietnam/problem.md) — Dengue, Heat, And Rainfall Risk In Viet Nam
 - [`climate-health/heat-stress-urban-south-asia`](../../problem-packs/climate-health/heat-stress-urban-south-asia/problem.md) — Urban Heat Stress Mortality Risk In South Asia

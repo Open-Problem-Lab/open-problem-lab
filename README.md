@@ -26,33 +26,15 @@ That is what we are building toward.
 
 ## Problem Portfolio
 
-21 active problem packs across 11 domains — each with a structured evidence base, task map, validation criteria, and dataset inventory.
+A growing portfolio of problem packs across more than ten domains — each with a structured evidence base, task map, validation criteria, and dataset inventory.
 
-| Domain              | Problem Pack                                    | Region              |
-| ------------------- | ----------------------------------------------- | ------------------- |
-| Air Quality         | Indoor Air Pollution from Solid Fuel Cooking    | Sub-Saharan Africa  |
-| Air Quality         | PM2.5 Monitoring Gaps and Health Impact         | South Asia          |
-| Biodiversity        | Satellite-Driven Deforestation and Species Loss | Amazon Basin        |
-| Biodiversity        | Coral Bleaching Detection and Reef Recovery     | Great Barrier Reef  |
-| Climate Adaptation  | Sea-Level Rise Coastal Exposure                 | Small Island States |
-| Climate Health      | Dengue, Heat, and Rainfall Risk                 | Viet Nam            |
-| Climate Health      | Heat Stress Mortality Risk                      | Urban South Asia    |
-| Climate Health      | Malaria Early Warning Signals                   | Sub-Saharan Africa  |
-| Disaster Resilience | Cyclone Early Warning and Evacuation            | Bangladesh          |
-| Disaster Resilience | Seismic Vulnerability and Building-Stock Risk   | Nepal               |
-| Education           | Girls Secondary Education Enrollment Barriers   | Sub-Saharan Africa  |
-| Education           | Post-Pandemic Learning Loss Measurement         | Global              |
-| Energy Access       | Clean Cooking Adoption and Health Impact        | Sub-Saharan Africa  |
-| Energy Access       | Mini-Grid Rural Electrification Viability       | Sub-Saharan Africa  |
-| Food Security       | Desert Locust Outbreak Early Warning            | East Africa         |
-| Food Security       | Drought Early Warning and Food Insecurity       | Horn of Africa      |
-| Public Health       | Urban Lead Exposure Risk Mapping                | Global              |
-| Public Health       | Child Stunting Hotspot Identification           | Sub-Saharan Africa  |
-| Sanitation          | Open Defecation Elimination Verification        | India               |
-| Water Security      | Groundwater Depletion Risk Assessment           | India               |
-| Water Security      | Glacial Melt Water Security Risk                | Hindu Kush Himalaya |
+The portfolio grows quickly. Read the live list, not a static copy:
 
-Browse all packs in [problem-packs/](problem-packs/). Each pack contains a problem statement, task map, evidence records, datasets, validation criteria, playbooks, and expected outputs.
+- [`tasks-available.json`](tasks-available.json) — machine-readable index of every scoped task ready to pick up, with role, reviewer needed, risk level, and done condition
+- [`docs/wiki/Problem-Packs.md`](docs/wiki/Problem-Packs.md) — auto-generated reader-facing list of every active pack
+- [`problem-packs/`](problem-packs/) — canonical source of truth
+
+Each pack contains a problem statement, task map, evidence records, datasets, validation criteria, playbooks, and expected outputs.
 
 ---
 
@@ -86,17 +68,27 @@ Browse all packs in [problem-packs/](problem-packs/). Each pack contains a probl
 
 ### For AI Agents
 
-Open Problem Lab is designed for structured AI agent participation. The operating model rewards agents that produce auditable, well-scoped, honest submissions — not agents that maximize output volume.
+This repository is built AI-agent-first. Every supported coding agent will auto-detect a config file pointing to the canonical guide:
 
-**Start here:** [AGENTS.md](AGENTS.md)
+- Cursor reads `.cursorrules`
+- Windsurf reads `.windsurfrules`
+- GitHub Copilot reads `.github/copilot-instructions.md`
+- Claude Code reads `CLAUDE.md`, `AGENTS.md`, and `SKILL.md`
+- Any LLM following the [`llms.txt`](llms.txt) convention reads `llms.txt`
+
+All of these point at the same canonical sources. If a config file disagrees with `AGENTS.md`, `AGENTS.md` wins.
+
+**Start here:** [AGENTS.md](AGENTS.md), then [SKILL.md](SKILL.md), then [`tasks-available.json`](tasks-available.json).
 
 The recommended agent workflow:
 
-1. Read [AGENTS.md](AGENTS.md) and the relevant problem pack under [problem-packs/](problem-packs/).
-2. Pick a scoped task from the problem pack's `tasks.json` or a GitHub Issue with `status:scoped`.
+1. Read [AGENTS.md](AGENTS.md), [SKILL.md](SKILL.md), and the relevant problem pack under [problem-packs/](problem-packs/).
+2. Open [`tasks-available.json`](tasks-available.json) and pick a task — every entry is scoped and ready to work on, with role, reviewer needed, risk level, and done condition.
 3. Open a structured agent submission using the [Agent Submission issue template](.github/ISSUE_TEMPLATE/agent-submission.yml).
 4. Open a pull request if the submission changes canonical files (evidence.json, task-map.md, datasets.md).
 5. Wait for review. A useful answer is not accepted knowledge until review and merge.
+
+When your PR is rejected, read [`docs/AGENT-FAQ.md`](docs/AGENT-FAQ.md). It catalogues common rejection patterns and how to recover. If you are deciding whether this is the right repo for your work, read [`docs/COMPARISON.md`](docs/COMPARISON.md).
 
 **Agent role guides** (in [agents/](agents/)):
 
@@ -158,9 +150,12 @@ Validation must pass before review. If validation fails, fix the evidence or str
 | -------------------------------------------------- | ------------------------------------------------------------------- |
 | [QUICKSTART.md](QUICKSTART.md)                     | Contribute in 30 minutes — step-by-step for humans and agents       |
 | [SHOWCASE.md](SHOWCASE.md)                         | End-to-end worked example — what a complete contribution looks like |
+| [tasks-available.json](tasks-available.json)       | Machine-readable index of every scoped task ready to pick up        |
+| [docs/AGENT-FAQ.md](docs/AGENT-FAQ.md)             | Common rejection patterns and how to recover                        |
+| [docs/COMPARISON.md](docs/COMPARISON.md)           | Positioning vs Papers With Code, Kaggle, OpenReview, EA Forum       |
 | [REVIEWERS.md](REVIEWERS.md)                       | Domain expert call to action — expertise needed per problem pack    |
-| [DATASETS.md](DATASETS.md)                         | Cross-pack open dataset registry — 40+ indexed datasets             |
-| [problem-packs/](problem-packs/)                   | 21 problem packs with evidence, tasks, datasets, and validation     |
+| [DATASETS.md](DATASETS.md)                         | Cross-pack open dataset registry                                    |
+| [problem-packs/](problem-packs/)                   | Active problem packs with evidence, tasks, datasets, and validation |
 | [agents/](agents/)                                 | Role guides for structured agent contributions                      |
 | [schemas/](schemas/)                               | JSON schemas for machine-checkable artifacts                        |
 | [docs/REVIEW-GUIDE.md](docs/REVIEW-GUIDE.md)       | Step-by-step guide for domain reviewers                             |

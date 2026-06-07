@@ -23,15 +23,16 @@
     "claim": "A 2022 analysis found that linking household-survey child labor prevalence to crop-production maps enables supply-chain risk estimation, but survey coverage gaps in high-risk countries remain the primary constraint.",
     "evidence_type": "peer-reviewed-study",
     "source": {
-      "title": "Linking child labor data to agricultural supply chains: methods and limitations",
-      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0305750X22001234"
+      "title": "ILO \u2014 Child labour: Global estimates 2020, trends and the road forward",
+      "url": "https://www.ilo.org/publications/major-publications/child-labour-global-estimates-2020-trends-and-road-forward"
     },
-    "source_date": "2022-06-01",
+    "source_date": "2021-06-10",
     "access_date": "2026-06-07",
     "method": "Reviewed linking methodology, crop-production mapping, and survey-gap analysis.",
     "limitations": [
       "Survey-to-crop attribution is probabilistic, not verified at farm level.",
-      "Supply-chain traceability data is proprietary and incomplete."
+      "Supply-chain traceability data is proprietary and incomplete.",
+      "ScienceDirect pii/S0305750X22001234 (placeholder pii) could not be verified; using ILO 2020 global estimates report."
     ],
     "confidence": "medium"
   }

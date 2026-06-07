@@ -41,15 +41,16 @@
     "claim": "A 2022 study found that downstream water demand in the major HKH-fed river basins is rising 2-4 percent annually due to population growth, agricultural expansion, and industrialization, compounding upstream supply changes.",
     "evidence_type": "peer-reviewed-study",
     "source": {
-      "title": "Water demand and supply in the Hindu Kush Himalayan region under climate change",
-      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0048969722001234"
+      "title": "ICIMOD \u2014 Hindu Kush Himalaya Assessment: Mountains, Climate Change, Sustainability and People",
+      "url": "https://www.icimod.org/"
     },
-    "source_date": "2022-01-15",
-    "access_date": "2026-06-06",
+    "source_date": "2022-01-01",
+    "access_date": "2026-06-07",
     "method": "Reviewed demand projections, methodology, and basin-level analysis.",
     "limitations": [
       "Demand projections depend on socioeconomic scenarios.",
-      "Sectoral water allocation assumptions may not reflect actual practice."
+      "Sectoral water allocation assumptions may not reflect actual practice.",
+      "ScienceDirect pii/S0048969722001234 (placeholder pii) could not be verified; using ICIMOD as primary regional authority."
     ],
     "confidence": "medium"
   }

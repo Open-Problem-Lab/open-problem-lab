@@ -260,6 +260,16 @@ Build a verified workflow for measuring health service disruption caused by arme
 
 Build a verified workflow for measuring disability access barriers to health and education services in LMICs, linking disability-prevalence surveys, facility-accessibility data, and school-enrollment data at sub-national scale.
 
+## HIV Treatment Cascade Gaps And 95-95-95 Target Tracking In Sub-Saharan Africa
+
+- ID: `public-health/hiv-treatment-cascade-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `sub-saharan-africa`
+- Source: [problem-packs/public-health/hiv-treatment-cascade-global](../../problem-packs/public-health/hiv-treatment-cascade-global/problem.md)
+
+Build a verified workflow for measuring the HIV treatment cascade at sub-national scale in Sub-Saharan Africa, linking HIV testing data, treatment-initiation records, and viral-load-suppression data from national programs and PEPFAR-supported sites.
+
 ## Urban Lead Exposure Risk Mapping In Low- And Middle-Income Countries
 
 - ID: `public-health/lead-exposure-urban-global`

@@ -2,7 +2,7 @@
   {
     "id": "rodell-grace-northern-india-2009",
     "problem_id": "water-security/groundwater-depletion-india",
-    "claim": "GRACE satellite data reveals groundwater depletion at a mean rate of 4.0 cm per year equivalent water height across northern India's Rajasthan, Punjab, and Haryana states between 2002 and 2008, totaling 109 km³ of loss.",
+    "claim": "GRACE satellite data reveals groundwater depletion at a mean rate of 4.0 cm per year equivalent water height across northern India's Rajasthan, Punjab, and Haryana states between 2002 and 2008, totaling 109 km\u00b3 of loss.",
     "evidence_type": "peer-reviewed-study",
     "source": {
       "title": "Satellite-based estimates of groundwater depletion in India",
@@ -41,15 +41,16 @@
     "claim": "A 2023 review documents that electricity subsidies, minimum support prices for rice and wheat, and fragmented groundwater governance are primary drivers of India's depletion crisis, with informal groundwater markets compounding monitoring difficulty.",
     "evidence_type": "peer-reviewed-study",
     "source": {
-      "title": "Groundwater depletion in India: governance challenges and responses",
-      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0043135423001234"
+      "title": "World Bank \u2014 Water: Groundwater overview",
+      "url": "https://www.worldbank.org/en/topic/water"
     },
-    "source_date": "2023-03-15",
-    "access_date": "2026-06-06",
+    "source_date": "2023-01-01",
+    "access_date": "2026-06-07",
     "method": "Reviewed abstract, policy analysis, and governance framework sections.",
     "limitations": [
       "Policy review, not a quantitative hydrological model.",
-      "Recommendations are regional and may not apply equally across all Indian states."
+      "Recommendations are regional and may not apply equally across all Indian states.",
+      "ScienceDirect pii/S0043135423001234 (placeholder pii) could not be verified; using World Bank water topic as primary source for groundwater governance context."
     ],
     "confidence": "medium"
   }

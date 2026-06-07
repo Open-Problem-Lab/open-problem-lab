@@ -1,16 +1,26 @@
 {
   "id": "education/early-childhood-development-global",
-  "title": "Early Childhood Development Measurement And Intervention Coverage Gaps",
+  "title": "Early Childhood Development Measurement And Intervention Coverage Gaps In Low-Income Countries",
   "status": "scoped",
   "domain": ["education", "public-health"],
   "region": ["global"],
-  "summary": "Build a verified workflow for measuring early childhood development outcomes and intervention coverage gaps, linking MICS ECDI data, preschool-access data, and nutrition data.",
-  "why_it_matters": "Build a verified workflow for measuring early childhood development outcomes and intervention coverage gaps, linking MICS ECDI data, preschool-access data, and nutrition data.",
+  "summary": "Build a verified workflow for mapping early childhood development outcomes and intervention-coverage gaps at sub-national scale in LMICs, with explicit MICS ECDI instrument limitations, preschool-quality variation documentation, and the distinction between intervention coverage and verified developmental impact.",
+  "why_it_matters": "WHO and UNICEF estimate 250 million children under five in LMICs are at risk of not reaching their developmental potential. Preschool enrollment in low-income countries averages below 20 percent with enormous sub-national variation. Parenting interventions show 0.3-0.5 standard-deviation improvements in trials but coverage is below 5 percent. Without verified sub-national ECD-outcome and coverage analysis, early childhood investment cannot be evidence-targeted where it would most improve developmental outcomes.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "ECD-measurement comparability documentation",
+      "target": "Every ECD-outcome claim documents MICS ECDI instrument comparability across countries and survey rounds.",
+      "validation_method": "Schema validation and reviewer spot-checks against ECD-measurement methodology documentation."
+    },
+    {
+      "metric": "Intervention-coverage granularity",
+      "target": "Every coverage claim documents sub-national variation and explicitly states where district-level data is absent.",
+      "validation_method": "Reviewer confirms sub-national granularity and coverage-gap documentation."
+    },
+    {
+      "metric": "Coverage-vs-impact distinction",
+      "target": "No developmental-impact claim is merged without documenting that intervention coverage does not equal verified developmental impact without quality and dosage data.",
+      "validation_method": "Red-team reviewer confirms coverage-vs-impact distinction in every effectiveness claim."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, ECD-measurement safety review, and replication for quantitative outputs."
   }
 }

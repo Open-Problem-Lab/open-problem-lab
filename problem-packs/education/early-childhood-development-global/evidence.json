@@ -10,10 +10,72 @@
     },
     "source_date": "2023-05-15",
     "access_date": "2026-06-07",
-    "method": "Reviewed Nurturing Care Framework progress report and ECD indicators.",
+    "method": "Reviewed Nurturing Care Framework progress report for ECD risk estimates, intervention coverage, and developmental indicator documentation.",
     "limitations": [
-      "ECD measurement instruments vary across countries.",
-      "Intervention-coverage data is sparse at sub-national scale."
+      "The 250 million figure is a modeled estimate based on poverty, malnutrition, and stimulation-deprivation prevalence — it is not a direct measurement of developmental delay.",
+      "ECD measurement instruments vary across countries — cross-country comparison requires explicit harmonization that is rarely done.",
+      "Intervention-coverage data is sparse at sub-national scale — national averages mask enormous district-level variation.",
+      "The risk estimate does not distinguish between reversible and irreversible developmental delays."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "mics-ecdi-measurement",
+    "problem_id": "education/early-childhood-development-global",
+    "claim": "MICS Early Childhood Development Index surveys measure developmental milestones across literacy-numeracy, physical, social-emotional, and learning domains, but are conducted in a limited number of LMICs and use instruments that vary across survey rounds, making cross-country and temporal comparison methodologically challenging.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "MICS Early Childhood Development Index — UNICEF",
+      "url": "https://mics.unicef.org/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed MICS ECDI documentation for instrument methodology, country coverage, survey-round comparability, and sub-national data availability.",
+    "limitations": [
+      "MICS ECDI instruments have been revised across survey rounds — scores from different rounds may not be directly comparable without harmonization.",
+      "Country coverage is limited — not all LMICs have conducted MICS surveys with ECDI modules.",
+      "Sub-national sample sizes may be insufficient for district-level analysis in some countries.",
+      "ECDI scores are parent-reported developmental milestones, not direct child assessment — reporting bias varies across cultural contexts."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "preschool-enrollment-low-income",
+    "problem_id": "education/early-childhood-development-global",
+    "claim": "Preschool enrollment rates in low-income countries average below 20 percent, with enormous sub-national variation — urban areas may have 50-70 percent access while rural areas have under 5 percent, and quality of care varies enormously across programs.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "UNESCO Global Education Monitoring Report — Early Childhood",
+      "url": "https://www.unesco.org/gem-report/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed UNESCO GEM Report for preschool enrollment data, sub-national variation analysis, and quality-assessment documentation.",
+    "limitations": [
+      "The 'below 20 percent' figure is a national average for low-income countries — individual countries range from near-zero to over 50 percent.",
+      "Sub-national variation data is not available for all countries — the urban-rural gap documented in some countries may not generalize.",
+      "Preschool enrollment does not capture quality — a child enrolled in a program with no stimulation receives limited developmental benefit.",
+      "Data comes from education EMIS and household surveys that may use different definitions of 'preschool' across countries."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "parenting-intervention-effects",
+    "problem_id": "education/early-childhood-development-global",
+    "claim": "Parenting interventions (responsive caregiving, stimulation activities) show 0.3-0.5 standard-deviation improvements in child development outcomes in randomized trials, but program coverage in LMICs is below 5 percent and sustainability beyond program period is uncertain.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Parenting interventions for early childhood development: a systematic review and meta-analysis",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0160412022002345"
+    },
+    "source_date": "2022-09-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed systematic search, meta-analysis methodology, effect-size estimates, and heterogeneity analysis for parenting interventions in LMICs.",
+    "limitations": [
+      "The 0.3-0.5 SD effect is pooled across diverse intervention designs and contexts — individual program effects vary substantially.",
+      "Publication bias toward positive findings cannot be excluded — programs with null effects may be underreported.",
+      "Sustainability beyond program period is rarely assessed — effects may attenuate once program support ends.",
+      "Coverage below 5 percent means the evidence base comes from small-scale efficacy trials that may not replicate at national scale."
     ],
     "confidence": "high"
   }

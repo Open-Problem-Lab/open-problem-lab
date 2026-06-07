@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "education/early-childhood-development-global",
-    "title": "Inventory data sources for education/early-childhood-development-global",
+    "title": "Inventory MICS ECDI, preschool-access, parenting-program, and nutrition-outcome data sources for LMICs",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for early childhood development measurement and intervention coverage gaps.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates MICS ECDI survey data, preschool-enrollment data from EMIS, parenting-program evaluations, and nutrition-outcome data (DHS, MICS) into usable, limited, and rejected categories with explicit ECD-measurement comparability and sub-national data availability assessment.",
+    "inputs": [
+      "MICS ECDI documentation and instrument-comparability studies",
+      "UNESCO GEM Report preschool-enrollment data",
+      "Published parenting-intervention effectiveness evaluations",
+      "DHS and MICS child nutrition and development modules",
+      "National ECD program documentation for target countries"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and documented limitations — particularly ECDI instrument comparability and sub-national sample sizes.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering ECD-measurement comparability, sub-national data availability, and intervention-coverage gaps."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "ecd-outcome-mapping",
     "problem_id": "education/early-childhood-development-global",
-    "title": "Measure sub-national gap for early childhood development measurement and intervention coverage gaps",
+    "title": "Map sub-national ECD outcomes using MICS ECDI data for at least two LMICs",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A sub-national ECD-outcome analysis for at least two LMICs using MICS ECDI data, documenting instrument comparability, sub-national sample sufficiency, and parent-reporting limitations.",
+    "inputs": [
+      "MICS ECDI microdata for target countries",
+      "Administrative boundary data for district-level aggregation",
+      "Published MICS ECDI instrument-comparability studies",
+      "Population data for denominator estimation"
+    ],
+    "expected_artifact": "validation.md update with ECD-outcome methodology and measurement-limitation documentation.",
+    "validation_method": "Replicator confirms MICS data extraction, instrument-comparability assessment, and sub-national sample-sufficiency documentation for each target country.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "ECD-outcome analysis includes methodology, instrument-comparability assessment, sub-national results, and replication status for at least two countries."
   },
   {
-    "id": "risk-mapping",
+    "id": "intervention-coverage-analysis",
     "problem_id": "education/early-childhood-development-global",
-    "title": "Produce sub-national risk map for early childhood development measurement and intervention coverage gaps",
+    "title": "Analyze ECD intervention-coverage gaps linking preschool access, parenting programs, and nutrition interventions to developmental outcomes",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "An intervention-coverage analysis linking ECD outcomes to preschool access, parenting-program availability, and nutrition-intervention coverage, with explicit coverage-vs-impact distinction and quality-variation documentation.",
+    "inputs": [
+      "ECD-outcome analysis results",
+      "Preschool-enrollment data from EMIS",
+      "Parenting-program coverage data where available",
+      "Nutrition-intervention coverage data (DHS, MICS)"
+    ],
+    "expected_artifact": "outputs.md update with coverage methodology and coverage-vs-impact documentation.",
+    "validation_method": "Replicator confirms coverage-linkage methodology, quality-variation documentation, and coverage-vs-impact distinction for each target country.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "done_condition": "Intervention-coverage analysis includes methodology, coverage-vs-impact distinction, quality-variation documentation, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-measurement-overstatement",
     "problem_id": "education/early-childhood-development-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team ECD-measurement overstatement and coverage-implies-impact risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how ECDI instrument variation could undermine cross-country comparison, how coverage data could imply impact without quality evidence, and how parenting-intervention trial results could be overgeneralized to program scale.",
+    "inputs": [
+      "intervention-coverage analysis outputs",
+      "ECD-outcome analysis outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every ECD-outcome claim has instrument-comparability documentation, every coverage claim has quality-variation context, and every effectiveness claim has scale-transferability caveats. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
-    "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "safety_risk": "medium",
+    "done_condition": "Every ECD and coverage claim is either blocked, softened to measurement-limited language with explicit instrument and quality caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "education/early-childhood-development-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match ECD ministry and program-implementer decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the ECD-outcome and coverage analysis would change any real decision for ECD ministries, program implementers, or funders without creating perverse incentives.",
+    "inputs": [
+      "draft ECD and coverage outputs",
+      "ECD ministry program context",
+      "parenting-program implementer documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for ECD ministry and implementer audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that coverage data implies impact without quality evidence, or that trial results are overgeneralized to program scale. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
-    "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "safety_risk": "medium",
+    "done_condition": "The output has a named user (e.g., UNICEF Ethiopia ECD program officer), named decision (e.g., preschool expansion targeting), explicit non-use cases (e.g., not for claiming developmental impact without quality data), and replicated field-reality review."
   }
 ]

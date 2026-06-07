@@ -2,90 +2,115 @@
   {
     "id": "source-inventory",
     "problem_id": "disaster-resilience/urban-flooding-south-asia",
-    "title": "Inventory urban flood risk data",
+    "title": "Inventory satellite impervious-surface, drainage, rainfall, flood-extent, and population data sources for South Asian megacities",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "Dated source inventory.",
-    "inputs": ["Landsat", "SAR flood maps", "CHIRPS", "drainage data", "population"],
-    "expected_artifact": "datasets.md plus evidence.json.",
-    "validation_method": "Reviewer checks sources.",
+    "outcome": "A dated source inventory that separates satellite impervious-surface products (Landsat), SAR flood-extent maps (Sentinel-1), rainfall data (CHIRPS, GPM), drainage-infrastructure data, and population-exposure data into usable, limited, and rejected categories with explicit drainage-data availability assessment.",
+    "inputs": [
+      "Landsat impervious-surface classification documentation",
+      "Sentinel-1 SAR flood-mapping methodology and urban accuracy studies",
+      "CHIRPS and GPM rainfall product documentation",
+      "OpenStreetMap drainage coverage assessment for target cities",
+      "Municipal drainage-infrastructure documentation where available"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, resolution, and documented limitations — particularly SAR accuracy in urban canyons and drainage-data availability.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "medium",
-    "done_condition": "Five sources classified."
+    "safety_risk": "high",
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, urban accuracy, and drainage-data availability."
   },
   {
     "id": "impervious-surface-mapping",
     "problem_id": "disaster-resilience/urban-flooding-south-asia",
-    "title": "Map impervious surface at neighborhood scale",
+    "title": "Map impervious-surface fraction and change-over-time at neighborhood scale for at least two South Asian megacities",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "Impervious-surface fraction map with change-over-time analysis.",
-    "inputs": ["Landsat time series", "land-cover classification"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator confirms classification accuracy against reference data.",
+    "outcome": "A neighborhood-scale impervious-surface analysis for at least two South Asian megacities, documenting Landsat classification methodology, accuracy assessment, and change-over-time trends.",
+    "inputs": [
+      "Landsat time-series data for target cities",
+      "Impervious-surface classification methodology",
+      "Reference data for accuracy assessment",
+      "Administrative boundary data for neighborhood aggregation"
+    ],
+    "expected_artifact": "validation.md update with impervious-surface methodology and accuracy assessment.",
+    "validation_method": "Replicator confirms Landsat classification methodology, accuracy assessment against reference data, and change-over-time documentation for each target city.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Impervious map with accuracy metrics and replication."
+    "done_condition": "Impervious-surface analysis includes methodology, accuracy metrics, change-over-time trends, and replication status for at least two cities."
   },
   {
-    "id": "drainage-capacity",
+    "id": "drainage-capacity-assessment",
     "problem_id": "disaster-resilience/urban-flooding-south-asia",
-    "title": "Estimate drainage-capacity insufficiency",
+    "title": "Estimate drainage-capacity insufficiency using available drainage data and impervious-surface proxies",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "Drainage-capacity gap map at neighborhood scale.",
-    "inputs": ["drainage data", "impervious-surface map", "rainfall extremes"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms capacity methodology.",
+    "outcome": "A drainage-capacity gap analysis combining available drainage-infrastructure data with impervious-surface proxies and rainfall-extreme data, with explicit documentation of drainage-data limitations and gap-filling assumptions.",
+    "inputs": [
+      "impervious-surface analysis results",
+      "OpenStreetMap or municipal drainage data where available",
+      "CHIRPS or GPM rainfall-extreme data",
+      "Published drainage-capacity studies for target cities"
+    ],
+    "expected_artifact": "outputs.md update with drainage methodology and data-limitation documentation.",
+    "validation_method": "Replicator confirms drainage-data integration methodology, gap-filling assumptions, and data-limitation documentation for each target city.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "high",
-    "done_condition": "Drainage-capacity gap with replication."
+    "done_condition": "Drainage-capacity analysis includes methodology, data sources, gap-filling assumptions, data-limitation documentation, and replication status."
   },
   {
     "id": "flood-risk-mapping",
     "problem_id": "disaster-resilience/urban-flooding-south-asia",
-    "title": "Produce neighborhood pluvial flood risk map",
+    "title": "Produce neighborhood-scale pluvial flood-risk map combining impervious surface, drainage, and rainfall data",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "Risk map combining impervious surface, drainage, and rainfall.",
+    "outcome": "A neighborhood-scale flood-risk map for at least two South Asian megacities, with explicit validation against historical flood-extent data and documentation of informal-settlement exposure.",
     "inputs": [
-      "impervious map",
-      "drainage analysis",
-      "rainfall extremes",
-      "population data"
+      "impervious-surface analysis results",
+      "drainage-capacity analysis results",
+      "rainfall-extreme data",
+      "Sentinel-1 SAR historical flood-extent data for validation",
+      "WorldPop population and informal-settlement boundary data"
     ],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms risk methodology and validates against historical floods.",
+    "expected_artifact": "outputs.md update with risk methodology and historical-validation results.",
+    "validation_method": "Replicator confirms risk-integration methodology, historical-flood validation, and informal-settlement exposure documentation for each target city.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "high",
-    "done_condition": "Risk map validated against historical events with replication."
+    "done_condition": "Flood-risk map includes methodology, historical-validation results, informal-settlement exposure documentation, and replication status for at least two cities."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-eviction-risk",
     "problem_id": "disaster-resilience/urban-flooding-south-asia",
-    "title": "Red-team misuse of flood risk maps",
+    "title": "Red-team flood-risk map misuse for eviction and displacement of informal settlements",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "Failure-mode review.",
-    "inputs": ["risk map", "safety policy"],
-    "expected_artifact": "SAFETY.md review.",
-    "validation_method": "Mitigations or block, replicated.",
+    "outcome": "A failure-mode review identifying how flood-risk maps could be used to justify eviction of informal-settlement residents without providing alternative housing or drainage improvement, and how drainage-data limitations could create false precision in risk classification.",
+    "inputs": [
+      "flood-risk mapping outputs",
+      "informal-settlement exposure documentation",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every flood-risk claim has drainage-data limitation documentation, informal-settlement exposure context, and explicit eviction-risk disclaimers. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Claims qualified or gated."
+    "done_condition": "Every flood-risk claim is either blocked, softened to data-limited language with explicit eviction-risk disclaimers, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "disaster-resilience/urban-flooding-south-asia",
-    "title": "Check whether outputs match urban planning needs",
+    "title": "Check whether outputs match municipal drainage and urban-planning decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "Field-facing review.",
-    "inputs": ["draft outputs", "urban planning context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
+    "outcome": "A field-facing review of whether the flood-risk analysis would change any real decision for municipal engineers, urban planners, or drainage authorities without creating perverse incentives.",
+    "inputs": [
+      "draft flood-risk outputs",
+      "municipal drainage-investment context",
+      "informal-settlement upgrading program documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for municipal and urban-planning audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that flood maps are used for eviction rather than drainage investment, or that drainage-data limitations create false precision. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases."
+    "done_condition": "The output has a named user (e.g., Mumbai Municipal Corporation drainage engineer), named decision (e.g., drainage-upgrade investment targeting), explicit non-use cases (e.g., not for informal-settlement eviction without alternative housing), and replicated field-reality review."
   }
 ]

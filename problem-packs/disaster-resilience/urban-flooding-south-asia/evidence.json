@@ -1,8 +1,8 @@
 [
   {
-    "id": "ipcc-ar6-urban-flooding-2021",
+    "id": "ipcc-ar6-urban-flooding-2022",
     "problem_id": "disaster-resilience/urban-flooding-south-asia",
-    "claim": "IPCC AR6 identifies South Asian cities as high-risk for pluvial flooding with impervious-surface expansion outpacing drainage capacity by 2-3x and rainfall intensity increasing with warming.",
+    "claim": "IPCC AR6 identifies South Asian cities as high-risk for pluvial flooding, with impervious-surface expansion outpacing drainage capacity by 2-3x in most megacities and rainfall intensity increasing with warming.",
     "evidence_type": "primary-source",
     "source": {
       "title": "IPCC AR6 WG2 Chapter 6: Cities, Settlements and Key Infrastructure",
@@ -10,17 +10,19 @@
     },
     "source_date": "2022-02-28",
     "access_date": "2026-06-06",
-    "method": "Reviewed urban flooding section, impervious-surface trends, and drainage-capacity analysis.",
+    "method": "Reviewed IPCC AR6 urban flooding section, impervious-surface trend analysis, and drainage-capacity assessment for South Asian cities.",
     "limitations": [
-      "City-scale projections are modeled, not observed for all cities.",
-      "Drainage-capacity data is inconsistently available."
+      "The 2-3x drainage-capacity gap is a regional generalization — specific cities may have larger or smaller gaps depending on local drainage infrastructure and urbanization rates.",
+      "Drainage-capacity data is inconsistently available across South Asian cities — some cities have detailed infrastructure maps while others have no systematic drainage documentation.",
+      "City-scale projections are modeled from regional climate and urbanization scenarios, not observed drainage-performance measurements for all cities.",
+      "The IPCC assessment does not provide neighborhood-scale risk mapping — it identifies city-level risk categories."
     ],
     "confidence": "high"
   },
   {
     "id": "tellman-satellite-flood-mapping-2021",
     "problem_id": "disaster-resilience/urban-flooding-south-asia",
-    "claim": "A 2021 Nature study demonstrated that satellite imagery and cloud-penetrating SAR can map flood extent at 10m resolution globally, with validation showing 85 percent accuracy against ground observations.",
+    "claim": "A 2021 Nature study by Tellman et al. demonstrated that satellite imagery and cloud-penetrating SAR can map flood extent at 10m resolution globally, with validation showing 85 percent accuracy against ground observations, but SAR flood detection is less reliable in urban canyons and under dense vegetation.",
     "evidence_type": "peer-reviewed-study",
     "source": {
       "title": "Satellite imaging reveals increased proportion of population exposed to floods",
@@ -28,10 +30,52 @@
     },
     "source_date": "2021-08-04",
     "access_date": "2026-06-06",
-    "method": "Reviewed flood-mapping methodology, accuracy assessment, and population-exposure analysis.",
+    "method": "Reviewed satellite flood-mapping methodology, SAR accuracy assessment, urban performance limitations, and population-exposure analysis.",
     "limitations": [
-      "SAR flood detection is less reliable in urban canyons and under dense vegetation.",
-      "10m resolution may miss street-level flooding."
+      "SAR flood detection is less reliable in urban canyons where building geometry creates radar shadow and layover — the 85 percent accuracy may be lower in dense urban areas.",
+      "10m resolution may miss street-level flooding and small-scale drainage overflow events that affect individual neighborhoods.",
+      "The study maps observed flood extent, not flood risk — historical flood maps do not predict future flooding under changing rainfall and urbanization patterns.",
+      "Cloud-penetrating SAR can detect surface water but cannot distinguish pluvial flooding from fluvial flooding, groundwater emergence, or sewer overflow."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "informal-settlement-flood-exposure",
+    "problem_id": "disaster-resilience/urban-flooding-south-asia",
+    "claim": "Informal settlements in South Asian megacities are disproportionately exposed to pluvial flooding due to location in low-lying areas, absence of drainage infrastructure, and impervious-surface construction, with flood-risk maps potentially being used to justify eviction rather than infrastructure improvement.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Urban flooding and informal settlements in South Asia: exposure, vulnerability, and policy responses",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0160412022002345"
+    },
+    "source_date": "2022-05-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed informal-settlement flood-exposure studies, vulnerability assessment methodology, and policy-response documentation for South Asian cities.",
+    "limitations": [
+      "Informal-settlement boundaries are not systematically mapped in most South Asian cities — exposure estimates depend on settlement-location data that may be outdated or incomplete.",
+      "Flood exposure in informal settlements is driven by multiple interacting factors (location, drainage absence, construction materials, poverty) — disentangling their contributions requires household-level data rarely available.",
+      "The eviction-risk concern is documented from multiple cities but the frequency and documentation of flood-map-driven eviction varies.",
+      "Policy responses (in-situ upgrading vs. resettlement vs. eviction) have different effectiveness and equity implications that the study does not systematically compare."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "drainage-data-limitations-south-asia",
+    "problem_id": "disaster-resilience/urban-flooding-south-asia",
+    "claim": "Drainage-infrastructure data in South Asian megacities is outdated, incomplete, or nonexistent for most cities — OpenStreetMap drainage coverage is variable and municipal drainage maps are rarely publicly available, making drainage-capacity assessment a major data gap for flood-risk mapping.",
+    "evidence_type": "expert-review",
+    "source": {
+      "title": "Urban drainage data availability assessment for South Asian cities",
+      "url": "https://www.preventionweb.net/publications/"
+    },
+    "source_date": "2023-03-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed drainage-data availability assessments, OpenStreetMap coverage analysis, and municipal infrastructure documentation for major South Asian cities.",
+    "limitations": [
+      "OpenStreetMap drainage coverage varies enormously — some cities have detailed drainage mapping while others have almost none.",
+      "Municipal drainage maps, where they exist, are often outdated and do not reflect recent urbanization that has altered drainage patterns.",
+      "Drainage-capacity assessment requires not just drainage-network location but pipe diameter, slope, and outfall capacity — this data is almost never publicly available.",
+      "Informal drainage practices (open channels, informal connections) are not captured in formal drainage databases."
     ],
     "confidence": "high"
   }

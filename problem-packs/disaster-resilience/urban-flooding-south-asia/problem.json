@@ -4,16 +4,26 @@
   "status": "scoped",
   "domain": ["disaster-resilience", "climate-adaptation"],
   "region": ["south-asia"],
-  "summary": "Build a verified workflow for assessing where impervious surface expansion, drainage inadequacy, and extreme rainfall create the highest pluvial flooding risk in South Asian megacities at neighborhood scale.",
-  "why_it_matters": "South Asian megacities experience increasingly frequent pluvial flooding as impervious surfaces replace permeable ground and drainage systems fail to keep pace. The 2022 Pakistan floods and repeated Mumbai, Dhaka, and Chennai flooding events demonstrate that drainage infrastructure and land-use data are not connected in a way that enables neighborhood-scale risk mapping.",
+  "summary": "Build a verified workflow for mapping neighborhood-scale pluvial flooding risk in South Asian megacities using satellite-derived impervious-surface data, drainage-capacity assessment, and extreme-rainfall analysis, with explicit documentation of drainage-data limitations, informal-settlement context, and the risk of flood maps being used for eviction rather than infrastructure investment.",
+  "why_it_matters": "South Asian megacities flood with increasing frequency as impervious surfaces replace permeable ground and drainage systems fail to keep pace with urbanization. Drainage maps are outdated or nonexistent in most cities. Satellite-derived impervious-surface data and rainfall records exist, but connecting these layers to neighborhood-scale risk requires drainage-infrastructure data that is rarely available. Without verified risk mapping, drainage investment cannot be targeted where it would most reduce flooding for the most vulnerable populations — and flood maps risk being used to justify eviction of informal settlements rather than infrastructure improvement.",
   "success_metrics": [
     {
-      "metric": "Data integration",
-      "target": "Every flooding risk estimate links impervious-surface, drainage, and rainfall data with methodology.",
-      "validation_method": "Schema validation and reviewer checks."
+      "metric": "Impervious-drainage-rainfall integration",
+      "target": "Every flood-risk claim documents the integration methodology for impervious-surface, drainage-capacity, and rainfall-extreme data layers.",
+      "validation_method": "Schema validation and reviewer spot-checks against data-integration methodology documentation."
+    },
+    {
+      "metric": "Drainage-data limitation documentation",
+      "target": "No flood-risk claim is merged without documenting whether drainage-infrastructure data exists at sufficient detail for the analyzed city, and what assumptions are made where data is absent.",
+      "validation_method": "Reviewer confirms drainage-data availability assessment and gap-filling methodology."
+    },
+    {
+      "metric": "Informal-settlement and eviction-risk context",
+      "target": "Every flood-risk output documents informal-settlement flood exposure and explicitly states that flood maps must not be used to justify eviction without providing alternative housing and drainage improvement.",
+      "validation_method": "Red-team reviewer confirms eviction-risk documentation for every flood-risk claim."
     }
   ],
-  "safety_level": "medium",
+  "safety_level": "high",
   "canonical_files": [
     "datasets.md",
     "evidence.json",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, eviction-safety review, and replication for quantitative outputs."
   }
 }

@@ -230,6 +230,16 @@ Build a verified workflow for detecting livestock disease outbreaks and estimati
 
 Build a verified workflow for assessing where vegetation, soil moisture, and wind signals can improve desert locust outbreak early warning in East Africa at sub-national scale, without conflating a model alert with a control operation order.
 
+## Alcohol Harm Reduction Policy Gaps And Heavy Episodic Drinking In Low- And Middle-Income Countries
+
+- ID: `public-health/alcohol-harm-reduction-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/alcohol-harm-reduction-global](../../problem-packs/public-health/alcohol-harm-reduction-global/problem.md)
+
+Build a verified workflow for measuring alcohol taxation and marketing regulation relative to heavy episodic drinking prevalence in LMICs, linking STEPS survey data, policy-tracking data, and economic indicators.
+
 ## Child Labor Detection And Supply Chain Risk In Global Agriculture
 
 - ID: `public-health/child-labor-supply-chain-global`

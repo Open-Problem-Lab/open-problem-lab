@@ -2,71 +2,95 @@
   {
     "id": "source-inventory",
     "problem_id": "climate-health/cold-spell-mortality-global",
-    "title": "Inventory data sources for climate-health/cold-spell-mortality-global",
+    "title": "Inventory temperature reanalysis, temperature-mortality studies, housing-quality surveys, and heating-access data sources for LMIC cold-exposed regions",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for cold spell mortality risk and heating access gaps in low-income countries.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates temperature reanalysis products (ERA5-Land), temperature-mortality studies, DHS housing-quality data, and heating-access indicators into usable, limited, and rejected categories with explicit LMIC and high-altitude coverage assessment.",
+    "inputs": [
+      "ERA5-Land temperature reanalysis documentation and validation studies",
+      "Gasparrini et al. 2015 and subsequent cold-mortality studies",
+      "DHS housing module documentation for cold-relevant indicators",
+      "Published cold-mortality studies from LMIC high-altitude regions",
+      "Heating-access and energy-poverty data from national surveys"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic coverage, and documented limitations — particularly temperature-reanalysis validation in high-altitude LMIC regions and housing-proxy correlation with indoor temperature.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, LMIC coverage, high-altitude validation status, and proxy-limitation documentation."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "cold-spell-frequency-mapping",
     "problem_id": "climate-health/cold-spell-mortality-global",
-    "title": "Measure sub-national gap for cold spell mortality risk and heating access gaps in low-income countries",
+    "title": "Map cold-spell frequency and intensity at sub-national scale for at least two LMIC high-altitude or cold-exposed regions",
     "status": "needs-triage",
     "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
+    "outcome": "A sub-national cold-spell frequency and intensity analysis for at least two LMIC regions using ERA5-Land daily minimum temperature, documenting cold-spell definition methodology, altitude-related temperature patterns, and reanalysis-resolution limitations in mountainous terrain.",
+    "inputs": [
+      "ERA5-Land daily minimum temperature data for target regions",
+      "Digital elevation model data for altitude context",
+      "Cold-spell definition methodology from published studies",
+      "Ground weather-station data for validation where available"
+    ],
+    "expected_artifact": "validation.md update with cold-spell methodology and regional results.",
+    "validation_method": "Replicator confirms ERA5-Land data extraction, cold-spell definition methodology, and altitude-context documentation, with explicit validation against ground stations where available.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
+    "done_condition": "Cold-spell analysis includes methodology, regional results, altitude-context documentation, ERA5-Land resolution limitations, and replication status for at least two regions."
   },
   {
-    "id": "risk-mapping",
+    "id": "heating-vulnerability-mapping",
     "problem_id": "climate-health/cold-spell-mortality-global",
-    "title": "Produce sub-national risk map for cold spell mortality risk and heating access gaps in low-income countries",
+    "title": "Map heating-access vulnerability using DHS housing-quality indicators and energy-poverty data for target regions",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A heating-access vulnerability analysis combining cold-spell frequency with DHS housing-quality indicators and energy-poverty data, with explicit documentation that housing-material proxies have not been validated against indoor temperature measurements.",
+    "inputs": [
+      "cold-spell frequency analysis results",
+      "DHS housing-quality data for target regions",
+      "Energy-poverty and heating-fuel data from national surveys",
+      "Published studies on housing materials and indoor temperature"
+    ],
+    "expected_artifact": "outputs.md update with vulnerability methodology and proxy-limitation documentation.",
+    "validation_method": "Replicator confirms vulnerability-weighting methodology, housing-quality proxy integration, and proxy-limitation documentation for each target region.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "done_condition": "Vulnerability analysis includes methodology, regional results, housing-proxy limitations, energy-poverty context, and replication status."
   },
   {
-    "id": "red-team-review",
+    "id": "red-team-extrapolation-overstatement",
     "problem_id": "climate-health/cold-spell-mortality-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team cold-mortality extrapolation overstatement and relative-priority risks",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how cold-mortality risk estimates could overstate the burden by extrapolating from high-income country studies, how results could be misused to deprioritize heat-adaptation investments, and how housing-quality proxies could misclassify vulnerability.",
+    "inputs": [
+      "heating-vulnerability analysis outputs",
+      "cold-spell frequency analysis outputs",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every cold-mortality risk claim has extrapolation-assumption documentation, housing-proxy limitations, and altitude-context caveats. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "done_condition": "Every cold-mortality risk claim is either blocked, softened to proxy-limited language with explicit extrapolation caveats, or gated behind domain review and replicated red-team review."
   },
   {
     "id": "field-reality-check",
     "problem_id": "climate-health/cold-spell-mortality-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match housing, energy, and health authority decision needs in cold-exposed LMIC regions",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the cold-mortality vulnerability analysis would change any real decision for housing ministries, energy-access programs, or health authorities in high-altitude LMIC regions without creating perverse incentives.",
+    "inputs": [
+      "draft vulnerability outputs",
+      "housing and energy-access program context",
+      "health authority cold-weather preparedness documentation"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for housing, energy, and health audiences.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk — particularly the risk that cold-mortality estimates are used to deprioritize heat adaptation, or that housing-proxy vulnerability maps misclassify actual indoor-temperature exposure. Second reviewer replicates the non-use-case check.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "done_condition": "The output has a named user (e.g., Nepal Ministry of Health cold-weather preparedness officer), named decision (e.g., high-altitude district health resource allocation), explicit non-use cases (e.g., not for deprioritizing heat adaptation, not for heating-fuel subsidy justification without affordability analysis), and replicated field-reality review."
   }
 ]

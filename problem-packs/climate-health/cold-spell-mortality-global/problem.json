@@ -4,13 +4,23 @@
   "status": "scoped",
   "domain": ["climate-health", "public-health"],
   "region": ["global"],
-  "summary": "Build a verified workflow for measuring cold-spell mortality risk and heating access gaps.",
-  "why_it_matters": "Build a verified workflow for measuring cold-spell mortality risk and heating access gaps.",
+  "summary": "Build a verified workflow for mapping cold-spell mortality risk and heating-access vulnerability in LMICs, with explicit documentation of temperature-mortality extrapolation assumptions from high-income countries, housing-quality proxy limitations, and altitude-related cold-exposure contexts.",
+  "why_it_matters": "Cold temperatures kill substantially more people globally than heat — approximately 20 times more by attributable fraction — yet cold-spell mortality research is overwhelmingly concentrated in high-income temperate countries. The 2015 Lancet study that established this ratio included only one LMIC. High-altitude LMIC populations in the Andes, East African highlands, and Himalayan foothills face routine sub-freezing nighttime temperatures with minimal heating, insulation, or cold-weather health infrastructure. Without verified cold-mortality risk analysis for these populations, the health burden remains invisible to climate-adaptation and public-health investment.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Temperature-mortality extrapolation documentation",
+      "target": "Every cold-mortality risk claim documents whether the temperature-mortality relationship is from the analyzed LMIC context or extrapolated from high-income country studies, with explicit transferability caveats.",
+      "validation_method": "Schema validation and reviewer spot-checks against extrapolation-assumption documentation."
+    },
+    {
+      "metric": "Housing-quality proxy validation",
+      "target": "Every heating-access vulnerability claim documents the DHS or census housing-quality indicators used and their correlation with actual indoor temperature during cold spells.",
+      "validation_method": "Reviewer confirms housing-quality proxy source, indicator methodology, and indoor-temperature correlation basis."
+    },
+    {
+      "metric": "Altitude-context documentation",
+      "target": "No cold-spell analysis is merged without documenting altitude-related cold-exposure context for populations above 1,500 meters elevation.",
+      "validation_method": "Red-team reviewer confirms altitude-context documentation for every high-elevation cold-risk claim."
     }
   ],
   "safety_level": "medium",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, extrapolation-safety review, and replication for quantitative outputs."
   }
 }

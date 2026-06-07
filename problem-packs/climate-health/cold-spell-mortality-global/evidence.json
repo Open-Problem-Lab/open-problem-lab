@@ -2,7 +2,7 @@
   {
     "id": "gasparrini-cold-mortality-2015",
     "problem_id": "climate-health/cold-spell-mortality-global",
-    "claim": "A 2015 Lancet study found that cold temperatures cause more deaths globally than heat, with cold-attributable mortality concentrated in populations without adequate heating and insulation.",
+    "claim": "A 2015 Lancet study by Gasparrini et al. analyzing 74 million deaths across 384 locations in 13 countries found that cold-attributable mortality exceeded heat-attributable mortality by approximately 20 to 1, with cold-attributable mortality concentrated in populations without adequate heating and insulation. Only one LMIC (Thailand) was included.",
     "evidence_type": "peer-reviewed-study",
     "source": {
       "title": "Mortality risk attributable to high and low ambient temperature",
@@ -10,10 +10,72 @@
     },
     "source_date": "2015-07-25",
     "access_date": "2026-06-07",
-    "method": "Reviewed multi-country mortality-temperature analysis, attributable fractions, and regional patterns.",
+    "method": "Reviewed multi-country mortality-temperature analysis, attributable-fraction methodology, regional breakdown, and country-income classification of included locations.",
     "limitations": [
-      "Cold-spell mortality data is sparse in LMICs.",
-      "Heating-access data is not systematically collected."
+      "Only one of 13 countries (Thailand) was a lower-middle-income country — the temperature-mortality relationship is derived almost entirely from high-income populations with heating, insulation, and health-system access that LMIC populations lack.",
+      "The 20:1 cold-to-heat mortality ratio is a global aggregate — individual country and regional ratios vary substantially.",
+      "Cold-attributable mortality is estimated statistically from temperature-mortality time-series, not from direct cause-of-death coding — the method assumes temperature is the causal driver.",
+      "The study cannot distinguish between cold exposure as a direct cause of death and cold as a trigger for cardiovascular and respiratory events in already-vulnerable populations."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "lmic-cold-mortality-data-gap",
+    "problem_id": "climate-health/cold-spell-mortality-global",
+    "claim": "Sub-national cold-spell mortality data is almost universally absent from LMIC vital registration systems, which already undercount total mortality in most low-income countries. Cold-attributable deaths are rarely coded as such even in high-income settings.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Cold-related mortality: a global evidence gap in low- and middle-income countries",
+      "url": "https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(23)00234-5/fulltext"
+    },
+    "source_date": "2023-05-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed global cold-mortality evidence base, vital registration completeness by country income level, and cold-specific cause-of-death coding practices.",
+    "limitations": [
+      "The evidence-gap assessment may miss emerging LMIC cold-mortality studies not yet captured in global reviews.",
+      "Vital registration completeness varies enormously across LMICs — some high-altitude LMIC regions have better registration than national averages suggest.",
+      "The absence of cold-mortality data does not mean the absence of cold mortality — it means the burden is unmeasured and therefore invisible to policy.",
+      "Alternative mortality-data sources (burial records, sentinel surveillance, verbal autopsy) have not been systematically validated for cold-mortality estimation."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "dhs-housing-quality-proxies",
+    "problem_id": "climate-health/cold-spell-mortality-global",
+    "claim": "Housing-quality surveys — DHS housing modules and census data on construction materials — provide indicators of heating access and thermal insulation such as wall material, roof material, floor material, and heating-fuel type that can serve as proxies for cold-exposure vulnerability in the absence of direct cold-mortality data.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "DHS Housing Characteristics Data",
+      "url": "https://dhsprogram.com/what-we-do/survey/survey-types/dhs.cfm"
+    },
+    "source_date": "2025-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed DHS housing module documentation for cold-relevant indicators (wall material, roof material, heating-fuel type, window presence), geographic coverage, and temporal availability.",
+    "limitations": [
+      "DHS housing-quality indicators are proxies for cold-exposure vulnerability — the correlation between housing materials and actual indoor temperature during cold spells has not been systematically validated.",
+      "A household with a metal roof and no insulation may have indoor temperatures nearly identical to outdoor temperatures, but DHS does not measure indoor temperature.",
+      "DHS surveys are conducted periodically — housing-quality data may not reflect current conditions, particularly in rapidly urbanizing areas.",
+      "Heating-fuel type does not capture whether heating is used for space heating versus cooking, or whether fuel is affordable and available during cold spells."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "era5-land-cold-spell-analysis",
+    "problem_id": "climate-health/cold-spell-mortality-global",
+    "claim": "ERA5-Land temperature reanalysis at 0.1-degree resolution provides gridded daily minimum temperature data globally from 1950 to present, enabling cold-spell frequency and intensity analysis at sub-national scale even where weather stations are absent.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "ERA5-Land — ECMWF Reanalysis",
+      "url": "https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5"
+    },
+    "source_date": "2025-01-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed ERA5-Land documentation for temperature resolution, temporal coverage, and validation studies in high-altitude and data-sparse regions.",
+    "limitations": [
+      "ERA5-Land at 0.1-degree resolution (~10km) may not capture valley-scale temperature inversions and cold-air pooling that create extreme cold exposure at specific locations in mountainous terrain.",
+      "Reanalysis products interpolate between sparse observations in many LMIC mountain regions — temperature estimates in data-sparse high-altitude areas have higher uncertainty.",
+      "Daily minimum temperature in ERA5-Land represents the grid-cell average, not the coldest location within the cell — extreme cold at specific high-altitude settlements may be underestimated.",
+      "The product has not been systematically validated against ground weather stations in most high-altitude LMIC regions."
     ],
     "confidence": "high"
   }

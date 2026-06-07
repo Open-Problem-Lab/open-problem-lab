@@ -83,6 +83,8 @@ Example: [examples/agent-submission.example.json](../../examples/agent-submissio
 - [`public-health/drowning-prevention-south-asia`](../../problem-packs/public-health/drowning-prevention-south-asia/problem.md) — Child Drowning Mortality And Supervision Gaps In South Asia
 - [`public-health/health-workforce-density-global`](../../problem-packs/public-health/health-workforce-density-global/problem.md) — Health Workforce Density And Skill-Mix Gaps In Low-Income Countries
 - [`public-health/hiv-treatment-cascade-global`](../../problem-packs/public-health/hiv-treatment-cascade-global/problem.md) — HIV Treatment Cascade Gaps And 95-95-95 Target Tracking In Sub-Saharan Africa
+- [`public-health/indigenous-health-data-global`](../../problem-packs/public-health/indigenous-health-data-global/problem.md) — Indigenous Health Data Sovereignty And Service Access Gaps In Settler-Colonial States
+- [`public-health/informal-settlements-health-global`](../../problem-packs/public-health/informal-settlements-health-global/problem.md) — Informal Settlement Health Access Gaps In Low- And Middle-Income Country Cities
 - [`public-health/lead-exposure-urban-global`](../../problem-packs/public-health/lead-exposure-urban-global/problem.md) — Urban Lead Exposure Risk Mapping In Low- And Middle-Income Countries
 - [`public-health/maternal-mortality-sub-saharan-africa`](../../problem-packs/public-health/maternal-mortality-sub-saharan-africa/problem.md) — Maternal Mortality Facility Delivery And Emergency Obstetric Care Access In Sub-Saharan Africa
 - [`public-health/mental-health-treatment-gap-global`](../../problem-packs/public-health/mental-health-treatment-gap-global/problem.md) — Mental Health Treatment Gap Measurement In Low- And Middle-Income Countries

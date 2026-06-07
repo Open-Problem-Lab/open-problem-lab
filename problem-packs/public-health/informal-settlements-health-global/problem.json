@@ -1,0 +1,34 @@
+{
+  "id": "public-health/informal-settlements-health-global",
+  "title": "Informal Settlement Health Access Gaps In Low- And Middle-Income Country Cities",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for measuring health-service access gaps in informal settlements of LMIC cities, linking settlement-boundary maps, population data, and health-facility data at neighborhood scale.",
+  "why_it_matters": "Over 1 billion people live in informal settlements, a number projected to reach 3 billion by 2050. Informal-settlement residents face compounded health risks — overcrowding, poor water and sanitation, and lack of health facilities — but are systematically invisible in official health statistics. Satellite-derived settlement maps now enable neighborhood-scale analysis, but linking settlement boundaries to health-facility access has not been done systematically.",
+  "success_metrics": [
+    {
+      "metric": "Data integration",
+      "target": "Every access-gap estimate links settlement maps, population data, and facility data with methodology.",
+      "validation_method": "Schema validation and reviewer checks."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review, replication."
+  }
+}

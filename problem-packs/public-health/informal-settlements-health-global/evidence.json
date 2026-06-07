@@ -1,0 +1,35 @@
+[
+  {
+    "id": "un-habitat-world-cities-2022",
+    "problem_id": "public-health/informal-settlements-health-global",
+    "claim": "UN-Habitat estimates 1 billion people in informal settlements, projected to 3 billion by 2050, with settlement residents having 1.5-3x child mortality and 2-5x infectious disease burden.",
+    "evidence_type": "primary-source",
+    "source": { "title": "World Cities Report 2022", "url": "https://unhabitat.org/wcr/" },
+    "source_date": "2022-06-29",
+    "access_date": "2026-06-07",
+    "method": "Reviewed World Cities Report chapters on informal settlements, health access, and projections.",
+    "limitations": [
+      "Settlement population estimates are modeled, not directly counted.",
+      "Health-access estimates reflect available data which undersamples informal settlements."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "thomson-ideamaps-settlement-mapping-2023",
+    "problem_id": "public-health/informal-settlements-health-global",
+    "claim": "IDEAMAPS project has produced machine-learning-derived informal settlement boundary maps at 10m resolution for major LMIC cities, with validation accuracy of 75-85 percent against expert-drawn boundaries.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "IDEAMAPS: Mapping informal settlements globally",
+      "url": "https://ideamaps.org/"
+    },
+    "source_date": "2023-12-01",
+    "access_date": "2026-06-07",
+    "method": "Reviewed IDEAMAPS methodology, validation results, and city coverage.",
+    "limitations": [
+      "ML classification accuracy varies by city and neighborhood typology.",
+      "Settlement boundaries change rapidly and maps may be outdated."
+    ],
+    "confidence": "medium"
+  }
+]

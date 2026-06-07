@@ -1,0 +1,77 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/informal-settlements-health-global",
+    "title": "Inventory informal settlement and health access data",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating settlement-boundary maps, population data, health-facility data, and unusable sources.",
+    "inputs": ["IDEAMAPS data", "WorldPop", "DHS data", "facility registries", "OSM roads"],
+    "expected_artifact": "datasets.md update plus evidence.json records.",
+    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Five sources classified."
+  },
+  {
+    "id": "settlement-boundary-mapping",
+    "problem_id": "public-health/informal-settlements-health-global",
+    "title": "Map informal settlement boundaries for candidate cities",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A settlement-boundary map for at least two LMIC cities with accuracy documentation.",
+    "inputs": ["IDEAMAPS data", "local maps", "validation data"],
+    "expected_artifact": "validation.md update with settlement-map methodology.",
+    "validation_method": "Replicator validates boundaries against alternative data sources and confirms accuracy.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Boundary map with accuracy assessment and replication."
+  },
+  {
+    "id": "health-access-gap",
+    "problem_id": "public-health/informal-settlements-health-global",
+    "title": "Map health-facility access gaps in informal settlements",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "An access-gap map comparing settlement and non-settlement health-facility access.",
+    "inputs": [
+      "settlement boundaries",
+      "facility locations",
+      "travel-time data",
+      "population data"
+    ],
+    "expected_artifact": "outputs.md update with access-gap map.",
+    "validation_method": "Replicator confirms gap methodology and equity comparison.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Gap map includes equity comparison and replication."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/informal-settlements-health-global",
+    "title": "Red-team misuse of settlement maps",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "Failure-mode review identifying eviction and stigmatization risks.",
+    "inputs": ["gap map", "safety policy"],
+    "expected_artifact": "SAFETY.md linked review note.",
+    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Claims qualified or gated with anti-eviction safeguards."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/informal-settlements-health-global",
+    "title": "Check whether outputs match urban health planning needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether gap maps change urban health planning responsibly.",
+    "inputs": ["draft outputs", "urban health planning context"],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies decision, user, misuse risk, then replicated.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Named user, named decision, non-use cases, replicated field-reality review."
+  }
+]

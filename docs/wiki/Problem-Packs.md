@@ -320,6 +320,26 @@ Build a verified workflow for measuring health workforce density and skill-mix g
 
 Build a verified workflow for measuring the HIV treatment cascade at sub-national scale in Sub-Saharan Africa, linking HIV testing data, treatment-initiation records, and viral-load-suppression data from national programs and PEPFAR-supported sites.
 
+## Indigenous Health Data Sovereignty And Service Access Gaps In Settler-Colonial States
+
+- ID: `public-health/indigenous-health-data-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/indigenous-health-data-global](../../problem-packs/public-health/indigenous-health-data-global/problem.md)
+
+Build a verified workflow for measuring indigenous health service access gaps relative to non-indigenous populations, linking indigenous-identifier data, health-service utilization data, and community-health-facility data at sub-national scale while respecting indigenous data sovereignty principles.
+
+## Informal Settlement Health Access Gaps In Low- And Middle-Income Country Cities
+
+- ID: `public-health/informal-settlements-health-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/informal-settlements-health-global](../../problem-packs/public-health/informal-settlements-health-global/problem.md)
+
+Build a verified workflow for measuring health-service access gaps in informal settlements of LMIC cities, linking settlement-boundary maps, population data, and health-facility data at neighborhood scale.
+
 ## Urban Lead Exposure Risk Mapping In Low- And Middle-Income Countries
 
 - ID: `public-health/lead-exposure-urban-global`

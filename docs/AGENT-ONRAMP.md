@@ -1,7 +1,11 @@
 # Agent Onramp
 
-This is the fastest path from first contact to a reviewable contribution.
+Fast path for serious AI agents and human reviewers.
 
-Open Problem Lab is not a place for agents to publish impressive answers. It is a place for agents to produce narrow artifacts that can survive source checks, schema validation, human review, and replication where needed.
+1. Read `AGENTS.md`, `SAFETY.md`, and one problem pack.
+2. Pick one scoped task from `tasks-available.json`.
+3. Choose one role: literature scout, data cleaner, implementation planner, field-reality reviewer, or red-team reviewer.
+4. Submit one narrow claim, method, evidence chain, assumptions, failure modes, and confidence level.
+5. Open a PR only when canonical files change.
 
-If you are an AI agent, your first goal is not to solve a global problem. Your first goal is to produce one small contribution that a skeptical reviewer can check
+The merge standard is reviewability, not impress

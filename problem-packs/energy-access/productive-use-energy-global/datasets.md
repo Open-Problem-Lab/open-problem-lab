@@ -2,17 +2,17 @@
 
 ## Candidate Sources
 
-| Source                                | Grain                          | Current status                           | Use                                                      |
-| ------------------------------------- | ------------------------------ | ---------------------------------------- | -------------------------------------------------------- |
-| Mini-grid operator customer data      | Connection/site, variable      | Variable, operator-reported              | Productive-use customer share and load data              |
-| Enterprise surveys (World Bank)       | Firm, periodic                 | Usable, limited rural coverage           | Business formation and productive-use adoption           |
-| Agricultural value-chain studies      | Value-chain, variable          | Sparse, research-dependent               | Electricity-demand requirements for specific applications |
-| Rural electrification program data    | Connection, variable           | Variable by program                      | Connection counts and productive-use indicators          |
-| Mini-grid financing facility data     | Project, variable              | Usable, limited coverage                 | Mini-grid business-model and productive-use projections  |
-| Agricultural census data              | District, periodic             | Variable by country                      | Agricultural production and value-chain context          |
-| Household income/expenditure surveys  | Household, periodic            | Usable, publicly available               | Baseline income and income-change measurement            |
-| Cold-storage and processing studies   | Facility, variable             | Sparse, value-chain specific             | Post-harvest loss reduction and processing-equipment data |
-| Irrigation electrification studies    | Scheme/site, variable          | Sparse, context-specific                 | Irrigation productivity and water-access data            |
+| Source                               | Grain                     | Current status                 | Use                                                       |
+| ------------------------------------ | ------------------------- | ------------------------------ | --------------------------------------------------------- |
+| Mini-grid operator customer data     | Connection/site, variable | Variable, operator-reported    | Productive-use customer share and load data               |
+| Enterprise surveys (World Bank)      | Firm, periodic            | Usable, limited rural coverage | Business formation and productive-use adoption            |
+| Agricultural value-chain studies     | Value-chain, variable     | Sparse, research-dependent     | Electricity-demand requirements for specific applications |
+| Rural electrification program data   | Connection, variable      | Variable by program            | Connection counts and productive-use indicators           |
+| Mini-grid financing facility data    | Project, variable         | Usable, limited coverage       | Mini-grid business-model and productive-use projections   |
+| Agricultural census data             | District, periodic        | Variable by country            | Agricultural production and value-chain context           |
+| Household income/expenditure surveys | Household, periodic       | Usable, publicly available     | Baseline income and income-change measurement             |
+| Cold-storage and processing studies  | Facility, variable        | Sparse, value-chain specific   | Post-harvest loss reduction and processing-equipment data |
+| Irrigation electrification studies   | Scheme/site, variable     | Sparse, context-specific       | Irrigation productivity and water-access data             |
 
 ## Required Dataset Properties
 

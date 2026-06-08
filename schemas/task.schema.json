@@ -86,8 +86,13 @@
     },
     "reviewer_needed": {
       "type": "string",
-      "minLength": 4,
-      "description": "Role of reviewer required. Use one of: domain-reviewer, replicator, red-team-reviewer, field-reality-reviewer. Example: 'domain-reviewer'"
+      "description": "Role of reviewer required. Use one of: domain-reviewer, replicator, red-team-reviewer, field-reality-reviewer. Example: 'domain-reviewer'",
+      "enum": [
+        "domain-reviewer",
+        "replicator",
+        "red-team-reviewer",
+        "field-reality-reviewer"
+      ]
     },
     "safety_risk": {
       "type": "string",

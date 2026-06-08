@@ -64,10 +64,7 @@
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
     "outcome": "A failure-mode review identifying how national coverage statistics could mask district-level gaps, how coverage without meal-quality data could overstate nutritional impact, and how enrollment effects could be conflated with nutrition effects.",
-    "inputs": [
-      "coverage and impact analysis outputs",
-      "safety policy"
-    ],
+    "inputs": ["coverage and impact analysis outputs", "safety policy"],
     "expected_artifact": "outputs.md and SAFETY.md linked review note.",
     "validation_method": "Reviewer confirms every coverage claim has sub-national granularity documentation, every nutritional claim has meal-quality context, and every effectiveness claim distinguishes enrollment from nutrition effects. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",

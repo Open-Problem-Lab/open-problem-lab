@@ -12,6 +12,8 @@ Read these in order — they take about 10 minutes together and prevent the most
 
 ## Step 1: Pick a Problem
 
+If you want the shortest path instead of browsing manually, open [agent-radar.json](agent-radar.json) first. It ranks the best first moves, the packs that unlock the most follow-on work, and the reviewer bottlenecks likely to matter after the first task lands.
+
 Browse [problem-packs/](problem-packs/) and find a domain that matches your expertise or curiosity.
 
 **If you are an epidemiologist or public-health researcher:**
@@ -145,9 +147,10 @@ The good version is narrow, dated, and falsifiable. The bad version sounds like 
 
 1. Read [AGENTS.md](AGENTS.md) completely.
 2. Look at [examples/agent-submission.example.json](examples/agent-submission.example.json) — that is the submission shape.
-3. Pick the `source-inventory` task from any problem pack with `"status": "scoped"`.
-4. Open an issue using the Agent Submission template.
-5. Submit one claim, one evidence chain, one method. Not five.
-6. Run `pnpm validate` to confirm no broken structure before opening a PR.
+3. Open [agent-radar.json](agent-radar.json) and choose a recommended first move if you want maximum leverage per unit of effort.
+4. Pick the `source-inventory` task from any problem pack with `"status": "scoped"`.
+5. Open an issue using the Agent Submission template.
+6. Submit one claim, one evidence chain, one method. Not five.
+7. Run `pnpm validate` to confirm no broken structure before opening a PR.
 
 The validation pipeline is your friend. If it fails, fix the structure — not the validator.

@@ -8,7 +8,7 @@
 - Region: `south-asia`
 - Source: [problem-packs/air-quality/agricultural-burning-air-quality-south-asia](../../problem-packs/air-quality/agricultural-burning-air-quality-south-asia/problem.md)
 
-Build a verified workflow for measuring agricultural residue burning contribution to PM2.5 and health impact in South Asia.
+Build a verified workflow for linking satellite-detected agricultural residue burning to ground-level PM2.5 concentrations and respiratory health outcomes in the Indo-Gangetic Plain, with explicit source-apportionment methodology and non-burning confound controls.
 
 ## Indoor Air Pollution Exposure From Solid Fuel Cooking In Sub-Saharan Africa
 
@@ -38,7 +38,7 @@ Build a verified workflow for identifying where PM2.5 monitoring gaps produce th
 - Region: `global`
 - Source: [problem-packs/air-quality/wildfire-smoke-health-global](../../problem-packs/air-quality/wildfire-smoke-health-global/problem.md)
 
-Build a verified workflow for estimating wildfire smoke PM2.5 exposure and respiratory health impact, linking satellite-derived smoke plumes, ground-monitor PM2.5, and health-utilization data in fire-prone regions.
+Build a verified workflow for estimating wildfire-smoke-specific PM2.5 exposure and respiratory health impact in fire-prone regions, linking satellite-derived smoke plumes, chemical-transport model composition, ground-monitor PM2.5, and health-utilization data with explicit exposure-validation methodology and non-smoke PM2.5 confound controls.
 
 ## Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef
 
@@ -68,7 +68,7 @@ Build a verified workflow linking satellite-based deforestation detection to spe
 - Region: `central-asia`
 - Source: [problem-packs/biodiversity/grassland-degradation-central-asia](../../problem-packs/biodiversity/grassland-degradation-central-asia/problem.md)
 
-Build a verified workflow for detecting grassland degradation and pastoral livelihood risk.
+Build a verified workflow for detecting grassland degradation from satellite vegetation indices and linking degradation signals to pastoral livelihood outcomes in Central Asia, with explicit NDVI-trend methodology, climate-variability disambiguation, and ground-validation documentation.
 
 ## Mangrove Deforestation Detection And Coastal Protection Loss In Southeast Asia
 
@@ -78,7 +78,7 @@ Build a verified workflow for detecting grassland degradation and pastoral livel
 - Region: `south-east-asia`
 - Source: [problem-packs/biodiversity/mangrove-loss-south-east-asia](../../problem-packs/biodiversity/mangrove-loss-south-east-asia/problem.md)
 
-Build a verified workflow for detecting mangrove deforestation and estimating coastal protection service loss in Southeast Asia, linking satellite-derived mangrove maps, storm-surge models, and coastal-population data.
+Build a verified workflow for linking satellite-detected mangrove deforestation to quantified coastal-protection service loss in Southeast Asia, with explicit deforestation-driver documentation, storm-surge attenuation methodology, and remaining-mangrove threat assessment.
 
 ## Pollinator Decline Detection And Crop-Pollination Service Risk In Agricultural Regions
 
@@ -88,7 +88,7 @@ Build a verified workflow for detecting mangrove deforestation and estimating co
 - Region: `global`
 - Source: [problem-packs/biodiversity/pollinator-decline-agriculture-global](../../problem-packs/biodiversity/pollinator-decline-agriculture-global/problem.md)
 
-Build a verified workflow for detecting wild pollinator decline and estimating crop-pollination service risk in agricultural regions.
+Build a verified workflow for estimating crop-pollination service risk from satellite-derived habitat-change indicators in LMIC agricultural regions, with explicit documentation of pollinator-monitoring data gaps and crop-pollination-dependence classification limitations.
 
 ## Wetland Loss Detection And Migratory Bird Population Impact
 
@@ -98,7 +98,7 @@ Build a verified workflow for detecting wild pollinator decline and estimating c
 - Region: `global`
 - Source: [problem-packs/biodiversity/wetland-loss-migratory-birds-global](../../problem-packs/biodiversity/wetland-loss-migratory-birds-global/problem.md)
 
-Build a verified workflow for detecting wetland loss and estimating migratory bird population impact using satellite-derived wetland maps and bird-count data.
+Build a verified workflow for linking satellite-detected wetland loss at specific stopover sites along major migratory flyways to waterbird population trends, with explicit wetland-bird linkage methodology, flyway-scale data-coverage assessment, and multi-threat attribution documentation.
 
 ## Climate-Resilient Seed Access And Adoption Gaps In Smallholder Agriculture
 
@@ -108,7 +108,7 @@ Build a verified workflow for detecting wetland loss and estimating migratory bi
 - Region: `global`
 - Source: [problem-packs/climate-adaptation/climate-resilient-seeds-global](../../problem-packs/climate-adaptation/climate-resilient-seeds-global/problem.md)
 
-Build a verified workflow for measuring climate-resilient seed access and adoption gaps.
+Build a verified workflow for mapping climate-resilient seed availability and estimating adoption gaps in smallholder agriculture, with explicit seed-system barrier classification, on-farm-yield-gap documentation, and farmer-preference context.
 
 ## Heat Early Warning System Coverage And Effectiveness In Low-Income Countries
 
@@ -118,7 +118,7 @@ Build a verified workflow for measuring climate-resilient seed access and adopti
 - Region: `global`
 - Source: [problem-packs/climate-adaptation/heat-early-warning-systems-global](../../problem-packs/climate-adaptation/heat-early-warning-systems-global/problem.md)
 
-Build a verified workflow for measuring heat early warning system coverage and estimating effectiveness in reducing heat mortality.
+Build a verified workflow for mapping heat early warning system coverage and estimating mortality-reduction effectiveness in LMICs, with explicit documentation of mortality-data quality, climate-trend adjustment, and the distinction between system existence and demonstrated effectiveness.
 
 ## Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States
 
@@ -138,9 +138,9 @@ Build a verified workflow for assessing where sea-level rise, coastal erosion, a
 - Region: `global`
 - Source: [problem-packs/climate-adaptation/urban-green-space-cooling-global](../../problem-packs/climate-adaptation/urban-green-space-cooling-global/problem.md)
 
-Build a verified workflow for measuring urban green space cooling effects and estimating heat-mortality reduction potential in LMIC cities.
+Build a verified workflow for mapping urban green-space distribution and estimating cooling effects and heat-mortality reduction potential in LMIC cities, with explicit satellite-to-ground temperature validation, green-space-type differentiation, and informal-settlement vulnerability documentation.
 
-## Ambient Air Pollution Source Attribution And Health Impact In Megacities
+## Ambient Air Pollution Source Attribution And Health Impact In LMIC Megacities
 
 - ID: `climate-health/air-pollution-source-attribution-global`
 - Status: `scoped`
@@ -148,7 +148,7 @@ Build a verified workflow for measuring urban green space cooling effects and es
 - Region: `global`
 - Source: [problem-packs/climate-health/air-pollution-source-attribution-global](../../problem-packs/climate-health/air-pollution-source-attribution-global/problem.md)
 
-Build a verified workflow for attributing ambient air pollution to source sectors and estimating sector-specific health impacts in LMIC megacities.
+Build a verified workflow for attributing ambient PM2.5 to source sectors and estimating sector-specific health impacts in LMIC megacities, with explicit apportionment-methodology documentation, ground-monitor sparsity assessment, and the distinction between published and borrowed source-attribution data.
 
 ## Cold Spell Mortality Risk And Heating Access Gaps In Low-Income Countries
 
@@ -158,7 +158,7 @@ Build a verified workflow for attributing ambient air pollution to source sector
 - Region: `global`
 - Source: [problem-packs/climate-health/cold-spell-mortality-global](../../problem-packs/climate-health/cold-spell-mortality-global/problem.md)
 
-Build a verified workflow for measuring cold-spell mortality risk and heating access gaps.
+Build a verified workflow for mapping cold-spell mortality risk and heating-access vulnerability in LMICs, with explicit documentation of temperature-mortality extrapolation assumptions from high-income countries, housing-quality proxy limitations, and altitude-related cold-exposure contexts.
 
 ## Dengue, Heat, And Rainfall Risk In Viet Nam
 
@@ -170,7 +170,7 @@ Build a verified workflow for measuring cold-spell mortality risk and heating ac
 
 Build a verified workflow for assessing where climate, water infrastructure, mobility, and dengue surveillance signals may support earlier district-level dengue risk review in Viet Nam.
 
-## Dust Storm PM10 Exposure And Respiratory Health Impact In Arid Regions
+## Dust Storm PM10 Exposure And Respiratory Health Impact In Arid And Semi-Arid Regions
 
 - ID: `climate-health/dust-storm-health-global`
 - Status: `scoped`
@@ -178,7 +178,7 @@ Build a verified workflow for assessing where climate, water infrastructure, mob
 - Region: `global`
 - Source: [problem-packs/climate-health/dust-storm-health-global](../../problem-packs/climate-health/dust-storm-health-global/problem.md)
 
-Build a verified workflow for measuring dust-storm PM10 exposure and respiratory health impact.
+Build a verified workflow for mapping dust-storm PM10 exposure and estimating respiratory health impact in LMIC arid and semi-arid regions, with explicit satellite-to-ground exposure validation, dust-source toxicology documentation, and non-dust PM10 confound controls.
 
 ## Urban Heat Stress Mortality Risk In South Asia
 
@@ -208,7 +208,7 @@ Build a verified workflow for identifying where rainfall, temperature, and veget
 - Region: `south-asia`
 - Source: [problem-packs/disaster-resilience/climate-migration-south-asia](../../problem-packs/disaster-resilience/climate-migration-south-asia/problem.md)
 
-Build a verified workflow for detecting climate-driven internal migration patterns in South Asia, linking census migration data, satellite-derived environmental change, and economic indicators at sub-national scale.
+Build a verified workflow for detecting environmental-migration correlations at sub-national scale in South Asia using census migration data and satellite-derived environmental change, with explicit economic-confound controls, non-causal attribution caveats, and the distinction between adaptive and distress-driven migration.
 
 ## Cyclone Early Warning And Evacuation Signal Verification In Bangladesh
 
@@ -238,7 +238,7 @@ Build a verified workflow for assessing where building-stock vulnerability, popu
 - Region: `south-asia`
 - Source: [problem-packs/disaster-resilience/landslide-early-warning-south-asia](../../problem-packs/disaster-resilience/landslide-early-warning-south-asia/problem.md)
 
-Build a verified workflow for landslide susceptibility mapping and early warning in the Himalayan region, linking satellite-derived slope-stability data, rainfall-trigger data, and population-exposure data.
+Build a verified workflow for mapping landslide susceptibility and population exposure in the Himalayan region using satellite slope-stability data and rainfall-trigger models, with explicit InSAR limitations, rainfall-threshold methodology, and the distinction between susceptibility mapping and operational early warning.
 
 ## Tsunami Early Warning System Coverage And Community Preparedness In Indian Ocean Countries
 
@@ -258,7 +258,7 @@ Build a verified workflow for measuring tsunami early warning system coverage an
 - Region: `south-asia`
 - Source: [problem-packs/disaster-resilience/urban-flooding-south-asia](../../problem-packs/disaster-resilience/urban-flooding-south-asia/problem.md)
 
-Build a verified workflow for assessing where impervious surface expansion, drainage inadequacy, and extreme rainfall create the highest pluvial flooding risk in South Asian megacities at neighborhood scale.
+Build a verified workflow for mapping neighborhood-scale pluvial flooding risk in South Asian megacities using satellite-derived impervious-surface data, drainage-capacity assessment, and extreme-rainfall analysis, with explicit documentation of drainage-data limitations, informal-settlement context, and the risk of flood maps being used for eviction rather than infrastructure investment.
 
 ## Volcanic Ash Aviation Hazard Detection And Airspace Management Gaps
 
@@ -268,7 +268,7 @@ Build a verified workflow for assessing where impervious surface expansion, drai
 - Region: `global`
 - Source: [problem-packs/disaster-resilience/volcanic-ash-aviation-global](../../problem-packs/disaster-resilience/volcanic-ash-aviation-global/problem.md)
 
-Build a verified workflow for volcanic ash detection and aviation-hazard risk mapping.
+Build a verified workflow for mapping volcanic ash detection capability and ash-concentration forecast accuracy along aviation routes, with explicit satellite detection limitations, eruption-source parameter uncertainty, and regional monitoring-network coverage assessment.
 
 ## Digital Divide Measurement And School Internet Connectivity In Low-Income Countries
 
@@ -278,9 +278,9 @@ Build a verified workflow for volcanic ash detection and aviation-hazard risk ma
 - Region: `global`
 - Source: [problem-packs/education/digital-divide-school-access-global](../../problem-packs/education/digital-divide-school-access-global/problem.md)
 
-Build a verified workflow for measuring the school-level digital divide — internet connectivity, device access, and digital literacy — in low-income countries, linking school census data, infrastructure maps, and connectivity measurements.
+Build a verified workflow for mapping school-level internet connectivity and digital-divide gaps at sub-national scale in low-income countries, with explicit connectivity-classification methodology documentation, data-currency assessment, and the distinction between connectivity existence and verified digital-learning use.
 
-## Early Childhood Development Measurement And Intervention Coverage Gaps
+## Early Childhood Development Measurement And Intervention Coverage Gaps In Low-Income Countries
 
 - ID: `education/early-childhood-development-global`
 - Status: `scoped`
@@ -288,7 +288,7 @@ Build a verified workflow for measuring the school-level digital divide — inte
 - Region: `global`
 - Source: [problem-packs/education/early-childhood-development-global](../../problem-packs/education/early-childhood-development-global/problem.md)
 
-Build a verified workflow for measuring early childhood development outcomes and intervention coverage gaps, linking MICS ECDI data, preschool-access data, and nutrition data.
+Build a verified workflow for mapping early childhood development outcomes and intervention-coverage gaps at sub-national scale in LMICs, with explicit MICS ECDI instrument limitations, preschool-quality variation documentation, and the distinction between intervention coverage and verified developmental impact.
 
 ## Girls Secondary Education Enrollment And Retention Barriers In Sub-Saharan Africa
 
@@ -310,7 +310,7 @@ Build a verified workflow for identifying where secondary school enrollment and 
 
 Build a verified workflow for measuring and tracking post-pandemic learning loss in low-income countries where standardized assessment data is sparse, without overstating the precision of reconstructed learning estimates.
 
-## School Feeding Program Coverage And Nutritional Impact Gaps
+## School Feeding Program Coverage And Nutritional Impact Gaps In Low-Income Countries
 
 - ID: `education/school-feeding-coverage-global`
 - Status: `scoped`
@@ -318,7 +318,7 @@ Build a verified workflow for measuring and tracking post-pandemic learning loss
 - Region: `global`
 - Source: [problem-packs/education/school-feeding-coverage-global](../../problem-packs/education/school-feeding-coverage-global/problem.md)
 
-Build a verified workflow for measuring school feeding program coverage and nutritional impact, linking WFP program data, enrollment data, and nutrition-outcome data.
+Build a verified workflow for mapping school feeding program coverage and estimating nutritional impact at sub-national scale in low-income countries, with explicit coverage-data limitations, meal-quality variation documentation, and the distinction between program existence and verified nutritional impact.
 
 ## Youth Skills Training And Employment Outcome Gaps In Low-Income Countries
 
@@ -328,7 +328,7 @@ Build a verified workflow for measuring school feeding program coverage and nutr
 - Region: `global`
 - Source: [problem-packs/education/skills-training-youth-employment-global](../../problem-packs/education/skills-training-youth-employment-global/problem.md)
 
-Build a verified workflow for measuring youth skills-training enrollment and employment-outcome gaps.
+Build a verified workflow for mapping youth skills-training availability and estimating employment-outcome effectiveness at sub-national scale in LMICs, with explicit training-provider data fragmentation documentation, employment-outcome tracking limitations, and the distinction between training enrollment and verified employment impact.
 
 ## Teacher Qualification Distribution And Deployment Equity Gaps In Low-Income Countries
 
@@ -338,7 +338,7 @@ Build a verified workflow for measuring youth skills-training enrollment and emp
 - Region: `global`
 - Source: [problem-packs/education/teacher-quality-distribution-global](../../problem-packs/education/teacher-quality-distribution-global/problem.md)
 
-Build a verified workflow for measuring teacher qualification distribution and deployment equity gaps.
+Build a verified workflow for mapping teacher-qualification distribution and deployment-equity gaps at sub-national scale in low-income countries, with explicit EMIS data-quality documentation, qualification-proxy limitations, and the distinction between teacher presence and teaching effectiveness.
 
 ## Clean Cooking Adoption Barriers And Health Impact In Sub-Saharan Africa
 
@@ -358,9 +358,9 @@ Build a verified workflow for identifying where household air pollution from sol
 - Region: `global`
 - Source: [problem-packs/energy-access/clean-energy-financing-global](../../problem-packs/energy-access/clean-energy-financing-global/problem.md)
 
-Build a verified workflow for measuring clean energy financing access gaps, linking investment-flow data, project-pipeline data, and energy-access gap data.
+Build a verified workflow for mapping clean energy financing gaps at sub-national scale in low-income countries, with explicit investment-flow data limitations, financing-structure barrier documentation, and the distinction between financing volume and financing access.
 
-## Clean Cooking Standards Compliance And Stove Performance Verification Gaps
+## Clean Cooking Standards Compliance And Stove Performance Verification Gaps In Low-Income Countries
 
 - ID: `energy-access/cooking-standards-compliance-global`
 - Status: `scoped`
@@ -368,7 +368,7 @@ Build a verified workflow for measuring clean energy financing access gaps, link
 - Region: `global`
 - Source: [problem-packs/energy-access/cooking-standards-compliance-global](../../problem-packs/energy-access/cooking-standards-compliance-global/problem.md)
 
-Build a verified workflow for verifying clean-cooking stove performance and standards compliance.
+Build a verified workflow for assessing clean-cooking stove standards compliance and laboratory-to-field performance gaps, with explicit ISO/IWA standards documentation, field-performance measurement methodology, and the distinction between laboratory and verified field performance.
 
 ## Mini-Grid Rural Electrification Viability In Sub-Saharan Africa
 
@@ -388,7 +388,7 @@ Build a verified workflow for identifying where solar-hybrid mini-grids are tech
 - Region: `global`
 - Source: [problem-packs/energy-access/productive-use-energy-global](../../problem-packs/energy-access/productive-use-energy-global/problem.md)
 
-Build a verified workflow for identifying where electrification enables productive-use applications in agricultural value chains.
+Build a verified workflow for mapping the gap between electricity access and productive use in agricultural value chains at sub-national scale in LMICs, with explicit mini-grid customer data limitations, agricultural value-chain specificity, and the distinction between electricity availability and verified productive use.
 
 ## Renewable Energy Grid Integration Bottlenecks In Low- And Middle-Income Countries
 
@@ -420,7 +420,7 @@ Build a verified workflow for measuring the gap between actual and attainable cr
 
 Build a verified workflow for assessing where rainfall, vegetation, and market-price signals provide usable lead time for food insecurity early warning in the Horn of Africa.
 
-## Fertilizer Access And Soil Nutrient Depletion In Smallholder Agriculture
+## Fertilizer Access And Soil Nutrient Depletion In Smallholder Agriculture In Sub-Saharan Africa
 
 - ID: `food-security/fertilizer-access-sub-saharan-africa`
 - Status: `scoped`
@@ -428,7 +428,7 @@ Build a verified workflow for assessing where rainfall, vegetation, and market-p
 - Region: `sub-saharan-africa`
 - Source: [problem-packs/food-security/fertilizer-access-sub-saharan-africa](../../problem-packs/food-security/fertilizer-access-sub-saharan-africa/problem.md)
 
-Build a verified workflow for measuring fertilizer access gaps and soil nutrient depletion in smallholder farming systems in Sub-Saharan Africa.
+Build a verified workflow for mapping fertilizer access gaps and soil nutrient depletion at sub-national scale in SSA smallholder farming systems, with explicit fertilizer-use data limitations, distribution-infrastructure barriers, and soil-specific response variability documentation.
 
 ## Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa
 
@@ -448,7 +448,7 @@ Build a verified workflow for detecting overexploitation of small-scale fisherie
 - Region: `sub-saharan-africa`
 - Source: [problem-packs/food-security/food-loss-postharvest-sub-saharan-africa](../../problem-packs/food-security/food-loss-postharvest-sub-saharan-africa/problem.md)
 
-Build a verified workflow for measuring postharvest food loss at sub-national scale in Sub-Saharan Africa, linking crop-production data, storage-infrastructure data, and household-survey food-loss modules.
+Build a verified workflow for mapping postharvest food loss at sub-national scale in SSA, with explicit loss-estimation methodology documentation, crop-specific loss data, and the distinction between modeled estimates and verified household-level measurement.
 
 ## Livestock Disease Surveillance And Pastoralist Livelihood Risk In East Africa
 

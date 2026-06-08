@@ -64,10 +64,7 @@
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
     "outcome": "A failure-mode review identifying how connectivity maps could overstate digital-readiness by ignoring electricity, device, and teacher-literacy gaps, how satellite classification could misclassify intermittent connectivity, and how results could drive technology procurement without complementary investments.",
-    "inputs": [
-      "connectivity-gap mapping outputs",
-      "safety policy"
-    ],
+    "inputs": ["connectivity-gap mapping outputs", "safety policy"],
     "expected_artifact": "outputs.md and SAFETY.md linked review note.",
     "validation_method": "Reviewer confirms every connectivity claim has classification-methodology documentation, data-currency assessment, and connectivity-vs-usage disclaimers. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",

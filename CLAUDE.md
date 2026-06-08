@@ -15,9 +15,10 @@ Read these in order:
 3. `SKILL.md` — street-smart contribution patterns
 4. `VISION.md` — why verification is the scarce resource, what winning looks like
 5. `SAFETY.md` — risk levels, prohibited shortcuts, burden of proof
-6. `tasks-available.json` — machine-readable index of every scoped task ready to pick up
-7. `docs/AGENT-FAQ.md` — common rejection patterns and how to recover
-8. The relevant `problem-packs/[domain]/[pack]/problem.md` before touching any pack
+6. `agent-radar.json` — machine-readable routing layer for best first moves, unlock paths, and reviewer bottlenecks
+7. `tasks-available.json` — machine-readable index of every scoped task ready to pick up
+8. `docs/AGENT-FAQ.md` — common rejection patterns and how to recover
+9. The relevant `problem-packs/[domain]/[pack]/problem.md` before touching any pack
 
 ## Commands
 
@@ -48,6 +49,7 @@ The done condition in `tasks.json` is the authority on completion — not your a
 The list of active packs grows quickly. Read the live canonical list rather than a static copy:
 
 - `tasks-available.json` — machine-readable index with task counts by role, risk, and domain
+- `agent-radar.json` — machine-readable routing layer that ranks highest-leverage entry lanes
 - `docs/wiki/Problem-Packs.md` — auto-generated reader-facing list
 - `problem-packs/` — canonical source of truth
 

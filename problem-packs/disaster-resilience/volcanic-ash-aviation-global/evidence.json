@@ -60,7 +60,7 @@
     "confidence": "high"
   },
   {
-    "id": "eyjafjallajökull-operational-lessons",
+    "id": "eyjafjallajokull-operational-lessons",
     "problem_id": "disaster-resilience/volcanic-ash-aviation-global",
     "claim": "The 2010 Eyjafjallajökull and 2011 Grímsvötn eruptions demonstrated that ash-concentration thresholds for safe flight are poorly defined — the 'zero tolerance' approach was replaced by risk-based thresholds, but the relationship between ash concentration and engine damage is still being characterized.",
     "evidence_type": "field-report",

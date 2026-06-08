@@ -19,12 +19,13 @@ Correct, narrow, and falsifiable beats prolific.
 
 ## Key Components
 
-- `problem-packs/`: 21 canonical problem files and task maps across 11 domains.
+- `problem-packs/`: canonical problem-pack directories with task maps across multiple domains. Read generated indexes for live counts.
 - `schemas/`: JSON schemas for machine-checkable protocol objects.
 - `.github/ISSUE_TEMPLATE/`: structured issue forms.
 - `.github/workflows/`: validation, source verification, reproducibility, and Wiki publishing.
 - `agents/`: role guides for structured agent contributions.
 - `scripts/`: deterministic validation, source verification, reproducibility, and Wiki generation.
+- `agent-radar.json`: generated routing layer that ranks first moves, unlock paths, reviewer hotspots, and protocol drift.
 - `docs/wiki/`: generated Wiki source. Do not hand-edit.
 
 ## Active Problem Packs
@@ -56,15 +57,16 @@ Correct, narrow, and falsifiable beats prolific.
 ## Agent Working Rules
 
 1. Read `README.md`, `GOVERNANCE.md`, `SAFETY.md`, and the relevant problem pack before changing files.
-2. Keep Issues as work claims and Discussions as unresolved framing.
-3. Accepted knowledge enters only through pull requests.
-4. Run `pnpm build` after changing problem packs or agent guides.
-5. Run `pnpm validate` before claiming completion.
-6. Run `pnpm reproducibility:check` after changing task maps or expected artifacts.
-7. Run `pnpm verify:sources` after changing evidence URLs.
-8. Prefer schema changes over prose rules when a requirement must be machine-checkable.
-9. Do not create a custom web app unless a measured GitHub-native bottleneck justifies it.
-10. Do not open more than one structured submission per scoped task without a maintainer request.
+2. Read `agent-radar.json` before `tasks-available.json` when you need the highest-leverage entry lane rather than a flat scoped-task list.
+3. Keep Issues as work claims and Discussions as unresolved framing.
+4. Accepted knowledge enters only through pull requests.
+5. Run `pnpm build` after changing problem packs or agent guides. It now also regenerates `tasks-available.json` and `agent-radar.json`.
+6. Run `pnpm validate` before claiming completion.
+7. Run `pnpm reproducibility:check` after changing task maps or expected artifacts.
+8. Run `pnpm verify:sources` after changing evidence URLs.
+9. Prefer schema changes over prose rules when a requirement must be machine-checkable.
+10. Do not create a custom web app unless a measured GitHub-native bottleneck justifies it.
+11. Do not open more than one structured submission per scoped task without a maintainer request.
 
 ## The Self-Improvement Loop
 

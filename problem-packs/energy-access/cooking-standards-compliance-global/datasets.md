@@ -2,17 +2,17 @@
 
 ## Candidate Sources
 
-| Source                                | Grain                          | Current status                           | Use                                                      |
-| ------------------------------------- | ------------------------------ | ---------------------------------------- | -------------------------------------------------------- |
-| ISO 19867-1 laboratory test data      | Stove model, lab               | Usable, laboratory only                  | Laboratory performance benchmarks for stove categories   |
-| IWA performance tier data             | Stove model, lab               | Usable, laboratory only                  | Performance tier classification and standards reference  |
-| Field-performance study database      | Stove/household, variable      | Sparse, research-dependent               | Lab-field gap documentation for specific stove-fuel combinations |
-| Global Alliance monitoring data       | Program, variable              | Usable, coverage < 5% deployed stoves    | Field-performance monitoring and compliance assessment   |
-| National testing-laboratory reports   | Stove model, country-specific  | Variable by country                      | Independent compliance verification where infrastructure exists |
-| WHO HAP mortality estimates           | Country, modeled               | Usable, publicly available               | Health-burden baseline for clean-cooking context         |
-| Household survey cooking-fuel data    | Household, periodic            | Usable, publicly available               | Adoption rates and fuel-mix documentation                |
-| Stove-market sales data               | Market, variable               | Variable, often proprietary              | Market composition and stove-category distribution       |
-| Fuel-moisture and cooking-practice studies | Household, variable       | Sparse, research-dependent               | Degradation-factor analysis for lab-field gap            |
+| Source                                     | Grain                         | Current status                        | Use                                                              |
+| ------------------------------------------ | ----------------------------- | ------------------------------------- | ---------------------------------------------------------------- |
+| ISO 19867-1 laboratory test data           | Stove model, lab              | Usable, laboratory only               | Laboratory performance benchmarks for stove categories           |
+| IWA performance tier data                  | Stove model, lab              | Usable, laboratory only               | Performance tier classification and standards reference          |
+| Field-performance study database           | Stove/household, variable     | Sparse, research-dependent            | Lab-field gap documentation for specific stove-fuel combinations |
+| Global Alliance monitoring data            | Program, variable             | Usable, coverage < 5% deployed stoves | Field-performance monitoring and compliance assessment           |
+| National testing-laboratory reports        | Stove model, country-specific | Variable by country                   | Independent compliance verification where infrastructure exists  |
+| WHO HAP mortality estimates                | Country, modeled              | Usable, publicly available            | Health-burden baseline for clean-cooking context                 |
+| Household survey cooking-fuel data         | Household, periodic           | Usable, publicly available            | Adoption rates and fuel-mix documentation                        |
+| Stove-market sales data                    | Market, variable              | Variable, often proprietary           | Market composition and stove-category distribution               |
+| Fuel-moisture and cooking-practice studies | Household, variable           | Sparse, research-dependent            | Degradation-factor analysis for lab-field gap                    |
 
 ## Required Dataset Properties
 

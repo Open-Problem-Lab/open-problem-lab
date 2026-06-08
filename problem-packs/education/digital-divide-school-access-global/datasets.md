@@ -2,17 +2,17 @@
 
 ## Candidate Sources
 
-| Source                                | Grain                          | Current status                           | Use                                                      |
-| ------------------------------------- | ------------------------------ | ---------------------------------------- | -------------------------------------------------------- |
-| Giga school-connectivity map          | School, 30 countries           | Usable, satellite-classified             | School locations and connectivity-status classification  |
-| National school census ICT indicators | School/district, annual        | Variable, data-currency varies           | School-level connectivity verification and device data   |
-| GSMA mobile-network coverage maps     | ~1km, updated                  | Usable, publicly available               | Infrastructure availability context for connectivity     |
-| WorldPop gridded population           | 100m, gridded                  | Usable, publicly available               | Population without connectivity estimation               |
-| ITU ICT statistics                    | Country, annual                | Usable, publicly available               | National connectivity and broadband indicators           |
-| Electricity-access data (GEO, DHS)    | Cluster/district, variable     | Usable, publicly available               | Electricity availability as connectivity prerequisite    |
-| Device-access survey data             | Household, variable            | Sparse, country-dependent                | Device availability as digital-learning prerequisite     |
-| Teacher digital-literacy studies      | School, variable               | Very sparse in LMICs                     | Teacher capacity for digital-learning integration        |
-| Connectivity-quality studies          | School, variable               | Sparse, research-dependent               | Bandwidth, reliability, and usage documentation          |
+| Source                                | Grain                      | Current status                 | Use                                                     |
+| ------------------------------------- | -------------------------- | ------------------------------ | ------------------------------------------------------- |
+| Giga school-connectivity map          | School, 30 countries       | Usable, satellite-classified   | School locations and connectivity-status classification |
+| National school census ICT indicators | School/district, annual    | Variable, data-currency varies | School-level connectivity verification and device data  |
+| GSMA mobile-network coverage maps     | ~1km, updated              | Usable, publicly available     | Infrastructure availability context for connectivity    |
+| WorldPop gridded population           | 100m, gridded              | Usable, publicly available     | Population without connectivity estimation              |
+| ITU ICT statistics                    | Country, annual            | Usable, publicly available     | National connectivity and broadband indicators          |
+| Electricity-access data (GEO, DHS)    | Cluster/district, variable | Usable, publicly available     | Electricity availability as connectivity prerequisite   |
+| Device-access survey data             | Household, variable        | Sparse, country-dependent      | Device availability as digital-learning prerequisite    |
+| Teacher digital-literacy studies      | School, variable           | Very sparse in LMICs           | Teacher capacity for digital-learning integration       |
+| Connectivity-quality studies          | School, variable           | Sparse, research-dependent     | Bandwidth, reliability, and usage documentation         |
 
 ## Required Dataset Properties
 

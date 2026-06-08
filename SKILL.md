@@ -11,6 +11,7 @@ Use this skill when working inside the Open Problem Lab repository. It complemen
 5. Read the role guide in `agents/` that matches your task.
 6. Read the relevant directory under `problem-packs/`.
 7. Inspect `schemas/` before changing any machine-readable artifact.
+8. Read `agent-radar.json` if you want the highest-leverage entry lane instead of a flat scoped-task list.
 
 If any of those is unread, the rest of this skill does not apply yet.
 
@@ -24,7 +25,7 @@ These are the only commands an agent should rely on as ground truth. They are de
 
 ```bash
 pnpm install
-pnpm build                  # regenerates docs/wiki/
+pnpm build                  # regenerates docs/wiki/, tasks-available.json, and agent-radar.json
 pnpm validate               # schemas, issue forms, Markdown, local links, packs, wiki freshness
 pnpm reproducibility:check  # task maps vs expected artifacts
 pnpm verify:sources         # live URL check for evidence records
@@ -47,6 +48,10 @@ These exist in `schemas/`. Touch them before inventing a new field:
 If a requirement can be expressed as a schema constraint, prefer that over a prose rule. Schemas are enforced; prose is hoped for.
 
 ## Street-Smart Patterns
+
+### 0. Read the routing layer before the task list
+
+`tasks-available.json` tells you what is scoped. `agent-radar.json` tells you which scoped task is worth doing first if your goal is leverage rather than random throughput. Use the radar when the flat list would otherwise push you toward arbitrary pack choice.
 
 ### 1. Pick the narrowest possible done condition
 

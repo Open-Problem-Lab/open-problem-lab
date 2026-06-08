@@ -2,17 +2,17 @@
 
 ## Candidate Sources
 
-| Source                                | Grain                          | Current status                           | Use                                                      |
-| ------------------------------------- | ------------------------------ | ---------------------------------------- | -------------------------------------------------------- |
-| National agricultural survey fertilizer modules | Household/district, periodic | Variable by country                      | Sub-national fertilizer-use rates and access data        |
-| AfSIS soil nutrient data              | Point/transect, interpolated   | Usable, research-site concentrated       | Soil nutrient status and depletion assessment            |
-| FAO fertilizer statistics             | Country, annual                | Usable, publicly available               | National fertilizer consumption and import data          |
-| Fertilizer price surveys              | Market-point, variable         | Sparse, country-specific                 | Distribution-infrastructure and price-markup analysis    |
-| Transport-network and market data     | Network, variable              | Variable by country                      | Distribution-infrastructure barrier mapping              |
-| Fertilizer-response trial databases   | Site, crop-specific            | Usable, research-station based           | Soil-specific response rate documentation                |
-| Soil health program documentation     | Program, variable              | Variable by country                      | Soil-specific recommendation and intervention context    |
-| Crop-yield survey data                | Household/district, periodic   | Variable by country                      | Nutrient-balance and response-validation context         |
-| Satellite vegetation indices          | 250m-1km, temporal             | Usable, publicly available               | Crop-condition proxy for soil-fertility context          |
+| Source                                          | Grain                        | Current status                     | Use                                                   |
+| ----------------------------------------------- | ---------------------------- | ---------------------------------- | ----------------------------------------------------- |
+| National agricultural survey fertilizer modules | Household/district, periodic | Variable by country                | Sub-national fertilizer-use rates and access data     |
+| AfSIS soil nutrient data                        | Point/transect, interpolated | Usable, research-site concentrated | Soil nutrient status and depletion assessment         |
+| FAO fertilizer statistics                       | Country, annual              | Usable, publicly available         | National fertilizer consumption and import data       |
+| Fertilizer price surveys                        | Market-point, variable       | Sparse, country-specific           | Distribution-infrastructure and price-markup analysis |
+| Transport-network and market data               | Network, variable            | Variable by country                | Distribution-infrastructure barrier mapping           |
+| Fertilizer-response trial databases             | Site, crop-specific          | Usable, research-station based     | Soil-specific response rate documentation             |
+| Soil health program documentation               | Program, variable            | Variable by country                | Soil-specific recommendation and intervention context |
+| Crop-yield survey data                          | Household/district, periodic | Variable by country                | Nutrient-balance and response-validation context      |
+| Satellite vegetation indices                    | 250m-1km, temporal           | Usable, publicly available         | Crop-condition proxy for soil-fertility context       |
 
 ## Required Dataset Properties
 

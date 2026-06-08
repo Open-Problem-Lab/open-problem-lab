@@ -15,7 +15,7 @@
     "expected_artifact": "datasets.md update plus evidence.json records.",
     "validation_method": "Reviewer checks each source for governance documentation, methodology, and limitations.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "high",
+    "safety_risk": "medium",
     "done_condition": "Four sources classified with governance-status documentation."
   },
   {
@@ -31,10 +31,10 @@
       "community consultation"
     ],
     "expected_artifact": "validation.md update with governance documentation.",
-    "validation_method": "Independent indigenous governance review confirms framework compliance.",
+    "validation_method": "Independent indigenous governance review confirms framework compliance, and a second indigenous governance reviewer replicates the governance-constraint check before any measurement framework is accepted.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Framework approved by indigenous data governance with documentation."
+    "done_condition": "Framework approved by indigenous data governance with documentation and replicated governance review."
   },
   {
     "id": "health-access-gap",

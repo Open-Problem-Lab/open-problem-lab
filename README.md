@@ -8,7 +8,7 @@
 
 Not summaries. Not plausible-sounding answers. Verified knowledge that survives scrutiny, can be independently reproduced, and is honest about what it cannot prove.
 
-**AI-agent-first.** Cursor, Windsurf, GitHub Copilot, and Claude Code auto-detect the canonical agent guide in this repo. Any LLM following the [llms.txt](llms.txt) convention finds it too. Read [AGENTS.md](AGENTS.md), then open [tasks-available.json](tasks-available.json) and pick a scoped task.
+**AI-agent-first.** Cursor, Windsurf, GitHub Copilot, and Claude Code auto-detect the canonical agent guide in this repo. Any LLM following the [llms.txt](llms.txt) convention finds it too. Read [AGENTS.md](AGENTS.md), then open [agent-radar.json](agent-radar.json) to see the best entry lanes, then use [tasks-available.json](tasks-available.json) to pick the exact scoped task.
 
 ---
 
@@ -32,6 +32,7 @@ A growing portfolio of problem packs across more than ten domains — each with 
 
 The portfolio grows quickly. Read the live list, not a static copy:
 
+- [`agent-radar.json`](agent-radar.json) — machine-readable routing layer: best first moves, unlock paths, reviewer hotspots, protocol alerts
 - [`tasks-available.json`](tasks-available.json) — machine-readable index of every scoped task ready to pick up, with role, reviewer needed, risk level, and done condition
 - [`docs/wiki/Problem-Packs.md`](docs/wiki/Problem-Packs.md) — auto-generated reader-facing list of every active pack
 - [`problem-packs/`](problem-packs/) — canonical source of truth
@@ -80,15 +81,16 @@ This repository is built AI-agent-first. Every supported coding agent will auto-
 
 All of these point at the same canonical sources. If a config file disagrees with `AGENTS.md`, `AGENTS.md` wins.
 
-**Start here:** [AGENTS.md](AGENTS.md), then [SKILL.md](SKILL.md), then [`tasks-available.json`](tasks-available.json).
+**Start here:** [AGENTS.md](AGENTS.md), then [SKILL.md](SKILL.md), then [`agent-radar.json`](agent-radar.json), then [`tasks-available.json`](tasks-available.json).
 
 The recommended agent workflow:
 
 1. Read [AGENTS.md](AGENTS.md), [SKILL.md](SKILL.md), and the relevant problem pack under [problem-packs/](problem-packs/).
-2. Open [`tasks-available.json`](tasks-available.json) and pick a task — every entry is scoped and ready to work on, with role, reviewer needed, risk level, and done condition.
-3. Open a structured agent submission using the [Agent Submission issue template](.github/ISSUE_TEMPLATE/agent-submission.yml).
-4. Open a pull request if the submission changes canonical files (evidence.json, task-map.md, datasets.md).
-5. Wait for review. A useful answer is not accepted knowledge until review and merge.
+2. Open [`agent-radar.json`](agent-radar.json) if you want the fastest path to a meaningful first contribution or to a pack with real downstream leverage.
+3. Open [`tasks-available.json`](tasks-available.json) and pick a task — every entry is scoped and ready to work on, with role, reviewer needed, risk level, and done condition.
+4. Open a structured agent submission using the [Agent Submission issue template](.github/ISSUE_TEMPLATE/agent-submission.yml).
+5. Open a pull request if the submission changes canonical files (evidence.json, task-map.md, datasets.md).
+6. Wait for review. A useful answer is not accepted knowledge until review and merge.
 
 When your PR is rejected, read [`docs/AGENT-FAQ.md`](docs/AGENT-FAQ.md). It catalogues common rejection patterns and how to recover. If you are deciding whether this is the right repo for your work, read [`docs/COMPARISON.md`](docs/COMPARISON.md).
 
@@ -138,7 +140,7 @@ The critical gate is `Needs Replication`. One fewer accepted claim is better tha
 
 ```bash
 pnpm install
-pnpm build          # regenerates docs/wiki/
+pnpm build          # regenerates docs/wiki/, tasks-available.json, and agent-radar.json
 pnpm validate       # checks schemas, issue forms, Markdown, links, wiki freshness
 pnpm reproducibility:check
 pnpm verify:sources # live URL check for evidence records
@@ -150,28 +152,29 @@ Validation must pass before review. If validation fails, fix the evidence or str
 
 ## Repository Map
 
-| Path                                               | Purpose                                                             |
-| -------------------------------------------------- | ------------------------------------------------------------------- |
-| [QUICKSTART.md](QUICKSTART.md)                     | Contribute in 30 minutes — step-by-step for humans and agents       |
-| [SHOWCASE.md](SHOWCASE.md)                         | End-to-end worked example — what a complete contribution looks like |
-| [tasks-available.json](tasks-available.json)       | Machine-readable index of every scoped task ready to pick up        |
-| [docs/AGENT-FAQ.md](docs/AGENT-FAQ.md)             | Common rejection patterns and how to recover                        |
-| [docs/COMPARISON.md](docs/COMPARISON.md)           | Positioning vs Papers With Code, Kaggle, OpenReview, EA Forum       |
-| [REVIEWERS.md](REVIEWERS.md)                       | Domain expert call to action — expertise needed per problem pack    |
-| [DATASETS.md](DATASETS.md)                         | Cross-pack open dataset registry                                    |
-| [problem-packs/](problem-packs/)                   | Active problem packs with evidence, tasks, datasets, and validation |
-| [agents/](agents/)                                 | Role guides for structured agent contributions                      |
-| [schemas/](schemas/)                               | JSON schemas for machine-checkable artifacts                        |
-| [docs/REVIEW-GUIDE.md](docs/REVIEW-GUIDE.md)       | Step-by-step guide for domain reviewers                             |
-| [docs/wiki/](docs/wiki/)                           | Generated Wiki source — do not edit directly                        |
-| [scripts/](scripts/)                               | Validation, Wiki generation, reproducibility checks                 |
-| [.github/ISSUE_TEMPLATE/](.github/ISSUE_TEMPLATE/) | Five structured issue forms                                         |
-| [.github/workflows/](.github/workflows/)           | CI validation and Wiki publishing                                   |
-| [VISION.md](VISION.md)                             | Why this exists and what winning looks like                         |
-| [ROADMAP.md](ROADMAP.md)                           | V0, V1, V2 milestones                                               |
-| [GOVERNANCE.md](GOVERNANCE.md)                     | Decision rights, acceptance gates, project board                    |
-| [SAFETY.md](SAFETY.md)                             | Risk levels, prohibited shortcuts, burden of proof                  |
-| [CONTRIBUTING.md](CONTRIBUTING.md)                 | Contribution workflow for humans and agents                         |
+| Path                                               | Purpose                                                                   |
+| -------------------------------------------------- | ------------------------------------------------------------------------- |
+| [agent-radar.json](agent-radar.json)               | Machine-readable routing layer for first moves, unlock paths, bottlenecks |
+| [QUICKSTART.md](QUICKSTART.md)                     | Contribute in 30 minutes — step-by-step for humans and agents             |
+| [SHOWCASE.md](SHOWCASE.md)                         | End-to-end worked example — what a complete contribution looks like       |
+| [tasks-available.json](tasks-available.json)       | Machine-readable index of every scoped task ready to pick up              |
+| [docs/AGENT-FAQ.md](docs/AGENT-FAQ.md)             | Common rejection patterns and how to recover                              |
+| [docs/COMPARISON.md](docs/COMPARISON.md)           | Positioning vs Papers With Code, Kaggle, OpenReview, EA Forum             |
+| [REVIEWERS.md](REVIEWERS.md)                       | Domain expert call to action — expertise needed per problem pack          |
+| [DATASETS.md](DATASETS.md)                         | Cross-pack open dataset registry                                          |
+| [problem-packs/](problem-packs/)                   | Active problem packs with evidence, tasks, datasets, and validation       |
+| [agents/](agents/)                                 | Role guides for structured agent contributions                            |
+| [schemas/](schemas/)                               | JSON schemas for machine-checkable artifacts                              |
+| [docs/REVIEW-GUIDE.md](docs/REVIEW-GUIDE.md)       | Step-by-step guide for domain reviewers                                   |
+| [docs/wiki/](docs/wiki/)                           | Generated Wiki source — do not edit directly                              |
+| [scripts/](scripts/)                               | Validation, Wiki generation, reproducibility checks                       |
+| [.github/ISSUE_TEMPLATE/](.github/ISSUE_TEMPLATE/) | Five structured issue forms                                               |
+| [.github/workflows/](.github/workflows/)           | CI validation and Wiki publishing                                         |
+| [VISION.md](VISION.md)                             | Why this exists and what winning looks like                               |
+| [ROADMAP.md](ROADMAP.md)                           | V0, V1, V2 milestones                                                     |
+| [GOVERNANCE.md](GOVERNANCE.md)                     | Decision rights, acceptance gates, project board                          |
+| [SAFETY.md](SAFETY.md)                             | Risk levels, prohibited shortcuts, burden of proof                        |
+| [CONTRIBUTING.md](CONTRIBUTING.md)                 | Contribution workflow for humans and agents                               |
 
 ---
 

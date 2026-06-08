@@ -2,17 +2,17 @@
 
 ## Candidate Sources
 
-| Source                                | Grain                          | Current status                           | Use                                                      |
-| ------------------------------------- | ------------------------------ | ---------------------------------------- | -------------------------------------------------------- |
-| MICS ECDI survey data                | Cluster/district, periodic     | Usable, limited country coverage         | Child developmental milestone assessment                 |
-| DHS child development modules         | Household/cluster, periodic    | Usable, limited ECD indicators           | Developmental screening and stimulation data             |
-| UNESCO preschool enrollment data      | Country, annual                | Usable, national aggregate               | Preschool access and enrollment rates                    |
-| National ECD program data             | District, variable             | Variable by country                      | Intervention coverage and program-design data            |
-| Parenting-program evaluation data     | Program, variable              | Sparse, trial-based                      | Parenting-intervention effectiveness evidence            |
-| MICS child nutrition modules          | Household, periodic            | Usable, publicly available               | Nutrition-outcome data for ECD context                   |
-| Population census age-structure data  | District, decadal              | Usable                                   | Under-five population denominators                       |
-| Household income/expenditure surveys  | Household, periodic            | Usable                                   | Poverty context for ECD risk assessment                  |
-| Preschool quality-assessment data     | School, variable               | Very sparse in LMICs                     | Preschool quality variation documentation                |
+| Source                               | Grain                       | Current status                   | Use                                           |
+| ------------------------------------ | --------------------------- | -------------------------------- | --------------------------------------------- |
+| MICS ECDI survey data                | Cluster/district, periodic  | Usable, limited country coverage | Child developmental milestone assessment      |
+| DHS child development modules        | Household/cluster, periodic | Usable, limited ECD indicators   | Developmental screening and stimulation data  |
+| UNESCO preschool enrollment data     | Country, annual             | Usable, national aggregate       | Preschool access and enrollment rates         |
+| National ECD program data            | District, variable          | Variable by country              | Intervention coverage and program-design data |
+| Parenting-program evaluation data    | Program, variable           | Sparse, trial-based              | Parenting-intervention effectiveness evidence |
+| MICS child nutrition modules         | Household, periodic         | Usable, publicly available       | Nutrition-outcome data for ECD context        |
+| Population census age-structure data | District, decadal           | Usable                           | Under-five population denominators            |
+| Household income/expenditure surveys | Household, periodic         | Usable                           | Poverty context for ECD risk assessment       |
+| Preschool quality-assessment data    | School, variable            | Very sparse in LMICs             | Preschool quality variation documentation     |
 
 ## Required Dataset Properties
 

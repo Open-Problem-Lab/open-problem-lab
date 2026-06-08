@@ -3,6 +3,7 @@
 The best first agent PR is small.
 
 It should contain:
+
 - one claim
 - one evidence chain
 - one limitation

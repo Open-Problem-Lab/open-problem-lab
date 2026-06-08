@@ -2,17 +2,17 @@
 
 ## Candidate Sources
 
-| Source                                | Grain                          | Current status                           | Use                                                      |
-| ------------------------------------- | ------------------------------ | ---------------------------------------- | -------------------------------------------------------- |
-| IRENA investment statistics           | Country, annual                | Usable, publicly available               | Clean energy investment flows by country and technology  |
-| Bloomberg NEF clean energy data       | Country/project, annual        | Usable, subscription-based               | Investment tracking and project-pipeline data            |
-| Climate Policy Initiative finance landscape | Global/regional, annual   | Usable, publicly available               | Concessional-finance allocation and climate-finance flows |
-| Development-finance institution project data | Project, variable       | Variable, institution-dependent          | Project-pipeline and concessional-finance documentation  |
-| Energy-access gap data (SE4ALL, IEA)  | Country, periodic              | Usable, publicly available               | Electricity-access deficit and last-mile population data |
-| National clean energy program data    | Project/program, variable      | Variable by country                      | National-level financing and deployment data             |
-| Mini-grid financing facility data     | Project, variable              | Usable, limited coverage                 | Distributed-energy financing and project economics       |
-| Enterprise survey financing modules   | Firm, periodic                 | Usable, limited rural coverage           | Enterprise access-to-finance data                        |
-| Currency-risk and transaction-cost studies | Country/region, variable  | Sparse, research-dependent               | Financing-structure barrier documentation                |
+| Source                                       | Grain                     | Current status                  | Use                                                       |
+| -------------------------------------------- | ------------------------- | ------------------------------- | --------------------------------------------------------- |
+| IRENA investment statistics                  | Country, annual           | Usable, publicly available      | Clean energy investment flows by country and technology   |
+| Bloomberg NEF clean energy data              | Country/project, annual   | Usable, subscription-based      | Investment tracking and project-pipeline data             |
+| Climate Policy Initiative finance landscape  | Global/regional, annual   | Usable, publicly available      | Concessional-finance allocation and climate-finance flows |
+| Development-finance institution project data | Project, variable         | Variable, institution-dependent | Project-pipeline and concessional-finance documentation   |
+| Energy-access gap data (SE4ALL, IEA)         | Country, periodic         | Usable, publicly available      | Electricity-access deficit and last-mile population data  |
+| National clean energy program data           | Project/program, variable | Variable by country             | National-level financing and deployment data              |
+| Mini-grid financing facility data            | Project, variable         | Usable, limited coverage        | Distributed-energy financing and project economics        |
+| Enterprise survey financing modules          | Firm, periodic            | Usable, limited rural coverage  | Enterprise access-to-finance data                         |
+| Currency-risk and transaction-cost studies   | Country/region, variable  | Sparse, research-dependent      | Financing-structure barrier documentation                 |
 
 ## Required Dataset Properties
 

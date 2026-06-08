@@ -16,7 +16,7 @@
     "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
     "validation_method": "Reviewer checks each listed source for URL, date, access status, license, resolution, and documented limitations — particularly SAR accuracy in urban canyons and drainage-data availability.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "high",
+    "safety_risk": "medium",
     "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, urban accuracy, and drainage-data availability."
   },
   {

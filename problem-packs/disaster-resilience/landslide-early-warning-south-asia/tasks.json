@@ -16,7 +16,7 @@
     "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
     "validation_method": "Reviewer checks each listed source for URL, date, access status, license, resolution, and documented limitations — particularly InSAR performance in steep/forested terrain and rainfall accuracy in mountainous regions.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "high",
+    "safety_risk": "medium",
     "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, Himalayan terrain validation, and data-gap documentation."
   },
   {
@@ -64,10 +64,7 @@
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
     "outcome": "A failure-mode review identifying how susceptibility maps could be mistaken for predictions, how InSAR limitations could create false confidence in deformation monitoring, and how results could be used for inappropriate village-relocation or road-closure decisions.",
-    "inputs": [
-      "susceptibility and exposure analysis outputs",
-      "safety policy"
-    ],
+    "inputs": ["susceptibility and exposure analysis outputs", "safety policy"],
     "expected_artifact": "outputs.md and SAFETY.md linked review note.",
     "validation_method": "Reviewer confirms every susceptibility claim has probabilistic-language documentation, InSAR limitations, and explicit non-prediction disclaimers. Second reviewer replicates the failure-mode check.",
     "reviewer_needed": "red-team-reviewer",

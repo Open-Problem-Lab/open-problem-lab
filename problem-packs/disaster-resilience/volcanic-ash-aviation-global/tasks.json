@@ -16,7 +16,7 @@
     "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
     "validation_method": "Reviewer checks each listed source for URL, date, access status, license, detection capability, and documented regional gaps — particularly false-positive rates, nighttime limitations, and submarine volcanic monitoring coverage.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "high",
+    "safety_risk": "medium",
     "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering detection capability, regional coverage, false-positive documentation, and monitoring-network density."
   },
   {

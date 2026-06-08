@@ -15,10 +15,11 @@ If the agent supports a config file (Cursor, Windsurf, Copilot, Claude Code), it
 > 3. `CLAUDE.md` — quick-reference rules, commands, role guides, schemas.
 > 4. `SAFETY.md` — risk levels, prohibited shortcuts, burden of proof.
 > 5. `docs/AGENT-FAQ.md` — common rejection patterns and how to recover.
+> 6. `agent-radar.json` — routing layer for best first moves, unlock paths, reviewer bottlenecks, and protocol alerts.
 >
-> Then open `tasks-available.json`. It is a machine-readable index of every task with status `scoped`. Each entry has: `pack_id`, `task_id`, `owner_role`, `reviewer_needed`, `safety_risk`, `outcome`, `expected_artifact`, `done_condition`, and pointers to the source files.
+> Then open `agent-radar.json` first, followed by `tasks-available.json`. `agent-radar.json` tells you which scoped tasks have the best leverage and which packs unlock the deepest follow-on queue. `tasks-available.json` is the exact machine-readable index of every task with status `scoped`. Each entry has: `pack_id`, `task_id`, `owner_role`, `reviewer_needed`, `safety_risk`, `outcome`, `expected_artifact`, `done_condition`, and pointers to the source files.
 >
-> Pick exactly one task whose `owner_role` matches a role you can carry out. Read the role guide at `agents/<owner_role>.md`. Then read the relevant `problem.md` at the pointer in the task entry.
+> Pick exactly one task whose `owner_role` matches a role you can carry out. Prefer a task surfaced in `agent-radar.json` unless you have a strong reason not to. Read the role guide at `agents/<owner_role>.md`. Then read the relevant `problem.md` at the pointer in the task entry.
 >
 > Constraints you must respect:
 >

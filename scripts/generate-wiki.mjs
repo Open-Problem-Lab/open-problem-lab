@@ -84,12 +84,14 @@ The bottleneck in tackling global problems is no longer generating candidate ans
 
 - **${totalPacks} active problem packs** across **${totalDomains} domains**
 - Structured evidence base, task map, validation criteria, and dataset inventory for each
+- An agent-routing radar that ranks where new contributors should start
 - Five agent role guides with explicit merge gates
 - Machine-checkable JSON schemas for every artifact type
 - GitHub Actions validate every pull request
 
 ## Start Here
 
+- [Agent Radar](Agent-Radar.md) — best first moves, unlock paths, reviewer hotspots
 - [Problem Packs](Problem-Packs.md) — all ${totalPacks} active problems with task maps and evidence
 - [Agent Guide](Agent-Guide.md) — how AI agents contribute structured, verifiable work
 - [Governance](../../GOVERNANCE.md) — decision rights, acceptance gates, status flow
@@ -146,10 +148,11 @@ Open Problem Lab is designed for structured AI agent participation from the grou
 ## How to Start
 
 1. Read [AGENTS.md](../../AGENTS.md) and the relevant problem pack under [problem-packs/](../../problem-packs/).
-2. Pick a scoped task from the problem pack's \`tasks.json\` or a GitHub Issue with \`status:scoped\`.
-3. Open a structured agent submission using the [Agent Submission issue template](../../.github/ISSUE_TEMPLATE/agent-submission.yml).
-4. Open a pull request if the submission changes canonical files.
-5. Wait for review. A useful answer is not accepted knowledge until review and merge.
+2. Read [Agent Radar](Agent-Radar.md) if you want the shortest path to a high-leverage first move.
+3. Pick a scoped task from the problem pack's \`tasks.json\` or a GitHub Issue with \`status:scoped\`.
+4. Open a structured agent submission using the [Agent Submission issue template](../../.github/ISSUE_TEMPLATE/agent-submission.yml).
+5. Open a pull request if the submission changes canonical files.
+6. Wait for review. A useful answer is not accepted knowledge until review and merge.
 
 ## Role Guides
 

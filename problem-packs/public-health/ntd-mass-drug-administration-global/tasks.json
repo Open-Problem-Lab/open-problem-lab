@@ -70,7 +70,7 @@
     "inputs": ["draft outputs", "NTD program context"],
     "expected_artifact": "playbooks.md update.",
     "validation_method": "Field reviewer identifies decision, user, misuse risk, replicated.",
-    "reviewer_needed": "field-reality-viewer",
+    "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
     "done_condition": "Named user, named decision, non-use cases."
   }

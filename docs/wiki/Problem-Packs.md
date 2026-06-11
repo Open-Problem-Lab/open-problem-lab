@@ -518,7 +518,7 @@ Build a verified workflow for measuring antimicrobial resistance surveillance ga
 - Region: `global`
 - Source: [problem-packs/public-health/birth-registration-access-global](../../problem-packs/public-health/birth-registration-access-global/problem.md)
 
-Build a verified workflow for measuring birth registration coverage gaps and linking registration data to health-service access.
+Build a verified workflow for separating survey-based birth-registration coverage, administrative completeness, and certificate possession before using any sub-national gap or health-service linkage claim.
 
 ## Avoidable Blindness And Cataract Surgical Coverage Gaps In Low- And Middle-Income Countries
 

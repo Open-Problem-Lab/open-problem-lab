@@ -4,16 +4,26 @@
   "status": "scoped",
   "domain": ["public-health"],
   "region": ["global"],
-  "summary": "Build a verified workflow for measuring birth registration coverage gaps and linking registration data to health-service access.",
-  "why_it_matters": "Build a verified workflow for measuring birth registration coverage gaps and linking registration data to health-service access.",
+  "summary": "Build a verified workflow for separating survey-based birth-registration coverage, administrative completeness, and certificate possession before using any sub-national gap or health-service linkage claim.",
+  "why_it_matters": "Birth registration is not one indicator but a family of partially incompatible measures. Survey status for children under 5, administrative completeness of live-birth registration, and documentary proof can diverge sharply. Without making those distinctions explicit, agents will generate attractive but false gap maps. At the same time, health systems often reach infants through delivery care and immunization earlier than civil registries do, making health-touchpoint linkage a plausible but easily overstated intervention path.",
   "success_metrics": [
     {
-      "metric": "Data traceability",
-      "target": "Every claim links dated evidence with methodology.",
-      "validation_method": "Schema validation and reviewer spot-checks."
+      "metric": "Measure-family separation",
+      "target": "Every accepted claim states whether it refers to under-5 survey registration, administrative live-birth completeness, or proof-of-registration, and explains why that measure is appropriate.",
+      "validation_method": "Reviewer spot-checks every merged claim against evidence.json, outputs.md, and validation.md."
+    },
+    {
+      "metric": "Sub-national practicality",
+      "target": "No country is advanced to sub-national analysis without a documented reason that data grain, timing, and denominator choices are strong enough for reviewable work.",
+      "validation_method": "Replicator or reviewer checks country-selection notes and exclusion logic before accepting any gap artifact."
+    },
+    {
+      "metric": "Health-touchpoint specificity",
+      "target": "No health-service linkage claim is merged without naming the touchpoint such as facility birth, postnatal care, or immunization, plus the expected mechanism and failure mode.",
+      "validation_method": "Field-reality and red-team reviewers confirm named user, named decision, and explicit non-use cases."
     }
   ],
-  "safety_level": "low",
+  "safety_level": "medium",
   "canonical_files": [
     "datasets.md",
     "evidence.json",
@@ -29,6 +39,6 @@
   "review_policy": {
     "required_reviews": 2,
     "replication_required": true,
-    "merge_gate": "Schema validation, domain review, safety review, replication."
+    "merge_gate": "Schema validation, domain review, explicit measure-family checks, safety review for field-facing claims, and replication for quantitative outputs."
   }
 }

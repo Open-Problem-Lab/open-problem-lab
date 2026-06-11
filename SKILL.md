@@ -77,9 +77,12 @@ If your task map declares an expected artifact, include the exact command, input
 
 Strong rejections are worth more than mediocre approvals. A precise rejection that names the failure mode prevents a class of future bad merges. If you are reviewing, your output should read like a `review.json` record, not a comment.
 
-### 7. Read the dengue-heat-vietnam pack as the reference
+### 7. Read reference packs before inventing your own standard
 
-`problem-packs/climate-health/dengue-heat-vietnam/` is the calibration sample. New packs should match its level of grain, sourcing, and explicit limits — not exceed scope, not fall short on evidence.
+- `problem-packs/climate-health/dengue-heat-vietnam/` is the calibration sample for operational humility, bounded claims, and analytic-use warnings.
+- `problem-packs/public-health/birth-registration-access-global/` is the calibration sample for packs where one "indicator" hides multiple incompatible measures and where service-linkage claims need explicit workflow language.
+
+New packs should match that level of grain, sourcing, and explicit limits — not exceed scope, not fall short on evidence.
 
 ### 8. Report the friction you hit
 

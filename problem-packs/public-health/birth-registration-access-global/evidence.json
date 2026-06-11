@@ -1,20 +1,129 @@
 [
   {
-    "id": "unicef-birth-registration-2023",
+    "id": "unicef-right-start-life-2024",
     "problem_id": "public-health/birth-registration-access-global",
-    "claim": "UNICEF estimates 1 in 4 children under five globally are not registered, with registration rates below 20 percent in several Sub-Saharan African countries.",
+    "claim": "UNICEF's December 10, 2024 update reports that more than 200 million children under 5 lack a birth certificate globally, including 150 million whose births are unregistered and 55 million whose births are reported as registered but without documentary proof, with the lowest levels concentrated in sub-Saharan Africa.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "Birth Registration for Every Child by 2030",
-      "url": "https://data.unicef.org/resources/birth-registration-for-every-child-by-2030/"
+      "title": "The Right Start in Life: 2024 update",
+      "url": "https://data.unicef.org/resources/the-right-start-in-life-2024-update/"
     },
-    "source_date": "2023-12-01",
-    "access_date": "2026-06-07",
-    "method": "Reviewed UNICEF birth-registration report, coverage data, and barriers analysis.",
+    "source_date": "2024-12-10",
+    "access_date": "2026-06-12",
+    "method": "Reviewed UNICEF's 2024 statistical update page for the latest global counts of unregistered children and children lacking documentary proof.",
     "limitations": [
-      "Registration data depends on survey timing.",
-      "Service-linkage data is qualitative."
+      "The headline figures are global aggregates and do not identify which sub-national units within countries account for the largest gaps.",
+      "The update page is a summary, not a country-by-country methodological appendix.",
+      "Children lacking certificates include both unregistered children and children whose births are reportedly registered but cannot be documented."
     ],
     "confidence": "high"
+  },
+  {
+    "id": "unicef-birth-registration-methodology-page",
+    "problem_id": "public-health/birth-registration-access-global",
+    "claim": "UNICEF's birth-registration methodology states that in many low- and middle-income countries the main comparable data source is household surveys, especially DHS and MICS, because functioning administrative registration systems remain incomplete and survey timing strongly shapes the indicator.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "UNICEF Data birth registration topic page",
+      "url": "https://data.unicef.org/topic/child-protection/birth-registration/"
+    },
+    "source_date": "2023-06-01",
+    "access_date": "2026-06-12",
+    "method": "Reviewed UNICEF's methodology notes, data-source section, and interpretation guidance for the birth-registration indicator.",
+    "limitations": [
+      "The page's last visible update is June 2023, so some country-level coverage statements may be older than the 2024 global update.",
+      "The page explains indicator construction and interpretation but does not by itself provide sub-national microdata."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "world-bank-sdg1691-metadata",
+    "problem_id": "public-health/birth-registration-access-global",
+    "claim": "World Bank metadata for SDG indicator SP.REG.BRTH.ZS defines the common comparable measure as the percentage of children under age 5 whose births were registered at the time of the survey and warns that this differs from CRVS measures of live births registered within a specified time frame.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "World Development Indicators metadata for SP.REG.BRTH.ZS",
+      "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SP.REG.BRTH.ZS"
+    },
+    "source_date": "2026-01-28",
+    "access_date": "2026-06-12",
+    "method": "Reviewed World Bank metadata glossary entries for indicator definition, methodology, reference period, and listed limitations.",
+    "limitations": [
+      "The metadata page describes the indicator family and references period coverage, but it is not itself a sub-national dataset.",
+      "The page reflects the World Development Indicators update cycle rather than the publication dates of each underlying country source."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-crvs-fact-sheet-2024",
+    "problem_id": "public-health/birth-registration-access-global",
+    "claim": "WHO's February 27, 2024 CRVS fact sheet states that only about half of countries have the capacity to register at least 90 percent of births and that the health sector is well placed to support birth registration because of its proximity to births and child-health services.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Civil registration and vital statistics",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/civil-registration-and-vital-statistics"
+    },
+    "source_date": "2024-02-27",
+    "access_date": "2026-06-12",
+    "method": "Reviewed WHO's key facts, overview, and health-sector role sections on CRVS capacity and operational relevance.",
+    "limitations": [
+      "The fact sheet focuses on global CRVS capacity, not child-specific sub-national workflows.",
+      "Regional percentages do not identify which countries or districts are suitable for replication work."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-unicef-health-sector-crvs-guidance-2021",
+    "problem_id": "public-health/birth-registration-access-global",
+    "claim": "WHO and UNICEF's 2021 low-income-country guidance treats health facilities, community health workers, and immunization or child-health contact points as operational levers for improving birth registration rather than merely describing the gap.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Health sector contributions towards improving the civil registration of births and deaths in low-income countries",
+      "url": "https://www.who.int/publications/b/56900"
+    },
+    "source_date": "2021-01-01",
+    "access_date": "2026-06-12",
+    "method": "Reviewed the WHO-UNICEF guidance summary and operational framing for birth notification and health-sector participation in CRVS strengthening.",
+    "limitations": [
+      "The guidance is operational and strategic, not a comparative outcomes evaluation.",
+      "It does not prove that every health-sector linkage design improves registration rates in every country context."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "dhs-birth-registration-indicator-guide",
+    "problem_id": "public-health/birth-registration-access-global",
+    "claim": "DHS defines birth registration using de jure children under age 5, distinguishes registered with certificate versus registered without certificate, and calculates the indicator from household roster variables over the five years preceding the survey.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "DHS Guide to Statistics: Birth Registration",
+      "url": "https://www.dhsprogram.com/data/Guide-to-DHS-Statistics/Birth_Registration.htm"
+    },
+    "source_date": "2026-06-12",
+    "access_date": "2026-06-12",
+    "method": "Reviewed the DHS indicator definition, numerator and denominator rules, and handling of missing values.",
+    "limitations": [
+      "The guide documents DHS indicator construction, not the validity of respondent self-report against administrative systems.",
+      "Country-specific questionnaires and roster practices can still vary within the general DHS framework."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "mics-birth-registration-module-availability",
+    "problem_id": "public-health/birth-registration-access-global",
+    "claim": "UNICEF MICS tools and survey-contents pages show that birth registration is a standard questionnaire topic with repeated use across many survey rounds and countries, supporting its role as a major comparable source for low- and middle-income countries.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "UNICEF MICS tools and contents pages",
+      "url": "https://mics.unicef.org/tools/MICS7"
+    },
+    "source_date": "2026-06-12",
+    "access_date": "2026-06-12",
+    "method": "Reviewed the MICS7 tools page and survey-contents listings showing birth registration as a recurring module in the under-5 questionnaire.",
+    "limitations": [
+      "The tools page documents module availability and survey infrastructure rather than country-specific data quality.",
+      "Not every MICS survey includes the same exact customizations, and microdata access still depends on survey release status."
+    ],
+    "confidence": "medium"
   }
 ]

@@ -3,17 +3,17 @@
     "generated_by": "scripts/generate-agent-radar.mjs",
     "schema_version": 1,
     "total_packs": 100,
-    "total_tasks": 515,
+    "total_tasks": 516,
     "scoped_tasks": 100,
-    "latent_tasks": 415,
+    "latent_tasks": 416,
     "status_counts": {
       "scoped": 100,
-      "needs-triage": 415
+      "needs-triage": 416
     },
     "owner_role_counts": {
       "literature-scout": 100,
       "data-cleaner": 96,
-      "implementation-planner": 118,
+      "implementation-planner": 119,
       "red-team-reviewer": 100,
       "field-reality-reviewer": 101
     },
@@ -21,21 +21,37 @@
       "literature-scout": 100
     },
     "reviewer_needed_counts": {
-      "domain-reviewer": 211,
+      "domain-reviewer": 212,
       "replicator": 102,
       "red-team-reviewer": 100,
       "field-reality-reviewer": 102
     },
     "safety_risk_counts": {
-      "medium": 233,
+      "medium": 236,
       "high": 268,
-      "low": 14
+      "low": 12
     },
     "protocol_alert_count": 0
   },
   "protocol_alerts": [],
   "contributor_lanes": {
     "first_moves": [
+      {
+        "pack_id": "public-health/birth-registration-access-global",
+        "pack_title": "Birth Registration Coverage Gaps And Health-Service Linkage In Low-Income Countries",
+        "task_id": "source-inventory",
+        "title": "Inventory survey, CRVS, and health-touchpoint data sources for birth registration analysis",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "low",
+        "done_condition": "At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering measure family, timing, geographic grain, and health-linkage relevance.",
+        "evidence_count": 7,
+        "downstream_tasks_unlocked": 5,
+        "downstream_high_risk_tasks": 2,
+        "problem_file": "problem-packs/public-health/birth-registration-access-global/problem.md",
+        "tasks_file": "problem-packs/public-health/birth-registration-access-global/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
+      },
       {
         "pack_id": "education/digital-divide-school-access-global",
         "pack_title": "Digital Divide Measurement And School Internet Connectivity In Low-Income Countries",
@@ -66,22 +82,6 @@
         "downstream_high_risk_tasks": 0,
         "problem_file": "problem-packs/education/skills-training-youth-employment-global/problem.md",
         "tasks_file": "problem-packs/education/skills-training-youth-employment-global/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
-      },
-      {
-        "pack_id": "public-health/birth-registration-access-global",
-        "pack_title": "Birth Registration Coverage Gaps And Health-Service Linkage In Low-Income Countries",
-        "task_id": "source-inventory",
-        "title": "Inventory data sources for public-health/birth-registration-access-global",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "low",
-        "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons.",
-        "evidence_count": 1,
-        "downstream_tasks_unlocked": 4,
-        "downstream_high_risk_tasks": 2,
-        "problem_file": "problem-packs/public-health/birth-registration-access-global/problem.md",
-        "tasks_file": "problem-packs/public-health/birth-registration-access-global/tasks.json",
         "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
       },
       {
@@ -654,9 +654,9 @@
       {
         "owner_role": "implementation-planner",
         "scoped_tasks": 0,
-        "latent_tasks": 118,
-        "share_of_all_tasks": 0.229,
-        "share_of_latent_tasks": 0.284
+        "latent_tasks": 119,
+        "share_of_all_tasks": 0.231,
+        "share_of_latent_tasks": 0.286
       },
       {
         "owner_role": "field-reality-reviewer",
@@ -670,7 +670,7 @@
         "scoped_tasks": 0,
         "latent_tasks": 100,
         "share_of_all_tasks": 0.194,
-        "share_of_latent_tasks": 0.241
+        "share_of_latent_tasks": 0.24
       },
       {
         "owner_role": "data-cleaner",

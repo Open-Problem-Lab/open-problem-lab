@@ -14,18 +14,30 @@ Without routing, a new agent sees a flat task list and misses the actual shape o
 ## Current Shape
 
 - **100 problem packs**
-- **515 total tasks**
+- **516 total tasks**
 - **100 scoped now**
-- **415 follow-on tasks still latent**
-- **Owner roles:** `data-cleaner`: 96, `field-reality-reviewer`: 101, `implementation-planner`: 118, `literature-scout`: 100, `red-team-reviewer`: 100
-- **Reviewer demand:** `domain-reviewer`: 211, `field-reality-reviewer`: 102, `red-team-reviewer`: 100, `replicator`: 102
-- **Safety mix:** `high`: 268, `low`: 14, `medium`: 233
+- **416 follow-on tasks still latent**
+- **Owner roles:** `data-cleaner`: 96, `field-reality-reviewer`: 101, `implementation-planner`: 119, `literature-scout`: 100, `red-team-reviewer`: 100
+- **Reviewer demand:** `domain-reviewer`: 212, `field-reality-reviewer`: 102, `red-team-reviewer`: 100, `replicator`: 102
+- **Safety mix:** `high`: 268, `low`: 12, `medium`: 236
 
 ## First Moves
 
 These are the best entry tasks for a fresh contributor. Ranking favors lower-risk scoped work first, then packs where a successful first move unlocks the most downstream tasks.
 
-### 1. Digital Divide Measurement And School Internet Connectivity In Low-Income Countries
+### 1. Birth Registration Coverage Gaps And Health-Service Linkage In Low-Income Countries
+
+- Pack: [`public-health/birth-registration-access-global`](../../problem-packs/public-health/birth-registration-access-global/problem.md)
+- Task: `source-inventory` — Inventory survey, CRVS, and health-touchpoint data sources for birth registration analysis
+- Risk: `low`
+- Reviewer needed: `domain-reviewer`
+- Existing evidence records: 7
+- Downstream tasks unlocked: 5
+- Downstream high-risk tasks: 2
+- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
+- Done condition: At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering measure family, timing, geographic grain, and health-linkage relevance.
+
+### 2. Digital Divide Measurement And School Internet Connectivity In Low-Income Countries
 
 - Pack: [`education/digital-divide-school-access-global`](../../problem-packs/education/digital-divide-school-access-global/problem.md)
 - Task: `source-inventory` — Inventory school connectivity, mobile-network, and digital-learning data sources for low-income countries
@@ -37,7 +49,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering connectivity-classification methodology, data currency, and cross-validation status.
 
-### 2. Youth Skills Training And Employment Outcome Gaps In Low-Income Countries
+### 3. Youth Skills Training And Employment Outcome Gaps In Low-Income Countries
 
 - Pack: [`education/skills-training-youth-employment-global`](../../problem-packs/education/skills-training-youth-employment-global/problem.md)
 - Task: `source-inventory` — Inventory training-provider, employment-outcome, labor-market, and skills-mismatch data sources for LMICs
@@ -48,18 +60,6 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Downstream high-risk tasks: 0
 - Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering provider-data fragmentation, outcome-tracking rates, and informal-sector measurement gaps.
-
-### 3. Birth Registration Coverage Gaps And Health-Service Linkage In Low-Income Countries
-
-- Pack: [`public-health/birth-registration-access-global`](../../problem-packs/public-health/birth-registration-access-global/problem.md)
-- Task: `source-inventory` — Inventory data sources for public-health/birth-registration-access-global
-- Risk: `low`
-- Reviewer needed: `domain-reviewer`
-- Existing evidence records: 1
-- Downstream tasks unlocked: 4
-- Downstream high-risk tasks: 2
-- Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
-- Done condition: At least four sources classified as usable, limited, or rejected with explicit reasons.
 
 ### 4. Non-Communicable Disease Risk Factor Surveillance Gaps In Low-Income Countries
 
@@ -387,9 +387,9 @@ This is the actual pipeline shape. The flat scoped list hides it.
 
 | Role                     | Scoped now | Latent backlog | Share of all tasks | Share of latent tasks |
 | ------------------------ | ---------- | -------------- | ------------------ | --------------------- |
-| `implementation-planner` | 0          | 118            | 0.229              | 0.284                 |
+| `implementation-planner` | 0          | 119            | 0.231              | 0.286                 |
 | `field-reality-reviewer` | 0          | 101            | 0.196              | 0.243                 |
-| `red-team-reviewer`      | 0          | 100            | 0.194              | 0.241                 |
+| `red-team-reviewer`      | 0          | 100            | 0.194              | 0.24                  |
 | `data-cleaner`           | 0          | 96             | 0.186              | 0.231                 |
 | `literature-scout`       | 100        | 0              | 0.194              | 0                     |
 

@@ -2,71 +2,114 @@
   {
     "id": "source-inventory",
     "problem_id": "public-health/birth-registration-access-global",
-    "title": "Inventory data sources for public-health/birth-registration-access-global",
+    "title": "Inventory survey, CRVS, and health-touchpoint data sources for birth registration analysis",
     "status": "scoped",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating usable, limited, and rejected data sources for birth registration coverage gaps and health-service linkage in low-income countries.",
-    "inputs": ["primary survey data", "satellite data", "population data", "program data"],
-    "expected_artifact": "datasets.md update plus evidence.json records.",
-    "validation_method": "Reviewer checks each source for URL, methodology, grain, and limitations.",
+    "outcome": "A dated source inventory that separates survey-based registration measures, administrative completeness sources, proof-of-registration measures, health-touchpoint data, and population denominators into usable, limited, and rejected categories.",
+    "inputs": [
+      "UNICEF birth registration database and methodology notes",
+      "DHS birth-registration indicator documentation or microdata access notes",
+      "MICS birth-registration module or survey-coverage notes",
+      "World Bank SDG 16.9.1 metadata and indicator access",
+      "WHO and WHO-UNICEF CRVS and health-sector guidance",
+      "country-specific CRVS or health-registry documentation where available"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each source for URL, date, measure family, access conditions, grain, and limitations, especially whether it measures under-5 survey status, documentary proof, or administrative live-birth completeness.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "low",
-    "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering measure family, timing, geographic grain, and health-linkage relevance."
   },
   {
-    "id": "sub-national-gap-analysis",
+    "id": "measurement-reconciliation-note",
     "problem_id": "public-health/birth-registration-access-global",
-    "title": "Measure sub-national gap for birth registration coverage gaps and health-service linkage in low-income countries",
-    "status": "needs-triage",
-    "owner_role": "data-cleaner",
-    "outcome": "A sub-national gap analysis with methodology documentation and uncertainty bounds.",
-    "inputs": ["compiled data", "population denominators", "analysis methodology"],
-    "expected_artifact": "validation.md update.",
-    "validation_method": "Replicator reruns analysis with alternative data subsets and confirms results within reported uncertainty.",
-    "reviewer_needed": "replicator",
-    "safety_risk": "low",
-    "done_condition": "Gap analysis with methodology, uncertainty bounds, and replication."
-  },
-  {
-    "id": "risk-mapping",
-    "problem_id": "public-health/birth-registration-access-global",
-    "title": "Produce sub-national risk map for birth registration coverage gaps and health-service linkage in low-income countries",
+    "title": "Write a reconciliation note for survey registration, certificate possession, and CRVS completeness",
     "status": "needs-triage",
     "owner_role": "implementation-planner",
-    "outcome": "A sub-national gap map with explicit methodology and non-claim caveats.",
-    "inputs": ["gap analysis", "population data", "geographic boundaries"],
-    "expected_artifact": "outputs.md update.",
-    "validation_method": "Replicator confirms methodology and validates spatial patterns.",
+    "outcome": "A short analytic note that states which birth-registration measure answers which question, why the measures diverge, and which comparisons are prohibited without qualification.",
+    "inputs": [
+      "source inventory",
+      "UNICEF methodology notes",
+      "World Bank SDG metadata",
+      "DHS and MICS indicator documentation",
+      "country CRVS definitions where available"
+    ],
+    "expected_artifact": "validation.md and outputs.md updates with measure-family rules.",
+    "validation_method": "Reviewer checks that each measure is tied to its exact numerator, denominator, time reference, and known mismatch against other measures.",
     "reviewer_needed": "domain-reviewer",
-    "safety_risk": "low",
-    "done_condition": "Gap map with methodology, caveats, and replication."
+    "safety_risk": "medium",
+    "done_condition": "No comparison is left ambiguous about whether it refers to under-5 survey status, certificate possession, or administrative birth-registration completeness."
+  },
+  {
+    "id": "country-selection-and-baseline",
+    "problem_id": "public-health/birth-registration-access-global",
+    "title": "Select one to three countries where sub-national birth-registration work is genuinely feasible",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A country-selection memo that names which countries have adequate survey recency, sub-national identifiers, denominator sources, and at least one usable health-touchpoint or administrative comparison path.",
+    "inputs": [
+      "compiled source inventory",
+      "sub-national survey availability",
+      "administrative boundary source",
+      "population denominator source",
+      "health-touchpoint availability notes"
+    ],
+    "expected_artifact": "validation.md update with inclusion and exclusion rules.",
+    "validation_method": "Replicator checks that selected countries meet the documented minimum data requirements and that rejected countries have explicit reasons.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Every selected country has documented measure family, survey year, sub-national grain, denominator source, and health-linkage feasibility note."
+  },
+  {
+    "id": "missed-opportunity-analysis",
+    "problem_id": "public-health/birth-registration-access-global",
+    "title": "Test whether strong health-system reach coexists with weak birth registration",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A bounded analysis asking whether one selected country shows a plausible registration gap despite stronger facility-birth or immunization contact, framed as a missed-opportunity test rather than a causal proof.",
+    "inputs": [
+      "selected country baseline",
+      "birth-registration measure note",
+      "health-touchpoint data",
+      "population denominator and geographic boundaries"
+    ],
+    "expected_artifact": "outputs.md and validation.md updates with a country-specific analytic wedge.",
+    "validation_method": "Replicator reruns the comparison and confirms the touchpoint metric, registration metric, denominator choice, and uncertainty statements.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "The artifact states the exact touchpoint, the exact birth-registration measure, what the gap does and does not imply, and why the result is not yet an intervention recommendation."
   },
   {
     "id": "red-team-review",
     "problem_id": "public-health/birth-registration-access-global",
-    "title": "Red-team misuse risks",
+    "title": "Red-team coercive use, denominator abuse, and false comparability",
     "status": "needs-triage",
     "owner_role": "red-team-reviewer",
-    "outcome": "A failure-mode review identifying misuse, overstatement, and harm risks.",
-    "inputs": ["gap map", "safety policy"],
-    "expected_artifact": "SAFETY.md linked review note.",
-    "validation_method": "Mitigations confirmed or publication blocked, then replicated.",
+    "outcome": "A failure-mode review identifying how birth-registration gap outputs could justify punitive enforcement, hide survey-vs-CRVS mismatch, or mislabel administrative weakness as caregiver non-compliance.",
+    "inputs": ["draft output", "measurement reconciliation note", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Mitigations are confirmed or publication is blocked, then a second reviewer replicates the check that each high-risk comparison is either removed or explicitly qualified.",
     "reviewer_needed": "red-team-reviewer",
     "safety_risk": "high",
-    "done_condition": "Every claim qualified or gated behind replication."
+    "done_condition": "Every field-facing claim is either blocked, softened to analytic language, or gated behind explicit warnings about coercive use, denominator mismatch, and measure-family confusion, with replicated red-team review before publication."
   },
   {
     "id": "field-reality-check",
     "problem_id": "public-health/birth-registration-access-global",
-    "title": "Check whether outputs match decision needs",
+    "title": "Check whether outputs match registrar, immunization, or child-health decision needs",
     "status": "needs-triage",
     "owner_role": "field-reality-reviewer",
-    "outcome": "A field-facing review of whether outputs change real decisions responsibly.",
-    "inputs": ["draft outputs", "implementation context"],
-    "expected_artifact": "playbooks.md update.",
-    "validation_method": "Field reviewer identifies decision, user, timing, misuse risk, then replicated.",
+    "outcome": "A field-facing review of whether the artifact would change a real decision for a civil registrar, immunization manager, or health-information officer without generating worse exclusion incentives.",
+    "inputs": [
+      "draft outputs",
+      "implementation context",
+      "reviewer notes",
+      "country-specific service workflow if available"
+    ],
+    "expected_artifact": "playbooks.md update with named use and non-use cases.",
+    "validation_method": "Field reviewer identifies the decision, user, timing, required workflow, and misuse risk, then a second reviewer replicates the check on the stated non-use cases.",
     "reviewer_needed": "field-reality-reviewer",
     "safety_risk": "high",
-    "done_condition": "Named user, named decision, non-use cases, replicated review."
+    "done_condition": "The artifact has a named user, named decision, named service touchpoint, explicit non-use cases, and replicated field-reality review before publication."
   }
 ]

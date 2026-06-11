@@ -19,7 +19,7 @@ Correct, narrow, and falsifiable beats prolific.
 
 ## Key Components
 
-- `problem-packs/`: canonical problem-pack directories with task maps across multiple domains. Read generated indexes for live counts.
+- `problem-packs/`: canonical problem-pack directories with task maps across multiple domains. Read generated indexes for live counts. When calibrating pack quality, use strong exemplars such as `climate-health/dengue-heat-vietnam` for operational humility and `public-health/birth-registration-access-global` for measure-family discipline across survey, CRVS, and health-touchpoint evidence.
 - `schemas/`: JSON schemas for machine-checkable protocol objects.
 - `.github/ISSUE_TEMPLATE/`: structured issue forms.
 - `.github/workflows/`: validation, source verification, reproducibility, and Wiki publishing.

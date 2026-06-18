@@ -15,6 +15,26 @@
       "url": "https://caqm.nic.in/",
       "reason": "India Commission for Air Quality Management; live in browser but blocks automated access.",
       "verified": "2026-06-18"
+    },
+    {
+      "url": "https://www.stateofglobalair.org/",
+      "reason": "Health Effects Institute State of Global Air platform; returns 200 but drops connection before full transfer, blocking automated access.",
+      "verified": "2026-06-18"
+    },
+    {
+      "url": "https://landslides.nasa.gov/",
+      "reason": "NASA Global Landslide Hazard portal; live (200 header) but drops connection mid-transfer, blocking automated access.",
+      "verified": "2026-06-18"
+    },
+    {
+      "url": "https://www.icimod.org/",
+      "reason": "ICIMOD homepage; returns 403 to automated requests but is fully accessible in browser.",
+      "verified": "2026-06-18"
+    },
+    {
+      "url": "https://dhsprogram.com/publications/publication-FR374-DHS-Final-Reports.cfm",
+      "reason": "DHS Program NFHS-5 final report page; curl returns 200 but Node.js fetch fails — likely User-Agent blocking for automated requests.",
+      "verified": "2026-06-18"
     }
   ]
 }

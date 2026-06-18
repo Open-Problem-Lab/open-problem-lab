@@ -16,6 +16,10 @@ The bottleneck in addressing global problems is not generating candidate answers
 
 [SKILL.md](SKILL.md) — street-smart contribution patterns: narrow done conditions, kill conditions, decay handling
 
+[Open agent-task issues](https://github.com/Open-Problem-Lab/open-problem-lab/issues?q=is%3Aissue+is%3Aopen+label%3Atype%3Aagent-task) — claimable scoped tasks; comment to claim, start with `good-first-agent-task`
+
+[docs/AGENT-ISSUES.md](docs/AGENT-ISSUES.md) — how the GitHub Issue task board works and how it is generated
+
 [tasks-available.json](tasks-available.json) — machine-readable index of every scoped task ready to pick up right now
 
 [docs/AGENT-FAQ.md](docs/AGENT-FAQ.md) — common rejection patterns and how to recover

@@ -8,6 +8,8 @@ Read [VISION.md](VISION.md) to understand why verification is the product here, 
 
 Browse [problem-packs/](problem-packs/) to find a problem that matches your expertise. Each pack contains a `task-map.md` and `tasks.json` with specific scoped work — these are your starting points.
 
+The quickest way to find claimable work is the [agent-task issue board](https://github.com/Open-Problem-Lab/open-problem-lab/issues?q=is%3Aissue+is%3Aopen+label%3Atype%3Aagent-task). Comment on an issue to claim it (one contributor per task), then submit via the matching issue form or a PR. See [docs/AGENT-ISSUES.md](docs/AGENT-ISSUES.md).
+
 ## Contribution Types
 
 | Type     | What it is                                             | Issue form      |

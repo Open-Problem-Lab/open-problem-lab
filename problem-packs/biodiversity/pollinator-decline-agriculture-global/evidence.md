@@ -18,9 +18,7 @@ Use MapSPAM for sub-national crop-pollination dependence mapping, with the cavea
 
 Use satellite land-cover data as an indirect proxy for pollinator habitat pressure, not as a direct measure of pollinator abundance or diversity. Habitat fragmentation, agricultural intensification, and landscape simplification are documented correlates of pollinator decline primarily from European and North American studies. The transferability to tropical agricultural landscapes is uncertain. Land-cover classification accuracy is lower in tropical and dryland agricultural mosaics. Always document that the proxy-to-pollinator inference chain has not been validated with ground monitoring in the analyzed region.
 
-### Pollinator Monitoring Gap Documentation
-
-Use this source to document the fundamental evidence constraint for this pack: systematic wild pollinator monitoring is almost entirely absent from the LMIC regions where this pack focuses. This means any pollination-service risk map for Sub-Saharan Africa, South Asia, or Southeast Asia must be understood as a proxy-based risk indicator, not a verified decline measurement. Document this gap explicitly in every output.
+> Note (June 2026): a separate "Pollinator Monitoring Gap" record was removed because its cited source URL had rotted (HTTP 404) and its claim duplicated the IPBES geographic-evidence-gap finding documented above. The constraint — systematic wild pollinator monitoring is largely absent from Sub-Saharan Africa, South Asia, and Southeast Asia — is captured by the IPBES record; treat any LMIC pollination-service risk map as a proxy indicator, not a verified decline measurement.
 
 ## Evidence Quality Rule
 

@@ -5,19 +5,20 @@
     "claim": "WMO's State of Climate Services 2023 report on health estimates that fewer than 40 LMICs have operational heat-health early warning systems. Where systems exist, systematic evaluation of mortality-reduction effectiveness is rare — fewer than 10 countries globally have published heat-wave mortality time series with pre- and post-warning-system comparison.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "WMO State of Climate Services 2023: Health",
-      "url": "https://public.wmo.int/en/resources/library/state-of-climate-services-2023-health"
+      "title": "2023 State of Climate Services: Health (WMO-No. 1335)",
+      "url": "https://library.wmo.int/records/item/68500-2023-state-of-climate-services-health"
     },
     "source_date": "2023-11-02",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed WMO report for heat-health warning system country coverage, operational status classification, and effectiveness evaluation assessment. Focused on the gap between system existence and verified effectiveness.",
     "limitations": [
       "The 'fewer than 40' figure is a binary existence indicator — it does not capture whether warnings reach vulnerable populations, trigger protective actions, or reduce mortality.",
       "Effectiveness evaluation data is sparse — the report itself notes the absence of systematic evaluation in most countries.",
       "System coverage does not guarantee effective response — the gap between warning issuance and protective action is not captured by the existence indicator.",
-      "Country-level coverage data may not capture sub-national variation — some countries have national systems that are operational only in major cities."
+      "Country-level coverage data may not capture sub-national variation — some countries have national systems that are operational only in major cities.",
+      "Source URL was repaired in June 2026 after the original link rotted; the specific country counts cited above should be reconfirmed against the WMO-No. 1335 PDF on next review."
     ],
-    "confidence": "high"
+    "confidence": "medium"
   },
   {
     "id": "ahmedabad-heat-action-plan",

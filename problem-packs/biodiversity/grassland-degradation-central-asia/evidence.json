@@ -2,22 +2,22 @@
   {
     "id": "fao-grassland-degradation-2023",
     "problem_id": "biodiversity/grassland-degradation-central-asia",
-    "claim": "The FAO Status of the World's Grasslands estimates that 20-30 percent of global grasslands are degraded, with Central Asian steppes and rangelands experiencing some of the highest degradation rates globally, driven primarily by overgrazing, conversion to cropland, and climate-change-induced aridification.",
+    "claim": "FAO's first Global Assessment of Soil Carbon in Grasslands (2023) finds grasslands hold about 20 percent of the world's soil organic carbon stocks and reports a negative carbon balance — declining stocks indicative of degradation pressure — in several regions including Africa south of the Equator, Central and South America, and East Asia.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "Status of the World's Grasslands",
-      "url": "https://www.fao.org/publications/grasslands/2023"
+      "title": "Global assessment of soil carbon in grasslands",
+      "url": "https://openknowledge.fao.org/items/29349846-3fec-4623-b5bc-0984a860ec43"
     },
-    "source_date": "2023-01-01",
-    "access_date": "2026-06-07",
-    "method": "Reviewed FAO grassland assessment for degradation statistics, driver analysis, and regional comparisons. Focused on Central Asian country-specific data and methodology for classifying degradation.",
+    "source_date": "2023-02-01",
+    "access_date": "2026-06-18",
+    "method": "Re-sourced after the originally cited 'Status of the World's Grasslands' link rotted (HTTP 404) and could not be confirmed to exist under that title; replaced with FAO's verifiable 2023 grassland soil-carbon assessment and rewrote the claim to match what that report actually supports.",
     "limitations": [
-      "The 20-30 percent figure is a global estimate — Central Asian degradation rates may be higher or lower depending on methodology and country.",
-      "Grassland-degradation classification varies by methodology — remote-sensing, field survey, and expert assessment give different results.",
-      "The assessment does not provide sub-national degradation maps suitable for pastoral livelihood analysis.",
-      "Livelihood impact of grassland degradation is discussed qualitatively but not quantified with household-level data."
+      "This report measures soil organic carbon stocks and balance, not a direct percent-degraded statistic; the prior '20-30 percent degraded' figure was not supported by a verifiable FAO source and has been removed.",
+      "Regional carbon-balance findings do not single out Central Asia; a Central-Asia-specific degradation-extent figure still needs a dedicated source.",
+      "Soil-carbon balance is one proxy for degradation; it does not capture vegetation cover loss, biodiversity, or pastoral livelihood impacts.",
+      "Estimates are modeled from global datasets with country-level uncertainty."
     ],
-    "confidence": "high"
+    "confidence": "low"
   },
   {
     "id": "modis-ndvi-grassland-monitoring",

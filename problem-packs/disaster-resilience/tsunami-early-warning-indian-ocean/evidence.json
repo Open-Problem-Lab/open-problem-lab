@@ -6,10 +6,10 @@
     "evidence_type": "primary-source",
     "source": {
       "title": "IOC Tsunami Early Warning and Mitigation System Status Report 2024",
-      "url": "https://www.ioc.unesco.org/en/ioc-tsunami"
+      "url": "https://tsunami.ioc.unesco.org/en/iotwms"
     },
     "source_date": "2024-01-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed IOC status report on warning-system coverage, last-mile gaps, and preparedness indicators.",
     "limitations": [
       "Warning-system coverage does not guarantee effective response.",

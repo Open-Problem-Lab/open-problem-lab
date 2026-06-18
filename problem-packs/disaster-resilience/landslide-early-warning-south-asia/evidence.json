@@ -25,11 +25,11 @@
     "claim": "InSAR from Sentinel-1 at 5-20m resolution can detect ground deformation preceding slope failure, providing days to weeks of warning potential before catastrophic landslides in suitable terrain, but performance is limited in steep, forested, cloud-covered Himalayan terrain.",
     "evidence_type": "dataset",
     "source": {
-      "title": "Sentinel-1 InSAR for landslide monitoring — ESA documentation",
-      "url": "https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-1"
+      "title": "Sentinel-1 Mission — SentiWiki (Copernicus)",
+      "url": "https://sentiwiki.copernicus.eu/web/s1-mission"
     },
     "source_date": "2025-01-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed Sentinel-1 InSAR documentation for deformation-detection methodology, spatial resolution, revisit cycle, and performance limitations in mountainous terrain.",
     "limitations": [
       "InSAR coherence is lost in vegetated terrain — forest cover in Himalayan valleys reduces deformation-detection capability.",

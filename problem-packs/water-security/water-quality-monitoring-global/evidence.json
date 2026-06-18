@@ -5,16 +5,17 @@
     "claim": "WHO/UNICEF JMP estimates 2 billion people drink fecally contaminated water. Fewer than 30 countries report sub-national E. coli data, and fewer than 15 have nationally representative water-quality surveys.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "JMP Progress on Drinking Water, Sanitation and Hygiene 2024",
-      "url": "https://www.who.int/publications/i/item/9789240080880"
+      "title": "Progress on household drinking water, sanitation and hygiene 2000-2022: special focus on gender (WHO/UNICEF JMP 2023)",
+      "url": "https://washdata.org/reports/jmp-2023-wash-households"
     },
     "source_date": "2024-07-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed JMP report water-quality chapters, data availability, and monitoring gaps.",
     "limitations": [
       "Water-quality data depends on national testing programs which are sparse in most LMICs.",
-      "JMP estimates are modeled where testing data is absent."
+      "JMP estimates are modeled where testing data is absent.",
+      "Source URL repaired June 2026; figures should be read against the JMP 2023 update (2.2 billion lacked safely managed drinking water in 2022)."
     ],
-    "confidence": "high"
+    "confidence": "medium"
   }
 ]

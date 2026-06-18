@@ -46,10 +46,10 @@
     "evidence_type": "expert-review",
     "source": {
       "title": "Migration data quality and comparability in South Asian censuses",
-      "url": "https://www.un.org/en/development/desa/pd/content/international-migrant-stock"
+      "url": "https://www.un.org/development/desa/pd/content/international-migrant-stock"
     },
     "source_date": "2024-01-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed census migration-question documentation, definition comparability, and data-quality assessment across South Asian countries.",
     "limitations": [
       "Census migration definitions vary — India uses place of birth, Bangladesh uses last residence, Nepal uses duration of residence — cross-country comparison requires explicit harmonization.",

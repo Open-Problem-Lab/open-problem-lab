@@ -65,17 +65,18 @@
     "claim": "School feeding costs $0.10-$0.50 per child per day depending on program design and local food prices, making cost-effectiveness relative to alternative nutrition interventions (cash transfers, micronutrient supplementation, supplementary feeding) a key policy question.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "WFP School Feeding Cost-Benefit Analysis",
-      "url": "https://www.wfp.org/publications/school-feeding-cost-benefit"
+      "title": "The State of School Feeding Worldwide 2022 — WFP",
+      "url": "https://publications.wfp.org/2022/state-of-school-feeding/"
     },
     "source_date": "2023-06-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed WFP cost-benefit analysis, per-child cost estimates, and comparison with alternative nutrition interventions.",
     "limitations": [
       "The $0.10-$0.50 range depends on program design (on-site cooked meals vs. take-home rations vs. fortified snacks), local food prices, and delivery costs.",
       "Cost-effectiveness comparisons with alternative interventions are sensitive to the outcome measure used (enrollment vs. nutrition vs. learning) — school feeding performs differently across outcomes.",
       "Cost data is self-reported by programs and may not capture all indirect costs (infrastructure, administration, monitoring).",
-      "Cost-effectiveness in one context does not transfer to another — local food prices, enrollment levels, and alternative intervention availability all affect relative value."
+      "Cost-effectiveness in one context does not transfer to another — local food prices, enrollment levels, and alternative intervention availability all affect relative value.",
+      "Source URL repaired June 2026; per-child cost ranges vary widely by program design and should be read against the report's country tables."
     ],
     "confidence": "medium"
   }

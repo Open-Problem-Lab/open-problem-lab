@@ -5,16 +5,17 @@
     "claim": "WHO reports that over 1 billion people experience catastrophic health expenditure annually, with 90 percent in LMICs where health-insurance coverage is below 30 percent.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "Tracking Universal Health Coverage: 2023 Global Monitoring Report",
-      "url": "https://www.who.int/publications/i/item/9789240080374"
+      "title": "Tracking universal health coverage: 2023 global monitoring report",
+      "url": "https://www.who.int/publications/i/item/9789240080379"
     },
     "source_date": "2023-09-18",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed WHO UHC monitoring report, financial-protection indicators, and insurance-coverage data.",
     "limitations": [
       "Insurance-coverage data depends on household surveys.",
-      "Financial-protection measures vary by methodology."
+      "Financial-protection measures vary by methodology.",
+      "Source URL repaired June 2026 after the original rotted; the report confirms >1 billion people face catastrophic health spending, but the '90 percent in LMICs' share should be reconfirmed against the report."
     ],
-    "confidence": "high"
+    "confidence": "medium"
   }
 ]

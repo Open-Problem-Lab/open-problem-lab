@@ -65,11 +65,11 @@
     "claim": "ERA5-Land temperature reanalysis at 0.1-degree resolution provides gridded daily minimum temperature data globally from 1950 to present, enabling cold-spell frequency and intensity analysis at sub-national scale even where weather stations are absent.",
     "evidence_type": "dataset",
     "source": {
-      "title": "ERA5-Land — ECMWF Reanalysis",
-      "url": "https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5"
+      "title": "ERA5-Land: a state-of-the-art global reanalysis dataset for land applications",
+      "url": "https://essd.copernicus.org/articles/13/4349/2021/"
     },
     "source_date": "2025-01-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed ERA5-Land documentation for temperature resolution, temporal coverage, and validation studies in high-altitude and data-sparse regions.",
     "limitations": [
       "ERA5-Land at 0.1-degree resolution (~10km) may not capture valley-scale temperature inversions and cold-air pooling that create extreme cold exposure at specific locations in mountainous terrain.",

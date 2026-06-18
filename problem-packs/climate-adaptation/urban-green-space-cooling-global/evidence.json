@@ -25,11 +25,11 @@
     "claim": "Landsat thermal-infrared data at 30-100m resolution provides land-surface temperature for intra-urban heat-island mapping since 1984, enabling neighborhood-scale identification of hotspots and green-space cooling effects.",
     "evidence_type": "dataset",
     "source": {
-      "title": "Landsat Thermal Band Data — USGS",
-      "url": "https://www.usgs.gov/landsat-missions/landsat-thermal-data"
+      "title": "Landsat Surface Temperature Product Guide (LSDS-1330) — USGS",
+      "url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/atoms/files/LSDS-1330-LandsatSurfaceTemperature_ProductGuide-v2.pdf"
     },
     "source_date": "2025-01-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed Landsat thermal-band documentation for spatial resolution, temporal coverage, atmospheric correction, and validation studies in urban environments.",
     "limitations": [
       "Landsat measures land-surface temperature (LST), not air temperature — the relationship between LST and the air temperature that drives heat-stress physiology varies by climate zone, humidity, and urban geometry.",

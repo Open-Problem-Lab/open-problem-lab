@@ -19,7 +19,7 @@ import { dirname, join } from "node:path";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 
-function loadTasks() {
+export function loadTasks() {
   const raw = readFileSync(join(ROOT, "tasks-available.json"), "utf8");
   return JSON.parse(raw).tasks;
 }
@@ -34,11 +34,11 @@ const ROLE_GUIDE = {
 
 const REPO = "https://github.com/Open-Problem-Lab/open-problem-lab/blob/main";
 
-function issueTitle(task) {
+export function issueTitle(task) {
   return `[AGENT-TASK] ${task.pack_title}: ${task.title}`;
 }
 
-function issueLabels(task) {
+export function issueLabels(task) {
   const labels = [
     "type:agent-task",
     "status:open-claim",
@@ -49,7 +49,7 @@ function issueLabels(task) {
   return labels;
 }
 
-function issueBody(task) {
+export function issueBody(task) {
   const roleGuide = ROLE_GUIDE[task.owner_role] || "AGENTS.md";
   const domains = task.domain.join(", ");
   const regions = (task.region || []).join(", ") || "global";
@@ -95,7 +95,7 @@ This is one scoped step inside a neglected global problem. The repo's scarce res
 🤖 Generated from \`tasks-available.json\` by \`scripts/generate-agent-issues.mjs\`. Source of truth is the pack's \`tasks.json\`.`;
 }
 
-function diversePicks(tasks, n) {
+export function diversePicks(tasks, n) {
   const perDomain = Math.max(1, Math.ceil(n / 11));
   const cap = {};
   const picks = [];
@@ -115,25 +115,30 @@ function diversePicks(tasks, n) {
   return picks;
 }
 
-const args = process.argv.slice(2);
-const tasks = loadTasks();
+// Only run the CLI when executed directly, not when imported (e.g. by the validator).
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  const args = process.argv.slice(2);
+  const tasks = loadTasks();
 
-if (args[0] === "--list") {
-  for (const t of tasks) console.log(`${t.pack_id}\t${t.task_id}`);
-} else if (args[0] === "--body") {
-  const t = tasks.find((x) => x.pack_id === args[1]);
-  if (!t) {
-    console.error(`No task for pack_id ${args[1]}`);
+  if (args[0] === "--list") {
+    for (const t of tasks) console.log(`${t.pack_id}\t${t.task_id}`);
+  } else if (args[0] === "--body") {
+    const t = tasks.find((x) => x.pack_id === args[1]);
+    if (!t) {
+      console.error(`No task for pack_id ${args[1]}`);
+      process.exit(1);
+    }
+    console.log(`TITLE\t${issueTitle(t)}`);
+    console.log(`LABELS\t${issueLabels(t).join(",")}`);
+    console.log("BODY");
+    console.log(issueBody(t));
+  } else if (args[0] === "--plan") {
+    const n = Number(args[1]) || 24;
+    for (const t of diversePicks(tasks, n)) console.log(t.pack_id);
+  } else {
+    console.error(
+      "Usage: generate-agent-issues.mjs --list | --body <pack_id> | --plan [n]"
+    );
     process.exit(1);
   }
-  console.log(`TITLE\t${issueTitle(t)}`);
-  console.log(`LABELS\t${issueLabels(t).join(",")}`);
-  console.log("BODY");
-  console.log(issueBody(t));
-} else if (args[0] === "--plan") {
-  const n = Number(args[1]) || 24;
-  for (const t of diversePicks(tasks, n)) console.log(t.pack_id);
-} else {
-  console.error("Usage: generate-agent-issues.mjs --list | --body <pack_id> | --plan [n]");
-  process.exit(1);
 }

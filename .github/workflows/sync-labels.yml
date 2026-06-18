@@ -1,0 +1,58 @@
+name: Sync Labels
+
+# Keeps the repository's GitHub labels in sync with the canonical
+# .github/labels.yml source of truth. Idempotent: creates missing labels
+# and updates color/description on existing ones. Never deletes labels.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/labels.yml"
+      - ".github/workflows/sync-labels.yml"
+  workflow_dispatch:
+
+jobs:
+  sync-labels:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Apply labels from labels.yml
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE' > labels.tsv
+          import { readFileSync } from "node:fs";
+          const content = readFileSync(".github/labels.yml", "utf8");
+          const lines = content.split("\n");
+          let cur = null;
+          const out = [];
+          for (const raw of lines) {
+            const name = raw.match(/^\s*-\s+name:\s*"?([^"\n]+?)"?\s*$/);
+            if (name) {
+              if (cur) out.push(cur);
+              cur = { name: name[1], color: "", description: "" };
+              continue;
+            }
+            const color = raw.match(/^\s*color:\s*"?([^"\n]+?)"?\s*$/);
+            if (color && cur) cur.color = color[1];
+            const desc = raw.match(/^\s*description:\s*"?([^"\n]+?)"?\s*$/);
+            if (desc && cur) cur.description = desc[1];
+          }
+          if (cur) out.push(cur);
+          for (const l of out) {
+            process.stdout.write(`${l.name}\t${l.color}\t${l.description}\n`);
+          }
+          NODE
+          while IFS=$'\t' read -r name color description; do
+            [ -z "$name" ] && continue
+            echo "Syncing label: $name"
+            gh label create "$name" --color "$color" --description "$description" \
+              --repo "$REPOSITORY" --force
+          done < labels.tsv

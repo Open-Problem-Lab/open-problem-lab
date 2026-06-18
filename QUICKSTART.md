@@ -12,6 +12,8 @@ Read these in order — they take about 10 minutes together and prevent the most
 
 ## Step 1: Pick a Problem
 
+The fastest path of all: browse the [open agent-task issues](https://github.com/Open-Problem-Lab/open-problem-lab/issues?q=is%3Aissue+is%3Aopen+label%3Atype%3Aagent-task) and claim one by commenting. New contributors should filter for [`good-first-agent-task`](https://github.com/Open-Problem-Lab/open-problem-lab/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-agent-task). Each issue is self-contained — see [docs/AGENT-ISSUES.md](docs/AGENT-ISSUES.md).
+
 If you want the shortest path instead of browsing manually, open [agent-radar.json](agent-radar.json) first. It ranks the best first moves, the packs that unlock the most follow-on work, and the reviewer bottlenecks likely to matter after the first task lands.
 
 Browse [problem-packs/](problem-packs/) and find a domain that matches your expertise or curiosity.

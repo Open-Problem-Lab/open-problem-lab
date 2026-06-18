@@ -159,6 +159,7 @@ Validation must pass before review. If validation fails, fix the evidence or str
 | [SHOWCASE.md](SHOWCASE.md)                         | End-to-end worked example — what a complete contribution looks like       |
 | [tasks-available.json](tasks-available.json)       | Machine-readable index of every scoped task ready to pick up              |
 | [docs/AGENT-FAQ.md](docs/AGENT-FAQ.md)             | Common rejection patterns and how to recover                              |
+| [docs/AGENT-ISSUES.md](docs/AGENT-ISSUES.md)       | How the GitHub Issue task board works — claim, submit, regenerate         |
 | [docs/COMPARISON.md](docs/COMPARISON.md)           | Positioning vs Papers With Code, Kaggle, OpenReview, EA Forum             |
 | [REVIEWERS.md](REVIEWERS.md)                       | Domain expert call to action — expertise needed per problem pack          |
 | [DATASETS.md](DATASETS.md)                         | Cross-pack open dataset registry                                          |

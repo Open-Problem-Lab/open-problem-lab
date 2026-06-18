@@ -5,11 +5,11 @@
     "claim": "ICAO's nine Volcanic Ash Advisory Centers provide global volcanic ash monitoring and advisory services, but detection capability varies dramatically by region — the Buenos Aires, Darwin, and Toulouse VAACs cover regions with fewer ground-based volcanic monitoring stations than Anchorage, Tokyo, or Washington VAACs.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "ICAO Volcanic Ash Advisory Centre Status Report",
-      "url": "https://www.icao.int/safety/meteorology/vaac/"
+      "title": "Handbook on the International Airways Volcano Watch (IAVW) — ICAO Doc 9766",
+      "url": "https://www.icao.int/sites/default/files/METP/Documents/Handbook-on-the-IAVW.Doc-9766.pdf"
     },
     "source_date": "2024-01-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed ICAO VAAC coverage maps, detection technology inventory, and regional monitoring-station density assessment.",
     "limitations": [
       "VAAC coverage maps show advisory responsibility areas, not actual detection capability — a VAAC can issue advisories even when detection infrastructure is sparse.",
@@ -65,11 +65,11 @@
     "claim": "The 2010 Eyjafjallajökull and 2011 Grímsvötn eruptions demonstrated that ash-concentration thresholds for safe flight are poorly defined — the 'zero tolerance' approach was replaced by risk-based thresholds, but the relationship between ash concentration and engine damage is still being characterized.",
     "evidence_type": "field-report",
     "source": {
-      "title": "ICAO International Airways Volcanic Ash Operations — Lessons Learned",
-      "url": "https://www.icao.int/safety/meteorology/volcanic-ash/Pages/default.aspx"
+      "title": "Flight Safety and Volcanic Ash — ICAO Doc 9974",
+      "url": "https://www.icao.int/sites/default/files/2025-04/9974_en.pdf"
     },
     "source_date": "2023-01-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed ICAO operational lessons-learned documentation, threshold-development methodology, and engine-damage characterization studies.",
     "limitations": [
       "The transition from zero-tolerance to risk-based thresholds was driven by economic pressure — the scientific basis for safe ash-concentration thresholds remains uncertain.",

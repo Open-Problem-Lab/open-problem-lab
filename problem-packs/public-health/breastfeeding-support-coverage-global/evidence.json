@@ -20,18 +20,19 @@
   {
     "id": "unicef-breastfeeding-scorecard-2024",
     "problem_id": "public-health/breastfeeding-support-coverage-global",
-    "claim": "UNICEF Global Breastfeeding Scorecard reports 44 percent early initiation and 48 percent exclusive breastfeeding at six months globally, with the lowest rates in West and Central Africa and South Asia.",
+    "claim": "The UNICEF/WHO Global Breastfeeding Scorecard 2023 reports that globally 46 percent of newborns are put to the breast within one hour of birth and 48 percent of infants under six months are exclusively breastfed.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "UNICEF Global Breastfeeding Scorecard 2024",
-      "url": "https://www.unicef.org/documents/global-breastfeeding-scorecard-2024"
+      "title": "Global Breastfeeding Scorecard 2023 (UNICEF/WHO)",
+      "url": "https://www.unicef.org/documents/global-breastfeeding-scorecard-2023"
     },
     "source_date": "2024-08-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed UNICEF scorecard, country-level breastfeeding indicators, and policy tracking.",
     "limitations": [
       "Country-level data masks substantial sub-national variation.",
-      "Exclusive-breastfeeding data is self-reported and may have recall bias."
+      "Exclusive-breastfeeding data is self-reported and may have recall bias.",
+      "Figures updated to the verifiable 2023 scorecard edition after the cited 2024 URL rotted; the prior 44 percent early-initiation figure was corrected to the scorecard's 46 percent."
     ],
     "confidence": "high"
   }

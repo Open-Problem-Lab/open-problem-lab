@@ -5,16 +5,17 @@
     "claim": "WHO IHR monitoring reports that fewer than 50 percent of low-income countries meet core surveillance capacity requirements, with reporting timeliness below 30 percent in several countries.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "IHR (2005) State Party Self-Assessment Annual Report 2024",
-      "url": "https://www.who.int/data/gho/data/themes/international-health-regulations"
+      "title": "IHR (2005) States Parties Self-Assessment Annual Reporting (SPAR) — WHO",
+      "url": "https://www.who.int/emergencies/operations/international-health-regulations-monitoring-evaluation-framework/states-parties-self-assessment-annual-reporting"
     },
     "source_date": "2024-01-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed IHR monitoring data, surveillance-capacity indicators, and timeliness metrics.",
     "limitations": [
       "Self-assessment data may not reflect actual capacity.",
-      "Timeliness metrics vary by disease and reporting system."
+      "Timeliness metrics vary by disease and reporting system.",
+      "Source URL repaired June 2026; the surveillance-capacity figure should be reconfirmed against current e-SPAR analytics."
     ],
-    "confidence": "high"
+    "confidence": "medium"
   }
 ]

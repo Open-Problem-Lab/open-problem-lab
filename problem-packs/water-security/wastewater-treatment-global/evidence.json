@@ -2,19 +2,21 @@
   {
     "id": "un-water-wastewater-2023",
     "problem_id": "water-security/wastewater-treatment-global",
-    "claim": "UN-Water estimates 80 percent of wastewater globally is discharged untreated, with treatment rates below 10 percent in most low-income countries.",
+    "claim": "UN-Water SDG 6.3.1 monitoring estimates that about 56 percent of domestic wastewater flows were safely treated globally in 2022 (no change since 2020), and data gaps mean the safely-treated share could be computed for only a minority of reporting countries.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "UN-Water SDG6 Progress Update 2023",
-      "url": "https://www.unwater.org/publications/sdg-6-progress-update-2023"
+      "title": "SDG indicator 6.3.1: Proportion of domestic and industrial wastewater flow safely treated — UN-Water",
+      "url": "https://www.unwater.org/our-work/sdg-6-integrated-monitoring-initiative/indicator-631-proportion-domestic-and-industrial"
     },
     "source_date": "2023-07-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed UN-Water SDG6 progress report, wastewater-treatment data, and health-risk analysis.",
     "limitations": [
-      "Wastewater-treatment data is self-reported by countries.",
-      "Disease-risk attribution is complex due to multiple exposure pathways."
+      "The earlier '80 percent discharged untreated' figure was from an older, differently-scoped source and has been replaced with the current UN-Water 6.3.1 domestic-wastewater estimate.",
+      "Safely-treated estimates exist for a minority of countries, so the global figure carries substantial coverage uncertainty.",
+      "The indicator covers domestic (and where reported industrial) wastewater, not all effluent streams.",
+      "It does not provide sub-national treatment grain."
     ],
-    "confidence": "high"
+    "confidence": "medium"
   }
 ]

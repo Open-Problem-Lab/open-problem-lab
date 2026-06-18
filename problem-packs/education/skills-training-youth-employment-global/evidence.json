@@ -42,22 +42,21 @@
   {
     "id": "training-provider-data-fragmentation",
     "problem_id": "education/skills-training-youth-employment-global",
-    "claim": "Training-provider registries are fragmented across government ministries, NGOs, and private operators in most LMICs — no single dataset captures the full landscape of skills-training availability at sub-national scale, and employment-outcome tracking is conducted by fewer than 10 percent of training programs.",
+    "claim": "TVET provision in most low- and middle-income countries is diverse and fragmented across government ministries, private providers, and NGOs, which complicates building system-wide data on training providers and their outcomes.",
     "evidence_type": "expert-review",
     "source": {
-      "title": "Skills training data systems in low-income countries: a landscape assessment",
-      "url": "https://www.worldbank.org/en/topic/education/publication/skills-training-data-landscape"
+      "title": "Building Better Formal TVET Systems: Principles and Practice in Low- and Middle-Income Countries (World Bank, ILO, UNESCO, 2023)",
+      "url": "https://www.worldbank.org/en/topic/skillsdevelopment/publication/better-technical-vocational-education-training-TVET"
     },
     "source_date": "2023-09-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed training-data landscape assessments, provider-registry documentation, and employment-outcome tracking rates across LMICs.",
     "limitations": [
-      "The 'fewer than 10 percent' outcome-tracking figure is an aggregate — some countries and sectors have better tracking than others.",
-      "Provider-registry fragmentation varies by country — some countries have more integrated systems than others.",
-      "The landscape assessment may miss informal training providers and community-based programs not captured in formal registries.",
-      "Data availability changes — some countries have invested in training-management information systems since the assessment."
+      "The originally cited 'Skills training data systems landscape assessment' could not be confirmed to exist; re-sourced to the World Bank/ILO/UNESCO TVET systems report.",
+      "This report describes TVET system fragmentation broadly; it does not quantify provider-registry coverage country by country.",
+      "A dedicated source is still needed to substantiate the 'no single dataset' claim for any specific country."
     ],
-    "confidence": "high"
+    "confidence": "low"
   },
   {
     "id": "informal-sector-training-outcome-gap",

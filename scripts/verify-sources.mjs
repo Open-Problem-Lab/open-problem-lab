@@ -42,7 +42,26 @@ const checkUrl = async (url) => {
   throw new Error(`${url} returned HTTP ${get.status}`);
 };
 
+const loadAllowlist = async () => {
+  try {
+    const raw = await fs.readFile(
+      path.join(root, "scripts", "source-check-allowlist.json"),
+      "utf8"
+    );
+    const parsed = JSON.parse(raw);
+    return new Set((parsed.allow || []).map((entry) => entry.url));
+  } catch {
+    return new Set();
+  }
+};
+
+// A connection-level failure (DNS/TLS/timeout/reset) is reported by checkUrl as
+// "<url> failed: ...". A definite HTTP error status is "<url> returned HTTP <n>".
+// Only the former is suppressible via the allowlist; real HTTP errors always fail.
+const isConnectionFailure = (message) => !/ returned HTTP /.test(message);
+
 const main = async () => {
+  const allowlist = await loadAllowlist();
   const evidenceFiles = await walkFiles(
     path.join(root, "problem-packs"),
     (file) => path.basename(file) === "evidence.json"
@@ -61,15 +80,30 @@ const main = async () => {
   }
 
   const failures = [];
+  const warnings = [];
   for (const record of records) {
     try {
       const result = await checkUrl(record.source.url);
       const suffix = result.note ? ` (${result.note})` : "";
       console.log(`${record.id}: ${result.method} ${result.status}${suffix}`);
     } catch (err) {
+      if (allowlist.has(record.source.url) && isConnectionFailure(err.message)) {
+        console.warn(
+          `WARN (allowlisted, unreachable by CI): ${record.id} — ${err.message}`
+        );
+        warnings.push({ id: record.id, url: record.source.url, error: err.message });
+        continue;
+      }
       console.error(`FAIL: ${record.id} — ${err.message}`);
       failures.push({ id: record.id, url: record.source.url, error: err.message });
     }
+  }
+
+  if (warnings.length > 0) {
+    console.warn(
+      `\n${warnings.length} allowlisted URL(s) were unreachable by CI (verify manually):`
+    );
+    for (const w of warnings) console.warn(`  ${w.id}: ${w.url}`);
   }
 
   if (failures.length > 0) {

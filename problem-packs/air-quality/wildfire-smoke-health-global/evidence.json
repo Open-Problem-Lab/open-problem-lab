@@ -46,10 +46,10 @@
     "evidence_type": "dataset",
     "source": {
       "title": "GEOS-Chem Global Chemical Transport Model",
-      "url": "https://geos-chem.org/"
+      "url": "https://geoschem.github.io"
     },
     "source_date": "2025-01-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed GEOS-Chem model documentation for PM2.5 species resolution, fire-emissions integration (GFED, GFAS), spatial resolution, and validation studies.",
     "limitations": [
       "GEOS-Chem PM2.5 estimates depend on fire-emissions inventories (GFED, GFAS) that have their own burned-area and emission-factor uncertainties.",

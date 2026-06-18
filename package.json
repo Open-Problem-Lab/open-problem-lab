@@ -10,6 +10,8 @@
     "reproducibility:check": "node scripts/check-reproducibility.mjs",
     "validate": "node scripts/validate-repo.mjs",
     "verify:sources": "node scripts/verify-sources.mjs",
+    "issues:plan": "node scripts/generate-agent-issues.mjs --plan",
+    "issues:body": "node scripts/generate-agent-issues.mjs --body",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

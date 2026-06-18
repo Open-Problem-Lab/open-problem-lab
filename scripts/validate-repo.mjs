@@ -31,6 +31,14 @@ const STATIC_LABELS = [
   "type:playbook",
   "type:review",
   "type:safety",
+  "type:agent-task",
+  "good-first-agent-task",
+  "role:literature-scout",
+  "role:data-cleaner",
+  "role:implementation-planner",
+  "role:red-team-reviewer",
+  "role:field-reality-reviewer",
+  "status:open-claim",
   "status:needs-triage",
   "status:scoped",
   "status:agent-working",
@@ -195,6 +203,38 @@ const validateLabels = async () => {
   }
 };
 
+const validateAgentIssueGenerator = async () => {
+  const { loadTasks, issueTitle, issueLabels, issueBody } =
+    await import("./generate-agent-issues.mjs");
+  const labelsPath = path.join(root, ".github", "labels.yml");
+  const labelsContent = await fs.readFile(labelsPath, "utf8");
+  const knownLabels = new Set(
+    [...labelsContent.matchAll(/^\s*-\s+name:\s*"?([^"\n]+)"?\s*$/gm)].map((m) => m[1])
+  );
+  const tasks = loadTasks();
+  assert(tasks.length > 0, "Agent issue generator found no tasks in tasks-available.json.");
+  for (const task of tasks) {
+    const title = issueTitle(task);
+    assert(
+      title.startsWith("[AGENT-TASK] ") && title.length > 14,
+      `Agent issue title is empty or malformed for ${task.pack_id}.`
+    );
+    const labels = issueLabels(task);
+    assert(labels.length >= 4, `Agent issue for ${task.pack_id} has too few labels.`);
+    for (const label of labels) {
+      assert(
+        knownLabels.has(label),
+        `Agent issue for ${task.pack_id} uses label "${label}" not defined in .github/labels.yml.`
+      );
+    }
+    const body = issueBody(task);
+    assert(
+      body.includes(task.done_condition) && body.includes(task.problem_file),
+      `Agent issue body for ${task.pack_id} is missing its done condition or problem link.`
+    );
+  }
+};
+
 const validateMarkdown = async () => {
   const markdownFiles = await walkFiles(root, (file) => file.endsWith(".md"));
   assert(markdownFiles.length > 0, "Markdown documentation is required.");
@@ -285,6 +325,7 @@ const main = async () => {
   await validateExamples(schemas);
   await validateIssueTemplates();
   await validateLabels();
+  await validateAgentIssueGenerator();
   await validateMarkdown();
   await validateWikiFreshness();
   await validateTaskIndexFreshness();

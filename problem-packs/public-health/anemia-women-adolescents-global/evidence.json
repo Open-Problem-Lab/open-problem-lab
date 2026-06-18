@@ -9,11 +9,107 @@
       "url": "https://www.who.int/data/gho/data/themes/topics/anaemia_in_women_and_children"
     },
     "source_date": "2023-05-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed WHO anemia database, prevalence estimates, and intervention coverage.",
     "limitations": [
       "Anemia estimates modeled from surveys of variable recency.",
       "IFA coverage data is self-reported."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-lancet-gh-anaemia-estimates-2022",
+    "problem_id": "public-health/anemia-women-adolescents-global",
+    "claim": "A WHO-led pooled analysis of population-representative data estimates national, regional, and global anaemia prevalence by severity for women and children over 2000-2019, and is usable as the cross-country prevalence backbone for women of reproductive age.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "National, regional, and global estimates of anaemia by severity in women and children for 2000-19: a pooled analysis of population-representative data",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9023869/"
+    },
+    "source_date": "2022-05-01",
+    "access_date": "2026-06-18",
+    "method": "Read the open-access Lancet Global Health article and methods; confirmed it pools measured-haemoglobin survey data to produce severity-disaggregated anaemia prevalence for women aged 15-49 and children, by country and year.",
+    "limitations": [
+      "Estimates are national, regional, and global; the analysis does not provide sub-national grain.",
+      "Values are modeled where survey data are sparse, widening uncertainty for some low-income countries.",
+      "Series ends in 2019 and covers women of reproductive age rather than adolescent girls specifically."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-vmnis-micronutrients-database",
+    "problem_id": "public-health/anemia-women-adolescents-global",
+    "claim": "The WHO Vitamin and Mineral Nutrition Information System (VMNIS) compiles haemoglobin-distribution data from hundreds of surveys across more than 130 countries, providing the measured-haemoglobin source layer underlying global anaemia estimates.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "WHO Vitamin and Mineral Nutrition Information System (VMNIS)",
+      "url": "https://www.who.int/teams/nutrition-and-food-safety/databases/vitamin-and-mineral-nutrition-information-system"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-18",
+    "method": "Opened the VMNIS database page and confirmed it aggregates haemoglobin-distribution data from systematic literature search, collaborator network, and country consultation for women and children.",
+    "limitations": [
+      "It is a compilation of heterogeneous surveys; methods, recency, and representativeness vary by entry.",
+      "Coverage is country-level; it is not a ready-made sub-national dataset.",
+      "Source date is approximate — the database is continuously updated rather than published once."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "gbd-2021-anaemia-burden",
+    "problem_id": "public-health/anemia-women-adolescents-global",
+    "claim": "GBD 2021 estimates anaemia prevalence and years lived with disability by severity and cause for 204 countries over 1990-2021, reporting global all-age prevalence of 24.3 percent in 2021 and much slower progress in women and girls than in men and boys.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Prevalence, years lived with disability, and trends in anaemia burden by severity and cause, 1990-2021: findings from the Global Burden of Disease Study 2021",
+      "url": "https://www.thelancet.com/journals/lanhae/article/PIIS2352-3026(23)00160-6/fulltext"
+    },
+    "source_date": "2023-09-01",
+    "access_date": "2026-06-18",
+    "method": "Reviewed the published GBD 2021 anaemia findings to confirm severity- and cause-disaggregated prevalence and YLD estimates and the women-versus-men progress gap.",
+    "limitations": [
+      "Outputs are modeled burden estimates with uncertainty intervals, not direct survey observations.",
+      "Headline figures are all-age; women-of-reproductive-age and adolescent breakdowns require the underlying results tool.",
+      "Cause attribution depends on modeling assumptions that vary across settings."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "dhs-haemoglobin-and-iron-supplementation",
+    "problem_id": "public-health/anemia-women-adolescents-global",
+    "claim": "DHS surveys measure haemoglobin for women and men aged 15 and over in selected rounds and record antenatal iron-supplementation receipt, providing georeferenced measured-anaemia prevalence and survey-based IFA coverage in many LMICs.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "The DHS Program — Biomarkers",
+      "url": "https://www.dhsprogram.com/What-We-Do/Biomarkers.cfm"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-18",
+    "method": "Reviewed the DHS biomarkers page and confirmed haemoglobin is collected for ages 15+ in selected surveys; cross-checked that DHS questionnaires also capture iron supplementation during pregnancy, the standard LMIC IFA-coverage measure.",
+    "limitations": [
+      "Haemoglobin is measured only in a subset of DHS surveys and countries, not all rounds.",
+      "IFA coverage is recall-based and records receipt or number of days, not confirmed consumption.",
+      "Field capillary haemoglobin measurement is less precise than venous laboratory assay.",
+      "Source date is approximate — this is a continuously maintained program page, not a dated publication."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "clinical-pallor-anaemia-rejected",
+    "problem_id": "public-health/anemia-women-adolescents-global",
+    "claim": "A meta-analysis of clinical pallor for diagnosing anaemia finds wide and inconsistent diagnostic accuracy with poor inter-observer agreement, which is the documented basis for rejecting pallor-based or clinical-examination-only assessment as an anaemia prevalence source in place of measured haemoglobin.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Accuracy of clinical pallor in the diagnosis of anaemia in children: a meta-analysis",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1325025/"
+    },
+    "source_date": "2005-12-16",
+    "access_date": "2026-06-18",
+    "method": "Read the open-access meta-analysis to confirm the reported sensitivity and specificity ranges and inter-observer reliability for pallor, then applied it as the rejection rule for clinical-assessment-only anaemia data.",
+    "limitations": [
+      "The meta-analysis is in children, so the precise accuracy figures may differ for adolescent girls and adult women.",
+      "It establishes the rejection rationale; it is not itself a usable prevalence data source.",
+      "It does not address iron-supplementation coverage measurement."
     ],
     "confidence": "high"
   }

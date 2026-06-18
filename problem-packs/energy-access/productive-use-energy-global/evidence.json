@@ -2,22 +2,21 @@
   {
     "id": "world-bank-productive-use-2023",
     "problem_id": "energy-access/productive-use-energy-global",
-    "claim": "World Bank estimates that electrification for productive use in agriculture can increase rural incomes by 20-30 percent, but fewer than 10 percent of mini-grids in Sub-Saharan Africa serve productive-use customers.",
+    "claim": "ESMAP's mini-grid market analysis identifies productive use of electricity (agriculture, commerce, light industry) as central to mini-grid commercial viability, while noting it remains underdeveloped in most Sub-Saharan African mini-grids where residential demand dominates.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "Productive Uses of Energy for Rural Development",
-      "url": "https://www.worldbank.org/en/topic/energy/publication/productive-uses-of-energy"
+      "title": "ESMAP Global Facility on Mini Grids — Scaling Up Mini Grid Markets (World Bank)",
+      "url": "https://www.worldbank.org/en/results/2020/11/11/esmap-global-facility-on-mini-grids-scaling-up-mini-grid-markets-to-provide-electricity-to-half-a-billion-people-by-2030"
     },
     "source_date": "2023-06-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed World Bank productive-use framework, income-impact estimates, and mini-grid survey data for Sub-Saharan Africa.",
     "limitations": [
-      "The 20-30 percent income increase is from controlled studies in specific contexts — generalization across agricultural value chains and market environments is uncertain.",
-      "The 'fewer than 10 percent' figure is from a limited survey of mini-grid operators — actual productive-use rates may differ across operator types and countries.",
-      "Income-impact estimates depend on baseline income measurement methodology and confound controls that vary across studies.",
-      "The assessment does not capture productive use that emerges years after electrification — adoption timelines for agricultural equipment may be longer than study follow-up periods."
+      "Re-sourced June 2026 after the original World Bank topic page returned HTTP 404; the specific '20-30% income increase' and 'fewer than 10% of mini-grids serve productive use' figures were not carried over and need a dedicated source.",
+      "This page describes program direction, not a peer-reviewed impact estimate.",
+      "Productive-use adoption varies widely by country and tariff design."
     ],
-    "confidence": "high"
+    "confidence": "low"
   },
   {
     "id": "agricultural-value-chain-electrification",
@@ -42,22 +41,21 @@
   {
     "id": "mini-grid-productive-use-demand",
     "problem_id": "energy-access/productive-use-energy-global",
-    "claim": "Mini-grid operators in SSA report that residential lighting connections dominate their customer base, with productive-use loads typically representing less than 20 percent of total demand — the business model for rural mini-grids depends on productive-use growth that rarely materializes at projected rates.",
+    "claim": "ESMAP's Mini Grids market outlook reports that demand on Sub-Saharan African mini-grids is dominated by residential connections, with productive-use loads a minority of demand, and that productive-use growth — a key assumption in mini-grid business models — frequently lags projections.",
     "evidence_type": "field-report",
     "source": {
-      "title": "Mini-grid operator survey: productive-use demand in Sub-Saharan Africa",
-      "url": "https://www.minigridfinancingfacility.org/"
+      "title": "Mini Grids for Half a Billion People: Market Outlook and Handbook for Decision-Makers (ESMAP, World Bank)",
+      "url": "https://documents1.worldbank.org/curated/en/099122223180539643/pdf/P17515118ea44a020192941b81f7e8498e1.pdf"
     },
     "source_date": "2023-03-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed mini-grid operator survey methodology, productive-use load data, and business-model assessment across SSA countries.",
     "limitations": [
-      "The survey covers a limited number of mini-grid operators — results may not represent the full diversity of mini-grid business models and contexts.",
-      "Productive-use load data is self-reported by operators without independent verification.",
-      "The 'less than 20 percent' figure is an aggregate — some mini-grids serving market-connected areas may have higher productive-use shares.",
-      "The survey does not capture why productive-use demand remains low — affordability, technical capacity, and market barriers are inferred rather than directly measured."
+      "Re-sourced June 2026 after the original operator-survey URL (minigridfinancingfacility.org) became unreachable; the specific 'less than 20 percent of demand' figure needs a dedicated operator-survey source.",
+      "Market-outlook figures are aggregate and vary substantially by country, operator, and tariff design.",
+      "Demand composition evolves as connections mature, so a single snapshot understates later productive-use uptake."
     ],
-    "confidence": "high"
+    "confidence": "low"
   },
   {
     "id": "enterprise-formation-electrification",

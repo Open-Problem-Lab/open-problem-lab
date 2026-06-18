@@ -8,7 +8,7 @@ The machine-readable ledger is `evidence.json`.
 
 ### World Bank Productive Use 2023
 
-Use this source for the income-impact baseline. The 20-30 percent figure is from controlled studies in specific contexts — generalization across value chains and market environments is uncertain. The 'fewer than 10 percent' figure is from a limited operator survey. Income-impact estimates depend on baseline methodology and confound controls. Always document context-dependency and measurement limitations.
+Use this source (ESMAP Global Facility on Mini Grids) for program-level context on productive use as a driver of mini-grid viability. Re-sourced June 2026 after the original World Bank topic page rotted (HTTP 404); the prior '20-30 percent income increase' and 'fewer than 10 percent of mini-grids serve productive use' figures need a dedicated peer-reviewed source before reuse.
 
 ### Agricultural Value Chain Electrification
 
@@ -16,7 +16,7 @@ Use this source for the strongest evidence on value-chain-specific productive us
 
 ### Mini-Grid Productive Use Demand
 
-Use this source to document the demand-side constraint: residential lighting dominates mini-grid customer bases with productive-use loads below 20 percent. The survey covers a limited number of operators. Business-model viability depends on productive-use growth that rarely materializes. Always document operator-survey limitations and the demand-gap context.
+Use this source (ESMAP Mini Grids market outlook) to document that residential connections dominate Sub-Saharan African mini-grid demand and productive-use growth often lags projections. Re-sourced June 2026 after the operator-survey URL became unreachable; the specific 'below 20 percent of demand' figure needs a dedicated operator-survey source.
 
 ### Enterprise Formation Electrification
 

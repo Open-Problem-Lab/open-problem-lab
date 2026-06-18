@@ -1,0 +1,20 @@
+{
+  "description": "URLs confirmed live by manual/browser check but which refuse automated requests (connection reset/timeout) from CI runners. For these, the scheduled source health check downgrades CONNECTION-LEVEL failures to warnings. A definite HTTP error status (e.g. 404, 410) still fails the check even for an allowlisted URL, so genuine rot is never masked. Re-verify on the 'verified' date cadence.",
+  "allow": [
+    {
+      "url": "https://cpcb.nic.in/national-air-quality-monitoring-programme/",
+      "reason": "India Central Pollution Control Board NAMP page; live in browser but blocks automated access.",
+      "verified": "2026-06-18"
+    },
+    {
+      "url": "https://cpcb.nic.in/monitoring-network-3/",
+      "reason": "CPCB monitoring network page; live in browser but blocks automated access.",
+      "verified": "2026-06-18"
+    },
+    {
+      "url": "https://caqm.nic.in/",
+      "reason": "India Commission for Air Quality Management; live in browser but blocks automated access.",
+      "verified": "2026-06-18"
+    }
+  ]
+}

@@ -5,15 +5,130 @@
     "claim": "WHO estimates 1.3 billion adults have hypertension, with only 45 percent diagnosed and 20 percent controlled globally, and control rates below 10 percent in most LMICs.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "Global Report on Hypertension",
-      "url": "https://www.who.int/publications/i/item/9789240081060"
+      "title": "Global report on hypertension: the race against a silent killer",
+      "url": "https://iris.who.int/handle/10665/372896"
     },
     "source_date": "2023-09-19",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-18",
     "method": "Reviewed WHO hypertension report, detection and control cascade data.",
     "limitations": [
       "Diagnosis data depends on survey frequency.",
       "Treatment-control data from routine systems is incomplete."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "ncd-risc-hypertension-trends-2021",
+    "problem_id": "public-health/hypertension-control-global",
+    "claim": "A pooled analysis of 1201 population-representative studies with measured blood pressure (104 million participants, 184 countries) estimates age-standardized hypertension prevalence, detection, treatment, and control for adults aged 30-79 by country and sex for 1990-2019, and is usable as the cross-country comparison backbone for this pack.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Worldwide trends in hypertension prevalence and progress in treatment and control from 1990 to 2019: a pooled analysis of 1201 population-representative studies with 104 million participants",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8446938/"
+    },
+    "source_date": "2021-09-11",
+    "access_date": "2026-06-18",
+    "method": "Read the open-access NCD-RisC article and its methods section; confirmed it uses only measured (not self-reported) blood pressure and reports the full detection-treatment-control cascade by country, sex, and year.",
+    "limitations": [
+      "Estimates are at national level for ages 30-79 only; the paper does not provide sub-national grain.",
+      "Where country data are sparse the cascade values are modeled, widening uncertainty for many low-income countries.",
+      "Cut-off is 2019, so it predates recent program scale-up."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-steps-microdata",
+    "problem_id": "public-health/hypertension-control-global",
+    "claim": "The WHO NCD Microdata Repository distributes nationally representative STEPS survey microdata with directly measured blood pressure, supporting country-level detection, treatment, and control estimates and limited sub-national breakdowns where sample design allows.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "WHO NCD Microdata Repository — STEPS collection",
+      "url": "https://extranet.who.int/ncdsmicrodata/index.php/collections/STEPS"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-18",
+    "method": "Opened the STEPS collection in the WHO NCD Microdata Repository and confirmed it lists country STEPS datasets with measured blood pressure variables and downloadable microdata under request-based access.",
+    "limitations": [
+      "Surveys are cross-sectional and run infrequently, so a country may have only one usable year.",
+      "Sampling is designed for national estimates; sub-national power is uneven and often insufficient.",
+      "Field BP measurement protocol (single visit, device) differs from clinical diagnosis, so control status is approximate.",
+      "Source date is approximate — the collection is continuously updated rather than published once."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "dhs-program-biomarkers",
+    "problem_id": "public-health/hypertension-control-global",
+    "claim": "The DHS Program measures blood pressure as a biomarker for women and men aged 15 and over in selected surveys, providing an additional source of measured-BP prevalence with georeferenced clusters in some LMICs.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "The DHS Program — Biomarkers",
+      "url": "https://www.dhsprogram.com/What-We-Do/Biomarkers.cfm"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-18",
+    "method": "Reviewed the DHS biomarkers page and confirmed blood pressure is among collected biomarkers for ages 15+; cross-checked that BP is a recent and survey-specific addition, not universal across all DHS rounds.",
+    "limitations": [
+      "Blood pressure is collected only in a subset of DHS surveys and countries, not all rounds.",
+      "Treatment and control cascade items are not consistently captured, so DHS is stronger for prevalence than for control.",
+      "Source date is approximate — this is a continuously maintained program page, not a dated publication."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "gbd-2021-high-sbp-burden",
+    "problem_id": "public-health/hypertension-control-global",
+    "claim": "GBD 2021 (IHME) provides modeled estimates of deaths and DALYs attributable to high systolic blood pressure by country, sex, age, and selected subnational units for 1990-2021, usable as a burden-context layer but not as a direct detection-treatment-control measurement.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "Global Burden of Disease Study 2021 (GBD 2021) Burden and Strength of Evidence by Risk Factor 1990-2021",
+      "url": "https://ghdx.healthdata.org/record/ihme-data/gbd-2021-burden-by-risk-1990-2021"
+    },
+    "source_date": "2024-05-18",
+    "access_date": "2026-06-18",
+    "method": "Opened the GHDx record for the GBD 2021 risk-factor burden product and confirmed it covers high systolic blood pressure attributable burden with subnational coverage for a subset of countries.",
+    "limitations": [
+      "Outputs are attributable burden (deaths, DALYs), not measured detection, treatment, or control rates.",
+      "Values are modeled estimates with uncertainty intervals, not survey observations.",
+      "Subnational estimates exist only for a subset of countries."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "pure-study-hypertension-2013",
+    "problem_id": "public-health/hypertension-control-global",
+    "claim": "The PURE study reported hypertension prevalence, awareness, treatment, and control across high-, middle-, and low-income countries using measured blood pressure in 142042 adults aged 35-70 from 628 communities, documenting markedly lower control in lower-income settings.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Prevalence, Awareness, Treatment, and Control of Hypertension in Rural and Urban Communities in High-, Middle-, and Low-Income Countries (PURE)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24002282/"
+    },
+    "source_date": "2013-09-04",
+    "access_date": "2026-06-18",
+    "method": "Read the PubMed record and abstract to confirm cohort size, age range, country mix, and that the cascade was based on measured blood pressure.",
+    "limitations": [
+      "Sample is community cohorts, not nationally representative, so country estimates are not generalizable.",
+      "Age range is restricted to 35-70 years.",
+      "Data were collected 2003-2009, so figures are dated relative to current control programs."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "self-report-hypertension-bias-2022",
+    "problem_id": "public-health/hypertension-control-global",
+    "claim": "Self-reported hypertension diagnosis underestimates measured prevalence by roughly 20 percent in women and 55 percent in men in a large Indian survey, which is the documented basis for rejecting self-report-only household surveys as a prevalence source for this pack.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Inconsistency in prevalence of hypertension based on self-reports and use of standard tests: Implications for large scale surveys",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9547289/"
+    },
+    "source_date": "2022-10-03",
+    "access_date": "2026-06-18",
+    "method": "Read the open-access article and its results to confirm the direction and magnitude of self-report bias against standard measured tests, then applied it as the rejection rule for self-report-only sources.",
+    "limitations": [
+      "Quantified bias is from India and may differ in magnitude elsewhere.",
+      "The study justifies rejecting self-report for prevalence; it is not itself a usable cross-country data source.",
+      "It does not address treatment or control measurement specifically."
     ],
     "confidence": "high"
   }

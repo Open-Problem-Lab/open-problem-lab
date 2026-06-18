@@ -58,25 +58,5 @@
       "Temporal resolution of land-cover maps (annual or multi-year composites) may miss seasonal habitat changes important for pollinator life cycles."
     ],
     "confidence": "medium"
-  },
-  {
-    "id": "pollinator-monitoring-gap-tropical",
-    "problem_id": "biodiversity/pollinator-decline-agriculture-global",
-    "claim": "Systematic wild pollinator population monitoring is almost entirely absent from Sub-Saharan Africa, South Asia, and Southeast Asia — the regions where pollinator-dependent crop production is growing fastest. Over 80 percent of pollinator studies globally come from Europe and North America.",
-    "evidence_type": "peer-reviewed-study",
-    "source": {
-      "title": "Global pollinator monitoring gaps and implications for food security",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0169534722002345"
-    },
-    "source_date": "2022-11-01",
-    "access_date": "2026-06-07",
-    "method": "Reviewed systematic search of pollinator monitoring programs by region, study-design quality assessment, and geographic coverage analysis.",
-    "limitations": [
-      "The 80 percent figure is from the IPBES assessment; more recent studies suggest the imbalance persists but exact percentages may have shifted slightly.",
-      "Some LMIC countries have emerging pollinator monitoring programs not yet captured in global reviews.",
-      "Absence of monitoring data does not mean absence of pollinator decline — it means the decline, if occurring, is undetected.",
-      "Citizen-science programs (e.g., iNaturalist) provide some opportunistic LMIC pollinator occurrence data but with severe spatial and taxonomic bias."
-    ],
-    "confidence": "high"
   }
 ]

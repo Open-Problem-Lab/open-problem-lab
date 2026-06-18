@@ -6,9 +6,9 @@ The machine-readable ledger is `evidence.json`.
 
 ## Evidence Notes
 
-### FAO Grassland Degradation 2023
+### FAO Global Assessment of Soil Carbon in Grasslands (2023)
 
-Use this source for the global grassland degradation baseline and Central Asian context. The 20-30 percent figure is a global estimate — degradation rates vary by methodology and country. Do not use this as proof of degradation in any specific Central Asian sub-national area without satellite or field verification. The FAO assessment does not provide sub-national maps suitable for pastoral livelihood analysis.
+Re-sourced in June 2026: the original "Status of the World's Grasslands" citation rotted (HTTP 404) and could not be confirmed to exist under that title, and its "20-30 percent degraded" figure was unsupported. Replaced with FAO's verifiable 2023 grassland soil-carbon assessment, which supports that grasslands hold ~20 percent of global soil organic carbon and shows a negative carbon balance (declining stocks) in several regions. This is a soil-carbon proxy, not a percent-degraded statistic, and it does not single out Central Asia — a Central-Asia-specific degradation-extent figure still needs a dedicated source. Do not use this as proof of degradation in any specific Central Asian sub-national area without satellite or field verification.
 
 ### MODIS NDVI Grassland Monitoring
 

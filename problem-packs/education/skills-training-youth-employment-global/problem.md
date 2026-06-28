@@ -12,7 +12,7 @@ Sub-national data on where training programs exist, what skills they teach, who 
 
 - Verified fact: ILO's 2024 Global Employment Trends for Youth estimates 67 million unemployed youth globally, with youth-to-adult unemployment ratios of 3-4x in many LMICs and skills mismatch identified as a primary barrier to youth employment.
 - Verified fact: Systematic reviews of youth employment interventions find that vocational training programs increase employment rates by 2-5 percentage points on average, but effects are highly heterogeneous — programs linked to employer demand show 8-12 percentage point gains while standalone programs show near-zero effects.
-- Verified fact: Training-provider registries are fragmented across government ministries, NGOs, and private operators in most LMICs — no single dataset captures the full landscape of skills-training availability at sub-national scale.
+- Verified fact: Training-provider registries are fragmented across government ministries, NGOs, and private operators in most LMICs — no single dataset captures the full scope of skills-training availability at sub-national scale.
 - Verified fact: Employment-outcome tracking is conducted by fewer than 10 percent of training programs in most LMIC contexts, making it impossible to systematically assess which programs actually improve employment outcomes.
 
 ## Uncertain Areas

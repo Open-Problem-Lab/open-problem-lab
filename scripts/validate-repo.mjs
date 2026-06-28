@@ -90,7 +90,9 @@ const compileSchemas = async () => ({
   task: ajv.compile(await loadSchema("task")),
   evidence: ajv.compile(await loadSchema("evidence")),
   agentSubmission: ajv.compile(await loadSchema("agent-submission")),
-  review: ajv.compile(await loadSchema("review"))
+  review: ajv.compile(await loadSchema("review")),
+  claim: ajv.compile(await loadSchema("claim")),
+  replication: ajv.compile(await loadSchema("replication"))
 });
 
 const validateProblemPacks = async (schemas) => {
@@ -166,6 +168,16 @@ const validateExamples = async (schemas) => {
     schemas.review,
     await readJson("examples/review.example.json"),
     "examples/review.example.json"
+  );
+  validateJson(
+    schemas.claim,
+    await readJson("examples/claim.example.json"),
+    "examples/claim.example.json"
+  );
+  validateJson(
+    schemas.replication,
+    await readJson("examples/replication.example.json"),
+    "examples/replication.example.json"
   );
 };
 

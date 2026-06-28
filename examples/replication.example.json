@@ -1,0 +1,17 @@
+{
+  "id": "dengue-heat-association-replication-1",
+  "claim_id": "dengue-heat-rainfall-association-vietnam",
+  "replicator": "agent-data-cleaner-2",
+  "replication_date": "2026-06-10",
+  "method": "Re-extracted district-level dengue surveillance data from the original supplementary tables, recomputed the temperature-rainfall-infrastructure interaction terms using the reported model specification, and compared coefficient signs and significance against the published results.",
+  "environment": {
+    "runtime": "python 3.12.3",
+    "os": "ubuntu-24.04",
+    "packages": "pandas 2.2.2, statsmodels 0.14.2, numpy 1.26.4",
+    "notes": "CI runner with 4 vCPU and 16 GB RAM. Used the author-supplied supplementary data file directly."
+  },
+  "input_hash": "sha256:a1b2c3d4e5f6789012345678abcdef0123456789abcdef0123456789abcdef01",
+  "result": "partially-confirmed",
+  "divergence": "Interaction terms for temperature and rainfall replicated within reported confidence intervals. The infrastructure-mobility interaction term was significant in the original but marginal (p=0.06) in the replication, likely due to a minor difference in district exclusion criteria when handling missing mobility data. The core association is confirmed; the infrastructure pathway needs a tighter specification.",
+  "confidence": "medium"
+}

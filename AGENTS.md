@@ -24,7 +24,7 @@ Correct, narrow, and falsifiable beats prolific.
 ## Key Components
 
 - `problem-packs/`: canonical problem-pack directories with task maps across multiple domains. Read generated indexes for live counts. When calibrating pack quality, use strong exemplars such as `climate-health/dengue-heat-vietnam` for operational humility and `public-health/birth-registration-access-global` for measure-family discipline across survey, CRVS, and health-touchpoint evidence.
-- `schemas/`: JSON schemas for machine-checkable protocol objects.
+- `schemas/`: JSON schemas for machine-checkable protocol objects. Includes the claim schema (the core thesis object: persistent claims with a verification lifecycle, evidence links, failure modes, kill conditions, and required reviewers) and the replication schema (independent replication records with environment, input hash, and divergence tracking).
 - `.github/ISSUE_TEMPLATE/`: structured issue forms.
 - `.github/workflows/`: validation, source verification, reproducibility, and Wiki publishing.
 - `agents/`: role guides for structured agent contributions.
@@ -34,29 +34,16 @@ Correct, narrow, and falsifiable beats prolific.
 
 ## Active Problem Packs
 
-| ID                                                     | Domain                                  | Region                         |
-| ------------------------------------------------------ | --------------------------------------- | ------------------------------ |
-| `air-quality/indoor-air-pollution-sub-saharan-africa`  | air-quality, public-health              | sub-saharan-africa             |
-| `air-quality/pm25-monitoring-south-asia`               | air-quality, public-health              | south-asia                     |
-| `biodiversity/coral-bleaching-great-barrier-reef`      | biodiversity, climate-health            | great-barrier-reef             |
-| `biodiversity/deforestation-amazon`                    | biodiversity, climate-health            | amazon                         |
-| `climate-adaptation/sea-level-rise-small-islands`      | climate-adaptation, disaster-resilience | small-island-developing-states |
-| `climate-health/dengue-heat-vietnam`                   | climate-health, public-health           | vietnam                        |
-| `climate-health/heat-stress-urban-south-asia`          | climate-health, public-health           | south-asia                     |
-| `climate-health/malaria-early-warning-africa`          | climate-health, public-health           | sub-saharan-africa             |
-| `disaster-resilience/cyclone-early-warning-bangladesh` | disaster-resilience, climate-health     | bangladesh                     |
-| `disaster-resilience/earthquake-vulnerability-nepal`   | disaster-resilience                     | nepal                          |
-| `education/girls-education-sub-saharan-africa`         | education                               | sub-saharan-africa             |
-| `education/learning-loss-post-pandemic`                | education                               | global                         |
-| `energy-access/clean-cooking-sub-saharan-africa`       | energy-access, public-health            | sub-saharan-africa             |
-| `energy-access/mini-grid-rural-sub-saharan-africa`     | energy-access                           | sub-saharan-africa             |
-| `food-security/drought-early-warning-horn-of-africa`   | food-security, disaster-resilience      | east-africa                    |
-| `food-security/locust-outbreak-east-africa`            | food-security, climate-health           | east-africa                    |
-| `public-health/lead-exposure-urban-global`             | public-health                           | global                         |
-| `public-health/stunting-sub-saharan-africa`            | public-health, food-security            | sub-saharan-africa             |
-| `sanitation/open-defecation-india`                     | sanitation, public-health               | india                          |
-| `water-security/glacial-melt-hindu-kush`               | water-security, climate-adaptation      | hindu-kush-himalaya            |
-| `water-security/groundwater-depletion-india`           | water-security, food-security           | india                          |
+The portfolio grows continuously. Do not rely on a static count or a hand-maintained table. Read the live generated indexes:
+
+- [`tasks-available.json`](tasks-available.json) — machine-readable index of every scoped task
+- [`agent-radar.json`](agent-radar.json) — routing layer ranking first moves and unlock paths
+- [`docs/wiki/Problem-Packs.md`](docs/wiki/Problem-Packs.md) — auto-generated reader-facing list
+
+When calibrating pack quality, use these strong exemplars:
+
+- `climate-health/dengue-heat-vietnam` — operational humility, bounded claims, analytic-use warnings
+- `public-health/birth-registration-access-global` — measure-family discipline across survey, CRVS, and health-touchpoint evidence
 
 ## Agent Working Rules
 
@@ -104,6 +91,29 @@ A contribution may only be merged if at least one of these is true:
 3. It removes a defect (false claim, broken source, unsound method, unsafe shortcut).
 
 Pure prose polish without one of the above is not a reason to merge.
+
+## The Claim Lifecycle
+
+The thesis of this repository is that verification is the scarce resource. The claim object is the protocol object that makes that thesis machine-checkable. A claim is a persistent, falsifiable statement that exists independently of any single submission or review. It accumulates evidence and failure modes over time, carries its own kill condition, and moves through a verification lifecycle.
+
+```text
+unverified -> dry-lab-verified -> needs-replication -> replicated -> accepted -> field-tested
+                                                \-> rejected
+                                                  \-> falsified
+                                                    \-> deprecated
+```
+
+- `unverified`: A claim has been submitted but no evidence has been reviewed.
+- `dry-lab-verified`: Evidence records support the claim at the computational or literature level. No wet-lab or field confirmation.
+- `needs-replication`: Evidence has been reviewed but independent replication is required before the claim can advance.
+- `replicated`: An independent replicator has confirmed the result. The replication record is linked.
+- `accepted`: The claim has passed all required reviews and replication. It is canonical repo truth.
+- `field-tested`: The claim has been tested in a real-world operational context. The highest status.
+- `rejected`: The claim did not survive review. Terminal.
+- `falsified`: The kill condition was met. Terminal. A falsified claim stays in the record so future contributors do not repeat it.
+- `deprecated`: The claim was accepted but its evidence has decayed (source rot, dataset revision, superseded by a stronger claim). Terminal but recoverable through a new submission.
+
+A claim with no evidence is `unverified` regardless of prose. A claim with no kill condition is not a claim. A high-safety claim without red-team review cannot advance past `dry-lab-verified`. The schema enforces these constraints; reviewers enforce the rest.
 
 ## Roles for Top AI Agents
 

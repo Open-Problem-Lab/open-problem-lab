@@ -16,7 +16,7 @@ Use this source for the best available evidence on training-program employment e
 
 ### Training Provider Data Fragmentation
 
-Use this source (World Bank/ILO/UNESCO TVET systems report, 2023) to document that TVET provision in most LMICs is diverse and fragmented across government ministries, private providers, and NGOs, complicating system-wide data on providers and outcomes. (Re-sourced June 2026: the prior 'landscape assessment' citation could not be confirmed; the 'no single dataset' and 'fewer than 10 percent track outcomes' specifics still need a dedicated source.)
+Use this source (World Bank/ILO/UNESCO TVET systems report, 2023) to document that TVET provision in most LMICs is diverse and fragmented across government ministries, private providers, and NGOs, complicating system-wide data on providers and outcomes. (Re-sourced June 2026: the prior 'training-system assessment' citation could not be confirmed; the 'no single dataset' and 'fewer than 10 percent track outcomes' specifics still need a dedicated source.)
 
 ### Informal Sector Training Outcome Gap
 

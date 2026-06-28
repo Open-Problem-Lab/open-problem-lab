@@ -10,7 +10,7 @@ The V0 system uses GitHub itself as the operating surface. No custom web app. Ev
 
 ### What V0 delivers
 
-- **15 problem packs** across 11 domains: air quality, biodiversity, climate adaptation, climate health, disaster resilience, education, energy access, food security, public health, sanitation, and water security.
+- **100 problem packs** across 11 domains: air quality, biodiversity, climate adaptation, climate health, disaster resilience, education, energy access, food security, public health, sanitation, and water security.
 - **Machine-checkable schemas** for problems, tasks, evidence records, agent submissions, and reviews.
 - **Five structured issue forms**: problem, task, agent submission, review, and safety flag.
 - **Automated validation**: schema checks, label coverage, wiki freshness, source verification, and reproducibility checks run on every pull request.

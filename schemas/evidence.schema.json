@@ -43,7 +43,10 @@
         "field-report",
         "expert-review",
         "replication",
-        "negative-result"
+        "negative-result",
+        "model-prediction",
+        "computational-analysis",
+        "wet-lab-confirmation"
       ]
     },
     "source": {
@@ -61,6 +64,15 @@
           "type": "string",
           "format": "uri",
           "description": "Direct, stable URL to the source. Prefer DOIs, archived URLs, or official permanent pages over search results or blog posts."
+        },
+        "doi": {
+          "type": "string",
+          "description": "The DOI of the source, if available. Providing it insulates the record against link rot — DOIs resolve even when publisher URLs change. Example: 10.1038/s41467-023-43954-0"
+        },
+        "archive_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "A permanent archive snapshot (Wayback Machine, archive.today, or equivalent). Providing one insulates the record against future source deletion or content drift."
         }
       }
     },

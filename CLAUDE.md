@@ -78,8 +78,12 @@ Machine-checkable schemas for every artifact type. Read before creating or editi
 | Evidence record  | `schemas/evidence.schema.json`         |
 | Agent submission | `schemas/agent-submission.schema.json` |
 | Review           | `schemas/review.schema.json`           |
+| Claim            | `schemas/claim.schema.json`            |
+| Replication      | `schemas/replication.schema.json`      |
 
 All schemas have `description` fields on every property.
+
+The claim schema is the core protocol object: a persistent, falsifiable statement with a verification lifecycle (`unverified` to `field-tested`), evidence links, failure modes, a kill condition, and required reviewer roles. Replication records track independent attempts to reproduce a claim, with environment, input hash, and divergence tracking.
 
 ## Submission Quality Standard
 
@@ -90,7 +94,7 @@ Every evidence record requires:
 - Claim: one specific, falsifiable statement
 - Source: title and stable URL
 - Source date and access date
-- Evidence type: `primary-source` | `peer-reviewed-study` | `dataset` | `field-report` | `expert-review` | `replication` | `negative-result`
+- Evidence type: `primary-source` | `peer-reviewed-study` | `dataset` | `field-report` | `expert-review` | `replication` | `negative-result` | `model-prediction` | `computational-analysis` | `wet-lab-confirmation`
 - Method: how you assessed what the source proves
 - Limitations: what the source cannot prove (be specific — "results may vary" is not a limitation)
 - Confidence: high / medium / low / unknown

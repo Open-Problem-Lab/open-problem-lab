@@ -52,5 +52,105 @@
       "Return-period changes at specific islands require local validation against observed flood events."
     ],
     "confidence": "high"
+  },
+  {
+    "id": "coastal-dem-kulp-strauss-2019",
+    "problem_id": "climate-adaptation/sea-level-rise-small-islands",
+    "claim": "CoastalDEM, a neural-network-corrected version of SRTM, reduces coastal elevation bias from a global mean of 1.9 m (SRTM) to 0.5 m and triples the estimated global population below projected annual flood levels by 2050, but vertical error remains substantial for low-lying atoll nations where total elevation is under 5 m.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "New elevation data triple estimates of global vulnerability to sea-level rise and coastal flooding",
+      "url": "https://www.nature.com/articles/s41467-019-12808-z",
+      "doi": "10.1038/s41467-019-12808-z"
+    },
+    "source_date": "2019-10-29",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the Nature Communications article abstract, methods section describing the neural-network correction of SRTM using ICESat and other training data, validation statistics against independent lidar, and the population exposure estimates.",
+    "limitations": [
+      "CoastalDEM's 0.5 m mean error is still large relative to the 0.4-0.8 m SLR projected by 2100, meaning inundation maps derived from it have wide uncertainty bands for atoll nations.",
+      "Validation was performed against primarily US and Australian lidar; independent validation for SIDS atolls is not available.",
+      "The 90 m resolution is too coarse for individual-island infrastructure mapping.",
+      "Population exposure estimates use 2010 LandScan data and may not reflect current SIDS population distributions."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "nasa-sea-level-portal-2024",
+    "problem_id": "climate-adaptation/sea-level-rise-small-islands",
+    "claim": "NASA's Sea Level Change Portal provides satellite altimetry observations showing global mean sea level has risen approximately 100 mm since 1993 at an accelerating rate of 3.4 mm per year (1993-2023 average), with regional variation showing some Pacific SIDS experiencing rates above the global average due to ocean dynamics and trade-wind changes.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "NASA Sea Level Change Portal",
+      "url": "https://sealevel.nasa.gov/"
+    },
+    "source_date": "2024-06-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the NASA Sea Level Change Portal for satellite altimetry data products, regional sea-level trend maps, data documentation, and observation-based analysis tools.",
+    "limitations": [
+      "Satellite altimetry measures open-ocean sea surface height, not coastal water levels which are affected by tides, storm surge, and wave runup.",
+      "Regional trend maps for SIDS waters are based on gridded altimetry with approximately 0.25 degree resolution, too coarse for individual island exposure assessment.",
+      "The acceleration signal is sensitive to the time window selected and the altimeter mission used."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "worldpop-sids-population",
+    "problem_id": "climate-adaptation/sea-level-rise-small-islands",
+    "claim": "WorldPop provides gridded population estimates at approximately 100 m resolution for SIDS countries using census-derived top-down disaggregation, suitable for population-at-risk estimation within coastal inundation zones, but population data currency varies by country with some SIDS estimates based on censuses over 10 years old.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "WorldPop — Gridded Population Data",
+      "url": "https://www.worldpop.org/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the WorldPop platform for SIDS country availability, data products, spatial resolution, temporal coverage, and methodology (top-down vs bottom-up disaggregation).",
+    "limitations": [
+      "Population estimates rely on census data that varies in age; some SIDS have not conducted a census in over 10 years.",
+      "Top-down disaggregation models assume population distribution patterns that may not hold for small atoll communities with clustered settlement patterns.",
+      "100 m resolution is sufficient for island-scale population-at-risk estimation but may miss fine-scale population clustering near shorelines.",
+      "Informal settlement and migrant worker populations may be undercounted in source census data for some SIDS."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "gebco-bathymetry-2023",
+    "problem_id": "climate-adaptation/sea-level-rise-small-islands",
+    "claim": "GEBCO provides a global bathymetry and elevation grid at 15 arc-second resolution (approximately 450 m at the equator) that combines satellite-derived gravity, sonar, and topographic sources, suitable for nearshore bathymetry input to storm-surge models but with sparse direct sonar coverage in many SIDS waters.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "GEBCO — General Bathymetric Chart of the Oceans",
+      "url": "https://www.gebco.net/"
+    },
+    "source_date": "2023-07-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the GEBCO website for the 2023 grid product, spatial resolution, data sources (satellite altimetry gravity, ship-track sonar, topographic merging), and SIDS regional coverage assessment.",
+    "limitations": [
+      "15 arc-second resolution is too coarse for individual reef-flat or lagoon bathymetry needed for island-scale wave-runup modeling.",
+      "SIDS waters have sparse ship-track sonar coverage; most bathymetry is inferred from satellite gravity, which has lower accuracy in shallow coastal waters.",
+      "The grid combines bathymetry and topography but the topographic component should not be used for coastal elevation — use dedicated coastal DEMs instead.",
+      "Bathymetry errors propagate into storm-surge model output, adding uncertainty to coastal flood estimates."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "psmsl-tide-gauge-data",
+    "problem_id": "climate-adaptation/sea-level-rise-small-islands",
+    "claim": "The Permanent Service for Mean Sea Level maintains the global tide gauge database with records from over 2,000 stations, but SIDS coverage is extremely sparse with fewer than 20 active tide gauges across all SIDS combined, and many records are short-duration or have data gaps that limit local sea-level trend estimation.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Permanent Service for Mean Sea Level (PSMSL)",
+      "url": "https://www.psmsl.org/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the PSMSL database for station coverage in SIDS regions, record lengths, data quality flags, and the Revised Local Reference (RLR) data products.",
+    "limitations": [
+      "Fewer than 20 active tide gauges across all SIDS combined, with many records shorter than 20 years — insufficient for robust local sea-level trend estimation.",
+      "Tide gauge records measure relative sea level which includes local vertical land motion (subsidence or uplift); SIDS atolls may experience subsidence that is not accounted for.",
+      "Data gaps are common and metadata quality varies substantially across SIDS stations.",
+      "Tide gauge locations are typically at single ports and do not represent island-wide sea-level conditions."
+    ],
+    "confidence": "medium"
   }
 ]

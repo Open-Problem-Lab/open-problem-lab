@@ -7,9 +7,9 @@
 | Metric | Value |
 |---|---|
 | Total packs | 100 |
-| Packs with claims | 3 |
+| Packs with claims | 4 |
 | Packs with accepted claims | 0 |
-| Total evidence records | 268 |
+| Total evidence records | 273 |
 | Total tasks | 516 |
 | Scoped tasks (ready for work) | 100 |
 | High-risk tasks | 268 |
@@ -30,7 +30,7 @@
 | [biodiversity/wetland-loss-migratory-birds-global](../../problem-packs/biodiversity/wetland-loss-migratory-birds-global/problem.md) | Wetland Loss Detection And Migratory Bird Population Impact | scoped | biodiversity, climate-health | global | medium | 4 ev; 5 tasks | ready |
 | [climate-adaptation/climate-resilient-seeds-global](../../problem-packs/climate-adaptation/climate-resilient-seeds-global/problem.md) | Climate-Resilient Seed Access And Adoption Gaps In Smallholder Agriculture | scoped | climate-adaptation, food-security | global | medium | 4 ev; 5 tasks | ready |
 | [climate-adaptation/heat-early-warning-systems-global](../../problem-packs/climate-adaptation/heat-early-warning-systems-global/problem.md) | Heat Early Warning System Coverage And Effectiveness In Low-Income Countries | scoped | climate-adaptation, public-health | global | high | 4 ev; 5 tasks | ready |
-| [climate-adaptation/sea-level-rise-small-islands](../../problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md) | Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States | scoped | climate-adaptation, disaster-resilience | small-island-developing-states | high | 3 ev; 6 tasks | ready |
+| [climate-adaptation/sea-level-rise-small-islands](../../problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md) | Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States | scoped | climate-adaptation, disaster-resilience | small-island-developing-states | high | 8 ev; 6 tasks; 1 claims | has claims |
 | [climate-adaptation/urban-green-space-cooling-global](../../problem-packs/climate-adaptation/urban-green-space-cooling-global/problem.md) | Urban Green Space Cooling Effect And Heat Mortality Reduction Potential | scoped | climate-adaptation, climate-health | global | medium | 4 ev; 5 tasks | ready |
 | [climate-health/air-pollution-source-attribution-global](../../problem-packs/climate-health/air-pollution-source-attribution-global/problem.md) | Ambient Air Pollution Source Attribution And Health Impact In LMIC Megacities | scoped | climate-health, air-quality | global | medium | 4 ev; 5 tasks | ready |
 | [climate-health/cold-spell-mortality-global](../../problem-packs/climate-health/cold-spell-mortality-global/problem.md) | Cold Spell Mortality Risk And Heating Access Gaps In Low-Income Countries | scoped | climate-health, public-health | global | medium | 4 ev; 5 tasks | ready |

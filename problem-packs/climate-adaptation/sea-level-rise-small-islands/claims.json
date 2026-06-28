@@ -1,0 +1,40 @@
+[
+  {
+    "id": "sids-coastal-exposure-data-sufficiency",
+    "problem_id": "climate-adaptation/sea-level-rise-small-islands",
+    "claim": "Available public data sources are sufficient for country-level and broad regional SIDS coastal exposure framing (SLR projection ranges, population-at-risk estimation, and extreme sea-level trend documentation), but no public dataset provides the high-vertical-accuracy coastal elevation or dense tide-gauge coverage needed for island-scale inundation mapping at the precision required for adaptation prioritization. Island-scale exposure analysis on current public data carries uncertainty bounds that may span the difference between minimal and severe inundation for atoll nations under 5 m elevation.",
+    "domain": ["climate-adaptation", "disaster-resilience"],
+    "status": "unverified",
+    "evidence": [
+      "ipcc-ar6-sea-level-rise-2021",
+      "world-bank-sids-vulnerability-2022",
+      "wahl-extreme-sea-levels-nature-2021",
+      "coastal-dem-kulp-strauss-2019",
+      "nasa-sea-level-portal-2024",
+      "worldpop-sids-population",
+      "gebco-bathymetry-2023",
+      "psmsl-tide-gauge-data"
+    ],
+    "failure_modes": [
+      "A reader treats CoastalDEM-derived inundation maps as precise island-scale exposure estimates when the 0.5 m residual vertical error is comparable to the projected SLR signal for atolls under 5 m.",
+      "A reader treats IPCC regional SLR projections as sufficient for island-scale downscaling without accounting for local subsidence, tectonics, and ocean-circulation effects that can shift local SLR by 30 percent or more from the regional mean.",
+      "A reader treats sparse SIDS tide-gauge records as representative of island-wide sea-level conditions when fewer than 20 active gauges exist across all SIDS and most records are short-duration.",
+      "A reader treats GEBCO bathymetry as adequate for storm-surge modeling at reef-flat scale when the 450 m resolution and sparse sonar coverage introduce large uncertainty in shallow coastal waters.",
+      "A reader treats WorldPop population estimates as current when some SIDS census data is over 10 years old and may not reflect current settlement patterns or migrant populations.",
+      "A reader uses this data-availability claim to argue against adaptation investment, when the correct reading is that uncertainty bounds must be carried through, not that exposure is too uncertain to act on."
+    ],
+    "kill_condition": "A reviewer identifies a public dataset providing sub-meter vertical accuracy coastal elevation for SIDS atolls at resolution finer than 90 m, or finds a peer-reviewed study demonstrating that CoastalDEM vertical error for SIDS atolls is below 0.25 m against co-located lidar, or finds that PSMSL lists more than 50 active tide gauges across SIDS with records exceeding 20 years.",
+    "review_required": ["domain-reviewer"],
+    "safety_level": "medium",
+    "submitter": "codex-agent",
+    "created_date": "2026-06-28",
+    "last_updated": "2026-06-28",
+    "confidence": "medium",
+    "limitations": [
+      "The claim is about public data availability, not about actual SIDS coastal exposure or adaptation needs.",
+      "The 0.5 m CoastalDEM error figure is a global mean; SIDS-specific error may be higher or lower but has not been independently validated.",
+      "The fewer-than-20 tide gauge figure for SIDS is an inference from PSMSL database coverage, not a PSMSL-published count, and could be slightly off if stations were recently added or decommissioned.",
+      "The claim does not address non-public datasets (e.g., national lidar surveys) that may exist but are not publicly available."
+    ]
+  }
+]

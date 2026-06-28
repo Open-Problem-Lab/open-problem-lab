@@ -1,0 +1,40 @@
+[
+  {
+    "id": "amazon-deforestation-species-data-sufficiency",
+    "problem_id": "biodiversity/deforestation-amazon",
+    "claim": "Available public data sources are sufficient for basin-wide and Brazil-specific deforestation detection at 30 m resolution and annual cadence (PRODES, Hansen et al., GLAD alerts, MapBiomas), but species occurrence data (GBIF) and range maps (IUCN) are too spatially biased, temporally inconsistent, and coarsely resolved to support pixel-level species-range loss estimates without large uncertainty bounds. No public dataset provides repeated population-level survey data for Amazon species that would allow direct estimation of deforestation-driven population decline rather than range-overlay inference.",
+    "domain": ["biodiversity", "climate-health"],
+    "status": "unverified",
+    "evidence": [
+      "inpe-prodes-2023",
+      "barlow-amazon-disturbance-biodiversity-2016",
+      "hansen-glad-alerts-2022",
+      "gbif-occurrence-data-2024",
+      "iucn-red-list-range-maps-2024",
+      "mapbiomas-land-cover-2024",
+      "hansen-global-forest-change-2013",
+      "gfw-platform-2024"
+    ],
+    "failure_modes": [
+      "A reader intersects IUCN coarse range polygons with 30 m deforestation data and treats the result as a precise species-range loss estimate, when range polygon edges have uncertain accuracy and overestimate actual occupancy.",
+      "A reader treats GBIF occurrence density as a proxy for species abundance, when under-sampled Amazon regions appear species-poor simply because no one has surveyed them.",
+      "A reader treats Hansen et al. tree cover loss as equivalent to deforestation, when the dataset includes plantation harvest, fire, and natural dieback.",
+      "A reader uses Brazil-only MapBiomas or PRODES data to draw conclusions about the entire Amazon basin, when Peru, Colombia, Ecuador, and Bolivia have no equivalent land cover or deforestation monitoring system.",
+      "A reader treats GLAD weekly alerts as confirmed deforestation events, when the alert system detects tree cover loss generically and requires confirmation.",
+      "A reader uses range-loss estimates derived from overlay methods as evidence of population decline or local extinction, when no repeated population survey data exists for most Amazon species."
+    ],
+    "kill_condition": "A reviewer identifies a public dataset providing repeated population-level survey data for at least 100 Amazon species across multiple time periods, or finds that GBIF occurrence density in the Amazon interior (beyond 100 km from research stations and major rivers) exceeds 20 percent of the density near studied areas, or finds that IUCN range maps for Amazon species have been validated against independent occupancy data with median positional accuracy better than 1 km.",
+    "review_required": ["domain-reviewer"],
+    "safety_level": "medium",
+    "submitter": "codex-agent",
+    "created_date": "2026-06-28",
+    "last_updated": "2026-06-28",
+    "confidence": "medium",
+    "limitations": [
+      "The claim is about public data availability for deforestation-species risk analysis, not about actual deforestation rates or species status.",
+      "The 2.7 billion GBIF record count is a global figure; the Amazon-specific subset has not been precisely quantified in this evidence record.",
+      "The claim that no public dataset provides repeated population surveys is an inference from reviewing available data portals, not a systematic survey of all biodiversity databases.",
+      "Brazil-only data limitations for MapBiomas and PRODES are well-documented but non-Brazilian Amazon monitoring gaps may be partially filled by national systems not reviewed here."
+    ]
+  }
+]

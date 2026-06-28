@@ -53,5 +53,111 @@
       "30m resolution may not capture selective logging or understory degradation."
     ],
     "confidence": "high"
+  },
+  {
+    "id": "gbif-occurrence-data-2024",
+    "problem_id": "biodiversity/deforestation-amazon",
+    "claim": "The Global Biodiversity Information Facility provides over 2.7 billion species occurrence records globally through an open-access platform, including millions of Amazon basin records, but occurrence density is heavily skewed toward well-studied areas near research stations and major rivers while vast interior regions remain severely under-sampled.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "Global Biodiversity Information Facility (GBIF)",
+      "url": "https://www.gbif.org/"
+    },
+    "source_date": "2024-06-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the GBIF portal for global occurrence record count, Amazon basin coverage, data access APIs, licensing, and known spatial bias documentation. Assessed the taxonomic and geographic distribution of records relevant to deforestation-species range analysis.",
+    "limitations": [
+      "Occurrence records reflect sampling effort, not species distribution; under-sampled Amazon regions appear species-poor when they may simply be under-collected.",
+      "Many records are historical with imprecise coordinates, limiting intersection with current deforestation data.",
+      "Taxonomic coverage is uneven: vertebrates are better represented than invertebrates and plants.",
+      "Record quality varies by data contributor; some records may be misidentified or georeferenced with high uncertainty.",
+      "GBIF data alone cannot establish population decline or extinction risk without repeated survey data."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "iucn-red-list-range-maps-2024",
+    "problem_id": "biodiversity/deforestation-amazon",
+    "claim": "The IUCN Red List provides expert-drawn species range maps for over 46,000 assessed species, including approximately 2,300 Amazon vertebrate species, but range maps are coarse polygons that overestimate actual occupancy and do not reflect population density or habitat quality within the range.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "IUCN Red List of Threatened Species",
+      "url": "https://www.iucnredlist.org/"
+    },
+    "source_date": "2024-06-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the IUCN Red List portal for species assessment coverage, range map availability, data licensing, and documentation of range map methodology. Assessed the number of Amazon-relevant species with range polygons available for intersection with deforestation data.",
+    "limitations": [
+      "Range maps are extent-of-occurrence polygons that include unsuitable habitat; they substantially overestimate actual area of occupancy.",
+      "Range maps are static snapshots that may not reflect recent range contractions from deforestation.",
+      "Not all Amazon species have been assessed; IUCN coverage is biased toward vertebrates.",
+      "Range map boundaries have uncertain accuracy at the edges; intersection with 30m deforestation data implies false precision.",
+      "IUCN spatial data download requires registration and is subject to licensing terms that restrict redistribution."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "mapbiomas-land-cover-2024",
+    "problem_id": "biodiversity/deforestation-amazon",
+    "claim": "MapBiomas produces annual Brazilian land cover and land use maps at 30 m resolution from Landsat imagery using machine-learning classification, covering 1985 to present with 25+ land cover classes, and provides a dedicated transition matrix for deforestation-to-pasture and deforestation-to-agriculture pathways.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "MapBiomas — Brazilian Land Cover and Land Use Maps",
+      "url": "https://mapbiomas.org/"
+    },
+    "source_date": "2024-08-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the MapBiomas platform for product coverage, temporal range, spatial resolution, land cover classification methodology, validation approach, and deforestation transition data. Assessed the data licensing and accessibility for Amazon-specific analysis.",
+    "limitations": [
+      "MapBiomas coverage is Brazil-only; Amazon regions in Peru, Colombia, Ecuador, and Bolivia are not covered by this product.",
+      "30 m resolution may misclassify small-scale agroforestry or secondary forest regrowth.",
+      "Land cover classification accuracy varies by biome and year; the Amazon biome has higher accuracy than the Cerrado.",
+      "The transition matrix identifies land cover change but does not attribute causal drivers (e.g., cattle vs soy vs logging).",
+      "Machine learning classification can produce temporal inconsistencies where pixels flip between classes across years without real change."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "hansen-global-forest-change-2013",
+    "problem_id": "biodiversity/deforestation-amazon",
+    "claim": "Hansen et al. 2013 produced the first global-scale forest cover loss and gain dataset at 30 m resolution using Landsat time series, with annual updates through Global Forest Watch, documenting both gross forest loss and gain but not distinguishing deforestation from plantation harvest or natural disturbance.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "High-Resolution Global Maps of 21st-Century Forest Cover Change",
+      "url": "https://www.science.org/doi/10.1126/science.1244693",
+      "doi": "10.1126/science.1244693"
+    },
+    "source_date": "2013-11-15",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the Science article abstract, methods, global forest change dataset documentation, validation approach, and Global Forest Watch integration. Assessed the distinction between tree cover loss and deforestation for Amazon applications.",
+    "limitations": [
+      "The dataset measures tree cover loss, not deforestation; plantation harvest, fire, and natural dieback are all counted as loss.",
+      "30 m resolution detects clearcuts but may miss selective logging and forest degradation.",
+      "Forest gain is mapped but the methodology does not distinguish natural regeneration from plantation establishment.",
+      "The threshold for forest definition (canopy cover percentage) affects results; using 30 percent versus 10 percent changes the estimated loss area.",
+      "The original 2013 dataset has been updated annually; using a specific vintage requires documenting which version was used."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "gfw-platform-2024",
+    "problem_id": "biodiversity/deforestation-amazon",
+    "claim": "Global Forest Watch, operated by the World Resources Institute, integrates multiple satellite-based forest monitoring datasets (Hansen et al. tree cover change, GLAD alerts, GLAD-S2 alerts, and fire alerts) into a single open-access platform with downloadable data and APIs, but the platform aggregates products with different definitions, resolutions, and update frequencies that must not be conflated in analysis.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global Forest Watch",
+      "url": "https://www.globalforestwatch.org/"
+    },
+    "source_date": "2024-06-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the Global Forest Watch platform for integrated datasets, data download options, API access, alert types, temporal coverage, and methodology documentation for each data layer.",
+    "limitations": [
+      "GFW integrates multiple products with incompatible definitions: Hansen et al. tree cover loss, GLAD tree cover loss alerts, and VIIRS fire alerts measure different phenomena at different resolutions.",
+      "Alert products (GLAD, GLAD-S2) have higher temporal frequency but lower spatial accuracy than annual Hansen et al. loss maps.",
+      "GFW does not provide land cover classification; it cannot distinguish deforestation-to-pasture from forest degradation.",
+      "API rate limits and data download sizes may require incremental processing for basin-wide Amazon analysis.",
+      "GFW data is free but licensing terms vary by underlying dataset; some layers have commercial use restrictions."
+    ],
+    "confidence": "high"
   }
 ]

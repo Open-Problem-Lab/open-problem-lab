@@ -7,9 +7,9 @@
 | Metric | Value |
 |---|---|
 | Total packs | 100 |
-| Packs with claims | 5 |
+| Packs with claims | 6 |
 | Packs with accepted claims | 0 |
-| Total evidence records | 277 |
+| Total evidence records | 282 |
 | Total tasks | 516 |
 | Scoped tasks (ready for work) | 100 |
 | High-risk tasks | 268 |
@@ -23,7 +23,7 @@
 | [air-quality/pm25-monitoring-south-asia](../../problem-packs/air-quality/pm25-monitoring-south-asia/problem.md) | PM2.5 Monitoring Gaps And Health Impact In South Asia | scoped | air-quality, public-health | south-asia | medium | 6 ev; 6 tasks; 1 claims | has claims |
 | [air-quality/wildfire-smoke-health-global](../../problem-packs/air-quality/wildfire-smoke-health-global/problem.md) | Wildfire Smoke PM2.5 Exposure And Respiratory Health Impact In Fire-Prone Regions | scoped | air-quality, public-health, climate-health | global | medium | 4 ev; 5 tasks | ready |
 | [biodiversity/coral-bleaching-great-barrier-reef](../../problem-packs/biodiversity/coral-bleaching-great-barrier-reef/problem.md) | Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef | scoped | biodiversity, climate-health | great-barrier-reef | medium | 3 ev; 6 tasks | ready |
-| [biodiversity/deforestation-amazon](../../problem-packs/biodiversity/deforestation-amazon/problem.md) | Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin | scoped | biodiversity, climate-health | amazon | medium | 3 ev; 6 tasks | ready |
+| [biodiversity/deforestation-amazon](../../problem-packs/biodiversity/deforestation-amazon/problem.md) | Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin | scoped | biodiversity, climate-health | amazon | medium | 8 ev; 6 tasks; 1 claims | has claims |
 | [biodiversity/grassland-degradation-central-asia](../../problem-packs/biodiversity/grassland-degradation-central-asia/problem.md) | Grassland Degradation Detection And Pastoral Livelihood Risk In Central Asia | scoped | biodiversity, food-security | central-asia | medium | 4 ev; 5 tasks | ready |
 | [biodiversity/mangrove-loss-south-east-asia](../../problem-packs/biodiversity/mangrove-loss-south-east-asia/problem.md) | Mangrove Deforestation Detection And Coastal Protection Loss In Southeast Asia | scoped | biodiversity, climate-adaptation, disaster-resilience | south-east-asia | medium | 4 ev; 5 tasks | ready |
 | [biodiversity/pollinator-decline-agriculture-global](../../problem-packs/biodiversity/pollinator-decline-agriculture-global/problem.md) | Pollinator Decline Detection And Crop-Pollination Service Risk In Agricultural Regions | scoped | biodiversity, food-security | global | medium | 3 ev; 5 tasks | ready |

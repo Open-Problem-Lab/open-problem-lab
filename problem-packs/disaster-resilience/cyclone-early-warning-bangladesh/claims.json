@@ -1,0 +1,42 @@
+[
+  {
+    "id": "cyclone-data-source-inventory-bangladesh",
+    "problem_id": "disaster-resilience/cyclone-early-warning-bangladesh",
+    "claim": "Seven candidate data sources for Bangladesh cyclone early warning verification have been classified by usability: IBTrACS and JTWC best-track archives are usable as historical track verification baselines (with JTWC as cross-reference only due to wind-averaging differences), WorldPop population data is usable for coastal exposure estimates at 100m resolution, GEBCO bathymetry is usable for storm surge model input with near-shore depth caveats, while BMD warning bulletins and OpenStreetMap shelter locations are classified as limited due to access and attribute-quality constraints respectively.",
+    "domain": ["disaster-resilience", "climate-health"],
+    "status": "unverified",
+    "evidence": [
+      "noaa-ibtracs-archive",
+      "jtwc-best-track-archive",
+      "worldpop-bangladesh-population",
+      "gebco-bathymetry-global",
+      "pavani-track-error-nio-2023",
+      "haque-bangladesh-cyclone-mortality-2012",
+      "ifrc-bangladesh-cyclone-preparedness-2023"
+    ],
+    "failure_modes": [
+      "A reader treats JTWC best tracks as the official WMO record for the Bay of Bengal when IMD (RSMC New Delhi) is the authoritative source, leading to intensity comparisons that ignore wind-averaging-period differences.",
+      "A reader uses GEBCO bathymetry at 15 arc-second resolution for fine-scale surge modeling in funnel-shaped estuaries where the grid is too coarse to capture the geometry that controls surge amplification.",
+      "A reader treats WorldPop 100m population estimates as current census counts when the underlying census data may predate the 2022 Bangladesh census and may undercount char land populations.",
+      "A reader treats the IBTrACS best track as ground truth when it is a merged product from multiple agencies with different intensity estimation methods, and pre-satellite-era tracks have larger uncertainty.",
+      "A reader treats BMD warning bulletins as accessible for verification when they are not publicly archived in machine-readable format and require direct BMD coordination to obtain.",
+      "A reader treats OSM shelter locations as a complete inventory when community-contributed data has inconsistent coverage and missing capacity or condition attributes.",
+      "A reader treats Pavani et al. 2023 DPE values as official IMD operational forecast errors when they are quasi-operational WRF model errors that may differ from IMD operational performance."
+    ],
+    "kill_condition": "A reviewer identifies a publicly accessible, machine-readable archive of BMD warning bulletins that provides operational warning content at district level, or finds a higher-resolution bathymetry dataset for the Bangladesh coast that is freely available and more accurate than GEBCO in shallow near-shore zones, or finds that Bangladesh population census data has been released that supersedes WorldPop estimates with finer grain than 100m.",
+    "review_required": ["domain-reviewer"],
+    "safety_level": "medium",
+    "submitter": "codex-agent",
+    "created_date": "2026-06-28",
+    "last_updated": "2026-06-28",
+    "confidence": "medium",
+    "limitations": [
+      "The source inventory classifies data availability and quality but does not verify forecast accuracy, surge model skill, or false-alarm rates — those are downstream tasks.",
+      "BMD warning bulletins are classified as limited based on the absence of a public archive; if BMD publishes a machine-readable bulletin archive, this classification should be revisited.",
+      "The JTWC cross-reference classification depends on the assumption that IMD best tracks are available through IBTrACS; if IMD tracks are withheld from IBTrACS, JTWC becomes more important and the classification should be revisited.",
+      "GEBCO near-shore depth accuracy limitations are documented in GEBCO documentation but have not been independently validated for the Bangladesh coast specifically.",
+      "WorldPop population data currency depends on the 2022 census integration timeline, which WorldPop has not confirmed.",
+      "Pavani et al. 2023 reports quasi-operational WRF model errors, not official IMD operational forecast errors; the claim cites these as the best available peer-reviewed track error baseline but they may not represent current operational skill."
+    ]
+  }
+]

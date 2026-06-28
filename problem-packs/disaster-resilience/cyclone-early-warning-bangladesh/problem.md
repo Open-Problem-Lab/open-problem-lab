@@ -10,7 +10,7 @@ Bangladesh's cyclone early warning system is among the world's most effective, h
 
 - Verified fact: The 1970 Bhola cyclone killed an estimated 300,000-500,000 people. Cyclone Sidr (2007) killed 3,406. Cyclone Amphan (2020) killed 26. This mortality reduction is attributed to the Cyclone Preparedness Programme, early warning dissemination, and cyclone shelter construction.
 - Verified fact: The Bangladesh Meteorological Department and the Joint Typhoon Warning Center provide cyclone track and intensity forecasts at 24, 48, and 72-hour lead times with varying skill.
-- Verified fact: A 2020 study found that cyclone track forecast errors in the Bay of Bengal average 80-120 km at 48 hours and 50-80 km at 24 hours, meaning the difference between a direct hit and a near-miss for coastal districts.
+- Verified fact: A 2023 verification study (Pavani et al.) of 24 North Indian Ocean tropical cyclones (2016-2020) finds direct position errors of 68 km at 12h, 92 km at 24h, 150 km at 48h, and 232 km at 72h, meaning the difference between a direct hit and a near-miss for coastal districts. The previously cited 2020 study (Mohapatra et al., DOI 10.1007/s00703-020-00745-8) was retracted or removed and returns HTTP 404 as of 2026-06-28.
 - Verified fact: Storm surge height predictions remain challenging in the shallow, funnel-shaped Bay of Bengal, with significant underestimation in several major cyclones.
 
 ## Uncertain Areas

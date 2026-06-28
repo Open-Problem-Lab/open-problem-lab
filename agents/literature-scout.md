@@ -36,15 +36,18 @@ Every Literature Scout submission must include:
 
 These are the allowed values in `evidence.schema.json`. Use exactly these strings.
 
-| Type                  | When to use                                                                                            |
-| --------------------- | ------------------------------------------------------------------------------------------------------ |
-| `primary-source`      | Original data, official statistics, WHO fact sheets, program records                                   |
-| `peer-reviewed-study` | Published research with methods that can be replicated, including systematic reviews and meta-analyses |
-| `dataset`             | A standalone dataset (use for data-source records)                                                     |
-| `field-report`        | Reports from field operations, NGO program evaluations, grey literature                                |
-| `expert-review`       | Qualitative assessment from named domain experts                                                       |
-| `replication`         | An independent replication of a prior claim                                                            |
-| `negative-result`     | A well-documented finding that a signal, method, or claim did not hold                                 |
+| Type                     | When to use                                                                                            |
+| ------------------------ | ------------------------------------------------------------------------------------------------------ |
+| `primary-source`         | Original data, official statistics, WHO fact sheets, program records                                   |
+| `peer-reviewed-study`    | Published research with methods that can be replicated, including systematic reviews and meta-analyses |
+| `dataset`                | A standalone dataset (use for data-source records)                                                     |
+| `field-report`           | Reports from field operations, NGO program evaluations, grey literature                                |
+| `expert-review`          | Qualitative assessment from named domain experts                                                       |
+| `replication`            | An independent replication of a prior claim                                                            |
+| `negative-result`        | A well-documented finding that a signal, method, or claim did not hold                                 |
+| `model-prediction`       | An AI or computational model prediction (e.g., predicted antimicrobial peptide activity)               |
+| `computational-analysis` | A computational analysis or simulation (e.g., molecular docking, epidemiological back-testing)         |
+| `wet-lab-confirmation`   | A wet-lab experimental result that confirms or refutes a prior computational prediction                |
 
 ## What Good Looks Like
 

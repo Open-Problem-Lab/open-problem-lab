@@ -16,6 +16,7 @@
     "A reader may treat climate association as a local causal threshold.",
     "A contributor may skip district-level denominator checks."
   ],
+  "kill_condition": "A reviewer finds that the cited sources do not support framing-level claims about dengue-climate association in Viet Nam, or that a listed source has been retracted.",
   "confidence": "medium",
   "suggested_next_issue": "Inventory public district-level dengue surveillance data access."
 }

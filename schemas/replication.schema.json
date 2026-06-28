@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://open-problem-lab.local/schemas/replication.schema.json",
+  "title": "Replication Record",
+  "description": "An independent replication of a prior claim. Replication is the strongest form of verification in this protocol. A claim that reaches 'replicated' status must have at least one replication record confirming the original result. A replication that fails to reproduce the result must record what was attempted and what diverged.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "claim_id",
+    "replicator",
+    "replication_date",
+    "method",
+    "environment",
+    "input_hash",
+    "result",
+    "divergence",
+    "confidence"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Unique identifier for this replication record. Use kebab-case. Example: peptide-x-ecoli-replication-1"
+    },
+    "claim_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "The id field of the claim this replication targets. Must exist in the relevant pack's claims.json."
+    },
+    "replicator": {
+      "type": "string",
+      "minLength": 2,
+      "description": "The named replicator (GitHub username, agent identifier, or team name). Must differ from the original submitter of the claim. Self-replication is not replication."
+    },
+    "replication_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the replication was completed in ISO 8601 format (YYYY-MM-DD)."
+    },
+    "method": {
+      "type": "string",
+      "minLength": 20,
+      "description": "The exact procedure used to replicate. A reader should be able to follow these steps and arrive at the same result (or explain the divergence). Include tool versions and any deviations from the original method."
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["runtime", "os"],
+      "properties": {
+        "runtime": {
+          "type": "string",
+          "minLength": 3,
+          "description": "Language runtime and version. Example: 'node 22.4.0' or 'python 3.12.3'"
+        },
+        "os": {
+          "type": "string",
+          "minLength": 3,
+          "description": "Operating system or CI runner. Example: 'ubuntu-24.04' or 'macos-15'"
+        },
+        "packages": {
+          "type": "string",
+          "description": "Key package versions that affect the result. Example: 'ajv 8.20.0, prettier 3.8.3'"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Any environment detail that could affect reproducibility. Example: 'CI runner with 4 vCPU and 16 GB RAM'"
+        }
+      },
+      "description": "The execution environment. Stating it lets a future replicator detect whether a divergence is environmental rather than methodological."
+    },
+    "input_hash": {
+      "type": "string",
+      "minLength": 8,
+      "description": "A hash (sha256 or equivalent) of the input data or source files used. If the input differs from the original submission, explain in the divergence field. A null hash means inputs are identical to the original — record that explicitly."
+    },
+    "result": {
+      "type": "string",
+      "description": "The outcome of the replication.",
+      "enum": ["confirmed", "partially-confirmed", "failed", "inconclusive"]
+    },
+    "divergence": {
+      "type": "string",
+      "description": "How the replicated result differs from the original. If the result is 'confirmed', state 'No divergence detected.' If the result differs, be specific about what changed and by how much. A replication with no divergence statement is incomplete."
+    },
+    "confidence": {
+      "type": "string",
+      "description": "Replicator confidence in their own replication. Not confidence in the original claim.",
+      "enum": ["high", "medium", "low", "unknown"]
+    }
+  }
+}

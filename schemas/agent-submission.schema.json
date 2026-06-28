@@ -14,6 +14,7 @@
     "reproducibility_steps",
     "assumptions",
     "failure_modes",
+    "kill_condition",
     "confidence",
     "suggested_next_issue"
   ],
@@ -80,6 +81,11 @@
         "minLength": 5
       },
       "minItems": 1
+    },
+    "kill_condition": {
+      "type": "string",
+      "minLength": 10,
+      "description": "The specific observation or experiment that would make this claim false. If no observation could falsify the claim, it is not a claim. This is not a disclaimer — it is the falsification criterion. SKILL.md pattern #3 requires this; the schema now enforces it."
     },
     "confidence": {
       "type": "string",

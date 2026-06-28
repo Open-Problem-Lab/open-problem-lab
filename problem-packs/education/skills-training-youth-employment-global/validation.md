@@ -27,7 +27,7 @@ No training-availability claim may be called actionable until it includes:
 - Provider-registry data completeness — document which provider types are captured and which are absent.
 - Coverage-gap documentation — explicitly state where provider data is unavailable.
 - Training-type differentiation — document which skill categories (vocational, digital, agricultural, soft skills) are mapped.
-- Comparison with at least one published training-landscape assessment for a similar LMIC context.
+- Comparison with at least one published training-system assessment for a similar LMIC context.
 
 ## Employment-Outcome Requirements
 

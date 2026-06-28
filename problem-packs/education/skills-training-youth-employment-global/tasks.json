@@ -30,7 +30,7 @@
       "National training-provider registries for target countries",
       "NGO and private training-program documentation",
       "Administrative boundary data for district-level aggregation",
-      "Published training-landscape assessments"
+      "Published training-system assessments"
     ],
     "expected_artifact": "validation.md update with availability methodology and data-fragmentation documentation.",
     "validation_method": "Replicator confirms provider-data extraction, fragmentation documentation, and coverage-gap assessment for each target country.",

@@ -1,0 +1,24 @@
+{
+  "id": "dengue-heat-rainfall-association-vietnam",
+  "problem_id": "climate-health/dengue-heat-vietnam",
+  "claim": "Interactions among temperature, hydrometeorology, infrastructure, and mobility are associated with dengue emergence in Viet Nam at district level, based on 23 years of surveillance data. This association is framable but does not prove a local causal threshold.",
+  "domain": ["climate-health", "public-health"],
+  "status": "dry-lab-verified",
+  "evidence": ["gibb-vietnam-dengue-2023", "who-dengue-fact-sheet-2025"],
+  "failure_modes": [
+    "A reader treats the association as a local causal threshold for a specific district.",
+    "Passive surveillance data reflects reporting access, not only true incidence.",
+    "Infrastructure and mobility variables are proxy measures that may not capture the true confounders."
+  ],
+  "kill_condition": "A replication on an independent surveillance dataset for Viet Nam finds no statistically significant association between temperature, rainfall, or infrastructure interactions and district-level dengue incidence after controlling for reporting access.",
+  "review_required": ["domain-reviewer", "replicator"],
+  "safety_level": "medium",
+  "submitter": "agent-literature-scout-1",
+  "created_date": "2026-06-06",
+  "last_updated": "2026-06-06",
+  "confidence": "medium",
+  "limitations": [
+    "The peer-reviewed model uses passive surveillance data that can reflect reporting access, not only true incidence.",
+    "The study covers Viet Nam nationally; district-level generalization to other countries is not supported."
+  ]
+}

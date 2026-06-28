@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://open-problem-lab.local/schemas/claim.schema.json",
+  "title": "Claim",
+  "description": "A persistent, falsifiable statement with a verification lifecycle. This is the core protocol object: a claim exists independently of any single submission or review, accumulates evidence and failure modes over time, and carries its own kill condition. The burden of proof sits with the submitter; the claim status reflects what has been verified, not what has been asserted.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "problem_id",
+    "claim",
+    "domain",
+    "status",
+    "evidence",
+    "failure_modes",
+    "kill_condition",
+    "review_required",
+    "safety_level",
+    "submitter",
+    "created_date",
+    "last_updated",
+    "confidence"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Unique identifier for this claim. Use kebab-case. Example: peptide-x-ecoli-inhibition"
+    },
+    "problem_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*/[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "The problem pack this claim belongs to. Must match the id field in problem.json. Example: climate-health/malaria-early-warning-africa"
+    },
+    "claim": {
+      "type": "string",
+      "minLength": 20,
+      "description": "One specific, falsifiable statement. State what can be proven, at what grain, with what evidence. A claim that cannot be shown false is not a claim."
+    },
+    "domain": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "Domain tags for this claim. Use the same domain vocabulary as problem.json."
+    },
+    "status": {
+      "type": "string",
+      "description": "Verification lifecycle. A claim starts as 'unverified' and moves rightward only through verified work. 'falsified' and 'deprecated' are terminal states that prevent further rightward movement.",
+      "enum": [
+        "unverified",
+        "dry-lab-verified",
+        "needs-replication",
+        "replicated",
+        "accepted",
+        "field-tested",
+        "rejected",
+        "falsified",
+        "deprecated"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "description": "Evidence record IDs from evidence.json that support this claim. Every ID here must exist in the relevant pack's evidence.json. A claim with no evidence is 'unverified' regardless of prose.",
+      "items": {
+        "type": "string",
+        "minLength": 3
+      },
+      "minItems": 1
+    },
+    "failure_modes": {
+      "type": "array",
+      "description": "Specific ways this claim could be wrong, misleading, or harmful if applied. Include grain mismatches, causal claims that exceed the evidence, and plausible misuse scenarios. 'Results may vary' is not a failure mode.",
+      "items": {
+        "type": "string",
+        "minLength": 5
+      },
+      "minItems": 1
+    },
+    "kill_condition": {
+      "type": "string",
+      "minLength": 10,
+      "description": "The specific observation or experiment that would make this claim false. If no observation could falsify the claim, the claim is not scientific and will not be accepted. This is not a disclaimer — it is the falsification criterion."
+    },
+    "review_required": {
+      "type": "array",
+      "description": "Reviewer roles required before this claim can advance to 'accepted'. At least one is required. For high safety_level claims, red-team-reviewer is required.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "domain-reviewer",
+          "red-team-reviewer",
+          "field-reality-reviewer",
+          "replicator"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "safety_level": {
+      "type": "string",
+      "description": "Risk level for this claim. low = framing, literature summaries. medium = data cleaning, ranking, models. high = operational recommendations, forecasts, resource allocation.",
+      "enum": ["low", "medium", "high"]
+    },
+    "submitter": {
+      "type": "string",
+      "minLength": 2,
+      "description": "The named submitter (GitHub username, agent identifier, or team name). Claims are owned. Anonymous claims are not accepted."
+    },
+    "created_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the claim was first submitted in ISO 8601 format (YYYY-MM-DD)."
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date",
+      "description": "Date of the last status change or evidence update in ISO 8601 format (YYYY-MM-DD)."
+    },
+    "accepted_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the claim reached 'accepted' status, if applicable. Absent means not yet accepted."
+    },
+    "replication_records": {
+      "type": "array",
+      "description": "Replication record IDs from replication.json that reference this claim. Absent means no replication has been attempted.",
+      "items": {
+        "type": "string",
+        "minLength": 3
+      }
+    },
+    "confidence": {
+      "type": "string",
+      "description": "Submitter confidence that the claim accurately represents what the evidence proves at the stated grain. Not confidence that the claim is true in the world.",
+      "enum": ["high", "medium", "low", "unknown"]
+    },
+    "limitations": {
+      "type": "array",
+      "description": "What the evidence cannot prove. Be specific: name the grain, geography, time period, or causal claims that exceed what the evidence supports. Distinct from failure_modes: limitations describe evidence scope, failure_modes describe how the claim could cause harm.",
+      "items": {
+        "type": "string",
+        "minLength": 5
+      }
+    }
+  }
+}

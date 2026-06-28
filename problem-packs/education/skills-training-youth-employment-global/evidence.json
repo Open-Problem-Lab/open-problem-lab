@@ -50,9 +50,9 @@
     },
     "source_date": "2023-09-01",
     "access_date": "2026-06-18",
-    "method": "Reviewed training-data landscape assessments, provider-registry documentation, and employment-outcome tracking rates across LMICs.",
+    "method": "Reviewed training-data assessments, provider-registry documentation, and employment-outcome tracking rates across LMICs.",
     "limitations": [
-      "The originally cited 'Skills training data systems landscape assessment' could not be confirmed to exist; re-sourced to the World Bank/ILO/UNESCO TVET systems report.",
+      "The originally cited 'Skills training data systems assessment' could not be confirmed to exist; re-sourced to the World Bank/ILO/UNESCO TVET systems report.",
       "This report describes TVET system fragmentation broadly; it does not quantify provider-registry coverage country by country.",
       "A dedicated source is still needed to substantiate the 'no single dataset' claim for any specific country."
     ],

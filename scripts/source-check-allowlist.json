@@ -50,6 +50,11 @@
       "url": "https://essd.copernicus.org/articles/13/4349/2021/",
       "reason": "ERA5-Land reanalysis article (Copernicus ESSD); live in browser but connection fails from CI runners.",
       "verified": "2026-06-28"
+    },
+    {
+      "url": "https://www.ioc.unesco.org/",
+      "reason": "UNESCO IOC homepage; live in browser but connection fails from CI runners.",
+      "verified": "2026-06-28"
     }
   ]
 }

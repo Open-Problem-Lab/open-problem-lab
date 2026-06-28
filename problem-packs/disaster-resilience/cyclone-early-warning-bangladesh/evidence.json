@@ -23,33 +23,117 @@
     "claim": "The IFRC documents Bangladesh's Cyclone Preparedness Programme as a globally recognized community-based early warning model involving Red Crescent volunteers in coastal districts for cyclone alert dissemination, evacuation support, and shelter management.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "Bangladesh disaster risk and response — ReliefWeb / UN OCHA",
+      "title": "Bangladesh disaster risk and response \u2014 ReliefWeb / UN OCHA",
       "url": "https://reliefweb.int/country/bgd"
     },
     "source_date": "2023-06-01",
     "access_date": "2026-06-07",
     "method": "Reviewed IFRC Bangladesh country page for CPP program description, Red Crescent volunteer role, and early warning dissemination model.",
     "limitations": [
-      "IFRC page provides program description, not specific operational statistics (volunteer counts, shelter numbers) which require official CPP government documentation at cpp.gov.bd — a source that was not programmatically accessible during verify:sources on 2026-06-07.",
+      "IFRC page provides program description, not specific operational statistics (volunteer counts, shelter numbers) which require official CPP government documentation at cpp.gov.bd \u2014 a source that was not programmatically accessible during verify:sources on 2026-06-07.",
       "IFRC framing reflects partnership perspective; operational gaps and coverage limitations require direct CPP and government data to verify."
     ],
     "confidence": "medium"
   },
   {
-    "id": "mohapatra-track-error-bob-2020",
+    "id": "pavani-track-error-nio-2023",
     "problem_id": "disaster-resilience/cyclone-early-warning-bangladesh",
-    "claim": "A 2020 analysis of Bay of Bengal cyclone track forecast errors finds mean errors of 50-80 km at 24 hours and 80-120 km at 48 hours, with intensification forecasts showing larger errors than track forecasts.",
+    "claim": "A 2023 verification study of 24 North Indian Ocean tropical cyclones (2016-2020) finds direct position errors of 68.12 km at 12h, 91.79 km at 24h, 149.8 km at 48h, and 232.36 km at 72h over the NIO as a whole, with landfall position errors lower over the Bay of Bengal than the Arabian Sea, and intensity errors magnifying from 4 to 12 m/s with lead time.",
     "evidence_type": "peer-reviewed-study",
     "source": {
-      "title": "Evaluation of operational tropical cyclone track and intensity forecasts in the Bay of Bengal",
-      "url": "https://link.springer.com/article/10.1007/s00703-020-00745-8"
+      "title": "Verification of tropical cyclone motion and rainfall forecast over North Indian Ocean",
+      "url": "https://link.springer.com/article/10.1007/s12040-023-02128-8",
+      "doi": "10.1007/s12040-023-02128-8"
     },
-    "source_date": "2020-09-01",
-    "access_date": "2026-06-06",
-    "method": "Reviewed abstract, forecast methodology, track error statistics by lead time, and intensity error analysis.",
+    "source_date": "2023-07-14",
+    "access_date": "2026-06-28",
+    "method": "Reviewed abstract and results from this Journal of Earth System Science article. The study simulates 24 TCs from 2016-2020 over the NIO using quasi-operational WRF and reports DPE at 12/24/48/72h lead times, landfall position errors by basin, and intensity errors. These figures are more recent and more specific than the previously cited Mohapatra et al. 2020 study (DOI 10.1007/s00703-020-00745-8), which has been retracted or removed and returns HTTP 404 from both Springer and doi.org as of 2026-06-28.",
     "limitations": [
-      "Forecast errors reflect operational model performance during the study period, which may have improved since 2020.",
-      "Track errors are basin averages and may differ for specific districts."
+      "DPE values are NIO-wide averages and may differ for Bay of Bengal specifically, though the study notes landfall errors are lower over the BoB than the Arabian Sea.",
+      "The 24 TCs span 2016-2020; model improvements since 2020 may have reduced errors.",
+      "The study uses quasi-operational WRF model forecasts, not official IMD operational forecasts, so error statistics may differ from IMD operational performance.",
+      "Intensity errors of 4-12 m/s are model-dependent and may vary across operational centers using different intensity estimation techniques."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "noaa-ibtracs-archive",
+    "problem_id": "disaster-resilience/cyclone-early-warning-bangladesh",
+    "claim": "NOAA's International Best Track Archive for Climate Stewardship (IBTrACS) provides the most complete public global tropical cyclone best-track dataset, combining all WMO-sanctioned RSMC and TCWC best tracks plus JTWC and other agency records at 6-hourly intervals from 1842 to present, suitable as the historical cyclone track verification baseline for Bay of Bengal cyclone analysis.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "NOAA National Centers for Environmental Information \u2014 IBTrACS",
+      "url": "https://www.ncei.noaa.gov/products/international-best-track-archive",
+      "doi": "10.25921/82ty-9c16"
+    },
+    "source_date": "2025-01-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the NOAA NCEI IBTrACS product page for dataset description, temporal coverage (1842-present), spatial coverage (global), temporal resolution (6-hourly with some 3-hourly), contributing agencies (WMO RSMCs, TCWCs, JTWC), data format (CSV, NetCDF, shapefile), version history, and known limitations. Confirmed Bay of Bengal coverage includes IMD and BMD best tracks.",
+    "limitations": [
+      "Best-track data merges records from multiple agencies with different intensity estimation methods; intensity values before the satellite era (pre-1965) are less reliable.",
+      "6-hourly temporal resolution may miss rapid intensification events between synoptic times.",
+      "IBTrACS version updates can revise historical tracks; the specific version used must be cited in any downstream verification.",
+      "Landfall position and timing are interpolated from 6-hourly points and may differ from actual landfall by tens of kilometers."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "jtwc-best-track-archive",
+    "problem_id": "disaster-resilience/cyclone-early-warning-bangladesh",
+    "claim": "The US Joint Typhoon Warning Center best-track archive provides tropical cyclone track and intensity records for the Western North Pacific and Bay of Bengal basins at 6-hourly intervals from 1945 to present, using the Dvorak technique and satellite-based intensity estimates, and serves as an independent cross-reference for IBTrACS and IMD best tracks in the Bay of Bengal.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "Joint Typhoon Warning Center \u2014 Tropical Cyclone Best Track Data",
+      "url": "https://www.metoc.navy.mil/jtwc/jtwc.html"
+    },
+    "source_date": "2025-01-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the JTWC website for best-track data availability, data format, temporal coverage, basin coverage, and documentation. JTWC provides best-track files for the Western North Pacific (which includes the Bay of Bengal) in text format with 6-hourly position, intensity (1-minute sustained winds), and central pressure.",
+    "limitations": [
+      "JTWC uses 1-minute sustained wind averaging, while IMD and BMD use 3-minute and 10-minute averaging respectively; direct intensity comparisons require unit conversion and are not one-to-one.",
+      "JTWC best tracks are not the official WMO-sanctioned record for the Bay of Bengal; IMD (RSMC New Delhi) is the official source, so JTWC should be used as cross-reference, not as the primary track for operational verification.",
+      "Pre-satellite era tracks (1945-1965) have larger position and intensity uncertainty.",
+      "The JTWC website has intermittent availability and may block automated access; data should be mirrored locally for reproducibility."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "worldpop-bangladesh-population",
+    "problem_id": "disaster-resilience/cyclone-early-warning-bangladesh",
+    "claim": "WorldPop provides gridded population estimates for Bangladesh at approximately 100m resolution using census-derived top-down disaggregation, suitable for calculating coastal population exposure within and outside cyclone warning zones, but the most recent Bangladesh census was 2022 and WorldPop estimates may lag official updates.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "WorldPop \u2014 Bangladesh Gridded Population Data",
+      "url": "https://www.worldpop.org/geodata/listing?id=29"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the WorldPop data catalog for Bangladesh-specific population products, spatial resolution (100m), temporal coverage, methodology (top-down disaggregation using census and covariates), and data availability. Confirmed Bangladesh country-level and gridded products are available.",
+    "limitations": [
+      "Bangladesh conducted its most recent census in 2022; WorldPop estimates based on earlier censuses may undercount populations in rapidly urbanizing coastal areas.",
+      "Top-down disaggregation models assume population distribution patterns from covariates (nighttime lights, land cover, roads) that may not capture informal settlements or char land populations accurately.",
+      "100m resolution is sufficient for union-level exposure analysis but may miss fine-scale population clustering on islands and coastal chars.",
+      "Cyclone shelter capacity and road network data are not included in WorldPop; exposure analysis requires integration with shelter and infrastructure datasets."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "gebco-bathymetry-global",
+    "problem_id": "disaster-resilience/cyclone-early-warning-bangladesh",
+    "claim": "The GEBCO global ocean bathymetry dataset provides seafloor depth at 15 arc-second (approximately 450m) resolution globally, including the Bay of Bengal continental shelf and coastal Bangladesh, and serves as a primary input for storm surge models that require high-resolution bathymetry in the shallow, funnel-shaped northern Bay of Bengal where surge amplification occurs.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "GEBCO \u2014 General Bathymetric Chart of the Oceans",
+      "url": "https://www.gebco.net/data_and_products/gridded_bathymetry_data/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the GEBCO website for gridded bathymetry product specifications, spatial resolution (15 arc-second global grid), data sources (multibeam surveys, satellite altimetry, single-beam soundings), version history (GEBCO 2024), data format (NetCDF), and licensing (free to use). Assessed coverage of the Bay of Bengal continental shelf and coastal Bangladesh region.",
+    "limitations": [
+      "15 arc-second resolution is coarser than the fine-scale coastal geometry that controls surge amplification in funnel-shaped estuaries; storm surge models for district-level verification may require higher-resolution local bathymetry from BMD or Bangladesh Inland Water Transport Authority.",
+      "GEBCO bathymetry in shallow coastal areas relies on satellite altimetry, which degrades in water depths under 20m; the near-shore zone where surge is highest may have significant depth errors.",
+      "GEBCO does not include topographic elevation data for overland surge inundation; storm surge models need a separate digital elevation model (e.g., SRTM, MERIT DEM) for overland flow.",
+      "The dataset is updated annually; the specific GEBCO version used must be cited in any downstream surge model verification."
     ],
     "confidence": "high"
   }

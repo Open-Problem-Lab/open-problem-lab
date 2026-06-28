@@ -33,7 +33,7 @@
     },
     {
       "url": "https://dhsprogram.com/publications/publication-FR374-DHS-Final-Reports.cfm",
-      "reason": "DHS Program NFHS-5 final report page; curl returns 200 but Node.js fetch fails — likely User-Agent blocking for automated requests.",
+      "reason": "DHS Program NFHS-5 final report page; curl returns 200 but Node.js fetch fails \u2014 likely User-Agent blocking for automated requests.",
       "verified": "2026-06-18"
     },
     {
@@ -54,6 +54,11 @@
     {
       "url": "https://www.ioc.unesco.org/",
       "reason": "UNESCO IOC homepage; live in browser but connection fails from CI runners.",
+      "verified": "2026-06-28"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/products/international-best-track-archive",
+      "reason": "NOAA NCEI IBTrACS product page; live in browser (200) but Node.js fetch fails from CI runners.",
       "verified": "2026-06-28"
     }
   ]

@@ -7,9 +7,9 @@
 | Metric | Value |
 |---|---|
 | Total packs | 100 |
-| Packs with claims | 4 |
+| Packs with claims | 5 |
 | Packs with accepted claims | 0 |
-| Total evidence records | 273 |
+| Total evidence records | 277 |
 | Total tasks | 516 |
 | Scoped tasks (ready for work) | 100 |
 | High-risk tasks | 268 |
@@ -39,7 +39,7 @@
 | [climate-health/heat-stress-urban-south-asia](../../problem-packs/climate-health/heat-stress-urban-south-asia/problem.md) | Urban Heat Stress Mortality Risk In South Asia | scoped | climate-health, public-health | south-asia | medium | 3 ev; 5 tasks | ready |
 | [climate-health/malaria-early-warning-africa](../../problem-packs/climate-health/malaria-early-warning-africa/problem.md) | Malaria Early Warning Signals In Sub-Saharan Africa | scoped | climate-health, public-health | sub-saharan-africa | medium | 5 ev; 6 tasks | ready |
 | [disaster-resilience/climate-migration-south-asia](../../problem-packs/disaster-resilience/climate-migration-south-asia/problem.md) | Climate-Driven Internal Migration Pattern Detection In South Asia | scoped | disaster-resilience, climate-adaptation | south-asia | high | 4 ev; 5 tasks | ready |
-| [disaster-resilience/cyclone-early-warning-bangladesh](../../problem-packs/disaster-resilience/cyclone-early-warning-bangladesh/problem.md) | Cyclone Early Warning And Evacuation Signal Verification In Bangladesh | scoped | disaster-resilience, climate-health | bangladesh | high | 3 ev; 6 tasks | ready |
+| [disaster-resilience/cyclone-early-warning-bangladesh](../../problem-packs/disaster-resilience/cyclone-early-warning-bangladesh/problem.md) | Cyclone Early Warning And Evacuation Signal Verification In Bangladesh | scoped | disaster-resilience, climate-health | bangladesh | high | 7 ev; 6 tasks; 1 claims | has claims |
 | [disaster-resilience/earthquake-vulnerability-nepal](../../problem-packs/disaster-resilience/earthquake-vulnerability-nepal/problem.md) | Seismic Vulnerability Assessment And Building-Stock Risk In Nepal | scoped | disaster-resilience | nepal | medium | 2 ev; 5 tasks | needs evidence |
 | [disaster-resilience/landslide-early-warning-south-asia](../../problem-packs/disaster-resilience/landslide-early-warning-south-asia/problem.md) | Landslide Early Warning And Vulnerability Mapping In The Himalayan Region | scoped | disaster-resilience | south-asia | high | 4 ev; 5 tasks | ready |
 | [disaster-resilience/tsunami-early-warning-indian-ocean](../../problem-packs/disaster-resilience/tsunami-early-warning-indian-ocean/problem.md) | Tsunami Early Warning System Coverage And Community Preparedness In Indian Ocean Countries | scoped | disaster-resilience | indian-ocean | high | 1 ev; 5 tasks | needs evidence |

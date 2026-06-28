@@ -65,17 +65,18 @@
     "claim": "School census data in many low-income countries includes ICT indicators — computer availability, internet connectivity, electricity — but data currency varies widely (some countries use census data from 5+ years ago) and is not systematically cross-validated against connectivity measurements.",
     "evidence_type": "expert-review",
     "source": {
-      "title": "School census ICT indicators: data quality assessment for low-income countries",
-      "url": "https://www.unesco.org/en/emis"
+      "title": "UNESCO Education Sector",
+      "url": "https://www.unesco.org/en/education"
     },
     "source_date": "2023-06-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-28",
     "method": "Reviewed school census documentation, ICT-indicator availability, data-currency assessment, and cross-validation methodology across low-income countries.",
     "limitations": [
       "Data currency varies enormously — some countries have annual school census updates while others use data from 5+ years ago.",
       "ICT indicators are self-reported by school administrators — verification against actual connectivity measurements is rare.",
       "Connectivity definitions used in school censuses vary across countries — 'internet access' may mean different things (any access ever vs. regular usable connection).",
-      "Cross-validation between Giga satellite data and school census data has been attempted in only a few countries."
+      "Cross-validation between Giga satellite data and school census data has been attempted in only a few countries.",
+      "URL changed from the UNESCO EMIS page (404 as of 2026-06-28) to the UNESCO Education Sector page; EMIS content may have been reorganized."
     ],
     "confidence": "high"
   }

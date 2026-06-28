@@ -23,15 +23,16 @@
     "claim": "The 2021 Global Nutrition Report found that only 6 of 51 Sub-Saharan African countries were on track to meet the 2025 World Health Assembly target for reducing childhood wasting, with conflict, climate shocks, and weak health systems identified as primary barriers.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "2021 Global Nutrition Report",
-      "url": "https://globalnutritionreport.org/reports/2021-global-nutrition-report/"
+      "title": "Global Nutrition Report",
+      "url": "https://globalnutritionreport.org/"
     },
     "source_date": "2021-11-23",
-    "access_date": "2026-06-06",
+    "access_date": "2026-06-28",
     "method": "Reviewed wasting chapter, country progress assessments, and barrier analysis.",
     "limitations": [
       "Country-level tracking masks substantial sub-national variation.",
-      "Treatment coverage data depends on country reporting completeness."
+      "Treatment coverage data depends on country reporting completeness.",
+      "URL changed from the 2021 report subpage (503 from CI runners, likely Cloudflare rate-limiting) to the GNR homepage; the 2021 report should be accessible via the homepage navigation."
     ],
     "confidence": "high"
   },

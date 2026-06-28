@@ -23,8 +23,8 @@
     "claim": "WHO Global Health Observatory provides country-level dentist density data for most UN member states, with dentist-to-10,000-population ratios ranging from below 0.1 in low-income countries to over 10 in high-income countries, but sub-national breakdowns are absent for nearly all LMICs.",
     "evidence_type": "dataset",
     "source": {
-      "title": "WHO Global Health Observatory — Dentistry workforce density",
-      "url": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/dentistry-workforce-(density)"
+      "title": "WHO Global Health Observatory — Dentists (per 10 000 population)",
+      "url": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/dentists-(per-10-000-population)"
     },
     "source_date": "2024-01-01",
     "access_date": "2026-06-28",

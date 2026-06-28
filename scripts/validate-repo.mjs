@@ -299,6 +299,9 @@ const validateTaskIndexFreshness = async () =>
 const validateAgentRadarFreshness = async () =>
   runGenerator("scripts/generate-agent-radar.mjs", "Agent radar");
 
+const validateIndexFreshness = async () =>
+  runGenerator("scripts/generate-index.mjs", "Problem pack index");
+
 const validateFormatting = async () =>
   new Promise((resolve, reject) => {
     const child = spawn("pnpm", ["--silent", "exec", "prettier", "--check", "."], {
@@ -342,6 +345,7 @@ const main = async () => {
   await validateWikiFreshness();
   await validateTaskIndexFreshness();
   await validateAgentRadarFreshness();
+  await validateIndexFreshness();
   await validateFormatting();
   console.log("Open Problem Lab validation passed.");
 };

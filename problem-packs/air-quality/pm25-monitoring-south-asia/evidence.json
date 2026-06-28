@@ -52,5 +52,65 @@
       "Station data availability and quality vary by site and parameter."
     ],
     "confidence": "high"
+  },
+  {
+    "id": "openaq-platform",
+    "problem_id": "air-quality/pm25-monitoring-south-asia",
+    "claim": "OpenAQ aggregates real-time and historical air quality measurements from over 12,000 monitoring stations across 130+ countries through a unified open API, but station coverage in South Asia is dominated by Indian CPCB stations with sparse representation from Pakistan, Bangladesh, and Nepal, and data quality varies by source feed.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "OpenAir — Open Air Quality Data Platform",
+      "url": "https://openaq.org/"
+    },
+    "source_date": "2024-06-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the OpenAQ platform and API documentation for station coverage, data sources, temporal resolution, and quality controls. Assessed South Asia-specific coverage by source country.",
+    "limitations": [
+      "OpenAQ aggregates from source feeds; it does not independently calibrate or quality-assure measurements.",
+      "Coverage in South Asia is heavily skewed toward Indian CPCB stations; Pakistan, Bangladesh, and Nepal have minimal or no stations in the platform.",
+      "Station data may have gaps from feed outages, sensor maintenance, or reporting changes that are not flagged in the API.",
+      "The 12,000-station figure is global; the South Asia subset is much smaller."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "worldpop-population-data",
+    "problem_id": "air-quality/pm25-monitoring-south-asia",
+    "claim": "WorldPop provides gridded population estimates at approximately 100m resolution for South Asian countries using census-derived top-down disaggregation, suitable for calculating population-at-risk within and outside PM2.5 monitoring coverage zones, but population data currency varies by country with some estimates based on censuses over 10 years old.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "WorldPop — Gridded Population Data",
+      "url": "https://www.worldpop.org/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the WorldPop platform for data products, spatial resolution, temporal coverage, methodology (top-down vs bottom-up), and South Asian country availability.",
+    "limitations": [
+      "Population estimates rely on census data that varies in age; some South Asian countries have not conducted a census in over 10 years.",
+      "Top-down disaggregation models assume population distribution patterns that may not hold in rapidly urbanizing areas.",
+      "100m resolution is sufficient for district-level gap analysis but may miss fine-scale population clustering near pollution sources.",
+      "Refugee, internally displaced, and informal settlement populations may be undercounted in source census data."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "copernicus-sentinel-5p-tropomi",
+    "problem_id": "air-quality/pm25-monitoring-south-asia",
+    "claim": "Copernicus Sentinel-5P TROPOMI provides daily global column observations of aerosol, NO2, and other trace gases at approximately 5.5km resolution, but column observations are not surface PM2.5 measurements and require modeled conversion with uncertain accuracy in regions with complex aerosol composition like South Asia.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "Copernicus Data Space — Sentinel-5P TROPOMI",
+      "url": "https://dataspace.copernicus.eu/"
+    },
+    "source_date": "2024-10-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the Copernicus Data Space portal for Sentinel-5P TROPOMI data products, spatial and temporal resolution, and documentation on aerosol and NO2 retrieval algorithms.",
+    "limitations": [
+      "TROPOMI measures column-integrated aerosol and trace gases, not surface PM2.5 concentrations; converting column to surface requires modeled assumptions about vertical distribution.",
+      "Aerosol composition in South Asia is complex (biomass burning, dust, industrial emissions, secondary organic aerosol) and varies seasonally, making column-to-surface conversion uncertain.",
+      "Cloud cover during monsoon season blocks satellite observations for extended periods.",
+      "NO2 is a proxy for combustion sources, not a direct PM2.5 measurement; using it for PM2.5 inference adds another layer of modeled uncertainty."
+    ],
+    "confidence": "medium"
   }
 ]

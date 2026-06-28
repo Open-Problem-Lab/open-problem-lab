@@ -1,0 +1,38 @@
+[
+  {
+    "id": "pm25-monitoring-gap-south-asia",
+    "problem_id": "air-quality/pm25-monitoring-south-asia",
+    "claim": "Ground-level PM2.5 monitoring in South Asia is dangerously sparse: India has approximately 300 continuous monitoring stations for 1.4 billion people (roughly 1 per 4.7 million), with Pakistan, Bangladesh, and Nepal having even fewer stations accessible through public platforms. Where monitors are absent, satellite-derived estimates and column observations provide the only exposure data, but these carry large uncertainty in South Asia due to complex aerosol composition and monsoon cloud cover.",
+    "domain": ["air-quality", "public-health"],
+    "status": "dry-lab-verified",
+    "evidence": [
+      "who-ambient-air-pollution-2024",
+      "health-effects-institute-state-of-global-air-2024",
+      "cpcb-monitoring-network-2023",
+      "openaq-platform",
+      "copernicus-sentinel-5p-tropomi",
+      "worldpop-population-data"
+    ],
+    "failure_modes": [
+      "A reader treats satellite-derived PM2.5 estimates as equivalent to ground monitor measurements in unmonitored rural areas, where validation data does not exist.",
+      "A reader treats the 300-station figure as static; station counts change with new installations, outages, and reporting changes.",
+      "A reader assumes OpenAQ coverage reflects actual monitoring density, when the platform aggregates available feeds and may miss stations that do not publish open data.",
+      "A reader treats TROPOMI column NO2 observations as a direct PM2.5 measurement, when the column-to-surface conversion adds modeled uncertainty on top of the NO2-to-PM2.5 proxy assumption.",
+      "A reader uses population-weighted PM2.5 exposure from HEI State of Global Air to infer district-level exposure, when the 0.01-degree resolution may smooth over localized hotspots.",
+      "Low-cost sensor networks are deployed in South Asia without prior co-located validation against reference monitors in high-humidity, high-temperature conditions."
+    ],
+    "kill_condition": "A reviewer identifies a public dataset showing that South Asian ground monitoring density exceeds 1 station per 1 million population, or finds a peer-reviewed validation study demonstrating that satellite-derived PM2.5 estimates in South Asian rural areas have RMSE below 10 ug/m3 against co-located reference monitors.",
+    "review_required": ["domain-reviewer", "red-team-reviewer"],
+    "safety_level": "medium",
+    "submitter": "codex-agent",
+    "created_date": "2026-06-28",
+    "last_updated": "2026-06-28",
+    "confidence": "medium",
+    "limitations": [
+      "The 300-station figure for India is from CPCB as of 2023 and may be outdated.",
+      "Station counts for Pakistan, Bangladesh, and Nepal are inferred from OpenAQ coverage, not from official national pollution control agency data.",
+      "The claim about satellite uncertainty in South Asia is supported by methodology documentation and known aerosol composition complexity, not by a specific South Asian validation study.",
+      "Low-cost sensor rejection is based on the absence of validation data, not on evidence that sensors are inaccurate in South Asia."
+    ]
+  }
+]

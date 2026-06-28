@@ -117,6 +117,22 @@
         "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
       },
       {
+        "pack_id": "air-quality/pm25-monitoring-south-asia",
+        "pack_title": "PM2.5 Monitoring Gaps And Health Impact In South Asia",
+        "task_id": "source-inventory",
+        "title": "Inventory PM2.5 monitoring and air quality data sources for South Asia",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "medium",
+        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
+        "evidence_count": 6,
+        "downstream_tasks_unlocked": 5,
+        "downstream_high_risk_tasks": 2,
+        "problem_file": "problem-packs/air-quality/pm25-monitoring-south-asia/problem.md",
+        "tasks_file": "problem-packs/air-quality/pm25-monitoring-south-asia/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
+      },
+      {
         "pack_id": "climate-health/malaria-early-warning-africa",
         "pack_title": "Malaria Early Warning Signals In Sub-Saharan Africa",
         "task_id": "source-inventory",
@@ -146,22 +162,6 @@
         "downstream_high_risk_tasks": 4,
         "problem_file": "problem-packs/disaster-resilience/urban-flooding-south-asia/problem.md",
         "tasks_file": "problem-packs/disaster-resilience/urban-flooding-south-asia/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
-      },
-      {
-        "pack_id": "air-quality/pm25-monitoring-south-asia",
-        "pack_title": "PM2.5 Monitoring Gaps And Health Impact In South Asia",
-        "task_id": "source-inventory",
-        "title": "Inventory PM2.5 monitoring and air quality data sources for South Asia",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "medium",
-        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
-        "evidence_count": 3,
-        "downstream_tasks_unlocked": 5,
-        "downstream_high_risk_tasks": 2,
-        "problem_file": "problem-packs/air-quality/pm25-monitoring-south-asia/problem.md",
-        "tasks_file": "problem-packs/air-quality/pm25-monitoring-south-asia/tasks.json",
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       },
       {

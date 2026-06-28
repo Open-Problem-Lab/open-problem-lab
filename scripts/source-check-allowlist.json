@@ -40,6 +40,21 @@
       "url": "https://www.dhm.gov.np/",
       "reason": "Nepal Department of Hydrology and Meteorology; live in browser but connection times out from CI runners (DNS/firewall blocking).",
       "verified": "2026-06-28"
+    },
+    {
+      "url": "https://acp.copernicus.org/",
+      "reason": "Atmospheric Chemistry and Physics journal (Copernicus); live in browser but connection fails from CI runners.",
+      "verified": "2026-06-28"
+    },
+    {
+      "url": "https://essd.copernicus.org/articles/13/4349/2021/",
+      "reason": "ERA5-Land reanalysis article (Copernicus ESSD); live in browser but connection fails from CI runners.",
+      "verified": "2026-06-28"
+    },
+    {
+      "url": "https://www.ioc.unesco.org/",
+      "reason": "UNESCO IOC homepage; live in browser but connection fails from CI runners.",
+      "verified": "2026-06-28"
     }
   ]
 }

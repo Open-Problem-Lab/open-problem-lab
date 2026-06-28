@@ -117,6 +117,22 @@
         "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
       },
       {
+        "pack_id": "climate-adaptation/sea-level-rise-small-islands",
+        "pack_title": "Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States",
+        "task_id": "source-inventory",
+        "title": "Inventory SLR projection and coastal exposure data sources for SIDS",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "medium",
+        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
+        "evidence_count": 8,
+        "downstream_tasks_unlocked": 5,
+        "downstream_high_risk_tasks": 5,
+        "problem_file": "problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md",
+        "tasks_file": "problem-packs/climate-adaptation/sea-level-rise-small-islands/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
+      },
+      {
         "pack_id": "air-quality/pm25-monitoring-south-asia",
         "pack_title": "PM2.5 Monitoring Gaps And Health Impact In South Asia",
         "task_id": "source-inventory",
@@ -197,22 +213,6 @@
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       },
       {
-        "pack_id": "climate-adaptation/sea-level-rise-small-islands",
-        "pack_title": "Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States",
-        "task_id": "source-inventory",
-        "title": "Inventory SLR projection and coastal exposure data sources for SIDS",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "medium",
-        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
-        "evidence_count": 3,
-        "downstream_tasks_unlocked": 5,
-        "downstream_high_risk_tasks": 5,
-        "problem_file": "problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md",
-        "tasks_file": "problem-packs/climate-adaptation/sea-level-rise-small-islands/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
-      },
-      {
         "pack_id": "disaster-resilience/cyclone-early-warning-bangladesh",
         "pack_title": "Cyclone Early Warning And Evacuation Signal Verification In Bangladesh",
         "task_id": "source-inventory",
@@ -248,7 +248,7 @@
           "field-reality-reviewer": 2,
           "red-team-reviewer": 1
         },
-        "evidence_count": 3,
+        "evidence_count": 8,
         "problem_file": "problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md",
         "tasks_file": "problem-packs/climate-adaptation/sea-level-rise-small-islands/tasks.json"
       },

@@ -85,7 +85,19 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering provider-data fragmentation, outcome-tracking rates, and informal-sector measurement gaps.
 
-### 6. PM2.5 Monitoring Gaps And Health Impact In South Asia
+### 6. Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States
+
+- Pack: [`climate-adaptation/sea-level-rise-small-islands`](../../problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md)
+- Task: `source-inventory` — Inventory SLR projection and coastal exposure data sources for SIDS
+- Risk: `medium`
+- Reviewer needed: `domain-reviewer`
+- Existing evidence records: 8
+- Downstream tasks unlocked: 5
+- Downstream high-risk tasks: 5
+- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
+- Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
+
+### 7. PM2.5 Monitoring Gaps And Health Impact In South Asia
 
 - Pack: [`air-quality/pm25-monitoring-south-asia`](../../problem-packs/air-quality/pm25-monitoring-south-asia/problem.md)
 - Task: `source-inventory` — Inventory PM2.5 monitoring and air quality data sources for South Asia
@@ -97,7 +109,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
-### 7. Malaria Early Warning Signals In Sub-Saharan Africa
+### 8. Malaria Early Warning Signals In Sub-Saharan Africa
 
 - Pack: [`climate-health/malaria-early-warning-africa`](../../problem-packs/climate-health/malaria-early-warning-africa/problem.md)
 - Task: `source-inventory` — Inventory malaria and climate data sources for Sub-Saharan Africa
@@ -109,7 +121,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
-### 8. Urban Pluvial Flooding Risk In South Asian Megacities
+### 9. Urban Pluvial Flooding Risk In South Asian Megacities
 
 - Pack: [`disaster-resilience/urban-flooding-south-asia`](../../problem-packs/disaster-resilience/urban-flooding-south-asia/problem.md)
 - Task: `source-inventory` — Inventory satellite impervious-surface, drainage, rainfall, flood-extent, and population data sources for South Asian megacities
@@ -121,7 +133,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, urban accuracy, and drainage-data availability.
 
-### 9. Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef
+### 10. Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef
 
 - Pack: [`biodiversity/coral-bleaching-great-barrier-reef`](../../problem-packs/biodiversity/coral-bleaching-great-barrier-reef/problem.md)
 - Task: `source-inventory` — Inventory coral bleaching data sources
@@ -133,7 +145,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five sources classified as usable, limited, or rejected.
 
-### 10. Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin
+### 11. Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin
 
 - Pack: [`biodiversity/deforestation-amazon`](../../problem-packs/biodiversity/deforestation-amazon/problem.md)
 - Task: `source-inventory` — Inventory deforestation and biodiversity data sources for Amazon basin
@@ -142,18 +154,6 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Existing evidence records: 3
 - Downstream tasks unlocked: 5
 - Downstream high-risk tasks: 4
-- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
-- Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
-
-### 11. Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States
-
-- Pack: [`climate-adaptation/sea-level-rise-small-islands`](../../problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md)
-- Task: `source-inventory` — Inventory SLR projection and coastal exposure data sources for SIDS
-- Risk: `medium`
-- Reviewer needed: `domain-reviewer`
-- Existing evidence records: 3
-- Downstream tasks unlocked: 5
-- Downstream high-risk tasks: 5
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
@@ -181,7 +181,7 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - High-risk follow-on tasks: 5
 - Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
 - Reviewer types needed later: `domain-reviewer`: 1, `field-reality-reviewer`: 2, `red-team-reviewer`: 1, `replicator`: 1
-- Existing evidence records: 3
+- Existing evidence records: 8
 
 ### Cyclone Early Warning And Evacuation Signal Verification In Bangladesh
 

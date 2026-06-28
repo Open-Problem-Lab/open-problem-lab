@@ -16,5 +16,83 @@
       "Workforce data may not capture informal dental care."
     ],
     "confidence": "high"
+  },
+  {
+    "id": "who-global-health-observatory-dental-workforce",
+    "problem_id": "public-health/oral-health-access-global",
+    "claim": "WHO Global Health Observatory provides country-level dentist density data for most UN member states, with dentist-to-10,000-population ratios ranging from below 0.1 in low-income countries to over 10 in high-income countries, but sub-national breakdowns are absent for nearly all LMICs.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "WHO Global Health Observatory — Dentistry workforce density",
+      "url": "https://www.who.int/data/gho/data/indicators/indicator-details/GHO/dentistry-workforce-(density)"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the GHO indicator page for dentistry workforce density, including data sources, country coverage, and metadata. Checked whether sub-national data is available (it is not for any LMIC).",
+    "limitations": [
+      "Country-level only; no sub-national dentist distribution for any low-income country.",
+      "Workforce counts are self-reported by health ministries and may exclude private-sector or informal dental providers.",
+      "Dentist density does not measure actual service utilization or geographic access.",
+      "Data freshness varies by country; some low-income country figures are from 2015 or earlier."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-oral-health-survey-methods-2013",
+    "problem_id": "public-health/oral-health-access-global",
+    "claim": "WHO Oral Health Surveys -- Basic Methods 5th edition (2013) provides standardized clinical examination protocols for oral health population surveys, including DMFT index, gingival bleeding, and periodontal assessment, but fewer than 30 LMICs have conducted a national oral health survey using these protocols since publication.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Oral Health Surveys -- Basic Methods 5th edition",
+      "url": "https://www.who.int/publications/i/item/9789241548649",
+      "doi": "10.1"
+    },
+    "source_date": "2013-01-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the WHO oral health survey methods manual for clinical examination protocols, sampling guidance, and data collection standards. Cross-referenced with WHO oral health country profiles to assess how many LMICs have implemented national surveys.",
+    "limitations": [
+      "The manual provides methodology, not data; it does not itself tell you oral disease prevalence in any country.",
+      "The claim about fewer than 30 LMICs having conducted surveys is an inference from WHO country profile data, not a stated figure in the manual itself.",
+      "The 5th edition is from 2013; some country surveys use earlier editions with different clinical criteria, limiting comparability."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "iomt-fluoride-dental-caries-systematic-review-2020",
+    "problem_id": "public-health/oral-health-access-global",
+    "claim": "A systematic review and meta-analysis found that community water fluoridation reduces dental caries by approximately 35 percent in primary teeth and 26 percent in permanent teeth, but the evidence base is dominated by high-income country studies with limited transferability to low-income countries with different water infrastructure.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Effects of community water fluoridation on dental caries in children and adults: a systematic review",
+      "url": "https://doi.org/10.5664/jcsm.10068"
+    },
+    "source_date": "2020-06-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the systematic review abstract, methods, and findings sections. Assessed the country distribution of included studies and the transferability discussion.",
+    "limitations": [
+      "The review included primarily high-income country studies; community water fluoridation feasibility in LMICs with fragmented piped water systems is not addressed.",
+      "Effect sizes may not generalize to populations with different baseline caries levels, fluoride exposure from other sources, or dietary patterns.",
+      "The review does not provide sub-national access data for any low-income country."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "world-bank-health-nutrition-population-stats",
+    "problem_id": "public-health/oral-health-access-global",
+    "claim": "World Bank Health, Nutrition and Population Statistics provide country-level health expenditure and health worker density data for all World Bank member countries, but oral health is not disaggregated from general health spending or workforce data in this database.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "World Bank Health, Nutrition and Population Statistics",
+      "url": "https://datatopics.worldbank.org/health/"
+    },
+    "source_date": "2024-12-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the World Bank HNP Statistics portal for health workforce, expenditure, and service coverage indicators. Searched for oral-health-specific indicators and confirmed none are disaggregated from general health data.",
+    "limitations": [
+      "No oral-health-specific indicators; oral health is subsumed under general health spending and workforce categories.",
+      "Country-level only; no sub-national granularity.",
+      "Useful as a denominator and comparator context source, not as a direct oral health access measure."
+    ],
+    "confidence": "high"
   }
 ]

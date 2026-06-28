@@ -85,6 +85,11 @@
       "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001482",
       "reason": "PLOS Medicine article (Piel global SCD epidemiology); live in browser but connection times out from CI runners.",
       "verified": "2026-06-28"
+    },
+    {
+      "url": "https://sealevel.nasa.gov/",
+      "reason": "NASA Sea Level Change Portal; live in browser (200) but Node.js fetch fails from CI runners.",
+      "verified": "2026-06-28"
     }
   ]
 }

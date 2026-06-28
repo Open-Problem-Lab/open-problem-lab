@@ -5,7 +5,7 @@
   "description": "A GitHub-native protocol for verified AI contributions to neglected global problems.",
   "type": "module",
   "scripts": {
-    "build": "node scripts/generate-wiki.mjs && node scripts/generate-task-index.mjs && node scripts/generate-agent-radar.mjs",
+    "build": "node scripts/generate-wiki.mjs && node scripts/generate-task-index.mjs && node scripts/generate-agent-radar.mjs && node scripts/generate-index.mjs",
     "lint": "node scripts/validate-repo.mjs",
     "reproducibility:check": "node scripts/check-reproducibility.mjs",
     "validate": "node scripts/validate-repo.mjs",

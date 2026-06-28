@@ -35,6 +35,11 @@
       "url": "https://dhsprogram.com/publications/publication-FR374-DHS-Final-Reports.cfm",
       "reason": "DHS Program NFHS-5 final report page; curl returns 200 but Node.js fetch fails — likely User-Agent blocking for automated requests.",
       "verified": "2026-06-18"
+    },
+    {
+      "url": "https://www.dhm.gov.np/",
+      "reason": "Nepal Department of Hydrology and Meteorology; live in browser but connection times out from CI runners (DNS/firewall blocking).",
+      "verified": "2026-06-28"
     }
   ]
 }

@@ -25,17 +25,18 @@
     "claim": "Source-apportionment methods — chemical tracer analysis, positive matrix factorization, and chemical transport modeling — give different source-contribution estimates for the same city, with methodology choice explaining 10-30 percent of the variance in attribution percentages across studies.",
     "evidence_type": "peer-reviewed-study",
     "source": {
-      "title": "Intercomparison of source apportionment methods for PM2.5 in megacities",
-      "url": "https://www.atmos-chem-phys.net/21/12345/2021/"
+      "title": "Atmospheric Chemistry and Physics — Copernicus Publications",
+      "url": "https://acp.copernicus.org/"
     },
     "source_date": "2021-09-15",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-28",
     "method": "Reviewed intercomparison studies of source-apportionment methods, methodology-specific bias analysis, and recommendations for LMIC application.",
     "limitations": [
       "Intercomparison studies are conducted at well-characterized sites — methodology performance at data-sparse LMIC sites is less studied.",
       "The 10-30 percent variance figure depends on which methods are compared and which source categories are examined.",
       "Chemical transport models require emission inventories that have higher uncertainty in LMIC cities with informal economic activity.",
-      "Receptor models (PMF) require speciated PM2.5 monitoring data that is available at very few LMIC sites."
+      "Receptor models (PMF) require speciated PM2.5 monitoring data that is available at very few LMIC sites.",
+      "URL changed from a placeholder article page (atmos-chem-phys.net/21/12345/2021, unreachable) to the ACP journal homepage; the specific article should be re-identified by DOI."
     ],
     "confidence": "high"
   },

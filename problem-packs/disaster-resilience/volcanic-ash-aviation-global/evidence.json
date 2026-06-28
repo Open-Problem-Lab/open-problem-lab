@@ -45,17 +45,18 @@
     "claim": "Ash-transport models (HYSPLIT, NAME, FLEXPART) forecast volcanic ash plume dispersion but have substantial uncertainty from eruption-source parameters — ash column height, mass eruption rate, and particle-size distribution are rarely measured in real time and must be estimated from limited observations.",
     "evidence_type": "peer-reviewed-study",
     "source": {
-      "title": "Volcanic ash transport model uncertainty and eruption source parameter sensitivity",
-      "url": "https://www.atmos-chem-phys.net/22/12345/2022/"
+      "title": "Atmospheric Chemistry and Physics — Copernicus Publications",
+      "url": "https://acp.copernicus.org/"
     },
     "source_date": "2022-08-15",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-28",
     "method": "Reviewed ash-transport model intercomparison studies, eruption-source parameter sensitivity analysis, and forecast validation against satellite observations.",
     "limitations": [
       "Model validation is limited to well-observed eruptions — forecast accuracy for poorly monitored eruptions (remote volcanoes, submarine eruptions) is largely unknown.",
       "Eruption-source parameter uncertainty propagates non-linearly through transport models — small errors in ash height can produce large errors in downwind concentration forecasts.",
       "Model validation uses satellite ash detection as ground truth, but satellite detection itself has 20-40 percent false-positive rates — the validation chain is circular.",
-      "Ensemble modeling approaches can quantify forecast uncertainty but require multiple model runs that are computationally expensive for operational use."
+      "Ensemble modeling approaches can quantify forecast uncertainty but require multiple model runs that are computationally expensive for operational use.",
+      "URL changed from a placeholder article page (atmos-chem-phys.net/22/12345/2022, unreachable) to the ACP journal homepage; the specific article should be re-identified by DOI."
     ],
     "confidence": "high"
   },

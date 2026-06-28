@@ -53,6 +53,22 @@
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       },
       {
+        "pack_id": "public-health/ncd-risk-factor-surveillance-global",
+        "pack_title": "Non-Communicable Disease Risk Factor Surveillance Gaps In Low-Income Countries",
+        "task_id": "source-inventory",
+        "title": "Inventory data sources for public-health/ncd-risk-factor-surveillance-global",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "low",
+        "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons.",
+        "evidence_count": 5,
+        "downstream_tasks_unlocked": 4,
+        "downstream_high_risk_tasks": 2,
+        "problem_file": "problem-packs/public-health/ncd-risk-factor-surveillance-global/problem.md",
+        "tasks_file": "problem-packs/public-health/ncd-risk-factor-surveillance-global/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
+      },
+      {
         "pack_id": "public-health/oral-health-access-global",
         "pack_title": "Oral Health Service Access And Dental Workforce Gaps In Low-Income Countries",
         "task_id": "source-inventory",
@@ -98,22 +114,6 @@
         "downstream_high_risk_tasks": 0,
         "problem_file": "problem-packs/education/skills-training-youth-employment-global/problem.md",
         "tasks_file": "problem-packs/education/skills-training-youth-employment-global/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
-      },
-      {
-        "pack_id": "public-health/ncd-risk-factor-surveillance-global",
-        "pack_title": "Non-Communicable Disease Risk Factor Surveillance Gaps In Low-Income Countries",
-        "task_id": "source-inventory",
-        "title": "Inventory data sources for public-health/ncd-risk-factor-surveillance-global",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "low",
-        "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons.",
-        "evidence_count": 1,
-        "downstream_tasks_unlocked": 4,
-        "downstream_high_risk_tasks": 2,
-        "problem_file": "problem-packs/public-health/ncd-risk-factor-surveillance-global/problem.md",
-        "tasks_file": "problem-packs/public-health/ncd-risk-factor-surveillance-global/tasks.json",
         "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
       },
       {

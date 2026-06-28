@@ -16,5 +16,85 @@
       "Survey timing varies and is not synchronized across countries."
     ],
     "confidence": "high"
+  },
+  {
+    "id": "ihme-gbd-2021",
+    "problem_id": "public-health/ncd-risk-factor-surveillance-global",
+    "claim": "IHME Global Burden of Disease 2021 study provides country-level estimates of NCD risk factor exposure (tobacco, alcohol, diet, physical activity, BMI, blood pressure, fasting plasma glucose, cholesterol) for 204 countries from 1990 to 2021, but the estimates are modeled not directly measured, and sub-national estimates exist for only a subset of high-burden countries.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "IHME Global Burden of Disease Study 2021",
+      "url": "https://www.healthdata.org/research-analysis/gbd"
+    },
+    "source_date": "2024-05-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the IHME GBD home page and GBD Compare tool for risk factor coverage, country list, temporal range, and sub-national availability. Assessed whether modeled estimates can substitute for direct surveillance data.",
+    "limitations": [
+      "GBD estimates are modeled using ensemble methods, not direct measurements; they synthesize multiple data sources with varying quality and coverage.",
+      "Sub-national GBD estimates exist for only a subset of countries (e.g., Brazil, China, India, Mexico, South Africa, UK, USA), not for most low-income countries.",
+      "Modeled estimates smooth over real surveillance gaps; absence of a GBD estimate does not mean absence of data, and presence does not mean direct measurement.",
+      "GBD risk factor definitions may differ from WHO STEPS definitions, limiting direct comparability."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-gho-ncd-indicators",
+    "problem_id": "public-health/ncd-risk-factor-surveillance-global",
+    "claim": "WHO Global Health Observatory provides country-level NCD risk factor indicators (raised blood pressure, raised blood glucose, overweight, obesity, tobacco use, alcohol consumption) for most UN member states, but the underlying data is heterogeneous in source year, methodology, and reporting completeness across countries.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "WHO Global Health Observatory — Noncommunicable diseases",
+      "url": "https://www.who.int/data/gho/data/themes/noncommunicable-diseases"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the GHO NCD themes page for available risk factor indicators, country coverage, data sources, and metadata. Assessed data heterogeneity and update frequency.",
+    "limitations": [
+      "Country-level only; no sub-national NCD risk factor data for any low-income country.",
+      "Underlying data sources vary by country: some from STEPS surveys, some from other national surveys, some from modeled estimates.",
+      "Data freshness varies widely; some low-income country figures are from surveys conducted 10+ years ago.",
+      "Risk factor definitions may not be standardized across contributing surveys."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-ncd-surveillance-data-portal",
+    "problem_id": "public-health/ncd-risk-factor-surveillance-global",
+    "claim": "WHO NCD surveillance data portal lists country-level NCD capacity, STEPS survey availability, and risk factor monitoring status for member states, but fewer than 40 percent of low-income countries have repeated STEPS surveys within five years and sub-national risk factor data is not available through this portal for any country.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO NCD Surveillance — Data and Reporting",
+      "url": "https://www.who.int/teams/noncommunicable-diseases/surveillance/data"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the WHO NCD surveillance data and reporting page for STEPS survey availability, country capacity assessments, and data access options. Checked for sub-national data availability.",
+    "limitations": [
+      "The portal lists survey availability but does not provide downloadable sub-national risk factor data.",
+      "Country capacity assessments are self-reported by health ministries.",
+      "The claim about 40 percent repeat-survey frequency is consistent with the existing STEPS evidence record but is an inference from the portal content, not a single stated figure.",
+      "Survey frequency and quality vary significantly across regions."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "dhis2-ncd-modules",
+    "problem_id": "public-health/ncd-risk-factor-surveillance-global",
+    "claim": "DHIS2 is used by over 80 countries as a national health information system and supports NCD risk factor modules, but implementation of NCD modules in low-income countries is limited, with most deployments focused on infectious disease and maternal health reporting rather than NCD surveillance.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "DHIS2 — District Health Information Software",
+      "url": "https://dhis2.org/"
+    },
+    "source_date": "2024-06-01",
+    "access_date": "2026-06-28",
+    "method": "Reviewed the DHIS2 main site for health information system coverage, NCD module availability, and implementation documentation. Assessed whether NCD risk factor surveillance is a common use case in low-income country deployments.",
+    "limitations": [
+      "DHIS2 supports NCD modules but this does not mean countries have implemented them; adoption is the constraint, not software capability.",
+      "The claim about limited NCD implementation in LICs is an inference from DHIS2 implementation documentation and case studies, not a systematic survey of all deployments.",
+      "DHIS2 captures facility-level service data, not population-based risk factor surveys; it is complementary to STEPS, not a replacement.",
+      "Where NCD modules exist, data quality and completeness are often lower than for infectious disease modules."
+    ],
+    "confidence": "medium"
   }
 ]

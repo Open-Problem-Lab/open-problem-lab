@@ -1,0 +1,36 @@
+[
+  {
+    "id": "ncd-surveillance-data-scarcity-lmics",
+    "problem_id": "public-health/ncd-risk-factor-surveillance-global",
+    "claim": "Available NCD risk factor surveillance data sources are sufficient for country-level gap identification in low-income countries (which countries have STEPS surveys, when they were last conducted, and what modeled estimates exist), but no source provides sub-national NCD risk factor data for any low-income country. Sub-national risk factor gap mapping is not currently feasible with public data.",
+    "domain": ["public-health"],
+    "status": "dry-lab-verified",
+    "evidence": [
+      "who-steps-surveillance-2023",
+      "ihme-gbd-2021",
+      "who-gho-ncd-indicators",
+      "who-ncd-surveillance-data-portal",
+      "dhis2-ncd-modules"
+    ],
+    "failure_modes": [
+      "A reader treats modeled GBD estimates as equivalent to direct surveillance, masking the fact that most LICs have no recent STEPS data.",
+      "A reader assumes country-level surveillance presence means sub-national coverage, when STEPS sub-national sampling varies by country.",
+      "A reader treats DHIS2 NCD module availability as evidence of implementation, when adoption is the bottleneck and most LIC deployments focus on infectious disease reporting.",
+      "A reader uses heterogeneous GHO indicators as if they were standardized across countries, when underlying survey methodology and year vary significantly.",
+      "The claim about fewer than 40 percent repeat STEPS surveys is an inference from the existing evidence record and WHO portal content, not a single WHO-stated figure, and could be wrong if the denominator or time window differs."
+    ],
+    "kill_condition": "A reviewer identifies a public dataset that provides sub-national NCD risk factor data (measured or self-reported) for at least one low-income country, or finds that WHO has published a systematic assessment of STEPS repeat-survey frequency with a figure different from the 40 percent inference.",
+    "review_required": ["domain-reviewer"],
+    "safety_level": "low",
+    "submitter": "codex-agent",
+    "created_date": "2026-06-28",
+    "last_updated": "2026-06-28",
+    "confidence": "medium",
+    "limitations": [
+      "The claim is about data availability, not about NCD outcomes or risk factor prevalence.",
+      "Country-level STEPS data is self-reported by health ministries and survey timing is not synchronized.",
+      "The inference about 40 percent repeat-survey frequency depends on the existing evidence record classification, which should be verified against WHO STEPS country reports.",
+      "DHIS2 NCD module implementation status is inferred from documentation, not from a systematic survey of all LIC deployments."
+    ]
+  }
+]

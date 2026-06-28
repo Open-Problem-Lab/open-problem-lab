@@ -1,0 +1,33 @@
+[
+  {
+    "id": "oral-health-data-scarcity-lmics",
+    "problem_id": "public-health/oral-health-access-global",
+    "claim": "Available oral health data sources are sufficient for country-level framing of disease burden and workforce density in low-income countries, but no source provides sub-national oral health service access or dentist distribution data for any low-income country. Sub-national gap mapping is not currently feasible with public data.",
+    "domain": ["public-health"],
+    "status": "dry-lab-verified",
+    "evidence": [
+      "who-oral-health-2022",
+      "who-global-health-observatory-dental-workforce",
+      "who-oral-health-survey-methods-2013",
+      "world-bank-health-nutrition-population-stats"
+    ],
+    "failure_modes": [
+      "A reader treats country-level dentist density as a proxy for sub-national access, masking urban-rural disparities within countries.",
+      "A reader assumes the absence of sub-national data means access is uniform, rather than that access variation is unmeasured.",
+      "Ministry-reported workforce counts exclude private and informal dental providers, understating actual service availability in countries with large informal sectors.",
+      "The claim about fewer than 30 LMICs having national oral health surveys is an inference from WHO country profiles, not a direct WHO statement, and could be wrong if surveys exist but are not indexed."
+    ],
+    "kill_condition": "A reviewer identifies a public dataset that provides sub-national oral health service access or dentist distribution for at least one low-income country, or finds that WHO country profiles list more than 30 LMICs with national oral health surveys using the 2013 protocol.",
+    "review_required": ["domain-reviewer"],
+    "safety_level": "low",
+    "submitter": "codex-agent",
+    "created_date": "2026-06-28",
+    "last_updated": "2026-06-28",
+    "confidence": "medium",
+    "limitations": [
+      "The claim is about data availability, not about oral health outcomes or access quality.",
+      "Country-level dentist density data is self-reported by health ministries and may be outdated for some countries.",
+      "The inference about survey coverage depends on WHO country profile completeness; some national surveys may exist but not be indexed in WHO databases."
+    ]
+  }
+]

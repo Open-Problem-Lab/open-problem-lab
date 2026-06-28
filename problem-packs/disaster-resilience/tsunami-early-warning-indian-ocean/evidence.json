@@ -2,19 +2,20 @@
   {
     "id": "ioc-tsunami-warning-2024",
     "problem_id": "disaster-resilience/tsunami-early-warning-indian-ocean",
-    "claim": "UNESCO IOC's Indian Ocean Tsunami Warning and Mitigation System (IOTWMS) has established warning-centre coverage across all Indian Ocean member states, but documented last-mile dissemination gaps and variable community preparedness remain significant operational challenges across the region.",
+    "claim": "UNESCO IOC coordinates the Indian Ocean Tsunami Warning and Mitigation System (IOTWMS) with warning-centre coverage across Indian Ocean member states, but documented last-mile dissemination gaps and variable community preparedness remain operational challenges.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "UNESCO IOC Tsunami Programme",
-      "url": "https://www.ioc.unesco.org/en/tsunami-programme"
+      "title": "UNESCO IOC — Intergovernmental Oceanographic Commission",
+      "url": "https://www.ioc.unesco.org/"
     },
     "source_date": "2024-01-01",
-    "access_date": "2026-06-18",
+    "access_date": "2026-06-28",
     "method": "Reviewed IOC tsunami programme documentation on IOTWMS warning-system coverage, last-mile dissemination challenges, and preparedness indicators for Indian Ocean member states.",
     "limitations": [
       "Warning-system coverage does not guarantee effective community response — the gap between infrastructure existence and evacuation readiness is not quantified at district level in the public programme pages.",
       "The specific 'over 60 percent of coastal districts' figure used in earlier versions of this record could not be verified from the IOC programme documentation; the claim has been softened to reflect what the source actually supports.",
-      "Preparedness indicators are largely self-reported by member states."
+      "Preparedness indicators are largely self-reported by member states.",
+      "URL changed from the IOC tsunami programme subpage (404 as of 2026-06-28) to the IOC homepage; the tsunami programme content may have been reorganized."
     ],
     "confidence": "medium"
   }

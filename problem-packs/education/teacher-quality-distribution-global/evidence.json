@@ -65,17 +65,18 @@
     "claim": "National EMIS data provides school-level teacher counts and qualification data for some countries, but data quality, update frequency, and public accessibility vary enormously — many countries do not publish sub-national teacher-distribution data, making cross-country deployment-equity comparison methodologically challenging.",
     "evidence_type": "expert-review",
     "source": {
-      "title": "Education Management Information Systems: data quality assessment for low-income countries",
-      "url": "https://www.unesco.org/en/emis"
+      "title": "UNESCO Education Sector",
+      "url": "https://www.unesco.org/en/education"
     },
     "source_date": "2023-06-01",
-    "access_date": "2026-06-07",
+    "access_date": "2026-06-28",
     "method": "Reviewed EMIS documentation, data-quality assessments, and public-availability status across low-income countries.",
     "limitations": [
       "EMIS data quality is self-assessed by national authorities — independent verification is limited.",
       "Update frequency varies from annual to irregular — some countries use EMIS data that is several years old.",
       "Public accessibility varies — some countries publish detailed school-level data while others restrict access.",
-      "Teacher-qualification categories differ across countries — cross-country comparison requires explicit harmonization."
+      "Teacher-qualification categories differ across countries — cross-country comparison requires explicit harmonization.",
+      "URL changed from the UNESCO EMIS page (404 as of 2026-06-28) to the UNESCO Education Sector page; EMIS content may have been reorganized."
     ],
     "confidence": "high"
   }

@@ -37,7 +37,19 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering measure family, timing, geographic grain, and health-linkage relevance.
 
-### 2. Digital Divide Measurement And School Internet Connectivity In Low-Income Countries
+### 2. Oral Health Service Access And Dental Workforce Gaps In Low-Income Countries
+
+- Pack: [`public-health/oral-health-access-global`](../../problem-packs/public-health/oral-health-access-global/problem.md)
+- Task: `source-inventory` — Inventory data sources for public-health/oral-health-access-global
+- Risk: `low`
+- Reviewer needed: `domain-reviewer`
+- Existing evidence records: 5
+- Downstream tasks unlocked: 4
+- Downstream high-risk tasks: 2
+- Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
+- Done condition: At least four sources classified as usable, limited, or rejected with explicit reasons.
+
+### 3. Digital Divide Measurement And School Internet Connectivity In Low-Income Countries
 
 - Pack: [`education/digital-divide-school-access-global`](../../problem-packs/education/digital-divide-school-access-global/problem.md)
 - Task: `source-inventory` — Inventory school connectivity, mobile-network, and digital-learning data sources for low-income countries
@@ -49,7 +61,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering connectivity-classification methodology, data currency, and cross-validation status.
 
-### 3. Youth Skills Training And Employment Outcome Gaps In Low-Income Countries
+### 4. Youth Skills Training And Employment Outcome Gaps In Low-Income Countries
 
 - Pack: [`education/skills-training-youth-employment-global`](../../problem-packs/education/skills-training-youth-employment-global/problem.md)
 - Task: `source-inventory` — Inventory training-provider, employment-outcome, labor-market, and skills-mismatch data sources for LMICs
@@ -61,22 +73,10 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering provider-data fragmentation, outcome-tracking rates, and informal-sector measurement gaps.
 
-### 4. Non-Communicable Disease Risk Factor Surveillance Gaps In Low-Income Countries
+### 5. Non-Communicable Disease Risk Factor Surveillance Gaps In Low-Income Countries
 
 - Pack: [`public-health/ncd-risk-factor-surveillance-global`](../../problem-packs/public-health/ncd-risk-factor-surveillance-global/problem.md)
 - Task: `source-inventory` — Inventory data sources for public-health/ncd-risk-factor-surveillance-global
-- Risk: `low`
-- Reviewer needed: `domain-reviewer`
-- Existing evidence records: 1
-- Downstream tasks unlocked: 4
-- Downstream high-risk tasks: 2
-- Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
-- Done condition: At least four sources classified as usable, limited, or rejected with explicit reasons.
-
-### 5. Oral Health Service Access And Dental Workforce Gaps In Low-Income Countries
-
-- Pack: [`public-health/oral-health-access-global`](../../problem-packs/public-health/oral-health-access-global/problem.md)
-- Task: `source-inventory` — Inventory data sources for public-health/oral-health-access-global
 - Risk: `low`
 - Reviewer needed: `domain-reviewer`
 - Existing evidence records: 1

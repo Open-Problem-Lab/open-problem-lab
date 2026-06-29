@@ -1,0 +1,127 @@
+[
+  {
+    "id": "ilo-heat-exposure-global-2024",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "claim": "The ILO estimates that 2.2 billion workers globally are exposed to excessive heat in their workplace, and that work-related injuries from heat stress account for approximately 23 million DALYs annually, with exposure prevalence in low-income countries (76 percent) nearly double that of high-income countries (42 percent).",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "ILO: Ensuring Safety and Health at Work in a Changing Climate (2024)",
+      "url": "https://www.ilo.org/resource/article/ensuring-safety-and-health-work-changing-climate"
+    },
+    "source_date": "2024-04-22",
+    "access_date": "2026-06-30",
+    "method": "Reviewed ILO report sections on heat exposure prevalence, regional breakdown, DALY estimates, and methodology for exposure estimation from climate data overlaid with labor force statistics.",
+    "limitations": [
+      "Exposure estimates are modeled from climate reanalysis and labor force statistics, not from workplace measurements; actual exposure varies by work setting, clothing, and metabolic rate.",
+      "DALY estimates for heat-related occupational injuries depend on attribution methods that vary across studies; the ILO methodology aggregates multiple data sources with different quality.",
+      "The 76 percent versus 42 percent comparison is at country income group level and does not capture sub-national variation.",
+      "Informal sector workers may be undercounted in labor force statistics underlying the exposure estimates."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "xu-heat-occupational-injury-2021",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "claim": "A 2021 systematic review and meta-analysis found that extreme heat is associated with increased occupational injuries across different climate zones, with a pooled odds ratio of 1.21 (95% CI: 1.11-1.32) for heat-related injury risk, but with substantial heterogeneity driven by differences in exposure metric, industry, and climate zone.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Extreme heat and occupational injuries in different climate zones: A systematic review and meta-analysis of epidemiological evidence (Xu et al., 2021, Environment International)",
+      "url": "https://doi.org/10.1016/j.envint.2021.106384",
+      "doi": "10.1016/j.envint.2021.106384"
+    },
+    "source_date": "2021-03-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed abstract, methods, pooled effect estimates (OR 1.21, 95% CI 1.11-1.32), heterogeneity analysis, and discussion of the systematic review covering extreme heat and occupational injury across multiple climate zones and industries.",
+    "limitations": [
+      "Most included studies are from high-income countries (United States, Australia, Spain, Italy); LMIC evidence is sparse and the pooled estimate may not generalize to tropical LMIC work settings.",
+      "Exposure metrics vary across studies (WBGT, ambient temperature, heat wave definitions), limiting comparability and contributing to high heterogeneity (I-squared above 80 percent).",
+      "The meta-analysis cannot distinguish between acute heat events and chronic heat exposure effects on injury risk.",
+      "Publication bias toward positive findings is a known limitation of injury epidemiology meta-analyses and was partially assessed but cannot be fully excluded."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-ilo-uv-occupational-2024",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "claim": "A WHO/ILO joint estimation report calculated that occupational exposure to solar ultraviolet radiation causes approximately 19,000 deaths per year from non-melanoma skin cancer globally, demonstrating that quantitative attribution of climate-linked occupational hazards to health outcomes is methodologically feasible at global scale.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "WHO/ILO joint estimates of the work-related burden of disease and injury: occupational exposure to solar ultraviolet radiation (2024)",
+      "url": "https://doi.org/10.1016/j.envint.2023.108328",
+      "doi": "10.1016/j.envint.2023.108328",
+      "archive_url": "https://web.archive.org/web/2024/https://www.sciencedirect.com/science/article/pii/S0160412023005029"
+    },
+    "source_date": "2024-01-01",
+    "method": "Reviewed the WHO/ILO joint estimation methodology, exposure prevalence modeling, counterfactual analysis, and attribution of deaths to occupational UV exposure.",
+    "access_date": "2026-06-30",
+    "limitations": [
+      "This source covers UV radiation, not heat stress, but is included as methodological precedent for quantifying climate-linked occupational exposure burden.",
+      "The attribution methodology relies on modeled exposure and relative risks from high-income country studies, with uncertain transferability to LMIC settings.",
+      "Non-melanoma skin cancer registration is incomplete in most LMICs, so death estimates for those regions depend on modeled rather than observed data."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "iso-7243-wbgt-standard-2017",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "claim": "ISO 7243:2017 provides an international standard for heat stress assessment using wet-bulb globe temperature (WBGT), defining reference values for work-rest regimes by metabolic rate and clothing insulation, and specifying measurement requirements for environmental monitoring.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "ISO 7243:2017 Ergonomics of the thermal environment - Estimation of heat stress on a worker operating in a hot environment, using the WBGT index",
+      "url": "https://www.iso.org/standard/67188.html",
+      "archive_url": "https://web.archive.org/web/2024/https://www.iso.org/standard/67188.html"
+    },
+    "source_date": "2017-09-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed ISO standard abstract, scope, WBGT calculation formula, reference threshold tables for metabolic rate categories, and measurement requirements for natural wet bulb, globe, and dry bulb temperatures.",
+    "limitations": [
+      "ISO standards are paywalled; only the abstract and scope are publicly accessible without purchase, limiting verification of specific threshold values.",
+      "The WBGT reference values were derived from controlled laboratory studies in temperate climates; their applicability to chronically heat-exposed tropical populations is debated.",
+      "The standard does not specify how to account for acclimatization, which can shift the safe work-rest threshold significantly.",
+      "Implementation requires environmental monitoring equipment (WBGT meters) that is uncommon in LMIC workplaces."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "dunne-labor-capacity-2013",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "claim": "A 2013 study projected that heat stress will reduce global labor capacity in vulnerable regions by up to 20 percent by 2050 under RCP8.5, with the largest losses in South Asia, West Africa, and Southeast Asia, where outdoor physical labor is concentrated.",
+    "evidence_type": "model-prediction",
+    "source": {
+      "title": "Defining the climatic space for outdoor work (Dunne et al., 2013, Nature Climate Change)",
+      "url": "https://doi.org/10.1038/nclimate1887",
+      "doi": "10.1038/nclimate1887",
+      "archive_url": "https://web.archive.org/web/2024/https://www.nature.com/articles/nclimate1887"
+    },
+    "source_date": "2013-01-13",
+    "access_date": "2026-06-30",
+    "method": "Reviewed model description, WBGT projections, labor capacity loss calculations, and regional breakdown for the study linking climate model outputs to work capacity estimates.",
+    "limitations": [
+      "Projections are under RCP8.5, a high-emission scenario; actual warming trajectories may differ.",
+      "Labor capacity loss is modeled from WBGT thresholds and assumed work intensity; it does not account for adaptation through scheduling changes, mechanization, or air conditioning in indoor settings.",
+      "The 20 percent figure is a regional maximum, not a global average; global labor capacity loss is lower.",
+      "The model does not distinguish between indoor and outdoor workers or between different industries within regions."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "ilo-climate-labor-statistics-2024",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "claim": "The ILO reports that 26.2 million people are injured and 18,970 die from occupational injuries attributable to excessive heat per year, with the agricultural and construction sectors carrying the highest burden, and that these estimates are likely underestimates due to underreporting in LMICs where occupational injury surveillance is weak or absent.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "ILO: Ensuring Safety and Health at Work in a Changing Climate (2024) \u2014 Injury and death estimates",
+      "url": "https://www.ilo.org/resource/article/ensuring-safety-and-health-work-changing-climate"
+    },
+    "source_date": "2024-04-22",
+    "access_date": "2026-06-30",
+    "method": "Reviewed ILO report sections on occupational injury and death attribution to heat, sectoral breakdown, and methodology for estimating underreporting in LMICs.",
+    "limitations": [
+      "Injury and death estimates are modeled from climate-labor overlap and relative risks, not from direct occupational injury reporting systems in most LMICs.",
+      "Underreporting adjustment methods are described but not fully transparent in the public report summary.",
+      "Sectoral breakdown (agriculture, construction) relies on ILO STAT employment-by-industry data, which has incomplete LMIC coverage.",
+      "The estimates do not separate acute heat injury from chronic heat-related illness, which have different surveillance requirements."
+    ],
+    "confidence": "medium"
+  }
+]

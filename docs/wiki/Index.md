@@ -6,13 +6,13 @@
 
 | Metric | Value |
 |---|---|
-| Total packs | 102 |
-| Packs with claims | 8 |
+| Total packs | 103 |
+| Packs with claims | 9 |
 | Packs with accepted claims | 0 |
-| Total evidence records | 300 |
-| Total tasks | 528 |
-| Scoped tasks (ready for work) | 102 |
-| High-risk tasks | 275 |
+| Total evidence records | 306 |
+| Total tasks | 534 |
+| Scoped tasks (ready for work) | 103 |
+| High-risk tasks | 279 |
 
 ## All Problem Packs
 
@@ -67,6 +67,7 @@
 | [food-security/livestock-disease-surveillance-east-africa](../../problem-packs/food-security/livestock-disease-surveillance-east-africa/problem.md) | Livestock Disease Surveillance And Pastoralist Livelihood Risk In East Africa | scoped | food-security, public-health | east-africa | medium | 2 ev; 6 tasks | needs evidence |
 | [food-security/locust-outbreak-east-africa](../../problem-packs/food-security/locust-outbreak-east-africa/problem.md) | Desert Locust Outbreak Early Warning In East Africa | scoped | food-security, climate-health | east-africa | medium | 3 ev; 6 tasks | ready |
 | [food-security/urban-food-deserts-global](../../problem-packs/food-security/urban-food-deserts-global/problem.md) | Urban Food Desert Mapping And Fresh-Food Access Gaps In LMIC Cities | scoped | food-security, public-health | global | medium | 1 ev; 5 tasks | needs evidence |
+| [occupational-health/heat-stress-outdoor-workers-global](../../problem-packs/occupational-health/heat-stress-outdoor-workers-global/problem.md) | Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change | scoped | occupational-health, climate-health, public-health | global | high | 6 ev; 6 tasks; 1 claims | has claims |
 | [public-health/alcohol-harm-reduction-global](../../problem-packs/public-health/alcohol-harm-reduction-global/problem.md) | Alcohol Harm Reduction Policy Gaps And Heavy Episodic Drinking In Low- And Middle-Income Countries | scoped | public-health | global | medium | 1 ev; 4 tasks | needs evidence |
 | [public-health/anemia-women-adolescents-global](../../problem-packs/public-health/anemia-women-adolescents-global/problem.md) | Anemia Prevalence And Iron Supplementation Coverage In Women And Adolescents | scoped | public-health, food-security | global | medium | 6 ev; 5 tasks | ready |
 | [public-health/antimicrobial-resistance-surveillance-global](../../problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md) | Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries | scoped | public-health | global | medium | 6 ev; 6 tasks; 1 claims | has claims |

@@ -1,0 +1,115 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "title": "Inventory WBGT data sources, labor force distribution data, occupational health surveillance records, and heat-health epidemiology studies for LMICs",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory that separates WBGT and heat exposure data products (reanalysis, station, satellite-derived), labor force and employment-by-industry data (ILOSTAT, national labor surveys), occupational health surveillance data (injury registries, workers compensation), and heat-health epidemiology studies into usable, limited, and rejected categories with explicit LMIC coverage assessment.",
+    "inputs": [
+      "ILO climate change and occupational health reports",
+      "ISO 7243 WBGT standard documentation",
+      "ILOSTAT employment-by-industry and occupation data",
+      "ERA5 and MERRA-2 climate reanalysis WBGT derivation documentation",
+      "Published heat-occupational injury epidemiology studies",
+      "National labor force survey documentation for selected LMICs",
+      "WHO Global Plan of Action on Workers Health 2008-2030"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each source for URL, date, access status, geographic grain, temporal coverage, LMIC availability, and stated limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering exposure metric, geographic grain, temporal coverage, LMIC data availability, and worker-population representation including informal sector coverage."
+  },
+  {
+    "id": "wbgt-exposure-compilation",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "title": "Compile sub-national WBGT exposure estimates for outdoor workers in one to three LMICs",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A cleaned WBGT exposure dataset for one to three selected LMICs with documented grid or station identifier, time period, calculation method, outdoor worker population estimate, industry breakdown where available, and known missingness patterns.",
+    "inputs": [
+      "source inventory",
+      "ERA5 or MERRA-2 reanalysis data for WBGT calculation",
+      "ILOSTAT or national labor force survey employment data",
+      "administrative boundary source",
+      "population denominator source"
+    ],
+    "expected_artifact": "datasets.md and validation.md updates with compiled WBGT exposure data inventory and data quality rules.",
+    "validation_method": "Replicator reruns the WBGT calculation on the documented reanalysis data and confirms grain, temporal coverage, worker population overlay, and missingness handling.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Every WBGT exposure data point has a documented source grid or station, calculation method, time period, outdoor worker population estimate, and missingness flag, and at least one country has enough data density to attempt sub-national exposure mapping."
+  },
+  {
+    "id": "exposure-outcome-analysis",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "title": "Review evidence linking heat exposure to occupational health outcomes in LMIC settings",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A ranked list of candidate exposure-outcome relationships (heat-injury, heat-productivity loss, heat- kidney disease, heat-mortality) with evidence strength, data availability, and known transferability gaps for LMIC sub-national analysis.",
+    "inputs": [
+      "WBGT exposure data",
+      "published heat-health epidemiology studies",
+      "occupational injury surveillance data where available",
+      "worker productivity or output data where available"
+    ],
+    "expected_artifact": "task-map.md and validation.md updates with candidate exposure-outcome tests.",
+    "validation_method": "Back-test candidate exposure-outcome relationships against available data and report effect size, confidence interval, and transferability assessment.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "No exposure-outcome relationship is accepted without evidence strength assessment, LMIC transferability analysis, and replication status against at least one country's data."
+  },
+  {
+    "id": "intervention-evidence-review",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "title": "Review worker protection intervention evidence with failure modes and scaling constraints",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A structured review of rest-break schedules, hydration provision, work-time shifting, cooling PPE, and acclimatization protocols with efficacy range, cost, scaling requirements, and documented failure modes in LMIC outdoor work contexts.",
+    "inputs": [
+      "ISO 7243 work-rest regime thresholds",
+      "published intervention studies from agriculture, construction, and mining",
+      "ILO guidelines on workplace heat stress",
+      "national occupational health and safety regulations for selected countries"
+    ],
+    "expected_artifact": "outputs.md and validation.md updates with intervention evidence summary and allocation decision framework.",
+    "validation_method": "Reviewer checks that each intervention has documented efficacy, cost, scaling requirement, failure mode, and a named decision-maker. A second reviewer replicates the evidence-strength assessment independently.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every intervention recommendation names the decision-maker, the allocation it would change, the evidence strength, and at least one failure mode that could make deployment ineffective or harmful, with replication of the evidence-strength assessment by a second reviewer."
+  },
+  {
+    "id": "red-team-misuse-review",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "title": "Red-team how occupational heat exposure maps could be misused for employer liability deflection, worker exclusion, or regulatory inertia",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying how exposure-outcome maps could be used to shift blame to workers for heat injuries, justify excluding heat-vulnerable workers from employment, rationalize employer non-compliance with heat standards, or create regulatory inertia by framing the problem as too complex for action.",
+    "inputs": ["draft exposure-outcome map", "intervention review", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk misuse scenario has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every field-facing exposure-outcome output is either blocked, qualified with worker-protection framing, or gated behind explicit safeguards against worker blame, employment exclusion, and regulatory inertia, with replicated red-team review before publication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "title": "Check whether exposure-outcome maps match labor ministry and inspectorate decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether the proposed exposure-outcome map would change a real decision for a national labor ministry, labor inspectorate, employer association, or worker organization without creating worse incentives.",
+    "inputs": [
+      "draft exposure-outcome map",
+      "national labor ministry priorities",
+      "labor inspectorate capacity constraints",
+      "worker organization priorities"
+    ],
+    "expected_artifact": "playbooks.md update with named use and non-use cases.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, required workflow, and misuse risk, then a second reviewer replicates the check on the stated non-use cases.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The artifact has a named user, named decision, named intervention, explicit non-use cases, and replicated field-reality review before publication."
+  }
+]

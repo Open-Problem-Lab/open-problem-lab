@@ -160,3 +160,6 @@
 - name: "domain:food-safety"
   color: "0052CC"
   description: "Food safety, mycotoxin, and foodborne contamination problem area."
+- name: "domain:occupational-health"
+  color: "0052CC"
+  description: "Occupational health and worker safety problem area."

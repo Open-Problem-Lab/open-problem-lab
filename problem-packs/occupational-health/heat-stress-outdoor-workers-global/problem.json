@@ -1,0 +1,44 @@
+{
+  "id": "occupational-health/heat-stress-outdoor-workers-global",
+  "title": "Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change",
+  "status": "scoped",
+  "domain": ["occupational-health", "climate-health", "public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for mapping occupational heat stress exposure and health outcomes among outdoor workers in low- and middle-income countries, linking wet-bulb globe temperature data, labor force distribution by industry, and health surveillance records to identify where worker protection interventions should be prioritized.",
+  "why_it_matters": "The ILO estimates that 2.2 billion workers are exposed to excessive heat, with work-related injuries from heat stress causing an estimated 23 million disability-adjusted life years annually. Over 90 percent of exposed workers live in LMICs where occupational health surveillance is weakest. National labor ministries and the ILO need a verified, location-specific evidence base to target workplace heat standards, rest-break mandates, and hydration infrastructure. Currently, no global dataset maps heat exposure to occupational health outcomes at sub-national scale for any LMIC. A verified exposure-outcome map would change where the ILO, national labor inspectorates, and employer associations direct worker protection resources.",
+  "success_metrics": [
+    {
+      "metric": "Exposure evidence traceability",
+      "target": "Every heat exposure estimate links to a dated WBGT or temperature record with station or grid identifier, measurement period, and data source.",
+      "validation_method": "Run schema validation and reviewer spot-checks against evidence.json and datasets.md."
+    },
+    {
+      "metric": "Outcome evidence specificity",
+      "target": "No health outcome estimate is merged without naming the worker population, industry, geographic grain, and surveillance or study method behind it.",
+      "validation_method": "Reviewer checks each accepted claim for worker population, industry, outcome type, and data source classification."
+    },
+    {
+      "metric": "Worker protection humility",
+      "target": "No workplace standard, rest-break, or infrastructure recommendation is merged without naming the decision-maker, the allocation it would change, and the non-use cases.",
+      "validation_method": "Field-reality and red-team reviewers confirm named user, named decision, and explicit misuse risks before publication."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review for worker protection claims, and replication for quantitative exposure-outcome estimates."
+  }
+}

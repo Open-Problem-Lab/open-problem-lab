@@ -1,0 +1,39 @@
+[
+  {
+    "id": "occupational-heat-surveillance-data-sufficiency",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "claim": "Available public data sources are sufficient for global and regional framing of occupational heat stress (ILO 2024 exposure estimates, Xu et al. 2021 meta-analysis) and for modeled WBGT exposure derivation from climate reanalysis (ERA5), but no public dataset provides sub-national occupational heat exposure linked to health outcomes at the granularity needed to identify which districts in LMICs carry the highest worker heat burden relative to surveillance coverage. The WHO/ILO UV radiation joint estimate demonstrates that global attribution of climate-linked occupational hazards is methodologically feasible, but no equivalent has been published for heat stress specifically. The sub-national exposure-outcome gap cannot be mapped with currently available public data alone, particularly because informal sector workers, who constitute the majority of the outdoor workforce in most LMICs, are invisible to occupational health surveillance systems.",
+    "domain": ["occupational-health", "climate-health", "public-health"],
+    "status": "unverified",
+    "evidence": [
+      "ilo-heat-exposure-global-2024",
+      "xu-heat-occupational-injury-2021",
+      "who-ilo-uv-occupational-2024",
+      "iso-7243-wbgt-standard-2017",
+      "dunne-labor-capacity-2013",
+      "ilo-climate-labor-statistics-2024"
+    ],
+    "failure_modes": [
+      "A reader treats the ILO global exposure estimate as a direct measurement of workplace heat exposure rather than a modeled estimate from climate-labor overlap.",
+      "A reader uses the Xu et al. pooled effect size as applicable to LMIC settings without noting that most included studies are from high-income countries.",
+      "A policy maker uses the exposure framing to justify employer-level heat standards without addressing informal sector workers who fall outside employer-employee regulatory frameworks.",
+      "A reader treats the Dunne et al. 2050 labor capacity projection as a current estimate of productivity loss rather than a future scenario under high emissions.",
+      "A reader interprets the absence of sub-national surveillance data as evidence that occupational heat stress is not a significant problem in specific LMIC districts.",
+      "An employer uses exposure-outcome maps to argue that heat injuries are worker behavior problems rather than workplace condition problems, deflecting responsibility for rest breaks and hydration provision."
+    ],
+    "kill_condition": "A reviewer identifies a public dataset providing sub-national occupational heat exposure linked to health outcomes for at least 10 LMICs with consistent methodology, industry breakdown, and informal sector coverage, or finds that ILO or national labor ministries have begun systematic sub-national occupational heat surveillance covering districts in at least 20 LMICs with worker population denominators that include the informal sector.",
+    "review_required": ["domain-reviewer", "red-team-reviewer"],
+    "safety_level": "high",
+    "submitter": "codex-agent",
+    "created_date": "2026-06-30",
+    "last_updated": "2026-06-30",
+    "confidence": "medium",
+    "limitations": [
+      "The claim is about public data availability for sub-national occupational heat exposure-outcome analysis, not about actual heat exposure or injury rates in specific countries.",
+      "The assessment of 'no public dataset provides sub-national exposure-outcome data' is an inference from reviewing available data portals and published literature, not a systematic survey of all national occupational health databases.",
+      "Some countries may have occupational injury surveillance systems that include heat-related cases but are not publicly accessible or not in English; these were not reviewed.",
+      "The ILO report may contain more granular country-level data than the public summary suggests; this claim is based on the publicly accessible version.",
+      "Informal sector coverage gaps are inferred from ILOSTAT documentation and published labor market analyses, not from a systematic audit of every LMIC labor survey."
+    ]
+  }
+]

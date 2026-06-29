@@ -490,6 +490,16 @@ Build a verified workflow for assessing where vegetation, soil moisture, and win
 
 Build a verified workflow for mapping urban food deserts and fresh-food access gaps in LMIC cities, linking market-location data, food-price data, and population data.
 
+## Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
+
+- ID: `occupational-health/heat-stress-outdoor-workers-global`
+- Status: `scoped`
+- Domain: `occupational-health`, `climate-health`, `public-health`
+- Region: `global`
+- Source: [problem-packs/occupational-health/heat-stress-outdoor-workers-global](../../problem-packs/occupational-health/heat-stress-outdoor-workers-global/problem.md)
+
+Build a verified workflow for mapping occupational heat stress exposure and health outcomes among outdoor workers in low- and middle-income countries, linking wet-bulb globe temperature data, labor force distribution by industry, and health surveillance records to identify where worker protection interventions should be prioritized.
+
 ## Alcohol Harm Reduction Policy Gaps And Heavy Episodic Drinking In Low- And Middle-Income Countries
 
 - ID: `public-health/alcohol-harm-reduction-global`

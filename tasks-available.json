@@ -2,19 +2,19 @@
   "summary": {
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
-    "total_packs": 102,
-    "total_scoped_tasks": 102,
+    "total_packs": 103,
+    "total_scoped_tasks": 103,
     "by_role": {
-      "literature-scout": 102
+      "literature-scout": 103
     },
     "by_risk": {
-      "medium": 97,
+      "medium": 98,
       "low": 5
     },
     "by_domain": {
       "air-quality": 6,
-      "public-health": 64,
-      "climate-health": 13,
+      "public-health": 65,
+      "climate-health": 14,
       "biodiversity": 8,
       "food-security": 20,
       "climate-adaptation": 11,
@@ -22,6 +22,7 @@
       "education": 9,
       "energy-access": 6,
       "food-safety": 1,
+      "occupational-health": 1,
       "sanitation": 4,
       "water-security": 5
     }
@@ -859,6 +860,23 @@
       "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons.",
       "tasks_file": "problem-packs/food-security/urban-food-deserts-global/tasks.json",
       "problem_file": "problem-packs/food-security/urban-food-deserts-global/problem.md"
+    },
+    {
+      "pack_id": "occupational-health/heat-stress-outdoor-workers-global",
+      "pack_title": "Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change",
+      "pack_status": "scoped",
+      "domain": ["occupational-health", "climate-health", "public-health"],
+      "region": ["global"],
+      "task_id": "source-inventory",
+      "title": "Inventory WBGT data sources, labor force distribution data, occupational health surveillance records, and heat-health epidemiology studies for LMICs",
+      "owner_role": "literature-scout",
+      "reviewer_needed": "domain-reviewer",
+      "safety_risk": "medium",
+      "outcome": "A dated source inventory that separates WBGT and heat exposure data products (reanalysis, station, satellite-derived), labor force and employment-by-industry data (ILOSTAT, national labor surveys), occupational health surveillance data (injury registries, workers compensation), and heat-health epidemiology studies into usable, limited, and rejected categories with explicit LMIC coverage assessment.",
+      "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+      "done_condition": "At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering exposure metric, geographic grain, temporal coverage, LMIC data availability, and worker-population representation including informal sector coverage.",
+      "tasks_file": "problem-packs/occupational-health/heat-stress-outdoor-workers-global/tasks.json",
+      "problem_file": "problem-packs/occupational-health/heat-stress-outdoor-workers-global/problem.md"
     },
     {
       "pack_id": "public-health/alcohol-harm-reduction-global",

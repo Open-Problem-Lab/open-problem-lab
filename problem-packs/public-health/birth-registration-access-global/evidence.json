@@ -125,5 +125,45 @@
       "Not every MICS survey includes the same exact customizations, and microdata access still depends on survey release status."
     ],
     "confidence": "medium"
+  },
+  {
+    "id": "unsd-legal-identity-database",
+    "problem_id": "public-health/birth-registration-access-global",
+    "claim": "The UN Statistics Division maintains the Legal Identity Toolkit and the Global Civil Registration and Vital Statistics Group portal, which classify national CRVS systems by birth-registration completeness estimates and legal framework type, providing an administrative-systems perspective distinct from the survey-based under-5 measure.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "UN Statistics Division: Civil Registration and Vital Statistics Resources",
+      "url": "https://unstats.un.org/unsd/demographic-social/crvs/"
+    },
+    "source_date": "2025-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the UNSD CRVS resources portal for birth-registration completeness classifications, legal framework typologies, and the distinction between administrative completeness estimates and survey-based under-5 measures. Examined the Legal Identity Toolkit structure and the Global CRVS Group materials.",
+    "limitations": [
+      "The UNSD portal aggregates country self-reports and does not independently verify completeness claims against actual registry operations.",
+      "Completeness estimates are at country level only and do not provide sub-national grain for district-level gap analysis.",
+      "The legal framework classification describes de jure capacity, not de facto registration performance, which can diverge substantially in practice.",
+      "The portal last comprehensive update timing varies by country entry and is not uniformly dated."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "worldbank-id4d-dataset",
+    "problem_id": "public-health/birth-registration-access-global",
+    "claim": "The World Bank Identification for Development (ID4D) initiative publishes global estimates of people without proof of legal identity, reporting approximately 850 million people globally as of 2023, with the majority in Sub-Saharan Africa and South Asia, using a methodology that combines survey data, administrative records, and modeling.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "World Bank Identification for Development (ID4D) Program",
+      "url": "https://www.worldbank.org/en/programs/id4d"
+    },
+    "source_date": "2023-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the ID4D program page and its published estimates of global legal identity gaps. Examined how the initiative distinguishes between people without any proof of identity and those with registration but no documentation, and how it combines survey and administrative sources.",
+    "limitations": [
+      "The 850 million figure is a modeled estimate combining heterogeneous sources, not a direct count from a single consistent methodology.",
+      "The dataset measures proof of legal identity broadly, not birth registration specifically, so it includes adults without identity documents and is not directly comparable to UNICEF under-5 birth-registration measure.",
+      "Country-level estimates obscure sub-national variation and do not support district-level gap analysis.",
+      "The methodology has been revised across ID4D iterations, so year-to-year comparisons require careful version tracking."
+    ],
+    "confidence": "medium"
   }
 ]

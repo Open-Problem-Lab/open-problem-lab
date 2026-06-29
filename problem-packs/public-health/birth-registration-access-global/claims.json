@@ -1,0 +1,39 @@
+[
+  {
+    "id": "source-inventory-complete",
+    "problem_id": "public-health/birth-registration-access-global",
+    "claim": "Nine candidate data sources for birth-registration analysis have been classified into usable, limited, and rejected categories with explicit reasons covering measure family, timing, geographic grain, and health-linkage relevance, separating survey-based under-5 registration, certificate possession, administrative CRVS completeness, and health-touchpoint data.",
+    "domain": ["public-health"],
+    "status": "dry-lab-verified",
+    "evidence": [
+      "unicef-right-start-life-2024",
+      "unicef-birth-registration-methodology-page",
+      "world-bank-sdg1691-metadata",
+      "who-crvs-fact-sheet-2024",
+      "who-unicef-health-sector-crvs-guidance-2021",
+      "dhs-birth-registration-indicator-guide",
+      "mics-birth-registration-module-availability",
+      "unsd-legal-identity-database",
+      "worldbank-id4d-dataset"
+    ],
+    "failure_modes": [
+      "A reader treats the ID4D 850 million legal-identity figure as equivalent to UNICEF 200 million under-5 birth-registration figure, when the former includes adults and uses a different methodology.",
+      "A reader treats UNSD self-reported CRVS completeness as independently verified, when the portal aggregates country self-reports without auditing.",
+      "A reader uses the source inventory as a ranking of countries by registration gap, when the sources are classified by usability for analysis, not by country performance.",
+      "A reader treats DHS and MICS as interchangeable, when their questionnaire customizations, roster practices, and country coverage differ.",
+      "A reader treats the WHO-UNICEF 2021 guidance as proof that health-sector linkage already works in a specific country, when it is operational guidance not an outcomes evaluation."
+    ],
+    "kill_condition": "A reviewer identifies a candidate source that should have been classified but was omitted, or demonstrates that an existing classification reason is factually wrong about the source's measure family, grain, or access conditions.",
+    "review_required": ["domain-reviewer"],
+    "safety_level": "low",
+    "submitter": "codex-agent",
+    "created_date": "2026-06-30",
+    "last_updated": "2026-06-30",
+    "confidence": "high",
+    "limitations": [
+      "The source inventory covers global and regional sources but does not yet include country-specific CRVS documentation for any individual country.",
+      "Health-touchpoint sources are classified as limited because their access conditions are country-specific and could not be independently verified at the inventory stage.",
+      "The inventory does not assess data quality within any single country's survey or administrative system."
+    ]
+  }
+]

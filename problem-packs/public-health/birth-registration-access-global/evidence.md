@@ -34,6 +34,14 @@ Use this source to define the DHS indicator precisely: de jure children under 5,
 
 Use this source to justify MICS as a major comparable source and to show that birth registration is an established survey module. It does not solve country-specific data-quality questions on its own.
 
+### UNSD CRVS Resources Portal
+
+Use this source for the administrative-systems perspective on CRVS completeness and legal framework classification. It complements the survey-based measures by showing what countries report about their own registration systems. Do not treat self-reported completeness as independently verified performance. The portal classifies de jure capacity, which can diverge sharply from de facto registration rates in practice.
+
+### World Bank ID4D Program
+
+Use this source for the broader legal-identity gap that contextualizes birth registration. The 850 million figure includes adults without identity documents, so it is not directly comparable to UNICEF's under-5 birth-registration measure. Use it for framing the scale of the legal-identity problem, not for birth-registration-specific gap analysis. The modeled methodology means the estimate carries uncertainty that the program documentation does not fully quantify.
+
 ## Evidence Quality Rule
 
 Evidence is not accepted because it repeats the SDG language. It is accepted when the source, measure family, method, limitations, and confidence are explicit enough for a reviewer to attack.

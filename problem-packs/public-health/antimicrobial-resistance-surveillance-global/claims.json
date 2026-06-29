@@ -1,0 +1,38 @@
+[
+  {
+    "id": "amr-surveillance-data-sufficiency",
+    "problem_id": "public-health/antimicrobial-resistance-surveillance-global",
+    "claim": "Available public data sources are sufficient for country-level AMR burden estimation and global surveillance-gap framing (Murray et al. 2022, WHO GLASS, WHO AMR fact sheet), but no public dataset provides sub-national AMR resistance rates or laboratory-capacity data at the granularity needed to identify which districts within LMICs have the highest AMR burden relative to surveillance capacity. IHME GBD Compare provides modeled country-level estimates with wide uncertainty. ResistanceMap provides sparse country-level resistance rates with inconsistent LMIC coverage. Global-PPS provides hospital-level prescribing data but not resistance rates. The sub-national surveillance gap cannot be mapped with currently available public data alone.",
+    "domain": ["public-health"],
+    "status": "unverified",
+    "evidence": [
+      "murray-amr-lancet-2022",
+      "who-glass-program-page-2026",
+      "who-amr-factsheet-2026",
+      "ihme-gbd-amr-burden",
+      "global-pps-prescribing-2023",
+      "resistancemap-one-health-trust"
+    ],
+    "failure_modes": [
+      "A reader treats Murray et al. modeled burden estimates as direct surveillance measurements for specific countries.",
+      "A reader treats GLASS enrollment as equivalent to functional surveillance capacity, when enrollment does not guarantee data quality, completeness, or sub-national coverage.",
+      "A reader uses ResistanceMap country-level rates to draw sub-national conclusions about surveillance gaps.",
+      "A reader treats Global-PPS prescribing data as resistance surveillance data.",
+      "A reader uses GBD Compare uncertainty intervals as evidence of surveillance quality, when they reflect model assumptions, not measurement density.",
+      "A policy maker uses the surveillance-gap framing to justify restricting antibiotic access rather than investing in laboratory capacity."
+    ],
+    "kill_condition": "A reviewer identifies a public dataset providing sub-national AMR resistance rates or laboratory-capacity data at district or facility level for at least 10 LMICs with consistent methodology and less than 2-year reporting lag, or finds that GLASS sub-national reporting has expanded to cover districts in at least 20 LMICs with quality-verified data.",
+    "review_required": ["domain-reviewer", "red-team-reviewer"],
+    "safety_level": "medium",
+    "submitter": "codex-agent",
+    "created_date": "2026-06-30",
+    "last_updated": "2026-06-30",
+    "confidence": "medium",
+    "limitations": [
+      "The claim is about public data availability for sub-national surveillance-gap analysis, not about actual AMR rates or surveillance quality in specific countries.",
+      "The assessment of 'no public dataset provides sub-national data' is an inference from reviewing available data portals, not a systematic survey of all national AMR surveillance databases.",
+      "Some LMICs may have national surveillance systems that are not publicly accessible or not in English; these were not reviewed.",
+      "GLASS reports (separate from the program page) may contain more granular data than the program page suggests; this claim is based on the program page and fact sheet, not a full review of every GLASS report."
+    ]
+  }
+]

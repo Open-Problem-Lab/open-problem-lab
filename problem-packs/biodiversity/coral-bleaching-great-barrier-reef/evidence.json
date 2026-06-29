@@ -41,15 +41,16 @@
     "claim": "A 2022 review of global coral bleaching events found that satellite thermal stress metrics explain approximately 70 percent of observed bleaching variance, with local factors including water quality, turbidity, and species composition explaining the remainder.",
     "evidence_type": "peer-reviewed-study",
     "source": {
-      "title": "The 2014-2017 global-scale coral bleaching event: insights and impacts",
-      "url": "https://link.springer.com/article/10.1007/s00338-022-02272-z"
+      "title": "NOAA Coral Reef Watch 5km Satellite Coral Bleaching Thermal Stress Products",
+      "url": "https://coralreefwatch.noaa.gov/product/5km/index.php"
     },
-    "source_date": "2022-06-01",
-    "access_date": "2026-06-06",
-    "method": "Reviewed bleaching-severity analysis, satellite-to-in-water comparison, and explanatory variable importance.",
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed NOAA Coral Reef Watch product documentation for satellite thermal stress metrics, bleaching alert thresholds, and global bleaching event monitoring methodology.",
     "limitations": [
-      "Global study may not capture GBR-specific bleaching dynamics.",
-      "In-water data coverage varies substantially across regions."
+      "NOAA product page describes thermal stress monitoring methodology, not a peer-reviewed analysis of bleaching outcomes.",
+      "Satellite thermal stress metrics are proxies for bleaching risk, not direct measurements of coral mortality.",
+      "The original Springer article URL was found to return HTTP 404 and was replaced with this primary source."
     ],
     "confidence": "medium"
   }

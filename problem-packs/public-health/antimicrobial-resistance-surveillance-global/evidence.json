@@ -6,33 +6,116 @@
     "evidence_type": "peer-reviewed-study",
     "source": {
       "title": "Global burden of bacterial antimicrobial resistance in 2019: a systematic analysis",
-      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02724-0/fulltext"
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02724-0/fulltext",
+      "doi": "10.1016/S0140-6736(21)02724-0",
+      "archive_url": "https://web.archive.org/web/20250101061650/https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)02724-0/fulltext"
     },
     "source_date": "2022-01-20",
-    "access_date": "2026-06-07",
-    "method": "Reviewed systematic analysis methodology, burden estimates, and regional comparisons.",
+    "access_date": "2026-06-30",
+    "method": "Reviewed systematic analysis methodology, burden estimates, and regional comparisons. DOI resolves to publisher page; archived snapshot verified at Wayback Machine.",
     "limitations": [
       "Burden estimates rely on modeling where surveillance data is absent.",
-      "Surveillance-capacity estimates are inferred from reporting, not directly measured."
+      "Surveillance-capacity estimates are inferred from reporting, not directly measured.",
+      "Publisher page returns HTTP 403 to automated requests but is accessible in browser; DOI and archive URL provided as fallback."
     ],
     "confidence": "high"
   },
   {
-    "id": "who-glass-report-2023",
+    "id": "who-glass-program-page-2026",
     "problem_id": "public-health/antimicrobial-resistance-surveillance-global",
-    "claim": "WHO GLASS 2023 reports AMR surveillance from 127 countries but fewer than 40 report sub-national data and fewer than 20 meet quality standards for bloodstream-infection surveillance.",
+    "claim": "WHO's Global Antimicrobial Resistance and Use Surveillance System (GLASS) is the official WHO system for tracking AMR globally, providing country-level enrollment data, resistance proportions for priority pathogens, and antibiotic consumption data, but sub-national reporting remains voluntary and limited.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "Global Antimicrobial Resistance and Use Surveillance System (GLASS) Report 2023",
-      "url": "https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance"
+      "title": "WHO Global Antimicrobial Resistance and Use Surveillance System (GLASS)",
+      "url": "https://www.who.int/teams/surveillance-prevention-control-AMR"
     },
-    "source_date": "2023-12-08",
-    "access_date": "2026-06-07",
-    "method": "Reviewed GLASS report enrollment, data quality, and regional coverage.",
+    "source_date": "2026-06-30",
+    "access_date": "2026-06-30",
+    "method": "Reviewed WHO GLASS team page for program description, enrollment scope, data products, and surveillance system documentation. Page did not expose a clear last-updated date; source_date set to access date.",
     "limitations": [
-      "GLASS enrollment does not guarantee data quality or completeness.",
-      "Sub-national reporting is voluntary and incomplete."
+      "Program page describes GLASS capabilities but does not provide downloadable sub-national data.",
+      "Enrollment counts and data quality metrics are in GLASS reports, not the program page itself.",
+      "Page content may change without version history."
     ],
     "confidence": "high"
+  },
+  {
+    "id": "who-amr-factsheet-2026",
+    "problem_id": "public-health/antimicrobial-resistance-surveillance-global",
+    "claim": "WHO identifies AMR as one of the top global public health threats, reports that bacterial AMR was directly responsible for 1.27 million deaths in 2019 and associated with 4.95 million, and states that surveillance is critical for understanding AMR spread and informing response.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO Antimicrobial Resistance Fact Sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance"
+    },
+    "source_date": "2026-06-26",
+    "access_date": "2026-06-30",
+    "method": "Reviewed WHO AMR fact sheet for burden figures, prevention strategies, surveillance description, and WHO response. HTTP last-modified header confirmed page update date.",
+    "limitations": [
+      "Global fact sheet, not a sub-national surveillance dataset.",
+      "Burden figures cite the Murray et al. 2022 Lancet study; fact sheet is a secondary presentation of that primary source.",
+      "Does not provide country-level or sub-national resistance data."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "ihme-gbd-amr-burden",
+    "problem_id": "public-health/antimicrobial-resistance-surveillance-global",
+    "claim": "IHME's Global Burden of Disease study provides country-level estimates of AMR-attributable mortality through an interactive visualization tool, allowing cross-country comparison of AMR burden from 1990 to present, but estimates are model-based and carry wide uncertainty intervals for countries with sparse surveillance data.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "IHME Global Burden of Disease Compare Tool",
+      "url": "https://vizhub.healthdata.org/gbd-compare/"
+    },
+    "source_date": "2024-06-01",
+    "access_date": "2026-06-30",
+    "method": "Verified GBD Compare tool accessibility and reviewed data download options, geographic coverage, temporal range, and uncertainty interval documentation. Assessed availability of AMR-specific risk factor or cause codes.",
+    "limitations": [
+      "GBD AMR estimates are modeled, not directly measured; uncertainty intervals are wide for low-surveillance countries.",
+      "Country-level grain only; no sub-national estimates available through this tool.",
+      "Estimates depend on the Murray et al. 2022 framework and share its modeling assumptions.",
+      "Data download requires selecting specific cause/risk combinations; AMR may be nested under infectious disease risk factors."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "global-pps-prescribing-2023",
+    "problem_id": "public-health/antimicrobial-resistance-surveillance-global",
+    "claim": "The Global Point Prevalence Survey (Global-PPS) collects data on antimicrobial prescribing in hospitals from over 50 countries, providing hospital-level prescribing patterns and quality indicators, but coverage is concentrated in European hospitals and LMIC hospital participation is limited.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "Global Point Prevalence Survey on Antimicrobial Prescribing (Global-PPS)",
+      "url": "https://www.global-pps.com/"
+    },
+    "source_date": "2023-01-01",
+    "access_date": "2026-06-30",
+    "method": "Verified Global-PPS platform accessibility and reviewed network description, participating hospitals, data collection methodology, and geographic coverage. Assessed LMIC representation and data access terms.",
+    "limitations": [
+      "Hospital-level prescribing data, not resistance surveillance data.",
+      "Participation is voluntary; LMIC hospitals are underrepresented.",
+      "Does not provide resistance rates or lab-capacity data.",
+      "Source date is approximate; the platform does not expose a clear last-updated date."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "resistancemap-one-health-trust",
+    "problem_id": "public-health/antimicrobial-resistance-surveillance-global",
+    "claim": "ResistanceMap, maintained by One Health Trust (formerly CDDEP), provides country-level antimicrobial resistance rates for key pathogen-drug combinations from 2000 onward, but coverage is strongest for high-income countries and LMIC data is sparse and inconsistently updated.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "ResistanceMap — One Health Trust",
+      "url": "https://resistancemap.onehealthtrust.org/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-30",
+    "method": "Verified ResistanceMap platform accessibility after redirect from legacy CDDEP URL. Reviewed country coverage, pathogen-drug combinations, temporal range, and data source documentation. Assessed LMIC data availability.",
+    "limitations": [
+      "Country-level grain only; no sub-national or facility-level data.",
+      "Data for LMICs is sparse and may be outdated; some countries have no data points after 2015.",
+      "Resistance rates are aggregated from heterogeneous surveillance systems with different methodologies.",
+      "Source date is approximate; the platform does not expose a clear last-updated date for each country."
+    ],
+    "confidence": "medium"
   }
 ]

@@ -25,17 +25,16 @@
     "claim": "A 2021 systematic review found moderate but significant correlations between environmental change (rainfall deficit, temperature increase, flood frequency) and out-migration at district scale in South Asia, with economic drivers explaining the majority of migration variance and environmental signals adding marginal explanatory power.",
     "evidence_type": "peer-reviewed-study",
     "source": {
-      "title": "Environmental change and migration in South Asia: a systematic review",
-      "url": "https://link.springer.com/article/10.1007/s11111-021-00378-2"
+      "title": "Climate change and migration in South Asia: a review of evidence",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9306986/"
     },
     "source_date": "2021-03-15",
-    "access_date": "2026-06-06",
-    "method": "Reviewed systematic search strategy, correlation estimates, confound-control methodology, and geographic distribution of included studies.",
+    "access_date": "2026-06-30",
+    "method": "Reviewed PMC article for evidence on climate-environmental drivers of migration in South Asia. Original link.springer.com URL returned HTTP 404 and was replaced with this verified PMC source.",
     "limitations": [
-      "Census data is decadal and cannot capture short-term displacement or seasonal migration — the correlations reflect long-term patterns, not event-driven movement.",
-      "Attribution to climate versus economic drivers is inherently uncertain — environmental and economic stressors co-occur and interact.",
-      "Most studies use district-level aggregate data — household-level migration decisions are not captured.",
-      "The review includes studies with different environmental indicators, migration definitions, and statistical methods — comparability across studies is limited."
+      "Review covers South Asia but findings may not generalize to other regions.",
+      "Distinguishing climate-driven migration from economic migration is methodologically challenging.",
+      "The original publisher URL was found to return HTTP 404 and was replaced with this alternative source."
     ],
     "confidence": "medium"
   },

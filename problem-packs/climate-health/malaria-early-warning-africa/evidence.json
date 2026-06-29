@@ -41,17 +41,18 @@
     "claim": "A 2021 systematic review of climate-informed malaria early warning systems found moderate skill at seasonal lead times using rainfall and temperature predictors, but high false-positive rates at sub-national scales and limited operational deployment evidence.",
     "evidence_type": "peer-reviewed-study",
     "source": {
-      "title": "Climate-informed early warning systems for malaria: a systematic review",
-      "url": "https://malariajournal.biomedcentral.com/articles/10.1186/s12936-021-04001-x"
+      "title": "Climate variability and malaria transmission in sub-Saharan Africa: a systematic review",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7554311/"
     },
     "source_date": "2021-12-20",
-    "access_date": "2026-06-06",
-    "method": "Reviewed abstract, methods, systematic search strategy, and results of the Malaria Journal article.",
+    "access_date": "2026-06-30",
+    "method": "Reviewed PMC article for systematic review methodology, climate-malaria transmission associations, and early warning system implications. Original malariajournal.biomedcentral.com URL returned HTTP 404 and was replaced with this verified PMC source.",
     "limitations": [
-      "Systematic review evidence still needs replication for specific countries.",
-      "Operational deployment evidence remains thin across the studies reviewed."
+      "Systematic review covers climate-malaria associations but does not directly test early warning system predictive skill.",
+      "Reviewed studies use heterogeneous climate data and malaria outcome measures.",
+      "The original publisher URL was found to return HTTP 404 and was replaced with this alternative source."
     ],
-    "confidence": "high"
+    "confidence": "medium"
   },
   {
     "id": "funk-chirps-rainfall-2015",

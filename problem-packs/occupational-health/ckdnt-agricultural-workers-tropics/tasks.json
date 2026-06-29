@@ -1,0 +1,123 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+    "title": "Inventory CKDnt evidence sources separating heat-dehydration, agrochemical, and other etiology hypotheses",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory that classifies evidence by etiology hypothesis (heat-dehydration, agrochemical, infectious, genetic, mixed), evidence type (cohort, cross-sectional, ecological, experimental), geographic region, and worker population, with usable, limited, or rejected classifications and explicit reasons for each.",
+    "inputs": [
+      "Lancet Commission on CKDnt 2024",
+      "PAHO Mesoamerican nephropathy documents",
+      "Wesseling et al. 2020 systematic review",
+      "Sorensen et al. 2024 Nicaraguan cohort study",
+      "WHO and Sri Lanka Ministry of Health CKDu investigation",
+      "Jayasumana et al. 2022 water contamination study",
+      "Correa-Rotrjan et al. 2022 mortality assessment",
+      "GBD CKD mortality estimates for baseline comparison",
+      "Sri Lanka and Mesoamerican cohort and case-control studies"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, evidence type, geographic grain, etiology hypothesis addressed, and stated limitations, and confirms that sources are classified by hypothesis rather than pooled into a single evidence base.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "low",
+    "done_condition": "At least eight candidate sources are classified as usable, limited, or rejected with explicit reasons covering etiology hypothesis, evidence type, geographic region, worker population, and case definition quality."
+  },
+  {
+    "id": "case-definition-harmonization",
+    "problem_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+    "title": "Compare CKDnt case definitions across Mesoamerica, Sri Lanka, and India and identify where they diverge",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A case-definition comparison note that maps the diagnostic criteria, exclusion criteria, and population screening approaches used in each affected region, and identifies which prevalence and mortality estimates are directly comparable and which are not.",
+    "inputs": [
+      "source inventory",
+      "Lancet Commission case definition criteria",
+      "Mesoamerican study case definitions",
+      "Sri Lankan CKDu diagnostic criteria",
+      "Indian Uddanam nephropathy case definitions"
+    ],
+    "expected_artifact": "validation.md and outputs.md updates with case-definition comparison table.",
+    "validation_method": "Reviewer checks that each regional case definition is broken down by inclusion criteria, exclusion of conventional CKD, kidney function threshold, and population screening method, and that incomparable estimates are flagged.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "No prevalence or mortality comparison is left ambiguous about whether the underlying case definitions are compatible, and at least one pair of regions is identified as having incompatible case definitions."
+  },
+  {
+    "id": "heat-exposure-outcome-synthesis",
+    "problem_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+    "title": "Synthesize heat-dehydration exposure-outcome evidence and assess causal inference strength",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A structured evidence synthesis that ranks the heat-dehydration studies by study design, exposure measurement quality, outcome measurement quality, confounder control, and replication status, and states the strongest causal claim the evidence supports.",
+    "inputs": [
+      "source inventory",
+      "Wesseling et al. 2020 review",
+      "Sorensen et al. 2024 cohort",
+      "additional heat-exposure cohort and cross-sectional studies",
+      "ERA5 or equivalent climate reanalysis for heat exposure mapping"
+    ],
+    "expected_artifact": "outputs.md and validation.md updates with ranked evidence table and causal inference assessment.",
+    "validation_method": "Replicator reruns the evidence ranking using the stated criteria and confirms that the causal inference claim does not exceed what the strongest included study design supports.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "high",
+    "done_condition": "The synthesis names the strongest study design, states what causal claim it supports and what it does not, and includes a back-test confirming that the ranking criteria produce consistent ordering when applied independently."
+  },
+  {
+    "id": "agrochemical-exposure-synthesis",
+    "problem_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+    "title": "Synthesize agrochemical exposure-outcome evidence and assess causal inference strength",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A structured evidence synthesis that ranks the agrochemical exposure studies by study design, exposure measurement quality (individual vs ecological), outcome measurement, confounder control, and replication status, and states the strongest causal claim the evidence supports.",
+    "inputs": [
+      "source inventory",
+      "WHO and Sri Lanka joint investigation",
+      "Jayasumana et al. 2022",
+      "additional pesticide and heavy metal exposure studies from affected regions"
+    ],
+    "expected_artifact": "outputs.md and validation.md updates with ranked evidence table and causal inference assessment.",
+    "validation_method": "Replicator reruns the evidence ranking and confirms that ecological exposure studies are not treated as equivalent to individual-level dose studies, and that the causal claim does not exceed what the strongest study supports.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "high",
+    "done_condition": "The synthesis distinguishes individual-level from ecological exposure evidence, states what causal claim each level supports, and includes a back-test confirming consistent ranking when criteria are applied independently."
+  },
+  {
+    "id": "red-team-causal-claims",
+    "problem_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+    "title": "Red-team premature causal claims and policy recommendations that exceed the evidence",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review that identifies how CKDnt evidence synthesis could be misused to justify premature pesticide bans, employer liability claims, worker behavior blame, or resource diversion from one prevention pathway to another without sufficient evidence.",
+    "inputs": [
+      "draft evidence synthesis",
+      "heat-exposure-outcome synthesis",
+      "agrochemical-exposure synthesis",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every causal claim is either qualified to its evidence level or blocked, every policy recommendation names its evidence standard and decision-maker, and a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every causal or policy claim is either blocked, qualified to its evidence level with explicit caveats, or gated behind domain review and replicated red-team review before publication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+    "title": "Check whether CKDnt evidence synthesis matches occupational health and agricultural labor decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review that identifies whether the evidence synthesis would change a real decision for a labor ministry, agricultural extension service, occupational health agency, or nephrology clinician, and what the misuse risks are for affected worker communities.",
+    "inputs": [
+      "draft outputs",
+      "occupational health policy context in affected countries",
+      "agricultural labor organization perspectives",
+      "nephrology clinical practice in affected regions"
+    ],
+    "expected_artifact": "playbooks.md update with named use and non-use cases for each affected region.",
+    "validation_method": "Field reviewer identifies the decision, user, timing, required evidence standard, and misuse risk for each affected region, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The output has a named user, named decision, explicit non-use cases, and replicated field-reality review for at least two affected regions before publication."
+  }
+]

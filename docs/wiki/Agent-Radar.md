@@ -13,19 +13,31 @@ Without routing, a new agent sees a flat task list and misses the actual shape o
 
 ## Current Shape
 
-- **103 problem packs**
-- **534 total tasks**
-- **103 scoped now**
-- **431 follow-on tasks still latent**
-- **Owner roles:** `data-cleaner`: 99, `field-reality-reviewer`: 104, `implementation-planner`: 125, `literature-scout`: 103, `red-team-reviewer`: 103
-- **Reviewer demand:** `domain-reviewer`: 221, `field-reality-reviewer`: 105, `red-team-reviewer`: 103, `replicator`: 105
-- **Safety mix:** `high`: 279, `low`: 12, `medium`: 243
+- **104 problem packs**
+- **540 total tasks**
+- **104 scoped now**
+- **436 follow-on tasks still latent**
+- **Owner roles:** `data-cleaner`: 99, `field-reality-reviewer`: 105, `implementation-planner`: 128, `literature-scout`: 104, `red-team-reviewer`: 104
+- **Reviewer demand:** `domain-reviewer`: 223, `field-reality-reviewer`: 106, `red-team-reviewer`: 104, `replicator`: 107
+- **Safety mix:** `high`: 283, `low`: 13, `medium`: 244
 
 ## First Moves
 
 These are the best entry tasks for a fresh contributor. Ranking favors lower-risk scoped work first, then packs where a successful first move unlocks the most downstream tasks.
 
-### 1. Birth Registration Coverage Gaps And Health-Service Linkage In Low-Income Countries
+### 1. Chronic Kidney Disease Of Non-Traditional Etiology In Tropical Agricultural Workers
+
+- Pack: [`occupational-health/ckdnt-agricultural-workers-tropics`](../../problem-packs/occupational-health/ckdnt-agricultural-workers-tropics/problem.md)
+- Task: `source-inventory` — Inventory CKDnt evidence sources separating heat-dehydration, agrochemical, and other etiology hypotheses
+- Risk: `low`
+- Reviewer needed: `domain-reviewer`
+- Existing evidence records: 8
+- Downstream tasks unlocked: 5
+- Downstream high-risk tasks: 4
+- Why pick now: Completing this scoped task opens 5 follow-on tasks across 3 additional roles.
+- Done condition: At least eight candidate sources are classified as usable, limited, or rejected with explicit reasons covering etiology hypothesis, evidence type, geographic region, worker population, and case definition quality.
+
+### 2. Birth Registration Coverage Gaps And Health-Service Linkage In Low-Income Countries
 
 - Pack: [`public-health/birth-registration-access-global`](../../problem-packs/public-health/birth-registration-access-global/problem.md)
 - Task: `source-inventory` — Inventory survey, CRVS, and health-touchpoint data sources for birth registration analysis
@@ -37,7 +49,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering measure family, timing, geographic grain, and health-linkage relevance.
 
-### 2. Non-Communicable Disease Risk Factor Surveillance Gaps In Low-Income Countries
+### 3. Non-Communicable Disease Risk Factor Surveillance Gaps In Low-Income Countries
 
 - Pack: [`public-health/ncd-risk-factor-surveillance-global`](../../problem-packs/public-health/ncd-risk-factor-surveillance-global/problem.md)
 - Task: `source-inventory` — Inventory data sources for public-health/ncd-risk-factor-surveillance-global
@@ -49,7 +61,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
 - Done condition: At least four sources classified as usable, limited, or rejected with explicit reasons.
 
-### 3. Oral Health Service Access And Dental Workforce Gaps In Low-Income Countries
+### 4. Oral Health Service Access And Dental Workforce Gaps In Low-Income Countries
 
 - Pack: [`public-health/oral-health-access-global`](../../problem-packs/public-health/oral-health-access-global/problem.md)
 - Task: `source-inventory` — Inventory data sources for public-health/oral-health-access-global
@@ -61,7 +73,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
 - Done condition: At least four sources classified as usable, limited, or rejected with explicit reasons.
 
-### 4. Digital Divide Measurement And School Internet Connectivity In Low-Income Countries
+### 5. Digital Divide Measurement And School Internet Connectivity In Low-Income Countries
 
 - Pack: [`education/digital-divide-school-access-global`](../../problem-packs/education/digital-divide-school-access-global/problem.md)
 - Task: `source-inventory` — Inventory school connectivity, mobile-network, and digital-learning data sources for low-income countries
@@ -73,7 +85,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering connectivity-classification methodology, data currency, and cross-validation status.
 
-### 5. Youth Skills Training And Employment Outcome Gaps In Low-Income Countries
+### 6. Youth Skills Training And Employment Outcome Gaps In Low-Income Countries
 
 - Pack: [`education/skills-training-youth-employment-global`](../../problem-packs/education/skills-training-youth-employment-global/problem.md)
 - Task: `source-inventory` — Inventory training-provider, employment-outcome, labor-market, and skills-mismatch data sources for LMICs
@@ -85,7 +97,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering provider-data fragmentation, outcome-tracking rates, and informal-sector measurement gaps.
 
-### 6. Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin
+### 7. Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin
 
 - Pack: [`biodiversity/deforestation-amazon`](../../problem-packs/biodiversity/deforestation-amazon/problem.md)
 - Task: `source-inventory` — Inventory deforestation and biodiversity data sources for Amazon basin
@@ -97,7 +109,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
-### 7. Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States
+### 8. Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States
 
 - Pack: [`climate-adaptation/sea-level-rise-small-islands`](../../problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md)
 - Task: `source-inventory` — Inventory SLR projection and coastal exposure data sources for SIDS
@@ -109,7 +121,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
-### 8. Cyclone Early Warning And Evacuation Signal Verification In Bangladesh
+### 9. Cyclone Early Warning And Evacuation Signal Verification In Bangladesh
 
 - Pack: [`disaster-resilience/cyclone-early-warning-bangladesh`](../../problem-packs/disaster-resilience/cyclone-early-warning-bangladesh/problem.md)
 - Task: `source-inventory` — Inventory cyclone data sources for Bay of Bengal
@@ -121,7 +133,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 3 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
-### 9. PM2.5 Monitoring Gaps And Health Impact In South Asia
+### 10. PM2.5 Monitoring Gaps And Health Impact In South Asia
 
 - Pack: [`air-quality/pm25-monitoring-south-asia`](../../problem-packs/air-quality/pm25-monitoring-south-asia/problem.md)
 - Task: `source-inventory` — Inventory PM2.5 monitoring and air quality data sources for South Asia
@@ -133,7 +145,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
-### 10. Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
+### 11. Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
 
 - Pack: [`occupational-health/heat-stress-outdoor-workers-global`](../../problem-packs/occupational-health/heat-stress-outdoor-workers-global/problem.md)
 - Task: `source-inventory` — Inventory WBGT data sources, labor force distribution data, occupational health surveillance records, and heat-health epidemiology studies for LMICs
@@ -145,7 +157,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering exposure metric, geographic grain, temporal coverage, LMIC data availability, and worker-population representation including informal sector coverage.
 
-### 11. Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries
+### 12. Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries
 
 - Pack: [`public-health/antimicrobial-resistance-surveillance-global`](../../problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md)
 - Task: `source-inventory` — Inventory AMR surveillance data
@@ -156,18 +168,6 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Downstream high-risk tasks: 4
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: Five sources classified as usable, limited, or rejected.
-
-### 12. Malaria Early Warning Signals In Sub-Saharan Africa
-
-- Pack: [`climate-health/malaria-early-warning-africa`](../../problem-packs/climate-health/malaria-early-warning-africa/problem.md)
-- Task: `source-inventory` — Inventory malaria and climate data sources for Sub-Saharan Africa
-- Risk: `medium`
-- Reviewer needed: `domain-reviewer`
-- Existing evidence records: 5
-- Downstream tasks unlocked: 5
-- Downstream high-risk tasks: 4
-- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
-- Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
 ## Unlock Paths
 
@@ -201,6 +201,16 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - High-risk follow-on tasks: 4
 - Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
 - Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
+- Existing evidence records: 8
+
+### Chronic Kidney Disease Of Non-Traditional Etiology In Tropical Agricultural Workers
+
+- Pack: [`occupational-health/ckdnt-agricultural-workers-tropics`](../../problem-packs/occupational-health/ckdnt-agricultural-workers-tropics/problem.md)
+- Scoped tasks at front door: 1
+- Follow-on tasks behind it: 5
+- High-risk follow-on tasks: 4
+- Follow-on roles: `field-reality-reviewer`: 1, `implementation-planner`: 3, `red-team-reviewer`: 1
+- Reviewer types needed later: `domain-reviewer`: 1, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 2
 - Existing evidence records: 8
 
 ### Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
@@ -283,16 +293,6 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 - Existing evidence records: 2
 
-### Livestock Disease Surveillance And Pastoralist Livelihood Risk In East Africa
-
-- Pack: [`food-security/livestock-disease-surveillance-east-africa`](../../problem-packs/food-security/livestock-disease-surveillance-east-africa/problem.md)
-- Scoped tasks at front door: 1
-- Follow-on tasks behind it: 5
-- High-risk follow-on tasks: 4
-- Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
-- Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
-- Existing evidence records: 2
-
 ## Reviewer Hotspots
 
 These are the packs most likely to stall after the first scoped task because reviewer load becomes the bottleneck.
@@ -360,6 +360,13 @@ These are the packs most likely to stall after the first scoped task because rev
 - High-risk follow-on tasks: 4
 - Reviewer load: `domain-reviewer`: 1, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 2
 
+### Chronic Kidney Disease Of Non-Traditional Etiology In Tropical Agricultural Workers
+
+- Pack: [`occupational-health/ckdnt-agricultural-workers-tropics`](../../problem-packs/occupational-health/ckdnt-agricultural-workers-tropics/problem.md)
+- Follow-on tasks: 5
+- High-risk follow-on tasks: 4
+- Reviewer load: `domain-reviewer`: 1, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 2
+
 ### Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
 
 - Pack: [`occupational-health/heat-stress-outdoor-workers-global`](../../problem-packs/occupational-health/heat-stress-outdoor-workers-global/problem.md)
@@ -374,24 +381,17 @@ These are the packs most likely to stall after the first scoped task because rev
 - High-risk follow-on tasks: 4
 - Reviewer load: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 
-### Under-Five Mortality Sub-National Inequality Tracking In Low-Income Countries
-
-- Pack: [`public-health/child-mortality-inequality-global`](../../problem-packs/public-health/child-mortality-inequality-global/problem.md)
-- Follow-on tasks: 5
-- High-risk follow-on tasks: 4
-- Reviewer load: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
-
 ## Role Backlog
 
 This is the actual pipeline shape. The flat scoped list hides it.
 
 | Role                     | Scoped now | Latent backlog | Share of all tasks | Share of latent tasks |
 | ------------------------ | ---------- | -------------- | ------------------ | --------------------- |
-| `implementation-planner` | 0          | 125            | 0.234              | 0.29                  |
-| `field-reality-reviewer` | 0          | 104            | 0.195              | 0.241                 |
-| `red-team-reviewer`      | 0          | 103            | 0.193              | 0.239                 |
-| `data-cleaner`           | 0          | 99             | 0.185              | 0.23                  |
-| `literature-scout`       | 103        | 0              | 0.193              | 0                     |
+| `implementation-planner` | 0          | 128            | 0.237              | 0.294                 |
+| `field-reality-reviewer` | 0          | 105            | 0.194              | 0.241                 |
+| `red-team-reviewer`      | 0          | 104            | 0.193              | 0.239                 |
+| `data-cleaner`           | 0          | 99             | 0.183              | 0.227                 |
+| `literature-scout`       | 104        | 0              | 0.193              | 0                     |
 
 ## Protocol Alerts
 

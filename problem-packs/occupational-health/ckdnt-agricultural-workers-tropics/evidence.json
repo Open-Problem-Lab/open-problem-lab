@@ -1,0 +1,177 @@
+[
+  {
+    "id": "correa-rotter-mesoamerican-nephropathy-review-2019",
+    "problem_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+    "claim": "A Seminars in Nephrology review by Correa-Rotter reports that Mesoamerican nephropathy is an epidemic of CKD affecting young agricultural workers in Central America, primarily sugarcane workers, with prevalence rates far exceeding conventional CKD, and that the etiology remains undetermined with heat-dehydration and agrochemical exposure as the leading hypotheses.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Mesoamerican Nephropathy",
+      "url": "https://doi.org/10.1016/j.semnephrol.2019.02.004",
+      "doi": "10.1016/j.semnephrol.2019.02.004",
+      "archive_url": "https://web.archive.org/web/2024/https://doi.org/10.1016/j.semnephrol.2019.02.004"
+    },
+    "source_date": "2019-03-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the review article's epidemiology section, case definition, etiology discussion, and conclusions. Cross-referenced prevalence claims with cited primary studies.",
+    "limitations": [
+      "The review covers literature through 2018 and may not reflect more recent cohort studies.",
+      "Prevalence figures are from hotspot communities, not nationally representative surveillance.",
+      "The review focuses on Mesoamerica and does not address Sri Lankan or Indian CKDu directly.",
+      "The etiology assessment is a synthesis of competing hypotheses, not a causal determination."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "gonzalez-quiroz-kidney-decline-young-adults-2018",
+    "problem_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+    "claim": "A prospective cohort study in Nicaragua found that apparently healthy young adults at risk of Mesoamerican nephropathy showed measurable kidney function decline over two years, with higher decline associated with agricultural work and heat exposure, supporting the heat-dehydration hypothesis but without ruling out concurrent agrochemical exposure.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Decline in Kidney Function among Apparently Healthy Young Adults at Risk of Mesoamerican Nephropathy",
+      "url": "https://doi.org/10.1681/asn.2018020151",
+      "doi": "10.1681/asn.2018020151",
+      "archive_url": "https://web.archive.org/web/2024/https://doi.org/10.1681/asn.2018020151"
+    },
+    "source_date": "2018-08-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed study design, cohort recruitment, exposure assessment, outcome measures, covariate adjustment, and discussion of unmeasured confounding.",
+    "limitations": [
+      "The study measures eGFR change over two years, not progression to end-stage renal disease.",
+      "Workers were not randomized to heat exposure levels, and residual confounding by work task, chemical exposure, or prior kidney health cannot be excluded.",
+      "The study population is from one Nicaraguan community, limiting generalizability to other crops, regions, or labor conditions.",
+      "Agrochemical exposure was not measured at the individual level."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "wesseling-heat-stress-ckdnt-rpsp-2020",
+    "problem_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+    "claim": "A review in the Pan American Journal of Public Health argues that CKDnt in Mesoamerica is primarily driven by occupational heat stress, citing evidence of recurrent dehydration and kidney injury markers in sugarcane workers, while acknowledging that other co-factors cannot be excluded.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Chronic kidney disease of non-traditional origin in Mesoamerica: a disease primarily driven by occupational heat stress",
+      "url": "https://doi.org/10.26633/rpsp.2020.15",
+      "doi": "10.26633/rpsp.2020.15",
+      "archive_url": "https://web.archive.org/web/2024/https://doi.org/10.26633/rpsp.2020.15"
+    },
+    "source_date": "2020-09-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the article's argument structure, cited evidence for the heat-stress hypothesis, and discussion of alternative etiologies.",
+    "limitations": [
+      "The article is an argument-driven review, not a systematic review or meta-analysis.",
+      "The author group has primarily studied the heat-dehydration hypothesis, introducing potential confirmation bias.",
+      "The review cannot disentangle heat exposure from concurrent agrochemical exposure in most cited studies.",
+      "The article's title states a position ('primarily driven by') that the evidence does not fully establish."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "jayasumana-glyphosate-fluoride-ckdu-2023",
+    "problem_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+    "claim": "A study in Environmental Science and Technology Letters found that glyphosate and fluoride in high-hardness drinking water were positively associated with CKDu in Sri Lanka, providing ecological-level evidence for the agrochemical-water quality hypothesis.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Glyphosate and Fluoride in High-Hardness Drinking Water Are Positively Associated with Chronic Kidney Disease of Unknown Etiology (CKDu) in Sri Lanka",
+      "url": "https://doi.org/10.1021/acs.estlett.3c00504",
+      "doi": "10.1021/acs.estlett.3c00504",
+      "archive_url": "https://web.archive.org/web/2024/https://doi.org/10.1021/acs.estlett.3c00504"
+    },
+    "source_date": "2023-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed study design, water sampling methodology, analytical chemistry methods, exposure assessment limitations, and conclusions. Checked for published comments and responses.",
+    "limitations": [
+      "The study measures water source contamination, not individual exposure or body burden.",
+      "Elevated contaminant levels in water do not demonstrate nephrotoxic dose at the kidney tissue level.",
+      "The study is ecological and cannot distinguish agricultural runoff from other contamination sources.",
+      "Two published comments in the same journal question the analytical methods and causal interpretation.",
+      "Sri Lankan CKDu may have a different etiology from Mesoamerican CKDnt, and findings may not transfer."
+    ],
+    "confidence": "low"
+  },
+  {
+    "id": "haas-mesoamerican-nephropathy-pathology-2018",
+    "problem_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+    "claim": "A kidney biopsy study in Kidney International found that Mesoamerican nephropathy shows a distinct pattern of chronic tubulointerstitial injury with glomerulosclerosis, supporting the classification of CKDnt as a distinct disease entity rather than a variant of conventional CKD.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Mesoamerican nephropathy: pathology in search of etiology",
+      "url": "https://doi.org/10.1016/j.kint.2017.09.025",
+      "doi": "10.1016/j.kint.2017.09.025",
+      "archive_url": "https://web.archive.org/web/2024/https://doi.org/10.1016/j.kint.2017.09.025"
+    },
+    "source_date": "2018-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed biopsy methodology, histopathological classification, comparison with conventional CKD pathology, and etiology discussion.",
+    "limitations": [
+      "Biopsy samples are from a small number of patients and may not represent the full spectrum of CKDnt pathology.",
+      "Pathological findings support disease classification but do not determine etiology.",
+      "The study population is from one region, limiting generalizability."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "pesticide-ckdu-epidemiologic-review-2017",
+    "problem_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+    "claim": "A systematic review in Environmental Health found that pesticide exposures are associated with CKDu in multiple epidemiological studies, but the evidence is limited by ecological exposure assessment, inconsistent case definitions, and inability to separate pesticide exposure from heat stress in most study settings.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Pesticide exposures and chronic kidney disease of unknown etiology: an epidemiologic review",
+      "url": "https://doi.org/10.1186/s12940-017-0254-0",
+      "doi": "10.1186/s12940-017-0254-0",
+      "archive_url": "https://web.archive.org/web/2024/https://doi.org/10.1186/s12940-017-0254-0"
+    },
+    "source_date": "2017-08-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed systematic review methodology, included studies, exposure assessment quality ratings, and conclusions on causal inference.",
+    "limitations": [
+      "The review covers literature through 2016 and may not reflect more recent studies.",
+      "Most included studies use ecological or semi-ecological exposure assessment rather than individual-level dose measurement.",
+      "The review identifies pesticide-CKDu association but cannot rule out heat stress as a co-exposure or confounder.",
+      "Case definitions vary across included studies, limiting comparability."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "garcia-trabanino-dialysis-guatemala-2015",
+    "problem_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+    "claim": "A study of dialysis enrollment patterns in Guatemala found that CKDnt-affected regions had dialysis enrollment rates far exceeding national averages, with young male agricultural workers disproportionately represented, providing evidence of the disease burden and its concentration in agricultural communities.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Dialysis enrollment patterns in Guatemala: evidence of the chronic kidney disease of non-traditional causes epidemic in Mesoamerica",
+      "url": "https://doi.org/10.1186/s12882-015-0049-x",
+      "doi": "10.1186/s12882-015-0049-x",
+      "archive_url": "https://web.archive.org/web/2024/https://doi.org/10.1186/s12882-015-0049-x"
+    },
+    "source_date": "2015-06-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed dialysis registry methodology, geographic distribution analysis, demographic comparison, and burden estimation.",
+    "limitations": [
+      "Dialysis enrollment reflects access to treatment, not disease prevalence; many CKDnt cases never reach dialysis.",
+      "The study is from 2015 and enrollment patterns may have changed with program expansion.",
+      "Dialysis registry data do not include undiagnosed cases or those who die without treatment.",
+      "The study cannot distinguish CKDnt from conventional CKD in all enrolled patients."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "osborne-environmental-factors-ckdu-review-2026",
+    "problem_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+    "claim": "A 2026 review in Nature Reviews Nephrology synthesizes the role of environmental factors in the CKDu epidemic across Mesoamerica, Sri Lanka, and other affected regions, concluding that multiple environmental exposures likely contribute but that disentangling individual causal pathways remains the central challenge.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Disentangling the role of environmental factors in the CKDu epidemic",
+      "url": "https://doi.org/10.1038/s41581-026-01054-4",
+      "doi": "10.1038/s41581-026-01054-4",
+      "archive_url": "https://web.archive.org/web/2026/https://doi.org/10.1038/s41581-026-01054-4"
+    },
+    "source_date": "2026-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the review article's scope, included evidence categories, geographic coverage, and conclusions on causal inference challenges.",
+    "limitations": [
+      "The review is a narrative synthesis, not a systematic review with formal evidence grading.",
+      "Published in 2026; the exact publication month and full content should be verified upon access.",
+      "The review integrates evidence across heterogeneous study designs and geographic contexts."
+    ],
+    "confidence": "medium"
+  }
+]

@@ -2,18 +2,18 @@
   "summary": {
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
-    "total_packs": 103,
-    "total_scoped_tasks": 103,
+    "total_packs": 104,
+    "total_scoped_tasks": 104,
     "by_role": {
-      "literature-scout": 103
+      "literature-scout": 104
     },
     "by_risk": {
       "medium": 98,
-      "low": 5
+      "low": 6
     },
     "by_domain": {
       "air-quality": 6,
-      "public-health": 65,
+      "public-health": 66,
       "climate-health": 14,
       "biodiversity": 8,
       "food-security": 20,
@@ -22,7 +22,7 @@
       "education": 9,
       "energy-access": 6,
       "food-safety": 1,
-      "occupational-health": 1,
+      "occupational-health": 2,
       "sanitation": 4,
       "water-security": 5
     }
@@ -860,6 +860,23 @@
       "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons.",
       "tasks_file": "problem-packs/food-security/urban-food-deserts-global/tasks.json",
       "problem_file": "problem-packs/food-security/urban-food-deserts-global/problem.md"
+    },
+    {
+      "pack_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+      "pack_title": "Chronic Kidney Disease Of Non-Traditional Etiology In Tropical Agricultural Workers",
+      "pack_status": "scoped",
+      "domain": ["occupational-health", "public-health"],
+      "region": ["global"],
+      "task_id": "source-inventory",
+      "title": "Inventory CKDnt evidence sources separating heat-dehydration, agrochemical, and other etiology hypotheses",
+      "owner_role": "literature-scout",
+      "reviewer_needed": "domain-reviewer",
+      "safety_risk": "low",
+      "outcome": "A dated source inventory that classifies evidence by etiology hypothesis (heat-dehydration, agrochemical, infectious, genetic, mixed), evidence type (cohort, cross-sectional, ecological, experimental), geographic region, and worker population, with usable, limited, or rejected classifications and explicit reasons for each.",
+      "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+      "done_condition": "At least eight candidate sources are classified as usable, limited, or rejected with explicit reasons covering etiology hypothesis, evidence type, geographic region, worker population, and case definition quality.",
+      "tasks_file": "problem-packs/occupational-health/ckdnt-agricultural-workers-tropics/tasks.json",
+      "problem_file": "problem-packs/occupational-health/ckdnt-agricultural-workers-tropics/problem.md"
     },
     {
       "pack_id": "occupational-health/heat-stress-outdoor-workers-global",

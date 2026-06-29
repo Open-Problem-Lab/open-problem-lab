@@ -2,40 +2,56 @@
   "summary": {
     "generated_by": "scripts/generate-agent-radar.mjs",
     "schema_version": 1,
-    "total_packs": 103,
-    "total_tasks": 534,
-    "scoped_tasks": 103,
-    "latent_tasks": 431,
+    "total_packs": 104,
+    "total_tasks": 540,
+    "scoped_tasks": 104,
+    "latent_tasks": 436,
     "status_counts": {
-      "scoped": 103,
-      "needs-triage": 431
+      "scoped": 104,
+      "needs-triage": 436
     },
     "owner_role_counts": {
-      "literature-scout": 103,
+      "literature-scout": 104,
       "data-cleaner": 99,
-      "implementation-planner": 125,
-      "red-team-reviewer": 103,
-      "field-reality-reviewer": 104
-    },
-    "scoped_role_counts": {
-      "literature-scout": 103
-    },
-    "reviewer_needed_counts": {
-      "domain-reviewer": 221,
-      "replicator": 105,
-      "red-team-reviewer": 103,
+      "implementation-planner": 128,
+      "red-team-reviewer": 104,
       "field-reality-reviewer": 105
     },
+    "scoped_role_counts": {
+      "literature-scout": 104
+    },
+    "reviewer_needed_counts": {
+      "domain-reviewer": 223,
+      "replicator": 107,
+      "red-team-reviewer": 104,
+      "field-reality-reviewer": 106
+    },
     "safety_risk_counts": {
-      "medium": 243,
-      "high": 279,
-      "low": 12
+      "medium": 244,
+      "high": 283,
+      "low": 13
     },
     "protocol_alert_count": 0
   },
   "protocol_alerts": [],
   "contributor_lanes": {
     "first_moves": [
+      {
+        "pack_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+        "pack_title": "Chronic Kidney Disease Of Non-Traditional Etiology In Tropical Agricultural Workers",
+        "task_id": "source-inventory",
+        "title": "Inventory CKDnt evidence sources separating heat-dehydration, agrochemical, and other etiology hypotheses",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "low",
+        "done_condition": "At least eight candidate sources are classified as usable, limited, or rejected with explicit reasons covering etiology hypothesis, evidence type, geographic region, worker population, and case definition quality.",
+        "evidence_count": 8,
+        "downstream_tasks_unlocked": 5,
+        "downstream_high_risk_tasks": 4,
+        "problem_file": "problem-packs/occupational-health/ckdnt-agricultural-workers-tropics/problem.md",
+        "tasks_file": "problem-packs/occupational-health/ckdnt-agricultural-workers-tropics/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 3 additional roles."
+      },
       {
         "pack_id": "public-health/birth-registration-access-global",
         "pack_title": "Birth Registration Coverage Gaps And Health-Service Linkage In Low-Income Countries",
@@ -211,22 +227,6 @@
         "problem_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md",
         "tasks_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/tasks.json",
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
-      },
-      {
-        "pack_id": "climate-health/malaria-early-warning-africa",
-        "pack_title": "Malaria Early Warning Signals In Sub-Saharan Africa",
-        "task_id": "source-inventory",
-        "title": "Inventory malaria and climate data sources for Sub-Saharan Africa",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "medium",
-        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
-        "evidence_count": 5,
-        "downstream_tasks_unlocked": 5,
-        "downstream_high_risk_tasks": 4,
-        "problem_file": "problem-packs/climate-health/malaria-early-warning-africa/problem.md",
-        "tasks_file": "problem-packs/climate-health/malaria-early-warning-africa/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       }
     ],
     "unlock_paths": [
@@ -293,6 +293,27 @@
         "evidence_count": 8,
         "problem_file": "problem-packs/biodiversity/deforestation-amazon/problem.md",
         "tasks_file": "problem-packs/biodiversity/deforestation-amazon/tasks.json"
+      },
+      {
+        "pack_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+        "pack_title": "Chronic Kidney Disease Of Non-Traditional Etiology In Tropical Agricultural Workers",
+        "scoped_tasks": 1,
+        "downstream_tasks": 5,
+        "downstream_high_risk_tasks": 4,
+        "downstream_by_role": {
+          "implementation-planner": 3,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "downstream_reviewers_needed": {
+          "domain-reviewer": 1,
+          "replicator": 2,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "evidence_count": 8,
+        "problem_file": "problem-packs/occupational-health/ckdnt-agricultural-workers-tropics/problem.md",
+        "tasks_file": "problem-packs/occupational-health/ckdnt-agricultural-workers-tropics/tasks.json"
       },
       {
         "pack_id": "occupational-health/heat-stress-outdoor-workers-global",
@@ -469,28 +490,6 @@
         "evidence_count": 2,
         "problem_file": "problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md",
         "tasks_file": "problem-packs/food-security/fisheries-overexploitation-west-africa/tasks.json"
-      },
-      {
-        "pack_id": "food-security/livestock-disease-surveillance-east-africa",
-        "pack_title": "Livestock Disease Surveillance And Pastoralist Livelihood Risk In East Africa",
-        "scoped_tasks": 1,
-        "downstream_tasks": 5,
-        "downstream_high_risk_tasks": 4,
-        "downstream_by_role": {
-          "data-cleaner": 1,
-          "implementation-planner": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "downstream_reviewers_needed": {
-          "replicator": 1,
-          "domain-reviewer": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "evidence_count": 2,
-        "problem_file": "problem-packs/food-security/livestock-disease-surveillance-east-africa/problem.md",
-        "tasks_file": "problem-packs/food-security/livestock-disease-surveillance-east-africa/tasks.json"
       }
     ],
     "reviewer_hotspots": [
@@ -611,6 +610,19 @@
         "problem_file": "problem-packs/food-security/locust-outbreak-east-africa/problem.md"
       },
       {
+        "pack_id": "occupational-health/ckdnt-agricultural-workers-tropics",
+        "pack_title": "Chronic Kidney Disease Of Non-Traditional Etiology In Tropical Agricultural Workers",
+        "downstream_reviewers_needed": {
+          "domain-reviewer": 1,
+          "replicator": 2,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "downstream_high_risk_tasks": 4,
+        "downstream_tasks": 5,
+        "problem_file": "problem-packs/occupational-health/ckdnt-agricultural-workers-tropics/problem.md"
+      },
+      {
         "pack_id": "occupational-health/heat-stress-outdoor-workers-global",
         "pack_title": "Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change",
         "downstream_reviewers_needed": {
@@ -635,40 +647,27 @@
         "downstream_high_risk_tasks": 4,
         "downstream_tasks": 5,
         "problem_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md"
-      },
-      {
-        "pack_id": "public-health/child-mortality-inequality-global",
-        "pack_title": "Under-Five Mortality Sub-National Inequality Tracking In Low-Income Countries",
-        "downstream_reviewers_needed": {
-          "replicator": 1,
-          "domain-reviewer": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "downstream_high_risk_tasks": 4,
-        "downstream_tasks": 5,
-        "problem_file": "problem-packs/public-health/child-mortality-inequality-global/problem.md"
       }
     ],
     "role_backlog": [
       {
         "owner_role": "implementation-planner",
         "scoped_tasks": 0,
-        "latent_tasks": 125,
-        "share_of_all_tasks": 0.234,
-        "share_of_latent_tasks": 0.29
+        "latent_tasks": 128,
+        "share_of_all_tasks": 0.237,
+        "share_of_latent_tasks": 0.294
       },
       {
         "owner_role": "field-reality-reviewer",
         "scoped_tasks": 0,
-        "latent_tasks": 104,
-        "share_of_all_tasks": 0.195,
+        "latent_tasks": 105,
+        "share_of_all_tasks": 0.194,
         "share_of_latent_tasks": 0.241
       },
       {
         "owner_role": "red-team-reviewer",
         "scoped_tasks": 0,
-        "latent_tasks": 103,
+        "latent_tasks": 104,
         "share_of_all_tasks": 0.193,
         "share_of_latent_tasks": 0.239
       },
@@ -676,12 +675,12 @@
         "owner_role": "data-cleaner",
         "scoped_tasks": 0,
         "latent_tasks": 99,
-        "share_of_all_tasks": 0.185,
-        "share_of_latent_tasks": 0.23
+        "share_of_all_tasks": 0.183,
+        "share_of_latent_tasks": 0.227
       },
       {
         "owner_role": "literature-scout",
-        "scoped_tasks": 103,
+        "scoped_tasks": 104,
         "latent_tasks": 0,
         "share_of_all_tasks": 0.193,
         "share_of_latent_tasks": 0

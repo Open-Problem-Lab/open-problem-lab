@@ -490,6 +490,16 @@ Build a verified workflow for assessing where vegetation, soil moisture, and win
 
 Build a verified workflow for mapping urban food deserts and fresh-food access gaps in LMIC cities, linking market-location data, food-price data, and population data.
 
+## Chronic Kidney Disease Of Non-Traditional Etiology In Tropical Agricultural Workers
+
+- ID: `occupational-health/ckdnt-agricultural-workers-tropics`
+- Status: `scoped`
+- Domain: `occupational-health`, `public-health`
+- Region: `global`
+- Source: [problem-packs/occupational-health/ckdnt-agricultural-workers-tropics](../../problem-packs/occupational-health/ckdnt-agricultural-workers-tropics/problem.md)
+
+Build a verified evidence framework for CKDnt, a fatal epidemic of chronic kidney disease affecting young agricultural workers across Mesoamerica, South Asia, and East Africa where the cause is unknown and contested between heat-dehydration and agrochemical hypotheses.
+
 ## Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
 
 - ID: `occupational-health/heat-stress-outdoor-workers-global`

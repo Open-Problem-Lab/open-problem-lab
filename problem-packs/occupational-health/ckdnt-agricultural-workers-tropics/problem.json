@@ -1,0 +1,44 @@
+{
+  "id": "occupational-health/ckdnt-agricultural-workers-tropics",
+  "title": "Chronic Kidney Disease Of Non-Traditional Etiology In Tropical Agricultural Workers",
+  "status": "scoped",
+  "domain": ["occupational-health", "public-health"],
+  "region": ["global"],
+  "summary": "Build a verified evidence framework for CKDnt, a fatal epidemic of chronic kidney disease affecting young agricultural workers across Mesoamerica, South Asia, and East Africa where the cause is unknown and contested between heat-dehydration and agrochemical hypotheses.",
+  "why_it_matters": "CKDnt kills tens of thousands of young agricultural workers in hot-climate regions every year, yet its cause remains undetermined after two decades of research. The two leading hypotheses lead to fundamentally different policy responses: heat-dehydration points to occupational safety regulation (rest breaks, hydration, shade), while agrochemical exposure points to pesticide regulation and water quality enforcement. A health minister, labor inspectorate, or agricultural extension director who bets on the wrong cause wastes scarce resources and fails to stop the epidemic. A verified evidence synthesis that separates what is proven from what is contested, at the level of specific exposure-outcome pathways, would let the Pan American Health Organization, WHO, Sri Lanka Ministry of Health, and national occupational health agencies direct prevention resources toward the mechanism with the strongest causal evidence rather than splitting attention across all plausible factors equally.",
+  "success_metrics": [
+    {
+      "metric": "Etiology separation",
+      "target": "Every accepted claim states which etiology hypothesis it supports, what evidence type backs it, and what evidence would weaken it.",
+      "validation_method": "Reviewer checks that each claim in claims.json tags its hypothesis and that evidence records specify which pathway they address."
+    },
+    {
+      "metric": "Geographic specificity",
+      "target": "No CKDnt prevalence or mortality claim is accepted without naming the affected country, region, and worker population, and distinguishing CKDnt from conventional CKD caused by diabetes and hypertension.",
+      "validation_method": "Reviewer spot-checks every evidence record and claim for geographic grain, population definition, and exclusion of conventional CKD."
+    },
+    {
+      "metric": "Policy-actionability",
+      "target": "No intervention recommendation is merged without naming the decision-maker, the decision it would change, and the evidence standard required to justify the intervention.",
+      "validation_method": "Field-reality and red-team reviewers confirm named user, named decision, and explicit non-use cases before publication."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review with nephrology expertise, red-team review for any causal claim or intervention recommendation, and replication for quantitative exposure-outcome analyses."
+  }
+}

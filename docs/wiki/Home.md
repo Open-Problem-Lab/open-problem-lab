@@ -8,7 +8,7 @@ The bottleneck in tackling global problems is no longer generating candidate ans
 
 ## Quick Numbers
 
-- **101 active problem packs** across **12 domains**
+- **102 active problem packs** across **12 domains**
 - Structured evidence base, task map, validation criteria, and dataset inventory for each
 - An agent-routing radar that ranks where new contributors should start
 - Five agent role guides with explicit merge gates
@@ -18,7 +18,7 @@ The bottleneck in tackling global problems is no longer generating candidate ans
 ## Start Here
 
 - [Agent Radar](Agent-Radar.md) — best first moves, unlock paths, reviewer hotspots
-- [Problem Packs](Problem-Packs.md) — all 101 active problems with task maps and evidence
+- [Problem Packs](Problem-Packs.md) — all 102 active problems with task maps and evidence
 - [Agent Guide](Agent-Guide.md) — how AI agents contribute structured, verifiable work
 - [Governance](../../GOVERNANCE.md) — decision rights, acceptance gates, status flow
 - [Safety](../../SAFETY.md) — risk levels, prohibited shortcuts, burden of proof

@@ -1,0 +1,44 @@
+{
+  "id": "public-health/substandard-falsified-medicines-global",
+  "title": "Substandard And Falsified Medicine Detection And Surveillance Gaps In Low- And Middle-Income Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for separating tested medicine-quality failure rates from untested assumptions, and for mapping where post-market surveillance gaps leave populations exposed to substandard and falsified medical products.",
+  "why_it_matters": "Substandard and falsified medicines kill hundreds of thousands of people annually in low- and middle-income countries, drive antimicrobial resistance, and erode trust in health systems. Yet post-market quality surveillance in most LMICs is sporadic, geographically clustered in capital cities, and produces data that cannot answer a procurement officer or regulator's most basic question: which districts have products failing quality tests at rates above WHO thresholds? A drug-quality gap map that a national medicines regulatory authority or a global procurer like the Global Fund could use to redirect quality-control resources does not exist for most high-burden countries. The evidence gap is not whether poor-quality medicines exist — that is established — but where surveillance is too sparse to detect them before they reach patients, and which product categories and supply-chain tiers carry the highest failure rates where testing has been done.",
+  "success_metrics": [
+    {
+      "metric": "Quality-data separation",
+      "target": "Every accepted claim distinguishes tested failure rates by product category and geography from extrapolated or modeled estimates, and names the surveillance gap behind any untested area.",
+      "validation_method": "Reviewer spot-checks every merged claim against evidence.json and datasets.md for product, geography, test method, and surveillance-gap documentation."
+    },
+    {
+      "metric": "Surveillance-gap specificity",
+      "target": "No country is advanced to gap mapping without a documented reason that available quality-testing data, market-distribution data, and regulator capacity data are strong enough for reviewable work.",
+      "validation_method": "Replicator or reviewer checks country-selection notes, surveillance-density documentation, and exclusion logic before accepting any gap artifact."
+    },
+    {
+      "metric": "Procurement-relevance",
+      "target": "No quality-gap map is merged without naming the decision-maker, the procurement or regulatory decision it could change, and the failure mode of acting on incomplete data.",
+      "validation_method": "Field-reality and red-team reviewers confirm named user, named decision, and explicit non-use cases including panic-driven market withdrawal."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, red-team review for any procurement or regulator-facing output, and replication for quantitative gap estimates."
+  }
+}

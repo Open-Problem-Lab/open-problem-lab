@@ -870,6 +870,16 @@ Build a verified workflow for measuring snakebite envenoming mortality risk and 
 
 Build a verified workflow for identifying where child stunting rates are highest and most persistent in Sub-Saharan Africa, linking nutrition survey data, food security indicators, and intervention coverage to support stunting reduction targeting.
 
+## Substandard And Falsified Medicine Detection And Surveillance Gaps In Low- And Middle-Income Countries
+
+- ID: `public-health/substandard-falsified-medicines-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/substandard-falsified-medicines-global](../../problem-packs/public-health/substandard-falsified-medicines-global/problem.md)
+
+Build a verified workflow for separating tested medicine-quality failure rates from untested assumptions, and for mapping where post-market surveillance gaps leave populations exposed to substandard and falsified medical products.
+
 ## Essential Surgical Care Access And Surgical Workforce Gaps In Low-Income Countries
 
 - ID: `public-health/surgical-care-access-global`

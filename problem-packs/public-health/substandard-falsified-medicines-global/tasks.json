@@ -1,0 +1,118 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/substandard-falsified-medicines-global",
+    "title": "Inventory quality-surveillance, field-survey, market-distribution, and regulatory data sources for SF medicines analysis",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory that separates WHO GSMS reports, national quality surveillance data, peer-reviewed field surveys, market-distribution records, and regulatory authority datasets into usable, limited, and rejected categories with explicit assessment of sampling frame, test method, and substandard-versus-falsified disaggregation.",
+    "inputs": [
+      "WHO Global Surveillance and Monitoring System reports and documentation",
+      "WHO 2017 global report on substandard and falsified medical products",
+      "Peer-reviewed field-survey studies of medicine quality in LMICs",
+      "National medicines regulatory authority inspection and testing records where accessible",
+      "Market-distribution data from import records, pharmacy chains, and procurement databases"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each source for URL, date, product category, geographic grain, test method, sampling frame, failure definition, and whether substandard and falsified products are disaggregated.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering sampling frame, test method, geographic grain, supply-chain tier, and substandard-versus-falsified disaggregation status."
+  },
+  {
+    "id": "failure-mode-reconciliation-note",
+    "problem_id": "public-health/substandard-falsified-medicines-global",
+    "title": "Write a reconciliation note separating substandard from falsified failure modes and prohibiting conflated reporting",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A short analytic note that defines substandard and falsified as distinct failure modes, states which surveillance strategy each requires, and which comparisons or aggregate claims are prohibited without disaggregation.",
+    "inputs": [
+      "source inventory",
+      "WHO 2017 report definitions",
+      "WHO GSMS classification guidance",
+      "peer-reviewed field-survey methodology notes"
+    ],
+    "expected_artifact": "validation.md and outputs.md updates with failure-mode rules.",
+    "validation_method": "Reviewer checks that each failure mode is tied to its definition, required test method, surveillance strategy, and known mismatch when aggregated with the other.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "No comparison is left ambiguous about whether it refers to substandard quality failure, falsified fraudulent mislabeling, or an aggregate that conflates both."
+  },
+  {
+    "id": "country-selection-and-surveillance-baseline",
+    "problem_id": "public-health/substandard-falsified-medicines-global",
+    "title": "Select one to three countries where sub-national medicine-quality surveillance-gap work is genuinely feasible",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A country-selection memo that names which countries have adequate quality-testing data, market-distribution data, regulatory-capacity data, and sub-national identifiers to support a reviewable surveillance-gap analysis.",
+    "inputs": [
+      "compiled source inventory",
+      "national quality surveillance reports",
+      "regulatory authority capacity assessments",
+      "market-distribution and import data",
+      "WHO GSMS participation status"
+    ],
+    "expected_artifact": "validation.md update with inclusion and exclusion rules.",
+    "validation_method": "Replicator checks that selected countries meet the documented minimum data requirements and that rejected countries have explicit reasons.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Every selected country has documented surveillance-laboratory count, testing frequency, product categories tested, market-distribution data availability, sub-national grain, and explicit surveillance-gap assessment."
+  },
+  {
+    "id": "surveillance-gap-analysis",
+    "problem_id": "public-health/substandard-falsified-medicines-global",
+    "title": "Map post-market surveillance coverage gaps relative to market volume and known risk factors",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A bounded analysis for one selected country that maps where post-market testing density is too low to detect quality failures relative to estimated market volume and product-class risk factors, framed as a coverage-gap assessment rather than a failure-rate prediction.",
+    "inputs": [
+      "selected country baseline",
+      "quality-testing location and frequency data",
+      "market-distribution data",
+      "product-class risk-factor evidence",
+      "supply-chain-tier mapping"
+    ],
+    "expected_artifact": "outputs.md and validation.md updates with a country-specific surveillance-gap map.",
+    "validation_method": "Replicator reruns the gap analysis and confirms the testing-density metric, market-volume denominator, product-class risk weighting, and uncertainty statements.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "high",
+    "done_condition": "The artifact states the exact surveillance-density metric, the market-volume denominator, which districts have no testing, which product classes are untested, what the gap does and does not imply, and why the result is not yet a procurement recommendation."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/substandard-falsified-medicines-global",
+    "title": "Red-team panic-driven withdrawal, market distortion, and supply-chain gaming",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying how surveillance-gap maps could trigger panic-driven market withdrawals that reduce medicine access, enable supply-chain gaming to avoid testing locations, or be weaponized against specific manufacturers without due process.",
+    "inputs": [
+      "draft surveillance-gap output",
+      "failure-mode reconciliation note",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Mitigations are confirmed or publication is blocked, then a second reviewer replicates the check that each high-risk output is either removed or explicitly qualified with access-harm warnings and gaming-mitigation notes, with replicated red-team review before publication.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every procurement or regulator-facing claim is either blocked, softened to analytic language, or gated behind explicit warnings about panic-driven withdrawal, market distortion, and supply-chain gaming, with replicated red-team review before publication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/substandard-falsified-medicines-global",
+    "title": "Check whether outputs match regulator, procurement officer, and supply-chain manager decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether the surveillance-gap artifact would change a real decision for a national medicines regulatory authority inspector, a procurement officer, or a supply-chain manager without reducing medicine access or creating gaming incentives.",
+    "inputs": [
+      "draft surveillance-gap output",
+      "regulatory and procurement implementation context",
+      "reviewer notes",
+      "country-specific supply-chain structure if available"
+    ],
+    "expected_artifact": "playbooks.md update with named use and non-use cases.",
+    "validation_method": "Field reviewer identifies the decision, user, timing, required workflow, and misuse risk, then a second reviewer replicates the check on the stated non-use cases.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The artifact has a named user, named decision, named supply-chain tier, explicit non-use cases including access-harm and gaming risks, and replicated field-reality review before publication."
+  }
+]

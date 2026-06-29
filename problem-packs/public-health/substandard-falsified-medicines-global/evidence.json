@@ -1,0 +1,78 @@
+[
+  {
+    "id": "who-sf-fact-sheet-2024",
+    "problem_id": "public-health/substandard-falsified-medicines-global",
+    "claim": "WHO states that approximately 1 in 10 medical products in low- and middle-income countries is substandard or falsified and that these products fail to meet quality, safety, and efficacy standards, with the greatest burden falling on low-income countries with weak regulatory systems.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO fact sheet: substandard and falsified medical products",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/substandard-and-falsified-medical-products"
+    },
+    "source_date": "2023-01-31",
+    "access_date": "2026-06-29",
+    "method": "Reviewed WHO's fact sheet on substandard and falsified medical products, including the key facts, definitions of substandard versus falsified, risk factors, and WHO response sections.",
+    "limitations": [
+      "The 1-in-10 estimate is a global aggregate for LMICs and does not identify which sub-national units or product categories carry the highest failure rates.",
+      "The fact sheet combines substandard and falsified products under a single prevalence estimate, though they are distinct failure modes requiring different surveillance strategies.",
+      "The fact sheet does not provide country-level or product-level failure rates."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "renschler-poor-quality-antimalarials-2015",
+    "problem_id": "public-health/substandard-falsified-medicines-global",
+    "claim": "A modeling study estimated that poor-quality antimalarials were associated with approximately 122,000 to 158,000 additional under-five deaths per year in sub-Saharan Africa, based on Monte Carlo simulation of treatment failure rates from quality surveys.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Estimated under-five deaths associated with poor-quality antimalarials in sub-Saharan Africa",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25897068/"
+    },
+    "source_date": "2015-04-15",
+    "access_date": "2026-06-29",
+    "method": "Reviewed the PubMed abstract and metadata for this modeling study, which used Monte Carlo simulation combining antimalarial quality-survey failure rates with malaria mortality and treatment-effectiveness data to estimate additional under-five deaths in 39 sub-Saharan African countries.",
+    "limitations": [
+      "Mortality estimates are modeled from failure-rate data and treatment-effectiveness assumptions, not direct observation of deaths caused by poor-quality medicines.",
+      "The study combines falsified, substandard, and degraded products into a single poor-quality category, which limits failure-mode-specific inference.",
+      "Quality-survey data inputs are from convenience samples that may oversample high-suspicion products, potentially inflating failure rates."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "who-gsms-page-2024",
+    "problem_id": "public-health/substandard-falsified-medicines-global",
+    "claim": "WHO operates a Global Surveillance and Monitoring System for substandard and falsified medical products that collects reports from participating member states, but coverage is limited to countries with designated national focal points and relies on passive reporting.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO Global Surveillance and Monitoring System (GSMS)",
+      "url": "https://www.who.int/who-global-surveillance-and-monitoring-system"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-29",
+    "method": "Reviewed WHO's GSMS program page, including the system description, reporting workflow, member-state participation structure, and publicly available alert history.",
+    "limitations": [
+      "GSMS is a passive reporting system: countries report when they detect issues, so absence of reports does not indicate absence of poor-quality products.",
+      "Participation is limited to countries that have designated national focal points; many high-burden LMICs are not active participants.",
+      "The page does not publish a downloadable dataset of all reports with product, geographic, and temporal disaggregation."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "cavany-sf-amr-uncertain-role-2023",
+    "problem_id": "public-health/substandard-falsified-medicines-global",
+    "claim": "A review found that approximately 10 percent of antimicrobials used by humans in low- and middle-income countries are estimated to be substandard or falsified, and that these may be important drivers of antimicrobial resistance, but the authors conclude that the evidence base for the causal link is uncertain and under-researched.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "The uncertain role of substandard and falsified medicines in the emergence and spread of antimicrobial resistance",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37788991/"
+    },
+    "source_date": "2023-09-28",
+    "access_date": "2026-06-29",
+    "method": "Reviewed the PubMed abstract and metadata for this Nature Communications review, which assessed the mechanistic link between sub-therapeutic antimicrobial concentrations and resistance selection, and evaluated the population-level evidence for SF medicines as an AMR driver.",
+    "limitations": [
+      "The review explicitly states that the population-level causal link between SF medicines and AMR is uncertain, which means the AMR-driver claim should not be presented as established fact without this caveat.",
+      "The review does not quantify the relative contribution of SF medicines to total AMR burden compared to other drivers such as overuse and agricultural use.",
+      "The 10 percent prevalence estimate is cited from WHO and inherits the same aggregation limitations as the WHO estimate."
+    ],
+    "confidence": "high"
+  }
+]

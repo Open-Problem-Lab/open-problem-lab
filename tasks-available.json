@@ -2,18 +2,18 @@
   "summary": {
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
-    "total_packs": 101,
-    "total_scoped_tasks": 101,
+    "total_packs": 102,
+    "total_scoped_tasks": 102,
     "by_role": {
-      "literature-scout": 101
+      "literature-scout": 102
     },
     "by_risk": {
-      "medium": 96,
+      "medium": 97,
       "low": 5
     },
     "by_domain": {
       "air-quality": 6,
-      "public-health": 63,
+      "public-health": 64,
       "climate-health": 13,
       "biodiversity": 8,
       "food-security": 20,
@@ -1505,6 +1505,23 @@
       "done_condition": "At least five sources classified as usable, limited, or rejected with explicit reasons.",
       "tasks_file": "problem-packs/public-health/stunting-sub-saharan-africa/tasks.json",
       "problem_file": "problem-packs/public-health/stunting-sub-saharan-africa/problem.md"
+    },
+    {
+      "pack_id": "public-health/substandard-falsified-medicines-global",
+      "pack_title": "Substandard And Falsified Medicine Detection And Surveillance Gaps In Low- And Middle-Income Countries",
+      "pack_status": "scoped",
+      "domain": ["public-health"],
+      "region": ["global"],
+      "task_id": "source-inventory",
+      "title": "Inventory quality-surveillance, field-survey, market-distribution, and regulatory data sources for SF medicines analysis",
+      "owner_role": "literature-scout",
+      "reviewer_needed": "domain-reviewer",
+      "safety_risk": "medium",
+      "outcome": "A dated source inventory that separates WHO GSMS reports, national quality surveillance data, peer-reviewed field surveys, market-distribution records, and regulatory authority datasets into usable, limited, and rejected categories with explicit assessment of sampling frame, test method, and substandard-versus-falsified disaggregation.",
+      "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+      "done_condition": "At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering sampling frame, test method, geographic grain, supply-chain tier, and substandard-versus-falsified disaggregation status.",
+      "tasks_file": "problem-packs/public-health/substandard-falsified-medicines-global/tasks.json",
+      "problem_file": "problem-packs/public-health/substandard-falsified-medicines-global/problem.md"
     },
     {
       "pack_id": "public-health/surgical-care-access-global",

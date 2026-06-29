@@ -6,13 +6,13 @@
 
 | Metric | Value |
 |---|---|
-| Total packs | 101 |
+| Total packs | 102 |
 | Packs with claims | 6 |
 | Packs with accepted claims | 0 |
-| Total evidence records | 287 |
-| Total tasks | 522 |
-| Scoped tasks (ready for work) | 101 |
-| High-risk tasks | 272 |
+| Total evidence records | 291 |
+| Total tasks | 528 |
+| Scoped tasks (ready for work) | 102 |
+| High-risk tasks | 275 |
 
 ## All Problem Packs
 
@@ -105,6 +105,7 @@
 | [public-health/sickle-cell-disease-sub-saharan-africa](../../problem-packs/public-health/sickle-cell-disease-sub-saharan-africa/problem.md) | Sickle Cell Disease Newborn Screening And Treatment Access Gaps In Sub-Saharan Africa | scoped | public-health | sub-saharan-africa | medium | 2 ev; 5 tasks | needs evidence |
 | [public-health/snakebite-antivenom-access-global](../../problem-packs/public-health/snakebite-antivenom-access-global/problem.md) | Snakebite Envenoming Mortality And Antivenom Access Gaps In Rural Low-Income Countries | scoped | public-health | global | high | 1 ev; 5 tasks | needs evidence |
 | [public-health/stunting-sub-saharan-africa](../../problem-packs/public-health/stunting-sub-saharan-africa/problem.md) | Child Stunting Hotspot Identification In Sub-Saharan Africa | scoped | public-health, food-security | sub-saharan-africa | medium | 3 ev; 6 tasks | ready |
+| [public-health/substandard-falsified-medicines-global](../../problem-packs/public-health/substandard-falsified-medicines-global/problem.md) | Substandard And Falsified Medicine Detection And Surveillance Gaps In Low- And Middle-Income Countries | scoped | public-health | global | high | 4 ev; 6 tasks | ready |
 | [public-health/surgical-care-access-global](../../problem-packs/public-health/surgical-care-access-global/problem.md) | Essential Surgical Care Access And Surgical Workforce Gaps In Low-Income Countries | scoped | public-health | global | medium | 1 ev; 5 tasks | needs evidence |
 | [public-health/tb-detection-treatment-gap-global](../../problem-packs/public-health/tb-detection-treatment-gap-global/problem.md) | Tuberculosis Case Detection And Treatment Completion Gaps In High-Burden Countries | scoped | public-health | global | medium | 2 ev; 5 tasks | needs evidence |
 | [public-health/tobacco-control-taxation-global](../../problem-packs/public-health/tobacco-control-taxation-global/problem.md) | Tobacco Taxation And Smoking Prevalence Gaps In Low- And Middle-Income Countries | scoped | public-health | global | medium | 1 ev; 4 tasks | needs evidence |

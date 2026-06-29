@@ -181,6 +181,22 @@
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       },
       {
+        "pack_id": "public-health/antimicrobial-resistance-surveillance-global",
+        "pack_title": "Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries",
+        "task_id": "source-inventory",
+        "title": "Inventory AMR surveillance data",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "medium",
+        "done_condition": "Five sources classified as usable, limited, or rejected.",
+        "evidence_count": 6,
+        "downstream_tasks_unlocked": 5,
+        "downstream_high_risk_tasks": 4,
+        "problem_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md",
+        "tasks_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
+      },
+      {
         "pack_id": "climate-health/malaria-early-warning-africa",
         "pack_title": "Malaria Early Warning Signals In Sub-Saharan Africa",
         "task_id": "source-inventory",
@@ -210,22 +226,6 @@
         "downstream_high_risk_tasks": 4,
         "problem_file": "problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/problem.md",
         "tasks_file": "problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
-      },
-      {
-        "pack_id": "disaster-resilience/urban-flooding-south-asia",
-        "pack_title": "Urban Pluvial Flooding Risk In South Asian Megacities",
-        "task_id": "source-inventory",
-        "title": "Inventory satellite impervious-surface, drainage, rainfall, flood-extent, and population data sources for South Asian megacities",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "medium",
-        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, urban accuracy, and drainage-data availability.",
-        "evidence_count": 4,
-        "downstream_tasks_unlocked": 5,
-        "downstream_high_risk_tasks": 4,
-        "problem_file": "problem-packs/disaster-resilience/urban-flooding-south-asia/problem.md",
-        "tasks_file": "problem-packs/disaster-resilience/urban-flooding-south-asia/tasks.json",
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       }
     ],
@@ -293,6 +293,28 @@
         "evidence_count": 8,
         "problem_file": "problem-packs/biodiversity/deforestation-amazon/problem.md",
         "tasks_file": "problem-packs/biodiversity/deforestation-amazon/tasks.json"
+      },
+      {
+        "pack_id": "public-health/antimicrobial-resistance-surveillance-global",
+        "pack_title": "Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries",
+        "scoped_tasks": 1,
+        "downstream_tasks": 5,
+        "downstream_high_risk_tasks": 4,
+        "downstream_by_role": {
+          "data-cleaner": 1,
+          "implementation-planner": 2,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "downstream_reviewers_needed": {
+          "replicator": 1,
+          "domain-reviewer": 2,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "evidence_count": 6,
+        "problem_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md",
+        "tasks_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/tasks.json"
       },
       {
         "pack_id": "climate-health/malaria-early-warning-africa",
@@ -447,28 +469,6 @@
         "evidence_count": 2,
         "problem_file": "problem-packs/food-security/livestock-disease-surveillance-east-africa/problem.md",
         "tasks_file": "problem-packs/food-security/livestock-disease-surveillance-east-africa/tasks.json"
-      },
-      {
-        "pack_id": "public-health/antimicrobial-resistance-surveillance-global",
-        "pack_title": "Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries",
-        "scoped_tasks": 1,
-        "downstream_tasks": 5,
-        "downstream_high_risk_tasks": 4,
-        "downstream_by_role": {
-          "data-cleaner": 1,
-          "implementation-planner": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "downstream_reviewers_needed": {
-          "replicator": 1,
-          "domain-reviewer": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "evidence_count": 2,
-        "problem_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md",
-        "tasks_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/tasks.json"
       },
       {
         "pack_id": "public-health/child-mortality-inequality-global",

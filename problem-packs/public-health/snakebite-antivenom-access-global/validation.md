@@ -1,17 +1,30 @@
 # Validation
 
-| Layer           | Gate                    |
-| --------------- | ----------------------- |
-| Structure       | `pnpm validate`         |
-| Evidence        | Dated records           |
-| Reproducibility | Rerunnable              |
-| Review          | Approvers               |
-| Replication     | Quantitative replicated |
+## Validation Layers
+
+| Layer           | Gate                                                                 |
+| --------------- | -------------------------------------------------------------------- |
+| Structure       | `pnpm validate` passes schemas and problem-pack completeness checks  |
+| Evidence        | Every claim has a dated evidence record                              |
+| Reproducibility | Quantitative artifacts include rerunnable steps                      |
+| Review          | Required reviewer roles approve or request changes                   |
+| Replication     | Safety-sensitive or quantitative claims are independently reproduced |
 
 ## Baseline Requirements
 
-Snakebite risk must document: incidence estimation methodology, proxy validation, uncertainty bounds.
+Snakebite risk mapping must document:
 
-## Model Requirements
+- Incidence estimation methodology.
+- Proxy validation against survey data.
+- Uncertainty bounds.
+- Data source version and access date.
 
-No antivenom gap validated without: facility-stocking integration, travel-time context, replication.
+## Model Or Signal Requirements
+
+No antivenom access-gap estimate may be called actionable until it includes:
+
+- Input data sources with dates.
+- Facility-stocking integration or stated absence.
+- Travel-time context.
+- Known non-use cases.
+- Replication status.

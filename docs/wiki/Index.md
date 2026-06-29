@@ -7,9 +7,9 @@
 | Metric | Value |
 |---|---|
 | Total packs | 102 |
-| Packs with claims | 7 |
+| Packs with claims | 8 |
 | Packs with accepted claims | 0 |
-| Total evidence records | 295 |
+| Total evidence records | 300 |
 | Total tasks | 528 |
 | Scoped tasks (ready for work) | 102 |
 | High-risk tasks | 275 |
@@ -103,7 +103,7 @@
 | [public-health/refugee-health-access-global](../../problem-packs/public-health/refugee-health-access-global/problem.md) | Refugee Health Service Access Gaps In Host Countries | scoped | public-health | global | high | 1 ev; 5 tasks | needs evidence |
 | [public-health/road-traffic-injury-urban-global](../../problem-packs/public-health/road-traffic-injury-urban-global/problem.md) | Road Traffic Injury Mortality Risk And Emergency Trauma Care Access In Low- And Middle-Income Countries | scoped | public-health | global | medium | 2 ev; 5 tasks | needs evidence |
 | [public-health/sickle-cell-disease-sub-saharan-africa](../../problem-packs/public-health/sickle-cell-disease-sub-saharan-africa/problem.md) | Sickle Cell Disease Newborn Screening And Treatment Access Gaps In Sub-Saharan Africa | scoped | public-health | sub-saharan-africa | medium | 2 ev; 5 tasks | needs evidence |
-| [public-health/snakebite-antivenom-access-global](../../problem-packs/public-health/snakebite-antivenom-access-global/problem.md) | Snakebite Envenoming Mortality And Antivenom Access Gaps In Rural Low-Income Countries | scoped | public-health | global | high | 1 ev; 5 tasks | needs evidence |
+| [public-health/snakebite-antivenom-access-global](../../problem-packs/public-health/snakebite-antivenom-access-global/problem.md) | Snakebite Envenoming Mortality And Antivenom Access Gaps In Rural Low-Income Countries | scoped | public-health | global | high | 6 ev; 5 tasks; 1 claims | has claims |
 | [public-health/stunting-sub-saharan-africa](../../problem-packs/public-health/stunting-sub-saharan-africa/problem.md) | Child Stunting Hotspot Identification In Sub-Saharan Africa | scoped | public-health, food-security | sub-saharan-africa | medium | 3 ev; 6 tasks | ready |
 | [public-health/substandard-falsified-medicines-global](../../problem-packs/public-health/substandard-falsified-medicines-global/problem.md) | Substandard And Falsified Medicine Detection And Surveillance Gaps In Low- And Middle-Income Countries | scoped | public-health | global | high | 4 ev; 6 tasks | ready |
 | [public-health/surgical-care-access-global](../../problem-packs/public-health/surgical-care-access-global/problem.md) | Essential Surgical Care Access And Surgical Workforce Gaps In Low-Income Countries | scoped | public-health | global | medium | 1 ev; 5 tasks | needs evidence |
@@ -177,7 +177,6 @@ These packs have scoped tasks but fewer than 3 evidence records. The source-inve
 | [public-health/refugee-health-access-global](../../problem-packs/public-health/refugee-health-access-global/problem.md) | 1 | 5 | 3 | high |
 | [public-health/road-traffic-injury-urban-global](../../problem-packs/public-health/road-traffic-injury-urban-global/problem.md) | 2 | 5 | 3 | medium |
 | [public-health/sickle-cell-disease-sub-saharan-africa](../../problem-packs/public-health/sickle-cell-disease-sub-saharan-africa/problem.md) | 2 | 5 | 3 | medium |
-| [public-health/snakebite-antivenom-access-global](../../problem-packs/public-health/snakebite-antivenom-access-global/problem.md) | 1 | 5 | 3 | high |
 | [public-health/surgical-care-access-global](../../problem-packs/public-health/surgical-care-access-global/problem.md) | 1 | 5 | 2 | medium |
 | [public-health/tb-detection-treatment-gap-global](../../problem-packs/public-health/tb-detection-treatment-gap-global/problem.md) | 2 | 5 | 3 | medium |
 | [public-health/tobacco-control-taxation-global](../../problem-packs/public-health/tobacco-control-taxation-global/problem.md) | 1 | 4 | 3 | medium |

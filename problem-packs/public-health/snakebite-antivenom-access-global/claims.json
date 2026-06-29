@@ -1,0 +1,38 @@
+[
+  {
+    "id": "antivenom-access-data-sufficiency",
+    "problem_id": "public-health/snakebite-antivenom-access-global",
+    "claim": "Available public data sources are sufficient for global and regional snakebite burden framing (WHO strategy, WHO fact sheet, Gutiérrez et al. 2017) and for understanding structural antivenom supply barriers (Gutiérrez et al. 2014, Africa policy analysis 2026), but no public dataset provides facility-level antivenom stocking data or sub-national snakebite incidence at the granularity needed to identify which districts in high-burden countries have the highest mortality risk relative to antivenom access. The Lao PDR cost-effectiveness study demonstrates that sub-national antivenom access analysis is feasible but was conducted as a single-country research study, not a systematic surveillance effort. The sub-national antivenom access gap cannot be mapped with currently available public data alone.",
+    "domain": ["public-health"],
+    "status": "unverified",
+    "evidence": [
+      "who-snakebite-strategy-2019",
+      "who-snakebite-factsheet-2023",
+      "gutierrez-snakebite-primer-2017",
+      "gutierrez-antivenom-availability-2014",
+      "lao-antivenom-cost-effectiveness-2026",
+      "africa-antivenom-policy-2026"
+    ],
+    "failure_modes": [
+      "A reader treats WHO global burden estimates as direct surveillance counts for specific countries or districts.",
+      "A reader uses the 2014 antivenom supply crisis description as current without verifying the production landscape has not changed.",
+      "A reader generalizes the Lao PDR cost-effectiveness methodology to all LMICs without country-specific adaptation.",
+      "A reader treats the Africa policy analysis as applicable to South Asia or Southeast Asia without regional verification.",
+      "A policy maker uses the antivenom access-gap framing to justify centralized procurement without addressing last-mile distribution and facility-level stocking.",
+      "A reader treats the WHO 50 percent mortality reduction target as evidence that current interventions are working, when it is an aspirational goal."
+    ],
+    "kill_condition": "A reviewer identifies a public dataset providing facility-level antivenom stocking data for at least 10 high-burden LMICs with consistent methodology and less than 2-year reporting lag, or finds that WHO or national surveillance systems have begun systematic sub-national snakebite incidence reporting covering districts in at least 20 high-burden countries.",
+    "review_required": ["domain-reviewer", "red-team-reviewer"],
+    "safety_level": "medium",
+    "submitter": "codex-agent",
+    "created_date": "2026-06-30",
+    "last_updated": "2026-06-30",
+    "confidence": "medium",
+    "limitations": [
+      "The claim is about public data availability for sub-national antivenom access-gap analysis, not about actual antivenom stocking or snakebite incidence in specific countries.",
+      "The assessment of 'no public dataset provides facility-level data' is an inference from reviewing available data portals and published literature, not a systematic survey of all national procurement databases.",
+      "Some countries may have national antivenom procurement or stocking systems that are not publicly accessible or not in English; these were not reviewed.",
+      "The WHO strategy document may contain more granular country-level data than the public summary suggests; this claim is based on the publicly accessible version."
+    ]
+  }
+]

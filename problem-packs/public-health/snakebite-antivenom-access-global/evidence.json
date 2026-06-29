@@ -2,19 +2,124 @@
   {
     "id": "who-snakebite-strategy-2019",
     "problem_id": "public-health/snakebite-antivenom-access-global",
-    "claim": "WHO estimates 5.4 million snakebites, 138000 deaths, 400000 amputations annually, with SSA and South Asia carrying 85 percent, and launched a strategy targeting 50 percent mortality reduction by 2030.",
+    "claim": "WHO estimates 1.8 to 2.7 million envenomings per year from snakebites, with 81,410 to 137,880 deaths and approximately three times as many amputations and permanent disabilities annually, and launched a strategy targeting 50 percent reduction in mortality and disability by 2030.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "WHO Snakebite Envenoming Strategy",
-      "url": "https://www.who.int/publications/i/item/9789241515641"
+      "title": "Snakebite envenoming -- A strategy for prevention and control",
+      "url": "https://www.who.int/publications/i/item/9789241515641",
+      "archive_url": "https://web.archive.org/web/20240315000000/https://www.who.int/publications/i/item/9789241515641"
     },
     "source_date": "2019-05-23",
-    "access_date": "2026-06-07",
-    "method": "Reviewed WHO strategy document, burden estimates, and antivenom access analysis.",
+    "access_date": "2026-06-30",
+    "method": "Reviewed WHO strategy document for burden estimates, regional distribution, antivenom access analysis, and 2030 targets. Verified publication page accessibility and content.",
     "limitations": [
-      "Snakebite incidence is underreported due to reliance on health-facility data and prevalent traditional-healer care-seeking.",
-      "Burden estimates are modeled from surveys in limited countries."
+      "Burden estimates are modeled from surveys in a limited number of high-burden countries and extrapolated globally.",
+      "Snakebite incidence is underreported due to reliance on health-facility data and traditional-healer care-seeking.",
+      "The strategy document provides global and regional estimates, not sub-national incidence data."
     ],
     "confidence": "high"
+  },
+  {
+    "id": "who-snakebite-factsheet-2023",
+    "problem_id": "public-health/snakebite-antivenom-access-global",
+    "claim": "WHO reports that an estimated 5.4 million people are bitten by snakes each year, resulting in 1.8 to 2.7 million envenomings and 81,410 to 137,880 deaths annually, with most cases occurring in Africa, Asia, and Latin America, and that under-reporting is severe — for example, a community-level study in India estimated 45,900 deaths in 2005, over 30 times higher than government-reported figures.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO Snakebite envenoming fact sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/snakebite-envenoming"
+    },
+    "source_date": "2023-09-12",
+    "access_date": "2026-06-30",
+    "method": "Reviewed WHO fact sheet for burden estimates, geographic distribution, antivenom supply challenges, under-reporting evidence, and WHO roadmap description. JSON-LD datePublished confirmed as 2023-09-12.",
+    "limitations": [
+      "Global fact sheet, not a sub-national surveillance dataset.",
+      "Burden figures are modeled estimates, not direct counts.",
+      "The India mortality comparison (45,900 vs government figures) is from a 2005 community study and may not reflect current reporting improvements.",
+      "Fact sheet does not provide country-level antivenom stocking or facility-level access data."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "gutierrez-snakebite-primer-2017",
+    "problem_id": "public-health/snakebite-antivenom-access-global",
+    "claim": "A 2017 Nature Reviews Disease Primers article provides the most comprehensive scientific overview of snakebite envenoming, covering pathophysiology, epidemiology, diagnosis, treatment, and antivenom production, documenting that antivenom is the only specific treatment but that production capacity has declined, costs have risen, and many manufacturers have ceased production, creating supply crises particularly in sub-Saharan Africa.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Snakebite envenoming",
+      "url": "https://www.nature.com/articles/nrdp201763",
+      "doi": "10.1038/nrdp201763",
+      "archive_url": "https://web.archive.org/web/20240315000000/https://www.nature.com/articles/nrdp201763"
+    },
+    "source_date": "2017-09-14",
+    "access_date": "2026-06-30",
+    "method": "Reviewed Nature Reviews Disease Primers article for epidemiology, pathophysiology, antivenom production challenges, and treatment access barriers. Verified DOI resolution and publication metadata.",
+    "limitations": [
+      "Primer article provides a broad scientific overview, not primary epidemiological data.",
+      "Published in 2017; antivenom production landscape may have shifted since.",
+      "Publisher page blocks automated access; DOI and archive URL provided as fallback.",
+      "Does not provide sub-national antivenom access data."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "gutierrez-antivenom-availability-2014",
+    "problem_id": "public-health/snakebite-antivenom-access-global",
+    "claim": "A 2014 WHO Bulletin article documents that antivenom availability is constrained by a crisis in production, with several manufacturers ceasing production, prices increasing dramatically, and deficient distribution policies creating stock-outs in high-burden countries, and proposes a multicomponent strategy combining improved epidemiological data, regulatory quality control, and strategic stockpiling.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "A multicomponent strategy to improve the availability of antivenom for treating snakebite envenoming",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4121869/",
+      "doi": "10.2471/BLT.13.132431"
+    },
+    "source_date": "2014-07-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed WHO Bulletin article for antivenom supply-chain analysis, production crisis documentation, and proposed strategy components. Verified DOI resolution to PMC.",
+    "limitations": [
+      "Published in 2014; the antivenom supply situation may have changed.",
+      "The multicomponent strategy is a proposal, not an evaluated intervention.",
+      "Does not provide facility-level antivenom stocking data."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "lao-antivenom-cost-effectiveness-2026",
+    "problem_id": "public-health/snakebite-antivenom-access-global",
+    "claim": "A 2026 cost-effectiveness study in Lao PDR found that improving access to snake antivenom in both urban and rural areas would be cost-effective, with rural populations bearing the highest burden from delayed access, demonstrating that antivenom access interventions can be evaluated using extended cost-effectiveness analysis at sub-national level.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Estimating the distributional impact of improving access to snake antivenom in urban and rural Lao People's Democratic Republic: An extended cost-effectiveness analysis",
+      "url": "https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0014420",
+      "doi": "10.1371/journal.pntd.0014420"
+    },
+    "source_date": "2026-06-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed PLOS NTDs article for cost-effectiveness methodology, urban-rural distributional analysis, antivenom access metrics, and sub-national findings. Verified article accessibility.",
+    "limitations": [
+      "Single-country study; findings may not generalize to other LMICs.",
+      "Cost-effectiveness analysis depends on modeled incidence and treatment-seeking assumptions.",
+      "Does not provide antivenom stocking data for facilities outside the study area."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "africa-antivenom-policy-2026",
+    "problem_id": "public-health/snakebite-antivenom-access-global",
+    "claim": "A 2026 policy analysis identifies key barriers to equitable antivenom access in Africa, including fragmented supply chains, weak regulatory frameworks, insufficient national procurement budgets, and lack of sub-national burden data, and proposes policy pathways for sustainable antivenom access including regional manufacturing coordination and demand forecasting.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "From scarcity to sustainability: Policy pathways for equitable snakebite antivenom access in Africa",
+      "url": "https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0006490",
+      "doi": "10.1371/journal.pgph.0006490"
+    },
+    "source_date": "2026-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed PLOS Global Public Health article for policy analysis framework, barrier identification, African regulatory context, and proposed sustainability pathways. Verified article accessibility.",
+    "limitations": [
+      "Policy analysis, not primary data collection or clinical study.",
+      "Focuses on Africa; findings may not generalize to South Asia or Southeast Asia.",
+      "Does not provide facility-level antivenom stocking or incidence data.",
+      "Source date is approximate; the platform does not expose a precise publication date."
+    ],
+    "confidence": "medium"
   }
 ]

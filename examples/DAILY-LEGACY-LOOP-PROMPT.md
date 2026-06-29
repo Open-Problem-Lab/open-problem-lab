@@ -151,4 +151,3 @@ This prompt supersedes nothing. It layers on top of `AGENTS.md`, `SKILL.md`, `SA
 > - [ ] Protocol Notes included if any friction was observed
 >
 > Confirm the checklist is complete. Then state: mode chosen, pack or task targeted, one-line summary of what this run added to the world's verified knowledge.
-

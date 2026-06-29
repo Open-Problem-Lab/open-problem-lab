@@ -6,13 +6,13 @@
 
 | Metric | Value |
 |---|---|
-| Total packs | 100 |
+| Total packs | 101 |
 | Packs with claims | 6 |
 | Packs with accepted claims | 0 |
-| Total evidence records | 282 |
-| Total tasks | 516 |
-| Scoped tasks (ready for work) | 100 |
-| High-risk tasks | 268 |
+| Total evidence records | 287 |
+| Total tasks | 522 |
+| Scoped tasks (ready for work) | 101 |
+| High-risk tasks | 272 |
 
 ## All Problem Packs
 
@@ -58,6 +58,7 @@
 | [energy-access/mini-grid-rural-sub-saharan-africa](../../problem-packs/energy-access/mini-grid-rural-sub-saharan-africa/problem.md) | Mini-Grid Rural Electrification Viability In Sub-Saharan Africa | scoped | energy-access | sub-saharan-africa | medium | 2 ev; 5 tasks | needs evidence |
 | [energy-access/productive-use-energy-global](../../problem-packs/energy-access/productive-use-energy-global/problem.md) | Productive Use Of Energy For Agricultural Value Chains In Rural Areas | scoped | energy-access, food-security | global | medium | 4 ev; 5 tasks | ready |
 | [energy-access/renewable-energy-grid-integration-global](../../problem-packs/energy-access/renewable-energy-grid-integration-global/problem.md) | Renewable Energy Grid Integration Bottlenecks In Low- And Middle-Income Countries | scoped | energy-access, climate-adaptation | global | medium | 2 ev; 5 tasks | needs evidence |
+| [food-safety/aflatoxin-exposure-sub-saharan-africa](../../problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/problem.md) | Aflatoxin Exposure From Contaminated Staple Grains In Sub-Saharan Africa | scoped | food-safety, public-health, food-security | sub-saharan-africa | high | 5 ev; 6 tasks | ready |
 | [food-security/crop-yield-gap-sub-saharan-africa](../../problem-packs/food-security/crop-yield-gap-sub-saharan-africa/problem.md) | Crop Yield Gap Analysis For Smallholder Farmers In Sub-Saharan Africa | scoped | food-security, climate-adaptation | sub-saharan-africa | medium | 2 ev; 5 tasks | needs evidence |
 | [food-security/drought-early-warning-horn-of-africa](../../problem-packs/food-security/drought-early-warning-horn-of-africa/problem.md) | Drought Early Warning And Food Insecurity Prediction In The Horn Of Africa | scoped | food-security, disaster-resilience | east-africa | high | 2 ev; 5 tasks | needs evidence |
 | [food-security/fertilizer-access-sub-saharan-africa](../../problem-packs/food-security/fertilizer-access-sub-saharan-africa/problem.md) | Fertilizer Access And Soil Nutrient Depletion In Smallholder Agriculture In Sub-Saharan Africa | scoped | food-security | sub-saharan-africa | medium | 4 ev; 5 tasks | ready |

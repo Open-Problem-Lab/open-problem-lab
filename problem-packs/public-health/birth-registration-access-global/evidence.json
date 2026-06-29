@@ -6,10 +6,11 @@
     "evidence_type": "primary-source",
     "source": {
       "title": "The Right Start in Life: 2024 update",
-      "url": "https://data.unicef.org/resources/the-right-start-in-life-2024-update/"
+      "url": "https://data.unicef.org/resources/the-right-start-in-life-2024-update/",
+      "archive_url": "https://web.archive.org/web/2024/https://data.unicef.org/resources/the-right-start-in-life-2024-update/"
     },
     "source_date": "2024-12-10",
-    "access_date": "2026-06-12",
+    "access_date": "2026-06-30",
     "method": "Reviewed UNICEF's 2024 statistical update page for the latest global counts of unregistered children and children lacking documentary proof.",
     "limitations": [
       "The headline figures are global aggregates and do not identify which sub-national units within countries account for the largest gaps.",
@@ -25,10 +26,11 @@
     "evidence_type": "primary-source",
     "source": {
       "title": "UNICEF Data birth registration topic page",
-      "url": "https://data.unicef.org/topic/child-protection/birth-registration/"
+      "url": "https://data.unicef.org/topic/child-protection/birth-registration/",
+      "archive_url": "https://web.archive.org/web/2024/https://data.unicef.org/topic/child-protection/birth-registration/"
     },
     "source_date": "2023-06-01",
-    "access_date": "2026-06-12",
+    "access_date": "2026-06-30",
     "method": "Reviewed UNICEF's methodology notes, data-source section, and interpretation guidance for the birth-registration indicator.",
     "limitations": [
       "The page's last visible update is June 2023, so some country-level coverage statements may be older than the 2024 global update.",
@@ -46,7 +48,7 @@
       "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SP.REG.BRTH.ZS"
     },
     "source_date": "2026-01-28",
-    "access_date": "2026-06-12",
+    "access_date": "2026-06-30",
     "method": "Reviewed World Bank metadata glossary entries for indicator definition, methodology, reference period, and listed limitations.",
     "limitations": [
       "The metadata page describes the indicator family and references period coverage, but it is not itself a sub-national dataset.",
@@ -57,36 +59,38 @@
   {
     "id": "who-crvs-fact-sheet-2024",
     "problem_id": "public-health/birth-registration-access-global",
-    "claim": "WHO's February 27, 2024 CRVS fact sheet states that only about half of countries have the capacity to register at least 90 percent of births and that the health sector is well placed to support birth registration because of its proximity to births and child-health services.",
+    "claim": "WHO's 27 February 2024 CRVS fact sheet states that only about 50 percent of countries have the capacity to register at least 90 percent of births, with registered births ranging from 98 percent in the European Region to 44 percent in the African Region, and that the health sector is well placed to support registration because of its proximity to births and child-health services.",
     "evidence_type": "primary-source",
     "source": {
       "title": "Civil registration and vital statistics",
       "url": "https://www.who.int/news-room/fact-sheets/detail/civil-registration-and-vital-statistics"
     },
     "source_date": "2024-02-27",
-    "access_date": "2026-06-12",
-    "method": "Reviewed WHO's key facts, overview, and health-sector role sections on CRVS capacity and operational relevance.",
+    "access_date": "2026-06-30",
+    "method": "Reviewed WHO fact sheet key facts, regional registration percentages, barriers section, and health-sector role description as of 27 February 2024.",
     "limitations": [
-      "The fact sheet focuses on global CRVS capacity, not child-specific sub-national workflows.",
-      "Regional percentages do not identify which countries or districts are suitable for replication work."
+      "Regional percentages aggregate countries with widely varying CRVS maturity and do not identify which districts within countries are suitable for replication work.",
+      "The fact sheet covers all vital events, not child-specific sub-national workflows.",
+      "The 50 percent capacity threshold is a global aggregate that masks within-country variation."
     ],
     "confidence": "high"
   },
   {
     "id": "who-unicef-health-sector-crvs-guidance-2021",
     "problem_id": "public-health/birth-registration-access-global",
-    "claim": "WHO and UNICEF's 2021 low-income-country guidance treats health facilities, community health workers, and immunization or child-health contact points as operational levers for improving birth registration rather than merely describing the gap.",
+    "claim": "WHO and UNICEF's 2021 low-income-country guidance treats health facilities, community health workers, and immunization or child-health contact points as operational levers for improving birth registration rather than merely describing the gap, framing CRVS strengthening as a health-sector responsibility.",
     "evidence_type": "primary-source",
     "source": {
       "title": "Health sector contributions towards improving the civil registration of births and deaths in low-income countries",
-      "url": "https://www.who.int/publications/b/56900"
+      "url": "https://iris.who.int/handle/10665/341911"
     },
     "source_date": "2021-01-01",
-    "access_date": "2026-06-12",
-    "method": "Reviewed the WHO-UNICEF guidance summary and operational framing for birth notification and health-sector participation in CRVS strengthening.",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the WHO-UNICEF guidance document page for operational framing on birth notification, health-facility linkage, and CRVS strengthening strategies.",
     "limitations": [
       "The guidance is operational and strategic, not a comparative outcomes evaluation.",
-      "It does not prove that every health-sector linkage design improves registration rates in every country context."
+      "It does not prove that every health-sector linkage design improves registration rates in every country context.",
+      "The iris.who.int handle is a landing page; the full PDF requires download from the WHO Institutional Repository."
     ],
     "confidence": "high"
   },
@@ -97,14 +101,16 @@
     "evidence_type": "dataset",
     "source": {
       "title": "DHS Guide to Statistics: Birth Registration",
-      "url": "https://www.dhsprogram.com/data/Guide-to-DHS-Statistics/Birth_Registration.htm"
+      "url": "https://www.dhsprogram.com/data/Guide-to-DHS-Statistics/Birth_Registration.htm",
+      "archive_url": "https://web.archive.org/web/2024/https://www.dhsprogram.com/data/Guide-to-DHS-Statistics/Birth_Registration.htm"
     },
-    "source_date": "2026-06-12",
-    "access_date": "2026-06-12",
-    "method": "Reviewed the DHS indicator definition, numerator and denominator rules, and handling of missing values.",
+    "source_date": "2026-06-30",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the DHS indicator definition, numerator and denominator rules, and handling of missing values on the Guide to DHS Statistics birth registration page.",
     "limitations": [
       "The guide documents DHS indicator construction, not the validity of respondent self-report against administrative systems.",
-      "Country-specific questionnaires and roster practices can still vary within the general DHS framework."
+      "Country-specific questionnaires and roster practices can still vary within the general DHS framework.",
+      "The page does not expose a clear last-updated date; source_date is set to access date."
     ],
     "confidence": "high"
   },
@@ -115,15 +121,101 @@
     "evidence_type": "dataset",
     "source": {
       "title": "UNICEF MICS tools and contents pages",
-      "url": "https://mics.unicef.org/tools/MICS7"
+      "url": "https://mics.unicef.org/tools/MICS7",
+      "archive_url": "https://web.archive.org/web/2024/https://mics.unicef.org/tools/MICS7"
     },
-    "source_date": "2026-06-12",
-    "access_date": "2026-06-12",
+    "source_date": "2026-06-30",
+    "access_date": "2026-06-30",
     "method": "Reviewed the MICS7 tools page and survey-contents listings showing birth registration as a recurring module in the under-5 questionnaire.",
     "limitations": [
       "The tools page documents module availability and survey infrastructure rather than country-specific data quality.",
-      "Not every MICS survey includes the same exact customizations, and microdata access still depends on survey release status."
+      "Not every MICS survey includes the same exact customizations, and microdata access still depends on survey release status.",
+      "The page does not expose a clear last-updated date; source_date is set to access date."
     ],
     "confidence": "medium"
+  },
+  {
+    "id": "bhatia-uncounted-children-2017",
+    "problem_id": "public-health/birth-registration-access-global",
+    "claim": "A 2017 multi-country study analyzing DHS and MICS data from 94 countries found that birth certificate coverage was below 50 percent in 36 countries, with Eastern and Southern Africa having the lowest regional average at 26.9 percent, and that significant wealth and urban-rural inequalities in certificate coverage persist even in countries with national coverage between 60 and 80 percent.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Who and where are the uncounted children? Inequalities in birth certificate coverage among children under five years in 94 countries using nationally representative household surveys",
+      "url": "https://doi.org/10.1186/s12939-017-0635-6",
+      "doi": "10.1186/s12939-017-0635-6"
+    },
+    "source_date": "2017-08-22",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the study abstract, methods, and key findings from the International Journal for Equity in Health article covering 94 countries and over 4 million children from DHS and MICS surveys conducted between 2000 and 2014.",
+    "limitations": [
+      "The study measures certificate possession, not administrative birth-registration completeness, so it cannot answer CRVS coverage questions directly.",
+      "Survey years range from 2000 to 2014, so country-level figures may not reflect current conditions in countries that have since improved registration systems.",
+      "The 94-country coverage is not uniform: some regions have few surveys and the most recent survey per country varies by up to 14 years.",
+      "Wealth-quintile comparisons rely on asset indices constructed within each survey, which are not strictly comparable across countries or time."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "aboagye-determinants-ssa-2023",
+    "problem_id": "public-health/birth-registration-access-global",
+    "claim": "A 2023 cross-sectional study of DHS data from sub-Saharan African countries found that the predictors of low birth registration include child age, maternal education, wealth index, place of residence, sub-region, maternal age, place of delivery, and assistance during delivery, confirming that health-system contact during childbirth is associated with registration likelihood.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Determinants of birth registration in sub-Saharan Africa: evidence from demographic and health surveys",
+      "url": "https://doi.org/10.3389/fpubh.2023.1193816",
+      "doi": "10.3389/fpubh.2023.1193816"
+    },
+    "source_date": "2023-07-20",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the PubMed abstract and metadata for this Frontiers in Public Health cross-sectional study, which used DHS data to identify household and context-level determinants of birth registration across SSA countries.",
+    "limitations": [
+      "The study uses self-reported birth registration from DHS surveys, not administrative CRVS records, so it measures survey registration status rather than registration completeness.",
+      "Cross-sectional design cannot establish causal direction: association between health-system contact and registration may reflect confounding by maternal education or urban residence.",
+      "Country-level DHS survey years vary, so the pooled estimate combines data from different time periods.",
+      "The study does not disaggregate results by sub-national district grain."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "walter-determinants-ssa-2022",
+    "problem_id": "public-health/birth-registration-access-global",
+    "claim": "A 2022 multi-level study of DHS and MICS data covering 358,842 children in 40 sub-Saharan African countries found that most variation in reported birth registration is due to household-level factors, with lack of professional care during pregnancy, delivery, and early life associated with lower registration odds, and that context-level factors including prenatal-care density, urban residence, registration legislation, and decentralization also play significant roles.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Household and context-level determinants of birth registration in Sub-Saharan Africa",
+      "url": "https://doi.org/10.1371/journal.pone.0265882",
+      "doi": "10.1371/journal.pone.0265882"
+    },
+    "source_date": "2022-04-08",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the PLOS ONE article abstract, methods, and key findings for the multi-level regression of household and context-level determinants across 40 SSA countries using 358,842 child records.",
+    "limitations": [
+      "The study uses self-reported birth registration from household surveys, not administrative CRVS completeness data.",
+      "Multi-level modeling with cross-sectional survey data cannot establish causal direction for health-system contact and registration.",
+      "Country and survey-year variation is large: 40 countries with different DHS and MICS rounds are pooled.",
+      "The context-level variables such as legislation type and decentralization are country-level aggregates that may not capture sub-national variation in registration infrastructure."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "nannan-south-africa-completeness-2019",
+    "problem_id": "public-health/birth-registration-access-global",
+    "claim": "A 2019 Bulletin of the World Health Organization study estimated that birth registration completeness in South Africa increased rapidly between 1996 and 2004 using a demographic method comparing registered births against independent population estimates, and concluded that the method for measuring completeness needs to be standardized for international comparison.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Estimating completeness of birth registration in South Africa, 1996 to 2011",
+      "url": "https://doi.org/10.2471/BLT.18.222620",
+      "doi": "10.2471/BLT.18.222620"
+    },
+    "source_date": "2019-07-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the PubMed abstract and metadata for this WHO Bulletin study, which used demographic estimation methods to assess administrative birth-registration completeness in South Africa over 15 years.",
+    "limitations": [
+      "The study measures administrative registration completeness, not survey-based under-5 registration, so it is not directly comparable to DHS or MICS indicators.",
+      "The demographic method depends on independent population estimates that may themselves contain error, especially in countries with uncertain census data.",
+      "South Africa is a middle-income country with relatively advanced CRVS; results may not generalize to lower-income SSA contexts.",
+      "The study covers 1996 to 2011 and does not reflect more recent registration system changes."
+    ],
+    "confidence": "high"
   }
 ]

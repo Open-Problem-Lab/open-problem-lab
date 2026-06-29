@@ -12,30 +12,32 @@
     "access_date": "2026-06-06",
     "method": "Reviewed Groundswell methodology, gravity-based migration model, scenario assumptions, and regional projections for South Asia.",
     "limitations": [
-      "Projections are modeled from biophysical and demographic scenarios, not observed migration flows — they represent what could happen under specific assumptions, not forecasts of actual migration.",
-      "Sub-national projections have wide uncertainty ranges — the 40 million figure is a regional aggregate with substantial scenario-dependent variation.",
+      "Projections are modeled from biophysical and demographic scenarios, not observed migration flows \u2014 they represent what could happen under specific assumptions, not forecasts of actual migration.",
+      "Sub-national projections have wide uncertainty ranges \u2014 the 40 million figure is a regional aggregate with substantial scenario-dependent variation.",
       "The model assumes climate change is an additional push factor on top of economic drivers, but the interaction between climate and economic drivers is simplified.",
       "The model does not capture migration barriers (borders, social networks, financial constraints) that may prevent projected migration from occurring."
     ],
     "confidence": "medium"
   },
   {
-    "id": "rigaud-environmental-migration-review-2021",
+    "id": "climate-induced-migration-india-bangladesh-2025",
     "problem_id": "disaster-resilience/climate-migration-south-asia",
-    "claim": "A 2021 systematic review found moderate but significant correlations between environmental change (rainfall deficit, temperature increase, flood frequency) and out-migration at district scale in South Asia, with economic drivers explaining the majority of migration variance and environmental signals adding marginal explanatory power.",
+    "claim": "A 2025 systematic review of climate-induced migration in India and Bangladesh found that coastal areas including the Sundarbans and Ganges-Brahmaputra Delta face threats from rising sea levels, cyclones, and floods that force millions to relocate, resulting in rural-urban transitions and cross-border movements that worsen urban challenges and socioeconomic vulnerabilities.",
     "evidence_type": "peer-reviewed-study",
     "source": {
-      "title": "Environmental change and migration in South Asia: a systematic review",
-      "url": "https://link.springer.com/article/10.1007/s11111-021-00378-2"
+      "title": "Climate-Induced Migration in India and Bangladesh: A Systematic Review of Drivers, Impacts, and Policy Responses",
+      "url": "https://doi.org/10.3390/cli13040081",
+      "doi": "10.3390/cli13040081"
     },
-    "source_date": "2021-03-15",
-    "access_date": "2026-06-06",
-    "method": "Reviewed systematic search strategy, correlation estimates, confound-control methodology, and geographic distribution of included studies.",
+    "source_date": "2025-04-21",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the Crossref metadata and abstract for this Climate journal systematic review, which used PRISMA methodology to analyze Scopus database literature on climate-induced migration drivers in India and Bangladesh.",
     "limitations": [
-      "Census data is decadal and cannot capture short-term displacement or seasonal migration — the correlations reflect long-term patterns, not event-driven movement.",
-      "Attribution to climate versus economic drivers is inherently uncertain — environmental and economic stressors co-occur and interact.",
-      "Most studies use district-level aggregate data — household-level migration decisions are not captured.",
-      "The review includes studies with different environmental indicators, migration definitions, and statistical methods — comparability across studies is limited."
+      "The review focuses on India and Bangladesh only, not all of South Asia.",
+      "Systematic review of Scopus database may miss grey literature and non-English sources.",
+      "The review synthesizes qualitative and quantitative findings from heterogeneous study designs, limiting meta-analytic inference.",
+      "Migration drivers are multi-causal: separating climate from economic drivers remains inherently uncertain.",
+      "Most included studies use district-level or regional aggregate data, not household-level migration decisions."
     ],
     "confidence": "medium"
   },
@@ -52,9 +54,9 @@
     "access_date": "2026-06-18",
     "method": "Reviewed census migration-question documentation, definition comparability, and data-quality assessment across South Asian countries.",
     "limitations": [
-      "Census migration definitions vary — India uses place of birth, Bangladesh uses last residence, Nepal uses duration of residence — cross-country comparison requires explicit harmonization.",
+      "Census migration definitions vary \u2014 India uses place of birth, Bangladesh uses last residence, Nepal uses duration of residence \u2014 cross-country comparison requires explicit harmonization.",
       "Decadal frequency means censuses cannot capture event-driven displacement or seasonal migration patterns.",
-      "Census data captures net migration at district level — it does not capture return migration, circular migration, or step-wise migration chains.",
+      "Census data captures net migration at district level \u2014 it does not capture return migration, circular migration, or step-wise migration chains.",
       "Undercounting of short-term and irregular migration is documented across all South Asian censuses."
     ],
     "confidence": "high"
@@ -62,7 +64,7 @@
   {
     "id": "satellite-environmental-migration-correlation",
     "problem_id": "disaster-resilience/climate-migration-south-asia",
-    "claim": "Satellite-derived environmental indicators — NDVI vegetation trends, CHIRPS rainfall anomalies, and flood-frequency maps — can be correlated with census migration data at district scale, but the correlations are modest (typically explaining 5-15 percent of migration variance) and confounded by economic and social drivers.",
+    "claim": "Satellite-derived environmental indicators \u2014 NDVI vegetation trends, CHIRPS rainfall anomalies, and flood-frequency maps \u2014 can be correlated with census migration data at district scale, but the correlations are modest (typically explaining 5-15 percent of migration variance) and confounded by economic and social drivers.",
     "evidence_type": "peer-reviewed-study",
     "source": {
       "title": "Satellite evidence of environmental migration in South Asia",
@@ -72,9 +74,9 @@
     "access_date": "2026-06-07",
     "method": "Reviewed satellite-to-migration correlation methodology, environmental indicator selection, confound-control approach, and variance-explained documentation.",
     "limitations": [
-      "The 5-15 percent variance-explained figure means 85-95 percent of migration variance is explained by non-environmental factors — environmental signals are statistically significant but not dominant drivers.",
-      "NDVI and rainfall anomalies may correlate with agricultural income loss, which is the actual driver — the environmental signal proxies for economic distress rather than causing migration directly.",
-      "Correlation does not imply causation — districts with environmental degradation may also have other push factors (poor infrastructure, weak governance) that independently drive migration.",
+      "The 5-15 percent variance-explained figure means 85-95 percent of migration variance is explained by non-environmental factors \u2014 environmental signals are statistically significant but not dominant drivers.",
+      "NDVI and rainfall anomalies may correlate with agricultural income loss, which is the actual driver \u2014 the environmental signal proxies for economic distress rather than causing migration directly.",
+      "Correlation does not imply causation \u2014 districts with environmental degradation may also have other push factors (poor infrastructure, weak governance) that independently drive migration.",
       "Spatial autocorrelation in environmental and migration data can inflate correlation estimates if not properly controlled."
     ],
     "confidence": "high"

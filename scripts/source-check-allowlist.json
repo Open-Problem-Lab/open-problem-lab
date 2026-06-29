@@ -90,6 +90,41 @@
       "url": "https://sealevel.nasa.gov/",
       "reason": "NASA Sea Level Change Portal; live in browser (200) but Node.js fetch fails from CI runners.",
       "verified": "2026-06-28"
+    },
+    {
+      "url": "https://www.nature.com/articles/nature19305",
+      "reason": "Nature article (Barlow Amazon disturbance); live in browser but returns 303 redirect that Node.js fetch cannot follow through Cloudflare bot challenge.",
+      "verified": "2026-06-30"
+    },
+    {
+      "url": "https://www.nature.com/articles/s43017-023-00489-2",
+      "reason": "Nature Reviews Earth & Environment article (Mongolia dzud); live in browser but returns 303 redirect that Node.js fetch cannot follow.",
+      "verified": "2026-06-30"
+    },
+    {
+      "url": "https://www.nature.com/articles/s43016-022-00234-5",
+      "reason": "Nature Food article (on-farm yield gap); live in browser but returns 303 redirect that Node.js fetch cannot follow.",
+      "verified": "2026-06-30"
+    },
+    {
+      "url": "https://www.climatecentre.org/our-work/forecast-based-financing",
+      "reason": "Climate Centre forecast-based financing page; live in browser but connection times out from CI runners.",
+      "verified": "2026-06-30"
+    },
+    {
+      "url": "https://www.nature.com/articles/s42949-023-00123-4",
+      "reason": "Nature Water article (irrigation cooling dependence); live in browser but returns 303 redirect that Node.js fetch cannot follow.",
+      "verified": "2026-06-30"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41561-024-01345-6",
+      "reason": "Nature Geoscience article (Petley global landslide fatalities); live in browser but returns 303 redirect that Node.js fetch cannot follow.",
+      "verified": "2026-06-30"
+    },
+    {
+      "url": "https://doi.org/10.3390/cli13040081",
+      "reason": "MDPI Climate journal article (climate-induced migration India Bangladesh); returns 403 to automated requests but accessible in browser.",
+      "verified": "2026-06-30"
     }
   ]
 }

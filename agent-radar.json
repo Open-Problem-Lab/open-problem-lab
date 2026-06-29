@@ -45,7 +45,7 @@
         "reviewer_needed": "domain-reviewer",
         "safety_risk": "low",
         "done_condition": "At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering measure family, timing, geographic grain, and health-linkage relevance.",
-        "evidence_count": 7,
+        "evidence_count": 11,
         "downstream_tasks_unlocked": 5,
         "downstream_high_risk_tasks": 2,
         "problem_file": "problem-packs/public-health/birth-registration-access-global/problem.md",

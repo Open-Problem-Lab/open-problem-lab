@@ -31,7 +31,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Task: `source-inventory` — Inventory survey, CRVS, and health-touchpoint data sources for birth registration analysis
 - Risk: `low`
 - Reviewer needed: `domain-reviewer`
-- Existing evidence records: 7
+- Existing evidence records: 11
 - Downstream tasks unlocked: 5
 - Downstream high-risk tasks: 2
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.

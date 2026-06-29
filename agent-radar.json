@@ -2,33 +2,33 @@
   "summary": {
     "generated_by": "scripts/generate-agent-radar.mjs",
     "schema_version": 1,
-    "total_packs": 100,
-    "total_tasks": 516,
-    "scoped_tasks": 100,
-    "latent_tasks": 416,
+    "total_packs": 101,
+    "total_tasks": 522,
+    "scoped_tasks": 101,
+    "latent_tasks": 421,
     "status_counts": {
-      "scoped": 100,
-      "needs-triage": 416
+      "scoped": 101,
+      "needs-triage": 421
     },
     "owner_role_counts": {
-      "literature-scout": 100,
-      "data-cleaner": 96,
-      "implementation-planner": 119,
-      "red-team-reviewer": 100,
-      "field-reality-reviewer": 101
-    },
-    "scoped_role_counts": {
-      "literature-scout": 100
-    },
-    "reviewer_needed_counts": {
-      "domain-reviewer": 212,
-      "replicator": 102,
-      "red-team-reviewer": 100,
+      "literature-scout": 101,
+      "data-cleaner": 97,
+      "implementation-planner": 121,
+      "red-team-reviewer": 101,
       "field-reality-reviewer": 102
     },
+    "scoped_role_counts": {
+      "literature-scout": 101
+    },
+    "reviewer_needed_counts": {
+      "domain-reviewer": 215,
+      "replicator": 103,
+      "red-team-reviewer": 101,
+      "field-reality-reviewer": 103
+    },
     "safety_risk_counts": {
-      "medium": 236,
-      "high": 268,
+      "medium": 238,
+      "high": 272,
       "low": 12
     },
     "protocol_alert_count": 0
@@ -51,38 +51,6 @@
         "problem_file": "problem-packs/public-health/birth-registration-access-global/problem.md",
         "tasks_file": "problem-packs/public-health/birth-registration-access-global/tasks.json",
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
-      },
-      {
-        "pack_id": "public-health/ncd-risk-factor-surveillance-global",
-        "pack_title": "Non-Communicable Disease Risk Factor Surveillance Gaps In Low-Income Countries",
-        "task_id": "source-inventory",
-        "title": "Inventory data sources for public-health/ncd-risk-factor-surveillance-global",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "low",
-        "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons.",
-        "evidence_count": 5,
-        "downstream_tasks_unlocked": 4,
-        "downstream_high_risk_tasks": 2,
-        "problem_file": "problem-packs/public-health/ncd-risk-factor-surveillance-global/problem.md",
-        "tasks_file": "problem-packs/public-health/ncd-risk-factor-surveillance-global/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
-      },
-      {
-        "pack_id": "public-health/oral-health-access-global",
-        "pack_title": "Oral Health Service Access And Dental Workforce Gaps In Low-Income Countries",
-        "task_id": "source-inventory",
-        "title": "Inventory data sources for public-health/oral-health-access-global",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "low",
-        "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons.",
-        "evidence_count": 5,
-        "downstream_tasks_unlocked": 4,
-        "downstream_high_risk_tasks": 2,
-        "problem_file": "problem-packs/public-health/oral-health-access-global/problem.md",
-        "tasks_file": "problem-packs/public-health/oral-health-access-global/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
       },
       {
         "pack_id": "education/digital-divide-school-access-global",
@@ -117,68 +85,36 @@
         "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
       },
       {
-        "pack_id": "biodiversity/deforestation-amazon",
-        "pack_title": "Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin",
+        "pack_id": "public-health/ncd-risk-factor-surveillance-global",
+        "pack_title": "Non-Communicable Disease Risk Factor Surveillance Gaps In Low-Income Countries",
         "task_id": "source-inventory",
-        "title": "Inventory deforestation and biodiversity data sources for Amazon basin",
+        "title": "Inventory data sources for public-health/ncd-risk-factor-surveillance-global",
         "owner_role": "literature-scout",
         "reviewer_needed": "domain-reviewer",
-        "safety_risk": "medium",
-        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
-        "evidence_count": 8,
-        "downstream_tasks_unlocked": 5,
-        "downstream_high_risk_tasks": 4,
-        "problem_file": "problem-packs/biodiversity/deforestation-amazon/problem.md",
-        "tasks_file": "problem-packs/biodiversity/deforestation-amazon/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
-      },
-      {
-        "pack_id": "climate-adaptation/sea-level-rise-small-islands",
-        "pack_title": "Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States",
-        "task_id": "source-inventory",
-        "title": "Inventory SLR projection and coastal exposure data sources for SIDS",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "medium",
-        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
-        "evidence_count": 8,
-        "downstream_tasks_unlocked": 5,
-        "downstream_high_risk_tasks": 5,
-        "problem_file": "problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md",
-        "tasks_file": "problem-packs/climate-adaptation/sea-level-rise-small-islands/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
-      },
-      {
-        "pack_id": "disaster-resilience/cyclone-early-warning-bangladesh",
-        "pack_title": "Cyclone Early Warning And Evacuation Signal Verification In Bangladesh",
-        "task_id": "source-inventory",
-        "title": "Inventory cyclone data sources for Bay of Bengal",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "medium",
-        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
-        "evidence_count": 7,
-        "downstream_tasks_unlocked": 5,
-        "downstream_high_risk_tasks": 5,
-        "problem_file": "problem-packs/disaster-resilience/cyclone-early-warning-bangladesh/problem.md",
-        "tasks_file": "problem-packs/disaster-resilience/cyclone-early-warning-bangladesh/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 3 additional roles."
-      },
-      {
-        "pack_id": "air-quality/pm25-monitoring-south-asia",
-        "pack_title": "PM2.5 Monitoring Gaps And Health Impact In South Asia",
-        "task_id": "source-inventory",
-        "title": "Inventory PM2.5 monitoring and air quality data sources for South Asia",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "medium",
-        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
-        "evidence_count": 6,
-        "downstream_tasks_unlocked": 5,
+        "safety_risk": "low",
+        "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons.",
+        "evidence_count": 1,
+        "downstream_tasks_unlocked": 4,
         "downstream_high_risk_tasks": 2,
-        "problem_file": "problem-packs/air-quality/pm25-monitoring-south-asia/problem.md",
-        "tasks_file": "problem-packs/air-quality/pm25-monitoring-south-asia/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
+        "problem_file": "problem-packs/public-health/ncd-risk-factor-surveillance-global/problem.md",
+        "tasks_file": "problem-packs/public-health/ncd-risk-factor-surveillance-global/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
+      },
+      {
+        "pack_id": "public-health/oral-health-access-global",
+        "pack_title": "Oral Health Service Access And Dental Workforce Gaps In Low-Income Countries",
+        "task_id": "source-inventory",
+        "title": "Inventory data sources for public-health/oral-health-access-global",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "low",
+        "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons.",
+        "evidence_count": 1,
+        "downstream_tasks_unlocked": 4,
+        "downstream_high_risk_tasks": 2,
+        "problem_file": "problem-packs/public-health/oral-health-access-global/problem.md",
+        "tasks_file": "problem-packs/public-health/oral-health-access-global/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
       },
       {
         "pack_id": "climate-health/malaria-early-warning-africa",
@@ -194,6 +130,22 @@
         "downstream_high_risk_tasks": 4,
         "problem_file": "problem-packs/climate-health/malaria-early-warning-africa/problem.md",
         "tasks_file": "problem-packs/climate-health/malaria-early-warning-africa/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
+      },
+      {
+        "pack_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+        "pack_title": "Aflatoxin Exposure From Contaminated Staple Grains In Sub-Saharan Africa",
+        "task_id": "source-inventory",
+        "title": "Inventory mycotoxin test data, climate suitability models, and post-harvest practice surveys for SSA aflatoxin risk mapping",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "medium",
+        "done_condition": "At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering contamination test method, geographic grain, crop specificity, sampling frame adequacy, and intervention-relevance.",
+        "evidence_count": 5,
+        "downstream_tasks_unlocked": 5,
+        "downstream_high_risk_tasks": 4,
+        "problem_file": "problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/problem.md",
+        "tasks_file": "problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/tasks.json",
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       },
       {
@@ -213,6 +165,22 @@
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       },
       {
+        "pack_id": "air-quality/pm25-monitoring-south-asia",
+        "pack_title": "PM2.5 Monitoring Gaps And Health Impact In South Asia",
+        "task_id": "source-inventory",
+        "title": "Inventory PM2.5 monitoring and air quality data sources for South Asia",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "medium",
+        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
+        "evidence_count": 3,
+        "downstream_tasks_unlocked": 5,
+        "downstream_high_risk_tasks": 2,
+        "problem_file": "problem-packs/air-quality/pm25-monitoring-south-asia/problem.md",
+        "tasks_file": "problem-packs/air-quality/pm25-monitoring-south-asia/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
+      },
+      {
         "pack_id": "biodiversity/coral-bleaching-great-barrier-reef",
         "pack_title": "Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef",
         "task_id": "source-inventory",
@@ -226,6 +194,38 @@
         "downstream_high_risk_tasks": 3,
         "problem_file": "problem-packs/biodiversity/coral-bleaching-great-barrier-reef/problem.md",
         "tasks_file": "problem-packs/biodiversity/coral-bleaching-great-barrier-reef/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
+      },
+      {
+        "pack_id": "biodiversity/deforestation-amazon",
+        "pack_title": "Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin",
+        "task_id": "source-inventory",
+        "title": "Inventory deforestation and biodiversity data sources for Amazon basin",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "medium",
+        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
+        "evidence_count": 3,
+        "downstream_tasks_unlocked": 5,
+        "downstream_high_risk_tasks": 4,
+        "problem_file": "problem-packs/biodiversity/deforestation-amazon/problem.md",
+        "tasks_file": "problem-packs/biodiversity/deforestation-amazon/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
+      },
+      {
+        "pack_id": "climate-adaptation/sea-level-rise-small-islands",
+        "pack_title": "Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States",
+        "task_id": "source-inventory",
+        "title": "Inventory SLR projection and coastal exposure data sources for SIDS",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "medium",
+        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
+        "evidence_count": 3,
+        "downstream_tasks_unlocked": 5,
+        "downstream_high_risk_tasks": 5,
+        "problem_file": "problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md",
+        "tasks_file": "problem-packs/climate-adaptation/sea-level-rise-small-islands/tasks.json",
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       }
     ],
@@ -248,7 +248,7 @@
           "field-reality-reviewer": 2,
           "red-team-reviewer": 1
         },
-        "evidence_count": 8,
+        "evidence_count": 3,
         "problem_file": "problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md",
         "tasks_file": "problem-packs/climate-adaptation/sea-level-rise-small-islands/tasks.json"
       },
@@ -268,31 +268,9 @@
           "red-team-reviewer": 1,
           "field-reality-reviewer": 1
         },
-        "evidence_count": 7,
+        "evidence_count": 3,
         "problem_file": "problem-packs/disaster-resilience/cyclone-early-warning-bangladesh/problem.md",
         "tasks_file": "problem-packs/disaster-resilience/cyclone-early-warning-bangladesh/tasks.json"
-      },
-      {
-        "pack_id": "biodiversity/deforestation-amazon",
-        "pack_title": "Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin",
-        "scoped_tasks": 1,
-        "downstream_tasks": 5,
-        "downstream_high_risk_tasks": 4,
-        "downstream_by_role": {
-          "data-cleaner": 1,
-          "implementation-planner": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "downstream_reviewers_needed": {
-          "replicator": 1,
-          "domain-reviewer": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "evidence_count": 8,
-        "problem_file": "problem-packs/biodiversity/deforestation-amazon/problem.md",
-        "tasks_file": "problem-packs/biodiversity/deforestation-amazon/tasks.json"
       },
       {
         "pack_id": "climate-health/malaria-early-warning-africa",
@@ -317,6 +295,28 @@
         "tasks_file": "problem-packs/climate-health/malaria-early-warning-africa/tasks.json"
       },
       {
+        "pack_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+        "pack_title": "Aflatoxin Exposure From Contaminated Staple Grains In Sub-Saharan Africa",
+        "scoped_tasks": 1,
+        "downstream_tasks": 5,
+        "downstream_high_risk_tasks": 4,
+        "downstream_by_role": {
+          "data-cleaner": 1,
+          "implementation-planner": 2,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "downstream_reviewers_needed": {
+          "replicator": 1,
+          "domain-reviewer": 2,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "evidence_count": 5,
+        "problem_file": "problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/problem.md",
+        "tasks_file": "problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/tasks.json"
+      },
+      {
         "pack_id": "disaster-resilience/urban-flooding-south-asia",
         "pack_title": "Urban Pluvial Flooding Risk In South Asian Megacities",
         "scoped_tasks": 1,
@@ -337,6 +337,28 @@
         "evidence_count": 4,
         "problem_file": "problem-packs/disaster-resilience/urban-flooding-south-asia/problem.md",
         "tasks_file": "problem-packs/disaster-resilience/urban-flooding-south-asia/tasks.json"
+      },
+      {
+        "pack_id": "biodiversity/deforestation-amazon",
+        "pack_title": "Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin",
+        "scoped_tasks": 1,
+        "downstream_tasks": 5,
+        "downstream_high_risk_tasks": 4,
+        "downstream_by_role": {
+          "data-cleaner": 1,
+          "implementation-planner": 2,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "downstream_reviewers_needed": {
+          "replicator": 1,
+          "domain-reviewer": 2,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "evidence_count": 3,
+        "problem_file": "problem-packs/biodiversity/deforestation-amazon/problem.md",
+        "tasks_file": "problem-packs/biodiversity/deforestation-amazon/tasks.json"
       },
       {
         "pack_id": "food-security/locust-outbreak-east-africa",
@@ -469,28 +491,6 @@
         "evidence_count": 2,
         "problem_file": "problem-packs/public-health/child-mortality-inequality-global/problem.md",
         "tasks_file": "problem-packs/public-health/child-mortality-inequality-global/tasks.json"
-      },
-      {
-        "pack_id": "biodiversity/coral-bleaching-great-barrier-reef",
-        "pack_title": "Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef",
-        "scoped_tasks": 1,
-        "downstream_tasks": 5,
-        "downstream_high_risk_tasks": 3,
-        "downstream_by_role": {
-          "data-cleaner": 1,
-          "implementation-planner": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "downstream_reviewers_needed": {
-          "replicator": 1,
-          "domain-reviewer": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "evidence_count": 3,
-        "problem_file": "problem-packs/biodiversity/coral-bleaching-great-barrier-reef/problem.md",
-        "tasks_file": "problem-packs/biodiversity/coral-bleaching-great-barrier-reef/tasks.json"
       }
     ],
     "reviewer_hotspots": [
@@ -557,6 +557,19 @@
         "downstream_high_risk_tasks": 4,
         "downstream_tasks": 5,
         "problem_file": "problem-packs/disaster-resilience/urban-flooding-south-asia/problem.md"
+      },
+      {
+        "pack_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+        "pack_title": "Aflatoxin Exposure From Contaminated Staple Grains In Sub-Saharan Africa",
+        "downstream_reviewers_needed": {
+          "replicator": 1,
+          "domain-reviewer": 2,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "downstream_high_risk_tasks": 4,
+        "downstream_tasks": 5,
+        "problem_file": "problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/problem.md"
       },
       {
         "pack_id": "food-security/fisheries-overexploitation-west-africa",
@@ -635,55 +648,42 @@
         "downstream_high_risk_tasks": 4,
         "downstream_tasks": 5,
         "problem_file": "problem-packs/public-health/lead-exposure-urban-global/problem.md"
-      },
-      {
-        "pack_id": "biodiversity/coral-bleaching-great-barrier-reef",
-        "pack_title": "Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef",
-        "downstream_reviewers_needed": {
-          "replicator": 1,
-          "domain-reviewer": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "downstream_high_risk_tasks": 3,
-        "downstream_tasks": 5,
-        "problem_file": "problem-packs/biodiversity/coral-bleaching-great-barrier-reef/problem.md"
       }
     ],
     "role_backlog": [
       {
         "owner_role": "implementation-planner",
         "scoped_tasks": 0,
-        "latent_tasks": 119,
-        "share_of_all_tasks": 0.231,
-        "share_of_latent_tasks": 0.286
+        "latent_tasks": 121,
+        "share_of_all_tasks": 0.232,
+        "share_of_latent_tasks": 0.287
       },
       {
         "owner_role": "field-reality-reviewer",
         "scoped_tasks": 0,
-        "latent_tasks": 101,
-        "share_of_all_tasks": 0.196,
-        "share_of_latent_tasks": 0.243
+        "latent_tasks": 102,
+        "share_of_all_tasks": 0.195,
+        "share_of_latent_tasks": 0.242
       },
       {
         "owner_role": "red-team-reviewer",
         "scoped_tasks": 0,
-        "latent_tasks": 100,
-        "share_of_all_tasks": 0.194,
+        "latent_tasks": 101,
+        "share_of_all_tasks": 0.193,
         "share_of_latent_tasks": 0.24
       },
       {
         "owner_role": "data-cleaner",
         "scoped_tasks": 0,
-        "latent_tasks": 96,
+        "latent_tasks": 97,
         "share_of_all_tasks": 0.186,
-        "share_of_latent_tasks": 0.231
+        "share_of_latent_tasks": 0.23
       },
       {
         "owner_role": "literature-scout",
-        "scoped_tasks": 100,
+        "scoped_tasks": 101,
         "latent_tasks": 0,
-        "share_of_all_tasks": 0.194,
+        "share_of_all_tasks": 0.193,
         "share_of_latent_tasks": 0
       }
     ]

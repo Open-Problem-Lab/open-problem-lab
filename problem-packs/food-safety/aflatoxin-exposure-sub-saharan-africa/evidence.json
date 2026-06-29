@@ -1,0 +1,97 @@
+[
+  {
+    "id": "iarc-aflatoxin-group1-monograph",
+    "problem_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+    "claim": "IARC classifies aflatoxins as Group 1 carcinogens with sufficient evidence for liver cancer causation, with risk substantially elevated in individuals with hepatitis B virus infection.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "IARC List of Classifications: Aflatoxins (Group 1)",
+      "url": "https://monographs.iarc.who.int/list-of-classifications"
+    },
+    "source_date": "2012-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed IARC classifications page confirming aflatoxins are classified as Group 1 carcinogens with sufficient evidence for liver cancer.",
+    "limitations": [
+      "The monograph assesses carcinogenicity classification but does not quantify sub-national exposure levels in Africa.",
+      "Cancer risk estimates depend on HBV prevalence, which varies by country and is not specified at district level in the monograph."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-aflatoxin-burden-2010",
+    "problem_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+    "claim": "A WHO 2010 report estimates that 4.5 to 5.5 billion people in developing countries are chronically exposed to aflatoxin and that per-capita exposure is highest in sub-Saharan Africa, with estimates based on food consumption patterns and contamination survey data.",
+    "evidence_type": "expert-review",
+    "source": {
+      "title": "WHO: Impact of Aflatoxin Exposure on Public Health (2010)",
+      "url": "https://iris.who.int/handle/10665/44357"
+    },
+    "source_date": "2010-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed WHO IRIS record for the 2010 aflatoxin exposure report covering global exposure estimates and regional exposure patterns.",
+    "limitations": [
+      "The exposure estimate is from 2010 and food consumption patterns may have shifted; it should be treated as a baseline estimate, not current.",
+      "The report aggregates sub-Saharan Africa as a region and does not provide country or district-level exposure data.",
+      "The estimate depends on contamination surveys whose coverage and sampling methods are not uniform across countries."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "codex-aflatoxin-limits-cxs-193-1995",
+    "problem_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+    "claim": "Codex Alimentarius sets maximum levels for aflatoxin total at 10 micrograms per kg in ready-to-eat peanuts and 15 micrograms per kg in peanuts for further processing, with separate limits for maize, milk, and other commodities.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Codex Alimentarius General Standard for Contaminants and Toxins in Food and Feed (CXS 193-1995, amended)",
+      "url": "https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B193-1995%252FCXS_193e.pdf"
+    },
+    "source_date": "2025-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed Codex General Standard schedule for maximum levels for aflatoxins in peanuts, maize, milk, and other commodities.",
+    "limitations": [
+      "Codex limits are international trade standards and many SSA countries apply their own national limits which may differ.",
+      "Codex limits do not specify testing protocols or sampling frequency, which affects comparability of contamination surveys.",
+      "The standard is periodically amended; the specific year of amendment for aflatoxin entries should be verified before operational use."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "kenya-aflatoxicosis-outbreak-2004",
+    "problem_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+    "claim": "Acute aflatoxicosis outbreaks in Kenya from 2004 to 2006 caused 317 reported cases with 125 deaths, with maize contamination levels reaching 4,400 micrograms per kg, far exceeding Codex limits and demonstrating the lethal potential of acute dietary exposure.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "CDC MMWR: Outbreak of Aflatoxicosis in Kenya 2004",
+      "url": "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5334a4.htm"
+    },
+    "source_date": "2004-08-27",
+    "access_date": "2026-06-30",
+    "method": "Reviewed CDC MMWR report covering outbreak investigation, case counts, mortality, and measured contamination levels in affected maize samples.",
+    "limitations": [
+      "The report documents an acute outbreak, not chronic exposure burden, and represents an extreme contamination scenario.",
+      "Case detection depended on healthcare facility reporting, which may undercount mild and moderate cases.",
+      "The outbreak is specific to eastern Kenya and its conditions may not generalize to other SSA regions."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "aflasafe-biocontrol-evidence-2019",
+    "problem_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+    "claim": "Aflasafe, a biocontrol product using non-toxigenic Aspergillus flavus strains, reduced aflatoxin contamination by 60 to 90 percent in field trials across Nigeria, Kenya, and Senegal, demonstrating a tractable pre-harvest intervention.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Bandyopadhyay R, et al. Biological control of aflatoxins in Africa. Phytopathology. 2019.",
+      "url": "https://apsjournals.apsnet.org/doi/10.1094/PHYTO-03-19-0084-RVW"
+    },
+    "source_date": "2019-06-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed peer-reviewed review article covering Aflasafe development, field trial results across multiple SSA countries, efficacy range, and scaling challenges.",
+    "limitations": [
+      "This is a review article summarizing multiple field trials; individual trial results should be consulted for specific country-level efficacy.",
+      "Field trial efficacy under controlled conditions may not replicate at smallholder scale with variable application timing and coverage.",
+      "Biocontrol addresses pre-harvest infection and does not address post-harvest contamination from poor drying and storage.",
+      "The review was authored by researchers associated with Aflasafe development, creating potential for publication bias."
+    ],
+    "confidence": "high"
+  }
+]

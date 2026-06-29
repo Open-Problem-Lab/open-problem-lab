@@ -2,25 +2,26 @@
   "summary": {
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
-    "total_packs": 100,
-    "total_scoped_tasks": 100,
+    "total_packs": 101,
+    "total_scoped_tasks": 101,
     "by_role": {
-      "literature-scout": 100
+      "literature-scout": 101
     },
     "by_risk": {
-      "medium": 95,
+      "medium": 96,
       "low": 5
     },
     "by_domain": {
       "air-quality": 6,
-      "public-health": 62,
+      "public-health": 63,
       "climate-health": 13,
       "biodiversity": 8,
-      "food-security": 19,
+      "food-security": 20,
       "climate-adaptation": 11,
       "disaster-resilience": 10,
       "education": 9,
       "energy-access": 6,
+      "food-safety": 1,
       "sanitation": 4,
       "water-security": 5
     }
@@ -705,6 +706,23 @@
       "done_condition": "Five sources classified.",
       "tasks_file": "problem-packs/energy-access/renewable-energy-grid-integration-global/tasks.json",
       "problem_file": "problem-packs/energy-access/renewable-energy-grid-integration-global/problem.md"
+    },
+    {
+      "pack_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+      "pack_title": "Aflatoxin Exposure From Contaminated Staple Grains In Sub-Saharan Africa",
+      "pack_status": "scoped",
+      "domain": ["food-safety", "public-health", "food-security"],
+      "region": ["sub-saharan-africa"],
+      "task_id": "source-inventory",
+      "title": "Inventory mycotoxin test data, climate suitability models, and post-harvest practice surveys for SSA aflatoxin risk mapping",
+      "owner_role": "literature-scout",
+      "reviewer_needed": "domain-reviewer",
+      "safety_risk": "medium",
+      "outcome": "A dated source inventory that separates mycotoxin contamination test data (market surveys, household samples, regulatory monitoring), climate suitability models for Aspergillus flavus, post-harvest practice surveys, and population dietary exposure data into usable, limited, and rejected categories with explicit country-level coverage assessment.",
+      "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+      "done_condition": "At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering contamination test method, geographic grain, crop specificity, sampling frame adequacy, and intervention-relevance.",
+      "tasks_file": "problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/tasks.json",
+      "problem_file": "problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/problem.md"
     },
     {
       "pack_id": "food-security/crop-yield-gap-sub-saharan-africa",

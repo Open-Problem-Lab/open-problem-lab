@@ -157,3 +157,6 @@
 - name: "region:west-africa"
   color: "006B75"
   description: "West Africa region tag."
+- name: "domain:food-safety"
+  color: "0052CC"
+  description: "Food safety, mycotoxin, and foodborne contamination problem area."

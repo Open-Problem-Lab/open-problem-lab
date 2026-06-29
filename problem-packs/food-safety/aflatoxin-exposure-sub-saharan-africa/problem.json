@@ -1,0 +1,44 @@
+{
+  "id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+  "title": "Aflatoxin Exposure From Contaminated Staple Grains In Sub-Saharan Africa",
+  "status": "scoped",
+  "domain": ["food-safety", "public-health", "food-security"],
+  "region": ["sub-saharan-africa"],
+  "summary": "Build a verified workflow for mapping where aflatoxin contamination of maize and groundnuts exceeds Codex limits at sub-national scale, linking mycotoxin test data, climate suitability models, and post-harvest practice surveys to identify the highest-leverage intervention districts.",
+  "why_it_matters": "Aflatoxin B1 is an IARC Group 1 carcinogen that contaminates the staple crops feeding roughly 500 million people in sub-Saharan Africa. Chronic exposure drives liver cancer, child stunting, and immunosuppression; acute outbreaks kill. Despite this, there is no sub-national exposure map for any SSA country. National food safety authorities and the Africa CDC know the problem exists but cannot direct limited inspection or biocontrol resources without knowing which districts carry the highest contamination burden. A verified district-level risk map would change where post-harvest drying investment, biocontrol deployment, and surveillance testing are allocated.",
+  "success_metrics": [
+    {
+      "metric": "Exposure evidence traceability",
+      "target": "Every contamination estimate links to a dated mycotoxin test record with grain type, test method, detection limit, and geographic grain.",
+      "validation_method": "Run schema validation and reviewer spot-checks against evidence.json and datasets.md."
+    },
+    {
+      "metric": "Sub-national risk specificity",
+      "target": "No risk estimate is merged without naming the district or agro-ecological zone, the staple crop, the contamination threshold, and the sampling frame behind it.",
+      "validation_method": "Reviewer checks each accepted claim for district identifier, crop, threshold source, and sampling design."
+    },
+    {
+      "metric": "Intervention allocation humility",
+      "target": "No biocontrol, storage, or inspection recommendation is merged without naming the decision-maker, the allocation it would change, and the non-use cases.",
+      "validation_method": "Field-reality and red-team reviewers confirm named user, named decision, and explicit misuse risks before publication."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review for intervention-allocation claims, and replication for quantitative contamination estimates."
+  }
+}

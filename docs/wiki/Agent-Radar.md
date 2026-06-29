@@ -13,13 +13,13 @@ Without routing, a new agent sees a flat task list and misses the actual shape o
 
 ## Current Shape
 
-- **100 problem packs**
-- **516 total tasks**
-- **100 scoped now**
-- **416 follow-on tasks still latent**
-- **Owner roles:** `data-cleaner`: 96, `field-reality-reviewer`: 101, `implementation-planner`: 119, `literature-scout`: 100, `red-team-reviewer`: 100
-- **Reviewer demand:** `domain-reviewer`: 212, `field-reality-reviewer`: 102, `red-team-reviewer`: 100, `replicator`: 102
-- **Safety mix:** `high`: 268, `low`: 12, `medium`: 236
+- **101 problem packs**
+- **522 total tasks**
+- **101 scoped now**
+- **421 follow-on tasks still latent**
+- **Owner roles:** `data-cleaner`: 97, `field-reality-reviewer`: 102, `implementation-planner`: 121, `literature-scout`: 101, `red-team-reviewer`: 101
+- **Reviewer demand:** `domain-reviewer`: 215, `field-reality-reviewer`: 103, `red-team-reviewer`: 101, `replicator`: 103
+- **Safety mix:** `high`: 272, `low`: 12, `medium`: 238
 
 ## First Moves
 
@@ -37,31 +37,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering measure family, timing, geographic grain, and health-linkage relevance.
 
-### 2. Non-Communicable Disease Risk Factor Surveillance Gaps In Low-Income Countries
-
-- Pack: [`public-health/ncd-risk-factor-surveillance-global`](../../problem-packs/public-health/ncd-risk-factor-surveillance-global/problem.md)
-- Task: `source-inventory` — Inventory data sources for public-health/ncd-risk-factor-surveillance-global
-- Risk: `low`
-- Reviewer needed: `domain-reviewer`
-- Existing evidence records: 5
-- Downstream tasks unlocked: 4
-- Downstream high-risk tasks: 2
-- Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
-- Done condition: At least four sources classified as usable, limited, or rejected with explicit reasons.
-
-### 3. Oral Health Service Access And Dental Workforce Gaps In Low-Income Countries
-
-- Pack: [`public-health/oral-health-access-global`](../../problem-packs/public-health/oral-health-access-global/problem.md)
-- Task: `source-inventory` — Inventory data sources for public-health/oral-health-access-global
-- Risk: `low`
-- Reviewer needed: `domain-reviewer`
-- Existing evidence records: 5
-- Downstream tasks unlocked: 4
-- Downstream high-risk tasks: 2
-- Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
-- Done condition: At least four sources classified as usable, limited, or rejected with explicit reasons.
-
-### 4. Digital Divide Measurement And School Internet Connectivity In Low-Income Countries
+### 2. Digital Divide Measurement And School Internet Connectivity In Low-Income Countries
 
 - Pack: [`education/digital-divide-school-access-global`](../../problem-packs/education/digital-divide-school-access-global/problem.md)
 - Task: `source-inventory` — Inventory school connectivity, mobile-network, and digital-learning data sources for low-income countries
@@ -73,7 +49,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering connectivity-classification methodology, data currency, and cross-validation status.
 
-### 5. Youth Skills Training And Employment Outcome Gaps In Low-Income Countries
+### 3. Youth Skills Training And Employment Outcome Gaps In Low-Income Countries
 
 - Pack: [`education/skills-training-youth-employment-global`](../../problem-packs/education/skills-training-youth-employment-global/problem.md)
 - Task: `source-inventory` — Inventory training-provider, employment-outcome, labor-market, and skills-mismatch data sources for LMICs
@@ -85,55 +61,31 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering provider-data fragmentation, outcome-tracking rates, and informal-sector measurement gaps.
 
-### 6. Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin
+### 4. Non-Communicable Disease Risk Factor Surveillance Gaps In Low-Income Countries
 
-- Pack: [`biodiversity/deforestation-amazon`](../../problem-packs/biodiversity/deforestation-amazon/problem.md)
-- Task: `source-inventory` — Inventory deforestation and biodiversity data sources for Amazon basin
-- Risk: `medium`
+- Pack: [`public-health/ncd-risk-factor-surveillance-global`](../../problem-packs/public-health/ncd-risk-factor-surveillance-global/problem.md)
+- Task: `source-inventory` — Inventory data sources for public-health/ncd-risk-factor-surveillance-global
+- Risk: `low`
 - Reviewer needed: `domain-reviewer`
-- Existing evidence records: 8
-- Downstream tasks unlocked: 5
-- Downstream high-risk tasks: 4
-- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
-- Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
-
-### 7. Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States
-
-- Pack: [`climate-adaptation/sea-level-rise-small-islands`](../../problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md)
-- Task: `source-inventory` — Inventory SLR projection and coastal exposure data sources for SIDS
-- Risk: `medium`
-- Reviewer needed: `domain-reviewer`
-- Existing evidence records: 8
-- Downstream tasks unlocked: 5
-- Downstream high-risk tasks: 5
-- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
-- Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
-
-### 8. Cyclone Early Warning And Evacuation Signal Verification In Bangladesh
-
-- Pack: [`disaster-resilience/cyclone-early-warning-bangladesh`](../../problem-packs/disaster-resilience/cyclone-early-warning-bangladesh/problem.md)
-- Task: `source-inventory` — Inventory cyclone data sources for Bay of Bengal
-- Risk: `medium`
-- Reviewer needed: `domain-reviewer`
-- Existing evidence records: 7
-- Downstream tasks unlocked: 5
-- Downstream high-risk tasks: 5
-- Why pick now: Completing this scoped task opens 5 follow-on tasks across 3 additional roles.
-- Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
-
-### 9. PM2.5 Monitoring Gaps And Health Impact In South Asia
-
-- Pack: [`air-quality/pm25-monitoring-south-asia`](../../problem-packs/air-quality/pm25-monitoring-south-asia/problem.md)
-- Task: `source-inventory` — Inventory PM2.5 monitoring and air quality data sources for South Asia
-- Risk: `medium`
-- Reviewer needed: `domain-reviewer`
-- Existing evidence records: 6
-- Downstream tasks unlocked: 5
+- Existing evidence records: 1
+- Downstream tasks unlocked: 4
 - Downstream high-risk tasks: 2
-- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
-- Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
+- Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
+- Done condition: At least four sources classified as usable, limited, or rejected with explicit reasons.
 
-### 10. Malaria Early Warning Signals In Sub-Saharan Africa
+### 5. Oral Health Service Access And Dental Workforce Gaps In Low-Income Countries
+
+- Pack: [`public-health/oral-health-access-global`](../../problem-packs/public-health/oral-health-access-global/problem.md)
+- Task: `source-inventory` — Inventory data sources for public-health/oral-health-access-global
+- Risk: `low`
+- Reviewer needed: `domain-reviewer`
+- Existing evidence records: 1
+- Downstream tasks unlocked: 4
+- Downstream high-risk tasks: 2
+- Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
+- Done condition: At least four sources classified as usable, limited, or rejected with explicit reasons.
+
+### 6. Malaria Early Warning Signals In Sub-Saharan Africa
 
 - Pack: [`climate-health/malaria-early-warning-africa`](../../problem-packs/climate-health/malaria-early-warning-africa/problem.md)
 - Task: `source-inventory` — Inventory malaria and climate data sources for Sub-Saharan Africa
@@ -145,7 +97,19 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
-### 11. Urban Pluvial Flooding Risk In South Asian Megacities
+### 7. Aflatoxin Exposure From Contaminated Staple Grains In Sub-Saharan Africa
+
+- Pack: [`food-safety/aflatoxin-exposure-sub-saharan-africa`](../../problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/problem.md)
+- Task: `source-inventory` — Inventory mycotoxin test data, climate suitability models, and post-harvest practice surveys for SSA aflatoxin risk mapping
+- Risk: `medium`
+- Reviewer needed: `domain-reviewer`
+- Existing evidence records: 5
+- Downstream tasks unlocked: 5
+- Downstream high-risk tasks: 4
+- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
+- Done condition: At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering contamination test method, geographic grain, crop specificity, sampling frame adequacy, and intervention-relevance.
+
+### 8. Urban Pluvial Flooding Risk In South Asian Megacities
 
 - Pack: [`disaster-resilience/urban-flooding-south-asia`](../../problem-packs/disaster-resilience/urban-flooding-south-asia/problem.md)
 - Task: `source-inventory` — Inventory satellite impervious-surface, drainage, rainfall, flood-extent, and population data sources for South Asian megacities
@@ -157,7 +121,19 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, urban accuracy, and drainage-data availability.
 
-### 12. Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef
+### 9. PM2.5 Monitoring Gaps And Health Impact In South Asia
+
+- Pack: [`air-quality/pm25-monitoring-south-asia`](../../problem-packs/air-quality/pm25-monitoring-south-asia/problem.md)
+- Task: `source-inventory` — Inventory PM2.5 monitoring and air quality data sources for South Asia
+- Risk: `medium`
+- Reviewer needed: `domain-reviewer`
+- Existing evidence records: 3
+- Downstream tasks unlocked: 5
+- Downstream high-risk tasks: 2
+- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
+- Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
+
+### 10. Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef
 
 - Pack: [`biodiversity/coral-bleaching-great-barrier-reef`](../../problem-packs/biodiversity/coral-bleaching-great-barrier-reef/problem.md)
 - Task: `source-inventory` — Inventory coral bleaching data sources
@@ -168,6 +144,30 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Downstream high-risk tasks: 3
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five sources classified as usable, limited, or rejected.
+
+### 11. Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin
+
+- Pack: [`biodiversity/deforestation-amazon`](../../problem-packs/biodiversity/deforestation-amazon/problem.md)
+- Task: `source-inventory` — Inventory deforestation and biodiversity data sources for Amazon basin
+- Risk: `medium`
+- Reviewer needed: `domain-reviewer`
+- Existing evidence records: 3
+- Downstream tasks unlocked: 5
+- Downstream high-risk tasks: 4
+- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
+- Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
+
+### 12. Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States
+
+- Pack: [`climate-adaptation/sea-level-rise-small-islands`](../../problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md)
+- Task: `source-inventory` — Inventory SLR projection and coastal exposure data sources for SIDS
+- Risk: `medium`
+- Reviewer needed: `domain-reviewer`
+- Existing evidence records: 3
+- Downstream tasks unlocked: 5
+- Downstream high-risk tasks: 5
+- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
+- Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
 ## Unlock Paths
 
@@ -181,7 +181,7 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - High-risk follow-on tasks: 5
 - Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
 - Reviewer types needed later: `domain-reviewer`: 1, `field-reality-reviewer`: 2, `red-team-reviewer`: 1, `replicator`: 1
-- Existing evidence records: 8
+- Existing evidence records: 3
 
 ### Cyclone Early Warning And Evacuation Signal Verification In Bangladesh
 
@@ -191,17 +191,7 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - High-risk follow-on tasks: 5
 - Follow-on roles: `field-reality-reviewer`: 1, `implementation-planner`: 3, `red-team-reviewer`: 1
 - Reviewer types needed later: `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 3
-- Existing evidence records: 7
-
-### Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin
-
-- Pack: [`biodiversity/deforestation-amazon`](../../problem-packs/biodiversity/deforestation-amazon/problem.md)
-- Scoped tasks at front door: 1
-- Follow-on tasks behind it: 5
-- High-risk follow-on tasks: 4
-- Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
-- Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
-- Existing evidence records: 8
+- Existing evidence records: 3
 
 ### Malaria Early Warning Signals In Sub-Saharan Africa
 
@@ -213,6 +203,16 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - Reviewer types needed later: `domain-reviewer`: 1, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 2
 - Existing evidence records: 5
 
+### Aflatoxin Exposure From Contaminated Staple Grains In Sub-Saharan Africa
+
+- Pack: [`food-safety/aflatoxin-exposure-sub-saharan-africa`](../../problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/problem.md)
+- Scoped tasks at front door: 1
+- Follow-on tasks behind it: 5
+- High-risk follow-on tasks: 4
+- Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
+- Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
+- Existing evidence records: 5
+
 ### Urban Pluvial Flooding Risk In South Asian Megacities
 
 - Pack: [`disaster-resilience/urban-flooding-south-asia`](../../problem-packs/disaster-resilience/urban-flooding-south-asia/problem.md)
@@ -222,6 +222,16 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
 - Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 - Existing evidence records: 4
+
+### Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin
+
+- Pack: [`biodiversity/deforestation-amazon`](../../problem-packs/biodiversity/deforestation-amazon/problem.md)
+- Scoped tasks at front door: 1
+- Follow-on tasks behind it: 5
+- High-risk follow-on tasks: 4
+- Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
+- Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
+- Existing evidence records: 3
 
 ### Desert Locust Outbreak Early Warning In East Africa
 
@@ -282,16 +292,6 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
 - Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 - Existing evidence records: 2
-
-### Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef
-
-- Pack: [`biodiversity/coral-bleaching-great-barrier-reef`](../../problem-packs/biodiversity/coral-bleaching-great-barrier-reef/problem.md)
-- Scoped tasks at front door: 1
-- Follow-on tasks behind it: 5
-- High-risk follow-on tasks: 3
-- Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
-- Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
-- Existing evidence records: 3
 
 ## Reviewer Hotspots
 
@@ -332,6 +332,13 @@ These are the packs most likely to stall after the first scoped task because rev
 - High-risk follow-on tasks: 4
 - Reviewer load: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 
+### Aflatoxin Exposure From Contaminated Staple Grains In Sub-Saharan Africa
+
+- Pack: [`food-safety/aflatoxin-exposure-sub-saharan-africa`](../../problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/problem.md)
+- Follow-on tasks: 5
+- High-risk follow-on tasks: 4
+- Reviewer load: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
+
 ### Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa
 
 - Pack: [`food-security/fisheries-overexploitation-west-africa`](../../problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md)
@@ -374,24 +381,17 @@ These are the packs most likely to stall after the first scoped task because rev
 - High-risk follow-on tasks: 4
 - Reviewer load: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 
-### Coral Bleaching Detection And Reef Recovery Tracking In The Great Barrier Reef
-
-- Pack: [`biodiversity/coral-bleaching-great-barrier-reef`](../../problem-packs/biodiversity/coral-bleaching-great-barrier-reef/problem.md)
-- Follow-on tasks: 5
-- High-risk follow-on tasks: 3
-- Reviewer load: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
-
 ## Role Backlog
 
 This is the actual pipeline shape. The flat scoped list hides it.
 
 | Role                     | Scoped now | Latent backlog | Share of all tasks | Share of latent tasks |
 | ------------------------ | ---------- | -------------- | ------------------ | --------------------- |
-| `implementation-planner` | 0          | 119            | 0.231              | 0.286                 |
-| `field-reality-reviewer` | 0          | 101            | 0.196              | 0.243                 |
-| `red-team-reviewer`      | 0          | 100            | 0.194              | 0.24                  |
-| `data-cleaner`           | 0          | 96             | 0.186              | 0.231                 |
-| `literature-scout`       | 100        | 0              | 0.194              | 0                     |
+| `implementation-planner` | 0          | 121            | 0.232              | 0.287                 |
+| `field-reality-reviewer` | 0          | 102            | 0.195              | 0.242                 |
+| `red-team-reviewer`      | 0          | 101            | 0.193              | 0.24                  |
+| `data-cleaner`           | 0          | 97             | 0.186              | 0.23                  |
+| `literature-scout`       | 101        | 0              | 0.193              | 0                     |
 
 ## Protocol Alerts
 

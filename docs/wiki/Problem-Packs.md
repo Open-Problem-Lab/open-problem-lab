@@ -400,6 +400,16 @@ Build a verified workflow for mapping the gap between electricity access and pro
 
 Build a verified workflow for identifying where grid infrastructure, regulatory, and financial bottlenecks prevent renewable energy integration in LMICs, linking grid-capacity data, renewable-resource data, and investment-flow data at national and sub-national scale.
 
+## Aflatoxin Exposure From Contaminated Staple Grains In Sub-Saharan Africa
+
+- ID: `food-safety/aflatoxin-exposure-sub-saharan-africa`
+- Status: `scoped`
+- Domain: `food-safety`, `public-health`, `food-security`
+- Region: `sub-saharan-africa`
+- Source: [problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa](../../problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/problem.md)
+
+Build a verified workflow for mapping where aflatoxin contamination of maize and groundnuts exceeds Codex limits at sub-national scale, linking mycotoxin test data, climate suitability models, and post-harvest practice surveys to identify the highest-leverage intervention districts.
+
 ## Crop Yield Gap Analysis For Smallholder Farmers In Sub-Saharan Africa
 
 - ID: `food-security/crop-yield-gap-sub-saharan-africa`

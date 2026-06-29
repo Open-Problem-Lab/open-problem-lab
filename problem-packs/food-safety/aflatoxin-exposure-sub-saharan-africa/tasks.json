@@ -1,0 +1,117 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+    "title": "Inventory mycotoxin test data, climate suitability models, and post-harvest practice surveys for SSA aflatoxin risk mapping",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory that separates mycotoxin contamination test data (market surveys, household samples, regulatory monitoring), climate suitability models for Aspergillus flavus, post-harvest practice surveys, and population dietary exposure data into usable, limited, and rejected categories with explicit country-level coverage assessment.",
+    "inputs": [
+      "IARC and WHO aflatoxin hazard assessments",
+      "Codex Alimentarius maximum limits documentation",
+      "Published mycotoxin contamination surveys from SSA countries",
+      "FAO and national food safety authority monitoring data",
+      "Aflasafe biocontrol field trial publications",
+      "Climate reanalysis and Aspergillus suitability model documentation",
+      "DHS and national nutrition survey dietary recall modules for staple consumption patterns"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each source for URL, date, access status, test method or model documentation, geographic grain, crop type coverage, sampling frame, and stated limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering contamination test method, geographic grain, crop specificity, sampling frame adequacy, and intervention-relevance."
+  },
+  {
+    "id": "contamination-data-compilation",
+    "problem_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+    "title": "Compile district-level aflatoxin contamination test results for one to three SSA countries",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A cleaned contamination dataset for one to three selected countries with documented grain, test method, detection limit, sampling frame, district identifier, collection date, and known missingness patterns.",
+    "inputs": [
+      "source inventory",
+      "published contamination survey data",
+      "national food safety authority monitoring records where accessible",
+      "FAO mycotoxin occurrence databases",
+      "administrative boundary source",
+      "population denominator source"
+    ],
+    "expected_artifact": "datasets.md and validation.md updates with compiled contamination data inventory and data quality rules.",
+    "validation_method": "Replicator reruns the data compilation on the documented sources and confirms grain, test method consistency, missingness handling, and district identifier matching.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Every contamination data point has a documented test method, detection limit, grain type, sampling frame, district identifier, collection date, and missingness flag, and at least one country has enough data density to attempt sub-national risk mapping."
+  },
+  {
+    "id": "climate-suitability-review",
+    "problem_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+    "title": "Review climate and crop-stress variables driving Aspergillus infection risk",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A ranked list of candidate climate and crop-stress variables (temperature, humidity, drought stress, insect damage, rainfall timing) with hypothesized lead-time and known data availability for SSA sub-national analysis.",
+    "inputs": [
+      "temperature and humidity reanalysis data",
+      "rainfall and drought index data",
+      "crop calendar data for maize and groundnut growing seasons",
+      "published Aspergillus ecophysiological studies",
+      "district-level contamination baseline where available"
+    ],
+    "expected_artifact": "task-map.md and validation.md updates with candidate variable tests.",
+    "validation_method": "Back-test candidate variables against historical contamination survey data and report which variables show spatial or temporal correlation with measured contamination.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "No candidate climate variable is accepted as a risk predictor without back-test results, limitations, and replication status against at least one country's contamination data."
+  },
+  {
+    "id": "biocontrol-intervention-review",
+    "problem_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+    "title": "Review biocontrol and post-harvest intervention evidence with failure modes and scaling constraints",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A structured review of Aflasafe biocontrol, improved drying practices, hermetic storage, and sorting interventions with efficacy range, cost, scaling requirements, and documented failure modes in smallholder contexts.",
+    "inputs": [
+      "Aflasafe field trial publications",
+      "post-harvest technology intervention studies from SSA",
+      "extension service capacity documentation",
+      "smallholder farming system constraints literature"
+    ],
+    "expected_artifact": "outputs.md and validation.md updates with intervention evidence summary and allocation decision framework.",
+    "validation_method": "Reviewer checks that each intervention has documented efficacy, cost, scaling requirement, failure mode, and a named decision-maker. A second reviewer replicates the evidence-strength assessment independently.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every intervention recommendation names the decision-maker, the allocation it would change, the evidence strength, and at least one failure mode that could make deployment ineffective or harmful, with replication of the evidence-strength assessment by a second reviewer."
+  },
+  {
+    "id": "red-team-misuse-review",
+    "problem_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+    "title": "Red-team how contamination risk maps could be misused for trade stigmatization, punitive inspection, or market exclusion",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying how district-level contamination risk maps could stigmatize regions, trigger unjustified trade restrictions, justify punitive inspection of smallholder farmers, or mislead consumers about local food safety.",
+    "inputs": ["draft risk map", "intervention review", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk misuse scenario has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every field-facing risk map output is either blocked, qualified with trade-protection warnings, or gated behind explicit safeguards against stigmatization and punitive use, with replicated red-team review before publication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
+    "title": "Check whether contamination risk maps match food safety authority and extension service decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether the proposed risk map would change a real decision for a national food safety authority, extension service manager, or public health official without creating worse incentives.",
+    "inputs": [
+      "draft risk map",
+      "national food safety authority priorities",
+      "extension service capacity constraints",
+      "reviewer notes"
+    ],
+    "expected_artifact": "playbooks.md update with named use and non-use cases.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, required workflow, and misuse risk, then a second reviewer replicates the check on the stated non-use cases.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The artifact has a named user, named decision, named intervention, explicit non-use cases, and replicated field-reality review before publication."
+  }
+]

@@ -4,12 +4,13 @@
     "schema_version": 1,
     "total_packs": 103,
     "total_tasks": 534,
-    "scoped_tasks": 102,
-    "latent_tasks": 432,
+    "scoped_tasks": 101,
+    "latent_tasks": 433,
     "status_counts": {
-      "scoped": 102,
+      "scoped": 101,
       "needs-triage": 431,
-      "needs-review": 1
+      "needs-review": 1,
+      "accepted": 1
     },
     "owner_role_counts": {
       "literature-scout": 103,
@@ -19,7 +20,7 @@
       "field-reality-reviewer": 104
     },
     "scoped_role_counts": {
-      "literature-scout": 102
+      "literature-scout": 101
     },
     "reviewer_needed_counts": {
       "domain-reviewer": 221,
@@ -450,28 +451,6 @@
         "tasks_file": "problem-packs/public-health/lead-exposure-urban-global/tasks.json"
       },
       {
-        "pack_id": "food-security/livestock-disease-surveillance-east-africa",
-        "pack_title": "Livestock Disease Surveillance And Pastoralist Livelihood Risk In East Africa",
-        "scoped_tasks": 1,
-        "downstream_tasks": 5,
-        "downstream_high_risk_tasks": 4,
-        "downstream_by_role": {
-          "data-cleaner": 1,
-          "implementation-planner": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "downstream_reviewers_needed": {
-          "replicator": 1,
-          "domain-reviewer": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "evidence_count": 2,
-        "problem_file": "problem-packs/food-security/livestock-disease-surveillance-east-africa/problem.md",
-        "tasks_file": "problem-packs/food-security/livestock-disease-surveillance-east-africa/tasks.json"
-      },
-      {
         "pack_id": "public-health/child-mortality-inequality-global",
         "pack_title": "Under-Five Mortality Sub-National Inequality Tracking In Low-Income Countries",
         "scoped_tasks": 1,
@@ -492,6 +471,28 @@
         "evidence_count": 2,
         "problem_file": "problem-packs/public-health/child-mortality-inequality-global/problem.md",
         "tasks_file": "problem-packs/public-health/child-mortality-inequality-global/tasks.json"
+      },
+      {
+        "pack_id": "public-health/substandard-falsified-medicines-global",
+        "pack_title": "Substandard And Falsified Medicine Detection And Surveillance Gaps In Low- And Middle-Income Countries",
+        "scoped_tasks": 1,
+        "downstream_tasks": 5,
+        "downstream_high_risk_tasks": 3,
+        "downstream_by_role": {
+          "implementation-planner": 2,
+          "data-cleaner": 1,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "downstream_reviewers_needed": {
+          "domain-reviewer": 2,
+          "replicator": 1,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "evidence_count": 4,
+        "problem_file": "problem-packs/public-health/substandard-falsified-medicines-global/problem.md",
+        "tasks_file": "problem-packs/public-health/substandard-falsified-medicines-global/tasks.json"
       }
     ],
     "reviewer_hotspots": [
@@ -507,6 +508,19 @@
         "downstream_high_risk_tasks": 4,
         "downstream_tasks": 6,
         "problem_file": "problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md"
+      },
+      {
+        "pack_id": "food-security/livestock-disease-surveillance-east-africa",
+        "pack_title": "Livestock Disease Surveillance And Pastoralist Livelihood Risk In East Africa",
+        "downstream_reviewers_needed": {
+          "domain-reviewer": 3,
+          "replicator": 1,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "downstream_high_risk_tasks": 4,
+        "downstream_tasks": 6,
+        "problem_file": "problem-packs/food-security/livestock-disease-surveillance-east-africa/problem.md"
       },
       {
         "pack_id": "climate-adaptation/sea-level-rise-small-islands",
@@ -586,19 +600,6 @@
         "problem_file": "problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/problem.md"
       },
       {
-        "pack_id": "food-security/livestock-disease-surveillance-east-africa",
-        "pack_title": "Livestock Disease Surveillance And Pastoralist Livelihood Risk In East Africa",
-        "downstream_reviewers_needed": {
-          "replicator": 1,
-          "domain-reviewer": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "downstream_high_risk_tasks": 4,
-        "downstream_tasks": 5,
-        "problem_file": "problem-packs/food-security/livestock-disease-surveillance-east-africa/problem.md"
-      },
-      {
         "pack_id": "food-security/locust-outbreak-east-africa",
         "pack_title": "Desert Locust Outbreak Early Warning In East Africa",
         "downstream_reviewers_needed": {
@@ -664,7 +665,7 @@
         "scoped_tasks": 0,
         "latent_tasks": 104,
         "share_of_all_tasks": 0.195,
-        "share_of_latent_tasks": 0.241
+        "share_of_latent_tasks": 0.24
       },
       {
         "owner_role": "red-team-reviewer",
@@ -682,10 +683,10 @@
       },
       {
         "owner_role": "literature-scout",
-        "scoped_tasks": 102,
-        "latent_tasks": 1,
+        "scoped_tasks": 101,
+        "latent_tasks": 2,
         "share_of_all_tasks": 0.193,
-        "share_of_latent_tasks": 0.002
+        "share_of_latent_tasks": 0.005
       }
     ]
   }

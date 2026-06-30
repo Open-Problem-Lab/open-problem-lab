@@ -1,0 +1,40 @@
+[
+  {
+    "id": "livestock-data-sufficiency",
+    "problem_id": "food-security/livestock-disease-surveillance-east-africa",
+    "claim": "Available public data sources are sufficient to establish that livestock diseases (RVF, PPR, CBPP) cause significant economic losses for East African pastoralists (FAO 2023), that satellite NDVI and rainfall can predict RVF outbreak risk with 2-3 month lead time (Anyamba et al. 2009), and that NDVI-based indices can predict drought-related livestock mortality at index scale (Mude et al. 2009, IBLI Marsabit). CHIRPS provides the standard rainfall input at 0.05 degree resolution (Funk et al. 2014). WOAH WAHIS collects official disease outbreak reports but with incomplete sub-national coverage in pastoralist areas. However, no public dataset provides a linked disease-forage-market compound risk map at sub-national grain for East African pastoralist regions. The available data can support country-level RVF early warning and index-based insurance, but cannot identify which specific pastoralist areas face the highest compound risk from concurrent disease outbreak, forage deficit, and market-price collapse without ground-level disease surveillance data that does not currently exist in a comparable cross-country form.",
+    "domain": ["food-security", "public-health"],
+    "status": "unverified",
+    "evidence": [
+      "fao-livestock-east-africa-2023",
+      "anyamba-rvf-satellite-early-warning-2009",
+      "woah-wahis-reporting-system-2024",
+      "ppr-global-eradication-programme-2014",
+      "cbpp-africa-reference-2019",
+      "ibli-marsabit-pilot-2009",
+      "chirps-precipitation-dataset-2015"
+    ],
+    "failure_modes": [
+      "A reader treats the IBLI NDVI-mortality relationship as evidence that satellite indices predict disease-related mortality, when the Marsabit pilot validated only drought-related mortality. Disease outbreaks require ground surveillance, not vegetation proxies.",
+      "A reader uses WAHIS outbreak reports as a complete picture of disease distribution in pastoralist East Africa, when reporting depends on veterinary field capacity that is absent in many remote areas. Absence of WAHIS reports does not mean absence of disease.",
+      "A reader treats the RVF satellite prediction model (Anyamba et al. 2009) as applicable to PPR and CBPP, which have different environmental drivers (direct contact vs vector-borne) and no comparable satellite early warning system.",
+      "A decision-maker uses country-level livestock GDP estimates to infer district-level disease burden, conflating national averages with pastoralist-area specific risk.",
+      "A reader treats PPR Global Eradication Programme vaccination coverage figures as proof of disease absence, when coverage gaps in pastoralist areas mean underreporting of ongoing transmission.",
+      "A reader uses CHIRPS rainfall anomalies as a direct proxy for forage availability without acknowledging that NDVI provides the vegetation response signal and rainfall-to-forage relationships vary by soil type, grazing pressure, and land cover."
+    ],
+    "kill_condition": "A reviewer identifies a public dataset providing sub-national livestock disease surveillance, forage condition, and market price data at district-level grain for at least five East African countries with consistent methodology and less than 6-month reporting lag, or finds that an East African regional body (AU-IBAR, IGAD CEWARN, or equivalent) has begun systematic sub-national compound livestock livelihood risk reporting covering pastoralist districts in at least five countries.",
+    "review_required": ["domain-reviewer", "red-team-reviewer"],
+    "safety_level": "medium",
+    "submitter": "codex-agent",
+    "created_date": "2026-06-30",
+    "last_updated": "2026-06-30",
+    "confidence": "medium",
+    "limitations": [
+      "The claim is about public data availability for sub-national compound livestock disease and livelihood risk analysis, not about actual disease status or pastoralist livelihoods in specific locations.",
+      "The assessment that no comparable cross-country sub-national compound risk dataset exists is an inference from reviewing available data portals, WAHIS documentation, and published literature, not a systematic survey of all national veterinary databases.",
+      "Some East African countries may have national livestock disease surveillance systems that are not publicly accessible or not in English; these were not reviewed.",
+      "The IBLI NDVI-mortality validation is specific to Marsabit, Kenya and may not generalize to other pastoralist systems with different species mixes, rainfall regimes, or market structures.",
+      "The PPR and CBPP references predate the most recent FAO/WOAH eradication programme updates; current endemicity and vaccination coverage may differ."
+    ]
+  }
+]

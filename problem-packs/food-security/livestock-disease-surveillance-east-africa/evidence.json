@@ -24,14 +24,117 @@
     "evidence_type": "peer-reviewed-study",
     "source": {
       "title": "Prediction of a Rift Valley fever outbreak",
-      "url": "https://www.pnas.org/doi/10.1073/pnas.0806490106"
+      "url": "https://www.pnas.org/doi/10.1073/pnas.0806490106",
+      "doi": "10.1073/pnas.0806490106"
     },
-    "source_date": "2009-02-17",
+    "source_date": "2009-01-20",
     "access_date": "2026-06-06",
     "method": "Reviewed RVF prediction model, NDVI-SST methodology, and validation results.",
     "limitations": [
       "Model performance varies by region and outbreak magnitude.",
       "Does not predict PPR or CBPP, which have different environmental drivers."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "woah-wahis-reporting-system-2024",
+    "problem_id": "food-security/livestock-disease-surveillance-east-africa",
+    "claim": "The World Organisation for Animal Health (WOAH) operates WAHIS as the primary global system for official animal disease reporting, collecting outbreak notifications and six-monthly reports from member countries, but reporting completeness, timeliness, and sub-national spatial precision remain variable, particularly in pastoralist regions of East Africa.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "The Science System of the World Organisation for Animal Health",
+      "url": "https://wahis.woah.org/",
+      "doi": "10.20506/woah.3534"
+    },
+    "source_date": "2024-07-19",
+    "access_date": "2026-06-30",
+    "method": "Reviewed WOAH WAHIS documentation including the science system overview article and the public WAHIS interface to assess reporting frequency, spatial grain, and known gaps for East African livestock diseases including RVF, PPR, and CBPP.",
+    "limitations": [
+      "WAHIS outbreak reports are country-reported and their completeness depends on national veterinary surveillance capacity, which is uneven across East African countries.",
+      "The system provides event-level outbreak coordinates when reported, but many pastoralist areas lack the field surveillance needed to trigger reports in the first place.",
+      "Six-monthly reports aggregate at country level and do not provide sub-national disease distribution maps.",
+      "The WOAH science system article describes institutional framework and processes, not a systematic assessment of reporting completeness gaps."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "ppr-global-eradication-programme-2014",
+    "problem_id": "food-security/livestock-disease-surveillance-east-africa",
+    "claim": "Peste des petits ruminants (PPR) is endemic across most of Africa, the Middle East, and South Asia with an estimated 1.7 billion sheep and goats at risk, and the FAO-WOAH Global Eradication Programme launched in 2015 aims to eradicate PPR by 2030, but as of the programme's mid-term assessments vaccination coverage in East African pastoralist areas remains insufficient to achieve the 2030 target.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Strategies and Future of Global Eradication of Peste des Petits Ruminants Virus",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-662-45165-6_13",
+      "doi": "10.1007/978-3-662-45165-6_13"
+    },
+    "source_date": "2014-12-03",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the chapter on PPR eradication strategies in the Springer volume Peste des Petits Ruminants Virus, covering global distribution, at-risk population estimates, vaccination strategy, and eradication timeline.",
+    "limitations": [
+      "The 1.7 billion at-risk figure is a global estimate from FAO/woAH and does not specify the East African subset.",
+      "The chapter was published in 2014 and predates the 2015 programme launch; mid-term coverage assessments require newer FAO reports.",
+      "Vaccination coverage in pastoralist areas is difficult to verify because denominator data (sheep and goat populations) in remote regions is itself uncertain."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "cbpp-africa-reference-2019",
+    "problem_id": "food-security/livestock-disease-surveillance-east-africa",
+    "claim": "Contagious bovine pleuropneumonia (CBPP) remains endemic in sub-Saharan Africa with occurrence reported from at least 25 countries, causing estimated annual losses exceeding 2 percent of cattle herd value in affected populations, and is listed by WOAH as a notifiable disease requiring mandatory reporting through WAHIS.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Contagious Bovine Pleuropneumonia",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-030-25385-1_20",
+      "doi": "10.1007/978-3-030-25385-1_20"
+    },
+    "source_date": "2019-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the CBPP chapter in Transboundary Animal Diseases in Sahelian Africa and Connected Regions, covering disease distribution, economic impact estimates, and surveillance challenges in African endemic regions.",
+    "limitations": [
+      "The 2 percent herd-value loss estimate is a modeled average and varies substantially by outbreak severity and cattle production system.",
+      "The chapter covers CBPP across sub-Saharan Africa broadly; East Africa-specific sub-national data is not systematically presented.",
+      "Published in 2019; subsequent outbreaks and control campaigns may have changed the endemicity map."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "ibli-marsabit-pilot-2009",
+    "problem_id": "food-security/livestock-disease-surveillance-east-africa",
+    "claim": "Index-Based Livestock Insurance (IBLI) piloted in Marsabit, Kenya demonstrated that satellite-derived NDVI can predict livestock mortality at index scale, establishing that satellite forage indices are a viable proxy for pastoralist livestock loss and providing the methodological foundation for linking vegetation conditions to livelihood risk.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Index Based Livestock Insurance for Northern Kenya's Arid and Semi-Arid Lands: The Marsabit Pilot",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1844758",
+      "doi": "10.2139/ssrn.1844758"
+    },
+    "source_date": "2009-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the IBLI Marsabit pilot design paper covering index construction from NDVI, predicted livestock mortality validation, and contract payout structure.",
+    "limitations": [
+      "The pilot covers a single Kenyan district and the NDVI-mortality relationship may not transfer to other East African pastoralist systems with different livestock species mixes or vegetation dynamics.",
+      "The index measures drought-related mortality, not disease-related mortality; the two causes require separate detection approaches.",
+      "SSRN working paper status; the methodology was subsequently validated in peer-reviewed journals but this source is the original pilot design."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "chirps-precipitation-dataset-2015",
+    "problem_id": "food-security/livestock-disease-surveillance-east-africa",
+    "claim": "The Climate Hazards Group Infrared Precipitation with Stations (CHIRPS) dataset provides quasi-global daily to monthly rainfall estimates at 0.05 degree resolution from 1981 to present, blending satellite cold-cloud-duration data with station observations, and is the standard precipitation input for drought and vegetation monitoring in East African pastoralist regions.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "The quasi-global precipitation time series for drought monitoring",
+      "url": "https://pubs.usgs.gov/publication/ds832",
+      "doi": "10.3133/ds832"
+    },
+    "source_date": "2014-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the USGS Data Series 832 technical documentation for CHIRPS, covering data sources (cold cloud duration, TRMM, station data), spatial and temporal resolution, validation against gauge networks, and known performance in East Africa.",
+    "limitations": [
+      "CHIRPS performance degrades in regions with sparse station networks, which includes much of pastoralist East Africa.",
+      "Rainfall estimates are gridded model output, not direct measurement; uncertainty increases in mountainous and arid areas.",
+      "The dataset documents precipitation, not vegetation response; NDVI provides the direct forage condition signal.",
+      "The 2014 Data Series describes the v1.8 product; subsequent CHIRPS versions may have different performance characteristics."
     ],
     "confidence": "high"
   }

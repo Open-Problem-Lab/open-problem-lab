@@ -1,0 +1,43 @@
+[
+  {
+    "id": "iodine-deficiency-data-sufficiency",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "claim": "Available public data sources are sufficient for global and national-level framing of iodine deficiency burden (Andersson et al. 2012 estimate of 2 billion with insufficient intake, IGN Global Scorecard 2024 for country-level status and coverage) and for sub-national coverage mapping where DHS or MICS salt iodization testing modules have been administered, but no public dataset provides sub-national iodine status (median UIC by region or province) for more than a small number of LMICs, and no globally comprehensive iodine status update has been published since 2012 despite documented coverage reversals in multiple countries. The sub-national iodine status gap cannot be filled with currently available public data alone, particularly because pregnancy-specific UIC surveys are absent in most LMICs, small-scale salt producer iodization is poorly documented, and iodine loss during storage and cooking means household-level coverage overstates actual iodine intake. The stagnation of global salt iodization coverage at approximately 70 percent for over a decade, combined with documented backsliding in countries that withdrew program support, constitutes a neglected reversal of a previously successful public health intervention that no institution is systematically tracking at sub-national scale.",
+    "domain": ["nutrition", "public-health"],
+    "status": "unverified",
+    "evidence": [
+      "andersson-global-iodine-2012",
+      "who-unicef-iodine-fact-sheet-2024",
+      "ign-global-scorecard-2024",
+      "unicef-sowc-2019",
+      "pearce-iodine-pregnancy-2016",
+      "copenhagen-consensus-salt-iodization-2008",
+      "who-salt-iodization-guidance-2014",
+      "ign-backsliding-countries-2023",
+      "dzeuta-tempered-salt-sub-saharan-africa-2022"
+    ],
+    "failure_modes": [
+      "A reader treats the Andersson et al. 2012 estimate of 2 billion as current rather than reflecting 2011 data, over a a decade old with no update published.",
+      "A reader uses the IGN Global Scorecard national-level coverage figures for cross-country comparison without noting that coverage definitions, testing protocols, and survey years vary across countries.",
+      "A policy maker interprets coverage stagnation as evidence that salt iodization has failed as a strategy rather than as evidence that program support has been withdrawn and enforcement weakened.",
+      "A reader treats the 86 percent UNICEF coverage figure as global household coverage when it refers only to regions with iodization programs, excluding countries without programs from the denominator.",
+      "An advocate uses coverage gap maps to defame small-scale salt producers as obstacles to universal iodization without acknowledging that small producers lack access to iodization technology and technical support.",
+      "A reader interprets the absence of sub-national iodine status data as evidence that iodine deficiency is not a significant problem in specific LMIC sub-national populations.",
+      "A decision-maker uses the cost-effectiveness framing to justify shifting iodization costs to consumers through salt price increases without considering the equity impact on poor households."
+    ],
+    "kill_condition": "A reviewer identifies a publicly available dataset providing sub-national iodine status (median UIC by region or province) for at least 20 LMICs with consistent methodology, population group standardization, and temporal currency within 5 years, or finds that WHO, UNICEF, or the IGN has published a globally comprehensive iodine status update since 2024 with sub-national breakdowns for at least 30 countries, or finds that a systematic global assessment of salt iodization coverage trends documenting the direction and magnitude of coverage change in at least 50 countries has been published.",
+    "review_required": ["domain-reviewer", "red-team-reviewer"],
+    "safety_level": "high",
+    "submitter": "codex-agent",
+    "created_date": "2026-06-30",
+    "last_updated": "2026-06-30",
+    "confidence": "medium",
+    "limitations": [
+      "The claim is about public data availability for sub-national iodine status and salt iodization coverage analysis, not about actual iodine deficiency rates in specific countries.",
+      "The assessment of no globally comprehensive update since 2012 is based on reviewing WHO, UNICEF, and IGN publications and academic literature; a comprehensive update may exist in a language or database not reviewed.",
+      "Some countries may have sub-national iodine status data in national survey reports that are not publicly accessible or not in English; these were not reviewed.",
+      "The coverage reversal documentation is based on IGN country reports and published case studies, not a systematic global assessment of coverage trends.",
+      "The stagnation at approximately 70 percent is based on the IGN Global Scorecard, which aggregates data from different years and methods across countries; the true global coverage trend may differ."
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "id": "nutrition/iodine-deficiency-salt-iodization-global",
+  "title": "Iodine Deficiency Disorders And Salt Iodization Coverage Gaps In Low- And Middle-Income Countries",
+  "status": "scoped",
+  "domain": ["nutrition", "public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for mapping sub-national iodine deficiency status and salt iodization coverage in low- and middle-income countries, linking population-level urinary iodine surveys, household salt iodization testing, and iodized salt supply chain data to identify where iodization program strengthening or reintroduction should be prioritized before coverage stagnation reverses two decades of gains.",
+  "why_it_matters": "WHO and the Iodine Global Network estimate that approximately 2 billion people have insufficient iodine intake, making it the most prevalent preventable cause of brain damage worldwide. Salt iodization is among the most cost-effective health interventions known at roughly 0.05 USD per child per year, yet global household coverage of adequately iodized salt has stagnated at approximately 70 percent for over a decade and is declining in multiple countries where programs have lost political and financial support. The decision-makers are UNICEF nutrition section chiefs, WHO MICs (micronutrient) program officers, national IDD (iodine deficiency disorders) elimination committees, and the Iodine Global Network, which collectively direct an estimated 2 to 3 million USD per year in dedicated iodization support. A verified sub-national iodine status and salt iodization coverage map would change where UNICEF country offices prioritize salt iodization program strengthening, where national governments target mandatory iodization legislation enforcement, and where the IGN deploys its declining technical assistance budget. Currently no public dataset maps iodine status at sub-national scale for more than a handful of countries, and the most recent global estimates are over a decade old. The problem is acutely neglected because iodine deficiency was declared solved in many countries during the 2000s, causing funding withdrawal, surveillance collapse, and coverage reversal that no one is systematically tracking.",
+  "success_metrics": [
+    {
+      "metric": "Iodine status evidence traceability",
+      "target": "Every iodine status estimate links to a dated survey with methodology, population group, geographic grain, and urinary iodine cutoff applied.",
+      "validation_method": "Run schema validation and reviewer spot-checks against evidence.json and datasets.md."
+    },
+    {
+      "metric": "Salt iodization coverage specificity",
+      "target": "No coverage estimate is merged without naming the country, survey method, salt testing protocol, coverage threshold definition, and data year.",
+      "validation_method": "Reviewer checks each accepted claim for country, survey type, salt test method, threshold, and temporal currency."
+    },
+    {
+      "metric": "Program decision humility",
+      "target": "No iodization recommendation is merged without naming the decision-maker, the allocation it would change, the coverage gap it addresses, and non-use cases.",
+      "validation_method": "Field-reality and red-team reviewers confirm named user, named decision, and explicit misuse risks before publication."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, safety review for iodization program recommendations, and replication for quantitative coverage or status estimates."
+  }
+}

@@ -2,34 +2,34 @@
   "summary": {
     "generated_by": "scripts/generate-agent-radar.mjs",
     "schema_version": 1,
-    "total_packs": 103,
-    "total_tasks": 534,
-    "scoped_tasks": 102,
-    "latent_tasks": 432,
+    "total_packs": 104,
+    "total_tasks": 540,
+    "scoped_tasks": 103,
+    "latent_tasks": 437,
     "status_counts": {
-      "scoped": 102,
-      "needs-triage": 431,
+      "scoped": 103,
+      "needs-triage": 436,
       "needs-review": 1
     },
     "owner_role_counts": {
-      "literature-scout": 103,
-      "data-cleaner": 99,
-      "implementation-planner": 125,
-      "red-team-reviewer": 103,
-      "field-reality-reviewer": 104
-    },
-    "scoped_role_counts": {
-      "literature-scout": 102
-    },
-    "reviewer_needed_counts": {
-      "domain-reviewer": 221,
-      "replicator": 105,
-      "red-team-reviewer": 103,
+      "literature-scout": 104,
+      "data-cleaner": 100,
+      "implementation-planner": 127,
+      "red-team-reviewer": 104,
       "field-reality-reviewer": 105
     },
+    "scoped_role_counts": {
+      "literature-scout": 103
+    },
+    "reviewer_needed_counts": {
+      "domain-reviewer": 224,
+      "replicator": 106,
+      "red-team-reviewer": 104,
+      "field-reality-reviewer": 106
+    },
     "safety_risk_counts": {
-      "medium": 243,
-      "high": 279,
+      "medium": 245,
+      "high": 283,
       "low": 12
     },
     "protocol_alert_count": 0
@@ -116,6 +116,22 @@
         "problem_file": "problem-packs/education/skills-training-youth-employment-global/problem.md",
         "tasks_file": "problem-packs/education/skills-training-youth-employment-global/tasks.json",
         "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
+      },
+      {
+        "pack_id": "nutrition/iodine-deficiency-salt-iodization-global",
+        "pack_title": "Iodine Deficiency Disorders And Salt Iodization Coverage Gaps In Low- And Middle-Income Countries",
+        "task_id": "source-inventory",
+        "title": "Inventory iodine status surveys, salt iodization coverage data, and iodized salt supply chain sources for LMICs",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "medium",
+        "done_condition": "At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering iodine status measurement method, salt iodization testing protocol, geographic grain, temporal coverage, LMIC data availability, and sub-national data presence or absence.",
+        "evidence_count": 9,
+        "downstream_tasks_unlocked": 5,
+        "downstream_high_risk_tasks": 4,
+        "problem_file": "problem-packs/nutrition/iodine-deficiency-salt-iodization-global/problem.md",
+        "tasks_file": "problem-packs/nutrition/iodine-deficiency-salt-iodization-global/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       },
       {
         "pack_id": "biodiversity/deforestation-amazon",
@@ -212,22 +228,6 @@
         "problem_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md",
         "tasks_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/tasks.json",
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
-      },
-      {
-        "pack_id": "climate-health/malaria-early-warning-africa",
-        "pack_title": "Malaria Early Warning Signals In Sub-Saharan Africa",
-        "task_id": "source-inventory",
-        "title": "Inventory malaria and climate data sources for Sub-Saharan Africa",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "medium",
-        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
-        "evidence_count": 5,
-        "downstream_tasks_unlocked": 5,
-        "downstream_high_risk_tasks": 4,
-        "problem_file": "problem-packs/climate-health/malaria-early-warning-africa/problem.md",
-        "tasks_file": "problem-packs/climate-health/malaria-early-warning-africa/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       }
     ],
     "unlock_paths": [
@@ -272,6 +272,28 @@
         "evidence_count": 7,
         "problem_file": "problem-packs/disaster-resilience/cyclone-early-warning-bangladesh/problem.md",
         "tasks_file": "problem-packs/disaster-resilience/cyclone-early-warning-bangladesh/tasks.json"
+      },
+      {
+        "pack_id": "nutrition/iodine-deficiency-salt-iodization-global",
+        "pack_title": "Iodine Deficiency Disorders And Salt Iodization Coverage Gaps In Low- And Middle-Income Countries",
+        "scoped_tasks": 1,
+        "downstream_tasks": 5,
+        "downstream_high_risk_tasks": 4,
+        "downstream_by_role": {
+          "data-cleaner": 1,
+          "implementation-planner": 2,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "downstream_reviewers_needed": {
+          "replicator": 1,
+          "domain-reviewer": 2,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "evidence_count": 9,
+        "problem_file": "problem-packs/nutrition/iodine-deficiency-salt-iodization-global/problem.md",
+        "tasks_file": "problem-packs/nutrition/iodine-deficiency-salt-iodization-global/tasks.json"
       },
       {
         "pack_id": "biodiversity/deforestation-amazon",
@@ -470,28 +492,6 @@
         "evidence_count": 2,
         "problem_file": "problem-packs/food-security/livestock-disease-surveillance-east-africa/problem.md",
         "tasks_file": "problem-packs/food-security/livestock-disease-surveillance-east-africa/tasks.json"
-      },
-      {
-        "pack_id": "public-health/child-mortality-inequality-global",
-        "pack_title": "Under-Five Mortality Sub-National Inequality Tracking In Low-Income Countries",
-        "scoped_tasks": 1,
-        "downstream_tasks": 5,
-        "downstream_high_risk_tasks": 4,
-        "downstream_by_role": {
-          "data-cleaner": 1,
-          "implementation-planner": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "downstream_reviewers_needed": {
-          "replicator": 1,
-          "domain-reviewer": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "evidence_count": 2,
-        "problem_file": "problem-packs/public-health/child-mortality-inequality-global/problem.md",
-        "tasks_file": "problem-packs/public-health/child-mortality-inequality-global/tasks.json"
       }
     ],
     "reviewer_hotspots": [
@@ -612,6 +612,19 @@
         "problem_file": "problem-packs/food-security/locust-outbreak-east-africa/problem.md"
       },
       {
+        "pack_id": "nutrition/iodine-deficiency-salt-iodization-global",
+        "pack_title": "Iodine Deficiency Disorders And Salt Iodization Coverage Gaps In Low- And Middle-Income Countries",
+        "downstream_reviewers_needed": {
+          "replicator": 1,
+          "domain-reviewer": 2,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "downstream_high_risk_tasks": 4,
+        "downstream_tasks": 5,
+        "problem_file": "problem-packs/nutrition/iodine-deficiency-salt-iodization-global/problem.md"
+      },
+      {
         "pack_id": "occupational-health/heat-stress-outdoor-workers-global",
         "pack_title": "Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change",
         "downstream_reviewers_needed": {
@@ -636,53 +649,40 @@
         "downstream_high_risk_tasks": 4,
         "downstream_tasks": 5,
         "problem_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md"
-      },
-      {
-        "pack_id": "public-health/child-mortality-inequality-global",
-        "pack_title": "Under-Five Mortality Sub-National Inequality Tracking In Low-Income Countries",
-        "downstream_reviewers_needed": {
-          "replicator": 1,
-          "domain-reviewer": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "downstream_high_risk_tasks": 4,
-        "downstream_tasks": 5,
-        "problem_file": "problem-packs/public-health/child-mortality-inequality-global/problem.md"
       }
     ],
     "role_backlog": [
       {
         "owner_role": "implementation-planner",
         "scoped_tasks": 0,
-        "latent_tasks": 125,
-        "share_of_all_tasks": 0.234,
-        "share_of_latent_tasks": 0.289
+        "latent_tasks": 127,
+        "share_of_all_tasks": 0.235,
+        "share_of_latent_tasks": 0.291
       },
       {
         "owner_role": "field-reality-reviewer",
         "scoped_tasks": 0,
-        "latent_tasks": 104,
-        "share_of_all_tasks": 0.195,
-        "share_of_latent_tasks": 0.241
+        "latent_tasks": 105,
+        "share_of_all_tasks": 0.194,
+        "share_of_latent_tasks": 0.24
       },
       {
         "owner_role": "red-team-reviewer",
         "scoped_tasks": 0,
-        "latent_tasks": 103,
+        "latent_tasks": 104,
         "share_of_all_tasks": 0.193,
         "share_of_latent_tasks": 0.238
       },
       {
         "owner_role": "data-cleaner",
         "scoped_tasks": 0,
-        "latent_tasks": 99,
+        "latent_tasks": 100,
         "share_of_all_tasks": 0.185,
         "share_of_latent_tasks": 0.229
       },
       {
         "owner_role": "literature-scout",
-        "scoped_tasks": 102,
+        "scoped_tasks": 103,
         "latent_tasks": 1,
         "share_of_all_tasks": 0.193,
         "share_of_latent_tasks": 0.002

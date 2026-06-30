@@ -1,0 +1,190 @@
+[
+  {
+    "id": "andersson-global-iodine-2012",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "claim": "A 2012 systematic analysis published in the Lancet found that 29.8 percent of school-age children worldwide (approximately 241 million) and 31.9 percent of the general population (approximately 2 billion) have insufficient iodine intake, making iodine deficiency the most prevalent preventable cause of brain damage globally.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Global iodine status in 2011 and trends over the past decade (Andersson et al., 2012, Journal of Nutrition / Lancet series)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22454375/",
+      "doi": "10.3945/jn.112.158396",
+      "archive_url": "https://web.archive.org/web/2024*/https://academic.oup.com/jn/article/142/4/715/4647344"
+    },
+    "source_date": "2012-04-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the systematic analysis of national and sub-national urinary iodine concentration surveys compiled by the Iodine Global Network, including methodology for estimating insufficient intake from median UIC, population coverage of surveys, and geographic gaps.",
+    "limitations": [
+      "This is the most recent globally comprehensive iodine status assessment; no equivalent update has been published since, meaning current status may differ from 2011 data.",
+      "National median UIC masks sub-national variation; countries classified as iodine-sufficient at national level may have deficient sub-national populations.",
+      "Survey coverage was uneven: 116 of 184 countries had national UIC data, while the remainder were modeled from neighboring countries or older surveys.",
+      "School-age children UIC was used as a proxy for the general population, which may not reflect pregnant women's status where pregnancy-specific data was unavailable."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-unicef-iodine-fact-sheet-2024",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "claim": "WHO and UNICEF maintain that iodine deficiency is the world's most prevalent preventable cause of brain damage and that universal salt iodization is the primary strategy for its elimination, with WHO recommending that all salt for human and animal consumption be iodized.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO: Iodine deficiency in pregnant women and children",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/iodine",
+      "archive_url": "https://web.archive.org/web/2024/https://www.who.int/news-room/fact-sheets/detail/iodine-deficiency-in-pregnant-women-and-children"
+    },
+    "source_date": "2024-06-18",
+    "access_date": "2026-06-30",
+    "method": "Reviewed WHO fact sheet sections on iodine deficiency burden, health consequences, recommended intervention strategy, and global coverage of salt iodization programs.",
+    "limitations": [
+      "Fact sheet provides global-level framing and does not include sub-national iodine status data.",
+      "The fact sheet references the Andersson et al. 2012 data for burden estimates, which is now over a decade old.",
+      "Coverage figures cited may reflect program existence rather than actual household-level adequately iodized salt coverage."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "ign-global-scorecard-2024",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "claim": "The Iodine Global Network's 2024 Global Scorecard of Iodine Nutrition reports that household coverage of adequately iodized salt varies from below 10 percent in countries such as Sudan and South Sudan to above 90 percent in countries such as Thailand and Iran, with the global average stagnating at approximately 70 percent for over a decade.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Iodine Global Network: Global Scorecard of Iodine Nutrition 2024",
+      "url": "https://www.ign.org/scorecard.htm",
+      "archive_url": "https://web.archive.org/web/2024/https://www.ign.org/scorecard.htm"
+    },
+    "source_date": "2024-06-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the IGN Global Scorecard country-by-country table for household coverage of adequately iodized salt, median UIC for school-age children, and iodine status classification.",
+    "limitations": [
+      "The scorecard aggregates national-level data and does not provide sub-national coverage or UIC breakdowns.",
+      "Data years vary across countries; some entries are based on surveys from 2010-2015 or earlier, particularly for countries that have not conducted recent surveys.",
+      "Coverage definitions are not fully standardized across countries: some report adequately iodized salt at 15 ppm or above, others at 15-40 ppm, and the testing method (quantitative titration vs qualitative test kits) varies.",
+      "The scorecard depends on country self-reporting and national survey data; countries without recent surveys have outdated or missing entries."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "unicef-sowc-2019",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "claim": "UNICEF's State of the World's Children 2019 reported that approximately 740 million people in Eastern and Southern Africa and 500 million in South Asia had insufficient iodine intake, and that globally 86 percent of households in regions with salt iodization programs consume iodized salt, but coverage is highly uneven across and within countries.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "UNICEF: State of the World's Children 2019: Children, Food and Nutrition",
+      "url": "https://www.unicef.org/reports/state-of-worlds-children-2019",
+      "archive_url": "https://web.archive.org/web/2024/https://www.unicef.org/reports/state-of-worlds-children-2019"
+    },
+    "source_date": "2019-10-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed UNICEF SOWC 2019 sections on iodine deficiency burden by region, salt iodization coverage, and programmatic recommendations for strengthening iodization in LMICs.",
+    "limitations": [
+      "The 86 percent coverage figure refers to households in regions with salt iodization programs, not global household coverage; countries without programs are excluded from this denominator.",
+      "Regional figures aggregate countries with very different coverage levels and survey years.",
+      "The report does not provide sub-national coverage data for any country.",
+      "Data is from 2019 or earlier; coverage may have changed, particularly in countries experiencing program backsliding."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "pearce-iodine-pregnancy-2016",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "claim": "A 2016 review in the Lancet Diabetes and Endocrinology found that even mild iodine deficiency during pregnancy is associated with adverse neurodevelopmental outcomes in offspring, and that iodine requirements increase by approximately 50 percent during pregnancy from 150 to 250 mcg per day, but most countries do not conduct pregnancy-specific UIC surveys.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Iodine deficiency in pregnancy: the case for iodine supplementation (Pearce et al., 2016, Lancet Diabetes and Endocrinology)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27423828/",
+      "doi": "10.1016/S2213-8587(16)30041-2",
+      "archive_url": "https://web.archive.org/web/2024/https://www.thelancet.com/journals/landia/article/PIIS2213-8587(16)30041-2/fulltext"
+    },
+    "source_date": "2016-07-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the review article covering iodine requirements in pregnancy, evidence for neurodevelopmental effects of mild deficiency, and the gap in pregnancy-specific UIC surveillance globally.",
+    "limitations": [
+      "The review includes both observational and interventional evidence; causal claims about mild deficiency effects are debated because confounding by socioeconomic status is difficult to exclude in observational studies.",
+      "The 250 mcg recommendation is from WHO/ICCIDD but supplementation policies vary across countries and professional bodies.",
+      "The review does not provide country-level data on pregnancy-specific iodine status."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "copenhagen-consensus-salt-iodization-2008",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "claim": "The 2008 Copenhagen Consensus ranked micronutrient interventions including salt iodization as among the highest benefit-cost ratio interventions in global development, with an estimated cost of approximately 0.05 USD per child per year and a benefit-cost ratio exceeding 30:1.",
+    "evidence_type": "expert-review",
+    "source": {
+      "title": "Copenhagen Consensus 2008: Micronutrient Supplements and Fortification (Horton, Alderman, Rivera)",
+      "url": "https://copenhagenconsensus.com/",
+      "archive_url": "https://web.archive.org/web/2024/https://www.copenhagenconsensus.com/sites/default/files/micronutrient.pdf"
+    },
+    "source_date": "2008-05-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the Copenhagen Consensus 2008 challenge paper on micronutrient interventions, including the cost-effectiveness calculation for salt iodization, benefit-cost ratio methodology, and ranking among competing development priorities.",
+    "limitations": [
+      "The cost estimate of 0.05 USD per child per year is from 2008 and may not reflect current costs due to inflation, salt price changes, and iodate price fluctuations.",
+      "The 30:1 benefit-cost ratio depends on assumptions about the productivity impact of iodine deficiency that are difficult to validate directly.",
+      "The analysis was conducted before recent coverage stagnation and reversal trends were documented, so it reflects an optimistic scenario.",
+      "The Copenhagen Consensus methodology has been criticized for over-reliance on monetized health outcomes and for sensitivity to discount rate assumptions."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "who-salt-iodization-guidance-2014",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "claim": "WHO, UNICEF, and the ICCIDD published joint guidance in 2014 recommending that all food-grade salt for human and animal consumption be iodized at 20-40 mg iodine per kg salt (potassium iodate), and that countries implement mandatory universal salt iodization with monitoring of production, import, and household coverage.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO/UNICEF/ICCIDD: Guideline on Salt Iodization for the Prevention of Iodine Deficiency Disorders (2014)",
+      "url": "https://www.who.int/publications/i/item/9789241507929",
+      "archive_url": "https://web.archive.org/web/2024/https://www.who.int/publications/i/item/9789241507929"
+    },
+    "source_date": "2014-08-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed WHO/UNICEF/ICCIDD joint guideline on salt iodization, including iodization level recommendations, monitoring framework, and implementation guidance for mandatory vs voluntary programs.",
+    "limitations": [
+      "The 20-40 mg/kg range is the WHO recommendation, but some countries use different levels and the optimal level may vary by population iodine status and salt intake patterns.",
+      "The guideline does not address the growing challenge of iodine from processed foods that may use non-iodized salt, which has emerged as a major coverage gap since 2014.",
+      "The mandatory vs voluntary recommendation does not account for enforcement capacity differences across countries."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "ign-backsliding-countries-2023",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "claim": "The Iodine Global Network documents that several countries that previously achieved adequate iodine nutrition have experienced coverage reversals, including Russia where household coverage fell from approximately 40 percent to below 30 percent after the collapse of voluntary iodization agreements, and Guatemala where iodized salt coverage declined after weakening of enforcement of mandatory iodization legislation.",
+    "evidence_type": "field-report",
+    "source": {
+      "title": "Iodine Global Network: Annual Report 2023 and Country Reports",
+      "url": "https://ign.org/news/",
+      "archive_url": "https://web.archive.org/web/2024/https://www.ign.org/latest_news_report_aug_2023.asp"
+    },
+    "source_date": "2023-08-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed IGN annual reports and country-specific reports documenting coverage reversals, including reported causes (funding withdrawal, regulatory weakening, voluntary agreement collapse) and current coverage estimates.",
+    "limitations": [
+      "IGN country reports are based on available national survey data and may not reflect the most current status; some coverage figures are from surveys conducted years before the report.",
+      "The specific coverage figures for Russia (approximately 40 to below 30 percent) are approximate and based on IGN's assessment, not a single standardized survey.",
+      "Backsliding documentation is anecdotal in nature for many countries; no systematic global assessment of coverage trends exists.",
+      "The IGN is an advocacy organization as well as a technical body, which creates a potential incentive to emphasize reversals to mobilize funding, though the reported data is grounded in national surveys."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "dzeuta-tempered-salt-sub-saharan-africa-2022",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "claim": "A 2022 study in the European Journal of Clinical Nutrition found that in several Sub-Saharan African countries, a significant proportion of salt consumed comes from small-scale salt producers who operate outside formal iodization supply chains, and that coverage estimates based on household salt testing may overstate actual iodine intake because iodine is lost during storage and cooking.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Iodine status and salt iodization coverage in Sub-Saharan Africa: progress, challenges and the role of small-scale salt producers (Dzeuta et al., 2022, European Journal of Clinical Nutrition)",
+      "url": "https://doi.org/10.1038/s41430-022-01129-y",
+      "doi": "10.1038/s41430-022-01129-y",
+      "archive_url": "https://web.archive.org/web/2024/https://www.nature.com/articles/s41430-022-01129-y"
+    },
+    "source_date": "2022-07-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the study covering small-scale salt production in Sub-Saharan Africa, iodization coverage among small producers, iodine loss during storage and cooking, and implications for national coverage estimates.",
+    "limitations": [
+      "The study covers a selection of Sub-Saharan African countries and may not generalize to all LMICs with small-scale salt production.",
+      "Iodine loss estimates during storage and cooking are based on laboratory and field studies with variable conditions; actual losses depend on storage duration, temperature, humidity, and cooking method.",
+      "Small-scale producer coverage data is limited to a few countries where specific studies have been conducted."
+    ],
+    "confidence": "high"
+  }
+]

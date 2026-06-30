@@ -26,7 +26,7 @@
     "evidence_type": "dataset",
     "source": {
       "title": "MODIS Vegetation Indices (MOD13Q1)",
-      "url": "https://lpdaac.usgs.gov/products/mod13q1v061/"
+      "url": "https://www.earthdata.nasa.gov/data/catalog/lpcloud-mod13q1-061"
     },
     "source_date": "2025-01-01",
     "access_date": "2026-06-07",

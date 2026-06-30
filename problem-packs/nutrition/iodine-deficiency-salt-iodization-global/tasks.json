@@ -1,0 +1,116 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "title": "Inventory iodine status surveys, salt iodization coverage data, and iodized salt supply chain sources for LMICs",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory that separates national UIC surveys, sub-national UIC data where available, household salt iodization testing data from DHS/MICS/national nutrition surveys, iodized salt production and import data, and small-scale salt producer documentation into usable, limited, and rejected categories with explicit coverage year, geographic grain, and testing protocol assessment.",
+    "inputs": [
+      "WHO iodine fact sheets and publications",
+      "IGN Global Scorecard and country reports",
+      "UNICEF State of the World's Children reports",
+      "DHS and MICS salt iodization testing modules",
+      "Andersson et al. 2012 global iodine status analysis",
+      "National nutrition survey reports from selected LMICs",
+      "WHO/UNICEF/ICCIDD 2014 salt iodization guideline",
+      "Published studies on small-scale salt production and iodization in LMICs"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each source for URL, date, access status, geographic grain, temporal coverage, LMIC availability, testing protocol where applicable, and stated limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering iodine status measurement method, salt iodization testing protocol, geographic grain, temporal coverage, LMIC data availability, and sub-national data presence or absence."
+  },
+  {
+    "id": "subnational-iodine-status-compilation",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "title": "Compile sub-national iodine status and salt iodization coverage for one to three LMICs where data permits",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A cleaned sub-national iodine status and salt iodization coverage dataset for one to three selected LMICs with documented survey source, UIC methodology, salt testing protocol, geographic grain, temporal coverage, and known missingness patterns.",
+    "inputs": [
+      "source inventory",
+      "DHS or MICS household survey microdata with salt iodization test results",
+      "national nutrition survey reports with sub-national UIC data",
+      "administrative boundary source",
+      "population denominator source"
+    ],
+    "expected_artifact": "datasets.md and validation.md updates with compiled sub-national iodine data inventory and data quality rules.",
+    "validation_method": "Replicator reruns the data compilation on the documented survey sources and confirms grain, temporal coverage, UIC methodology, salt testing protocol, and missingness handling.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Every iodine status data point has a documented survey source, UIC methodology, population group, geographic grain, temporal coverage, and missingness flag, and at least one country has enough sub-national data density to attempt a coverage gap map."
+  },
+  {
+    "id": "coverage-gap-analysis",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "title": "Analyze sub-national iodine status and salt iodization coverage gaps against WHO targets",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A ranked list of sub-national coverage gaps where iodine status is deficient or borderline and salt iodization coverage is below the WHO target of 90 percent household coverage, with data quality assessment, population at risk estimate, and known data currency limitations.",
+    "inputs": [
+      "sub-national iodine status and coverage data",
+      "WHO salt iodization coverage targets",
+      "population denominator data",
+      "IGN Global Scorecard for national-level comparison"
+    ],
+    "expected_artifact": "task-map.md and validation.md updates with coverage gap analysis methodology and results.",
+    "validation_method": "Back-test the coverage gap analysis against available data and report gap severity, population at risk, data quality, and temporal currency for each identified gap.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "No coverage gap is accepted without data quality assessment, population at risk estimate, temporal currency flag, and replication status against at least one country's data."
+  },
+  {
+    "id": "intervention-evidence-review",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "title": "Review salt iodization program intervention evidence with failure modes and scaling constraints",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A structured review of mandatory vs voluntary iodization legislation, production standards and enforcement mechanisms, small-scale salt producer support models, and coverage monitoring systems with efficacy evidence, cost, scaling requirements, and documented failure modes in LMIC contexts.",
+    "inputs": [
+      "WHO/UNICEF/ICCIDD 2014 salt iodization guideline",
+      "published studies on mandatory vs voluntary iodization outcomes",
+      "IGN country case studies of program success and backsliding",
+      "small-scale salt producer iodization intervention studies"
+    ],
+    "expected_artifact": "outputs.md and validation.md updates with intervention evidence summary and allocation decision framework.",
+    "validation_method": "Reviewer checks that each intervention approach has documented efficacy, cost, scaling requirement, failure mode, and a named decision-maker. A second reviewer replicates the evidence-strength assessment independently.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every intervention recommendation names the decision-maker, the allocation it would change, the evidence strength, and at least one failure mode that could make deployment ineffective or harmful, with replication of the evidence-strength assessment by a second reviewer."
+  },
+  {
+    "id": "red-team-misuse-review",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "title": "Red-team how iodine status and coverage maps could be misused for program abandonment, producer defaming, or consumer cost-shifting",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying how coverage maps could be used to justify abandoning iodization programs in countries with stagnating coverage, defaming small-scale salt producers as obstacles to universal iodization, shifting iodization costs to consumers through price increases, or framing coverage gaps as evidence that salt iodization has failed as a strategy.",
+    "inputs": ["draft coverage gap map", "intervention review", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk misuse scenario has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every field-facing coverage or intervention output is either blocked, qualified with program-strengthening framing, or gated behind explicit safeguards against program abandonment, producer defaming, consumer cost-shifting, and strategy-discrediting, with replicated red-team review before publication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "nutrition/iodine-deficiency-salt-iodization-global",
+    "title": "Check whether coverage gap maps match UNICEF, national IDD committee, and IGN decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether the proposed coverage gap map would change a real decision for a UNICEF country office nutrition section, a national IDD elimination committee, a salt producer association, or the Iodine Global Network without creating worse incentives.",
+    "inputs": [
+      "draft coverage gap map",
+      "UNICEF nutrition programming priorities",
+      "national IDD committee mandates",
+      "IGN technical assistance priorities"
+    ],
+    "expected_artifact": "playbooks.md update with named use and non-use cases.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, required workflow, and misuse risk, then a second reviewer replicates the check on the stated non-use cases.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The artifact has a named user, named decision, named programmatic action, explicit non-use cases, and replicated field-reality review before publication."
+  }
+]

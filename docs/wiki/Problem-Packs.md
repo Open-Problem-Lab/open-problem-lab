@@ -490,6 +490,16 @@ Build a verified workflow for assessing where vegetation, soil moisture, and win
 
 Build a verified workflow for mapping urban food deserts and fresh-food access gaps in LMIC cities, linking market-location data, food-price data, and population data.
 
+## Iodine Deficiency Disorders And Salt Iodization Coverage Gaps In Low- And Middle-Income Countries
+
+- ID: `nutrition/iodine-deficiency-salt-iodization-global`
+- Status: `scoped`
+- Domain: `nutrition`, `public-health`
+- Region: `global`
+- Source: [problem-packs/nutrition/iodine-deficiency-salt-iodization-global](../../problem-packs/nutrition/iodine-deficiency-salt-iodization-global/problem.md)
+
+Build a verified workflow for mapping sub-national iodine deficiency status and salt iodization coverage in low- and middle-income countries, linking population-level urinary iodine surveys, household salt iodization testing, and iodized salt supply chain data to identify where iodization program strengthening or reintroduction should be prioritized before coverage stagnation reverses two decades of gains.
+
 ## Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
 
 - ID: `occupational-health/heat-stress-outdoor-workers-global`

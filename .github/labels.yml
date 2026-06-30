@@ -163,3 +163,6 @@
 - name: "domain:occupational-health"
   color: "0052CC"
   description: "Occupational health and worker safety problem area."
+- name: "domain:nutrition"
+  color: "0052CC"
+  description: "Nutrition, micronutrient deficiency, and fortification problem area."

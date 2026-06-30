@@ -1,0 +1,38 @@
+[
+  {
+    "id": "arsenic-testing-coverage-data-sufficiency",
+    "problem_id": "water-security/arsenic-groundwater-exposure-bangladesh",
+    "claim": "Available public data sources are sufficient to establish that arsenic-contaminated groundwater is a massive chronic exposure problem in Bangladesh (WHO guideline, BGS/DPHE survey, EHP systematic review) and to characterise the well-depth-arsenic relationship for testing prioritisation (Flanagan et al. 2012). However, no public dataset provides current upazila-level testing-coverage status at sufficient grain to identify which specific upazilas have the largest gap between known contamination and household-level testing. The BAMWSP testing records cover 1.4 million wells but are 20 years old, unevenly distributed at upazila grain, and do not account for wells installed after 2006. WorldPop provides population denominators but not water-source or testing-status data. The available data can support historical and district-level analysis but cannot produce a current upazila-level testing-coverage gap map without supplementary testing-status data that does not currently exist in a public, systematically structured form.",
+    "domain": ["water-security", "public-health"],
+    "status": "unverified",
+    "evidence": [
+      "who-arsenic-factsheet-2022",
+      "bgs-dphe-arsenic-survey-2001",
+      "ehp-arsenic-exposure-review-2024",
+      "bamwsp-testing-coverage-2006",
+      "flanagan-ararsenic-well-depth-2012",
+      "worldpop-bangladesh-population-data"
+    ],
+    "failure_modes": [
+      "A reader treats the BGS/DPHE 1998-1999 survey as current arsenic concentrations when newer well installations may have different contamination patterns.",
+      "A reader uses the 35-77 million exposure range as a point estimate rather than a wide uncertainty interval reflecting different survey methods and time periods.",
+      "A reader treats BAMWSP's 1.4 million tested wells as current coverage when the figure is from 2006 and millions of wells have been installed since.",
+      "A decision-maker uses population density as a proxy for arsenic exposure without linking to well-testing or water-source data.",
+      "A reader uses the well-depth-arsenic relationship as deterministic when it varies by geological zone and is non-monotonic.",
+      "A policy maker uses the exposure framing to justify well closures without ensuring alternative water sources are available, which could shift households to microbiologically contaminated surface water."
+    ],
+    "kill_condition": "A reviewer identifies a public dataset providing upazila-level testing-coverage status for at least 100 of Bangladesh's 495 upazilas with less than 5-year reporting lag, or finds that the National Arsenic Mitigation Cell has begun systematic upazila-level testing-coverage reporting covering at least 200 upazilas with quality-verified data.",
+    "review_required": ["domain-reviewer", "red-team-reviewer"],
+    "safety_level": "high",
+    "submitter": "codex-agent",
+    "created_date": "2026-06-30",
+    "last_updated": "2026-06-30",
+    "confidence": "medium",
+    "limitations": [
+      "The claim is about public data availability for upazila-level testing-coverage gap analysis, not about actual arsenic exposure or testing status in specific upazilas.",
+      "The assessment that no public dataset provides current upazila-level testing status is an inference from reviewing available data portals and published literature, not a systematic survey of all Bangladeshi government databases.",
+      "The National Arsenic Mitigation Cell may hold more granular testing-coverage data that is not publicly accessible; this claim is based on publicly available information only.",
+      "The BGS/DPHE DOI may not resolve correctly for all access paths; the BGS project page is the primary stable URL."
+    ]
+  }
+]

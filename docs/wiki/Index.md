@@ -6,13 +6,13 @@
 
 | Metric | Value |
 |---|---|
-| Total packs | 103 |
-| Packs with claims | 10 |
+| Total packs | 104 |
+| Packs with claims | 11 |
 | Packs with accepted claims | 0 |
-| Total evidence records | 311 |
-| Total tasks | 534 |
-| Scoped tasks (ready for work) | 102 |
-| High-risk tasks | 279 |
+| Total evidence records | 317 |
+| Total tasks | 539 |
+| Scoped tasks (ready for work) | 103 |
+| High-risk tasks | 282 |
 
 ## All Problem Packs
 
@@ -116,6 +116,7 @@
 | [sanitation/open-defecation-india](../../problem-packs/sanitation/open-defecation-india/problem.md) | Open Defecation Elimination And Sanitation Coverage Verification In India | scoped | sanitation, public-health | india | medium | 3 ev; 6 tasks | ready |
 | [sanitation/plastic-waste-marine-global](../../problem-packs/sanitation/plastic-waste-marine-global/problem.md) | Plastic Waste Leakage Into Marine Environments From Coastal Cities | scoped | sanitation, biodiversity | global | medium | 1 ev; 5 tasks | needs evidence |
 | [sanitation/solid-waste-management-urban-south-asia](../../problem-packs/sanitation/solid-waste-management-urban-south-asia/problem.md) | Municipal Solid Waste Collection Gaps And Open Dumping Health Risk In South Asian Cities | scoped | sanitation, public-health | south-asia | medium | 2 ev; 5 tasks | needs evidence |
+| [water-security/arsenic-groundwater-exposure-bangladesh](../../problem-packs/water-security/arsenic-groundwater-exposure-bangladesh/problem.md) | Arsenic-Contaminated Groundwater Exposure And Testing Coverage Gaps In Bangladesh | scoped | water-security, public-health | bangladesh | high | 6 ev; 5 tasks; 1 claims | has claims |
 | [water-security/glacial-melt-hindu-kush](../../problem-packs/water-security/glacial-melt-hindu-kush/problem.md) | Glacial Melt Water Security Risk In The Hindu Kush Himalaya | scoped | water-security, climate-adaptation | hindu-kush-himalaya | high | 3 ev; 5 tasks | ready |
 | [water-security/groundwater-depletion-india](../../problem-packs/water-security/groundwater-depletion-india/problem.md) | Groundwater Depletion Risk Assessment In India | scoped | water-security, food-security | india | medium | 3 ev; 6 tasks | ready |
 | [water-security/transboundary-water-conflict-global](../../problem-packs/water-security/transboundary-water-conflict-global/problem.md) | Transboundary Water Conflict Risk In Climate-Stressed River Basins | scoped | water-security | global | high | 1 ev; 5 tasks | needs evidence |

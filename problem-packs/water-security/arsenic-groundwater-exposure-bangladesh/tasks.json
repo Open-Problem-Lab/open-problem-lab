@@ -1,0 +1,100 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "water-security/arsenic-groundwater-exposure-bangladesh",
+    "title": "Inventory arsenic survey, testing-coverage, and health-outcome data sources for Bangladesh",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating groundwater arsenic survey data (BGS/DPHE, national surveys), testing-coverage records (BAMWSP, national arsenic mitigation cell), health-outcome data, and population data into usable, limited, and rejected categories with explicit reasons covering measurement method, geographic grain, temporal coverage, and accessibility.",
+    "inputs": [
+      "BGS/DPHE Phase 1 survey",
+      "BAMWSP testing records",
+      "EHP systematic review 2024",
+      "WHO arsenic fact sheet",
+      "WorldPop population data",
+      "National Arsenic Mitigation Cell records",
+      "Flanagan et al. well-depth study"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source and claims.json with data-sufficiency claim.",
+    "validation_method": "Reviewer checks each source for URL, date, access status, measurement method documentation, geographic grain, and stated limitations. Reviewer verifies that the data-sufficiency claim kill condition is specific and falsifiable.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering arsenic measurement method, geographic grain, temporal coverage, testing-coverage documentation, and accessibility for sub-national analysis."
+  },
+  {
+    "id": "upazila-exposure-baseline",
+    "problem_id": "water-security/arsenic-groundwater-exposure-bangladesh",
+    "title": "Define upazila-level arsenic exposure baseline from survey data",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A reproducible baseline specification for upazila-level arsenic exposure estimates from BGS/DPHE survey data and subsequent national surveys, including well-depth stratification and denominator handling.",
+    "inputs": [
+      "BGS/DPHE Phase 1 survey data",
+      "WorldPop population data",
+      "administrative boundary source for Bangladesh upazilas",
+      "Flanagan et al. well-depth relationship"
+    ],
+    "expected_artifact": "validation.md update with baseline formula, well-depth stratification, and data checks.",
+    "validation_method": "Replicator reruns the baseline on a sample upazila and confirms well-level aggregation, depth stratification, and denominator behavior.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "A reviewer can reproduce the upazila-level exposure baseline calculation, identify every excluded well or upazila, and verify the depth stratification approach."
+  },
+  {
+    "id": "testing-coverage-gap-analysis",
+    "problem_id": "water-security/arsenic-groundwater-exposure-bangladesh",
+    "title": "Map upazila-level testing-coverage gaps against known contamination",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "An upazila-level testing-coverage gap analysis combining known contamination zones (from survey data) with testing-coverage records (from BAMWSP and any current sources) and population data to identify where untested wells overlap with population density and prior contamination probability.",
+    "inputs": [
+      "BGS/DPHE survey data",
+      "BAMWSP testing records",
+      "WorldPop population data",
+      "upazila administrative boundaries",
+      "Flanagan et al. well-depth relationship"
+    ],
+    "expected_artifact": "outputs.md update with gap-analysis methodology and results for at least two upazilas.",
+    "validation_method": "Replicator reruns the gap analysis with the documented methodology and confirms the upazila-level coverage and exposure-overlap calculations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Gap analysis includes at least two upazilas with documented methodology, testing-coverage estimates, exposure-overlap calculation, and replication status."
+  },
+  {
+    "id": "red-team-operational-use",
+    "problem_id": "water-security/arsenic-groundwater-exposure-bangladesh",
+    "title": "Red-team harmful interpretations of arsenic exposure and testing maps",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying how exposure maps or testing-coverage gaps could stigmatise affected communities, discourage safe well use without alternatives, or misdirect testing resources.",
+    "inputs": [
+      "candidate exposure maps",
+      "testing-coverage gap analysis",
+      "validation notes",
+      "safety policy"
+    ],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk failure mode has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every operational claim is either blocked, softened to analytic language, or gated behind domain review and replicated red-team review."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "water-security/arsenic-groundwater-exposure-bangladesh",
+    "title": "Check whether testing-coverage gap maps match field decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether the proposed testing-coverage gap analysis would change resource allocation by the national arsenic mitigation programme or district-level public-health offices in Bangladesh.",
+    "inputs": [
+      "draft gap analysis",
+      "Bangladesh arsenic mitigation programme context",
+      "reviewer notes"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance for the national arsenic mitigation programme.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk for the output, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The output has a named user in the Bangladesh arsenic mitigation programme, named decision, explicit non-use cases, and replicated field-reality review before publication."
+  }
+]

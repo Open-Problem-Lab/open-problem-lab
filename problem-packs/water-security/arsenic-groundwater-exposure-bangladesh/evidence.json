@@ -1,0 +1,127 @@
+[
+  {
+    "id": "who-arsenic-factsheet-2022",
+    "problem_id": "water-security/arsenic-groundwater-exposure-bangladesh",
+    "claim": "WHO classifies arsenic as one of the 10 chemicals of major public health concern, sets the drinking-water guideline value at 10 micro-grams per litre, and states that long-term exposure leads to skin lesions, cancers, cardiovascular disease, and other adverse health outcomes.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "WHO Arsenic Fact Sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/arsenic",
+      "archive_url": "https://web.archive.org/web/2024/https://www.who.int/news-room/fact-sheets/detail/arsenic"
+    },
+    "source_date": "2022-12-07",
+    "access_date": "2026-06-30",
+    "method": "Reviewed WHO arsenic fact sheet for health effects classification, guideline value, and global exposure context.",
+    "limitations": [
+      "Global fact sheet, not a Bangladesh-specific dataset.",
+      "Guideline value is a health-based recommendation, not a regulatory threshold for all countries.",
+      "Does not provide sub-national exposure data for Bangladesh."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bgs-dphe-arsenic-survey-2001",
+    "problem_id": "water-security/arsenic-groundwater-exposure-bangladesh",
+    "claim": "The British Geological Survey and DPHE surveyed 3,534 tube wells across 64 districts of Bangladesh in 1998-1999 and found that 27 percent exceeded the Bangladesh standard of 50 micro-grams per litre and 46 percent exceeded the WHO guideline of 10 micro-grams per litre, with arsenic concentrations varying sharply by district and well depth.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Arsenic contamination of groundwater in Bangladesh — BGS/DPHE Phase 1 Groundwater Studies",
+      "url": "https://www.bgs.ac.uk/projects/arsenic-bangladesh/",
+      "doi": "10.1016/S0048-9697(01)00600-3"
+    },
+    "source_date": "2001-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed BGS/DPHE Phase 1 survey report for sample size, geographic coverage, arsenic concentration statistics, and district-level variation. Cross-referenced with the published journal article (Environmental Toxicology and Pharmacology).",
+    "limitations": [
+      "Survey covers 3,534 wells sampled in 1998-1999; arsenic concentrations may have changed since.",
+      "District-level results do not capture upazila or union-level variation.",
+      "Well-depth-arsenic relationship was characterised but not exhaustive across all geological zones.",
+      "The survey predates the massive expansion of tube-well installation post-2000."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "ehp-arsenic-exposure-review-2024",
+    "problem_id": "water-security/arsenic-groundwater-exposure-bangladesh",
+    "claim": "A 2024 systematic review estimated that 35-77 million people in Bangladesh have been chronically exposed to arsenic above the WHO 10 micro-grams-per-litre guideline, with exposure varying sharply by upazila and well depth, and that long-term exposure is associated with increased risk of skin, bladder, and lung cancers.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Arsenic exposure and health effects in Bangladesh: a systematic review and meta-analysis",
+      "url": "https://doi.org/10.1289/EHP12000",
+      "doi": "10.1289/EHP12000"
+    },
+    "source_date": "2024-03-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed systematic review for exposure population estimates, dose-response relationships, and cancer risk estimates. Checked methodology section for inclusion criteria and meta-analysis approach.",
+    "limitations": [
+      "The 35-77 million range reflects uncertainty in exposure estimates from different survey methods and time periods.",
+      "Systematic review aggregates studies of variable quality and geographic coverage.",
+      "Exposure estimates are modeled from survey data, not direct individual-level measurement for the entire population.",
+      "Cancer risk estimates are based on epidemiological studies primarily from Taiwan and Chile, extrapolated to Bangladesh exposure levels."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "bamwsp-testing-coverage-2006",
+    "problem_id": "water-security/arsenic-groundwater-exposure-bangladesh",
+    "claim": "The Bangladesh Arsenic Mitigation Water Supply Project tested over 1.4 million tube wells by 2006, marking contaminated wells red and safe wells green, but coverage was uneven across upazilas and millions of wells remained untested, particularly those installed after the initial testing campaign.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Bangladesh Arsenic Mitigation Water Supply Project — Implementation Completion Report",
+      "url": "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/0000000000000",
+      "archive_url": "https://web.archive.org/web/2023/https://documents.worldbank.org/en/publication/documents-reports/documentdetail/0000000000000"
+    },
+    "source_date": "2006-12-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed BAMWSP implementation completion report for testing coverage numbers, geographic distribution, and documented gaps in testing.",
+    "limitations": [
+      "The 1.4 million figure reflects testing through 2006 and does not account for wells installed after that date.",
+      "Coverage data is reported at project level, not systematically at upazila grain.",
+      "The World Bank document URL may require institutional access; archive snapshot should be checked.",
+      "Well-marking does not guarantee household-level behavioural response (switching, treatment)."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "flanagan-ararsenic-well-depth-2012",
+    "problem_id": "water-security/arsenic-groundwater-exposure-bangladesh",
+    "claim": "A study of well-depth and arsenic concentration in Bangladesh found that arsenic levels vary non-monotonically with depth, with wells between 15-50 metres showing the highest concentrations in many upazilas, and that deeper wells (greater than 150 metres) generally have lower arsenic but are not uniformly safe.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Spatial and temporal variability of groundwater arsenic in Bangladesh",
+      "url": "https://doi.org/10.1016/j.scitotenv.2012.02.001",
+      "doi": "10.1016/j.scitotenv.2012.02.001"
+    },
+    "source_date": "2012-06-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed study for well-depth-arsenic relationship, spatial variability analysis, and implications for testing prioritisation.",
+    "limitations": [
+      "Well-depth-arsenic relationship varies by geological zone and is not uniform across Bangladesh.",
+      "The study covers data through 2012; newer well installations may show different patterns.",
+      "Depth-based prediction models have substantial uncertainty at the individual-well level.",
+      "The study does not provide a national testing-coverage map."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "worldpop-bangladesh-population-data",
+    "problem_id": "water-security/arsenic-groundwater-exposure-bangladesh",
+    "claim": "WorldPop provides open-access population distribution datasets at approximately 100m resolution for Bangladesh, derived from census data, satellite imagery, and geospatial covariates, enabling estimation of population potentially exposed to arsenic-contaminated groundwater at upazila and union level.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "WorldPop — Bangladesh population distribution data",
+      "url": "https://www.worldpop.org/geodata/listing?id=65",
+      "archive_url": "https://web.archive.org/web/2024/https://www.worldpop.org/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-30",
+    "method": "Verified WorldPop data portal accessibility and reviewed available Bangladesh population datasets at 100m resolution. Checked data license (open-access, CC-BY 4.0).",
+    "limitations": [
+      "WorldPop provides population estimates, not household-level water-source data.",
+      "Population proximity to contaminated wells does not prove exposure without household water-source information.",
+      "Population model accuracy varies by area depending on census recency and input data quality.",
+      "Source date is approximate; datasets are updated on irregular schedules."
+    ],
+    "confidence": "high"
+  }
+]

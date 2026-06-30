@@ -1,0 +1,44 @@
+{
+  "id": "water-security/arsenic-groundwater-exposure-bangladesh",
+  "title": "Arsenic-Contaminated Groundwater Exposure And Testing Coverage Gaps In Bangladesh",
+  "status": "scoped",
+  "domain": ["water-security", "public-health"],
+  "region": ["bangladesh"],
+  "summary": "Build a verified workflow for mapping sub-national arsenic exposure risk and well-testing coverage gaps in Bangladesh, linking groundwater arsenic survey data, tube-well census data, and health-outcome data with explicit grain and method documentation.",
+  "why_it_matters": "An estimated 35-77 million people in Bangladesh have been chronically exposed to arsenic-contaminated drinking water above the WHO 10 micro-gram-per-litre guideline. This is the largest mass poisoning of a population in history, yet sub-national testing coverage is uneven, millions of wells remain untested, and the gap between known contamination and household-level action persists two decades after discovery. A verified sub-national testing-coverage gap map would let a national arsenic mitigation programme director allocate testing resources to the upazilas where untested wells overlap with population density and prior contamination probability. The evidence gap is not whether arsenic is harmful (that is settled) but where testing resources would most reduce exposure given finite budgets.",
+  "success_metrics": [
+    {
+      "metric": "Exposure-evidence traceability",
+      "target": "Every accepted claim about arsenic exposure links to a dated evidence record with method, grain, and limitations.",
+      "validation_method": "Schema validation and reviewer spot-checks against evidence.json."
+    },
+    {
+      "metric": "Testing-coverage gap specificity",
+      "target": "Any testing-coverage gap claim identifies the geographic grain, the denominator, and what the gap means for allocation.",
+      "validation_method": "Reviewer checks that gap claims name upazila or union grain, population denominator, and the allocation decision the gap informs."
+    },
+    {
+      "metric": "Operational humility",
+      "target": "No exposure map or testing recommendation is merged without domain review and explicit non-use cases.",
+      "validation_method": "Check task status, review records, and safety flags before accepting outputs."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, red-team review for operational claims, and replication for quantitative exposure or coverage outputs."
+  }
+}

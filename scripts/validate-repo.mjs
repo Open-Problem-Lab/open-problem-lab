@@ -144,6 +144,7 @@ const validateProblemPacks = async (schemas) => {
       evidence.length > 0,
       `${relativeDir}/evidence.json must contain at least one record.`
     );
+    const evidenceIds = new Set();
     for (const record of evidence) {
       validateJson(
         schemas.evidence,
@@ -154,6 +155,84 @@ const validateProblemPacks = async (schemas) => {
         record.problem_id === problem.id,
         `${record.id} problem_id must match ${problem.id}`
       );
+      evidenceIds.add(record.id);
+    }
+
+    // Validate claims.json if it exists — the claim lifecycle is now enforced.
+    const claimsPath = path.join(packDir, "claims.json");
+    try {
+      await fs.access(claimsPath);
+      const claims = JSON.parse(await fs.readFile(claimsPath, "utf8"));
+      assert(Array.isArray(claims), `${relativeDir}/claims.json must be an array.`);
+      assert(claims.length > 0, `${relativeDir}/claims.json must not be empty.`);
+      for (const claim of claims) {
+        validateJson(
+          schemas.claim,
+          claim,
+          `${relativeDir}/claims.json:${claim.id ?? "unknown"}`
+        );
+        assert(
+          claim.problem_id === problem.id,
+          `${claim.id} problem_id must match ${problem.id}`
+        );
+        // Every evidence ID referenced by a claim must exist in evidence.json
+        for (const evidenceId of claim.evidence) {
+          assert(
+            evidenceIds.has(evidenceId),
+            `${relativeDir}/claims.json:${claim.id} references missing evidence record ${evidenceId}`
+          );
+        }
+        // A claim with no kill_condition is not a claim — the schema enforces this,
+        // but we double-check to surface the intent clearly in validation output.
+        assert(
+          claim.kill_condition && claim.kill_condition.length >= 10,
+          `${relativeDir}/claims.json:${claim.id} has no valid kill condition.`
+        );
+        // High-safety claims require red-team review
+        if (claim.safety_level === "high") {
+          assert(
+            claim.review_required.includes("red-team-reviewer"),
+            `${relativeDir}/claims.json:${claim.id} is safety_level high but does not require red-team-reviewer.`
+          );
+        }
+      }
+    } catch (err) {
+      if (err.code !== "ENOENT" && err.code !== "ENODATA") throw err;
+      // No claims.json — acceptable, packs start without claims
+    }
+
+    // Validate replication.json if it exists
+    const replicationPath = path.join(packDir, "replication.json");
+    try {
+      await fs.access(replicationPath);
+      const replications = JSON.parse(await fs.readFile(replicationPath, "utf8"));
+      assert(
+        Array.isArray(replications),
+        `${relativeDir}/replication.json must be an array.`
+      );
+      assert(replications.length > 0, `${relativeDir}/replication.json must not be empty.`);
+      // Build claim ID set from claims.json (or empty if no claims)
+      const claimIds = new Set();
+      try {
+        const claimsData = JSON.parse(await fs.readFile(claimsPath, "utf8"));
+        for (const c of claimsData) claimIds.add(c.id);
+      } catch {
+        // No claims.json
+      }
+      for (const record of replications) {
+        validateJson(
+          schemas.replication,
+          record,
+          `${relativeDir}/replication.json:${record.id ?? "unknown"}`
+        );
+        assert(
+          claimIds.has(record.claim_id),
+          `${relativeDir}/replication.json:${record.id} references missing claim ${record.claim_id}`
+        );
+      }
+    } catch (err) {
+      if (err.code !== "ENOENT" && err.code !== "ENODATA") throw err;
+      // No replication.json — acceptable
     }
   }
 };

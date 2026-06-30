@@ -980,6 +980,16 @@ Build a verified workflow for estimating plastic waste leakage into marine envir
 
 Build a verified workflow for measuring municipal solid waste collection gaps and open-dumping health risk in South Asian cities, linking waste-generation estimates, collection-route data, and informal-sector recycling data at neighborhood scale.
 
+## Arsenic-Contaminated Groundwater Exposure And Testing Coverage Gaps In Bangladesh
+
+- ID: `water-security/arsenic-groundwater-exposure-bangladesh`
+- Status: `scoped`
+- Domain: `water-security`, `public-health`
+- Region: `bangladesh`
+- Source: [problem-packs/water-security/arsenic-groundwater-exposure-bangladesh](../../problem-packs/water-security/arsenic-groundwater-exposure-bangladesh/problem.md)
+
+Build a verified workflow for mapping sub-national arsenic exposure risk and well-testing coverage gaps in Bangladesh, linking groundwater arsenic survey data, tube-well census data, and health-outcome data with explicit grain and method documentation.
+
 ## Glacial Melt Water Security Risk In The Hindu Kush Himalaya
 
 - ID: `water-security/glacial-melt-hindu-kush`

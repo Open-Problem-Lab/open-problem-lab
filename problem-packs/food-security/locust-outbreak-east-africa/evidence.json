@@ -52,5 +52,152 @@
       "Review covers multiple regions and may not reflect East Africa-specific wind patterns."
     ],
     "confidence": "medium"
+  },
+  {
+    "id": "modis-ndvi-data-source",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "claim": "MODIS NDVI products (MOD13Q1 at 250m, 16-day composite; MYD13Q1 from Aqua) provide continuous vegetation greenness data from 2000 to present, enabling detection of vegetation green-up in desert locust breeding areas at spatial resolution sufficient for sub-regional habitat monitoring.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "MODIS Vegetation Indices (MOD13Q1) \u2014 Land Process Distributed Active Archive Center",
+      "url": "https://lpdaac.usgs.gov/products/mod13q1v061/"
+    },
+    "source_date": "2021-03-01",
+    "access_date": "2026-07-01",
+    "method": "Verified LP DAAC product page accessibility, reviewed MOD13Q1 product specification (250m spatial resolution, 16-day composite period, NDVI and EVI layers), temporal coverage (2000-present for Terra, 2002-present for Aqua), and data license (NASA open data, no restrictions).",
+    "limitations": [
+      "250m resolution detects vegetation patches but cannot identify individual locusts or egg beds.",
+      "16-day composite interval may miss short-lived green-up events in rapidly changing arid environments.",
+      "Cloud contamination in optical data creates gaps in monsoon-affected breeding seasons.",
+      "NDVI green-up does not distinguish palatable vegetation for locusts from non-palatable species without supplementary ecological knowledge.",
+      "Product version V061 is current; earlier versions (V006, V005) have different calibration and should not be mixed."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "chirps-rainfall-data-source",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "claim": "CHIRPS (Climate Hazards Group InfraRed Precipitation with Station data) provides gridded rainfall estimates at 0.05 degree spatial resolution (approximately 5km) and daily temporal resolution from 1981 to present, combining satellite infrared data with ground station interpolation, suitable for detecting rainfall events that trigger desert locust breeding.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "CHIRPS Daily Precipitation Data \u2014 Climate Hazards Center, UCSB",
+      "url": "https://www.chc.ucsb.edu/data/chirps"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-07-01",
+    "method": "Verified CHIRPS data portal accessibility, reviewed product documentation for spatial resolution (0.05 degree), temporal coverage (1981-present), data sources (satellite infrared + station data), and license (public domain). Confirmed that CHIRPS is used in FAO Locust Watch and in peer-reviewed locust studies.",
+    "limitations": [
+      "0.05 degree resolution (approximately 5km) may miss localized convective rainfall events that trigger breeding in arid wadis.",
+      "Rainfall estimates rely on station density, which is extremely sparse in the remote desert breeding areas of Somalia, Ethiopia, and Sudan.",
+      "CHIRPS v2.0 is the current version; earlier versions have different bias correction and should not be mixed in time-series analysis.",
+      "Rainfall is a necessary but not sufficient condition for breeding; soil moisture and temperature must also be suitable."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "smap-soil-moisture-data-source",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "claim": "SMAP (Soil Moisture Active Passive) provides global soil moisture measurements at 9km spatial resolution and 2-3 day revisit from 2015 to present, suitable for monitoring soil moisture conditions required for desert locust egg laying and development, using L-band radiometry that penetrates vegetation canopy.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "SMAP Soil Moisture Data \u2014 NASA National Snow and Ice Data Center",
+      "url": "https://nsidc.org/data/smap/smap-data.html"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-07-01",
+    "method": "Verified NSIDC SMAP data portal accessibility, reviewed product specifications (L-band radiometer, 9km resolution for Level 3 product, 2-3 day revisit), temporal coverage (2015-present), and data license (NASA open data). Confirmed that SMAP is used in peer-reviewed locust habitat studies.",
+    "limitations": [
+      "9km resolution is coarse for detecting localized soil moisture conditions in desert wadis where locusts lay eggs.",
+      "L-band radiometry performance degrades in areas with dense vegetation or complex topography, though desert breeding areas are generally sparse.",
+      "SMAP does not measure soil moisture deeper than 5cm, while locust eggs are laid at 5-15cm depth.",
+      "Data begins in 2015, so no coverage for the 2003-2005 or earlier upsurges.",
+      "Radio frequency interference in parts of East Africa may create data gaps."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "era5-wind-data-source",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "claim": "ERA5 global atmospheric reanalysis provides hourly wind fields at 0.25 degree spatial resolution from 1950 to present, combining model data with observations, suitable for modeling desert locust swarm movement trajectories at regional scale using wind speed and direction at multiple pressure levels.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "ERA5 Hourly Data on Pressure Levels \u2014 Copernicus Climate Data Store",
+      "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-pressure-levels"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-07-01",
+    "method": "Verified Copernicus CDS dataset page accessibility, reviewed ERA5 product specification (0.25 degree, hourly, 1950-present, pressure levels from 1000 to 1 hPa), data access (free with Copernicus registration), and license (Copernicus license, free for most uses).",
+    "limitations": [
+      "0.25 degree resolution (approximately 27km) is coarse for modeling swarm movement at local scale where terrain features channel wind flow.",
+      "ERA5 is a reanalysis product that assimilates observations; wind fields in data-sparse regions like the Horn of Africa rely heavily on model output.",
+      "Reanalysis wind fields represent mean conditions and may not capture the gust fronts and localized wind shifts that influence swarm displacement.",
+      "ERA5 wind fields are at fixed pressure levels, not at the flight altitude of locust swarms (typically 10-300m above ground), requiring vertical interpolation.",
+      "Copernicus CDS connection may fail from CI runners; the data is accessible via browser and API."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "fao-locust-watch-bulletins-source",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "claim": "FAO Locust Watch publishes monthly desert locust situation bulletins and forecasts for affected countries, providing field-reported swarm locations, breeding site observations, and control operations data that serve as ground truth for validating remote sensing signals, with archives available from 2003 to present.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "FAO Locust Watch \u2014 Desert Locust Situation Bulletins",
+      "url": "https://www.fao.org/ag/locusts/en/situation/situation/en/"
+    },
+    "source_date": "2025-06-01",
+    "access_date": "2026-07-01",
+    "method": "Verified FAO Locust Watch bulletin archive page accessibility, reviewed bulletin structure (situation description by country, forecast, control operations, maps), temporal coverage (monthly bulletins from 2003, with some gaps during inter-campaign periods), and data format (PDF reports with embedded maps, not machine-readable data).",
+    "limitations": [
+      "Bulletins are PDF reports, not structured datasets; extracting swarm locations requires manual or OCR processing.",
+      "Field reporting coverage depends on survey team access, which is severely limited in conflict-affected areas of Somalia, Yemen, and parts of Ethiopia.",
+      "Reporting is monthly, while locust breeding and swarm formation cycles operate at weekly to biweekly timescales.",
+      "Bulletins report observed swarms, not absence of swarms, so negative observations are ambiguous between no swarms and no surveys.",
+      "Geographic precision in bulletins is often at province or regional level, not at the district level needed for pixel-level validation."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "salih-locust-climate-2023",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "claim": "A 2023 study found that climate change, through increased tropical cyclone activity in the Arabian Sea, contributed to unusually favorable breeding conditions for the 2019-2020 desert locust upsurge, with cyclones Mekunu (2018) and Luban (2018) depositing enough rainfall in the Empty Quarter of Arabia to enable multiple generations of breeding before swarms migrated to East Africa.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "The 2019-2020 desert locust upsurge in East Africa was promoted by climate-induced anomalous tropical cyclones",
+      "url": "https://doi.org/10.1016/j.scitotenv.2023.163795",
+      "doi": "10.1016/j.scitotenv.2023.163795"
+    },
+    "source_date": "2023-05-15",
+    "access_date": "2026-07-01",
+    "method": "Reviewed Science of the Total Environment article for cyclone-breeding linkage analysis, rainfall anomalies in Arabian Peninsula, and swarm migration pathway reconstruction. Verified DOI resolution.",
+    "limitations": [
+      "The study links cyclone rainfall to breeding conditions but does not provide a quantitative early warning signal at sub-national scale.",
+      "The cyclone-breeding pathway is specific to the 2019-2020 upsurge and may not generalize to all upsurge events.",
+      "Cyclone frequency and intensity projections under climate change carry substantial uncertainty.",
+      "Publisher page may block automated access; DOI resolves correctly."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "gituku-locust-spatial-analysis-2024",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "claim": "A 2024 study used spatial analysis of MODIS NDVI, CHIRPS rainfall, and FAO swarm reports to identify environmental predictors of desert locust breeding in East Africa, finding that vegetation green-up preceded by rainfall events explained approximately 60 percent of reported breeding site locations, but that the lead time from green-up to swarm formation ranged from 2 to 8 weeks, too variable for reliable operational warning without supplementary field confirmation.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Spatial analysis of environmental factors associated with desert locust breeding in East Africa",
+      "url": "https://doi.org/10.1016/j.rsase.2024.101252",
+      "doi": "10.1016/j.rsase.2024.101252"
+    },
+    "source_date": "2024-06-01",
+    "access_date": "2026-07-01",
+    "method": "Reviewed Remote Sensing Applications: Society and Environment article for spatial analysis methodology, environmental variable selection, validation against FAO reports, and lead-time analysis. Verified DOI resolution.",
+    "limitations": [
+      "The 60 percent explanation rate means 40 percent of breeding sites were not predicted by vegetation and rainfall signals alone.",
+      "Lead-time variability (2-8 weeks) makes operational use difficult without additional soil temperature and wind data.",
+      "Validation against FAO reports inherits the reporting bias from conflict-affected areas with limited field access.",
+      "The study covers the 2019-2020 upsurge period; whether the predictive relationships hold during quieter inter-campaign periods is unknown.",
+      "Publisher page may block automated access; DOI resolves correctly."
+    ],
+    "confidence": "medium"
   }
 ]

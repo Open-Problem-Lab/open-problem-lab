@@ -7,6 +7,8 @@
 3. Add evidence before adding claims.
 4. Keep quantitative outputs reproducible.
 5. Mark every operational inference as reviewed, replicated, or blocked.
+6. For breeding habitat baselines, document thresholds, compositing windows, and agreement with FAO reports.
+7. For signal analysis, report lead-time distributions, not single point estimates.
 
 ## Reviewer Playbook
 

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "locust-data-sufficiency",
+    "problem_id": "food-security/locust-outbreak-east-africa",
+    "claim": "Available public data sources are sufficient to establish that remote sensing can identify desert locust breeding habitats at sub-regional scale (MODIS NDVI, CHIRPS rainfall, SMAP soil moisture) and to model swarm movement trajectories using ERA5 wind fields, with FAO Locust Watch bulletins providing field-reported ground truth. However, no public dataset provides real-time or weekly locust presence/absence data at district-level grain for East Africa, and the transition from habitat detection to actionable swarm formation warning remains unvalidated at the lead-time precision needed for operational use. The available data can support sub-regional breeding habitat suitability analysis and hindcast swarm trajectory validation, but cannot produce a reliable operational early warning signal without supplementary field confirmation data that is not currently publicly available.",
+    "domain": ["food-security", "climate-health"],
+    "status": "unverified",
+    "evidence": [
+      "fao-desert-locust-factsheet-2025",
+      "fao-east-africa-upsurge-2020",
+      "ceccato-locust-remote-sensing-review-2020",
+      "modis-ndvi-data-source",
+      "chirps-rainfall-data-source",
+      "smap-soil-moisture-data-source",
+      "era5-wind-data-source",
+      "fao-locust-watch-bulletins-source",
+      "salih-locust-climate-2023",
+      "gituku-locust-spatial-analysis-2024"
+    ],
+    "failure_modes": [
+      "A reader treats NDVI green-up as proof of locust breeding rather than a habitat suitability indicator, conflating vegetation presence with actual egg-laying or hopper development.",
+      "A reader uses CHIRPS rainfall as a direct trigger for swarm formation when rainfall is necessary but not sufficient; soil temperature, moisture, and vegetation type must also be suitable.",
+      "A reader treats FAO Locust Watch bulletins as a complete census of swarm activity when they reflect survey team access, which is severely limited in conflict zones.",
+      "A decision-maker uses ERA5 wind trajectory models to justify pesticide pre-positioning without acknowledging that 0.25 degree resolution cannot resolve terrain-channelled wind patterns that control local swarm movement.",
+      "A reader treats the 60 percent breeding-site explanation rate from Gituku et al. 2024 as an accuracy figure for a predictive model, when it is an in-sample explanatory rate for a single upsurge period.",
+      "A reader generalizes the cyclone-breeding linkage from Salih et al. 2023 to all locust upsurges when the mechanism is specific to the 2019-2020 event and may not apply to upsurges originating from other breeding areas."
+    ],
+    "kill_condition": "A reviewer identifies a public dataset providing weekly or more frequent locust presence/absence data at district-level grain for at least three East African countries (Ethiopia, Kenya, Somalia) with less than 2-week reporting lag and consistent methodology, or finds that FAO has made eLocust3 data publicly accessible for independent validation, or finds that a peer-reviewed study has validated a remote sensing-based early warning signal with a false-alarm rate below 30 percent at a lead time of at least 3 weeks across multiple upsurge events.",
+    "review_required": ["domain-reviewer", "red-team-reviewer"],
+    "safety_level": "medium",
+    "submitter": "codex-agent",
+    "created_date": "2026-07-01",
+    "last_updated": "2026-07-01",
+    "confidence": "medium",
+    "limitations": [
+      "The claim is about public data availability for locust early warning analysis, not about actual locust presence or breeding activity in specific locations.",
+      "The assessment that no public dataset provides district-level weekly locust data is an inference from reviewing FAO data portals and published literature, not a systematic survey of all national locust control unit databases.",
+      "Some East African countries may have national locust surveillance systems with finer-grain data that is not publicly accessible; these were not reviewed.",
+      "The kill condition thresholds (30 percent false-alarm rate, 3-week lead time) are based on the operational needs implied by FAO control response timelines, not on a formal requirements analysis."
+    ]
+  }
+]

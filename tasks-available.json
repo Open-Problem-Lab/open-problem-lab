@@ -5,7 +5,8 @@
     "total_packs": 104,
     "total_scoped_tasks": 103,
     "by_role": {
-      "literature-scout": 103
+      "literature-scout": 102,
+      "data-cleaner": 1
     },
     "by_risk": {
       "medium": 98,
@@ -816,14 +817,14 @@
       "pack_status": "scoped",
       "domain": ["food-security", "climate-health"],
       "region": ["east-africa"],
-      "task_id": "source-inventory",
-      "title": "Inventory locust and environmental data sources for East Africa",
-      "owner_role": "literature-scout",
-      "reviewer_needed": "domain-reviewer",
+      "task_id": "breeding-habitat-baseline",
+      "title": "Define breeding habitat suitability baseline for East Africa",
+      "owner_role": "data-cleaner",
+      "reviewer_needed": "replicator",
       "safety_risk": "medium",
-      "outcome": "A dated source inventory separating vegetation indices, soil moisture, wind fields, field reports, and unusable sources.",
-      "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
-      "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
+      "outcome": "A reproducible baseline specification for desert locust breeding habitat suitability using MODIS NDVI, CHIRPS rainfall, and SMAP soil moisture data, with explicit thresholds, temporal compositing windows, and agreement metrics against FAO reported breeding locations.",
+      "expected_artifact": "validation.md update with baseline specification, threshold definitions, data checks, and sample-region agreement metrics.",
+      "done_condition": "A reviewer can reproduce the baseline calculation and identify false-positive and false-negative breeding habitat classifications against FAO field reports for at least one upsurge season.",
       "tasks_file": "problem-packs/food-security/locust-outbreak-east-africa/tasks.json",
       "problem_file": "problem-packs/food-security/locust-outbreak-east-africa/problem.md"
     },

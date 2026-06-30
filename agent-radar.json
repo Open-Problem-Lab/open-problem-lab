@@ -8,8 +8,8 @@
     "latent_tasks": 436,
     "status_counts": {
       "scoped": 103,
-      "needs-triage": 435,
-      "needs-review": 1
+      "needs-triage": 434,
+      "needs-review": 2
     },
     "owner_role_counts": {
       "literature-scout": 104,
@@ -19,7 +19,8 @@
       "field-reality-reviewer": 105
     },
     "scoped_role_counts": {
-      "literature-scout": 103
+      "literature-scout": 102,
+      "data-cleaner": 1
     },
     "reviewer_needed_counts": {
       "domain-reviewer": 223,
@@ -118,6 +119,22 @@
         "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
       },
       {
+        "pack_id": "food-security/locust-outbreak-east-africa",
+        "pack_title": "Desert Locust Outbreak Early Warning In East Africa",
+        "task_id": "breeding-habitat-baseline",
+        "title": "Define breeding habitat suitability baseline for East Africa",
+        "owner_role": "data-cleaner",
+        "reviewer_needed": "replicator",
+        "safety_risk": "medium",
+        "done_condition": "A reviewer can reproduce the baseline calculation and identify false-positive and false-negative breeding habitat classifications against FAO field reports for at least one upsurge season.",
+        "evidence_count": 10,
+        "downstream_tasks_unlocked": 5,
+        "downstream_high_risk_tasks": 4,
+        "problem_file": "problem-packs/food-security/locust-outbreak-east-africa/problem.md",
+        "tasks_file": "problem-packs/food-security/locust-outbreak-east-africa/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
+      },
+      {
         "pack_id": "biodiversity/deforestation-amazon",
         "pack_title": "Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin",
         "task_id": "source-inventory",
@@ -212,22 +229,6 @@
         "problem_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md",
         "tasks_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/tasks.json",
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
-      },
-      {
-        "pack_id": "climate-health/malaria-early-warning-africa",
-        "pack_title": "Malaria Early Warning Signals In Sub-Saharan Africa",
-        "task_id": "source-inventory",
-        "title": "Inventory malaria and climate data sources for Sub-Saharan Africa",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "medium",
-        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
-        "evidence_count": 5,
-        "downstream_tasks_unlocked": 5,
-        "downstream_high_risk_tasks": 4,
-        "problem_file": "problem-packs/climate-health/malaria-early-warning-africa/problem.md",
-        "tasks_file": "problem-packs/climate-health/malaria-early-warning-africa/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       }
     ],
     "unlock_paths": [
@@ -272,6 +273,28 @@
         "evidence_count": 7,
         "problem_file": "problem-packs/disaster-resilience/cyclone-early-warning-bangladesh/problem.md",
         "tasks_file": "problem-packs/disaster-resilience/cyclone-early-warning-bangladesh/tasks.json"
+      },
+      {
+        "pack_id": "food-security/locust-outbreak-east-africa",
+        "pack_title": "Desert Locust Outbreak Early Warning In East Africa",
+        "scoped_tasks": 1,
+        "downstream_tasks": 5,
+        "downstream_high_risk_tasks": 4,
+        "downstream_by_role": {
+          "literature-scout": 1,
+          "implementation-planner": 2,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "downstream_reviewers_needed": {
+          "domain-reviewer": 2,
+          "replicator": 1,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "evidence_count": 10,
+        "problem_file": "problem-packs/food-security/locust-outbreak-east-africa/problem.md",
+        "tasks_file": "problem-packs/food-security/locust-outbreak-east-africa/tasks.json"
       },
       {
         "pack_id": "biodiversity/deforestation-amazon",
@@ -404,28 +427,6 @@
         "evidence_count": 4,
         "problem_file": "problem-packs/disaster-resilience/urban-flooding-south-asia/problem.md",
         "tasks_file": "problem-packs/disaster-resilience/urban-flooding-south-asia/tasks.json"
-      },
-      {
-        "pack_id": "food-security/locust-outbreak-east-africa",
-        "pack_title": "Desert Locust Outbreak Early Warning In East Africa",
-        "scoped_tasks": 1,
-        "downstream_tasks": 5,
-        "downstream_high_risk_tasks": 4,
-        "downstream_by_role": {
-          "data-cleaner": 1,
-          "implementation-planner": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "downstream_reviewers_needed": {
-          "replicator": 2,
-          "domain-reviewer": 1,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "evidence_count": 3,
-        "problem_file": "problem-packs/food-security/locust-outbreak-east-africa/problem.md",
-        "tasks_file": "problem-packs/food-security/locust-outbreak-east-africa/tasks.json"
       },
       {
         "pack_id": "public-health/lead-exposure-urban-global",
@@ -602,8 +603,8 @@
         "pack_id": "food-security/locust-outbreak-east-africa",
         "pack_title": "Desert Locust Outbreak Early Warning In East Africa",
         "downstream_reviewers_needed": {
-          "replicator": 2,
-          "domain-reviewer": 1,
+          "domain-reviewer": 2,
+          "replicator": 1,
           "red-team-reviewer": 1,
           "field-reality-reviewer": 1
         },
@@ -675,17 +676,17 @@
       },
       {
         "owner_role": "data-cleaner",
-        "scoped_tasks": 0,
-        "latent_tasks": 100,
+        "scoped_tasks": 1,
+        "latent_tasks": 99,
         "share_of_all_tasks": 0.186,
-        "share_of_latent_tasks": 0.229
+        "share_of_latent_tasks": 0.227
       },
       {
         "owner_role": "literature-scout",
-        "scoped_tasks": 103,
-        "latent_tasks": 1,
+        "scoped_tasks": 102,
+        "latent_tasks": 2,
         "share_of_all_tasks": 0.193,
-        "share_of_latent_tasks": 0.002
+        "share_of_latent_tasks": 0.005
       }
     ]
   }

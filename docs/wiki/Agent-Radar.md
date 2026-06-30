@@ -85,7 +85,19 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 4 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering provider-data fragmentation, outcome-tracking rates, and informal-sector measurement gaps.
 
-### 6. Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin
+### 6. Desert Locust Outbreak Early Warning In East Africa
+
+- Pack: [`food-security/locust-outbreak-east-africa`](../../problem-packs/food-security/locust-outbreak-east-africa/problem.md)
+- Task: `breeding-habitat-baseline` — Define breeding habitat suitability baseline for East Africa
+- Risk: `medium`
+- Reviewer needed: `replicator`
+- Existing evidence records: 10
+- Downstream tasks unlocked: 5
+- Downstream high-risk tasks: 4
+- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
+- Done condition: A reviewer can reproduce the baseline calculation and identify false-positive and false-negative breeding habitat classifications against FAO field reports for at least one upsurge season.
+
+### 7. Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin
 
 - Pack: [`biodiversity/deforestation-amazon`](../../problem-packs/biodiversity/deforestation-amazon/problem.md)
 - Task: `source-inventory` — Inventory deforestation and biodiversity data sources for Amazon basin
@@ -97,7 +109,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
-### 7. Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States
+### 8. Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States
 
 - Pack: [`climate-adaptation/sea-level-rise-small-islands`](../../problem-packs/climate-adaptation/sea-level-rise-small-islands/problem.md)
 - Task: `source-inventory` — Inventory SLR projection and coastal exposure data sources for SIDS
@@ -109,7 +121,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
-### 8. Cyclone Early Warning And Evacuation Signal Verification In Bangladesh
+### 9. Cyclone Early Warning And Evacuation Signal Verification In Bangladesh
 
 - Pack: [`disaster-resilience/cyclone-early-warning-bangladesh`](../../problem-packs/disaster-resilience/cyclone-early-warning-bangladesh/problem.md)
 - Task: `source-inventory` — Inventory cyclone data sources for Bay of Bengal
@@ -121,7 +133,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 3 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
-### 9. PM2.5 Monitoring Gaps And Health Impact In South Asia
+### 10. PM2.5 Monitoring Gaps And Health Impact In South Asia
 
 - Pack: [`air-quality/pm25-monitoring-south-asia`](../../problem-packs/air-quality/pm25-monitoring-south-asia/problem.md)
 - Task: `source-inventory` — Inventory PM2.5 monitoring and air quality data sources for South Asia
@@ -133,7 +145,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
-### 10. Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
+### 11. Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
 
 - Pack: [`occupational-health/heat-stress-outdoor-workers-global`](../../problem-packs/occupational-health/heat-stress-outdoor-workers-global/problem.md)
 - Task: `source-inventory` — Inventory WBGT data sources, labor force distribution data, occupational health surveillance records, and heat-health epidemiology studies for LMICs
@@ -145,7 +157,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering exposure metric, geographic grain, temporal coverage, LMIC data availability, and worker-population representation including informal sector coverage.
 
-### 11. Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries
+### 12. Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries
 
 - Pack: [`public-health/antimicrobial-resistance-surveillance-global`](../../problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md)
 - Task: `source-inventory` — Inventory AMR surveillance data
@@ -156,18 +168,6 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Downstream high-risk tasks: 4
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: Five sources classified as usable, limited, or rejected.
-
-### 12. Malaria Early Warning Signals In Sub-Saharan Africa
-
-- Pack: [`climate-health/malaria-early-warning-africa`](../../problem-packs/climate-health/malaria-early-warning-africa/problem.md)
-- Task: `source-inventory` — Inventory malaria and climate data sources for Sub-Saharan Africa
-- Risk: `medium`
-- Reviewer needed: `domain-reviewer`
-- Existing evidence records: 5
-- Downstream tasks unlocked: 5
-- Downstream high-risk tasks: 4
-- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
-- Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
 ## Unlock Paths
 
@@ -192,6 +192,16 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - Follow-on roles: `field-reality-reviewer`: 1, `implementation-planner`: 3, `red-team-reviewer`: 1
 - Reviewer types needed later: `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 3
 - Existing evidence records: 7
+
+### Desert Locust Outbreak Early Warning In East Africa
+
+- Pack: [`food-security/locust-outbreak-east-africa`](../../problem-packs/food-security/locust-outbreak-east-africa/problem.md)
+- Scoped tasks at front door: 1
+- Follow-on tasks behind it: 5
+- High-risk follow-on tasks: 4
+- Follow-on roles: `field-reality-reviewer`: 1, `implementation-planner`: 2, `literature-scout`: 1, `red-team-reviewer`: 1
+- Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
+- Existing evidence records: 10
 
 ### Satellite-Driven Deforestation Detection And Species Loss Risk In The Amazon Basin
 
@@ -252,16 +262,6 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
 - Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 - Existing evidence records: 4
-
-### Desert Locust Outbreak Early Warning In East Africa
-
-- Pack: [`food-security/locust-outbreak-east-africa`](../../problem-packs/food-security/locust-outbreak-east-africa/problem.md)
-- Scoped tasks at front door: 1
-- Follow-on tasks behind it: 5
-- High-risk follow-on tasks: 4
-- Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
-- Reviewer types needed later: `domain-reviewer`: 1, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 2
-- Existing evidence records: 3
 
 ### Urban Lead Exposure Risk Mapping In Low- And Middle-Income Countries
 
@@ -358,7 +358,7 @@ These are the packs most likely to stall after the first scoped task because rev
 - Pack: [`food-security/locust-outbreak-east-africa`](../../problem-packs/food-security/locust-outbreak-east-africa/problem.md)
 - Follow-on tasks: 5
 - High-risk follow-on tasks: 4
-- Reviewer load: `domain-reviewer`: 1, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 2
+- Reviewer load: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 
 ### Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
 
@@ -390,8 +390,8 @@ This is the actual pipeline shape. The flat scoped list hides it.
 | `implementation-planner` | 0          | 126            | 0.234              | 0.289                 |
 | `field-reality-reviewer` | 0          | 105            | 0.195              | 0.241                 |
 | `red-team-reviewer`      | 0          | 104            | 0.193              | 0.239                 |
-| `data-cleaner`           | 0          | 100            | 0.186              | 0.229                 |
-| `literature-scout`       | 103        | 1              | 0.193              | 0.002                 |
+| `data-cleaner`           | 1          | 99             | 0.186              | 0.227                 |
+| `literature-scout`       | 102        | 2              | 0.193              | 0.005                 |
 
 ## Protocol Alerts
 

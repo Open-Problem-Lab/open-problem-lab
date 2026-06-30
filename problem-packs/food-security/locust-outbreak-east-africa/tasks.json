@@ -3,39 +3,39 @@
     "id": "source-inventory",
     "problem_id": "food-security/locust-outbreak-east-africa",
     "title": "Inventory locust and environmental data sources for East Africa",
-    "status": "scoped",
+    "status": "needs-review",
     "owner_role": "literature-scout",
-    "outcome": "A dated source inventory separating vegetation indices, soil moisture, wind fields, field reports, and unusable sources.",
+    "outcome": "A dated source inventory separating vegetation indices, soil moisture, wind fields, field reports, and unusable sources into usable, limited, and rejected categories with explicit reasons covering resolution, temporal coverage, access conditions, field-report coverage gaps, and known detection limitations.",
     "inputs": [
       "FAO Locust Watch platform",
-      "remote sensing data catalogs",
+      "remote sensing data catalogs (MODIS, CHIRPS, SMAP, ERA5)",
       "field report archives",
       "peer-reviewed locust studies"
     ],
-    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
-    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, and limitations.",
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source and claims.json with data-sufficiency claim.",
+    "validation_method": "Reviewer checks each listed source for URL, date, access status, license, geographic grain, temporal coverage, and limitations. Reviewer verifies that the data-sufficiency claim kill condition is specific and falsifiable.",
     "reviewer_needed": "domain-reviewer",
     "safety_risk": "medium",
-    "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons."
+    "done_condition": "At least seven candidate data sources are classified as usable, limited, or rejected with explicit reasons covering spatial resolution, temporal coverage, access conditions, field-report coverage gaps, and known detection limitations."
   },
   {
     "id": "breeding-habitat-baseline",
     "problem_id": "food-security/locust-outbreak-east-africa",
     "title": "Define breeding habitat suitability baseline for East Africa",
-    "status": "needs-triage",
+    "status": "scoped",
     "owner_role": "data-cleaner",
-    "outcome": "A reproducible baseline specification for desert locust breeding habitat suitability using vegetation, soil moisture, and rainfall data.",
+    "outcome": "A reproducible baseline specification for desert locust breeding habitat suitability using MODIS NDVI, CHIRPS rainfall, and SMAP soil moisture data, with explicit thresholds, temporal compositing windows, and agreement metrics against FAO reported breeding locations.",
     "inputs": [
-      "MODIS NDVI data",
-      "CHIRPS rainfall data",
-      "SMAP soil moisture data",
-      "FAO reported breeding locations"
+      "MODIS NDVI data (MOD13Q1, 250m, 16-day)",
+      "CHIRPS rainfall data (0.05 deg, daily)",
+      "SMAP soil moisture data (9km, 2-3 day)",
+      "FAO Locust Watch reported breeding locations"
     ],
-    "expected_artifact": "validation.md update with baseline specification and data checks.",
-    "validation_method": "Replicator reruns the baseline on a sample region and confirms grain, temporal resolution, and agreement with FAO reported breeding sites.",
+    "expected_artifact": "validation.md update with baseline specification, threshold definitions, data checks, and sample-region agreement metrics.",
+    "validation_method": "Replicator reruns the baseline on a sample region (e.g., one East African country for one upsurge season) and confirms grain, temporal compositing, threshold behavior, and agreement with FAO reported breeding sites.",
     "reviewer_needed": "replicator",
     "safety_risk": "medium",
-    "done_condition": "A reviewer can reproduce the baseline calculation and identify false-positive and false-negative breeding habitat classifications against FAO field reports."
+    "done_condition": "A reviewer can reproduce the baseline calculation and identify false-positive and false-negative breeding habitat classifications against FAO field reports for at least one upsurge season."
   },
   {
     "id": "outbreak-signal-correlation",

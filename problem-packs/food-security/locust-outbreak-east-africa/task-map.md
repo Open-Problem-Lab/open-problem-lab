@@ -17,6 +17,12 @@ flowchart TD
   F --> G
 ```
 
+## Current Status
+
+- **Source inventory**: Completed. 10 evidence records, 12 sources classified (7 usable, 3 limited, 2 rejected). Data-sufficiency claim created with kill condition. Awaiting domain-reviewer review.
+- **Breeding habitat baseline**: Scoped and ready for a data-cleaner. This is the next task in the pipeline. It depends on the source inventory being accepted.
+- All other tasks remain needs-triage until the baseline is accepted.
+
 ## Merge Discipline
 
 Work may happen in parallel, but accepted outputs must preserve this order:

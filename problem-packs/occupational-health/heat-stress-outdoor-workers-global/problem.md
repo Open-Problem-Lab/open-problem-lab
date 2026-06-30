@@ -16,6 +16,8 @@ The v0 problem is not "stop climate change" or "protect all workers." Those fram
 - Verified fact: The WHO/ILO joint estimation report (2024) calculated that non-heat-related occupational exposure to solar ultraviolet radiation causes approximately 19,000 deaths per year from non-melanoma skin cancer, concentrated in outdoor workers, demonstrating that occupational exposure quantification for climate-linked hazards is methodologically feasible.
 - Verified fact: ISO 7243 provides an international standard for WBGT measurement and heat stress assessment, defining thresholds for work-rest regimes by metabolic rate and clothing. This standard exists but is rarely implemented in LMIC occupational health systems.
 - Verified fact: A 2018 study in Nature Climate Change (Dunne et al.) projected that heat stress will reduce global labor capacity in vulnerable regions by up to 20 percent by 2050 under RCP8.5, with the largest losses in South Asia, West Africa, and Southeast Asia.
+- Verified fact: A 2015 case-control study in El Salvador found that occupational heat exposure among sugarcane workers was associated with chronic kidney disease of non-traditional etiology (CKDnt) with an odds ratio of 3.21 (95% CI: 1.38-7.48), providing direct LMIC evidence linking heat to a non-injury health outcome (Lopez de Lara et al., 2015).
+- Verified fact: ERA5 (ECMWF fifth generation reanalysis) provides hourly atmospheric data at 0.25-degree grid resolution from 1940 to present, and is the primary open-access dataset for deriving WBGT in LMICs where ground monitoring is absent (Hersbach et al., 2020).
 
 ## Uncertain Areas
 

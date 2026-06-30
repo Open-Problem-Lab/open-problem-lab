@@ -30,6 +30,18 @@ Use this source for projected labor capacity loss under climate change scenarios
 
 Use this source for the estimated annual occupational injuries (26.2 million) and deaths (18,970) attributable to excessive heat. These are modeled estimates with underreporting adjustment, not direct surveillance counts. Do not use them as country-specific injury rates without checking the underlying methodology.
 
+### ERA5 Reanalysis (ECMWF, Hersbach et al. 2020)
+
+Use this source as the primary open-access atmospheric reanalysis for deriving sub-national WBGT estimates in LMICs lacking ground monitoring. Hourly data at 0.25-degree grid from 1940 to present, available via Copernicus Climate Data Store. Do not treat ERA5-derived WBGT as equivalent to in-situ WBGT meter readings; reanalysis bias in data-sparse tropical regions is a known limitation. Verify WBGT calculation methodology against published formulas (Liljegren et al. or Bernard) before canonical use.
+
+### ILOSTAT Employment by Industry
+
+Use this source for worker population denominators by industry, which are needed to estimate how many outdoor workers are exposed to heat in each country. National-level for most LMICs with limited sub-national coverage. Do not assume ILOSTAT informal sector estimates are directly surveyed; many are ILO modelled estimates with documented uncertainty. Do not use ILOSTAT industry classifications to distinguish outdoor from indoor workers without additional assumptions.
+
+### Lopez de Lara et al. 2015 (CKDnt, El Salvador)
+
+Use this source for direct LMIC evidence linking occupational heat exposure to a non-injury health outcome. The study found an OR of 3.21 for CKDnt among the highest-exposure sugarcane workers. Do not generalize Mesoamerican CKDnt epidemiology to other tropical regions without region-specific verification. The cross-sectional design limits causal inference.
+
 ## Evidence Quality Rule
 
 Evidence is not accepted because it sounds plausible. It is accepted when the source, method, limitations, and confidence are explicit enough for a reviewer to attack. Heat exposure estimates must specify the metric (WBGT, ambient temperature, heat index), the data source (station, reanalysis grid, satellite), and the time period. Health outcome estimates must specify the population, industry, surveillance or study method, and geographic coverage.

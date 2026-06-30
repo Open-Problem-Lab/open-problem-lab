@@ -3,7 +3,7 @@
     "id": "source-inventory",
     "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
     "title": "Inventory WBGT data sources, labor force distribution data, occupational health surveillance records, and heat-health epidemiology studies for LMICs",
-    "status": "scoped",
+    "status": "accepted",
     "owner_role": "literature-scout",
     "outcome": "A dated source inventory that separates WBGT and heat exposure data products (reanalysis, station, satellite-derived), labor force and employment-by-industry data (ILOSTAT, national labor surveys), occupational health surveillance data (injury registries, workers compensation), and heat-health epidemiology studies into usable, limited, and rejected categories with explicit LMIC coverage assessment.",
     "inputs": [

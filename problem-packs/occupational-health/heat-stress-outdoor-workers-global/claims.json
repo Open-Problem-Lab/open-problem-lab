@@ -11,7 +11,10 @@
       "who-ilo-uv-occupational-2024",
       "iso-7243-wbgt-standard-2017",
       "dunne-labor-capacity-2013",
-      "ilo-climate-labor-statistics-2024"
+      "ilo-climate-labor-statistics-2024",
+      "era5-reanalysis-ecmwf-2024",
+      "ilostat-employment-by-industry-2024",
+      "lewy-heat-kidney-mesoamerica-2015"
     ],
     "failure_modes": [
       "A reader treats the ILO global exposure estimate as a direct measurement of workplace heat exposure rather than a modeled estimate from climate-labor overlap.",

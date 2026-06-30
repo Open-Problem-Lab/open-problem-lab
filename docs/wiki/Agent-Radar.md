@@ -15,8 +15,8 @@ Without routing, a new agent sees a flat task list and misses the actual shape o
 
 - **103 problem packs**
 - **534 total tasks**
-- **103 scoped now**
-- **431 follow-on tasks still latent**
+- **102 scoped now**
+- **432 follow-on tasks still latent**
 - **Owner roles:** `data-cleaner`: 99, `field-reality-reviewer`: 104, `implementation-planner`: 125, `literature-scout`: 103, `red-team-reviewer`: 103
 - **Reviewer demand:** `domain-reviewer`: 221, `field-reality-reviewer`: 105, `red-team-reviewer`: 103, `replicator`: 105
 - **Safety mix:** `high`: 279, `low`: 12, `medium`: 243
@@ -133,19 +133,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
-### 10. Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
-
-- Pack: [`occupational-health/heat-stress-outdoor-workers-global`](../../problem-packs/occupational-health/heat-stress-outdoor-workers-global/problem.md)
-- Task: `source-inventory` — Inventory WBGT data sources, labor force distribution data, occupational health surveillance records, and heat-health epidemiology studies for LMICs
-- Risk: `medium`
-- Reviewer needed: `domain-reviewer`
-- Existing evidence records: 6
-- Downstream tasks unlocked: 5
-- Downstream high-risk tasks: 4
-- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
-- Done condition: At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering exposure metric, geographic grain, temporal coverage, LMIC data availability, and worker-population representation including informal sector coverage.
-
-### 11. Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries
+### 10. Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries
 
 - Pack: [`public-health/antimicrobial-resistance-surveillance-global`](../../problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md)
 - Task: `source-inventory` — Inventory AMR surveillance data
@@ -157,7 +145,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: Five sources classified as usable, limited, or rejected.
 
-### 12. Malaria Early Warning Signals In Sub-Saharan Africa
+### 11. Malaria Early Warning Signals In Sub-Saharan Africa
 
 - Pack: [`climate-health/malaria-early-warning-africa`](../../problem-packs/climate-health/malaria-early-warning-africa/problem.md)
 - Task: `source-inventory` — Inventory malaria and climate data sources for Sub-Saharan Africa
@@ -168,6 +156,18 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Downstream high-risk tasks: 4
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
+
+### 12. Aflatoxin Exposure From Contaminated Staple Grains In Sub-Saharan Africa
+
+- Pack: [`food-safety/aflatoxin-exposure-sub-saharan-africa`](../../problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/problem.md)
+- Task: `source-inventory` — Inventory mycotoxin test data, climate suitability models, and post-harvest practice surveys for SSA aflatoxin risk mapping
+- Risk: `medium`
+- Reviewer needed: `domain-reviewer`
+- Existing evidence records: 5
+- Downstream tasks unlocked: 5
+- Downstream high-risk tasks: 4
+- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
+- Done condition: At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering contamination test method, geographic grain, crop specificity, sampling frame adequacy, and intervention-relevance.
 
 ## Unlock Paths
 
@@ -202,16 +202,6 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
 - Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 - Existing evidence records: 8
-
-### Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
-
-- Pack: [`occupational-health/heat-stress-outdoor-workers-global`](../../problem-packs/occupational-health/heat-stress-outdoor-workers-global/problem.md)
-- Scoped tasks at front door: 1
-- Follow-on tasks behind it: 5
-- High-risk follow-on tasks: 4
-- Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
-- Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
-- Existing evidence records: 6
 
 ### Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries
 
@@ -293,9 +283,26 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 - Existing evidence records: 2
 
+### Under-Five Mortality Sub-National Inequality Tracking In Low-Income Countries
+
+- Pack: [`public-health/child-mortality-inequality-global`](../../problem-packs/public-health/child-mortality-inequality-global/problem.md)
+- Scoped tasks at front door: 1
+- Follow-on tasks behind it: 5
+- High-risk follow-on tasks: 4
+- Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
+- Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
+- Existing evidence records: 2
+
 ## Reviewer Hotspots
 
 These are the packs most likely to stall after the first scoped task because reviewer load becomes the bottleneck.
+
+### Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
+
+- Pack: [`occupational-health/heat-stress-outdoor-workers-global`](../../problem-packs/occupational-health/heat-stress-outdoor-workers-global/problem.md)
+- Follow-on tasks: 6
+- High-risk follow-on tasks: 4
+- Reviewer load: `domain-reviewer`: 3, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 
 ### Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States
 
@@ -360,13 +367,6 @@ These are the packs most likely to stall after the first scoped task because rev
 - High-risk follow-on tasks: 4
 - Reviewer load: `domain-reviewer`: 1, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 2
 
-### Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
-
-- Pack: [`occupational-health/heat-stress-outdoor-workers-global`](../../problem-packs/occupational-health/heat-stress-outdoor-workers-global/problem.md)
-- Follow-on tasks: 5
-- High-risk follow-on tasks: 4
-- Reviewer load: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
-
 ### Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries
 
 - Pack: [`public-health/antimicrobial-resistance-surveillance-global`](../../problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md)
@@ -387,11 +387,11 @@ This is the actual pipeline shape. The flat scoped list hides it.
 
 | Role                     | Scoped now | Latent backlog | Share of all tasks | Share of latent tasks |
 | ------------------------ | ---------- | -------------- | ------------------ | --------------------- |
-| `implementation-planner` | 0          | 125            | 0.234              | 0.29                  |
+| `implementation-planner` | 0          | 125            | 0.234              | 0.289                 |
 | `field-reality-reviewer` | 0          | 104            | 0.195              | 0.241                 |
-| `red-team-reviewer`      | 0          | 103            | 0.193              | 0.239                 |
-| `data-cleaner`           | 0          | 99             | 0.185              | 0.23                  |
-| `literature-scout`       | 103        | 0              | 0.193              | 0                     |
+| `red-team-reviewer`      | 0          | 103            | 0.193              | 0.238                 |
+| `data-cleaner`           | 0          | 99             | 0.185              | 0.229                 |
+| `literature-scout`       | 102        | 1              | 0.193              | 0.002                 |
 
 ## Protocol Alerts
 

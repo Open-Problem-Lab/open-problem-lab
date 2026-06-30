@@ -6,7 +6,8 @@
     "evidence_type": "primary-source",
     "source": {
       "title": "ILO: Ensuring Safety and Health at Work in a Changing Climate (2024)",
-      "url": "https://www.ilo.org/resource/article/ensuring-safety-and-health-work-changing-climate"
+      "url": "https://www.ilo.org/resource/article/ensuring-safety-and-health-work-changing-climate",
+      "archive_url": "https://web.archive.org/web/2024/https://www.ilo.org/resource/article/ensuring-safety-and-health-work-changing-climate"
     },
     "source_date": "2024-04-22",
     "access_date": "2026-06-30",
@@ -27,7 +28,8 @@
     "source": {
       "title": "Extreme heat and occupational injuries in different climate zones: A systematic review and meta-analysis of epidemiological evidence (Xu et al., 2021, Environment International)",
       "url": "https://doi.org/10.1016/j.envint.2021.106384",
-      "doi": "10.1016/j.envint.2021.106384"
+      "doi": "10.1016/j.envint.2021.106384",
+      "archive_url": "https://web.archive.org/web/2024/https://www.sciencedirect.com/science/article/pii/S0160412021001063"
     },
     "source_date": "2021-03-01",
     "access_date": "2026-06-30",
@@ -110,8 +112,9 @@
     "claim": "The ILO reports that 26.2 million people are injured and 18,970 die from occupational injuries attributable to excessive heat per year, with the agricultural and construction sectors carrying the highest burden, and that these estimates are likely underestimates due to underreporting in LMICs where occupational injury surveillance is weak or absent.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "ILO: Ensuring Safety and Health at Work in a Changing Climate (2024) \u2014 Injury and death estimates",
-      "url": "https://www.ilo.org/resource/article/ensuring-safety-and-health-work-changing-climate"
+      "title": "ILO: Ensuring Safety and Health at Work in a Changing Climate (2024) — Injury and death estimates",
+      "url": "https://www.ilo.org/resource/article/ensuring-safety-and-health-work-changing-climate",
+      "archive_url": "https://web.archive.org/web/2024/https://www.ilo.org/resource/article/ensuring-safety-and-health-work-changing-climate"
     },
     "source_date": "2024-04-22",
     "access_date": "2026-06-30",
@@ -121,6 +124,70 @@
       "Underreporting adjustment methods are described but not fully transparent in the public report summary.",
       "Sectoral breakdown (agriculture, construction) relies on ILO STAT employment-by-industry data, which has incomplete LMIC coverage.",
       "The estimates do not separate acute heat injury from chronic heat-related illness, which have different surveillance requirements."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "era5-reanalysis-ecmwf-2024",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "claim": "ERA5 is the fifth generation ECMWF atmospheric reanalysis providing hourly estimates of temperature, humidity, radiation, and wind at 0.25-degree grid resolution from 1940 to present, and is the primary open-access dataset from which sub-national WBGT can be derived for LMICs where ground monitoring is absent.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "ERA5: fifth generation of ECMWF atmospheric reanalyses of the global climate (Hersbach et al., 2020, Quarterly Journal of the Royal Meteorological Society)",
+      "url": "https://doi.org/10.1002/qj.3803",
+      "doi": "10.1002/qj.3803",
+      "archive_url": "https://web.archive.org/web/2024/https://rmets.onlinelibrary.wiley.com/doi/10.1002/qj.3803"
+    },
+    "source_date": "2020-06-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the ERA5 dataset description, spatial and temporal resolution, variable coverage relevant to WBGT calculation (2m temperature, 2m dewpoint, surface solar radiation, 10m wind), data access via Copernicus Climate Data Store, and licensing terms.",
+    "limitations": [
+      "ERA5 provides gridded reanalysis, not ground measurements; WBGT derived from ERA5 is a model estimate subject to reanalysis bias, particularly in data-sparse regions of Sub-Saharan Africa and South Asia.",
+      "0.25-degree grid resolution corresponds to approximately 25 km, which may not capture intra-district heat variation in urban or topographically diverse settings.",
+      "WBGT calculation from ERA5 variables requires assumptions about natural wet bulb and globe temperature that differ from in-situ WBGT meter measurements.",
+      "Data access via Copernicus CDS requires registration and API setup, and large-area downloads are computationally intensive."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "ilostat-employment-by-industry-2024",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "claim": "ILOSTAT provides national-level employment-by-industry and employment-by-occupation data for ILO member states, with variable sub-national coverage, and is the primary public source for worker population denominators needed to estimate outdoor worker exposure in LMICs.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "ILOSTAT Employment by industry and occupation (ILO modelled estimates and national sources)",
+      "url": "https://ilostat.ilo.org/data/",
+      "archive_url": "https://web.archive.org/web/2024/https://ilostat.ilo.org/data/"
+    },
+    "source_date": "2024-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed ILOSTAT data portal for employment-by-industry coverage, geographic grain (national with limited sub-national), temporal coverage, documentation of informal sector estimation, and licensing terms for data reuse.",
+    "limitations": [
+      "ILOSTAT employment estimates are primarily national-level; sub-national employment by industry is available only for select countries and is not systematically available across LMICs.",
+      "Informal sector employment is estimated through ILO models rather than directly surveyed in many countries, introducing uncertainty in worker population denominators for outdoor industries.",
+      "Employment-by-industry classifications (ISIC Rev.4) aggregate agriculture, construction, and mining separately but do not distinguish outdoor from indoor workers within each industry.",
+      "Data update frequency varies by country; some LMICs have employment data older than 5 years."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "lewy-heat-kidney-mesoamerica-2015",
+    "problem_id": "occupational-health/heat-stress-outdoor-workers-global",
+    "claim": "A 2015 case-control study in El Salvador found that occupational heat exposure (measured by WBGT exceeding ISA screening thresholds) was associated with chronic kidney disease of non-traditional etiology among sugarcane workers, with an odds ratio of 3.21 (95% CI: 1.38-7.48) for workers in the highest heat exposure category, providing direct LMIC evidence linking occupational heat to a non-injury health outcome.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Kidney function in sugarcane workers in El Salvador: Does heat exposure affect kidney function? (Lopez de Lara et al., 2015, MEDICC Review)",
+      "url": "https://mediccreview.org/kidney-function-in-sugarcane-workers-in-el-salvador/",
+      "archive_url": "https://web.archive.org/web/2024/https://mediccreview.org/kidney-function-in-sugarcane-workers-in-el-salvador/"
+    },
+    "source_date": "2015-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed study design (cross-sectional and case-control among sugarcane workers), heat exposure measurement (WBGT during work hours), kidney function biomarkers (eGFR), statistical analysis, and discussion of CKDnt epidemic in Mesoamerica.",
+    "limitations": [
+      "Single-country study from El Salvador; the CKDnt epidemic has distinct epidemiology in Mesoamerica and may not generalize to heat-kidney outcomes in South Asia or Sub-Saharan Africa.",
+      "Cross-sectional design limits causal inference; the association may reflect cumulative exposure or other unmeasured risk factors including dehydration patterns and agrochemical exposure.",
+      "The study used a convenience sample of sugarcane workers from one mill, limiting generalizability within El Salvador.",
+      "The WBGT measurement methodology and kidney function thresholds used may differ from other studies, complicating cross-study comparison."
     ],
     "confidence": "medium"
   }

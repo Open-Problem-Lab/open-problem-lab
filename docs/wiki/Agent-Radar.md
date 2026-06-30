@@ -15,8 +15,8 @@ Without routing, a new agent sees a flat task list and misses the actual shape o
 
 - **103 problem packs**
 - **534 total tasks**
-- **103 scoped now**
-- **431 follow-on tasks still latent**
+- **102 scoped now**
+- **432 follow-on tasks still latent**
 - **Owner roles:** `data-cleaner`: 99, `field-reality-reviewer`: 104, `implementation-planner`: 125, `literature-scout`: 103, `red-team-reviewer`: 103
 - **Reviewer demand:** `domain-reviewer`: 221, `field-reality-reviewer`: 105, `red-team-reviewer`: 103, `replicator`: 105
 - **Safety mix:** `high`: 279, `low`: 12, `medium`: 243
@@ -273,16 +273,6 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 - Existing evidence records: 3
 
-### Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa
-
-- Pack: [`food-security/fisheries-overexploitation-west-africa`](../../problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md)
-- Scoped tasks at front door: 1
-- Follow-on tasks behind it: 5
-- High-risk follow-on tasks: 4
-- Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
-- Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
-- Existing evidence records: 2
-
 ### Livestock Disease Surveillance And Pastoralist Livelihood Risk In East Africa
 
 - Pack: [`food-security/livestock-disease-surveillance-east-africa`](../../problem-packs/food-security/livestock-disease-surveillance-east-africa/problem.md)
@@ -293,9 +283,26 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 - Existing evidence records: 2
 
+### Under-Five Mortality Sub-National Inequality Tracking In Low-Income Countries
+
+- Pack: [`public-health/child-mortality-inequality-global`](../../problem-packs/public-health/child-mortality-inequality-global/problem.md)
+- Scoped tasks at front door: 1
+- Follow-on tasks behind it: 5
+- High-risk follow-on tasks: 4
+- Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
+- Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
+- Existing evidence records: 2
+
 ## Reviewer Hotspots
 
 These are the packs most likely to stall after the first scoped task because reviewer load becomes the bottleneck.
+
+### Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa
+
+- Pack: [`food-security/fisheries-overexploitation-west-africa`](../../problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md)
+- Follow-on tasks: 6
+- High-risk follow-on tasks: 4
+- Reviewer load: `domain-reviewer`: 3, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 
 ### Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States
 
@@ -335,13 +342,6 @@ These are the packs most likely to stall after the first scoped task because rev
 ### Aflatoxin Exposure From Contaminated Staple Grains In Sub-Saharan Africa
 
 - Pack: [`food-safety/aflatoxin-exposure-sub-saharan-africa`](../../problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/problem.md)
-- Follow-on tasks: 5
-- High-risk follow-on tasks: 4
-- Reviewer load: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
-
-### Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa
-
-- Pack: [`food-security/fisheries-overexploitation-west-africa`](../../problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md)
 - Follow-on tasks: 5
 - High-risk follow-on tasks: 4
 - Reviewer load: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
@@ -387,11 +387,11 @@ This is the actual pipeline shape. The flat scoped list hides it.
 
 | Role                     | Scoped now | Latent backlog | Share of all tasks | Share of latent tasks |
 | ------------------------ | ---------- | -------------- | ------------------ | --------------------- |
-| `implementation-planner` | 0          | 125            | 0.234              | 0.29                  |
+| `implementation-planner` | 0          | 125            | 0.234              | 0.289                 |
 | `field-reality-reviewer` | 0          | 104            | 0.195              | 0.241                 |
-| `red-team-reviewer`      | 0          | 103            | 0.193              | 0.239                 |
-| `data-cleaner`           | 0          | 99             | 0.185              | 0.23                  |
-| `literature-scout`       | 103        | 0              | 0.193              | 0                     |
+| `red-team-reviewer`      | 0          | 103            | 0.193              | 0.238                 |
+| `data-cleaner`           | 0          | 99             | 0.185              | 0.229                 |
+| `literature-scout`       | 102        | 1              | 0.193              | 0.002                 |
 
 ## Protocol Alerts
 

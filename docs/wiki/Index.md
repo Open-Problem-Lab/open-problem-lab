@@ -7,11 +7,11 @@
 | Metric | Value |
 |---|---|
 | Total packs | 103 |
-| Packs with claims | 9 |
+| Packs with claims | 10 |
 | Packs with accepted claims | 0 |
-| Total evidence records | 306 |
+| Total evidence records | 311 |
 | Total tasks | 534 |
-| Scoped tasks (ready for work) | 103 |
+| Scoped tasks (ready for work) | 102 |
 | High-risk tasks | 279 |
 
 ## All Problem Packs
@@ -62,7 +62,7 @@
 | [food-security/crop-yield-gap-sub-saharan-africa](../../problem-packs/food-security/crop-yield-gap-sub-saharan-africa/problem.md) | Crop Yield Gap Analysis For Smallholder Farmers In Sub-Saharan Africa | scoped | food-security, climate-adaptation | sub-saharan-africa | medium | 2 ev; 5 tasks | needs evidence |
 | [food-security/drought-early-warning-horn-of-africa](../../problem-packs/food-security/drought-early-warning-horn-of-africa/problem.md) | Drought Early Warning And Food Insecurity Prediction In The Horn Of Africa | scoped | food-security, disaster-resilience | east-africa | high | 2 ev; 5 tasks | needs evidence |
 | [food-security/fertilizer-access-sub-saharan-africa](../../problem-packs/food-security/fertilizer-access-sub-saharan-africa/problem.md) | Fertilizer Access And Soil Nutrient Depletion In Smallholder Agriculture In Sub-Saharan Africa | scoped | food-security | sub-saharan-africa | medium | 4 ev; 5 tasks | ready |
-| [food-security/fisheries-overexploitation-west-africa](../../problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md) | Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa | scoped | food-security, biodiversity | west-africa | medium | 2 ev; 6 tasks | needs evidence |
+| [food-security/fisheries-overexploitation-west-africa](../../problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md) | Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa | scoped | food-security, biodiversity | west-africa | medium | 7 ev; 6 tasks; 1 claims | has claims |
 | [food-security/food-loss-postharvest-sub-saharan-africa](../../problem-packs/food-security/food-loss-postharvest-sub-saharan-africa/problem.md) | Postharvest Food Loss Measurement And Reduction Potential In Sub-Saharan Africa | scoped | food-security | sub-saharan-africa | medium | 4 ev; 5 tasks | ready |
 | [food-security/livestock-disease-surveillance-east-africa](../../problem-packs/food-security/livestock-disease-surveillance-east-africa/problem.md) | Livestock Disease Surveillance And Pastoralist Livelihood Risk In East Africa | scoped | food-security, public-health | east-africa | medium | 2 ev; 6 tasks | needs evidence |
 | [food-security/locust-outbreak-east-africa](../../problem-packs/food-security/locust-outbreak-east-africa/problem.md) | Desert Locust Outbreak Early Warning In East Africa | scoped | food-security, climate-health | east-africa | medium | 3 ev; 6 tasks | ready |
@@ -146,7 +146,6 @@ These packs have scoped tasks but fewer than 3 evidence records. The source-inve
 | [energy-access/renewable-energy-grid-integration-global](../../problem-packs/energy-access/renewable-energy-grid-integration-global/problem.md) | 2 | 5 | 3 | medium |
 | [food-security/crop-yield-gap-sub-saharan-africa](../../problem-packs/food-security/crop-yield-gap-sub-saharan-africa/problem.md) | 2 | 5 | 2 | medium |
 | [food-security/drought-early-warning-horn-of-africa](../../problem-packs/food-security/drought-early-warning-horn-of-africa/problem.md) | 2 | 5 | 4 | high |
-| [food-security/fisheries-overexploitation-west-africa](../../problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md) | 2 | 6 | 4 | medium |
 | [food-security/livestock-disease-surveillance-east-africa](../../problem-packs/food-security/livestock-disease-surveillance-east-africa/problem.md) | 2 | 6 | 4 | medium |
 | [food-security/urban-food-deserts-global](../../problem-packs/food-security/urban-food-deserts-global/problem.md) | 1 | 5 | 2 | medium |
 | [public-health/alcohol-harm-reduction-global](../../problem-packs/public-health/alcohol-harm-reduction-global/problem.md) | 1 | 4 | 3 | medium |

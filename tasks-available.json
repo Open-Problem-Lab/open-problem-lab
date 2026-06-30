@@ -3,20 +3,20 @@
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
     "total_packs": 103,
-    "total_scoped_tasks": 103,
+    "total_scoped_tasks": 102,
     "by_role": {
-      "literature-scout": 103
+      "literature-scout": 102
     },
     "by_risk": {
-      "medium": 98,
+      "medium": 97,
       "low": 5
     },
     "by_domain": {
       "air-quality": 6,
       "public-health": 65,
       "climate-health": 14,
-      "biodiversity": 8,
-      "food-security": 20,
+      "biodiversity": 7,
+      "food-security": 19,
       "climate-adaptation": 11,
       "disaster-resilience": 10,
       "education": 9,
@@ -775,23 +775,6 @@
       "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering sub-national granularity, soil-nutrient coverage, and distribution-infrastructure documentation.",
       "tasks_file": "problem-packs/food-security/fertilizer-access-sub-saharan-africa/tasks.json",
       "problem_file": "problem-packs/food-security/fertilizer-access-sub-saharan-africa/problem.md"
-    },
-    {
-      "pack_id": "food-security/fisheries-overexploitation-west-africa",
-      "pack_title": "Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa",
-      "pack_status": "scoped",
-      "domain": ["food-security", "biodiversity"],
-      "region": ["west-africa"],
-      "task_id": "source-inventory",
-      "title": "Inventory fisheries data sources",
-      "owner_role": "literature-scout",
-      "reviewer_needed": "domain-reviewer",
-      "safety_risk": "medium",
-      "outcome": "Dated source inventory.",
-      "expected_artifact": "datasets.md plus evidence.json.",
-      "done_condition": "Five sources classified.",
-      "tasks_file": "problem-packs/food-security/fisheries-overexploitation-west-africa/tasks.json",
-      "problem_file": "problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md"
     },
     {
       "pack_id": "food-security/food-loss-postharvest-sub-saharan-africa",

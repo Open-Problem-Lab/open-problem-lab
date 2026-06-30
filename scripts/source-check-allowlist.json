@@ -33,7 +33,7 @@
     },
     {
       "url": "https://dhsprogram.com/publications/publication-FR374-DHS-Final-Reports.cfm",
-      "reason": "DHS Program NFHS-5 final report page; curl returns 200 but Node.js fetch fails — likely User-Agent blocking for automated requests.",
+      "reason": "DHS Program NFHS-5 final report page; curl returns 200 but Node.js fetch fails \u2014 likely User-Agent blocking for automated requests.",
       "verified": "2026-06-18"
     },
     {
@@ -119,6 +119,11 @@
     {
       "url": "https://www.climatecentre.org/our-work/forecast-based-financing",
       "reason": "Climate Centre page; live in browser but connection times out from CI runners.",
+      "verified": "2026-06-30"
+    },
+    {
+      "url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/SP.REG.BRTH.ZS",
+      "reason": "World Bank WDI metadata glossary; live in browser (200) but Node.js fetch times out from CI runners.",
       "verified": "2026-06-30"
     }
   ]

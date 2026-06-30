@@ -165,6 +165,22 @@
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 3 additional roles."
       },
       {
+        "pack_id": "food-security/fisheries-overexploitation-west-africa",
+        "pack_title": "Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa",
+        "task_id": "source-inventory",
+        "title": "Inventory fisheries data sources",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "medium",
+        "done_condition": "Five sources classified.",
+        "evidence_count": 7,
+        "downstream_tasks_unlocked": 5,
+        "downstream_high_risk_tasks": 4,
+        "problem_file": "problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md",
+        "tasks_file": "problem-packs/food-security/fisheries-overexploitation-west-africa/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
+      },
+      {
         "pack_id": "air-quality/pm25-monitoring-south-asia",
         "pack_title": "PM2.5 Monitoring Gaps And Health Impact In South Asia",
         "task_id": "source-inventory",
@@ -210,22 +226,6 @@
         "downstream_high_risk_tasks": 4,
         "problem_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md",
         "tasks_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
-      },
-      {
-        "pack_id": "climate-health/malaria-early-warning-africa",
-        "pack_title": "Malaria Early Warning Signals In Sub-Saharan Africa",
-        "task_id": "source-inventory",
-        "title": "Inventory malaria and climate data sources for Sub-Saharan Africa",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "medium",
-        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
-        "evidence_count": 5,
-        "downstream_tasks_unlocked": 5,
-        "downstream_high_risk_tasks": 4,
-        "problem_file": "problem-packs/climate-health/malaria-early-warning-africa/problem.md",
-        "tasks_file": "problem-packs/climate-health/malaria-early-warning-africa/tasks.json",
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       }
     ],
@@ -293,6 +293,28 @@
         "evidence_count": 8,
         "problem_file": "problem-packs/biodiversity/deforestation-amazon/problem.md",
         "tasks_file": "problem-packs/biodiversity/deforestation-amazon/tasks.json"
+      },
+      {
+        "pack_id": "food-security/fisheries-overexploitation-west-africa",
+        "pack_title": "Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa",
+        "scoped_tasks": 1,
+        "downstream_tasks": 5,
+        "downstream_high_risk_tasks": 4,
+        "downstream_by_role": {
+          "data-cleaner": 1,
+          "implementation-planner": 2,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "downstream_reviewers_needed": {
+          "replicator": 1,
+          "domain-reviewer": 2,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "evidence_count": 7,
+        "problem_file": "problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md",
+        "tasks_file": "problem-packs/food-security/fisheries-overexploitation-west-africa/tasks.json"
       },
       {
         "pack_id": "occupational-health/heat-stress-outdoor-workers-global",
@@ -447,28 +469,6 @@
         "evidence_count": 3,
         "problem_file": "problem-packs/public-health/lead-exposure-urban-global/problem.md",
         "tasks_file": "problem-packs/public-health/lead-exposure-urban-global/tasks.json"
-      },
-      {
-        "pack_id": "food-security/fisheries-overexploitation-west-africa",
-        "pack_title": "Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa",
-        "scoped_tasks": 1,
-        "downstream_tasks": 5,
-        "downstream_high_risk_tasks": 4,
-        "downstream_by_role": {
-          "data-cleaner": 1,
-          "implementation-planner": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "downstream_reviewers_needed": {
-          "replicator": 1,
-          "domain-reviewer": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "evidence_count": 2,
-        "problem_file": "problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md",
-        "tasks_file": "problem-packs/food-security/fisheries-overexploitation-west-africa/tasks.json"
       },
       {
         "pack_id": "food-security/livestock-disease-surveillance-east-africa",

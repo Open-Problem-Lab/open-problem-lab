@@ -121,7 +121,19 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 3 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
-### 9. PM2.5 Monitoring Gaps And Health Impact In South Asia
+### 9. Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa
+
+- Pack: [`food-security/fisheries-overexploitation-west-africa`](../../problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md)
+- Task: `source-inventory` — Inventory fisheries data sources
+- Risk: `medium`
+- Reviewer needed: `domain-reviewer`
+- Existing evidence records: 7
+- Downstream tasks unlocked: 5
+- Downstream high-risk tasks: 4
+- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
+- Done condition: Five sources classified.
+
+### 10. PM2.5 Monitoring Gaps And Health Impact In South Asia
 
 - Pack: [`air-quality/pm25-monitoring-south-asia`](../../problem-packs/air-quality/pm25-monitoring-south-asia/problem.md)
 - Task: `source-inventory` — Inventory PM2.5 monitoring and air quality data sources for South Asia
@@ -133,7 +145,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
-### 10. Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
+### 11. Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
 
 - Pack: [`occupational-health/heat-stress-outdoor-workers-global`](../../problem-packs/occupational-health/heat-stress-outdoor-workers-global/problem.md)
 - Task: `source-inventory` — Inventory WBGT data sources, labor force distribution data, occupational health surveillance records, and heat-health epidemiology studies for LMICs
@@ -145,7 +157,7 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering exposure metric, geographic grain, temporal coverage, LMIC data availability, and worker-population representation including informal sector coverage.
 
-### 11. Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries
+### 12. Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries
 
 - Pack: [`public-health/antimicrobial-resistance-surveillance-global`](../../problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md)
 - Task: `source-inventory` — Inventory AMR surveillance data
@@ -156,18 +168,6 @@ These are the best entry tasks for a fresh contributor. Ranking favors lower-ris
 - Downstream high-risk tasks: 4
 - Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
 - Done condition: Five sources classified as usable, limited, or rejected.
-
-### 12. Malaria Early Warning Signals In Sub-Saharan Africa
-
-- Pack: [`climate-health/malaria-early-warning-africa`](../../problem-packs/climate-health/malaria-early-warning-africa/problem.md)
-- Task: `source-inventory` — Inventory malaria and climate data sources for Sub-Saharan Africa
-- Risk: `medium`
-- Reviewer needed: `domain-reviewer`
-- Existing evidence records: 5
-- Downstream tasks unlocked: 5
-- Downstream high-risk tasks: 4
-- Why pick now: Completing this scoped task opens 5 follow-on tasks across 4 additional roles.
-- Done condition: At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.
 
 ## Unlock Paths
 
@@ -202,6 +202,16 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
 - Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 - Existing evidence records: 8
+
+### Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa
+
+- Pack: [`food-security/fisheries-overexploitation-west-africa`](../../problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md)
+- Scoped tasks at front door: 1
+- Follow-on tasks behind it: 5
+- High-risk follow-on tasks: 4
+- Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
+- Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
+- Existing evidence records: 7
 
 ### Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
 
@@ -272,16 +282,6 @@ These packs have a scoped front door and the deepest follow-on queue behind it. 
 - Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
 - Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
 - Existing evidence records: 3
-
-### Small-Scale Fisheries Overexploitation Detection And Livelihood Risk In West Africa
-
-- Pack: [`food-security/fisheries-overexploitation-west-africa`](../../problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md)
-- Scoped tasks at front door: 1
-- Follow-on tasks behind it: 5
-- High-risk follow-on tasks: 4
-- Follow-on roles: `data-cleaner`: 1, `field-reality-reviewer`: 1, `implementation-planner`: 2, `red-team-reviewer`: 1
-- Reviewer types needed later: `domain-reviewer`: 2, `field-reality-reviewer`: 1, `red-team-reviewer`: 1, `replicator`: 1
-- Existing evidence records: 2
 
 ### Livestock Disease Surveillance And Pastoralist Livelihood Risk In East Africa
 

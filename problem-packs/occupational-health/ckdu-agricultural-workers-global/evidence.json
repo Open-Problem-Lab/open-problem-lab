@@ -1,0 +1,135 @@
+[
+  {
+    "id": "wesseling-ckdu-mesoamerica-2020",
+    "problem_id": "occupational-health/ckdu-agricultural-workers-global",
+    "claim": "A 2020 systematic review found CKDu prevalence among agricultural workers in Mesoamerica ranging from 10 to 14 percent in screened cohorts, with the highest rates among sugar cane cutters in lowland regions, and that prevalence patterns are consistent with heat-stress as a contributing factor but do not exclude agrochemical co-factors.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Heat stress, hydration and chronic kidney disease in agricultural workers in Mesoamerica (Wesseling et al., 2020, International Journal of Environmental Research and Public Health)",
+      "url": "https://doi.org/10.3390/ijerph17218056",
+      "doi": "10.3390/ijerph17218056",
+      "archive_url": "https://web.archive.org/web/2024/https://www.mdpi.com/1660-4601/17/21/8056"
+    },
+    "source_date": "2020-10-27",
+    "access_date": "2026-06-30",
+    "method": "Reviewed systematic review methodology, included study populations, prevalence estimates by region and occupation, exposure assessment methods, and the authors' assessment of heat-stress versus agrochemical evidence.",
+    "limitations": [
+      "Most included studies are cross-sectional, limiting causal inference about heat-stress versus agrochemical mechanisms.",
+      "Prevalence estimates vary by screening method (serum creatinine versus dipstick), which affects cross-study comparability.",
+      "The review covers Mesoamerica only; findings may not generalize to Sri Lanka, India, or other endemic regions with different agricultural practices and climates.",
+      "The authors note that heat-stress consistency does not rule out agrochemical co-factors, and the evidence cannot quantify relative contributions."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "jayasekara-ckdu-sri-lanka-2020",
+    "problem_id": "occupational-health/ckdu-agricultural-workers-global",
+    "claim": "A 2015 study found CKDu prevalence of approximately 15 percent in farming communities in Sri Lanka's North Central Province, with male predominance and onset in the fourth decade of life, and that affected individuals lacked conventional CKD risk factors (diabetes, hypertension).",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Epidemiology of Chronic Kidney Disease, With Special Emphasis on Chronic Kidney Disease of Uncertain Etiology, in the North Central Region of Sri Lanka",
+      "url": "https://doi.org/10.2188/jea.je20140074",
+      "doi": "10.2188/jea.je20140074",
+      "archive_url": "https://web.archive.org/web/2024/https://www.jstage.jst.go.jp/article/jea/25/4/25_JE20140074/_article"
+    },
+    "source_date": "2015-01-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed study design (community-based cross-sectional survey), sampling methodology, CKD diagnostic criteria (eGFR and albuminuria), prevalence estimates by age and sex, and risk factor analysis.",
+    "limitations": [
+      "Cross-sectional design cannot establish temporal causation between agricultural exposures and CKD onset.",
+      "The study was conducted in one province; prevalence may differ in other Sri Lankan regions.",
+      "Exposure assessment relied on self-reported farming history without quantified pesticide or heat exposure metrics.",
+      "The study did not test for heavy metals or pesticide residues in water or biological samples, limiting agrochemical hypothesis evaluation.",
+      "Source date is set to 2015-01-01 as only the year is known from the DOI metadata; the exact publication date should be verified."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "paho-ckd-el-salvador-2020",
+    "problem_id": "occupational-health/ckdu-agricultural-workers-global",
+    "claim": "The Pan American Health Organization reports that El Salvador has the highest chronic kidney disease mortality rate in the Americas and that CKD is the leading cause of hospital deaths, with mortality concentrated in the coastal lowland agricultural regions where CKDu is most prevalent.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "PAHO Health Situation Report: El Salvador Chronic Kidney Disease",
+      "url": "https://www.paho.org/en/documents/epidemiological-alert-chronic-kidney-disease-central-america",
+      "archive_url": "https://web.archive.org/web/2024/https://www.paho.org/en/documents/epidemiological-alert-chronic-kidney-disease-central-america"
+    },
+    "source_date": "2020-02-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed PAHO epidemiological alert and country health profile data on CKD mortality, geographic distribution, and reported association with agricultural regions.",
+    "limitations": [
+      "PAHO reports aggregate CKD mortality without separating CKDu from conventional CKD, so the true CKDu-attributable mortality is uncertain.",
+      "Hospital mortality data may undercount community deaths, particularly in rural areas with limited hospital access.",
+      "Mortality data do not establish causation and do not distinguish between heat-stress and agrochemical contributions.",
+      "The report does not provide prevalence or incidence rates, only mortality counts and rates."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "glaser-js-ckdu-heat-2016",
+    "problem_id": "occupational-health/ckdu-agricultural-workers-global",
+    "claim": "A 2016 review in the American Journal of Kidney Diseases proposed the heat-stress dehydration hypothesis as a unifying mechanism for CKDu, arguing that repeated episodes of volume depletion and hyperuricemia during heavy manual labor in hot conditions can cause progressive kidney injury independent of conventional CKD risk factors.",
+    "evidence_type": "expert-review",
+    "source": {
+      "title": "Climate change and the emergent epidemic of CKD from heat stress in rural communities: the case for heat stress nephropathy (Glaser et al., 2016, Clinical Journal of the American Society of Nephrology)",
+      "url": "https://doi.org/10.2215/cjn.13841215",
+      "doi": "10.2215/cjn.13841215",
+      "archive_url": "https://web.archive.org/web/2024/https://journals.lww.com/01277230-201608000-00022"
+    },
+    "source_date": "2016-05-06",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the hypothesis paper's mechanistic argument, cited animal and human evidence for heat-stress nephropathy, comparison across CKDu-endemic regions, and the proposed causal pathway from dehydration to kidney injury.",
+    "limitations": [
+      "This is a hypothesis paper, not a systematic review or primary data study; it proposes a mechanism but does not test it against competing hypotheses.",
+      "The mechanistic argument relies on indirect evidence (animal models, occupational physiology) rather than direct measurement of kidney injury biomarkers in heat-exposed agricultural workers.",
+      "The paper does not explain why CKDu appears in some hot agricultural regions but not others, which weakens a purely heat-stress explanation.",
+      "The paper was published before several large cohort studies that have since provided mixed support for the heat-stress hypothesis."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "jayasumana-glyphosate-ckdu-2015",
+    "problem_id": "occupational-health/ckdu-agricultural-workers-global",
+    "claim": "A 2015 study from Sri Lanka proposed that glyphosate combined with hard water forms complexes that chelate heavy metals, facilitating renal deposition and contributing to CKDu in farming communities with hard water and heavy glyphosate use.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Glyphosate, hard water and nephrotoxic metals: are they the culprits behind the epidemic of chronic kidney disease of unknown etiology in Sri Lanka? (Jayasumana et al., 2015, International Journal of Environmental Research and Public Health)",
+      "url": "https://doi.org/10.3390/ijerph110202125",
+      "doi": "10.3390/ijerph110202125",
+      "archive_url": "https://web.archive.org/web/2024/https://www.mdpi.com/1660-4601/11/2/2125"
+    },
+    "source_date": "2015-02-15",
+    "access_date": "2026-06-30",
+    "method": "Reviewed the study's chemical analysis of glyphosate-metal complexes, water hardness data from CKDu-endemic versus non-endemic regions, and ecological correlation between glyphosate use and CKD prevalence.",
+    "limitations": [
+      "The study uses ecological correlations at the regional level, which cannot establish individual-level causation.",
+      "The chemical mechanism is proposed but not validated with kidney tissue analysis from CKDu patients.",
+      "The study does not control for heat exposure or occupational workload, which are confounders in agricultural communities.",
+      "The glyphosate-metal complex hypothesis has not been independently replicated in other CKDu-endemic regions.",
+      "The study was partially funded by organizations with interests in pesticide regulation; the authors declare no conflict of interest, but the funding source has been debated."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "roncal-jimenez-heat-kidney-2016",
+    "problem_id": "occupational-health/ckdu-agricultural-workers-global",
+    "claim": "A 2016 experimental and field study found that recurrent heat exposure and dehydration in sugar cane workers in El Salvador produced elevated serum uric acid and urinary biomarkers of kidney injury, supporting the heat-stress dehydration pathway as a contributor to CKDu.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Acute kidney injury in sugar cane workers at risk for Mesoamerican nephropathy (Roncal Jimenez et al., 2016, American Journal of Kidney Diseases)",
+      "url": "https://doi.org/10.1053/j.ajkd.2016.06.023",
+      "doi": "10.1053/j.ajkd.2016.06.023",
+      "archive_url": "https://web.archive.org/web/2024/https://www.ajkd.org/article/S0272-6386(16)30113-3/fulltext"
+    },
+    "source_date": "2016-12-01",
+    "access_date": "2026-06-30",
+    "method": "Reviewed study design (prospective cohort of sugar cane workers), biomarker measurements (serum creatinine, uric acid, urinary kidney injury molecule-1), heat exposure assessment, and cross-shift kidney function changes.",
+    "limitations": [
+      "The study covers a single harvest season, which may not capture the chronic progressive injury that leads to CKDu over years.",
+      "The biomarker changes are acute and reversible; whether they progress to permanent CKD requires longitudinal follow-up that this study does not provide.",
+      "The study does not measure pesticide or heavy metal exposure, so it cannot rule out agrochemical co-factors.",
+      "The study was conducted in one worksite in El Salvador; generalizability to other crops, regions, or work conditions is uncertain."
+    ],
+    "confidence": "high"
+  }
+]

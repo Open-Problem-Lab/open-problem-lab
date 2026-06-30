@@ -2,19 +2,19 @@
   "summary": {
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
-    "total_packs": 103,
-    "total_scoped_tasks": 103,
+    "total_packs": 104,
+    "total_scoped_tasks": 104,
     "by_role": {
-      "literature-scout": 103
+      "literature-scout": 104
     },
     "by_risk": {
-      "medium": 98,
+      "medium": 99,
       "low": 5
     },
     "by_domain": {
       "air-quality": 6,
-      "public-health": 65,
-      "climate-health": 14,
+      "public-health": 66,
+      "climate-health": 15,
       "biodiversity": 8,
       "food-security": 20,
       "climate-adaptation": 11,
@@ -22,7 +22,7 @@
       "education": 9,
       "energy-access": 6,
       "food-safety": 1,
-      "occupational-health": 1,
+      "occupational-health": 2,
       "sanitation": 4,
       "water-security": 5
     }
@@ -860,6 +860,23 @@
       "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons.",
       "tasks_file": "problem-packs/food-security/urban-food-deserts-global/tasks.json",
       "problem_file": "problem-packs/food-security/urban-food-deserts-global/problem.md"
+    },
+    {
+      "pack_id": "occupational-health/ckdu-agricultural-workers-global",
+      "pack_title": "Chronic Kidney Disease Of Unknown Etiology In Agricultural Workers",
+      "pack_status": "scoped",
+      "domain": ["occupational-health", "public-health", "climate-health"],
+      "region": ["global"],
+      "task_id": "source-inventory",
+      "title": "Inventory CKDu prevalence, causal hypothesis, and surveillance data sources across all endemic regions",
+      "owner_role": "literature-scout",
+      "reviewer_needed": "domain-reviewer",
+      "safety_risk": "medium",
+      "outcome": "A dated source inventory that separates prevalence studies by region (Mesoamerica, Sri Lanka, India, Egypt, Thailand), causal hypothesis studies (heat-stress, agrochemical, infectious-disease), surveillance data sources, and rejected sources into usable, limited, and rejected categories with explicit assessment of study design, diagnostic criteria, and whether each source can distinguish heat-stress from agrochemical mechanisms.",
+      "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+      "done_condition": "At least eight candidate data sources are classified as usable, limited, or rejected with explicit reasons covering study design, CKD diagnostic criteria, geographic region, ability to distinguish causal hypotheses, and endemic-region coverage.",
+      "tasks_file": "problem-packs/occupational-health/ckdu-agricultural-workers-global/tasks.json",
+      "problem_file": "problem-packs/occupational-health/ckdu-agricultural-workers-global/problem.md"
     },
     {
       "pack_id": "occupational-health/heat-stress-outdoor-workers-global",

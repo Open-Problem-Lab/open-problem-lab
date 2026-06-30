@@ -1,0 +1,117 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "occupational-health/ckdu-agricultural-workers-global",
+    "title": "Inventory CKDu prevalence, causal hypothesis, and surveillance data sources across all endemic regions",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory that separates prevalence studies by region (Mesoamerica, Sri Lanka, India, Egypt, Thailand), causal hypothesis studies (heat-stress, agrochemical, infectious-disease), surveillance data sources, and rejected sources into usable, limited, and rejected categories with explicit assessment of study design, diagnostic criteria, and whether each source can distinguish heat-stress from agrochemical mechanisms.",
+    "inputs": [
+      "Published CKDu prevalence studies from Mesoamerica, Sri Lanka, India, Egypt, Thailand",
+      "WHO and PAHO CKDu epidemiological reports",
+      "International Society of Nephrology CKDu consensus statements",
+      "NIH Fogarty and Wellcome Trust CKDu research program outputs",
+      "National CKD surveillance data from El Salvador, Sri Lanka, Nicaragua, India",
+      "GBD Study CKD category documentation for CKDu aggregation assessment",
+      "Occupational heat exposure and WBGT data documentation for agricultural regions",
+      "Pesticide use and water quality monitoring data from endemic regions"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each source for URL, date, access status, study design, diagnostic criteria, geographic grain, and whether the source can distinguish heat-stress from agrochemical mechanisms.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least eight candidate data sources are classified as usable, limited, or rejected with explicit reasons covering study design, CKD diagnostic criteria, geographic region, ability to distinguish causal hypotheses, and endemic-region coverage."
+  },
+  {
+    "id": "prevalence-compilation",
+    "problem_id": "occupational-health/ckdu-agricultural-workers-global",
+    "title": "Compile reported CKDu prevalence by country, region, study population, and diagnostic criteria",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A cleaned prevalence compilation table with country, sub-national region, study population, sample size, CKD diagnostic criteria (eGFR threshold, albuminuria, biomarker), screening method, prevalence estimate with confidence interval, and known missingness patterns across all endemic regions.",
+    "inputs": [
+      "source inventory",
+      "published prevalence studies from each endemic region",
+      "WHO and PAHO mortality data",
+      "national CKD surveillance reports"
+    ],
+    "expected_artifact": "datasets.md and validation.md updates with compiled prevalence table and data quality rules.",
+    "validation_method": "Replicator reruns the prevalence compilation from the listed primary sources and confirms country, region, diagnostic criteria, prevalence, and confidence interval for each entry.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "Every prevalence entry has a documented country, sub-national region, study population, diagnostic criteria, screening method, and confidence interval, and at least five countries have entries with enough detail for cross-region comparison."
+  },
+  {
+    "id": "causal-evidence-synthesis",
+    "problem_id": "occupational-health/ckdu-agricultural-workers-global",
+    "title": "Synthesize causal evidence separating heat-stress, agrochemical, and infectious-disease hypotheses by evidence strength and transferability",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A ranked evidence synthesis that compares the heat-stress, agrochemical, and infectious-disease hypotheses by study design quality, replication status, mechanistic support, and ability to explain the geographic pattern of CKDu, with explicit transferability assessment across endemic regions.",
+    "inputs": [
+      "compiled prevalence data",
+      "causal hypothesis studies from evidence.json",
+      "occupational heat exposure data for agricultural regions",
+      "pesticide use and water quality data from endemic regions"
+    ],
+    "expected_artifact": "task-map.md and validation.md updates with ranked causal evidence synthesis and transferability assessment.",
+    "validation_method": "Reviewer checks that each hypothesis is ranked by evidence strength with explicit criteria, that transferability across regions is assessed, that the synthesis names which regulatory decision the ranking would change, and that the ranking is replicated by an independent reviewer before publication.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "No causal hypothesis is ranked as dominant without at least two independent supporting studies, a mechanistic pathway, an assessment of whether the evidence can distinguish it from competing hypotheses in at least two endemic regions, and replication of the evidence-strength assessment by an independent reviewer."
+  },
+  {
+    "id": "intervention-evidence-review",
+    "problem_id": "occupational-health/ckdu-agricultural-workers-global",
+    "title": "Review CKDu intervention evidence including hydration programs, work-rest scheduling, pesticide regulation, and water filtration",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A structured review of hydration and shade interventions (sugar cane worker programs in Nicaragua and El Salvador), work-rest scheduling protocols, pesticide regulation approaches, and water filtration or remediation programs, with efficacy evidence, cost, scaling requirements, and documented failure modes in agricultural LMIC contexts.",
+    "inputs": [
+      "causal evidence synthesis",
+      "published intervention studies from sugar cane worker programs",
+      "ILO and WHO occupational heat stress guidelines",
+      "national pesticide regulation documents from affected countries",
+      "WHO drinking water quality guidelines for heavy metals"
+    ],
+    "expected_artifact": "outputs.md and validation.md updates with intervention evidence summary and allocation decision framework.",
+    "validation_method": "Reviewer checks that each intervention has documented efficacy, cost, scaling requirement, failure mode, and a named decision-maker. A second reviewer replicates the evidence-strength assessment independently.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every intervention recommendation names the decision-maker, the allocation it would change, the evidence strength, and at least one failure mode that could make deployment ineffective or harmful, with replication of the evidence-strength assessment by a second reviewer."
+  },
+  {
+    "id": "red-team-misuse-review",
+    "problem_id": "occupational-health/ckdu-agricultural-workers-global",
+    "title": "Red-team how CKDu causal claims could be misused to deflect regulatory responsibility or shift blame to workers",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review identifying how causal hypothesis rankings could be misused to deflect pesticide regulation by attributing CKDu solely to heat, to shift blame to workers for not hydrating, to justify employer non-compliance with heat standards by framing CKDu as unpreventable, or to frame the problem as too uncertain for regulatory action.",
+    "inputs": ["causal evidence synthesis", "intervention review", "safety policy"],
+    "expected_artifact": "outputs.md and SAFETY.md linked review note.",
+    "validation_method": "Reviewer confirms every high-risk misuse scenario has a mitigation or blocks publication, then a second reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every field-facing causal or intervention claim is either blocked, qualified with worker-protection framing, or gated behind explicit safeguards against pesticide-regulation deflection, worker blame, and regulatory inertia, with replicated red-team review before publication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "occupational-health/ckdu-agricultural-workers-global",
+    "title": "Check whether CKDu evidence synthesis matches occupational health ministry and nephrology association decision needs",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether the proposed causal evidence synthesis and intervention review would change a real decision for a national occupational health ministry, nephrology association, agricultural employer association, or worker organization without creating worse incentives.",
+    "inputs": [
+      "draft causal evidence synthesis",
+      "draft intervention review",
+      "national occupational health ministry priorities for affected countries",
+      "International Society of Nephrology CKDu initiative priorities",
+      "agricultural worker organization priorities"
+    ],
+    "expected_artifact": "playbooks.md update with named use and non-use cases.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, required workflow, and misuse risk, then a second reviewer replicates the check on the stated non-use cases.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The artifact has a named user, named decision, named regulatory or research allocation, explicit non-use cases, and replicated field-reality review before publication."
+  }
+]

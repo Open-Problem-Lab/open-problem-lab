@@ -1,0 +1,44 @@
+{
+  "id": "occupational-health/ckdu-agricultural-workers-global",
+  "title": "Chronic Kidney Disease Of Unknown Etiology In Agricultural Workers",
+  "status": "scoped",
+  "domain": ["occupational-health", "public-health", "climate-health"],
+  "region": ["global"],
+  "summary": "Build a verified evidence base for chronic kidney disease of unknown etiology (CKDu) among agricultural workers in hot-climate regions, separating heat-stress nephropathy evidence from agrochemical and infectious-disease hypotheses, to identify which causal model should drive occupational health regulation and research funding allocation.",
+  "why_it_matters": "CKDu is an emerging epidemic killing agricultural workers in their 30s and 40s across Central America, Sri Lanka, India, Egypt, and Thailand. In El Salvador, CKD is the leading cause of hospital mortality. In Sri Lanka's North Central Province, prevalence reaches 15 percent in farming communities. In Nicaragua, sugar cane workers show 10 to 14 percent prevalence. Unlike conventional CKD driven by diabetes and hypertension, CKDu affects young, lean agricultural laborers without standard risk factors. The cause is contested: the heat-stress dehydration hypothesis points to chronic heat exposure and recurrent dehydration during manual labor in rising temperatures, while the agrochemical hypothesis points to pesticide and heavy-metal exposure. This matters because the two hypotheses imply entirely different interventions: hydration mandates and work-rest regulation versus pesticide bans and soil remediation. National occupational health ministries (El Salvador Ministry of Health, Sri Lanka Ministry of Health, Nicaragua Ministry of Labor), the WHO, the International Society of Nephrology, and research funders (NIH Fogarty, Wellcome Trust) need a verified causal assessment to direct regulatory and research resources. No global surveillance system tracks CKDu as a distinct category; it is invisible in the Global Burden of Disease study, which aggregates it under all-cause CKD. A verified evidence synthesis distinguishing the causal hypotheses would redirect occupational health regulation and research funding in at least five affected countries.",
+  "success_metrics": [
+    {
+      "metric": "Causal evidence traceability",
+      "target": "Every causal claim about CKDu etiology links to a dated evidence record specifying study design, population, exposure metric, and whether the study can distinguish heat-stress from agrochemical mechanisms.",
+      "validation_method": "Run schema validation and reviewer spot-checks against evidence.json for causal-direction claims."
+    },
+    {
+      "metric": "Geographic coverage transparency",
+      "target": "Every prevalence estimate names the country, region, study population, screening method, and CKD diagnostic criteria, so a reviewer can assess whether cross-region comparison is valid.",
+      "validation_method": "Reviewer checks each prevalence claim for population definition, diagnostic criteria, and sampling frame."
+    },
+    {
+      "metric": "Regulatory humility",
+      "target": "No occupational health standard, pesticide regulation, or hydration mandate recommendation is merged without naming the decision-maker, the allocation it would change, and the non-use cases.",
+      "validation_method": "Field-reality and red-team reviewers confirm named user, named decision, and explicit misuse risks before publication."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, red-team review for causal claims that could drive pesticide regulation or occupational health standards, and replication for quantitative prevalence estimates."
+  }
+}

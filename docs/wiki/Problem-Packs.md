@@ -490,6 +490,16 @@ Build a verified workflow for assessing where vegetation, soil moisture, and win
 
 Build a verified workflow for mapping urban food deserts and fresh-food access gaps in LMIC cities, linking market-location data, food-price data, and population data.
 
+## Chronic Kidney Disease Of Unknown Etiology In Agricultural Workers
+
+- ID: `occupational-health/ckdu-agricultural-workers-global`
+- Status: `scoped`
+- Domain: `occupational-health`, `public-health`, `climate-health`
+- Region: `global`
+- Source: [problem-packs/occupational-health/ckdu-agricultural-workers-global](../../problem-packs/occupational-health/ckdu-agricultural-workers-global/problem.md)
+
+Build a verified evidence base for chronic kidney disease of unknown etiology (CKDu) among agricultural workers in hot-climate regions, separating heat-stress nephropathy evidence from agrochemical and infectious-disease hypotheses, to identify which causal model should drive occupational health regulation and research funding allocation.
+
 ## Occupational Heat Stress And Worker Health In Outdoor Industries Under Climate Change
 
 - ID: `occupational-health/heat-stress-outdoor-workers-global`

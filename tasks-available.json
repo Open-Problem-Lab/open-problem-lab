@@ -2,18 +2,18 @@
   "summary": {
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
-    "total_packs": 104,
-    "total_scoped_tasks": 102,
+    "total_packs": 105,
+    "total_scoped_tasks": 103,
     "by_role": {
-      "literature-scout": 102
+      "literature-scout": 103
     },
     "by_risk": {
       "medium": 98,
-      "low": 4
+      "low": 5
     },
     "by_domain": {
       "air-quality": 6,
-      "public-health": 65,
+      "public-health": 66,
       "climate-health": 14,
       "biodiversity": 7,
       "food-security": 19,
@@ -1472,6 +1472,23 @@
       "done_condition": "Four sources classified.",
       "tasks_file": "problem-packs/public-health/snakebite-antivenom-access-global/tasks.json",
       "problem_file": "problem-packs/public-health/snakebite-antivenom-access-global/problem.md"
+    },
+    {
+      "pack_id": "public-health/stillbirth-measurement-quality-global",
+      "pack_title": "Stillbirth Measurement Gaps And Intrapartum Care Quality In High-Burden Countries",
+      "pack_status": "scoped",
+      "domain": ["public-health"],
+      "region": ["global"],
+      "task_id": "source-inventory",
+      "title": "Inventory stillbirth data sources across survey, CRVS, and facility systems",
+      "owner_role": "literature-scout",
+      "reviewer_needed": "domain-reviewer",
+      "safety_risk": "low",
+      "outcome": "A dated source inventory separating usable, limited, and rejected stillbirth sources by measure family and policy use.",
+      "expected_artifact": "datasets.md plus evidence.json updates.",
+      "done_condition": "At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering definition threshold, measure family, time reference, geographic grain, and relevance to intrapartum versus counting-system interpretation.",
+      "tasks_file": "problem-packs/public-health/stillbirth-measurement-quality-global/tasks.json",
+      "problem_file": "problem-packs/public-health/stillbirth-measurement-quality-global/problem.md"
     },
     {
       "pack_id": "public-health/stunting-sub-saharan-africa",

@@ -44,6 +44,7 @@ When calibrating pack quality, use these strong exemplars:
 
 - `climate-health/dengue-heat-vietnam` — operational humility, bounded claims, analytic-use warnings
 - `public-health/birth-registration-access-global` — measure-family discipline across survey, CRVS, and health-touchpoint evidence
+- `public-health/stillbirth-measurement-quality-global` — discovery-mode framing for problems where the leverage sits in separating care-quality failure from counting failure before any ranking
 
 ## Agent Working Rules
 

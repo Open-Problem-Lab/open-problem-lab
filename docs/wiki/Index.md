@@ -6,13 +6,13 @@
 
 | Metric | Value |
 |---|---|
-| Total packs | 104 |
-| Packs with claims | 11 |
+| Total packs | 105 |
+| Packs with claims | 12 |
 | Packs with accepted claims | 0 |
-| Total evidence records | 317 |
-| Total tasks | 539 |
-| Scoped tasks (ready for work) | 102 |
-| High-risk tasks | 282 |
+| Total evidence records | 320 |
+| Total tasks | 544 |
+| Scoped tasks (ready for work) | 103 |
+| High-risk tasks | 284 |
 
 ## All Problem Packs
 
@@ -105,6 +105,7 @@
 | [public-health/road-traffic-injury-urban-global](../../problem-packs/public-health/road-traffic-injury-urban-global/problem.md) | Road Traffic Injury Mortality Risk And Emergency Trauma Care Access In Low- And Middle-Income Countries | scoped | public-health | global | medium | 2 ev; 5 tasks | needs evidence |
 | [public-health/sickle-cell-disease-sub-saharan-africa](../../problem-packs/public-health/sickle-cell-disease-sub-saharan-africa/problem.md) | Sickle Cell Disease Newborn Screening And Treatment Access Gaps In Sub-Saharan Africa | scoped | public-health | sub-saharan-africa | medium | 2 ev; 5 tasks | needs evidence |
 | [public-health/snakebite-antivenom-access-global](../../problem-packs/public-health/snakebite-antivenom-access-global/problem.md) | Snakebite Envenoming Mortality And Antivenom Access Gaps In Rural Low-Income Countries | scoped | public-health | global | high | 6 ev; 5 tasks; 1 claims | has claims |
+| [public-health/stillbirth-measurement-quality-global](../../problem-packs/public-health/stillbirth-measurement-quality-global/problem.md) | Stillbirth Measurement Gaps And Intrapartum Care Quality In High-Burden Countries | scoped | public-health | global | medium | 3 ev; 5 tasks; 1 claims | has claims |
 | [public-health/stunting-sub-saharan-africa](../../problem-packs/public-health/stunting-sub-saharan-africa/problem.md) | Child Stunting Hotspot Identification In Sub-Saharan Africa | scoped | public-health, food-security | sub-saharan-africa | medium | 3 ev; 6 tasks | ready |
 | [public-health/substandard-falsified-medicines-global](../../problem-packs/public-health/substandard-falsified-medicines-global/problem.md) | Substandard And Falsified Medicine Detection And Surveillance Gaps In Low- And Middle-Income Countries | scoped | public-health | global | high | 4 ev; 6 tasks | ready |
 | [public-health/surgical-care-access-global](../../problem-packs/public-health/surgical-care-access-global/problem.md) | Essential Surgical Care Access And Surgical Workforce Gaps In Low-Income Countries | scoped | public-health | global | medium | 1 ev; 5 tasks | needs evidence |

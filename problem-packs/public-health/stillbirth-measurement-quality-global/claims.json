@@ -1,0 +1,30 @@
+[
+  {
+    "id": "stillbirth-measurement-fragmentation-blocks-prioritization",
+    "problem_id": "public-health/stillbirth-measurement-quality-global",
+    "claim": "Public stillbirth evidence in high-burden countries is fragmented enough across survey, CRVS, and facility sources that a reviewer cannot responsibly rank where apparent stillbirth burden most likely reflects intrapartum care failure versus weak counting without an explicit measure-family reconciliation step.",
+    "domain": ["public-health"],
+    "status": "unverified",
+    "evidence": [
+      "lancet-stillbirth-estimates-2021",
+      "lancet-ending-preventable-stillbirths-2016",
+      "lancet-stillbirth-rates-risk-factors-2016"
+    ],
+    "failure_modes": [
+      "A contributor could treat facility stillbirth rates as direct quality rankings without accounting for referral case mix and denominator bias.",
+      "A contributor could compare stillbirth levels across countries that use different gestational-age or birthweight thresholds and call the result a policy ranking.",
+      "A reviewer could over-read the current evidence and assume the pack already proves where quality-of-care investment dominates registration-system investment."
+    ],
+    "kill_condition": "A reviewer demonstrates a current public source set for at least one high-burden country where survey, CRVS, and facility stillbirth measures align on threshold, denominator, time reference, and sub-national grain well enough that reconciliation adds no material decision value.",
+    "review_required": ["domain-reviewer"],
+    "safety_level": "medium",
+    "submitter": "codex-agent",
+    "created_date": "2026-07-02",
+    "last_updated": "2026-07-02",
+    "confidence": "medium",
+    "limitations": [
+      "This is a claim about public evidence comparability, not about true biological stillbirth risk in the world.",
+      "The current evidence records anchor burden and policy framing but do not yet inventory survey, CRVS, and facility sources directly."
+    ]
+  }
+]

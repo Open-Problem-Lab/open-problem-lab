@@ -2,35 +2,35 @@
   "summary": {
     "generated_by": "scripts/generate-agent-radar.mjs",
     "schema_version": 1,
-    "total_packs": 104,
-    "total_tasks": 539,
-    "scoped_tasks": 102,
-    "latent_tasks": 437,
+    "total_packs": 105,
+    "total_tasks": 544,
+    "scoped_tasks": 103,
+    "latent_tasks": 441,
     "status_counts": {
-      "scoped": 102,
-      "needs-triage": 435,
+      "scoped": 103,
+      "needs-triage": 439,
       "needs-review": 2
     },
     "owner_role_counts": {
-      "literature-scout": 104,
-      "data-cleaner": 100,
-      "implementation-planner": 126,
-      "red-team-reviewer": 104,
-      "field-reality-reviewer": 105
-    },
-    "scoped_role_counts": {
-      "literature-scout": 102
-    },
-    "reviewer_needed_counts": {
-      "domain-reviewer": 223,
-      "replicator": 106,
-      "red-team-reviewer": 104,
+      "literature-scout": 105,
+      "data-cleaner": 101,
+      "implementation-planner": 127,
+      "red-team-reviewer": 105,
       "field-reality-reviewer": 106
     },
+    "scoped_role_counts": {
+      "literature-scout": 103
+    },
+    "reviewer_needed_counts": {
+      "domain-reviewer": 225,
+      "replicator": 107,
+      "red-team-reviewer": 105,
+      "field-reality-reviewer": 107
+    },
     "safety_risk_counts": {
-      "medium": 245,
-      "high": 282,
-      "low": 12
+      "medium": 247,
+      "high": 284,
+      "low": 13
     },
     "protocol_alert_count": 0
   },
@@ -99,6 +99,22 @@
         "downstream_high_risk_tasks": 0,
         "problem_file": "problem-packs/education/skills-training-youth-employment-global/problem.md",
         "tasks_file": "problem-packs/education/skills-training-youth-employment-global/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
+      },
+      {
+        "pack_id": "public-health/stillbirth-measurement-quality-global",
+        "pack_title": "Stillbirth Measurement Gaps And Intrapartum Care Quality In High-Burden Countries",
+        "task_id": "source-inventory",
+        "title": "Inventory stillbirth data sources across survey, CRVS, and facility systems",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "low",
+        "done_condition": "At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering definition threshold, measure family, time reference, geographic grain, and relevance to intrapartum versus counting-system interpretation.",
+        "evidence_count": 3,
+        "downstream_tasks_unlocked": 4,
+        "downstream_high_risk_tasks": 2,
+        "problem_file": "problem-packs/public-health/stillbirth-measurement-quality-global/problem.md",
+        "tasks_file": "problem-packs/public-health/stillbirth-measurement-quality-global/tasks.json",
         "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
       },
       {
@@ -211,22 +227,6 @@
         "downstream_high_risk_tasks": 4,
         "problem_file": "problem-packs/climate-health/malaria-early-warning-africa/problem.md",
         "tasks_file": "problem-packs/climate-health/malaria-early-warning-africa/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
-      },
-      {
-        "pack_id": "food-safety/aflatoxin-exposure-sub-saharan-africa",
-        "pack_title": "Aflatoxin Exposure From Contaminated Staple Grains In Sub-Saharan Africa",
-        "task_id": "source-inventory",
-        "title": "Inventory mycotoxin test data, climate suitability models, and post-harvest practice surveys for SSA aflatoxin risk mapping",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "medium",
-        "done_condition": "At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering contamination test method, geographic grain, crop specificity, sampling frame adequacy, and intervention-relevance.",
-        "evidence_count": 5,
-        "downstream_tasks_unlocked": 5,
-        "downstream_high_risk_tasks": 4,
-        "problem_file": "problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/problem.md",
-        "tasks_file": "problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/tasks.json",
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       }
     ],
@@ -655,34 +655,34 @@
       {
         "owner_role": "implementation-planner",
         "scoped_tasks": 0,
-        "latent_tasks": 126,
-        "share_of_all_tasks": 0.234,
+        "latent_tasks": 127,
+        "share_of_all_tasks": 0.233,
         "share_of_latent_tasks": 0.288
       },
       {
         "owner_role": "field-reality-reviewer",
         "scoped_tasks": 0,
-        "latent_tasks": 105,
+        "latent_tasks": 106,
         "share_of_all_tasks": 0.195,
         "share_of_latent_tasks": 0.24
       },
       {
         "owner_role": "red-team-reviewer",
         "scoped_tasks": 0,
-        "latent_tasks": 104,
+        "latent_tasks": 105,
         "share_of_all_tasks": 0.193,
         "share_of_latent_tasks": 0.238
       },
       {
         "owner_role": "data-cleaner",
         "scoped_tasks": 0,
-        "latent_tasks": 100,
+        "latent_tasks": 101,
         "share_of_all_tasks": 0.186,
         "share_of_latent_tasks": 0.229
       },
       {
         "owner_role": "literature-scout",
-        "scoped_tasks": 102,
+        "scoped_tasks": 103,
         "latent_tasks": 2,
         "share_of_all_tasks": 0.193,
         "share_of_latent_tasks": 0.005

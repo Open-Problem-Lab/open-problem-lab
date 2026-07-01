@@ -1,0 +1,39 @@
+{
+  "id": "public-health/stillbirth-measurement-quality-global",
+  "title": "Stillbirth Measurement Gaps And Intrapartum Care Quality In High-Burden Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for distinguishing stillbirth burden that is preventable during labor from burden that is merely counted late or not counted at all, linking household surveys, CRVS, and facility data in high-burden countries.",
+  "why_it_matters": "Stillbirth is one of the largest routinely under-attended adverse pregnancy outcomes: the 2021 UN Inter-agency Group for Child Mortality Estimation stillbirth assessment estimated about 1.9 million stillbirths in 2019, with the highest rates in Sub-Saharan Africa and South Asia. The neglected wedge is not generic awareness. It is decision-grade verification of where intrapartum stillbirth burden is plausibly high because labor and delivery quality is failing versus where the apparent burden mostly reflects weak counting. That distinction changes what a ministry maternal-newborn unit, a district quality-improvement team, or a donor financing emergency obstetric and newborn care audits should fund next.",
+  "success_metrics": [
+    {
+      "metric": "Measure-family discipline",
+      "target": "Every accepted artifact states whether it is using household survey histories, CRVS stillbirth registration, or facility stillbirth counts and what each source cannot prove.",
+      "validation_method": "Schema validation and reviewer check against evidence and validation rules."
+    },
+    {
+      "metric": "Operational wedge clarity",
+      "target": "At least one reviewed artifact identifies a named decision-maker and shows which observed pattern would justify quality-of-care verification rather than counting-system investment.",
+      "validation_method": "Domain and field-reality review."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, source verification for changed evidence URLs, and replication for any quantitative comparison or operational ranking."
+  }
+}

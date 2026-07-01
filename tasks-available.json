@@ -3,17 +3,17 @@
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
     "total_packs": 104,
-    "total_scoped_tasks": 103,
+    "total_scoped_tasks": 102,
     "by_role": {
-      "literature-scout": 103
+      "literature-scout": 102
     },
     "by_risk": {
       "medium": 98,
-      "low": 5
+      "low": 4
     },
     "by_domain": {
       "air-quality": 6,
-      "public-health": 66,
+      "public-health": 65,
       "climate-health": 14,
       "biodiversity": 7,
       "food-security": 19,
@@ -911,23 +911,6 @@
       "done_condition": "Five sources classified as usable, limited, or rejected.",
       "tasks_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/tasks.json",
       "problem_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md"
-    },
-    {
-      "pack_id": "public-health/birth-registration-access-global",
-      "pack_title": "Birth Registration Coverage Gaps And Health-Service Linkage In Low-Income Countries",
-      "pack_status": "scoped",
-      "domain": ["public-health"],
-      "region": ["global"],
-      "task_id": "source-inventory",
-      "title": "Inventory survey, CRVS, and health-touchpoint data sources for birth registration analysis",
-      "owner_role": "literature-scout",
-      "reviewer_needed": "domain-reviewer",
-      "safety_risk": "low",
-      "outcome": "A dated source inventory that separates survey-based registration measures, administrative completeness sources, proof-of-registration measures, health-touchpoint data, and population denominators into usable, limited, and rejected categories.",
-      "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
-      "done_condition": "At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering measure family, timing, geographic grain, and health-linkage relevance.",
-      "tasks_file": "problem-packs/public-health/birth-registration-access-global/tasks.json",
-      "problem_file": "problem-packs/public-health/birth-registration-access-global/problem.md"
     },
     {
       "pack_id": "public-health/blindness-vision-impairment-global",

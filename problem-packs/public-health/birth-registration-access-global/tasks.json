@@ -3,7 +3,7 @@
     "id": "source-inventory",
     "problem_id": "public-health/birth-registration-access-global",
     "title": "Inventory survey, CRVS, and health-touchpoint data sources for birth registration analysis",
-    "status": "scoped",
+    "status": "needs-review",
     "owner_role": "literature-scout",
     "outcome": "A dated source inventory that separates survey-based registration measures, administrative completeness sources, proof-of-registration measures, health-touchpoint data, and population denominators into usable, limited, and rejected categories.",
     "inputs": [

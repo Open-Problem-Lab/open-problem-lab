@@ -4,12 +4,12 @@
     "schema_version": 1,
     "total_packs": 105,
     "total_tasks": 544,
-    "scoped_tasks": 104,
-    "latent_tasks": 440,
+    "scoped_tasks": 103,
+    "latent_tasks": 441,
     "status_counts": {
-      "scoped": 104,
+      "scoped": 103,
       "needs-triage": 439,
-      "needs-review": 1
+      "needs-review": 2
     },
     "owner_role_counts": {
       "literature-scout": 105,
@@ -19,7 +19,7 @@
       "field-reality-reviewer": 106
     },
     "scoped_role_counts": {
-      "literature-scout": 104
+      "literature-scout": 103
     },
     "reviewer_needed_counts": {
       "domain-reviewer": 225,
@@ -37,22 +37,6 @@
   "protocol_alerts": [],
   "contributor_lanes": {
     "first_moves": [
-      {
-        "pack_id": "public-health/birth-registration-access-global",
-        "pack_title": "Birth Registration Coverage Gaps And Health-Service Linkage In Low-Income Countries",
-        "task_id": "source-inventory",
-        "title": "Inventory survey, CRVS, and health-touchpoint data sources for birth registration analysis",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "low",
-        "done_condition": "At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering measure family, timing, geographic grain, and health-linkage relevance.",
-        "evidence_count": 7,
-        "downstream_tasks_unlocked": 5,
-        "downstream_high_risk_tasks": 2,
-        "problem_file": "problem-packs/public-health/birth-registration-access-global/problem.md",
-        "tasks_file": "problem-packs/public-health/birth-registration-access-global/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
-      },
       {
         "pack_id": "public-health/ncd-risk-factor-surveillance-global",
         "pack_title": "Non-Communicable Disease Risk Factor Surveillance Gaps In Low-Income Countries",
@@ -227,6 +211,22 @@
         "downstream_high_risk_tasks": 4,
         "problem_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md",
         "tasks_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
+      },
+      {
+        "pack_id": "climate-health/malaria-early-warning-africa",
+        "pack_title": "Malaria Early Warning Signals In Sub-Saharan Africa",
+        "task_id": "source-inventory",
+        "title": "Inventory malaria and climate data sources for Sub-Saharan Africa",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "medium",
+        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons.",
+        "evidence_count": 5,
+        "downstream_tasks_unlocked": 5,
+        "downstream_high_risk_tasks": 4,
+        "problem_file": "problem-packs/climate-health/malaria-early-warning-africa/problem.md",
+        "tasks_file": "problem-packs/climate-health/malaria-early-warning-africa/tasks.json",
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       }
     ],
@@ -509,6 +509,19 @@
         "problem_file": "problem-packs/food-security/fisheries-overexploitation-west-africa/problem.md"
       },
       {
+        "pack_id": "public-health/birth-registration-access-global",
+        "pack_title": "Birth Registration Coverage Gaps And Health-Service Linkage In Low-Income Countries",
+        "downstream_reviewers_needed": {
+          "domain-reviewer": 3,
+          "replicator": 1,
+          "red-team-reviewer": 1,
+          "field-reality-reviewer": 1
+        },
+        "downstream_high_risk_tasks": 2,
+        "downstream_tasks": 6,
+        "problem_file": "problem-packs/public-health/birth-registration-access-global/problem.md"
+      },
+      {
         "pack_id": "climate-adaptation/sea-level-rise-small-islands",
         "pack_title": "Sea-Level Rise Coastal Exposure And Adaptation Prioritization In Small Island Developing States",
         "downstream_reviewers_needed": {
@@ -636,19 +649,6 @@
         "downstream_high_risk_tasks": 4,
         "downstream_tasks": 5,
         "problem_file": "problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md"
-      },
-      {
-        "pack_id": "public-health/child-mortality-inequality-global",
-        "pack_title": "Under-Five Mortality Sub-National Inequality Tracking In Low-Income Countries",
-        "downstream_reviewers_needed": {
-          "replicator": 1,
-          "domain-reviewer": 2,
-          "red-team-reviewer": 1,
-          "field-reality-reviewer": 1
-        },
-        "downstream_high_risk_tasks": 4,
-        "downstream_tasks": 5,
-        "problem_file": "problem-packs/public-health/child-mortality-inequality-global/problem.md"
       }
     ],
     "role_backlog": [
@@ -657,35 +657,35 @@
         "scoped_tasks": 0,
         "latent_tasks": 127,
         "share_of_all_tasks": 0.233,
-        "share_of_latent_tasks": 0.289
+        "share_of_latent_tasks": 0.288
       },
       {
         "owner_role": "field-reality-reviewer",
         "scoped_tasks": 0,
         "latent_tasks": 106,
         "share_of_all_tasks": 0.195,
-        "share_of_latent_tasks": 0.241
+        "share_of_latent_tasks": 0.24
       },
       {
         "owner_role": "red-team-reviewer",
         "scoped_tasks": 0,
         "latent_tasks": 105,
         "share_of_all_tasks": 0.193,
-        "share_of_latent_tasks": 0.239
+        "share_of_latent_tasks": 0.238
       },
       {
         "owner_role": "data-cleaner",
         "scoped_tasks": 0,
         "latent_tasks": 101,
         "share_of_all_tasks": 0.186,
-        "share_of_latent_tasks": 0.23
+        "share_of_latent_tasks": 0.229
       },
       {
         "owner_role": "literature-scout",
-        "scoped_tasks": 104,
-        "latent_tasks": 1,
+        "scoped_tasks": 103,
+        "latent_tasks": 2,
         "share_of_all_tasks": 0.193,
-        "share_of_latent_tasks": 0.002
+        "share_of_latent_tasks": 0.005
       }
     ]
   }

@@ -11,7 +11,7 @@
 | Packs with accepted claims | 0 |
 | Total evidence records | 317 |
 | Total tasks | 539 |
-| Scoped tasks (ready for work) | 103 |
+| Scoped tasks (ready for work) | 102 |
 | High-risk tasks | 282 |
 
 ## All Problem Packs
@@ -71,7 +71,7 @@
 | [public-health/alcohol-harm-reduction-global](../../problem-packs/public-health/alcohol-harm-reduction-global/problem.md) | Alcohol Harm Reduction Policy Gaps And Heavy Episodic Drinking In Low- And Middle-Income Countries | scoped | public-health | global | medium | 1 ev; 4 tasks | needs evidence |
 | [public-health/anemia-women-adolescents-global](../../problem-packs/public-health/anemia-women-adolescents-global/problem.md) | Anemia Prevalence And Iron Supplementation Coverage In Women And Adolescents | scoped | public-health, food-security | global | medium | 6 ev; 5 tasks | ready |
 | [public-health/antimicrobial-resistance-surveillance-global](../../problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md) | Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries | scoped | public-health | global | medium | 6 ev; 6 tasks; 1 claims | has claims |
-| [public-health/birth-registration-access-global](../../problem-packs/public-health/birth-registration-access-global/problem.md) | Birth Registration Coverage Gaps And Health-Service Linkage In Low-Income Countries | scoped | public-health | global | medium | 7 ev; 6 tasks | ready |
+| [public-health/birth-registration-access-global](../../problem-packs/public-health/birth-registration-access-global/problem.md) | Birth Registration Coverage Gaps And Health-Service Linkage In Low-Income Countries | scoped | public-health | global | medium | 7 ev; 6 tasks | needs triage |
 | [public-health/blindness-vision-impairment-global](../../problem-packs/public-health/blindness-vision-impairment-global/problem.md) | Avoidable Blindness And Cataract Surgical Coverage Gaps In Low- And Middle-Income Countries | scoped | public-health | global | medium | 1 ev; 5 tasks | needs evidence |
 | [public-health/breastfeeding-support-coverage-global](../../problem-packs/public-health/breastfeeding-support-coverage-global/problem.md) | Early Breastfeeding Initiation And Exclusive Breastfeeding Support Coverage Gaps In Low-Income Countries | scoped | public-health | global | medium | 2 ev; 5 tasks | needs evidence |
 | [public-health/cervical-cancer-screening-global](../../problem-packs/public-health/cervical-cancer-screening-global/problem.md) | Cervical Cancer Screening Coverage Gaps In Low- And Middle-Income Countries | scoped | public-health | global | medium | 1 ev; 5 tasks | needs evidence |

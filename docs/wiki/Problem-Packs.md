@@ -870,6 +870,16 @@ Build a verified workflow for measuring the gap between sickle cell disease birt
 
 Build a verified workflow for measuring snakebite envenoming mortality risk and antivenom access gaps, linking WHO snakebite data, health-facility antivenom stocking data, and agricultural-population maps at sub-national scale.
 
+## Stillbirth Measurement Gaps And Intrapartum Care Quality In High-Burden Countries
+
+- ID: `public-health/stillbirth-measurement-quality-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/stillbirth-measurement-quality-global](../../problem-packs/public-health/stillbirth-measurement-quality-global/problem.md)
+
+Build a verified workflow for distinguishing stillbirth burden that is preventable during labor from burden that is merely counted late or not counted at all, linking household surveys, CRVS, and facility data in high-burden countries.
+
 ## Child Stunting Hotspot Identification In Sub-Saharan Africa
 
 - ID: `public-health/stunting-sub-saharan-africa`

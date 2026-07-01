@@ -81,6 +81,7 @@ Strong rejections are worth more than mediocre approvals. A precise rejection th
 
 - `problem-packs/climate-health/dengue-heat-vietnam/` is the calibration sample for operational humility, bounded claims, and analytic-use warnings.
 - `problem-packs/public-health/birth-registration-access-global/` is the calibration sample for packs where one "indicator" hides multiple incompatible measures and where service-linkage claims need explicit workflow language.
+- `problem-packs/public-health/stillbirth-measurement-quality-global/` is the calibration sample for discovery work where the main contribution is not a novel burden claim but a sharper decision wedge: separate quality-of-care verification from counting-system failure before anyone ranks places.
 
 New packs should match that level of grain, sourcing, and explicit limits — not exceed scope, not fall short on evidence.
 

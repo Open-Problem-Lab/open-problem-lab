@@ -1,0 +1,56 @@
+[
+  {
+    "id": "lancet-stillbirth-estimates-2021",
+    "problem_id": "public-health/stillbirth-measurement-quality-global",
+    "claim": "The 2021 systematic assessment estimated about 1.9 million stillbirths globally in 2019 and showed the highest stillbirth rates in Sub-Saharan Africa and South Asia.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global, regional, and national estimates and trends in stillbirths from 2000 to 2019: a systematic assessment",
+      "url": "https://doi.org/10.1016/S0140-6736(21)01112-0"
+    },
+    "source_date": "2021-08-28",
+    "access_date": "2026-07-02",
+    "method": "Reviewed Crossref metadata and the study title to anchor the stillbirth burden and trend estimate used for pack framing.",
+    "limitations": [
+      "This record anchors burden framing but does not by itself provide sub-national operational thresholds.",
+      "The estimate is for 2019 and may not capture post-2019 disruption or more recent registration changes."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "lancet-ending-preventable-stillbirths-2016",
+    "problem_id": "public-health/stillbirth-measurement-quality-global",
+    "claim": "The 2016 Lancet stillbirth series framed many late-gestation stillbirths as preventable and treated intrapartum stillbirth as a policy-relevant signal of failures in obstetric and newborn care.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Stillbirths: ending preventable deaths by 2030",
+      "url": "https://doi.org/10.1016/S0140-6736(15)00954-X"
+    },
+    "source_date": "2016-02-06",
+    "access_date": "2026-07-02",
+    "method": "Reviewed stable DOI metadata for the Lancet stillbirth series paper used to justify the pack's decision wedge around preventable intrapartum burden.",
+    "limitations": [
+      "This source is a policy and evidence synthesis anchor, not direct proof about any current country or district.",
+      "Intervention tractability claims from 2016 need newer country-specific verification before operational use."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "lancet-stillbirth-rates-risk-factors-2016",
+    "problem_id": "public-health/stillbirth-measurement-quality-global",
+    "claim": "The 2016 Lancet stillbirth series highlighted strong concentration of stillbirth burden in low-income settings and emphasized that rates, risk factors, and acceleration toward 2030 differ sharply by region and health-system capability.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Stillbirths: rates, risk factors, and acceleration towards 2030",
+      "url": "https://doi.org/10.1016/S0140-6736(15)00837-5"
+    },
+    "source_date": "2016-02-06",
+    "access_date": "2026-07-02",
+    "method": "Reviewed DOI metadata for the companion Lancet series article to support neglectedness and burden concentration framing.",
+    "limitations": [
+      "This record does not by itself provide a current neglectedness funding denominator.",
+      "Regional framing does not solve sub-national comparability or public-data sufficiency."
+    ],
+    "confidence": "medium"
+  }
+]

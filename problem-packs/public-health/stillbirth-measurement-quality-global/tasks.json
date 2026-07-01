@@ -1,0 +1,81 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/stillbirth-measurement-quality-global",
+    "title": "Inventory stillbirth data sources across survey, CRVS, and facility systems",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating usable, limited, and rejected stillbirth sources by measure family and policy use.",
+    "inputs": [
+      "UN IGME stillbirth estimates",
+      "DHS or equivalent pregnancy history sources",
+      "CRVS fetal death or stillbirth guidance",
+      "facility stillbirth and perinatal audit sources"
+    ],
+    "expected_artifact": "datasets.md plus evidence.json updates.",
+    "validation_method": "Reviewer checks that at least six sources are classified with explicit reasons covering definition, gestational threshold, denominator, geographic grain, and ability or inability to distinguish intrapartum burden from counting gaps.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "low",
+    "done_condition": "At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering definition threshold, measure family, time reference, geographic grain, and relevance to intrapartum versus counting-system interpretation."
+  },
+  {
+    "id": "measurement-reconciliation-note",
+    "problem_id": "public-health/stillbirth-measurement-quality-global",
+    "title": "Write measure-family reconciliation note for stillbirth comparison",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A reviewable note stating which stillbirth sources can and cannot be compared and for what decision.",
+    "inputs": ["datasets.md", "evidence.json", "problem framing"],
+    "expected_artifact": "validation.md update plus short note in outputs.md.",
+    "validation_method": "Domain reviewer checks that each allowed comparison names numerator, denominator, gestational threshold, and disqualifying mismatch.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "Every allowed comparison states numerator, denominator, gestational threshold, and policy question; every blocked comparison states the named mismatch that makes it invalid."
+  },
+  {
+    "id": "country-feasibility-selection",
+    "problem_id": "public-health/stillbirth-measurement-quality-global",
+    "title": "Select high-burden countries where stillbirth verification work is feasible",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A shortlist of countries with enough public data to distinguish quality-of-care verification from counting-system strengthening.",
+    "inputs": ["source inventory", "measure-family note", "public burden estimates"],
+    "expected_artifact": "outputs.md update with shortlist and explicit exclusion reasons.",
+    "validation_method": "Replicator confirms the inclusion and exclusion logic on the same source set.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "At least three candidate countries are classified as feasible, borderline, or not feasible with explicit reasons tied to public data availability, comparability, and decision use."
+  },
+  {
+    "id": "red-team-review",
+    "problem_id": "public-health/stillbirth-measurement-quality-global",
+    "title": "Red-team misuse of stillbirth quality signals",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review covering false negligence claims, denominator abuse, and perverse incentives in facility reporting.",
+    "inputs": ["draft outputs", "SAFETY.md", "validation rules"],
+    "expected_artifact": "playbooks.md update with failure modes and blocked uses.",
+    "validation_method": "A second reviewer reproduces the cited misuse risks from the draft artifact and confirms that mitigation language is present before publication.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every field-facing artifact names who could misuse facility stillbirth rates, how the misuse would happen, what blocking language or review gate prevents it, and the review is independently replicated before publication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/stillbirth-measurement-quality-global",
+    "title": "Check whether outputs match maternal-newborn planning decisions",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether the pack changes a named planning or audit decision without creating reporting disincentives.",
+    "inputs": [
+      "draft outputs",
+      "maternal-newborn QI workflow context",
+      "CRVS workflow context where relevant"
+    ],
+    "expected_artifact": "playbooks.md update with named user, decision, timing, and non-use cases.",
+    "validation_method": "Field reviewer identifies the actual decision, user, service workflow, and misuse risk; a second reviewer replicates the check on the stated non-use cases before publication.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The artifact names a real user, a real timing window, a real service or audit workflow, explicit non-use cases including non-punitive handling of facility stillbirth reporting, and the field-reality check is independently replicated before publication."
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/medical-oxygen-access-lmic",
+    "title": "Inventory medical oxygen need and facility-readiness data sources for LMICs",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating oxygen need estimates, facility oxygen readiness, equipment functionality, pulse oximetry, supply reliability, and rejected equipment-only sources.",
+    "inputs": [
+      "WHO medical oxygen guidance",
+      "Lancet Global Health oxygen security commission",
+      "WHO SARA and DHS SPA facility readiness sources",
+      "national oxygen assessment examples",
+      "partner oxygen tracking sources"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Reviewer checks each source for URL, source date, access date, measure family, oxygen source type, functionality fields, geographic grain, and limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "low",
+    "done_condition": "At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering need, equipment presence, functionality, pulse oximetry, supply reliability, and access conditions."
+  },
+  {
+    "id": "measure-family-reconciliation",
+    "problem_id": "public-health/medical-oxygen-access-lmic",
+    "title": "Define oxygen access measure families and invalid comparisons",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A measure-family specification that prevents direct comparison of oxygen need, oxygen equipment presence, oxygen functionality, and clinical-use indicators.",
+    "inputs": [
+      "source-inventory output",
+      "facility readiness questionnaires",
+      "oxygen equipment inventory examples",
+      "validation.md baseline requirements"
+    ],
+    "expected_artifact": "validation.md update with measure-family definitions, denominator rules, and rejection rules.",
+    "validation_method": "Replicator checks whether three sample source indicators are correctly classified and whether invalid comparisons are blocked.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "A reviewer can classify any oxygen indicator in the inventory into one measure family and name why at least three cross-family comparisons are invalid."
+  },
+  {
+    "id": "country-triage-memo",
+    "problem_id": "public-health/medical-oxygen-access-lmic",
+    "title": "Draft a country triage memo for oxygen-system evidence readiness",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A ranked shortlist of LMIC contexts where public evidence may support procurement, maintenance, or financing follow-on analysis.",
+    "inputs": [
+      "source-inventory output",
+      "measure-family reconciliation",
+      "facility readiness data",
+      "national oxygen assessment sources"
+    ],
+    "expected_artifact": "outputs.md update with triage memo and reproducible exclusion logic.",
+    "validation_method": "Independent replicator reruns the shortlist logic, checks every exclusion reason, and confirms that no country is ranked on equipment presence alone.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "high",
+    "done_condition": "At least two contexts are classified into procurement, maintenance, or insufficient-evidence buckets with a named decision-maker and falsification condition."
+  },
+  {
+    "id": "red-team-procurement-overreach",
+    "problem_id": "public-health/medical-oxygen-access-lmic",
+    "title": "Red-team oxygen procurement and equipment-count overreach",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review that blocks unsafe interpretations of oxygen readiness evidence.",
+    "inputs": ["draft triage memo", "validation.md", "SAFETY.md", "evidence limitations"],
+    "expected_artifact": "outputs.md and playbooks.md update with blocked uses, non-use cases, and mitigation notes.",
+    "validation_method": "Red-team reviewer confirms every allocation-sensitive claim has an alternative explanation, kill condition, and non-use case before it can advance.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every operational or allocation-sensitive claim is either blocked, narrowed, or gated behind domain review and replication."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/medical-oxygen-access-lmic",
+    "title": "Check oxygen evidence against hospital and procurement workflows",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether proposed artifacts match real oxygen planning, biomedical engineering, and procurement decisions.",
+    "inputs": [
+      "draft triage memo",
+      "national oxygen planning workflow",
+      "biomedical maintenance constraints",
+      "procurement timing constraints"
+    ],
+    "expected_artifact": "playbooks.md update with use cases, non-use cases, timing, and workflow fit.",
+    "validation_method": "Field reviewer identifies the actual user, decision, timing, required context, and misuse risk, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The artifact has a named user, named decision, timing window, required local checks, non-use cases, and replicated field-reality review before publication."
+  }
+]

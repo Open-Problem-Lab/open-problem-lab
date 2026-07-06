@@ -770,6 +770,16 @@ Build a verified workflow for measuring perinatal maternal depression detection 
 
 Build a verified workflow for identifying where maternal mortality risk is highest and emergency obstetric care access is lowest in Sub-Saharan Africa, linking DHS delivery data, health facility location data, and travel-time estimates at sub-national scale.
 
+## Medical Oxygen Access And Facility Readiness Gaps In LMICs
+
+- ID: `public-health/medical-oxygen-access-lmic`
+- Status: `scoped`
+- Domain: `public-health`, `health-systems`
+- Region: `lmic`
+- Source: [problem-packs/public-health/medical-oxygen-access-lmic](../../problem-packs/public-health/medical-oxygen-access-lmic/problem.md)
+
+Build a verified workflow for separating medical oxygen need, facility oxygen readiness, supply reliability, and financing gaps in low- and middle-income countries.
+
 ## Mental Health Treatment Gap Measurement In Low- And Middle-Income Countries
 
 - ID: `public-health/mental-health-treatment-gap-global`

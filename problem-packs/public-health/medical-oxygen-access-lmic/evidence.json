@@ -1,0 +1,93 @@
+[
+  {
+    "id": "lg-health-oxygen-commission-2025",
+    "problem_id": "public-health/medical-oxygen-access-lmic",
+    "claim": "The Lancet Global Health Commission identifies medical oxygen security as a cross-cutting health-system requirement and estimates that roughly 374 million newborns, children, and adults need medical oxygen each year, with 82 percent of these patients in low- and middle-income countries.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "The Lancet Global Health Commission on medical oxygen security",
+      "url": "https://doi.org/10.1016/S2214-109X(24)00496-0",
+      "doi": "10.1016/S2214-109X(24)00496-0"
+    },
+    "source_date": "2025-02-17",
+    "access_date": "2026-07-06",
+    "method": "Reviewed commission abstract and policy framing for oxygen-system scope, health-service areas, and LMIC access-failure framing.",
+    "limitations": [
+      "Commission framing supports pack selection but does not by itself prove country-level oxygen readiness.",
+      "Global synthesis cannot replace facility-level functionality, uptime, power, consumables, or clinical-use measurement."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-wha76-oxygen-resolution-2023",
+    "problem_id": "public-health/medical-oxygen-access-lmic",
+    "claim": "World Health Assembly resolution WHA76.3 asks Member States to strengthen medical oxygen systems, including planning, procurement, distribution, maintenance, regulation, training, and monitoring.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Increasing access to medical oxygen: resolution WHA76.3",
+      "url": "https://apps.who.int/gb/ebwha/pdf_files/WHA76/A76_R3-en.pdf"
+    },
+    "source_date": "2023-05-30",
+    "access_date": "2026-07-06",
+    "method": "Reviewed the adopted World Health Assembly resolution for requested Member State actions and system components named in the resolution text.",
+    "limitations": [
+      "Resolution proves institutional recognition and action categories, not implementation progress.",
+      "It does not quantify country-level gaps or rank investment options."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-oxygen-sources-distribution-2020",
+    "problem_id": "public-health/medical-oxygen-access-lmic",
+    "claim": "WHO's technical specifications describe multiple oxygen source and distribution options, making equipment choice dependent on demand, facility level, power, maintenance, and supply-chain context.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Oxygen sources and distribution for COVID-19 treatment centres: interim guidance",
+      "url": "https://apps.who.int/iris/handle/10665/331746"
+    },
+    "source_date": "2020-04-04",
+    "access_date": "2026-07-06",
+    "method": "Reviewed WHO guidance for oxygen source categories, distribution options, and operational constraints relevant to readiness classification.",
+    "limitations": [
+      "COVID-era guidance is not a complete oxygen-system assessment method.",
+      "The document supports technical classification but not current facility readiness."
+    ],
+    "confidence": "medium"
+  },
+  {
+    "id": "who-unicef-assistive-technology-2022",
+    "problem_id": "public-health/medical-oxygen-access-lmic",
+    "claim": "The WHO-UNICEF Global Report on Assistive Technology estimates that more than 2.5 billion people need at least one assistive product, but this comparator problem is broader and generally less time-critical than acute oxygen access failure.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global report on assistive technology",
+      "url": "https://www.who.int/publications/i/item/9789240049451"
+    },
+    "source_date": "2022-05-16",
+    "access_date": "2026-07-06",
+    "method": "Reviewed WHO publication page and report framing for global need estimates used in discovery-mode candidate comparison.",
+    "limitations": [
+      "Comparator evidence only; it does not support oxygen-specific claims.",
+      "Need for assistive products is not equivalent to untreated acute mortality risk."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-rabies-fact-sheet-2024",
+    "problem_id": "public-health/medical-oxygen-access-lmic",
+    "claim": "WHO estimates that rabies causes about 59,000 human deaths annually, mostly in Asia and Africa, making it a severe but narrower comparator problem for discovery-mode ranking.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Rabies fact sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/rabies"
+    },
+    "source_date": "2024-06-05",
+    "access_date": "2026-07-06",
+    "method": "Reviewed WHO rabies fact sheet for global death estimate, geographic concentration, and prevention pathway used as discovery-mode comparator evidence.",
+    "limitations": [
+      "Comparator evidence only; it does not support oxygen-specific claims.",
+      "Fact sheet does not quantify the current funding or surveillance gap for each country."
+    ],
+    "confidence": "high"
+  }
+]

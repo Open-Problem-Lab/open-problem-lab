@@ -6,13 +6,13 @@
 
 | Metric | Value |
 |---|---|
-| Total packs | 105 |
+| Total packs | 106 |
 | Packs with claims | 12 |
 | Packs with accepted claims | 0 |
-| Total evidence records | 324 |
-| Total tasks | 544 |
-| Scoped tasks (ready for work) | 102 |
-| High-risk tasks | 284 |
+| Total evidence records | 329 |
+| Total tasks | 549 |
+| Scoped tasks (ready for work) | 103 |
+| High-risk tasks | 287 |
 
 ## All Problem Packs
 
@@ -95,6 +95,7 @@
 | [public-health/malnutrition-elderly-global](../../problem-packs/public-health/malnutrition-elderly-global/problem.md) | Elderly Malnutrition Detection And Nutritional Support Gaps In Low-Income Countries | scoped | public-health, food-security | global | medium | 1 ev; 5 tasks | needs evidence |
 | [public-health/maternal-mental-health-global](../../problem-packs/public-health/maternal-mental-health-global/problem.md) | Perinatal Maternal Mental Health Detection And Care Access Gaps In Low-Income Countries | scoped | public-health | global | high | 1 ev; 4 tasks | needs evidence |
 | [public-health/maternal-mortality-sub-saharan-africa](../../problem-packs/public-health/maternal-mortality-sub-saharan-africa/problem.md) | Maternal Mortality Facility Delivery And Emergency Obstetric Care Access In Sub-Saharan Africa | scoped | public-health | sub-saharan-africa | medium | 2 ev; 5 tasks | needs evidence |
+| [public-health/medical-oxygen-access-lmic](../../problem-packs/public-health/medical-oxygen-access-lmic/problem.md) | Medical Oxygen Access And Facility Readiness Gaps In LMICs | scoped | public-health, health-systems | lmic | high | 5 ev; 5 tasks | ready |
 | [public-health/mental-health-treatment-gap-global](../../problem-packs/public-health/mental-health-treatment-gap-global/problem.md) | Mental Health Treatment Gap Measurement In Low- And Middle-Income Countries | scoped | public-health | global | high | 2 ev; 5 tasks | needs evidence |
 | [public-health/ncd-risk-factor-surveillance-global](../../problem-packs/public-health/ncd-risk-factor-surveillance-global/problem.md) | Non-Communicable Disease Risk Factor Surveillance Gaps In Low-Income Countries | scoped | public-health | global | low | 5 ev; 5 tasks; 1 claims | has claims |
 | [public-health/neonatal-mortality-quality-care-global](../../problem-packs/public-health/neonatal-mortality-quality-care-global/problem.md) | Neonatal Mortality And Quality Of Inpatient Newborn Care In Low-Income Countries | scoped | public-health | global | medium | 1 ev; 5 tasks | needs evidence |

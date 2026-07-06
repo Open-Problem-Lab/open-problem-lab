@@ -1,100 +1,135 @@
 [
   {
-    "id": "who-steps-surveillance-2023",
+    "id": "who-steps-systems-tools-2026",
     "problem_id": "public-health/ncd-risk-factor-surveillance-global",
-    "claim": "WHO STEPS surveys have been conducted in over 120 countries but fewer than 40 percent repeat surveys within five years, leaving gaps in NCD risk-factor trend data in high-burden countries.",
+    "claim": "WHO STEPS is the WHO-supported adult NCD risk-factor survey protocol and points users to country survey reports and the NCD microdata repository, making it usable for country-level surveillance-source discovery but not sufficient by itself for a complete low-income-country repeat-survey denominator.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "WHO STEPS Surveillance Manual",
+      "title": "STEPwise approach to NCD risk factor surveillance (STEPS)",
       "url": "https://www.who.int/teams/noncommunicable-diseases/surveillance/systems-tools/steps"
     },
-    "source_date": "2023-01-01",
-    "access_date": "2026-06-07",
-    "method": "Reviewed STEPS country coverage, survey frequency, and data gaps.",
+    "source_date": "2026-07-03",
+    "access_date": "2026-07-06",
+    "method": "Reviewed the WHO STEPS systems-tools page and its links to instruments, manuals, planning tools, analysis tools, country report access, and the NCD microdata repository. Classified the source by the grain it can support for this pack.",
     "limitations": [
-      "STEPS surveys measure risk factors, not disease prevalence.",
-      "Survey timing varies and is not synchronized across countries."
+      "This page documents the STEPS platform and access route; it does not itself enumerate every completed survey wave with a clean low-income-country denominator.",
+      "Public country reports do not guarantee public microdata access or sub-national sampling comparability.",
+      "The page cannot prove a five-year repeat-survey rate without a separate country-by-country extraction."
     ],
     "confidence": "high"
   },
   {
-    "id": "ihme-gbd-2021",
+    "id": "who-ncd-surveillance-data-page-2026",
     "problem_id": "public-health/ncd-risk-factor-surveillance-global",
-    "claim": "IHME Global Burden of Disease 2021 study provides country-level estimates of NCD risk factor exposure (tobacco, alcohol, diet, physical activity, BMI, blood pressure, fasting plasma glucose, cholesterol) for 204 countries from 1990 to 2021, but the estimates are modeled not directly measured, and sub-national estimates exist for only a subset of high-burden countries.",
-    "evidence_type": "dataset",
-    "source": {
-      "title": "IHME Global Burden of Disease Study 2021",
-      "url": "https://www.healthdata.org/research-analysis/gbd"
-    },
-    "source_date": "2024-05-01",
-    "access_date": "2026-06-28",
-    "method": "Reviewed the IHME GBD home page and GBD Compare tool for risk factor coverage, country list, temporal range, and sub-national availability. Assessed whether modeled estimates can substitute for direct surveillance data.",
-    "limitations": [
-      "GBD estimates are modeled using ensemble methods, not direct measurements; they synthesize multiple data sources with varying quality and coverage.",
-      "Sub-national GBD estimates exist for only a subset of countries (e.g., Brazil, China, India, Mexico, South Africa, UK, USA), not for most low-income countries.",
-      "Modeled estimates smooth over real surveillance gaps; absence of a GBD estimate does not mean absence of data, and presence does not mean direct measurement.",
-      "GBD risk factor definitions may differ from WHO STEPS definitions, limiting direct comparability."
-    ],
-    "confidence": "high"
-  },
-  {
-    "id": "who-gho-ncd-indicators",
-    "problem_id": "public-health/ncd-risk-factor-surveillance-global",
-    "claim": "WHO Global Health Observatory provides country-level NCD risk factor indicators (raised blood pressure, raised blood glucose, overweight, obesity, tobacco use, alcohol consumption) for most UN member states, but the underlying data is heterogeneous in source year, methodology, and reporting completeness across countries.",
-    "evidence_type": "dataset",
-    "source": {
-      "title": "WHO Global Health Observatory — Noncommunicable diseases",
-      "url": "https://www.who.int/data/gho/data/themes/noncommunicable-diseases"
-    },
-    "source_date": "2024-01-01",
-    "access_date": "2026-06-28",
-    "method": "Reviewed the GHO NCD themes page for available risk factor indicators, country coverage, data sources, and metadata. Assessed data heterogeneity and update frequency.",
-    "limitations": [
-      "Country-level only; no sub-national NCD risk factor data for any low-income country.",
-      "Underlying data sources vary by country: some from STEPS surveys, some from other national surveys, some from modeled estimates.",
-      "Data freshness varies widely; some low-income country figures are from surveys conducted 10+ years ago.",
-      "Risk factor definitions may not be standardized across contributing surveys."
-    ],
-    "confidence": "high"
-  },
-  {
-    "id": "who-ncd-surveillance-data-portal",
-    "problem_id": "public-health/ncd-risk-factor-surveillance-global",
-    "claim": "WHO NCD surveillance data portal lists country-level NCD capacity, STEPS survey availability, and risk factor monitoring status for member states, but fewer than 40 percent of low-income countries have repeated STEPS surveys within five years and sub-national risk factor data is not available through this portal for any country.",
+    "claim": "WHO's NCD surveillance data page is a usable routing source because it links the NCD microdata repository, WHO Global Health Observatory NCD data, the NCD data portal, NCD country profiles, and WHO-supported survey families, but it is not a single normalized dataset for sub-national NCD risk-factor gap mapping.",
     "evidence_type": "primary-source",
     "source": {
-      "title": "WHO NCD Surveillance — Data and Reporting",
+      "title": "WHO NCD surveillance: data and reporting",
       "url": "https://www.who.int/teams/noncommunicable-diseases/surveillance/data"
     },
-    "source_date": "2024-01-01",
-    "access_date": "2026-06-28",
-    "method": "Reviewed the WHO NCD surveillance data and reporting page for STEPS survey availability, country capacity assessments, and data access options. Checked for sub-national data availability.",
+    "source_date": "2026-07-05",
+    "access_date": "2026-07-06",
+    "method": "Reviewed the page sections for WHO-supported surveys, country report access, NCD microdata repository, Global Health Observatory data, NCD data portal, NCD profiles, and linked WHO publications.",
     "limitations": [
-      "The portal lists survey availability but does not provide downloadable sub-national risk factor data.",
-      "Country capacity assessments are self-reported by health ministries.",
-      "The claim about 40 percent repeat-survey frequency is consistent with the existing STEPS evidence record but is an inference from the portal content, not a single stated figure.",
-      "Survey frequency and quality vary significantly across regions."
+      "The page is a catalogue and routing layer, not a rectangular dataset.",
+      "It does not expose harmonized sub-national identifiers, missingness, sampling weights, or survey-wave comparability in one machine-readable table.",
+      "It can identify source families but cannot by itself prove whether a country has sufficient recent measured risk-factor surveillance."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-ncd-microdata-repository-2026",
+    "problem_id": "public-health/ncd-risk-factor-surveillance-global",
+    "claim": "The WHO NCD microdata repository is a usable candidate source for survey microdata discovery, but access conditions, survey availability, and country-specific documentation must be checked before treating any record as analysis-ready.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "WHO NCD microdata repository",
+      "url": "https://extranet.who.int/ncdsmicrodata/index.php/home"
+    },
+    "source_date": "2026-07-06",
+    "access_date": "2026-07-06",
+    "method": "Checked that the repository resolves and reviewed it as the WHO-linked microdata access surface for NCD surveys. Classified it as a discovery source rather than direct evidence of harmonized analysis readiness.",
+    "limitations": [
+      "Repository availability does not prove that every listed survey can be downloaded without approval or restriction.",
+      "Survey documentation, variable naming, sampling design, and sub-national identifiers remain country-specific.",
+      "The repository does not by itself define a low-income-country surveillance-gap denominator."
     ],
     "confidence": "medium"
   },
   {
-    "id": "dhis2-ncd-modules",
+    "id": "who-gho-ncd-theme-2026",
     "problem_id": "public-health/ncd-risk-factor-surveillance-global",
-    "claim": "DHIS2 is used by over 80 countries as a national health information system and supports NCD risk factor modules, but implementation of NCD modules in low-income countries is limited, with most deployments focused on infectious disease and maternal health reporting rather than NCD surveillance.",
-    "evidence_type": "primary-source",
+    "claim": "WHO Global Health Observatory NCD theme data are usable for country-level cross-country indicators and dashboarding, but heterogeneous source years and methods make them insufficient as direct evidence of measured, recent, sub-national NCD risk-factor surveillance in low-income countries.",
+    "evidence_type": "dataset",
     "source": {
-      "title": "DHIS2 — District Health Information Software",
-      "url": "https://dhis2.org/"
+      "title": "WHO Global Health Observatory: Noncommunicable diseases",
+      "url": "https://www.who.int/data/gho/data/themes/noncommunicable-diseases"
     },
-    "source_date": "2024-06-01",
-    "access_date": "2026-06-28",
-    "method": "Reviewed the DHIS2 main site for health information system coverage, NCD module availability, and implementation documentation. Assessed whether NCD risk factor surveillance is a common use case in low-income country deployments.",
+    "source_date": "2026-07-05",
+    "access_date": "2026-07-06",
+    "method": "Reviewed the GHO NCD theme page as the WHO indicator surface for NCD mortality, morbidity, and risk-factor exposure data. Assessed whether the page can support source inventory versus sub-national gap analysis.",
     "limitations": [
-      "DHIS2 supports NCD modules but this does not mean countries have implemented them; adoption is the constraint, not software capability.",
-      "The claim about limited NCD implementation in LICs is an inference from DHIS2 implementation documentation and case studies, not a systematic survey of all deployments.",
-      "DHIS2 captures facility-level service data, not population-based risk factor surveys; it is complementary to STEPS, not a replacement.",
-      "Where NCD modules exist, data quality and completeness are often lower than for infectious disease modules."
+      "GHO indicator pages aggregate or present country-level indicators and do not provide a uniform public sub-national risk-factor file for low-income countries.",
+      "Indicator values may mix measured survey inputs, modeled estimates, and different source years.",
+      "The page is useful for triangulation but cannot replace source-level survey documentation."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-ncd-portal-2026",
+    "problem_id": "public-health/ncd-risk-factor-surveillance-global",
+    "claim": "The WHO-linked NCD data portal is usable for country accountability views and target tracking, but it should be classified as limited for this pack because dashboard indicators are not equivalent to verified survey microdata provenance.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "Noncommunicable diseases data portal",
+      "url": "https://ncdportal.org"
+    },
+    "source_date": "2026-07-06",
+    "access_date": "2026-07-06",
+    "method": "Resolved the WHO-linked portal and classified its use case against the task done condition: source discovery, accountability display, and target tracking versus provenance-grade survey inventory.",
+    "limitations": [
+      "A dashboard can hide whether an indicator is measured, modeled, estimated, or imputed.",
+      "The portal does not expose enough source-level metadata on its own for canonical sub-national gap analysis.",
+      "Reviewer use should trace any indicator back to GHO, STEPS, or the original survey record before making claims."
     ],
     "confidence": "medium"
+  },
+  {
+    "id": "who-gats-page-2026",
+    "problem_id": "public-health/ncd-risk-factor-surveillance-global",
+    "claim": "WHO's Global Adult Tobacco Survey page is a usable but limited source family for this pack because it supports adult tobacco-risk surveillance, yet it covers only one risk-factor domain and cannot stand in for broader NCD risk-factor surveillance completeness.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global Adult Tobacco Survey",
+      "url": "https://www.who.int/teams/noncommunicable-diseases/surveillance/systems-tools/global-adult-tobacco-survey"
+    },
+    "source_date": "2026-07-05",
+    "access_date": "2026-07-06",
+    "method": "Reviewed the WHO GATS survey-family page linked from the NCD surveillance data page and classified its scope against this pack's requirement for composite NCD risk-factor surveillance sources.",
+    "limitations": [
+      "GATS covers tobacco exposure and use, not the broader STEPS-style bundle of blood pressure, glucose, diet, physical activity, and anthropometry.",
+      "Survey-family availability does not prove low-income-country repeat coverage or public microdata access.",
+      "A strong tobacco series can coexist with weak composite NCD risk-factor surveillance."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-gshs-page-2026",
+    "problem_id": "public-health/ncd-risk-factor-surveillance-global",
+    "claim": "WHO's Global School-based Student Health Survey page is a rejected primary source for the main pack question because it is school-based adolescent surveillance rather than adult population risk-factor surveillance for low-income-country NCD targeting.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global school-based student health survey",
+      "url": "https://www.who.int/teams/noncommunicable-diseases/surveillance/systems-tools/global-school-based-student-health-survey"
+    },
+    "source_date": "2026-07-05",
+    "access_date": "2026-07-06",
+    "method": "Reviewed the WHO GSHS survey-family page linked from the NCD surveillance data page and assessed its decision relevance for adult NCD risk-factor surveillance gaps.",
+    "limitations": [
+      "GSHS targets school-going adolescents rather than the adult population used in STEPS-style NCD risk surveillance.",
+      "School-based coverage excludes out-of-school youth and cannot be generalized to adult exposure prevalence.",
+      "Useful for adolescent behavior context, not for the core adult surveillance-gap claim in this pack."
+    ],
+    "confidence": "high"
   }
 ]

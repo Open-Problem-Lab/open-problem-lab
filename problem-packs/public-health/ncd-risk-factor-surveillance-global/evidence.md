@@ -2,30 +2,46 @@
 
 ## Current Evidence Records
 
-The machine-readable ledger is `evidence.json`.
+The canonical machine-readable ledger is [`evidence.json`](evidence.json). Read that file first.
 
-## Evidence Notes
+## Reading Guide
 
-### WHO STEPS Surveillance Manual
+This pack now separates source families by what they can actually prove.
 
-Use this source for the foundational fact that STEPS surveys have been conducted in over 120 countries but fewer than 40 percent repeat within five years. STEPS is the WHO standard for NCD risk factor surveillance. The manual provides methodology, not data. Country-level coverage is the key finding; sub-national data depends on survey design choices that vary by country.
+### Usable
 
-### IHME Global Burden of Disease 2021
+- `who-steps-systems-tools-2026`
+  Use for the canonical WHO adult survey family and the fact that WHO routes users from STEPS to country reports and microdata access surfaces.
+- `who-ncd-surveillance-data-page-2026`
+  Use as the routing map that exposes how fragmented the public source surface is.
+- `who-ncd-microdata-repository-2026`
+  Use for survey-record discovery, but only after checking access status and documentation country by country.
 
-Use this source for modeled NCD risk factor estimates across 204 countries from 1990 to 2021. GBD estimates are modeled, not directly measured. They synthesize multiple data sources with varying quality. Sub-national estimates exist for only a subset of countries. Useful for trend comparison and gap identification. Do not treat modeled estimates as equivalent to direct surveillance measurements.
+### Limited
 
-### WHO GHO NCD Indicators
+- `who-gho-ncd-theme-2026`
+  Use for country indicator comparison, not as proof of measured current surveillance readiness.
+- `who-ncd-portal-2026`
+  Use for accountability display and quick orientation, not provenance-grade claims.
+- `who-gats-page-2026`
+  Use for tobacco-specific adult surveillance context only.
 
-Use this source for cross-country comparison of NCD risk factor indicators (raised blood pressure, blood glucose, overweight, obesity, tobacco, alcohol). Country-level only. Underlying data sources vary by country. Useful as a comparator context source and for identifying which countries have any NCD risk factor data at all.
+### Rejected For The Main Claim
 
-### WHO NCD Surveillance Data Portal
+- `who-gshs-page-2026`
+  Keep as a boundary object. It is relevant to adolescent behavior surveillance, but not to the adult surveillance-gap claim this pack is scoped to answer.
 
-Use this source for survey availability and country capacity information. The portal tells you which countries have conducted STEPS surveys and when, but does not provide downloadable sub-national risk factor data. Useful for gap identification: a country with no STEPS survey in the last 5 years has a surveillance gap.
+## What This Evidence Base Now Supports
 
-### DHIS2 Health Information System
+It supports a narrow but important claim: source-family presence is not enough. Before anyone ranks low-income countries on NCD surveillance gaps, they need a source-level extraction that records survey wave, population, provenance, access status, and sub-national availability.
 
-Use this source for understanding facility-level NCD data availability in countries using DHIS2. DHIS2 supports NCD modules but adoption in LICs is limited. It captures service data (hypertension diagnosis, diabetes registration), not population-based risk factor surveys. Complementary to STEPS, not a replacement. Where implemented, it can provide sub-national facility-level data that STEPS cannot.
+## What It Does Not Yet Support
+
+- A country ranking of surveillance gaps.
+- A sub-national NCD risk-factor map.
+- A claim that any specific low-income country lacks all usable adult risk-factor microdata.
+- A claim that dashboard indicators are directly measured unless traced to original survey records.
 
 ## Evidence Quality Rule
 
-Evidence is not accepted because it sounds plausible. It is accepted when the source, method, limitations, and confidence are explicit enough for a reviewer to attack.
+Evidence enters canon only when the source, method, limitations, and confidence are explicit enough for a reviewer to falsify the record rather than admire it.

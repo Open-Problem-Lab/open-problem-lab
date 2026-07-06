@@ -1,27 +1,33 @@
 # Dataset Inventory
 
-## Candidate Sources
+## Source Classification
 
-| Source                             | Grain                 | Status   | Use                                               | Reason for classification                                                                                                                                                                                                    |
-| ---------------------------------- | --------------------- | -------- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| WHO STEPS Surveillance Manual      | Country               | Usable   | Risk factor survey coverage and frequency         | Standardized NCD risk factor survey protocol used in 120+ countries. Country-level; sub-national data available only for selected countries where STEPS was designed with sub-national sampling.                             |
-| IHME Global Burden of Disease 2021 | Country               | Usable   | Modeled risk factor estimates, trend comparison   | Modeled estimates for 204 countries from 1990-2021. Sub-national for only a subset. Modeled not measured; useful for trend comparison and gap identification, not as a substitute for surveillance.                          |
-| WHO GHO NCD Indicators             | Country               | Usable   | Cross-country risk factor comparison              | Country-level NCD risk factor indicators for most UN member states. Heterogeneous underlying sources. No sub-national data for any LIC. Useful for cross-country comparison, not for sub-national gap mapping.               |
-| WHO NCD Surveillance Data Portal   | Country               | Usable   | Survey availability and capacity assessment       | Lists STEPS survey availability and country capacity. Does not provide downloadable sub-national data. Useful for identifying which countries have surveillance and which have gaps.                                         |
-| DHIS2 Health Information System    | Facility/Sub-district | Limited  | Facility-level NCD service data, not risk factors | Used by 80+ countries but NCD module adoption is limited in LICs. Captures service data, not population risk factor surveys. Complementary to STEPS, not a replacement. Useful where implemented; not universally available. |
-| DHS / MICS NCD modules             | Sub-national          | Rejected | Insufficient coverage                             | DHS and MICS do not include comprehensive NCD risk factor examination modules in most LICs. Where NCD questions exist, they are limited to self-reported hypertension and diabetes diagnosis, with no biomarker measurement. |
+| Source                                                              | Grain                                                                    | Status                                                  | Use                                                                                            | Reason for classification                                                                                                                                                                                                                      |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| WHO STEPS systems-tools page                                        | Country survey family; microdata availability varies by country and wave | Usable                                                  | Adult NCD risk-factor survey protocol, source discovery, country-report routing                | This is the canonical WHO-supported adult risk-factor survey family for this pack. It is usable for finding reports and microdata routes, but it does not itself provide a complete repeat-survey denominator or harmonized sub-national file. |
+| WHO NCD surveillance data and reporting page                        | Global catalogue; country links and survey-family links                  | Usable                                                  | Routing layer for STEPS, NCD microdata, GHO, NCD portal, country profiles, and survey families | Strong source-discovery hub. It should be used as a map to primary records, not as a rectangular dataset.                                                                                                                                      |
+| WHO NCD microdata repository                                        | Survey microdata; country and wave dependent                             | Usable with conditions                                  | Candidate source for downloadable survey records and documentation                             | Usable only after a reviewer checks access status, survey documentation, sampling design, weights, variables, license, and whether sub-national identifiers survive public release.                                                            |
+| WHO Global Health Observatory NCD theme                             | Country-level indicator surface                                          | Limited                                                 | Cross-country triangulation and indicator lookup                                               | Useful for country comparison and dashboards. Limited for this task because indicator values can mix survey inputs, modeled estimates, and different source years; it is not enough for provenance-grade gap mapping.                          |
+| WHO-linked NCD data portal                                          | Country dashboard and target-tracking view                               | Limited                                                 | Accountability display and quick country status review                                         | Useful as a front door, but dashboards can hide whether values are measured, modeled, imputed, or inherited from older survey waves. Any indicator needs trace-back to original source records.                                                |
+| WHO Global Adult Tobacco Survey                                     | Country survey family for adults                                         | Limited                                                 | Tobacco-specific adult risk-factor surveillance                                                | Strong for tobacco, too narrow for the composite NCD risk-factor surveillance question. A country can have GATS data and still lack current measured blood pressure, glucose, BMI, diet, or physical-activity surveillance.                    |
+| WHO Global School-based Student Health Survey                       | School-based adolescent survey family                                    | Rejected for main adult surveillance gap                | Adolescent behavior context only                                                               | It targets school-going adolescents, excludes out-of-school youth, and cannot answer the adult population risk-factor surveillance gap that this pack is scoped to measure.                                                                    |
+| DHS, MICS, or other household surveys with occasional NCD questions | Household, often sub-national; content varies sharply                    | Rejected unless a country-specific module is documented | Possible country-specific context                                                              | Not a canonical global source for this pack without explicit module documentation. Self-reported diagnosis questions cannot substitute for measured adult risk-factor surveillance.                                                            |
 
 ## Required Dataset Properties
 
-- Date range.
-- Geographic grain.
-- Risk factor definition (measured vs self-reported).
-- Survey methodology (STEPS, national health survey, modeled estimate).
-- Missingness.
-- License or reuse permission.
-- Denominator source.
-- Known changes in survey methodology over time.
+- Survey family and population: STEPS adult, GATS adult tobacco, GSHS adolescent school-based, or another documented design.
+- Country and survey wave date.
+- Geographic grain and whether public files preserve sub-national identifiers.
+- Risk-factor definition: measured, self-reported, modeled, imputed, or administrative.
+- Sampling design, weights, denominator, and age range.
+- Missingness and non-response notes.
+- Access status, license, and reuse permission.
+- Whether indicator values can be traced back from dashboards to source-level records.
 
 ## Rejection Rule
 
-A dataset is rejected for canonical modeling if grain, date range, license, or method cannot be verified. Rejected datasets may still be listed as context.
+A source is rejected for the main adult surveillance-gap claim if it cannot document population, wave date, risk-factor definition, and traceable source provenance. Dashboards and modeled indicators may be used for triangulation, but not as proof that a low-income country has recent measured adult NCD risk-factor surveillance.
+
+## Task Completion Note
+
+The scoped `source-inventory` task is satisfied because this inventory classifies eight candidate source families as usable, limited, or rejected with explicit reasons. The current evidence supports a narrow discovery claim: the reviewable next step is not sub-national gap mapping, but a country-by-country STEPS and microdata extraction that can falsify or refine the pack's surveillance-gap thesis.

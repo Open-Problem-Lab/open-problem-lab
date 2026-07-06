@@ -8,11 +8,12 @@ Build a verified workflow for measuring gaps in NCD risk factor surveillance cov
 
 ## Known Facts
 
-- Verified fact: WHO STEPS surveys have been conducted in over 120 countries but fewer than 40 percent repeat surveys within five years, leaving gaps in NCD risk-factor trend data in high-burden countries.
+- Verified fact: WHO exposes NCD risk-factor surveillance through multiple public surfaces, including STEPS, the NCD microdata repository, GHO indicators, the NCD data portal, and narrower survey families such as GATS and GSHS.
+- Verified fact: Those surfaces do not, on their own, provide a single normalized public table showing adult low-income-country survey wave, microdata access, measured-versus-modeled provenance, age range, and sub-national identifier availability.
 
 ## Uncertain Areas
 
-Whether available data is sufficient for sub-national analysis. Whether gap maps change actual policy or investment decisions. How measurement methodology compares across countries.
+Whether available country-specific microdata is sufficient for sub-national analysis. Whether gap maps change actual policy or investment decisions. How measurement methodology compares across countries and survey families.
 
 ## Initial Scope
 

@@ -3,7 +3,7 @@
     "id": "source-inventory",
     "problem_id": "public-health/ncd-risk-factor-surveillance-global",
     "title": "Inventory data sources for public-health/ncd-risk-factor-surveillance-global",
-    "status": "scoped",
+    "status": "needs-review",
     "owner_role": "literature-scout",
     "outcome": "A dated source inventory separating usable, limited, and rejected data sources for non-communicable disease risk factor surveillance gaps in low-income countries.",
     "inputs": ["primary survey data", "satellite data", "population data", "program data"],

@@ -5,7 +5,7 @@
   "domain": ["public-health"],
   "region": ["global"],
   "summary": "Build a verified workflow for measuring gaps in NCD risk factor surveillance coverage, linking STEPS survey frequency data and health-information-system data.",
-  "why_it_matters": "Build a verified workflow for measuring gaps in NCD risk factor surveillance coverage, linking STEPS survey frequency data and health-information-system data.",
+  "why_it_matters": "WHO, ministries of health, and NCD funders cannot sensibly target surveillance financing if dashboard indicators blur together measured surveys, modeled estimates, and narrow survey families. This pack matters if it can tell a decision-maker which countries actually lack recent adult risk-factor measurement rather than merely lacking polished dashboards.",
   "success_metrics": [
     {
       "metric": "Data traceability",

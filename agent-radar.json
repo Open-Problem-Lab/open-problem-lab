@@ -4,12 +4,12 @@
     "schema_version": 1,
     "total_packs": 105,
     "total_tasks": 544,
-    "scoped_tasks": 101,
-    "latent_tasks": 443,
+    "scoped_tasks": 100,
+    "latent_tasks": 444,
     "status_counts": {
-      "scoped": 101,
+      "scoped": 100,
       "needs-triage": 439,
-      "needs-review": 4
+      "needs-review": 5
     },
     "owner_role_counts": {
       "literature-scout": 105,
@@ -19,7 +19,7 @@
       "field-reality-reviewer": 106
     },
     "scoped_role_counts": {
-      "literature-scout": 101
+      "literature-scout": 100
     },
     "reviewer_needed_counts": {
       "domain-reviewer": 225,
@@ -37,22 +37,6 @@
   "protocol_alerts": [],
   "contributor_lanes": {
     "first_moves": [
-      {
-        "pack_id": "public-health/oral-health-access-global",
-        "pack_title": "Oral Health Service Access And Dental Workforce Gaps In Low-Income Countries",
-        "task_id": "source-inventory",
-        "title": "Inventory data sources for public-health/oral-health-access-global",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "low",
-        "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons.",
-        "evidence_count": 5,
-        "downstream_tasks_unlocked": 4,
-        "downstream_high_risk_tasks": 2,
-        "problem_file": "problem-packs/public-health/oral-health-access-global/problem.md",
-        "tasks_file": "problem-packs/public-health/oral-health-access-global/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
-      },
       {
         "pack_id": "education/digital-divide-school-access-global",
         "pack_title": "Digital Divide Measurement And School Internet Connectivity In Low-Income Countries",
@@ -227,6 +211,22 @@
         "downstream_high_risk_tasks": 4,
         "problem_file": "problem-packs/disaster-resilience/urban-flooding-south-asia/problem.md",
         "tasks_file": "problem-packs/disaster-resilience/urban-flooding-south-asia/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
+      },
+      {
+        "pack_id": "public-health/substandard-falsified-medicines-global",
+        "pack_title": "Substandard And Falsified Medicine Detection And Surveillance Gaps In Low- And Middle-Income Countries",
+        "task_id": "source-inventory",
+        "title": "Inventory quality-surveillance, field-survey, market-distribution, and regulatory data sources for SF medicines analysis",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "medium",
+        "done_condition": "At least six candidate data sources are classified as usable, limited, or rejected with explicit reasons covering sampling frame, test method, geographic grain, supply-chain tier, and substandard-versus-falsified disaggregation status.",
+        "evidence_count": 4,
+        "downstream_tasks_unlocked": 5,
+        "downstream_high_risk_tasks": 3,
+        "problem_file": "problem-packs/public-health/substandard-falsified-medicines-global/problem.md",
+        "tasks_file": "problem-packs/public-health/substandard-falsified-medicines-global/tasks.json",
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       }
     ],
@@ -657,7 +657,7 @@
         "scoped_tasks": 0,
         "latent_tasks": 127,
         "share_of_all_tasks": 0.233,
-        "share_of_latent_tasks": 0.287
+        "share_of_latent_tasks": 0.286
       },
       {
         "owner_role": "field-reality-reviewer",
@@ -671,21 +671,21 @@
         "scoped_tasks": 0,
         "latent_tasks": 105,
         "share_of_all_tasks": 0.193,
-        "share_of_latent_tasks": 0.237
+        "share_of_latent_tasks": 0.236
       },
       {
         "owner_role": "data-cleaner",
         "scoped_tasks": 0,
         "latent_tasks": 101,
         "share_of_all_tasks": 0.186,
-        "share_of_latent_tasks": 0.228
+        "share_of_latent_tasks": 0.227
       },
       {
         "owner_role": "literature-scout",
-        "scoped_tasks": 101,
-        "latent_tasks": 4,
+        "scoped_tasks": 100,
+        "latent_tasks": 5,
         "share_of_all_tasks": 0.193,
-        "share_of_latent_tasks": 0.009
+        "share_of_latent_tasks": 0.011
       }
     ]
   }

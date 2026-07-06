@@ -9,6 +9,7 @@
       "who-oral-health-2022",
       "who-global-health-observatory-dental-workforce",
       "who-oral-health-survey-methods-2013",
+      "who-oral-health-fact-sheet-2025",
       "world-bank-health-nutrition-population-stats"
     ],
     "failure_modes": [
@@ -22,7 +23,7 @@
     "safety_level": "low",
     "submitter": "codex-agent",
     "created_date": "2026-06-28",
-    "last_updated": "2026-06-28",
+    "last_updated": "2026-07-06",
     "confidence": "medium",
     "limitations": [
       "The claim is about data availability, not about oral health outcomes or access quality.",

@@ -26,8 +26,7 @@
     "evidence_type": "primary-source",
     "source": {
       "title": "Arsenic contamination of groundwater in Bangladesh — BGS/DPHE Phase 1 Groundwater Studies",
-      "url": "https://www.bgs.ac.uk/projects/arsenic-bangladesh/",
-      "doi": "10.1016/S0048-9697(01)00600-3"
+      "url": "https://www.bgs.ac.uk/groundwater/quality/groundwater-and-health/arsenic-contamination-of-groundwater/bangladesh-reports/"
     },
     "source_date": "2001-01-01",
     "access_date": "2026-06-30",
@@ -41,23 +40,23 @@
     "confidence": "high"
   },
   {
-    "id": "ehp-arsenic-exposure-review-2024",
+    "id": "argos-heals-arsenic-mortality-2010",
     "problem_id": "water-security/arsenic-groundwater-exposure-bangladesh",
-    "claim": "A 2024 systematic review estimated that 35-77 million people in Bangladesh have been chronically exposed to arsenic above the WHO 10 micro-grams-per-litre guideline, with exposure varying sharply by upazila and well depth, and that long-term exposure is associated with increased risk of skin, bladder, and lung cancers.",
+    "claim": "The HEALS prospective cohort study in Bangladesh found a dose-response association between arsenic exposure from drinking water and all-cause and chronic-disease mortality, supporting health-risk framing but not current upazila-level testing-coverage mapping.",
     "evidence_type": "peer-reviewed-study",
     "source": {
-      "title": "Arsenic exposure and health effects in Bangladesh: a systematic review and meta-analysis",
-      "url": "https://doi.org/10.1289/EHP12000",
-      "doi": "10.1289/EHP12000"
+      "title": "Arsenic exposure from drinking water, and all-cause and chronic-disease mortalities in Bangladesh (HEALS): a prospective cohort study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20646756/",
+      "doi": "10.1016/S0140-6736(10)60481-3"
     },
-    "source_date": "2024-03-01",
-    "access_date": "2026-06-30",
-    "method": "Reviewed systematic review for exposure population estimates, dose-response relationships, and cancer risk estimates. Checked methodology section for inclusion criteria and meta-analysis approach.",
+    "source_date": "2010-07-24",
+    "access_date": "2026-07-06",
+    "method": "Reviewed the PubMed record and Lancet study metadata for cohort design, exposure-health association, publication date, and DOI. Classified the source as health-risk evidence rather than a current testing-coverage dataset.",
     "limitations": [
-      "The 35-77 million range reflects uncertainty in exposure estimates from different survey methods and time periods.",
-      "Systematic review aggregates studies of variable quality and geographic coverage.",
-      "Exposure estimates are modeled from survey data, not direct individual-level measurement for the entire population.",
-      "Cancer risk estimates are based on epidemiological studies primarily from Taiwan and Chile, extrapolated to Bangladesh exposure levels."
+      "Cohort evidence supports health-risk framing; it does not estimate current national exposure counts.",
+      "The study population is not a current national testing-coverage dataset and cannot identify untested upazilas.",
+      "Exposure-health associations do not replace household well-testing or water-source data.",
+      "Publication date is 2010, so it cannot capture post-2010 changes in well installation, mitigation, or testing coverage."
     ],
     "confidence": "high"
   },

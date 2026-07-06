@@ -11,7 +11,7 @@
 | Packs with accepted claims | 0 |
 | Total evidence records | 326 |
 | Total tasks | 544 |
-| Scoped tasks (ready for work) | 101 |
+| Scoped tasks (ready for work) | 100 |
 | High-risk tasks | 284 |
 
 ## All Problem Packs

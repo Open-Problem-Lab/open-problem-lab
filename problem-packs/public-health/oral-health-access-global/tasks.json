@@ -3,7 +3,7 @@
     "id": "source-inventory",
     "problem_id": "public-health/oral-health-access-global",
     "title": "Inventory data sources for public-health/oral-health-access-global",
-    "status": "scoped",
+    "status": "needs-review",
     "owner_role": "literature-scout",
     "outcome": "A dated source inventory separating usable, limited, and rejected data sources for oral health service access and dental workforce gaps in low-income countries.",
     "inputs": ["primary survey data", "satellite data", "population data", "program data"],

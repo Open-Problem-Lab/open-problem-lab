@@ -8,7 +8,7 @@ The machine-readable ledger is `evidence.json`.
 
 ### WHO Global Oral Health Status Report 2022
 
-Use this source for global oral disease burden (3.5 billion people), untreated caries prevalence, and country-level dentist-to-population ratios. The report is the strongest framing source for this pack. Do not use it as proof of sub-national access gaps in any specific country -- the data is country-level only.
+Use this source for country-level oral disease burden, health-system integration, and workforce framing. The report is a strong framing source for this pack. Do not use it as proof of sub-national access gaps in any specific country -- the data is country-level only.
 
 ### WHO Global Health Observatory -- Dentistry Workforce Density
 
@@ -18,13 +18,17 @@ Use this source for cross-country comparison of dentist density. The GHO provide
 
 Use this source for survey methodology calibration, not for prevalence data. The manual defines the DMFT index, gingival bleeding, and periodontal assessment protocols. Fewer than 30 LMICs have conducted a national oral health survey using these protocols since 2013, which is itself a finding about data scarcity.
 
-### IOMT Water Fluoridation Systematic Review 2020
+### WHO Oral Health Fact Sheet 2025
 
-Use this source for intervention context on community water fluoridation. The effect sizes (35 percent caries reduction in primary teeth, 26 percent in permanent teeth) come from high-income country studies. Transferability to LMICs with fragmented piped water systems is uncertain. This source does not provide access or workforce data and is classified as limited for gap-mapping purposes.
+Use this source for current global burden framing and WHO's high-level statement that most low- and middle-income countries do not have sufficient services to prevent and treat oral health conditions. Do not use it as a dataset. It does not identify country-level service gaps, sub-national workforce distribution, facility readiness, or treatment capacity.
 
 ### World Bank HNP Statistics
 
 Use this source for health expenditure and general health workforce denominators. Oral health is not disaggregated from general health spending in this database. Useful as a comparator context source, not as a direct oral health access measure.
+
+## Task Completion Note
+
+The scoped `source-inventory` task is satisfied because the inventory classifies six candidate source families as usable, usable proxy, limited, or rejected with explicit reasons. The current evidence supports a narrow discovery claim: public global sources are enough for burden and workforce framing, but not enough for sub-national oral health access mapping in low-income countries.
 
 ## Evidence Quality Rule
 

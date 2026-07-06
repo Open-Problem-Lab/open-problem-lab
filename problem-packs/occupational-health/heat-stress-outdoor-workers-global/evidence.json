@@ -154,8 +154,7 @@
     "evidence_type": "dataset",
     "source": {
       "title": "MERRA-2: Modern-Era Retrospective analysis for Research and Applications, version 2",
-      "url": "https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/",
-      "archive_url": "https://web.archive.org/web/2024/https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/"
+      "url": "https://disc.gsfc.nasa.gov/datasets/M2T1NXSLV_5.12.4/summary"
     },
     "source_date": "2015-01-01",
     "access_date": "2026-07-03",

@@ -3,17 +3,17 @@
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
     "total_packs": 105,
-    "total_scoped_tasks": 101,
+    "total_scoped_tasks": 100,
     "by_role": {
-      "literature-scout": 101
+      "literature-scout": 100
     },
     "by_risk": {
       "medium": 97,
-      "low": 4
+      "low": 3
     },
     "by_domain": {
       "air-quality": 6,
-      "public-health": 64,
+      "public-health": 63,
       "climate-health": 13,
       "biodiversity": 7,
       "food-security": 19,
@@ -1335,23 +1335,6 @@
       "done_condition": "Four sources classified.",
       "tasks_file": "problem-packs/public-health/ntd-mass-drug-administration-global/tasks.json",
       "problem_file": "problem-packs/public-health/ntd-mass-drug-administration-global/problem.md"
-    },
-    {
-      "pack_id": "public-health/oral-health-access-global",
-      "pack_title": "Oral Health Service Access And Dental Workforce Gaps In Low-Income Countries",
-      "pack_status": "scoped",
-      "domain": ["public-health"],
-      "region": ["global"],
-      "task_id": "source-inventory",
-      "title": "Inventory data sources for public-health/oral-health-access-global",
-      "owner_role": "literature-scout",
-      "reviewer_needed": "domain-reviewer",
-      "safety_risk": "low",
-      "outcome": "A dated source inventory separating usable, limited, and rejected data sources for oral health service access and dental workforce gaps in low-income countries.",
-      "expected_artifact": "datasets.md update plus evidence.json records.",
-      "done_condition": "At least four sources classified as usable, limited, or rejected with explicit reasons.",
-      "tasks_file": "problem-packs/public-health/oral-health-access-global/tasks.json",
-      "problem_file": "problem-packs/public-health/oral-health-access-global/problem.md"
     },
     {
       "pack_id": "public-health/prison-health-tb-hiv-global",

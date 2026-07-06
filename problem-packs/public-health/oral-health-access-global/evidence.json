@@ -2,7 +2,7 @@
   {
     "id": "who-oral-health-2022",
     "problem_id": "public-health/oral-health-access-global",
-    "claim": "WHO estimates 3.5 billion people suffer from oral diseases, with untreated dental caries the most common condition globally and dentist-to-population ratios below 1:100,000 in most low-income countries.",
+    "claim": "WHO's 2022 Global Oral Health Status Report is a usable country-level source for oral disease burden, health-system integration, and workforce framing, but it does not provide sub-national oral health service access or dentist distribution data for low-income countries.",
     "evidence_type": "primary-source",
     "source": {
       "title": "Global Oral Health Status Report 2022",
@@ -44,8 +44,7 @@
     "evidence_type": "primary-source",
     "source": {
       "title": "Oral Health Surveys -- Basic Methods 5th edition",
-      "url": "https://www.who.int/publications/i/item/9789241548649",
-      "doi": "10.1"
+      "url": "https://www.who.int/publications/i/item/9789241548649"
     },
     "source_date": "2013-01-01",
     "access_date": "2026-06-28",
@@ -58,23 +57,23 @@
     "confidence": "medium"
   },
   {
-    "id": "iomt-fluoride-dental-caries-systematic-review-2020",
+    "id": "who-oral-health-fact-sheet-2025",
     "problem_id": "public-health/oral-health-access-global",
-    "claim": "A systematic review and meta-analysis found that community water fluoridation reduces dental caries by approximately 35 percent in primary teeth and 26 percent in permanent teeth, but the evidence base is dominated by high-income country studies with limited transferability to low-income countries with different water infrastructure.",
-    "evidence_type": "peer-reviewed-study",
+    "claim": "WHO's 2025 oral health fact sheet estimates that oral diseases affect nearly 3.7 billion people and states that most low- and middle-income countries do not have sufficient services to prevent and treat oral health conditions.",
+    "evidence_type": "primary-source",
     "source": {
-      "title": "Effects of community water fluoridation on dental caries in children and adults: a systematic review",
-      "url": "https://doi.org/10.5664/jcsm.10068"
+      "title": "Oral health",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/oral-health"
     },
-    "source_date": "2020-06-01",
-    "access_date": "2026-06-28",
-    "method": "Reviewed the systematic review abstract, methods, and findings sections. Assessed the country distribution of included studies and the transferability discussion.",
+    "source_date": "2025-03-17",
+    "access_date": "2026-07-06",
+    "method": "Reviewed the WHO fact sheet key facts and overview sections for current burden framing, service-availability wording, and what the source can support for an access-gap source inventory.",
     "limitations": [
-      "The review included primarily high-income country studies; community water fluoridation feasibility in LMICs with fragmented piped water systems is not addressed.",
-      "Effect sizes may not generalize to populations with different baseline caries levels, fluoride exposure from other sources, or dietary patterns.",
-      "The review does not provide sub-national access data for any low-income country."
+      "Fact sheet wording is global and broad; it does not provide country-level or sub-national service access data.",
+      "The burden estimate is a modeled global estimate, not a direct count by country.",
+      "The statement that most LMICs lack sufficient services is useful for framing but does not identify which facilities, districts, or workforce categories are missing."
     ],
-    "confidence": "medium"
+    "confidence": "high"
   },
   {
     "id": "world-bank-health-nutrition-population-stats",

@@ -8,7 +8,7 @@ Build a verified workflow for measuring oral health service access and dental wo
 
 ## Known Facts
 
-- Verified fact: WHO estimates 3.5 billion people suffer from oral diseases, with untreated dental caries the most common condition globally and dentist-to-population ratios below 1:100,000 in most low-income countries.
+- Verified fact: WHO's 2025 oral health fact sheet estimates that oral diseases affect nearly 3.7 billion people, that untreated caries in permanent teeth is the most common health condition in Global Burden of Disease 2021, and that most low- and middle-income countries do not have sufficient services to prevent and treat oral health conditions.
 
 ## Uncertain Areas
 

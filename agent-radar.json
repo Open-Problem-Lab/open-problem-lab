@@ -2,41 +2,57 @@
   "summary": {
     "generated_by": "scripts/generate-agent-radar.mjs",
     "schema_version": 1,
-    "total_packs": 106,
-    "total_tasks": 549,
-    "scoped_tasks": 101,
-    "latent_tasks": 448,
+    "total_packs": 107,
+    "total_tasks": 554,
+    "scoped_tasks": 102,
+    "latent_tasks": 452,
     "status_counts": {
-      "scoped": 101,
-      "needs-triage": 443,
+      "scoped": 102,
+      "needs-triage": 447,
       "needs-review": 5
     },
     "owner_role_counts": {
-      "literature-scout": 106,
-      "data-cleaner": 102,
-      "implementation-planner": 128,
-      "red-team-reviewer": 106,
-      "field-reality-reviewer": 107
-    },
-    "scoped_role_counts": {
-      "literature-scout": 101
-    },
-    "reviewer_needed_counts": {
-      "domain-reviewer": 227,
-      "replicator": 108,
-      "red-team-reviewer": 106,
+      "literature-scout": 107,
+      "data-cleaner": 103,
+      "implementation-planner": 129,
+      "red-team-reviewer": 107,
       "field-reality-reviewer": 108
     },
+    "scoped_role_counts": {
+      "literature-scout": 102
+    },
+    "reviewer_needed_counts": {
+      "domain-reviewer": 229,
+      "replicator": 109,
+      "red-team-reviewer": 107,
+      "field-reality-reviewer": 109
+    },
     "safety_risk_counts": {
-      "medium": 249,
-      "high": 286,
-      "low": 14
+      "medium": 251,
+      "high": 288,
+      "low": 15
     },
     "protocol_alert_count": 0
   },
   "protocol_alerts": [],
   "contributor_lanes": {
     "first_moves": [
+      {
+        "pack_id": "public-health/rabies-pep-access-global",
+        "pack_title": "Rabies Post-Exposure Prophylaxis Access And Bite-Risk Triage In Endemic Countries",
+        "task_id": "source-inventory",
+        "title": "Inventory rabies PEP access, RIG, bite-risk, and dog-vaccination data sources",
+        "owner_role": "literature-scout",
+        "reviewer_needed": "domain-reviewer",
+        "safety_risk": "low",
+        "done_condition": "At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering vaccine access, RIG or monoclonal access, bite-risk triage, reporting cadence, and dog-vaccination context.",
+        "evidence_count": 5,
+        "downstream_tasks_unlocked": 4,
+        "downstream_high_risk_tasks": 2,
+        "problem_file": "problem-packs/public-health/rabies-pep-access-global/problem.md",
+        "tasks_file": "problem-packs/public-health/rabies-pep-access-global/tasks.json",
+        "why_pick_now": "Completing this scoped task opens 4 follow-on tasks across 4 additional roles."
+      },
       {
         "pack_id": "education/digital-divide-school-access-global",
         "pack_title": "Digital Divide Measurement And School Internet Connectivity In Low-Income Countries",
@@ -211,22 +227,6 @@
         "downstream_high_risk_tasks": 4,
         "problem_file": "problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/problem.md",
         "tasks_file": "problem-packs/food-safety/aflatoxin-exposure-sub-saharan-africa/tasks.json",
-        "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
-      },
-      {
-        "pack_id": "disaster-resilience/urban-flooding-south-asia",
-        "pack_title": "Urban Pluvial Flooding Risk In South Asian Megacities",
-        "task_id": "source-inventory",
-        "title": "Inventory satellite impervious-surface, drainage, rainfall, flood-extent, and population data sources for South Asian megacities",
-        "owner_role": "literature-scout",
-        "reviewer_needed": "domain-reviewer",
-        "safety_risk": "medium",
-        "done_condition": "At least five candidate data sources are classified as usable, limited, or rejected with explicit reasons covering resolution, urban accuracy, and drainage-data availability.",
-        "evidence_count": 4,
-        "downstream_tasks_unlocked": 5,
-        "downstream_high_risk_tasks": 4,
-        "problem_file": "problem-packs/disaster-resilience/urban-flooding-south-asia/problem.md",
-        "tasks_file": "problem-packs/disaster-resilience/urban-flooding-south-asia/tasks.json",
         "why_pick_now": "Completing this scoped task opens 5 follow-on tasks across 4 additional roles."
       }
     ],
@@ -655,34 +655,34 @@
       {
         "owner_role": "implementation-planner",
         "scoped_tasks": 0,
-        "latent_tasks": 128,
+        "latent_tasks": 129,
         "share_of_all_tasks": 0.233,
-        "share_of_latent_tasks": 0.286
+        "share_of_latent_tasks": 0.285
       },
       {
         "owner_role": "field-reality-reviewer",
         "scoped_tasks": 0,
-        "latent_tasks": 107,
+        "latent_tasks": 108,
         "share_of_all_tasks": 0.195,
         "share_of_latent_tasks": 0.239
       },
       {
         "owner_role": "red-team-reviewer",
         "scoped_tasks": 0,
-        "latent_tasks": 106,
+        "latent_tasks": 107,
         "share_of_all_tasks": 0.193,
         "share_of_latent_tasks": 0.237
       },
       {
         "owner_role": "data-cleaner",
         "scoped_tasks": 0,
-        "latent_tasks": 102,
+        "latent_tasks": 103,
         "share_of_all_tasks": 0.186,
         "share_of_latent_tasks": 0.228
       },
       {
         "owner_role": "literature-scout",
-        "scoped_tasks": 101,
+        "scoped_tasks": 102,
         "latent_tasks": 5,
         "share_of_all_tasks": 0.193,
         "share_of_latent_tasks": 0.011

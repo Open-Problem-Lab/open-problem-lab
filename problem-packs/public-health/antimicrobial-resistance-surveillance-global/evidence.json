@@ -101,21 +101,20 @@
   {
     "id": "resistancemap-one-health-trust",
     "problem_id": "public-health/antimicrobial-resistance-surveillance-global",
-    "claim": "ResistanceMap, maintained by One Health Trust (formerly CDDEP), provides country-level antimicrobial resistance rates for key pathogen-drug combinations from 2000 onward, but coverage is strongest for high-income countries and LMIC data is sparse and inconsistently updated.",
+    "claim": "One Health Trust maintains a Resistance Map project surface related to antimicrobial resistance and antibiotic-use visualization, but the stable project page is only a routing source and does not itself provide provenance-grade country-level surveillance data.",
     "evidence_type": "dataset",
     "source": {
       "title": "ResistanceMap — One Health Trust",
-      "url": "https://resistancemap.onehealthtrust.org/"
+      "url": "https://onehealthtrust.org/projects/resistance-map"
     },
-    "source_date": "2024-01-01",
-    "access_date": "2026-06-30",
-    "method": "Verified ResistanceMap platform accessibility after redirect from legacy CDDEP URL. Reviewed country coverage, pathogen-drug combinations, temporal range, and data source documentation. Assessed LMIC data availability.",
+    "source_date": "2026-07-09",
+    "access_date": "2026-07-09",
+    "method": "Replaced the failing ResistanceMap subdomain URL, which returned HTTP 500 during source verification, with One Health Trust's stable project page. Classified the project page as a routing source rather than direct surveillance evidence.",
     "limitations": [
-      "Country-level grain only; no sub-national or facility-level data.",
-      "Data for LMICs is sparse and may be outdated; some countries have no data points after 2015.",
-      "Resistance rates are aggregated from heterogeneous surveillance systems with different methodologies.",
-      "Source date is approximate; the platform does not expose a clear last-updated date for each country."
+      "The stable project page does not expose country-level resistance rates, pathogen-drug combinations, or downloadable data.",
+      "The interactive ResistanceMap subdomain returned HTTP 500 during automated verification on 2026-07-09 and should be rechecked before analytical use.",
+      "This source should not be used for gap measurement unless a reviewer can access and document the underlying country pages or export path."
     ],
-    "confidence": "medium"
+    "confidence": "low"
   }
 ]

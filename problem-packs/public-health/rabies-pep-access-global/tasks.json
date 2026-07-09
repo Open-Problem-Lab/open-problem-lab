@@ -1,0 +1,86 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "public-health/rabies-pep-access-global",
+    "title": "Inventory rabies PEP access, RIG, bite-risk, and dog-vaccination data sources",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory separating vaccine procurement, RIG or monoclonal access, bite-risk triage, reporting cadence, patient cost, and dog-vaccination context.",
+    "inputs": [
+      "WHO rabies fact sheet and vaccine position paper",
+      "Gavi rabies vaccine support guidance and public announcements",
+      "peer-reviewed PEP access and logistics studies",
+      "national rabies programme or immunization supply records where available",
+      "dog vaccination and animal-bite surveillance sources"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted or rejected source family.",
+    "validation_method": "Reviewer checks each source for URL, date, access status, PEP component measured, geographic grain, and explicit limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "low",
+    "done_condition": "At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering vaccine access, RIG or monoclonal access, bite-risk triage, reporting cadence, and dog-vaccination context."
+  },
+  {
+    "id": "component-gap-taxonomy",
+    "problem_id": "public-health/rabies-pep-access-global",
+    "title": "Define a component taxonomy for complete rabies PEP access",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A reproducible taxonomy that prevents vaccine procurement from being treated as complete PEP access.",
+    "inputs": [
+      "source-inventory output",
+      "WHO rabies vaccine position paper",
+      "PEP logistics assessment"
+    ],
+    "expected_artifact": "validation.md update with component definitions and non-use rules.",
+    "validation_method": "Reviewer tests whether the taxonomy classifies example sources without collapsing vaccine, RIG, risk triage, cost, and reporting into one access measure.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "The taxonomy has at least five mutually exclusive PEP access components and every component has one accepted and one rejected example source criterion."
+  },
+  {
+    "id": "country-readiness-screen",
+    "problem_id": "public-health/rabies-pep-access-global",
+    "title": "Screen countries for public evidence readiness before PEP allocation analysis",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A country-readiness table that identifies where public evidence is sufficient, partial, or insufficient for component-level PEP access analysis.",
+    "inputs": [
+      "source-inventory output",
+      "component-gap taxonomy",
+      "candidate country records"
+    ],
+    "expected_artifact": "outputs.md update plus reproducible screening notes.",
+    "validation_method": "Replicator reruns the screen on the same sources and confirms each country classification and exclusion reason.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "medium",
+    "done_condition": "At least three country contexts are classified as sufficient, partial, or insufficient with source IDs, missing components, and a stated observation that would change each classification."
+  },
+  {
+    "id": "red-team-harmful-use",
+    "problem_id": "public-health/rabies-pep-access-global",
+    "title": "Red-team harmful interpretations of rabies PEP access artifacts",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A failure-mode review blocking patient-facing or facility-ranking misuse of analytic PEP access outputs.",
+    "inputs": ["candidate outputs", "validation notes", "SAFETY.md"],
+    "expected_artifact": "outputs.md and playbooks.md updates with blocked uses and mitigation requirements.",
+    "validation_method": "Red-team reviewer confirms every operational interpretation is blocked, softened, or gated behind domain review and replication.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every output that could affect patient care, facility reputation, or product substitution has a named failure mode, mitigation, and review gate."
+  },
+  {
+    "id": "field-reality-check",
+    "problem_id": "public-health/rabies-pep-access-global",
+    "title": "Check whether PEP access classifications match programme decisions",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field-facing review of whether component-level PEP access classifications map to real immunization, emergency-care, or One Health programme decisions.",
+    "inputs": ["country-readiness screen", "programme workflow notes", "reviewer comments"],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer identifies the actual decision, user, timing, and misuse risk for each proposed artifact, then a second reviewer replicates the non-use-case check.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The artifact names a decision-maker, decision cadence, data handoff, and non-use case before any allocation interpretation is advanced, and the field-reality check is replicated."
+  }
+]

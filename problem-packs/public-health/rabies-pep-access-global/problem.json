@@ -1,0 +1,44 @@
+{
+  "id": "public-health/rabies-pep-access-global",
+  "title": "Rabies Post-Exposure Prophylaxis Access And Bite-Risk Triage In Endemic Countries",
+  "status": "scoped",
+  "domain": ["public-health"],
+  "region": ["global"],
+  "summary": "Build a verified workflow for distinguishing human rabies vaccine procurement from complete post-exposure prophylaxis access, including wound care, bite-risk triage, vaccine route, RIG or monoclonal access, reporting, and rural reach.",
+  "why_it_matters": "Gavi opened support for human rabies vaccine procurement for post-exposure prophylaxis in eligible countries in 2024, but the funding excludes rabies immunoglobulins and dog vaccines. A ministry immunization director, Gavi country-support team, or One Health rabies programme manager needs verified evidence on which districts or facility tiers can convert vaccine supply into complete, timely PEP and where missing RIG, bite-risk triage, reporting, or rural access should change procurement and training plans.",
+  "success_metrics": [
+    {
+      "metric": "PEP component separation",
+      "target": "Every accepted artifact states whether it measures vaccine availability, RIG or monoclonal availability, bite-risk triage, dose route, cost, reporting cadence, or dog-vaccination context.",
+      "validation_method": "Schema validation plus domain-reviewer check against evidence.json, datasets.md, and validation.md."
+    },
+    {
+      "metric": "Allocation wedge clarity",
+      "target": "At least one reviewed artifact names a decision-maker and identifies whether the next bottleneck is procurement, RIG/monoclonal access, intradermal delivery, reporting, or field triage.",
+      "validation_method": "Domain and field-reality review before any output is advanced beyond analytic scoping."
+    },
+    {
+      "metric": "Operational safety",
+      "target": "No artifact tells patients or clinicians to defer PEP, substitute components, or change exposure management without high-risk review and replication.",
+      "validation_method": "Red-team review for any operational interpretation in outputs.md or playbooks.md."
+    }
+  ],
+  "safety_level": "medium",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 2,
+    "replication_required": true,
+    "merge_gate": "Schema validation, domain review, source verification for changed evidence URLs, and replication for any quantitative comparison or operational ranking."
+  }
+}

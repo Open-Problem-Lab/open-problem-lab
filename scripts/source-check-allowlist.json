@@ -125,6 +125,11 @@
       "url": "https://doi.org/10.24381/cds.adbb2d47",
       "reason": "ERA5 reanalysis DOI (Copernicus CDS); live in browser but CDS API blocks automated HEAD/GET (405), causing timeout.",
       "verified": "2026-07-03"
+    },
+    {
+      "url": "https://ncdportal.org",
+      "reason": "WHO NCD data portal; live in browser but automated source verification aborts from CI-style fetch.",
+      "verified": "2026-07-09"
     }
   ]
 }

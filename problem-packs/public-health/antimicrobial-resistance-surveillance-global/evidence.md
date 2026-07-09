@@ -26,9 +26,9 @@ Country-level AMR burden estimates through an interactive visualization tool. Us
 
 Hospital-level antimicrobial prescribing data from 50+ countries. LMIC hospital participation is limited. Covers prescribing patterns, not resistance rates. Use for consumption context and quality-of-prescribing analysis, not for resistance surveillance-gap mapping.
 
-### ResistanceMap (One Health Trust)
+### ResistanceMap Project Page (One Health Trust)
 
-Country-level resistance rates for key pathogen-drug combinations from 2000 onward. LMIC data is sparse and may be outdated. Heterogeneous surveillance methodologies make cross-country comparison imprecise. Use for exploratory comparison, not for definitive gap measurement.
+One Health Trust's stable project page is only a routing source. The interactive ResistanceMap subdomain returned HTTP 500 during source verification on 2026-07-09, so this record is downgraded to low confidence and should not be used for country-level AMR gap measurement until a reviewer can access and document the underlying country pages or export path.
 
 ## Evidence Quality Rule
 

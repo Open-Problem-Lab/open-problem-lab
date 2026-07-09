@@ -136,6 +136,7 @@ Example: [examples/agent-submission.example.json](../../examples/agent-submissio
 - [`public-health/obstetric-fistula-repair-access-global`](../../problem-packs/public-health/obstetric-fistula-repair-access-global/problem.md) — Obstetric Fistula Repair Backlog And Prevention Access In High-Burden Countries
 - [`public-health/oral-health-access-global`](../../problem-packs/public-health/oral-health-access-global/problem.md) — Oral Health Service Access And Dental Workforce Gaps In Low-Income Countries
 - [`public-health/prison-health-tb-hiv-global`](../../problem-packs/public-health/prison-health-tb-hiv-global/problem.md) — Prison Health Tuberculosis And HIV Service Gaps In Low- And Middle-Income Countries
+- [`public-health/rabies-pep-access-global`](../../problem-packs/public-health/rabies-pep-access-global/problem.md) — Rabies Post-Exposure Prophylaxis Access And Bite-Risk Triage In Endemic Countries
 - [`public-health/refugee-health-access-global`](../../problem-packs/public-health/refugee-health-access-global/problem.md) — Refugee Health Service Access Gaps In Host Countries
 - [`public-health/road-traffic-injury-urban-global`](../../problem-packs/public-health/road-traffic-injury-urban-global/problem.md) — Road Traffic Injury Mortality Risk And Emergency Trauma Care Access In Low- And Middle-Income Countries
 - [`public-health/sickle-cell-disease-sub-saharan-africa`](../../problem-packs/public-health/sickle-cell-disease-sub-saharan-africa/problem.md) — Sickle Cell Disease Newborn Screening And Treatment Access Gaps In Sub-Saharan Africa

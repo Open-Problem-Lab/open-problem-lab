@@ -2,18 +2,18 @@
   "summary": {
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
-    "total_packs": 106,
-    "total_scoped_tasks": 101,
+    "total_packs": 107,
+    "total_scoped_tasks": 102,
     "by_role": {
-      "literature-scout": 101
+      "literature-scout": 102
     },
     "by_risk": {
       "medium": 97,
-      "low": 4
+      "low": 5
     },
     "by_domain": {
       "air-quality": 6,
-      "public-health": 64,
+      "public-health": 65,
       "climate-health": 13,
       "biodiversity": 7,
       "food-security": 19,
@@ -1369,6 +1369,23 @@
       "done_condition": "Three sources classified.",
       "tasks_file": "problem-packs/public-health/prison-health-tb-hiv-global/tasks.json",
       "problem_file": "problem-packs/public-health/prison-health-tb-hiv-global/problem.md"
+    },
+    {
+      "pack_id": "public-health/rabies-pep-access-global",
+      "pack_title": "Rabies Post-Exposure Prophylaxis Access And Bite-Risk Triage In Endemic Countries",
+      "pack_status": "scoped",
+      "domain": ["public-health"],
+      "region": ["global"],
+      "task_id": "source-inventory",
+      "title": "Inventory rabies PEP access, RIG, bite-risk, and dog-vaccination data sources",
+      "owner_role": "literature-scout",
+      "reviewer_needed": "domain-reviewer",
+      "safety_risk": "low",
+      "outcome": "A dated source inventory separating vaccine procurement, RIG or monoclonal access, bite-risk triage, reporting cadence, patient cost, and dog-vaccination context.",
+      "expected_artifact": "datasets.md update plus evidence.json records for each accepted or rejected source family.",
+      "done_condition": "At least six candidate sources are classified as usable, limited, or rejected with explicit reasons covering vaccine access, RIG or monoclonal access, bite-risk triage, reporting cadence, and dog-vaccination context.",
+      "tasks_file": "problem-packs/public-health/rabies-pep-access-global/tasks.json",
+      "problem_file": "problem-packs/public-health/rabies-pep-access-global/problem.md"
     },
     {
       "pack_id": "public-health/refugee-health-access-global",

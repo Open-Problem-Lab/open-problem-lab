@@ -840,6 +840,16 @@ Build a verified workflow for measuring oral health service access and dental wo
 
 Build a verified workflow for measuring TB and HIV service gaps in prison populations in LMICs, linking prison-population data, TB and HIV prevalence studies in prisons, and health-service data.
 
+## Rabies Post-Exposure Prophylaxis Access And Bite-Risk Triage In Endemic Countries
+
+- ID: `public-health/rabies-pep-access-global`
+- Status: `scoped`
+- Domain: `public-health`
+- Region: `global`
+- Source: [problem-packs/public-health/rabies-pep-access-global](../../problem-packs/public-health/rabies-pep-access-global/problem.md)
+
+Build a verified workflow for distinguishing human rabies vaccine procurement from complete post-exposure prophylaxis access, including wound care, bite-risk triage, vaccine route, RIG or monoclonal access, reporting, and rural reach.
+
 ## Refugee Health Service Access Gaps In Host Countries
 
 - ID: `public-health/refugee-health-access-global`

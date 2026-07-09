@@ -1,0 +1,99 @@
+[
+  {
+    "id": "who-rabies-fact-sheet-2024",
+    "problem_id": "public-health/rabies-pep-access-global",
+    "claim": "WHO's 2024 rabies fact sheet estimates about 59,000 human rabies deaths annually, identifies dog bites and scratches as causing 99% of human rabies cases, and states that PEP includes wound washing, vaccine, and RIG when indicated.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Rabies",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/rabies"
+    },
+    "source_date": "2024-06-05",
+    "access_date": "2026-07-09",
+    "method": "Reviewed the WHO fact sheet key facts, overview, prevention, and PEP sections to anchor burden, transmission source, and the full PEP component chain.",
+    "limitations": [
+      "Global fact sheet, not a country or district access dataset.",
+      "The 59,000-death figure is an estimate and WHO notes underreporting.",
+      "This source cannot identify which facilities stock vaccine, RIG, or monoclonal antibodies."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-gavi-rabies-vaccine-support-2024",
+    "problem_id": "public-health/rabies-pep-access-global",
+    "claim": "The June 2024 Gavi, WHO, and United Against Rabies announcement states that all Gavi-eligible countries can apply for human rabies vaccine support for PEP, while RIG and dog vaccines are not covered by the programme.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Gavi to boost access to life-saving human rabies vaccines in over 50 countries: Gavi, WHO and UAR",
+      "url": "https://www.who.int/news/item/13-06-2024-gavi-to-boost-access-to-life-saving-rabies-vaccines-human-in-over-50-countries-gavi-who-and-uar"
+    },
+    "source_date": "2024-06-13",
+    "access_date": "2026-07-09",
+    "method": "Reviewed the WHO-hosted joint news release for eligibility, funding scope, excluded products, and application timing relevant to allocation decisions.",
+    "limitations": [
+      "Announcement-level source; it does not provide country application contents, approved volumes, or delivery performance.",
+      "It cannot prove that funded vaccines reach rural bite victims or that RIG is available where indicated.",
+      "The source describes programme design, not independent implementation outcomes."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-rabies-position-paper-2018",
+    "problem_id": "public-health/rabies-pep-access-global",
+    "claim": "WHO's 2018 rabies vaccine position paper provides global policy guidance on post-exposure and pre-exposure vaccination strategies, including recommendations on rabies immunoglobulin use in the PEP context.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Rabies vaccines: WHO position paper - April 2018",
+      "url": "https://www.who.int/publications/i/item/who-wer9316"
+    },
+    "source_date": "2018-04-19",
+    "access_date": "2026-07-09",
+    "method": "Reviewed the WHO publication page for document scope, date, SAGE review process, and stated focus on programmatic feasibility, simplified schedules, and cost-effectiveness.",
+    "limitations": [
+      "Policy guidance, not a live implementation dataset.",
+      "Does not provide current country-level PEP access or stockout measures.",
+      "Clinical details require domain review before any operational use."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "sreenivasan-pep-access-2019",
+    "problem_id": "public-health/rabies-pep-access-global",
+    "claim": "A 2017-2018 assessment of 23 responding countries in Asia and Africa found major variation in public-sector rabies vaccine cost, availability, intradermal use, distribution systems, and reporting cadence; RIG was limited or unavailable in many countries and the assessment focused on vaccine.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "Overview of rabies post-exposure prophylaxis access, procurement and distribution in selected countries in Asia and Africa, 2017-2018",
+      "url": "https://stacks.cdc.gov/view/cdc/131043",
+      "doi": "10.1016/j.vaccine.2019.04.024"
+    },
+    "source_date": "2019-10-03",
+    "access_date": "2026-07-09",
+    "method": "Reviewed the CDC Stacks abstract, methods, results, and citation metadata to classify what the assessment can prove about PEP logistics and what it cannot prove about current facility access.",
+    "limitations": [
+      "Convenience sample and key-informant assessment; not a nationally representative facility survey.",
+      "Data were collected from January 2017 to May 2018 and may not reflect current post-Gavi-support access.",
+      "Because RIG was limited or unavailable in many countries, the study focused on vaccine and cannot estimate complete PEP access."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-rabies-modelling-consortium-2019",
+    "problem_id": "public-health/rabies-pep-access-global",
+    "claim": "The WHO Rabies Modelling Consortium estimated that improved provision of rabies PEP in Gavi-eligible countries could avert additional deaths and remain cost-effective, while emphasizing that patient risk assessment matters for reducing unnecessary PEP use.",
+    "evidence_type": "peer-reviewed-study",
+    "source": {
+      "title": "The potential effect of improved provision of rabies post-exposure prophylaxis in Gavi-eligible countries: a modelling study",
+      "url": "https://doi.org/10.1016/S1473-3099(18)30512-7",
+      "doi": "10.1016/S1473-3099(18)30512-7"
+    },
+    "source_date": "2019-01-01",
+    "access_date": "2026-07-09",
+    "method": "Reviewed the stable DOI metadata and source summaries to anchor the existence of a PEP investment model and its relevance to Gavi-eligible countries.",
+    "limitations": [
+      "Modelled estimates are not implementation proof and depend on assumptions about exposure, access, and programme uptake.",
+      "The model cannot identify current sub-national stockouts, completion, or RIG access.",
+      "The source supports tractability framing but not a country ranking without replication."
+    ],
+    "confidence": "medium"
+  }
+]

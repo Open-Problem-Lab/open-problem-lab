@@ -6,13 +6,13 @@
 
 | Metric | Value |
 |---|---|
-| Total packs | 108 |
+| Total packs | 109 |
 | Packs with claims | 13 |
 | Packs with accepted claims | 0 |
-| Total evidence records | 354 |
-| Total tasks | 559 |
-| Scoped tasks (ready for work) | 100 |
-| High-risk tasks | 290 |
+| Total evidence records | 359 |
+| Total tasks | 564 |
+| Scoped tasks (ready for work) | 101 |
+| High-risk tasks | 294 |
 
 ## All Problem Packs
 
@@ -71,7 +71,7 @@
 | [public-health/alcohol-harm-reduction-global](../../problem-packs/public-health/alcohol-harm-reduction-global/problem.md) | Alcohol Harm Reduction Policy Gaps And Heavy Episodic Drinking In Low- And Middle-Income Countries | scoped | public-health | global | medium | 1 ev; 4 tasks | needs evidence |
 | [public-health/anemia-women-adolescents-global](../../problem-packs/public-health/anemia-women-adolescents-global/problem.md) | Anemia Prevalence And Iron Supplementation Coverage In Women And Adolescents | scoped | public-health, food-security | global | medium | 6 ev; 5 tasks | ready |
 | [public-health/antimicrobial-resistance-surveillance-global](../../problem-packs/public-health/antimicrobial-resistance-surveillance-global/problem.md) | Antimicrobial Resistance Surveillance Gaps In Low- And Middle-Income Countries | scoped | public-health | global | medium | 6 ev; 6 tasks; 1 claims | has claims |
-| [public-health/birth-registration-access-global](../../problem-packs/public-health/birth-registration-access-global/problem.md) | Birth Registration Coverage Gaps And Health-Service Linkage In Low-Income Countries | scoped | public-health | global | medium | 7 ev; 6 tasks | needs triage |
+| [public-health/birth-registration-access-global](../../problem-packs/public-health/birth-registration-access-global/problem.md) | Birth Registration Coverage Gaps And Health-Service Linkage In Low-Income Countries | scoped | public-health | global | medium | 8 ev; 6 tasks | needs triage |
 | [public-health/blindness-vision-impairment-global](../../problem-packs/public-health/blindness-vision-impairment-global/problem.md) | Avoidable Blindness And Cataract Surgical Coverage Gaps In Low- And Middle-Income Countries | scoped | public-health | global | medium | 1 ev; 5 tasks | needs evidence |
 | [public-health/breastfeeding-support-coverage-global](../../problem-packs/public-health/breastfeeding-support-coverage-global/problem.md) | Early Breastfeeding Initiation And Exclusive Breastfeeding Support Coverage Gaps In Low-Income Countries | scoped | public-health | global | medium | 2 ev; 5 tasks | needs evidence |
 | [public-health/cervical-cancer-screening-global](../../problem-packs/public-health/cervical-cancer-screening-global/problem.md) | Cervical Cancer Screening Coverage Gaps In Low- And Middle-Income Countries | scoped | public-health | global | medium | 1 ev; 5 tasks | needs evidence |
@@ -120,6 +120,7 @@
 | [sanitation/open-defecation-india](../../problem-packs/sanitation/open-defecation-india/problem.md) | Open Defecation Elimination And Sanitation Coverage Verification In India | scoped | sanitation, public-health | india | medium | 3 ev; 6 tasks | ready |
 | [sanitation/plastic-waste-marine-global](../../problem-packs/sanitation/plastic-waste-marine-global/problem.md) | Plastic Waste Leakage Into Marine Environments From Coastal Cities | scoped | sanitation, biodiversity | global | medium | 1 ev; 5 tasks | needs evidence |
 | [sanitation/solid-waste-management-urban-south-asia](../../problem-packs/sanitation/solid-waste-management-urban-south-asia/problem.md) | Municipal Solid Waste Collection Gaps And Open Dumping Health Risk In South Asian Cities | scoped | sanitation, public-health | south-asia | medium | 2 ev; 5 tasks | needs evidence |
+| [transport-safety/road-injury-data-lmics](../../problem-packs/transport-safety/road-injury-data-lmics/problem.md) | Road-Traffic Injury Undercount And Safety Allocation In LMIC Cities | scoped | transport-safety, public-health | low-and-middle-income-countries, global | high | 4 ev; 5 tasks | ready |
 | [water-security/arsenic-groundwater-exposure-bangladesh](../../problem-packs/water-security/arsenic-groundwater-exposure-bangladesh/problem.md) | Arsenic-Contaminated Groundwater Exposure And Testing Coverage Gaps In Bangladesh | scoped | water-security, public-health | bangladesh | high | 6 ev; 5 tasks; 1 claims | has claims |
 | [water-security/glacial-melt-hindu-kush](../../problem-packs/water-security/glacial-melt-hindu-kush/problem.md) | Glacial Melt Water Security Risk In The Hindu Kush Himalaya | scoped | water-security, climate-adaptation | hindu-kush-himalaya | high | 3 ev; 5 tasks | ready |
 | [water-security/groundwater-depletion-india](../../problem-packs/water-security/groundwater-depletion-india/problem.md) | Groundwater Depletion Risk Assessment In India | scoped | water-security, food-security | india | medium | 3 ev; 6 tasks | ready |

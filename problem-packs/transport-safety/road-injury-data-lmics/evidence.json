@@ -1,0 +1,74 @@
+[
+  {
+    "id": "who-road-safety-report-2023",
+    "problem_id": "transport-safety/road-injury-data-lmics",
+    "claim": "WHO's Global status report on road safety 2023 estimates 1.19 million annual road-traffic deaths and uses 2021 as the mortality-estimate baseline for its 2010–2021 progress assessment.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Global status report on road safety 2023",
+      "url": "https://www.who.int/publications/b/72400"
+    },
+    "source_date": "2023-12-13",
+    "access_date": "2026-07-19",
+    "method": "Reviewed the WHO publication record and report description for the annual death estimate, time coverage, mortality-estimate provenance, and country-profile scope.",
+    "limitations": [
+      "The global estimate is not a city-level count and cannot identify a specific corridor or hospital burden.",
+      "The report combines country survey, legislation review, and modeled mortality estimates; it does not establish that a particular linkage method will reduce undercount in a given city."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "world-bank-road-crash-data-capture-2021",
+    "problem_id": "transport-safety/road-injury-data-lmics",
+    "claim": "The World Bank's World Development Report 2021 states that official road-crash data captured only 56% of fatalities in low- and middle-income countries on average in its cited comparison.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "World Development Report 2021: Repurposing data to make roads safer",
+      "url": "https://wdr2021.worldbank.org/spotlights/repurposing-data-to-make-roads-safer/"
+    },
+    "source_date": "2021-01-01",
+    "access_date": "2026-07-19",
+    "method": "Reviewed the World Bank spotlight for the stated capture percentage, its comparison basis, the description of data-system constraints, and the policy use case for geolocated crash records.",
+    "limitations": [
+      "The 56% figure is an average from the cited comparison and is not a transferable correction factor for every city.",
+      "The source concerns fatality capture and does not by itself quantify non-fatal injury undercount or prove that police-hospital linkage is unbiased."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "who-injuries-violence-fact-sheet",
+    "problem_id": "transport-safety/road-injury-data-lmics",
+    "claim": "WHO states that about 90% of injury-related deaths occur in low- and middle-income countries and identifies organized trauma care, transport to hospital, and prehospital and hospital care as relevant injury-system strategies.",
+    "evidence_type": "primary-source",
+    "source": {
+      "title": "Injuries and violence",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/injuries-and-violence"
+    },
+    "source_date": "2023-06-19",
+    "access_date": "2026-07-19",
+    "method": "Reviewed WHO's fact sheet sections on global distribution of injury deaths and organization of trauma care, including transport and prehospital components.",
+    "limitations": [
+      "The fact sheet aggregates injuries and violence rather than isolating road traffic injuries in a specific city.",
+      "It describes relevant system strategies but does not estimate the effect of any particular allocation decision."
+    ],
+    "confidence": "high"
+  },
+  {
+    "id": "world-bank-nairobi-crash-data-2021",
+    "problem_id": "transport-safety/road-injury-data-lmics",
+    "claim": "The World Bank documents that Nairobi's paper police crash reports were digitized and geolocated because existing records were not being converted into useful and timely policy information for road-safety decisions.",
+    "evidence_type": "field-report",
+    "source": {
+      "title": "World Development Report 2021: Repurposing data to make roads safer",
+      "url": "https://wdr2021.worldbank.org/spotlights/repurposing-data-to-make-roads-safer/"
+    },
+    "source_date": "2021-01-01",
+    "access_date": "2026-07-19",
+    "method": "Reviewed the Nairobi case description for the original record form, digitization and geolocation process, and stated policy rationale.",
+    "limitations": [
+      "The Nairobi example demonstrates a data-use pathway, not a generalizable estimate of city-wide injury undercount.",
+      "The source does not establish that digitization alone changed road-safety outcomes or allocation decisions."
+    ],
+    "confidence": "high"
+  }
+]

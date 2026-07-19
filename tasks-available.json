@@ -2,18 +2,18 @@
   "summary": {
     "generated_by": "scripts/generate-task-index.mjs",
     "schema_version": 1,
-    "total_packs": 108,
-    "total_scoped_tasks": 100,
+    "total_packs": 109,
+    "total_scoped_tasks": 101,
     "by_role": {
-      "literature-scout": 100
+      "literature-scout": 101
     },
     "by_risk": {
-      "medium": 96,
+      "medium": 97,
       "low": 4
     },
     "by_domain": {
       "air-quality": 6,
-      "public-health": 63,
+      "public-health": 64,
       "climate-health": 13,
       "biodiversity": 7,
       "food-security": 18,
@@ -23,6 +23,7 @@
       "energy-access": 6,
       "food-safety": 1,
       "sanitation": 4,
+      "transport-safety": 1,
       "water-security": 6
     }
   },
@@ -1624,6 +1625,23 @@
       "done_condition": "Five sources classified.",
       "tasks_file": "problem-packs/sanitation/solid-waste-management-urban-south-asia/tasks.json",
       "problem_file": "problem-packs/sanitation/solid-waste-management-urban-south-asia/problem.md"
+    },
+    {
+      "pack_id": "transport-safety/road-injury-data-lmics",
+      "pack_title": "Road-Traffic Injury Undercount And Safety Allocation In LMIC Cities",
+      "pack_status": "scoped",
+      "domain": ["transport-safety", "public-health"],
+      "region": ["low-and-middle-income-countries", "global"],
+      "task_id": "source-inventory",
+      "title": "Inventory linked road-injury data sources for one LMIC city",
+      "owner_role": "literature-scout",
+      "reviewer_needed": "domain-reviewer",
+      "safety_risk": "medium",
+      "outcome": "A dated source inventory that classifies police, hospital, ambulance, death-registration, road-network, and population sources by linkage usefulness and failure mode.",
+      "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+      "done_condition": "At least five candidate sources are classified as usable, limited, or rejected, and at least one source in each of police, health-care, and denominator categories has an explicit linkage or non-linkage reason.",
+      "tasks_file": "problem-packs/transport-safety/road-injury-data-lmics/tasks.json",
+      "problem_file": "problem-packs/transport-safety/road-injury-data-lmics/problem.md"
     },
     {
       "pack_id": "water-security/arsenic-groundwater-exposure-bangladesh",

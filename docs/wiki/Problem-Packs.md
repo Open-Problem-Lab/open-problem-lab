@@ -1020,6 +1020,16 @@ Build a verified workflow for estimating plastic waste leakage into marine envir
 
 Build a verified workflow for measuring municipal solid waste collection gaps and open-dumping health risk in South Asian cities, linking waste-generation estimates, collection-route data, and informal-sector recycling data at neighborhood scale.
 
+## Road-Traffic Injury Undercount And Safety Allocation In LMIC Cities
+
+- ID: `transport-safety/road-injury-data-lmics`
+- Status: `scoped`
+- Domain: `transport-safety`, `public-health`
+- Region: `low-and-middle-income-countries`, `global`
+- Source: [problem-packs/transport-safety/road-injury-data-lmics](../../problem-packs/transport-safety/road-injury-data-lmics/problem.md)
+
+Build a verified, privacy-conscious workflow for measuring how much city road-injury burden is missed by police-only records and whether linked administrative data changes the prioritization of road blackspots, trauma capacity, or enforcement review.
+
 ## Arsenic-Contaminated Groundwater Exposure And Testing Coverage Gaps In Bangladesh
 
 - ID: `water-security/arsenic-groundwater-exposure-bangladesh`

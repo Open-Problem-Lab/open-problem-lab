@@ -18,6 +18,8 @@
 
 ## Classification Notes
 
+The UNICEF birth-registration database 2026 update is a current downloadable country-series source for framing and source selection. Its survey timing and country-level grain remain explicit limitations; it is not a substitute for district-level CRVS tabulations or a current administrative denominator.
+
 ### Usable
 
 - **UNICEF birth registration database and 2024 update**: Use for global and country framing plus the distinction between unregistered children and children reportedly registered without documentary proof. Limitation: this is a synthesis layer over underlying surveys, not a substitute for survey microdata when choosing districts or health-touchpoint wedges.

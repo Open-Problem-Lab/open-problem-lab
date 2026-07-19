@@ -34,6 +34,10 @@ Use this source to define the DHS indicator precisely: de jure children under 5,
 
 Use this source to justify MICS as a major comparable source and to show that birth registration is an established survey module. It does not solve country-specific data-quality questions on its own.
 
+### UNICEF Birth Registration Database 2026
+
+Use the live UNICEF data page for the downloadable country series and its survey-timing warnings. It is admissible for country framing and source selection, not as a substitute for district-level CRVS tabulations or a current administrative denominator.
+
 ## Inventory Outcome
 
 The accepted evidence base for the `source-inventory` task now resolves into five usable source families and three limited or rejected families:

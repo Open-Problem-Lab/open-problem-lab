@@ -1,0 +1,98 @@
+[
+  {
+    "id": "source-inventory",
+    "problem_id": "transport-safety/road-injury-data-lmics",
+    "title": "Inventory linked road-injury data sources for one LMIC city",
+    "status": "scoped",
+    "owner_role": "literature-scout",
+    "outcome": "A dated source inventory that classifies police, hospital, ambulance, death-registration, road-network, and population sources by linkage usefulness and failure mode.",
+    "inputs": [
+      "WHO Global status report on road safety 2023",
+      "World Bank World Development Report 2021 road-data spotlight",
+      "one named LMIC city police or transport data source",
+      "one named LMIC city hospital, ambulance, or death-registration source",
+      "local data-protection and access requirements"
+    ],
+    "expected_artifact": "datasets.md update plus evidence.json records for each accepted source.",
+    "validation_method": "Domain reviewer checks each source for URL, date, controller, grain, case definition, access condition, linkage fields, subgroup coverage, and explicit limitations.",
+    "reviewer_needed": "domain-reviewer",
+    "safety_risk": "medium",
+    "done_condition": "At least five candidate sources are classified as usable, limited, or rejected, and at least one source in each of police, health-care, and denominator categories has an explicit linkage or non-linkage reason."
+  },
+  {
+    "id": "deidentified-linkage-audit",
+    "problem_id": "transport-safety/road-injury-data-lmics",
+    "title": "Audit de-identified police and hospital record linkage",
+    "status": "needs-triage",
+    "owner_role": "data-cleaner",
+    "outcome": "A reproducible linkage audit reporting matches, unresolved duplicates, missingness, and subgroup coverage without exposing identifiable records.",
+    "inputs": [
+      "approved de-identified extracts",
+      "linkage protocol",
+      "data dictionary",
+      "privacy review"
+    ],
+    "expected_artifact": "A rerunnable linkage audit and validation.md update.",
+    "validation_method": "Replicator reruns the audit on a held-out de-identified sample and reconciles counts by source, period, severity, and road-user group.",
+    "reviewer_needed": "replicator",
+    "safety_risk": "high",
+    "done_condition": "The audit reproduces the reported match and duplicate counts on a held-out sample and documents every field that was removed, transformed, or retained."
+  },
+  {
+    "id": "allocation-sensitivity-review",
+    "problem_id": "transport-safety/road-injury-data-lmics",
+    "title": "Test whether linked burden changes one city allocation review",
+    "status": "needs-triage",
+    "owner_role": "implementation-planner",
+    "outcome": "A bounded sensitivity analysis showing whether alternative capture assumptions change the shortlist for one named blackspot, trauma-capacity, or enforcement review.",
+    "inputs": [
+      "replicated linkage audit",
+      "road network and denominator data",
+      "named decision rule",
+      "field constraints"
+    ],
+    "expected_artifact": "A reproducible sensitivity analysis and outputs.md update.",
+    "validation_method": "Replicator reruns the analysis under pre-specified capture assumptions and checks ranking stability, uncertainty, and non-use cases.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The shortlist is reported as stable or unstable under at least three pre-specified capture assumptions, with no causal intervention claim."
+  },
+  {
+    "id": "privacy-red-team",
+    "problem_id": "transport-safety/road-injury-data-lmics",
+    "title": "Red-team privacy and equity failure modes in road-injury linkage",
+    "status": "needs-triage",
+    "owner_role": "red-team-reviewer",
+    "outcome": "A review of re-identification, exclusion, surveillance, and incentive risks in linked road-injury evidence.",
+    "inputs": [
+      "data dictionary",
+      "linkage protocol",
+      "draft outputs",
+      "local privacy requirements"
+    ],
+    "expected_artifact": "validation.md and outputs.md safety review notes plus an independent replication record.",
+    "validation_method": "Red-team reviewer attempts to identify a person, infer sensitive status, or create a harmful enforcement interpretation from the proposed artifact, then an independent reviewer replicates the failure-mode check.",
+    "reviewer_needed": "red-team-reviewer",
+    "safety_risk": "high",
+    "done_condition": "Every identified high-risk pathway has a documented mitigation or blocks publication of the affected artifact."
+  },
+  {
+    "id": "field-decision-check",
+    "problem_id": "transport-safety/road-injury-data-lmics",
+    "title": "Check field use of a city road-injury evidence product",
+    "status": "needs-triage",
+    "owner_role": "field-reality-reviewer",
+    "outcome": "A field review naming the user, decision, timing, implementation constraint, and non-use case for one evidence product.",
+    "inputs": [
+      "draft linkage or sensitivity output",
+      "city transport workflow",
+      "trauma-system workflow",
+      "privacy review"
+    ],
+    "expected_artifact": "playbooks.md update with use and non-use guidance.",
+    "validation_method": "Field reviewer confirms the decision pathway and a second reviewer replicates the check that the output is not framed as an enforcement or engineering order.",
+    "reviewer_needed": "field-reality-reviewer",
+    "safety_risk": "high",
+    "done_condition": "The artifact has one named user, one named decision, one time window, two explicit non-use cases, and completed red-team review before publication."
+  }
+]

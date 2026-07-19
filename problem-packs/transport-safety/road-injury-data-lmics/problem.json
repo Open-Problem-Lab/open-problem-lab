@@ -1,0 +1,44 @@
+{
+  "id": "transport-safety/road-injury-data-lmics",
+  "title": "Road-Traffic Injury Undercount And Safety Allocation In LMIC Cities",
+  "status": "scoped",
+  "domain": ["transport-safety", "public-health"],
+  "region": ["low-and-middle-income-countries", "global"],
+  "summary": "Build a verified, privacy-conscious workflow for measuring how much city road-injury burden is missed by police-only records and whether linked administrative data changes the prioritization of road blackspots, trauma capacity, or enforcement review.",
+  "why_it_matters": "A city transport director and a Ministry of Health trauma planner must decide which corridors receive scarce engineering, enforcement, ambulance, and emergency-care capacity. If police records miss a large or systematically biased share of non-fatal and vulnerable-road-user injuries, a polished crash map can direct money away from the people and locations carrying the real burden. Verified linkage and deduplication evidence could change those allocations; it would not by itself prove that a particular intervention saves lives.",
+  "success_metrics": [
+    {
+      "metric": "Capture-recapture transparency",
+      "target": "Every estimate states the source systems, matching rules, unresolved duplicates, and assumptions required for interpretation.",
+      "validation_method": "Replicator reruns the matching procedure on a de-identified test extract and checks the audit table."
+    },
+    {
+      "metric": "Decision relevance",
+      "target": "At least one output distinguishes whether the result would change blackspot, trauma-capacity, or enforcement review priorities for a named city decision-maker.",
+      "validation_method": "Field-reality reviewer checks the named user, decision, timing, and non-use cases."
+    },
+    {
+      "metric": "Privacy and safety boundary",
+      "target": "No canonical artifact contains identifiable patient, vehicle, or precise individual-travel data, and no unreplicated intervention recommendation is published.",
+      "validation_method": "Schema validation plus red-team review of data fields, linkage outputs, and proposed interpretations."
+    }
+  ],
+  "safety_level": "high",
+  "canonical_files": [
+    "datasets.md",
+    "evidence.json",
+    "evidence.md",
+    "outputs.md",
+    "playbooks.md",
+    "problem.json",
+    "problem.md",
+    "task-map.md",
+    "tasks.json",
+    "validation.md"
+  ],
+  "review_policy": {
+    "required_reviews": 3,
+    "replication_required": true,
+    "merge_gate": "Schema validation, transport-safety and public-health domain review, privacy/red-team review, field-reality review, and independent replication for quantitative linkage or allocation outputs."
+  }
+}

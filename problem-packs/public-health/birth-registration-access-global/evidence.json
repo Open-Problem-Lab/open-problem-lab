@@ -125,5 +125,24 @@
       "Not every MICS survey includes the same exact customizations, and microdata access still depends on survey release status."
     ],
     "confidence": "medium"
+  },
+  {
+    "id": "unicef-birth-registration-database-2026",
+    "problem_id": "public-health/birth-registration-access-global",
+    "claim": "UNICEF's birth-registration data page provides a downloadable, customizable series for the percentage of children under age 5 whose births are registered and identifies household surveys, especially DHS and MICS, as the main comparable source in many low- and middle-income countries.",
+    "evidence_type": "dataset",
+    "source": {
+      "title": "Birth registration - UNICEF DATA",
+      "url": "https://data.unicef.org/topic/child-protection/birth-registration/"
+    },
+    "source_date": "2026-06-01",
+    "access_date": "2026-07-18",
+    "method": "Reviewed the data-download section, indicator definition, survey-source description, and interpretation warnings on the UNICEF topic page. Classified it as a country-level framing and source-selection input rather than a district-level administrative dataset.",
+    "limitations": [
+      "The page reports observations at survey time and does not establish current registration status where the latest survey is old.",
+      "The page does not provide a universally comparable district-level administrative denominator.",
+      "Survey reports of registration or certificate possession can be affected by respondent understanding of the national registration authority and documents."
+    ],
+    "confidence": "high"
   }
 ]
